@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_the_subscribed_service_details.html 
+keywords: netapp, keystone, modify, cloud, service, details, 
+summary: Keystone ändert die Details für den Cloud-Service 
+---
+= Sie ändern die Cloud-Service-Details
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Verwenden Sie diese Methode, um die Details eines Cloud-Service zu ändern. Ihre Vorteile:
+
+* Ändern Sie die Details für jeden Service wie in der folgenden Tabelle aufgeführt.
+* Fügen Sie Tags für den Dienst hinzu oder entfernen Sie sie.
+
+
+|===
+| Cloud-Plattform | Sie Können Folgendes Ändern: 
+
+
+| Azure | Azure Client-ID, Azure Client Secret und Name 
+
+
+| Azure US-Regierung | TBA 
+
+
+| GCP | TBA 
+
+
+| AWS | TBA 
+|===
+
+
+=== Schritte
+
+. Wählen Sie im Menü * Cloud-Services* > *Cloud-Services* aus.
+. Suchen Sie den Cloud-Service in der Liste, und klicken Sie auf das Symbol Bearbeiten.
+. Nehmen Sie im Dialogfeld Cloud-Service aktualisieren alle erforderlichen Änderungen vor.
+. Klicken Sie Auf *Aktualisieren*.
+

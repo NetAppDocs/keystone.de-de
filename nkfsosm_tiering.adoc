@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_tiering.html 
+keywords: netapp, keystone, tiering, 
+summary: Keystone Tiering 
+---
+= Tiering
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone Flex Subscription Service umfasst eine Tiering-Funktion, die weniger häufig genutzte Daten identifiziert und in einen Cold Storage Tiers aufsetzt, der Eigentum von NetApp ist, bereitgestellt und gemanagt wird.
+
+Die Tiering-Funktion nutzt die NetApp FabricPool Technologie, mit der Daten-Tiering auf kostengünstige Objekt-Storage Tiers entweder lokal oder extern durchgeführt werden können. Bei dieser Funktion werden selten genutzte Daten auf Grundlage der vereinbarten Services automatisch in einen kostengünstigeren Storage verschoben – entweder vor Ort oder in der Cloud.
+
+Partner und Mandanten können sich diese Funktion problemlos für die zwei vorkonfigurierten Service-Level entscheiden: Für das Extreme Tiering und das Premium Tiering bei der Bereitstellung von Storage. Beim Extreme Tiering werden die gleichen QoS-Richtlinien verwendet wie die Service Level Standard, Extreme und Premium.
+
+Das Add-on-Tiering ist nur für Extreme und Premium Service Tiers verfügbar. NetApp geht davon aus, dass 25 % der Daten „heiß“ sind, und 75 % werden weniger häufig verwendet und können auf „kalte“ Storage verschoben werden. Die Abrechnung wird basierend auf der Dauer pro Volume in jedem Service-Level bestimmt.
+
+Die folgenden Funktionen sind aktiviert:
+
+* Sie können Berichte über die inaktiven Daten für Ihre Festplatten und Dateifreigaben erstellen und entscheiden, ob Sie das Service-Level ändern möchten. Bei Verschiebung oder Änderung der Tiering-Richtlinie können die Latenzen höher sein, wenn auf die Daten über das kalte Tier zugegriffen wird.
+* Unter der Voraussetzung, dass auf dem Cluster das Ziel-Tiering aktiviert ist, können Sie das Service-Level der Volumes von Extreme und Premium ändern sowie Extreme-Tiering und Premium Tiering.
+* Gleichermaßen können Sie die Tiering Service-Level in ein nicht-Tiering für Ihre Volumes ändern.
+* Aktivieren und Deaktivieren von Backups für ein Volume auf einem Tiering-Service-Level
+* Aktivierung und Deaktivierung der Disaster Recovery für ein Volume auf einem Tiering Service Level
+

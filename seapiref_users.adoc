@@ -1,0 +1,413 @@
+---
+sidebar: sidebar 
+permalink: seapiref_users.html 
+keywords: netapp, keystone, users, 
+summary: Keystone Benutzer 
+---
+= Benutzer
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden zum Abrufen, Erstellen, Ändern und Löschen von Untermandanten.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung 
+
+
+| `GET` | `/v2.1/users` | Rufen Sie eine Liste aller Benutzer ab. 
+
+
+| `GET` | `/v2.1/Users/{id}` | Rufen Sie einen Benutzer über die Benutzer-ID ab. 
+
+
+| `POST` | `/v2.1/users` | Erstellen Sie einen neuen Benutzer. 
+
+
+| `PUT` | `/v2.1/Users/{id}` | Ändern Sie die Details eines Benutzers. 
+
+
+| `DELETE` | `/v2.1/Users/{id}` | Löschen Sie einen Benutzer. 
+
+
+| `GET` | `/v2.1/users/{username}` | Rufen Sie einen Benutzer über den Benutzernamen ab. 
+|===
+
+
+=== Benutzerattribute
+
+In der folgenden Tabelle sind die Benutzerattribute aufgeführt.
+
+|===
+| Attribut | Typ | Beschreibung 
+
+
+| `id` | Zeichenfolge | Die eindeutige Kennung des Benutzers. 
+
+
+| `username` | Zeichenfolge | Der Benutzername. 
+
+
+| `password` | Zeichenfolge | Das Kennwort des Benutzers. 
+
+
+| `Firstname` | Zeichenfolge | Vorname des Benutzers. 
+
+
+| `Nachname` | Zeichenfolge | Der Nachname des Benutzers. 
+
+
+| `DisplayName` | Zeichenfolge | Der Anzeigename des Benutzers. 
+
+
+| `email` | Zeichenfolge | Die E-Mail-Adresse des Benutzers. 
+
+
+| `phone` | Zeichenfolge | Die Telefonnummer des Benutzers. 
+
+
+| `profilImageURL` | Zeichenfolge | Die URL des Profilbildes der Nutzer. 
+
+
+| `Tenant_id` | Zeichenfolge | Die primäre Mandanten-ID für diesen Benutzer. 
+
+
+| `Tenancies` | –  a| 
+Die Mandantenfähigkeit der Benutzer; ein Array bestehend aus:
+
+* `Tenant_id`, und
+* `Role_Name` Dies ist die Benutzerrolle; eine der Benutzer, admin, lesen, Partner, Oder root.
+
+
+
+
+| `Provider` | Zeichenfolge | Authentifizierungsanbieter: `local` oder `ActiveDirectory` 
+
+
+| `Anbieterdaten` | –  a| 
+Details zum Authentifizierungs-Provider, bestehend aus:
+
+* `Email_Address`, und
+* `member_of` (Gruppenmitgliedschaft)
+
+
+|===
+
+
+=== Rufen Sie alle Benutzer ab
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um alle Benutzer abzurufen.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `GET` | `/v2.1/users` | Rufen Sie alle Benutzer ab. | Keine 
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+none
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5dddbe0ef071fe0001b889fd",
+        "username": "TestUser3",
+        "firstName": "Test",
+        "lastName": "User",
+        "displayName": "",
+        "email": "testuser@netapp.com",
+        "tenancies": [
+          {
+            "id": "5d914499869caefed0f39eee",
+            "name": "MyOrg",
+            "code": "myorg",
+            "role": "admin"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== Einen Benutzer anhand seiner ID abrufen
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Benutzer anhand der ID abzurufen.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `GET` | `/v2.1/users` | Einen Benutzer anhand seiner ID abrufen. | `id (String)`: Die eindeutige Kennung des Benutzers. 
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+none
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e585df6896bd80001dd4b44",
+        "username": "testuser01",
+        "firstName": "",
+        "lastName": "",
+        "displayName": "",
+        "email": "",
+        "tenancies": [
+          {
+            "id": "5d914499869caefed0f39eee",
+            "name": "MyOrg",
+            "code": "myorg",
+            "role": "user"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== Rufen Sie einen Benutzer nach Benutzernamen ab
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Benutzer nach dem Benutzernamen abzurufen.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `GET` | `/v2.1/users` | Rufen Sie einen Benutzer nach Benutzernamen ab. | `username (string)`: Der Benutzername des Benutzers. 
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+none
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e61aa814559c20001df1a5f",
+        "username": "MyName",
+        "firstName": "MyFirstName",
+        "lastName": "MySurname",
+        "displayName": "CallMeMYF",
+        "email": "user@example.com",
+        "tenancies": [
+          {
+            "id": "5e5f1c4f253c820001877839",
+            "name": "MyTenant",
+            "code": "testtenantmh",
+            "role": "user"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== Erstellen Sie einen Benutzer
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Benutzer zu erstellen.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `POST` | `/v2.1/users` | Erstellen Sie einen neuen Benutzer. | Keine 
+|===
+Erforderliche Body-Attribute für Anforderung: `username`, `Tenant_id`, `Tenants, Provider`
+
+*Beispiel des Körpers anfordern:*
+
+....
+{
+  "username": "MyUser",
+  "password": "mypassword",
+  "firstName": "My",
+  "lastName": "User",
+  "displayName": "CallMeMyUser",
+  "email": "user@example.com",
+  "phone": "string",
+  "profileImageURL": "string",
+  "tenant_id": "5e7c3af7aab46c00014ce877",
+  "tenancies": [
+    {
+      "tenant_id": "5e7c3af7aab46c00014ce877",
+      "role_name": "admin"
+    }
+  ],
+  "provider": "local",
+  "provider_data": {
+    "email": "user@example.com",
+    "member_of": "string"
+  }
+}
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5ed6f463129e5d000102f7e1",
+        "username": "MyUser",
+        "firstName": "My",
+        "lastName": "User",
+        "displayName": "CallMeMyUser",
+        "email": "user@example.com",
+        "tenancies": [
+          {
+            "id": "5e7c3af7aab46c00014ce877",
+            "name": "MyTenant",
+            "code": "mytenantcode",
+            "role_name": "admin"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== Ändern Sie einen Benutzer anhand der ID
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Benutzer nach Benutzer-ID zu ändern.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `PUT` | `/v2.1/Users/{id}` | Ändern Sie einen Benutzer, der über die Benutzer-ID identifiziert wurde. Sie können den Benutzernamen, den Anzeigenamen, das Passwort, die E-Mail-Adresse, die Telefonnummer, URL für das Profil und Details zur Mandantenfähigkeit. | `id (String)`: Die eindeutige Kennung des Benutzers. 
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+{
+  "password": "MyNewPassword",
+   "firstName": "MyFirstName",
+   "lastName": "MySurname",
+   "displayName": "CallMeMYF",
+   "email": "user@example.com",
+   "phone": "string",
+  "profileImageURL": "string",
+  "tenant_id": "5e5f1c4f253c820001877839",
+  "tenancies": [
+    {
+      "tenant_id": "5e5f1c4f253c820001877839",
+      "role_name": "user"
+    }
+  ]
+}
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e61aa814559c20001df1a5f",
+        "username": "MyName",
+        "firstName": "MyFirstName",
+        "lastName": "MySurname",
+        "displayName": "CallMeMYF",
+        "email": "user@example.com",
+        "tenancies": [
+          {
+            "id": "5e5f1c4f253c820001877839",
+            "name": "MyTenant",
+            "code": "testtenantmh",
+            "role": "user"
+          }
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== Benutzer anhand der ID löschen
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Benutzer anhand der ID zu löschen.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `DELETE` | `/v2.1/Users/{Name}` | Löschen Sie den Benutzer, der anhand der ID identifiziert wurde. | `id (String)`: Die eindeutige Kennung des Benutzers. 
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+none
+....
+*Beispiel des Antwortkörpers:*
+
+....
+No content for succesful delete
+....

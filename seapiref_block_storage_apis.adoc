@@ -1,0 +1,291 @@
+---
+sidebar: sidebar 
+permalink: seapiref_block_storage_apis.html 
+keywords: netapp, keystone, block storage, block stores, disks, host groups, initiators, apis 
+summary: Keystone Block-Storage-APIs 
+---
+= Block-Storage-APIs
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Mit Block-Storage-APIs können Sie Ihren Block-Storage anzeigen und managen.
+
+Bevor Sie Festplatten erstellen, müssen Sie Blockspeicher erstellen. Wenn Sie ein Laufwerk erstellen, müssen Sie eine Hostgruppe erstellen oder eine vorhandene Hostgruppe auswählen, um auf das Laufwerk zuzugreifen. Weitere Informationen finden Sie unter link:sewebiug_working_with_block_storage_overview.html["Arbeit mit Block-Storage"].
+
+
+
+== Blockgeschäfte
+
+Sie können Block Store APIs verwenden, um Ihre Blockspeicher abzurufen und zu verwalten.
+
+[cols="1,1,3,2"]
+|===
+| HTTP-Verb | Pfad | Beschreibung | Obligatorische Parameter/Anforderungskörper 
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/Blockstores`
+| Sie können die Details aller Ihrer Blockspeicher abrufen. Ruft Details zu den Blockspeichern ab, z. B. Block-Speicher-ID, IP-Adresse, Region, Zone, Subnetz-ID, Und Tags.  a| 
+`Offset`: Die Anzahl der zu übersprinenden Elemente, bevor der Ergebnissatz erfasst wird. `Limit`: Die Anzahl der zurückzukehrenden Artikel.
+
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/Blockstores/{id}`
+| Sie können die Details eines bestimmten Blockspeichers abrufen. Ruft Details des Blockspeichers ab, z. B. IP-Adresse, Region, Zone, Subnetz-ID und Tags basierend auf der eingegebenen ID.  a| 
+`id`: Die ID des Blockspeichers.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/Blockstores`
+| Sie können einen Blockspeicher erstellen. Fügen Sie die Werte im Anfragebetext hinzu, um einen Blockspeicher mit den angegebenen Parametern zu erstellen, z. B. Service-Protokoll, Submandant-ID, Zone, Subnetz-ID und Tags.  a| 
+`subTenant_id`: Die ID des Untermandanten. `Zone`: Der Name der Zone. `subnet_id`: Die ID des Subnetzes.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/Blockstores/{id}/` `Tags`
+| Sie können Tags für einen Blockspeicher erstellen oder ersetzen. Fügen Sie die ID des Blockspeichers sowie die Werte für die Tags im Format „Key:value Pair“ im Anforderungskörper hinzu.  a| 
+`id`: Die ID des Blockspeichers.
+
+
+
+ a| 
+`PUT`
+ a| 
+`/v2.1/Blockstores/{id}`
+| Sie können jeden Blockspeicher basierend auf seiner ID ändern. Fügen Sie die ID des Blockspeichers sowie die Werte hinzu, die Sie im Anfraentext ändern möchten, z. B. Zone, Service-Protokoll und Tags.  a| 
+`id`: Die ID des Blockspeichers.
+
+
+
+ a| 
+`DELETE`
+ a| 
+`/v2.1/Blockstores/{id}`
+ a| 
+Sie können jeden Blockspeicher mit seiner ID löschen.
+ a| 
+`id`: Die ID des Blockspeichers.
+
+|===
+
+NOTE: Bevor Sie einen Blockspeicher löschen, sollten Sie alle ihm zugeordneten Festplatten löschen.
+
+
+
+== Festplatten
+
+Sie können Festplatten-APIs verwenden, um Ihre Festplatten abzurufen und zu verwalten.
+
+[cols="1,1,3,2"]
+|===
+| HTTP-Verb | Pfad | Beschreibung | Obligatorische Parameter/Anforderungskörper 
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/Disks`
+| Sie können die Details aller Ihrer Festplatten abrufen. Abrufen von Details der Festplatten, z. B. Block-Store-ID, Name, Festplattenpfad, Protokoll, Snapshot-Richtlinie, Und Tags.  a| 
+`Offset`: Die Anzahl der zu übersprinenden Elemente, bevor der Ergebnissatz erfasst wird. `Limit`: Die Anzahl der zurückzukehrenden Artikel.
+
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/Disks/{id}`
+| Sie können die Details einer bestimmten Festplatte abrufen. Abrufen von Details der Festplatte, z. B. Block-Store-ID, Name, Festplattenpfad, Protokoll, Snapshot-Richtlinie, Und Tags basierend auf der eingegebenen ID.  a| 
+`id`: Die ID der Festplatte.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/Disks`
+| Sie können eine Festplatte erstellen. Fügen Sie die Werte im Anfragebetext hinzu, um eine Festplatte mit den angegebenen Parametern zu erstellen, z. B. Untermandant-ID, Zone, Name, Festplattenpfad, Snapshot-Richtlinie, Backup-Richtlinie und Tags.  a| 
+`subTenant_id`: Die ID des Untermandanten. `Zone`: Der Name der Zone. `Name`: Der Name der Festplatte. `Disk_path`: Der Pfad der Festplatte. `Protocol`: Das Storage-Protokoll für den Zugriff auf Block-Geräte. `os_type`: Der Typ des Host-Betriebssystems. `hostgroup_Mappings`: Die Host-Gruppen-Zuordnungen. `service_Level`: Der Name des Service-Levels: Standard, Premium, Premium-Tiering, Extreme oder Extreme-Tiering. `size_gb`: Die Größe der Festplatte in GB.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/Disks/{id}/` `snapshot/{Name}`
+| Sie können einen Snapshot einer Festplatte erstellen.  a| 
+`id`: Die ID der Festplatte. `Name`: Der Name des Snapshots.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/Disks/{id}/` `Tags`
+| Sie können Tags für eine Festplatte erstellen oder ersetzen. Fügen Sie die ID der Festplatte und die Werte für die Tags im Format „Key:value Pair“ im Anforderungskörper hinzu.  a| 
+`id`: Die ID der Festplatte.
+
+
+
+ a| 
+`PUT`
+ a| 
+`/v2.1/Disks/{id}`
+| Sie können Festplatten basierend auf ihrer ID ändern. Fügen Sie die ID des Laufwerks und die Werte hinzu, die Sie im Anfraentext ändern möchten, z. B. Name, Service Level, Snapshot-Richtlinie, Backup-Richtlinie und Tags.  a| 
+`id`: Die ID der Festplatte. `hostgroup_Mappings`: Die Host-Gruppen-Zuordnungen.
+
+
+
+ a| 
+`DELETE`
+ a| 
+`/v2.1/Disks/{id}`
+| Sie können jede Festplatte mit ihrer ID löschen.  a| 
+`id`: Die ID der Festplatte.
+
+
+
+ a| 
+`DELETE`
+ a| 
+`/v2.1/Disks/{id}/` `snapshot/{Name}`
+| Sie können jeden Snapshot eines Laufwerks mit der ID des Laufwerks und dem Namen des Snapshots löschen.  a| 
+`id`: Die ID der Festplatte. `Name`: Der Name des Snapshots.
+
+|===
+
+
+== Hostgruppen
+
+Die Zugriffskontrolle auf Festplatten wird mit Host-Gruppen verwaltet. Hostgruppen können mithilfe von Host Groups-APIs abgerufen und verwaltet werden.
+
+[cols="1,1,3,2"]
+|===
+| HTTP-Verb | Pfad | Beschreibung | Obligatorische Parameter/Anforderungskörper 
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/Hostgroups`
+| Sie können die Details aller Hostgruppen abrufen. Ruft Details der Host-Gruppen ab, z. B. Name, Weitere Mandanten-Details, Mandantendetails, Zone, Protokolle, Initiatoren, Festplatten mit der Host-Gruppe und Tags.  a| 
+`Offset`: Die Anzahl der zu übersprinenden Elemente, bevor der Ergebnissatz erfasst wird. `Limit`: Die Anzahl der zurückzukehrenden Artikel.
+
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/Hostgroups/{id}`
+| Sie können die Details einer bestimmten Host-Gruppe abrufen. Ruft Details der Host-Gruppe ab, z. B. Name, Untermandanten-Details, Mandantendetails, Zone, Protokoll, Initiatoren, Festplatten mit den Host-Gruppen und Tags basierend auf der eingegebenen ID.  a| 
+`id`: Die ID der Host-Gruppe.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/Hostgroups`
+| Sie können eine Host-Gruppe erstellen. Fügen Sie die Werte im Anfragebetext hinzu, um eine Host-Gruppe mit den angegebenen Parametern zu erstellen, z. B. Name, Untermandant-ID, Zone, Protokoll, Initiatoren und Tags.  a| 
+`Name`: Der Name der Host-Gruppe. `subTenant_id`: Die ID des Untermandanten. `Zone`: Der Name der Zone. `Protocol`: Das Storage-Protokoll für den Zugriff auf Block-Geräte. `os_type`: Der Typ des Host-Betriebssystems.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/Hostgroups/{id}/` `Tags`
+| Sie können Tags für eine Host-Gruppe erstellen oder ersetzen. Fügen Sie die ID der Host-Gruppe und die Werte für die Tags im Format „Key:value Pair“ im Anfraentext hinzu.  a| 
+`id`: Die ID der Host-Gruppe.
+
+
+
+ a| 
+`DELETE`
+ a| 
+`/v2.1/Hostgroups/{id}`
+| Sie können jede Host-Gruppe mit ihrer ID löschen.  a| 
+`id`: Die ID der Host-Gruppe.
+
+|===
+
+
+== Initiatoren in einer Host-Gruppe
+
+Mithilfe der Host-Gruppen-APIs können Sie die Initiatoren abrufen und verwalten, die Ihren Host-Gruppen zugeordnet sind.
+
+[cols="1,1,3,2"]
+|===
+| HTTP-Verb | Pfad | Beschreibung | Obligatorische Parameter/Anforderungskörper 
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/Hostgroups/{id}/` `Initiatoren`
+| Sie können die Details aller Ihrer Initiatoren abrufen. Ruft Initiatoren und deren Aliase ab.  a| 
+`id`: Die ID der Host-Gruppe.
+
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/Hostgroups/{id}/` `Initiatoren/{alias}`
+| Sie können die Details eines bestimmten Initiators abrufen. Ruft den Initiator basierend auf der eingegebenen ID und dem Alias ab.  a| 
+`id`: Die ID der Host-Gruppe. `Alias`: Der Alias-Name des Initiators.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/Hostgroups/{id}/` `Initiatoren`
+ a| 
+Sie können einen Initiator für eine Host-Gruppe erstellen. Fügen Sie die Werte für den Initiator und seinen Alias in den Text der Anforderung ein, um einen Initiator für die Host-Gruppe zu erstellen.
+ a| 
+`id`: Die ID der Host-Gruppe. `Alias`: Der Alias-Name des Initiators. `Initiator`: Der Initiator (iSCSI qualifizierte Namen oder FC-WWPNs).
+
+
+
+ a| 
+`PATCH`
+ a| 
+`/v2.1/Hostgroups/{id}/` `Initiatoren/{alias}`
+| Sie können einen Initiator ändern. Fügen Sie den neuen Initiator in den Text der Anforderung hinzu.  a| 
+`id`: Die ID der Host-Gruppe. `Alias`: Der Alias-Name des Initiators. `Initiator`: Der Initiator (iSCSI qualifizierte Namen oder FC-WWPNs).`
+
+
+
+ a| 
+`DELETE`
+ a| 
+`/v2.1/Hostgroups/{id}/` `Initiatoren/{alias}`
+ a| 
+Sie können einen Initiator mit der ID der Host-Gruppe und dem Alias des Initiators löschen.
+ a| 
+`id`: Die ID der Host-Gruppe. `Alias`: Der Alias-Name des Initiators.
+
+|===
+[NOTE]
+====
+Wenn Initiatoren zu einer Host-Gruppe hinzugefügt werden, sollte der Initiator mit dem Host-Gruppenprotokoll übereinstimmen. Sie sollten IQNs für Hostgruppen mit iSCSI-Protokoll und WWPNs für Hostgruppen mit FC-Protokoll verwenden.
+
+Das Löschen eines Initiators aus einer Host-Gruppe wirkt sich auf alle Festplatten aus, denen die Host-Gruppe zugeordnet ist.
+
+====

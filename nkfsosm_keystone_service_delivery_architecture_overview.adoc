@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_keystone_service_delivery_architecture_overview.html 
+keywords: netapp, keystone, service, delivery, architecture, overview, 
+summary: Übersicht über die Service-Erbringung-Architektur 
+---
+= Flex Subscription-Infrastruktur
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+In diesem Abschnitt wird die Infrastrukturarchitektur und Management-Applikation für NetApp Keystone Flex Subscription (Flex Subscription) für NetApp und vom Kunden betriebene Umgebungen beschrieben.
+
+Die Architektur, das Design, die Wahl der Technologie und der Komponentenprodukte von Flex Subscription basieren ausschließlich auf NetApp. NetApp behält sich das Recht vor, folgende Maßnahmen zu ergreifen:
+
+* Wählen Sie Produkte aus, ersetzen Sie sie oder verwenden Sie sie für andere Zwecke.
+* Aktualisieren Sie bei Bedarf Produkte mit neuer Technologie.
+* Erhöhen oder verringern Sie die Kapazitäten der Produkte, um die Serviceanforderungen zu erfüllen.
+* Ändern Sie Architektur, Technologie und/oder Produkte, um die Service-Anforderungen zu erfüllen.
+
+
+Die Flex Subscription-Infrastruktur umfasst mehrere Komponenten:
+
+* Benutzeroberfläche (Webportal) der NetApp Service Engine.
+* NetApp Service Engine APIs zur Integration
+* Die Flex-Abonnementinfrastruktur, die Storage Controller umfasst
+* Tools zum Managen und Betreiben des Service wie OpsRamp, Active IQ und Active IQ Unified Manager.
+
+
+Weitere Informationen zur Integration von NetApp Keystone mit Active IQ finden Sie unter link:https://docs.netapp.com/us-en/active-iq/["Active IQ Digital Advisor Dokumentation"]
+
+image:nkfsosm_image8.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+== NetApp Service Engine
+
+Mit dem NetApp Service Engine Webportal können Sie Ihren Flex-Abonnementservice in einem von NetApp, Partnern oder Kunden betriebenen Modell managen und überwachen. Das Portal umfasst folgende Funktionen:
+
+* Eine grafische Schnittstelle (NetApp Service Engine Web Interface) zur Überwachung und einfachen Storage-Bereitstellung.
+* Eine Reihe VON REST-APIs der NetApp Service Engine für erweiterte Setup- und Storage-Managementaktionen.
+
+
+image:nkfsosm_image9.png["Fehler: Fehlendes Grafikbild"]
+
+Das NetApp Service Engine Portal stellt eine zentrale Oberfläche dar, über die Kunden folgende Aufgaben ausführen können:
+
+* Abonnement-Dashboard: Anzeige des Status der abonnierten Kapazität und der verbrauchten Kapazität
+* Storage-Bereitstellung Workflows zur Erstellung von NFS-/CIFS-Dateifreigaben, FC-/iSCSI-Festplatten und S3-Bucket
+* Datensicherung Erstellen Sie Snapshots und legen Sie Backup-Richtlinien oder Datenreplikation für die bereitgestellten Dateifreigabe oder -Festplatte fest.
+* Berichte An. Anzeigen von Dateifreigaben und Festplattenbeständen sowie von Trends zur Kapazitätsauslastung gegenüber verschiedenen Service-Leveln
+* Abonnement verwalten: Bestellen Sie zusätzliche Kapazität für ein vorhandenes Abonnement oder einen neuen Service über das Portal.
+* Übermitteln von Serviceanfragen oder Support-Problemen und zeigen ihren Status an
+
+
+Die komplette Funktionalität der NetApp Service Engine ist nur beim von NetApp betriebenen Modell verfügbar. Bei einem Kunden- oder Partnermodell sind die NetApp Service Engine Funktionalitäten auf Berichts- und Abonnementmanagement beschränkt.

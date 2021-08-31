@@ -1,0 +1,176 @@
+---
+sidebar: sidebar 
+permalink: seapiref_file_services_apis.html 
+keywords: netapp, keystone, file services, file servers, file shares, apis 
+summary: Keystone Fileservices-APIs 
+---
+= Fileservices-APIs
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Mit File Services-APIs können Ihre File-Server und File Shares angezeigt und gemanagt werden.
+
+Bevor Sie Dateifreigaben erstellen, müssen Sie Dateiserver erstellen, um sie zu hosten.
+
+
+
+== File Server-APIs
+
+Dateiserver-APIs können Sie verwenden, um Ihre Dateiserver anzuzeigen und zu verwalten. Weitere Informationen zu Dateiservern finden Sie unter link:hsewebiug_create_a_file_server.html["Erstellen Sie einen Dateiserver"].
+
+[cols="1,1,3,2"]
+|===
+| HTTP-Verb | Pfad | Beschreibung | Obligatorische Parameter/Anforderungskörper 
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/File-Server`
+| Sie können die Details aller Ihrer Dateiserver abrufen. Ruft Details der Dateiserver ab, z. B. Fileserver-ID, Name, Region, Zone, Mandant, Und Tags.  a| 
+`Offset`: Die Anzahl der zu übersprinenden Elemente, bevor der Ergebnissatz erfasst wird. `Limit`: Die Anzahl der zurückzukehrenden Artikel.
+
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/File-Server/{id}`
+| Sie können die Details eines bestimmten Dateiservers abrufen. Ruft Details des Dateiservers ab, z. B. Name, Region, Zone, Mandant, Und Tags basierend auf der eingegebenen ID.  a| 
+`id`: Die ID des Dateiservers.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/File-Server`
+| Sie können einen Dateiserver erstellen. Fügen Sie die Werte im Text der Anforderung hinzu, um einen Dateiserver mit den angegebenen Parametern zu erstellen, z. B. Name, Untermandant-ID, Zone, Subnetz-ID.  a| 
+`Name`: Der Name des Dateiservers. `subTenant_id`: Die ID des Untermandanten. `Zone`: Der Name der Zone. `subnet_id`: Die ID des Subnetzes.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/File-Server/{id}/` `Tags`
+| Sie können Tags für einen Dateiserver erstellen oder ersetzen. Fügen Sie die ID des Dateiservers und die Werte für die Tags im Format „Key:value Pair“ im Anfraentext hinzu.  a| 
+`id`: Die ID des Dateiservers.
+
+
+
+ a| 
+`PUT`
+ a| 
+`/v2.1/File-Server/{id}`
+| Sie können jeden beliebigen Dateiserver basierend auf seiner ID ändern. Fügen Sie die ID des Dateiservers und die Werte hinzu, die Sie im Anfraentext ändern möchten, z. B. Name, Protokoll, Zone, Region und Tags.  a| 
+`id`: Die ID des Dateiservers.
+
+
+
+ a| 
+`DELETE`
+ a| 
+`/v2.1/File-Server/{id}`
+ a| 
+Sie können jeden beliebigen Dateiserver mit seiner ID löschen.
+ a| 
+`id`: Die ID des Dateiservers.
+
+|===
+[NOTE]
+====
+Bevor Sie einen Dateiserver löschen, sollten Sie alle ihm zugeordneten Dateifreigaben löschen.
+
+Nach dem Löschen von CIFS-fähigen Dateiservern bleibt das Objekt des Active Directory-Computers erhalten. Bitten Sie Ihren Active Directory-Administrator, das Computerobjekt für den gelöschten Dateiserver manuell aus Active Directory zu entfernen.
+
+====
+
+
+== Filesharing-APIs
+
+Mit den APIs für Dateifreigaben können Dateifreigaben angezeigt und gemanagt werden. Weitere Informationen zu Dateifreigaben finden Sie unter link:sewebiug_create_a_new_file_share.html["Erstellen Sie eine Dateifreigabe"].
+
+[cols="1,1,3,2"]
+|===
+| HTTP-Verb | Pfad | Beschreibung | Obligatorische Parameter/Anforderungskörper 
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/filehares`
+| Sie können die Details aller Ihrer Dateifreigaben abrufen. Ruft Details zu Dateifreigaben ab, wie z. B. ID, Name, Snapshot-Richtlinie, Protokolle, IP und Tags für den Dateiserver.  a| 
+`Offset`: Die Anzahl der zu übersprinenden Elemente, bevor der Ergebnissatz erfasst wird. `Limit`: Die Anzahl der zurückzukehrenden Artikel.
+
+
+
+ a| 
+`GET`
+ a| 
+`/v2.1/filehares/{id}`
+| Sie können die Details einer bestimmten Dateifreigabe abrufen. Ruft Details der Dateifreigabe ab, wie z. B. ID, Name, Snapshot-Richtlinie, Protokolle, Server-IP, Und Tags basierend auf der eingegebenen ID.  a| 
+`id`: Die ID der Dateifreigabe.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/filehares`
+| Sie können eine Dateifreigabe erstellen. Fügen Sie die Werte in den Text der Anforderung hinzu, um eine Dateifreigabe mit den angegebenen Parametern zu erstellen, z. B. ID, Name, Snapshot-Richtlinie, Protokolle, IP und Tags für den Dateiserver.  a| 
+`Name`: Der Name der Dateifreigabe. `sHare_PATH`: Der Pfad der Dateifreigabe. `file_id`: Die ID des Dateiservers. `size_gb`: Die Größe der Dateifreigabe in GB. `service_Level`: Der Name des Service-Levels: Standard, Premium, Premium-Tiering, Extreme oder Extreme-Tiering. `Protocol`: Das Protokoll für den Zugriff auf die Dateifreigabe (NFS, CIFS oder Multiprotokoll). `security_style`: Der Sicherheitsstil (Unix oder NTFS). `Export_Policy`: Die Exportrichtlinie der Dateifreigabe.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/filehares/{id}/` `snapshot/{Name}`
+| Sie können einen Snapshot einer Dateifreigabe erstellen.  a| 
+`id`: Die ID der Dateifreigabe. `Name`: Der Name des Snapshots.
+
+
+
+ a| 
+`POST`
+ a| 
+`/v2.1/filehares/{id}/` `Tags`
+| Sie können Tags für eine Dateifreigabe erstellen oder ersetzen. Fügen Sie die ID der Dateifreigabe und die Werte für die Tags im Format „Key:value Pair“ im Anfraentext hinzu.  a| 
+`id`: Die ID der Dateifreigabe.
+
+
+
+ a| 
+`PUT`
+ a| 
+`/v2.1/filehares/{id}`
+| Sie können jede Dateifreigabe basierend auf ihrer ID ändern. Fügen Sie die ID des Dateiservers und die Werte, die Sie im Anfraentext ändern möchten, wie z. B. Name, Protokoll, Snapshot-Richtlinie, Backup-Richtlinie und Tags hinzu.  a| 
+`id`: Die ID der Dateifreigabe. `Name`: Der Name der Dateifreigabe. `size_gb`: Die Größe der Dateifreigabe in GB. `service_Level`: Der Name des Service-Levels: Standard, Premium, Premium-Tiering, Extreme oder Extreme-Tiering. `Protocol`: Das Protokoll für den Zugriff auf die Dateifreigabe (NFS, CIFS oder Multiprotokoll). `Export_Policy`: Die Exportrichtlinie der Dateifreigabe.
+
+
+
+ a| 
+`DELETE`
+ a| 
+`/v2.1/filehares/{id}`
+| Sie können jede Dateifreigabe mit ihrer ID löschen.  a| 
+`id`: Die ID der Dateifreigabe.
+
+
+
+ a| 
+`DELETE`
+ a| 
+`/v2.1/filehares/{id}/` `snapshot/{Name}`
+| Sie können jeden Snapshot einer Dateifreigabe mit der ID der Dateifreigabe und dem Namen des Snapshots löschen.  a| 
+`id`: Die ID der Dateifreigabe. `Name`: Der Name des Snapshots.
+
+|===
+
+NOTE: Bei CIFS-Freigaben wird das Hinzufügen eines` `-`-Charakters zum Ende des Share-Pfads zu einer verborgenen Aktie, beispielsweise` pathtomyhiddenshare.

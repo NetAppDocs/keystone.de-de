@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+keywords: netapp, keystone, service, offering, 
+summary: Willkommen beim Keystone Dokumentationsportal. 
+---
+= Dokumentation für NetApp Keystone Flex Subscription
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+NetApp Keystone Flex-Abonnement ist Bestandteil des NetApp Keystone Serviceangebots. NetApp Keystone umfasst ein Portfolio an Alternativen für lokale Investitionskosten (On-Premises) für den Umstieg auf die Cloud. Dazu gehören NetApp Keystone Flex Pay und NetApp Keystone Flex Subscription Services.
+
+* *NetApp Keystone Flex Pay* - NetApp Keystone Flex Pay (Flex Pay) ist ein Portfolio flexibler finanzieller Alternativen, die traditionelle Finanzierung, Leasing und feste/variable Optionen umfassen, um die Anforderungen Ihrer Kunden an den Cashflow zu erfüllen.
+* *NetApp Keystone Flex Subscription* - NetApp Keystone Flex Subscription (Flex Subscription) ist ein ergebnibasierter Abonnementservice mit nutzungsbasierter Abrechnung, der ein Cloud-ähnliches On-Premises-Erlebnis bietet.
+
+
+image:nkfsosm_image1.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+== Flex-Abonnement
+
+Flex Subscription ist ein ergebnibasiertes, on-Premises-Servicemodell für Abonnements. Kunden profitieren von einer schnelleren Amortisierung, indem sie Hürden für das Management des unvorhersehbaren Kapazitätswachstums und die komplexen Beschaffungszyklen überwinden. Mit Flex Subscription können Kunden Wirtschaftlichkeit und Betrieb auf ihre Geschäftsprioritäten abstimmen.
+
+image:nkfsosm_image2.png["Fehler: Fehlendes Grafikbild"]
+
+Flex Subscription ist ein abonnementbasierter Service-Angebot, das Storage-Kapazität für vordefinierte Performance-Service Level für Block-, Datei- und Objektdatentypen bietet, die lokal implementiert und von NetApp, einem Partner oder dem Kunden bedient werden können. Zusätzlich zum Basis-Service von Flex Subscription können zusätzliche Services gegen Aufpreis ausgewählt werden. Diese Services sind in der folgenden Abbildung beschrieben.
+
+* *der Basic* Service für Datensicherung bietet NetApp SnapMirror und NetApp SnapVault Funktionen mit Standardeinstellungen.
+* *Data Protection Advanced* bietet einen Service mit SLAs von RPO=0 durch Nutzung der NetApp MetroCluster Funktionen.
+
+
+
+NOTE: Flex Subscription verwendet die SnapVault-Technologie für Backup-Vorgänge sowie SnapMirror für Disaster Recovery, um die Daten Remote zu replizieren. Es erfolgt kein automatischer Failover und Wiederherstellung von Applikationen.
+
+image:nkfsosm_image3.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+=== Vorteile von Flex Subscription
+
+Flex Subscription bietet die folgenden Vorteile:
+
+* IT-Mitarbeiter werden entlastet und können sich auf das Applikationsmanagement konzentrieren
+* Reduziert die Vorabinvestitionen
+* Kunden können ihre Anforderungen ohne Überprovisionierung erfüllen
+* Passt die Storage-Kosten an geschäftliche Anforderungen/Aktivitäten an
+* Vereinfacht die Infrastrukturbereitstellung durch Umgehung komplexer Beschaffungsprozesse im Unternehmen
+* Sichert Daten vor Ort
+* Ordnungsgemäße Kontrolle über Compliance, Performance und Sicherheit
+
+
+image:nkfsosm_image4.png["Fehler: Fehlendes Grafikbild"]

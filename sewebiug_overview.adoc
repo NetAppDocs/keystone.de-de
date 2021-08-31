@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_overview.html 
+keywords: netapp, service, engine, web, portal, 
+summary: Übersicht über das Web-Portal der NetApp Service Engine 
+---
+= Webschnittstelle der NetApp Service Engine
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Mit dem Webportal der NetApp Service Engine können Sie einen NetApp Keystone Flex Subscription Service (Flex Subscription) verwalten und überwachen. Das Portal besteht aus folgenden Komponenten:
+
+* Eine grafische Benutzeroberfläche (NetApp Service Engine Web Interface) zur Überwachung und einfachen Storage-Bereitstellung. Die Menüoptionen auf der Benutzeroberfläche (UI) sind basierend auf den Diensten und Abonnements des Mandanten und Untermandanten verfügbar.
+* REST-APIs für erweiterte Einrichtung und Storage-Management-Aktionen In diesem Leitfaden wird die Verwendung der NetApp Service Engine Web-Schnittstelle beschrieben. Funktionen, die nur über DIE REST-APIs verfügbar sind, werden in diesem Dokument nicht behandelt.
+
+
+Dieser Abschnitt beschreibt die Konzepte und Elemente der NetApp Service Engine.
+
+
+
+=== Wichtige Konzepte der NetApp Service Engine
+
+Die NetApp Service Engine unterstützt Regionen und Zonen. Eine Region repräsentiert ein Datacenter oder einen Standort, während eine Zone eine Storage-Untereinheit innerhalb der Region darstellt (technisch ein Cluster innerhalb eines Datacenters oder Standorts). Mehrere Zonen unterstützen Data Availability- und Datensicherungsfunktionen (DP).
+
+image:sewebiug_image1.png["Fehler: Fehlendes Grafikbild"]
+
+Eine einzelne NetApp Service Engine-Instanz kann einen oder mehrere Mandanten unterstützen. Die NetApp Service Engine verwendet die Konzepte von Mandanten und Untermandanten als hierarchische Einheiten, die den Storage-Service besitzen bzw. managen.
+
+Ein Mandant kann ein Kunde, Partner oder eine Rechnungseinheit sein. Ein Mandant besitzt das Abonnement (oder mehrere Abonnements) für den Flex Subscription Service.
+
+Ein Untermieter ist eine Einheit, die vollständig im Mieter ist. Er kann für die Rückzeige, für die Sicherheitstrennung usw. verwendet werden.
+
+Storage-Elemente werden pro Untermandant erstellt. Jeder Untermandant kann mehrere Storage-Elemente vom Typ und der Nummer enthalten, die für diesen Untermandant geeignet sind.
+
+Die NetApp Service Engine unterstützt folgende Storage-Typen:
+
+* Block-Storage in Block-Stores und Festplatten
+* File-Storage in File-Servern und File Shares
+* Objekt-Storage in Buckets
+* Cloud Volume Services für Google Cloud Platform und Azure NetApp Files
+
+
+
+
+=== Funktionsverfügbarkeit basierend auf Abonnements
+
+Basierend auf Ihrem Abonnement, Ihrer Mandantenfähigkeit und Ihrer Rolle im NetApp Service Engine-Betriebsmodell stehen Ihnen die Funktionen und Optionen (Bildschirme und Registerkarten) zur Verfügung. Informationen finden Sie unter Service-Provider und Kunden sowie in den Betriebsmodellen, Rollen und Verantwortlichkeiten.

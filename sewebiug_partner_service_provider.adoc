@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_partner_service_provider.html 
+keywords: netapp, service, engine, web, portal, partner, service provider 
+summary: NetApp Service Engine Partner, Service Provider-Funktionen 
+---
+= Rollen und Betriebsabläufe von Service-Providern und Kunden
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Abhängig von Ihrer Funktion als Service-Provider oder Partner (austauschbar) oder als Kunde oder Mandant (austauschbar) Administrator werden die Ansichten und Funktionen im Webportal der NetApp Service Engine bestimmt.
+
+
+
+== Aktivitäten, die Sie als Administrator des Service-Providers ausführen können
+
+Als Service-Provider-Administrator in einer mandantenfähigen Umgebung können Sie über die Web-UI der NetApp Service Engine die Funktionen für Provisionierung, Berichterstellung, Abrechnung und Management von Kunden mit eigenen Abonnements übernehmen. Sie können folgende Funktionen ausführen:
+
+* Sehen Sie sich den abonnierten und bereitgestellten Storage im Rahmen ihres Flex-Abonnementservices an.
++
+
+NOTE: Als Service bieten Sie Ihren Kunden mehr Kapazität als durch den Kauf von NetApp (Überzeichnung). Die Mandantenabonnements können sich über den aktuellen Zeitraum von Flex Subscription hinaus erstrecken. Allerdings wird zum Zeitpunkt der Erstellung eines Abonnements und in Dashboards/Berichten eine Warnung angezeigt.
+
+* Zonen, Regionen, Bereiche, ändern und löschen, Mandanten, Untermandanten und Benutzer:
+* Verwalten und Hosten mehrerer Mandanten innerhalb des Flex Subscription Service: Erstellen und managen Sie Mandantenabonnements und zeigen Sie Ihre eigenen Flex Subscription-Details an.
++
+
+NOTE: Die Mandanten-Abonnements können auf Grundlage der entsprechenden Zonen und Keystone Flex-Abonnements erstellt werden. Sie werden gemäß den Service-Levels erstellt, die im Rahmen der abonnierten Kapazität Ihres Flex Subscription bereitgestellt werden.
+
+* Erstellen von File Servern oder Block-Stores und Initialisieren von Block-, Datei- und Objekt-Storage, während Sie die Netzwerkanforderungen für die Bereitstellung jedes Storage-Typs für Ihre Mandanten kennen.
+* Auch Subnetze für Mandanten erstellen und managen
+* Zeigen Sie Dateifreigaben, Festplatten und Buckets an, die als Teil des Flex Subscription erstellt wurden. Erstellen und managen Sie auch Objekt-Storage-Gruppen und Benutzer.
+* Erstellen Sie Berichte für die Nutzung mit Ihrem NetApp Keystone-Flex-Abonnement, den Mandanten-Abonnements und der Nutzung für alle Mandanten für die Nutzung in den jeweiligen Rechnungs- und Bewertungssystemen.
+* Rechnungen und Berichte für alle Mandanten und Kunden sowie nur für den bereitgestellten oder abonnierten Storage anzeigen
+* Anzeige und Verwaltung von Service-Anfragen, die von Kunden innerhalb Ihres eigenen Service-Request-Tools (Partner/Service-Provider) gestellt werden (integriert mit OpsRamp/GSSC).
+
+
+
+
+== Aktivitäten, die Sie als Kunden-/Mandantenadministrator durchführen können
+
+Als Mandantenadministrator können Sie die Abonnementdetails Ihrer eigenen Mandantenfähigkeit anzeigen und administrative Aufgaben für Ihre Untermandanten ausführen. Sie können folgende Aktionen ausführen:
+
+* Sehen Sie sich den Speicher an, der als Teil Ihres Mandanten-Abonnementservice abonniert und bereitgestellt wurde.
+* Managen und Hosten mehrerer Untermandanten und Benutzer innerhalb des Mandanten-Abonnementservice.
+* Sie können Ihre Zonen, Regionen, Mandanten und Subnetze anzeigen.
+* Anzeigen von Dateiservern und Erstellen von Dateifreigaben, Festplatten und Buckets
+* Erstellen von Berichten für Mandanten und Untermandanten, um die Nutzungsdaten nur für den Storage anzuzeigen, der für ihre Mandanten und Untermandanten abonniert oder bereitgestellt wurde.
+* Service-Anfragen innerhalb des Service-Request-Tools des Service-Providers aufbringen und aktualisieren.
++
+
+NOTE: Für weitere Abonnements können Sie Ihr Service Request Tool verwenden.
+
+

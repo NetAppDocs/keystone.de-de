@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_service_request_process.html 
+keywords: netapp, keystone, service, request, process, 
+summary: Keystone Service-Request-Prozess 
+---
+= Service-Request-Prozess
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dieser Abschnitt beschreibt einen vereinfachten Prozessablauf für Serviceanfragen.
+
+Die folgende Abbildung zeigt den Ablauf als Diagramm, und in der nachstehenden Tabelle werden die Akteure, Aktionen und Status der Service-Anfrage als Ergebnis der Aktion beschrieben.
+
+image:sewebiug_image45.png["Fehler: Fehlendes Grafikbild"]
+
+|===
+|  | Wer | Aktion | Status der Anfrage in der NetApp Service Engine nach der Maßnahme | Benachrichtigung 
+
+
+| 1 | NetApp Service Engine | Erstellen Sie eine neue Serviceanfrage. | Neu | Automatische E-Mail-Bestätigung der Anfrage wurde erstellt 
+
+
+| 2 | NetApp GSSC | Bestätigen Sie die Anfrage. | Offen  a| 
+* Bestätigungs-E-Mail: GSSC
+* Automatische E-Mail-Anzeige des Status in Öffnen
+
+
+
+
+| 3 | NetApp GSSC | Triage und Zuordnung zum Fulfillment Engineer. | Offen | – 
+
+
+| 4 | NetApp GSSC | Überwachen und verfolgen Sie die Anfrage während des gesamten Prozesses zur Bearbeitung von Anfragen. | – | – 
+
+
+| 5 | NetApp Fulfillment Engineer | Überprüfen Sie die Anfrage. | Offen | – 
+
+
+| 6 | NetApp Fulfillment Engineer | Wenn zusätzliche Informationen erforderlich sind, senden Sie eine E-Mail an den Antragsteller, um weitere Informationen zu erhalten. | Ausstehend  a| 
+* Automatische E-Mail, die den Status „Ausstehend“ angibt.
+* Kommunizieren Sie per E-Mail, um zusätzliche Informationen anzufordern
+
+
+
+
+| 7 | Kunde | Bereitstellung weiterer Informationen: | Ausstehend | Kommunikation per E-Mail 
+
+
+| 8 |  | Wiederholen Sie die Schritte 6 und 7, bis genügend Informationen vorhanden sind, um die Anfrage bearbeiten zu können. | Ausstehend | Kommunizieren Sie per E-Mail, um zusätzliche Informationen anzufordern 
+
+
+| 9 | NetApp Fulfillment Engineer | Anforderung bearbeiten | Offen | Automatische E-Mail mit Statusanzeige „Offen“. 
+
+
+| 10 | NetApp Fulfillment Engineer | Lösen des Antrags und Erteilen von Kundenanfragen ist gelöst. | Behoben  a| 
+* E-Mail zum anfordern einer Bestätigung der Serviceanfrage wurde behoben
+* Automatische E-Mail, die den Status „gelöst“ anzeigt.
+
+
+
+
+| 11 | Kunde | Service-Anfrage beraten ist gelöst. | Behoben | E-Mail, um zu bestätigen, dass die Serviceanfrage gelöst wurde. 
+
+
+| 12 | Automatisch | Falls nach drei Tagen keine weiteren Maßnahmen erforderlich sind, wird die Serviceanfrage automatisch geschlossen. | Geschlossen | Automatische E-Mail, die den Status „geschlossen“ anzeigt. 
+|===

@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: nkfsfaq_service_offer_details.html 
+keywords: netapp, keystone, service, offer, details, 
+summary: Details zum Serviceangebot 
+---
+= Einzelheiten zum Angebot des Flex Subscription Service
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die folgenden Fragen geben Antworten auf Ihre häufigen Fragen zum NetApp Keystone Flex Subscription Service-Angebot.
+
+
+
+=== Was ist die zugesagt minimale Kapazität?
+
+Die fest zugesagt minimale Kapazität für ein NetApp Keystone Flex Subscription (Flex Subscription) beträgt 100 tib, pro Standort in einem oder mehreren Service-Tiers.
+
+
+
+=== Wie lang ist die typische Laufzeit eines Flex Subscription-Vertrags?
+
+Das Flex Abonnement bietet 36, 24 und 12 Monate an.
+
+
+
+=== Wie kann ich auf den Storage zugreifen?
+
+In einem von NetApp betriebenen (Standard) Modell sind die Storage Controller (ONTAP System Manager oder administrativer Zugriff auf die Systeme) Eigentum und werden von NetApp gemanagt. Sie können Ihren Storage nur über die UI und APIs der NetApp Service Engine überwachen und managen. In einer vom Kunden gemanagten (oder Lite) Implementierung, bei der die NetApp Service Engine UI und APIs hauptsächlich für Abrechnungsfunktionen verwendet werden, können Sie auf die Storage Controller wie Active IQ Unified Manager und ONTAP System Manager zugreifen und direkt auf ONTAP Cluster zugreifen.
+
+
+
+=== Wie verwalte ich den Service?
+
+Bei der NetApp Service Engine handelt es sich um das Orchestrierungs- und Management-Tool, mit dem Sie Storage bereitstellen und Berichte zur Service-Nutzung erhalten können.
+
+
+
+=== Wie kann ich die zugesagt Kapazität in einem Abonnement erhöhen?
+
+Sie können eine Anfrage für eine Kapazitätserweiterung über das NetApp Service Engine Management Tool oder über ihren NetApp Keystone Success Manager stellen.
+
+
+
+=== Verlängert das Erhöhen der Kapazität die Laufzeit?
+
+Alle Ergänzungen gelten für die bestehende Laufzeit, außer wenn der Antrag in den letzten 90 Tagen nach dem Abonnement erfolgt, wobei die Laufzeit für mindestens 12 Monate verlängert werden muss.
+
+
+
+=== Ist ein neues Abonnement flexibel mit einer neuen Jahreslaufzeit zu kommen?
+
+Ja, neue Abonnements können unabhängig von vorhandenen Abonnements neue Bedingungen haben.
+
+
+
+=== Können die Abonnementbedingungen des Mandanten über die Abonnementdauer des Partners hinaus gehen?
+
+Die Mandantenabonnements können über die aktuelle Flex Subscription-Laufzeit des Partners hinaus erweitert werden. Beim Erstellen von Abonnements und auch in Nutzungsberichten wird eine Warnung angezeigt.
+
+
+
+=== Kann ich mehrere Abonnements auf demselben ONTAP Cluster kombinieren?
+
+Nein, jedes Cluster ist einem bestimmten Abonnement zugewiesen.
+
+
+
+=== Wer führt Monitoring und Betrieb durch?
+
+NetApp ist für den NetApp-Service verantwortlich, die Infrastruktur Remote zu überwachen, sodass der Service gemäß den vereinbarten Erwartungen erbracht wird.
+
+Für den vom Partner durchgeführten Service ist der Partner für die Fernüberwachung der Infrastruktur verantwortlich, so dass der Service entsprechend den vereinbarten Erwartungen erbracht wird.
+
+Für den kundengesteuerten Service ist der Kunde verantwortlich für das Monitoring der Infrastruktur und bei etwaiger Probleme an NetApp.
+
+
+
+=== Was passiert, wenn ich den Dienst frühzeitig absage?
+
+Die Mindestleistung beträgt 12 Monate. Wenn Sie den Service frühzeitig stornieren, muss der Restwert im Voraus bezahlt werden.
+
+
+
+=== Gibt es die Möglichkeit, nach Abschluss der ersten Laufzeit in einen Kauf umzuwandeln?
+
+Nein Das Angebot enthält keine Option zum Umwandeln in einen Kauf. Zudem liegen bereits erworbene NetApp Produkte nicht im Umfang dieses Programms vor.
+
+
+
+=== Kann ich eine bestimmte Softwareversion anfordern?
+
+Nein NetApp Keystone hat die Softwareversion für den gesamten Kundenstamm standardisiert.
+
+
+
+=== Werde ich über Software-Upgrades informiert?
+
+Ja. Alle Wartungs-/Upgrade-Aktivitäten werden mit dem NetApp Keystone Success Manager kommuniziert und zu einem Zeitpunkt geplant, mit dem sich beide Seiten vereinbaren lassen.

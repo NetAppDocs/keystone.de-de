@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_a_subscribed_service.html 
+keywords: netapp, keystone, delete, cloud, service, 
+summary: Keystone löscht einen Cloud-Service 
+---
+= Löschen eines Cloud-Dienstes
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Mit dieser Methode kann ein CVS Abonnement vom Webportal der NetApp Service Engine gelöscht werden.
+
+
+
+=== Schritte
+
+. Wählen Sie im Menü * Cloud-Services* > *Cloud-Services* aus.
+. Suchen Sie den Cloud-Service in der Liste, und klicken Sie auf das Symbol Löschen.
+. Geben Sie im Dialogfeld Löschen bestätigen den Namen des zu löschenden Cloud-Dienstes ein.
+. Klicken Sie Auf *Bestätigen*.
+

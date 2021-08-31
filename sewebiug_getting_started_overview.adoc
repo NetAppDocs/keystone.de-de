@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_getting_started_overview.html 
+keywords: netapp, keystone, getting, started, overview, 
+summary: Keystone – erste Schritte – Übersicht 
+---
+= Überblick
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+In diesem Abschnitt werden die ersten Schritte mit dem NetApp Service Engine Portal beschrieben. Die Lösung umfasst:
+
+* Melden Sie sich bei der Webschnittstelle der NetApp Service Engine an:
++
+** Melden Sie sich mit einem Benutzernamen und einem Kennwort an
+** Melden Sie sich mit NetApp SSO an
+** Loggen Sie sich über die Webschnittstelle der NetApp Service Engine aus
+
+
+* Wählen Sie einen Mandanten aus
+* Übersicht über die Webschnittstelle der NetApp Service Engine
+

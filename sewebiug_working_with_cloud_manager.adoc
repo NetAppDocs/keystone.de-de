@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_working_with_cloud_manager.html 
+keywords: netapp, keystone, working, cloud, manager, 
+summary: Keystone arbeitet mit Cloud Manager 
+---
+= Zusammenarbeit mit Cloud Manager
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die NetApp Service Engine kann eine Verbindung zu NetApp Cloud Manager herstellen. In diesem Abschnitt wird beschrieben, wie ein NetApp Administratorbenutzer die folgenden Aufgaben durchführen kann:
+
+* Stellen Sie eine Verbindung zu Cloud Manager her
+* Den Status der Verbindung zu Cloud Manager anzeigen
+
+
+
+
+=== Stellen Sie eine Verbindung zu Cloud Manager her
+
+
+
+==== Bevor Sie beginnen
+
+Sie benötigen:
+
+* Die Endpunkt-URL der Cloud Manager API
+* Die Client-ID des Cloud Manager-SaaS-Service
+* Das Refresh-Token des Cloud Manager-SaaS-Service
+
+
+
+
+==== Schritte
+
+. Wählen Sie im Menü Administration > OCCM-Verbindung.
+. Geben Sie die OCCM-API-Endpunkt-URL an
+. Geben Sie die Client-ID ein.
+. Geben Sie das OCCM-Aktualisierungs-Token ein.
+. Klicken Sie Auf *Aktualisieren*.
+
+
+
+
+=== Den Status der Verbindung zu Cloud Manager anzeigen
+
+https://jira.ngage.netapp.com/browse/NSEKEY-1703["https://jira.ngage.netapp.com/browse/NSEKEY-1703"^]

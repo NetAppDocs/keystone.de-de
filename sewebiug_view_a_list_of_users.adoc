@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_view_a_list_of_users.html 
+keywords: netapp, keystone, view, list, users, 
+summary: Keystone zeigt eine Liste der Benutzer an 
+---
+= Zeigen Sie eine Liste der Benutzer an
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+In der Liste Benutzer wird eine Liste aller Benutzer in den Mandanten angezeigt, auf die der angemeldete Benutzer zugreifen kann. Um die Liste anzuzeigen, wählen Sie im Menü Administration > Benutzer.
+
+In der Liste werden einfache Informationen zu allen Benutzern angezeigt, z. B. Benutzername, vor- und Nachname, E-Mail-Adresse, primäre Mandantenfähigkeit und das erstellte Datum.
+
+Mit den Aktionssymbolen neben den einzelnen Benutzern können Sie den Benutzer ändern oder löschen.

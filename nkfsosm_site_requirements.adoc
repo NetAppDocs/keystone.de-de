@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_site_requirements.html 
+keywords: netapp, keystone, sire, requirements, 
+summary: Anforderungen für die Keystone-Website 
+---
+= Standortanforderungen
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Für die Aktivierung von NetApp Keystone Flex Subscription Services (Flex Subscription) in Ihrer Umgebung gelten diverse Anforderungen, z. B. Platz, Racks, PDUs, Strom, Und Kühlung nutzen. Später werden zusätzliche Netzwerk- und Sicherheitsanforderungen angesprochen.
+
+
+
+== Platzbedarf
+
+Grundfläche für das Hosting der Flex Subscription Infrastruktur (wird vom Kunden bereitgestellt). NetApp stellt die Gewichtsspezifikationen auf Basis der endgültigen Konfiguration bereit.
+
+
+
+== Racks
+
+Vier Postregale im kundengesteuerten Angebot (wird vom Kunden bereitgestellt). Beim NetApp Angebot können NetApp oder der Kunde die Racks je nach Anforderungen bereitstellen. NetApp bietet 42 enge Racks.
+
+
+
+== PDUs
+
+Sie sollten die Stromverteiler (PDUs) bereitstellen, die an zwei separate, geschützte Schaltkreise mit ausreichend C13-Steckdosen angeschlossen sind. Im kundengesteuerten Angebot sind in einigen Fällen C19-Steckdosen erforderlich. Beim NetApp Angebot können NetApp oder der Kunde die PDUs je nach Anforderungen bereitstellen.
+
+
+
+== Strom
+
+Sie sollten die erforderliche Stromversorgung angeben. NetApp stellt die Spezifikationen für die Stromversorgung auf Basis der Nennleistung von 200 V bereit (typisch A, max A, typisch W, max W, Netzkabel, Und Menge), basierend auf der endgültigen Konfiguration. Alle Komponenten verfügen über redundante Netzteile. NetApp stellt die Stromkabel im Schrank bereit.
+
+
+
+== Kühlung
+
+NetApp stellt basierend auf der endgültigen Konfiguration und den Anforderungen die Spezifikationen für die Kühlungsanforderungen (BTU, max BTU) bereit.
+
+
+
+== Netzwerkbetrieb
+
+Je nach Kundenanforderungen und den verwendeten Storage Controllern bietet NetApp am Standort des Kunden Konnektivität mit 10 GB, 40 GB und 100 GB.
+
+NetApp stellt nur die erforderlichen Transceiver für von NetApp zur Verfügung gestellte Flex Subscription Infrastructure-Geräte zur Verfügung. Sie sollten Transceiver für Kundengeräte und Kabel zu den von NetApp bereitgestellten Flex Subscription Infrastructure-Geräten bereitstellen.

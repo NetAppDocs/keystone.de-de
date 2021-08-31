@@ -1,0 +1,60 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_tenants_and_subtenants.html 
+keywords: netapp, keystone, managing, subtenants, 
+summary: Keystone managt Untermandanten 
+---
+= Management von Mandanten und Mandanten
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Mandanten und Untermandanten können über die NetApp Service Engine angezeigt und gemanagt werden. Diese ist durch NetApp Support für Service Provider/Partner und Mandanten eingerichtet. Die Region, Zone und das Abonnement sind bereits durch Support konfiguriert und stehen zur Verfügung, wenn Sie Mandanten und Untermandanten unter Ihrer Mandantenfähigkeit erstellen.
+
+
+
+== Mandanten
+
+Wenn Sie ein Partner-Administrator sind, können Sie einen Mandanten aus *VERWALTUNG* > *Mandanten* erstellen, ändern und löschen. Mandantenadministratoren können ihre jeweiligen Mandantenabonnements und -Untermandanten nur anzeigen. Auch für die Mandanten unter Ihrer Partnermandanten können Sie das Netzwerk definieren.
+
+
+
+=== Erstellen eines Mandanten
+
+Sie können einen Mandanten erstellen, wenn Sie ein Partner-Administrator sind. Sie können auch Netzwerke für jeden Mandanten erstellen und managen. Weitere Informationen zum Erstellen von Netzwerken finden Sie unter link:sewebiug_define_network_configurations.html["Netzwerkkonfigurationen mit Subnetzen definieren"].
+
+.Schritte
+. Klicken Sie Auf *Mieter Erstellen*.
+. Fügen Sie einen Namen und den Code hinzu. Der Code, der für den Mandanten steht, sollte innerhalb einer NetApp Service Engine Instanz eindeutig sein und aus Zeichen in Kleinschreibung bestehen.
+. Klicken Sie Auf *Erstellen*.
+
+
+
+NOTE: Sie können nur den Namen und die Beschreibung eines vorhandenen Mandanten ändern. Außerdem können Sie keinen Mandanten löschen, der ihm untergeordnete Mandanten oder Storage-Komponenten zugeordnet sind.
+
+
+
+== Untermieter
+
+Als Partner Admin oder Mandantenadministrator können Sie Submandanten anzeigen und managen.
+
+
+
+=== Erstellen eines Untermandanten
+
+Wenn Sie ein Partner-Administrator oder ein Mandantenadministrator sind, können Sie einen Untermandanten aus *ADMINISTRATION* > *submieters* erstellen, ändern und löschen. Sie können auch Netzwerke für jeden Untermandanten erstellen und verwalten.
+
+Weitere Informationen zum Erstellen von Netzwerken finden Sie unter link:sewebiug_define_network_configurations.html["Netzwerkkonfigurationen mit Subnetzen definieren"].
+
+.Schritte
+. Klicken Sie Auf *Untermieter Erstellen*.
+. Fügen Sie einen Namen und den Code hinzu. Der Code, der den Untermandanten darstellt, sollte innerhalb einer NetApp Service Engine Instanz eindeutig sein und aus Zeichen in Kleinschreibung bestehen.
+. Klicken Sie Auf *Erstellen*.
+
+
+
+NOTE: Sie können nur den Namen eines vorhandenen Submandanten ändern. Außerdem können Sie keinen Untermandanten löschen, dem Storage-Komponenten zugeordnet sind.

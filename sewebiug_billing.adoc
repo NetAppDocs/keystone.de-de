@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_billing.html 
+keywords: netapp, keystone, monthly charges, billing, flex subscription, flex utility, cloud services 
+summary: Rechnungsdaten anzeigen und herunterladen 
+---
+= Rechnung anzeigen
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können die monatlichen Gebühren für alle abonnierten Services auf Ihrem Keystone Flex Abonnement (Flex Subscription) anzeigen.
+
+Sie können die Rechnungsdaten für Ihre abonnierten NetApp Keystone Services für die vergangenen Monate anzeigen. Die Abrechnung mit der Burst-Kapazität für jeden Monat wird hervorgehoben.
+
+
+NOTE: Wenn eine Ihrer Abonnements jährlich in Rechnung gestellt wird, entspricht die Rechnung dem anteiligen Betrag anstatt dem tatsächlichen monatlichen Rechnungsbetrag.
+
+Sie können die Daten in der Tabelle nach Monat sortieren und die Liste aller Speicherabonnements für einen bestimmten Monat anzeigen.
+
+.Schritte
+. Wählen Sie im Menü die Option *VERWALTUNG* > *Abrechnung*.
++
+
+NOTE: Sie können auch auf den Pfeil in der oberen rechten Ecke des Widgets *Monatliche Gebühren* auf dem Dashboard oder auf einer beliebigen Leiste klicken, die einen Monat im Widget darstellt, um die Seite Abrechnung anzuzeigen. Alle Abonnements für den ausgewählten Monat werden angezeigt.
+
+. Wenn Sie den Mauszeiger auf die Leiste bewegen, die einen Monat darstellt, werden weitere Details angezeigt.
+. Wählen Sie einen beliebigen Monat aus, der in der Tabelle aufgeführt ist. In der Tabelle werden alle Abonnements für den Monat zusammen mit der zugehörigen Abrechnung angezeigt. Die Gebühren werden gemäß der verteilten Kapazität und der Burst-Nutzung aufgeteilt.
+

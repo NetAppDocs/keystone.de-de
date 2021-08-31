@@ -1,0 +1,107 @@
+---
+sidebar: sidebar 
+permalink: seapiref_reporting_apis.html 
+keywords: netapp, keystone, reporting, apis, 
+summary: Keystone Berichts-APIs 
+---
+= Reporting-APIs
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden zum Abrufen und Generieren von Berichten.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung 
+
+
+| `GET` | `/v2.1/Reports` | Alle Berichtliste abrufen. 
+
+
+| `POST` | `/v2.1/Reports/{filename}` | Rufen Sie einen Bericht ab. 
+|===
+
+
+=== Eine Liste von Berichten abrufen
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Liste von Berichten abzurufen.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `GET` | `/v2.1/Reports` | Rufen Sie alle verfügbaren Berichte für einen Mandanten ab. Berichte können nach Datumsbereich gefiltert werden.  a| 
+* `Tenant_id (String)`
+* `start(string)`: Berichte abrufen aktueller als das im Start angegebene Datum.
+* `end (string)`: Berichte abrufen, die älter sind als das am Ende angegebene Datum
+
+
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+none
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "filename": "string"
+      }
+    ]
+  }
+}
+....
+
+
+==== Abrufen eines Berichts nach Dateiname
+
+Verwenden Sie die Methode in der folgenden Tabelle, um einen Bericht abzurufen, der durch den Dateinamen gekennzeichnet ist.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `GET` | `/v2.1/Reports/{filename}` | Rufen Sie einen Bericht ab, der über den Dateinamen gekennzeichnet ist. | `filename (string)`: Der Name der Berichtsdatei. 
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+none
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "filename": "string"
+      }
+    ]
+  }
+}
+....

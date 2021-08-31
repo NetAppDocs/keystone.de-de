@@ -1,0 +1,270 @@
+---
+sidebar: sidebar 
+permalink: seapiref_@consumer@_administration_apis.html 
+keywords: netapp, keystone, consumer, administration, apis, 
+summary: Keystone (für Verbraucher) Administrations-APIs 
+---
+= (Verbraucher-)Administrations-APIs
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die (Verbraucher-)Administrations-APIs bestehen aus Methoden, mit denen Sie die folgenden Aufgaben ausführen können:
+
+* Melden Sie sich an, legen Sie ein Passwort fest und aktualisieren Sie ein Authentifizierungs-Token.
+* Jobs abrufen und Jobdetails anzeigen.
++
+Siehe link:seapiref_jobs.html#retrieve-jobs["Jobs abrufen"] Und .
+
+* Bereiche abrufen.
++
+Siehe link:seapiref_regions.html#retrieve-regions["Bereiche abrufen"] Und .
+
+* Abrufen von Service-Leveln:
++
+Siehe link:seapiref_service_levels.html#retrieve-service-levels["Abrufen Von Service-Leveln"] Und .
+
+* Arbeiten Sie mit Untermietern zusammen.
++
+Siehe:
+
++
+** link:seapiref_subtenants.html#retrieve-all-subtenants["Alle Untermandanten abrufen"]
+** link:seapiref_subtenants.html#retrieve-a-subtenant-by-id["Abrufen eines Submandanten nach ID"]
+** link:seapiref_subtenants.html#modify-a-subtenant-by-id["Ändern eines Submandanten"]
+** link:seapiref_subtenants.html#delete-a-subtenant-by-id["Löschen Sie einen Untermandanten nach ID"]
+
+
+* Arbeiten Sie mit Untermietern zusammen.
++
+Siehe:
+
++
+** link:seapiref_tenants.html#retrieve-all-tenants["Rufen Sie alle Mandanten ab"]
+** link:seapiref_tenants.html#retrieve-a-tenant-by-id["Einen Mandanten per ID abrufen"]
+** link:seapiref_tenants.html#create-a-tenant["Erstellen eines Mandanten"]
+** link:seapiref_tenants.html#modify-the-tenant["Ändern Sie den Mandanten"]
+** link:seapiref_tenants.html#delete-the-tenant["Löschen Sie den Mandanten"]
+
+
+* Abrufen von Benutzern.
++
+link:seapiref_users.html#retrieve-all-users["Rufen Sie alle Benutzer ab"], , und .
+
+* Zonen abrufen.
++
+Siehe link:seapiref_zones.html#retrieve-all-zones["Alle Zonen abrufen"] Und 
+
+
+
+Die folgende Tabelle enthält die in diesem Abschnitt dokumentierten Consumer-APIs.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung 
+
+
+| `POST` | `/v2.1/auth/password` | Legen Sie das Kennwort für einen Benutzer fest. 
+
+
+| `POST` | `/v2.1/auth/password` | Authentifizierung JWT aktualisieren. 
+
+
+| `POST` | `/v2.1/auth/sign` | Anmelden. 
+
+
+| `GET` | `/v2.1/auth/Regions` | Bereiche abrufen. 
+
+
+| `GET` | `/v2.1/auth/Regions/{Name}` | Bereiche nach Namen abrufen. 
+
+
+| `GET` | `/v2.1/auth/Zones` | Zonen abrufen. 
+
+
+| `GET` | `/v2.1/auth/Zones/{Name}` | Zonen nach Namen abrufen. 
+
+
+| `GET` | `/v2.1/Jobs/` | Jobs abrufen. 
+
+
+| `GET` | `/v2.1/Jobs/{id}` | Jobs nach ID abrufen. 
+|===
+
+
+=== Benutzerpasswort zurücksetzen
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um das Benutzerpasswort zurückzusetzen.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `POST` | `/v2.1/auth/password` | Setzen Sie das Passwort zurück. | Keine 
+|===
+Erforderliche Body-Attribute für Anforderung: `Benutzername` (Zeichenfolge), `New_password` (Zeichenfolge)
+
+*Beispiel des Körpers anfordern:*
+
+....
+{
+  "username": "MyName",
+  "old_password": "oldPassword",
+  "new_password": "newPassword"
+}
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5e61aa814559c20001df1a5f",
+          "username": "MyName",
+          "firstName": "MyFirstName",
+          "lastName": "MySurname",
+          "displayName": "CallMeMYF",
+          "email": "user@example.com",
+          "tenancies": [
+            {
+              "id": "5e5f1c4f253c820001877839",
+              "name": "MyTenant",
+              "code": "testtenantmh",
+              "role": "user"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik15TmFtZSIsImV4cCI6MTU4MzgxNjg3MX0.ZuRXjDPVtc2pH-e9wqgmszVKCBYS2PLqux2YwQ5uoAM"
+      }
+    ]
+  }
+}
+....
+
+
+=== Authentifizierungs-Token aktualisieren
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um das Authentifizierungs-Token zu aktualisieren.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `POST` | `/v2.1/auth/Refresh` | Aktualisieren Sie das Authentifizierungs-Token. | Keine 
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+none
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5d914547869caefed0f3a00c",
+          "username": "myusername",
+          "firstName": "myfirstname",
+          "lastName": "",
+          "displayName": "Myfirstname Mysurname",
+          "email": "",
+          "tenancies": [
+            {
+              "id": "5d914499869caefed0f39eee",
+              "name": "MyOrg",
+              "code": "myorg",
+              "role": "admin"
+            },
+            {
+              "id": "5d9417aa869caefed0f7b4f9",
+              "name": "ABCsafe",
+              "code": "abcsafe",
+              "role": "admin"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImVsbGlvdCIsImV4cCI6MTU4MzgxNzA2N30.FdKD3QhPoNdWdbMfZ0bzCMTHluIt6HNP311F482K9AY"
+      }
+    ]
+  }
+}
+....
+
+
+=== Anmelden
+
+Melden Sie sich mit der in der folgenden Tabelle aufgeführten Methode an.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `POST` | `/v2.1/auth/sign` | Melden Sie sich als Benutzer an. | Keine 
+|===
+Erforderliche Body-Attribute für Anforderung: `Benutzername` (Zeichenfolge), `New_password` (Zeichenfolge)
+
+*Beispiel des Körpers anfordern:*
+
+....
+{
+  "username": "MyName",
+  "password": "newPassword"
+}
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "Authentication succeeeded.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "user": {
+          "id": "5e61aa814559c20001df1a5f",
+          "username": "MyName",
+          "firstName": "MyFirstName",
+          "lastName": "MySurname",
+          "displayName": "CallMeMYF",
+          "email": "user@example.com",
+          "tenancies": [
+            {
+              "id": "5e5f1c4f253c820001877839",
+              "name": "MyTenant",
+              "code": "testtenantmh",
+              "role": "user"
+            }
+          ]
+        },
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik15TmFtZSIsImV4cCI6MTU4MzgxNzQwMH0._u_UyYrzg_RewF-9ClIGoKQhfZYWrixZYBrsj1kh1hI"
+      }
+    ]
+  }
+}
+....

@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_data_protection.html 
+keywords: netapp, keystone, data, protection, 
+summary: Datensicherung 
+---
+= Datensicherung
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Der NetApp Keystone Flex Subscription (Flex Subscription)-Datensicherungsservice kann Ihre Daten sichern und bei Bedarf wiederherstellen. Folgende Datensicherungsservices stehen zur Verfügung:
+
+* Snapshots von Festplatten und Shares
+* Backups von Festplatten und Shares (erfordert im Rahmen des Abonnements den Datenschutz-Service)
+* Disaster Recovery für Festplatten und Freigaben (als Teil des Abonnements ist der Datensicherungsservice erforderlich)
+
+
+
+NOTE: Backup- und Disaster Recovery-Services sind als Add-on-Services verfügbar, während Snapshot als Teil des Basis-Storage-Service verfügbar ist.
+
+|===
+|  | Snapshots in einzelnen Regionen (als Teil des Basis-Storage-Service verfügbar) | Backup in mehreren Regionen (Add-on für Datensicherung) | Disaster Recovery für mehrere Regionen (Add-on für Datensicherung) 
+
+
+| Anwendungsfall | Minimierung des Risikos bei der Löschung von Benutzer- oder Applikationsdaten, nicht bei Datenverlusten oder -Ausfällen der Infrastruktur | Verringerung des Risikos eines vollständigen Datenverlusts auf dem primären Volume aufgrund von Infrastrukturausfällen oder -Ausfällen | Mindern Sie das Risiko eines vollständigen Datenverlusts auf dem primären Volume aufgrund von Infrastrukturausfällen oder Ausfällen mit einer Recovery-Zeitvorgabe 
+
+
+| Richtlinie | Stündlich, täglich, wöchentlich und monatlich | Anzahl der zu behaltenden Backups basierend auf stündlichen, täglichen, wöchentlichen und monatlichen Snapshots | 1 Stunde, 4 Stunden und täglich 
+
+
+| Topologie | Nur Quelle | Backup | Asynchrones Replizierungsziel 
+
+
+| Service-Level der Zielreplikation^1^ | k. A. | Standard | Wie beim primären Storage 
+|===
+^1^zusätzliche Speicherkapazität, die abonniert werden muss
+
+
+NOTE: Ein Abonnement eines Basis-Flex-Abonnementservices führt nicht automatisch zu einer Sicherung Ihrer Daten. Sie sollten die zusätzlichen Datensicherungsservices abonnieren und Ihr System für Daten-Backup und Disaster Recovery Services konfigurieren. Wenn Ihr Storage-System nicht durch Flex Subscription Services gemanagt wird, kann NetApp dennoch die Daten auf Ihrem Storage-System schützen und bei der Anbindung an Ihre Flex Subscription Services helfen. NetApp ist jedoch nicht für Backup-Fehler verantwortlich.

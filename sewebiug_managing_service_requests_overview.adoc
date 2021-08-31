@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_service_requests_overview.html 
+keywords: netapp, keystone, managing, service, requests, overview, 
+summary: Keystone Managen von Service-Anfragen – Übersicht 
+---
+= Überblick
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Geben Sie eine Serviceanfrage für:
+
+* Backup-Wiederherstellung
+* Disaster-Recovery-Failover
+* Ein technisches Problem mit der NetApp Service Engine
+* Alle anderen Probleme, die in dieser Liste nicht behandelt werden. Dieser Abschnitt beschreibt Folgendes:
+* So richten Sie eine Serviceanfrage ein
+* Verfolgen einer Service-Anfrage
+* Der Service-Request-Prozess
+

@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_performance.html 
+keywords: netapp, keystone, performance, 
+summary: Keystone Flex Abonnement-Performance 
+---
+= Performance Service Level
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone Flex Subscription (Flex Subscription) bietet Kapazität nach vordefinierten Performance-Werten.
+
+Jedes Performance-Service-Level wird durch seine I/O-Dichte definiert. Dies ist das Verhältnis von Performance (Input/Output Operations per Second [IOPS]) und verwendeter Storage (tib an gespeicherten Daten), d. h. IOPS/tib.
+
+Jedes von den Flex-Abonnement-Services gemanagte Volume ist mit einem Service-Level für die Performance verknüpft. Alle I/O-Vorgänge und der gesamte auf dem jeweiligen Volume verwendete Storage werden in die E/A-Dichteberechnung des Volumes berücksichtigt.
+
+Die folgende Abbildung zeigt die Performance-Service-Level.
+
+image:nkfsosm_image5.png["Fehler: Fehlendes Grafikbild"]
+
+Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte während der letzten Woche. Die Spitzen-Performance wird in einem stündlichen Zeitintervall festgelegt. Berichte zur I/O-Dichte nach Volumen werden monatlich erstellt, um die Einhaltung der jeweiligen Service-Level zu beurteilen.

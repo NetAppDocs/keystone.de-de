@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: seapiref_authorization_and_authentication.html 
+keywords: netapp, keystone, authorization, authentication, 
+summary: Keystone Autorisierung und Authentifizierung 
+---
+= Autorisierung und Authentifizierung
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Auf die NetApp Service Engine REST API kann jeder Webbrowser oder jede Programmierplattform zugegriffen werden, um HTTP-Anfragen zu stellen. Die NetApp Service Engine unterstützt einen grundlegenden HTTP-Authentifizierungsmechanismus sowie die Authentifizierung von Java Web Token (JWT)-Inhaberauthentifizierung. Bevor Sie eine API aufrufen, müssen Sie einen Benutzer authentifizieren.
+
+
+
+=== HTTP-Statuscodes
+
+Bei Ausführung der APIs oder bei der Fehlerbehebung sollten Sie die verschiedenen HTTP-Statuscodes und Fehlercodes kennen, die von den NetApp Service Engine APIs verwendet werden.
+
+In der folgenden Tabelle sind die Fehlercodes für die Authentifizierung aufgeführt.
+
+|===
+| HTTP-Statuscode | Statuscode-Titel | Beschreibung 
+
+
+| 200 | OK | Wird bei der erfolgreichen Ausführung von synchronen API-Aufrufen zurückgegeben. 
+
+
+| 201 | Erstellt | Erstellung neuer Ressourcen durch synchrone Anrufe, wie z. B. Konfiguration von Active Directory. 
+
+
+| 202 | Akzeptiert | Wird bei der erfolgreichen Ausführung von asynchronen Aufrufen für Bereitstellungsfunktionen zurückgegeben, z. B. Erstellen von LUNs und File Shares. 
+
+
+| 400 | Ungültige Anforderung | Zeigt Fehler bei der Eingabevalidierung an. Der Benutzer muss die Eingaben korrigieren, z. B. gültige Schlüssel in einem Anforderungskörper. 
+
+
+| 401 | Nicht Autorisierte Anforderung | Sie sind nicht berechtigt, die Ressource/Unbefugte anzuzeigen. 
+
+
+| 403 | Anfrage Verweigert | Der Zugriff auf die Ressource, die Sie erreichen wollten, ist verboten. 
+
+
+| 404 | Ressource Nicht Gefunden | Die Ressource, die Sie erreichen wollten, wurde nicht gefunden. 
+
+
+| 405 | Methode Nicht Zulässig | Methode nicht zulässig. 
+
+
+| 412 | Voraussetzung Fehlgeschlagen | Eine oder mehrere Voraussetzungen wurden nicht erfüllt. 
+
+
+| 500 | Interner Serverfehler | Interner Serverfehler. Fehler beim Abrufen einer Antwort vom Server. Dieser interne Serverfehler ist möglicherweise permanent oder nicht permanent. Wenn Sie z. B. EINEN GET- oder GET-Vorgang ausführen und diesen Fehler erhalten, wird empfohlen, diesen Vorgang für mindestens fünf Wiederholungen zu wiederholen. Wenn es sich um einen permanenten Fehler handelt, ist der zurückgegebene Statuscode weiterhin 500. Wenn der Vorgang erfolgreich ist, wird der zurückgegebene Statuscode 200 zurückgegeben. 
+|===
+
+
+=== Empfehlungen für die Verwendung der APIs
+
+Bei Verwendung der APIs sollten bestimmte empfohlene Methoden befolgt werden:
+
+* Stellen Sie bei einer gültigen Ausführung sicher, dass alle Inhaltstypen der Antwortantwort das folgende Format haben:
++
+....
+application/json
+....
+* Beim Aktualisieren von Array-Werten müssen Sie den gesamten String von Werten aktualisieren. Sie können einem Array keine Werte anhängen. Sie können nur ein vorhandenes Array ersetzen.
+* Vermeiden Sie das Abfragen von Objekten, indem Sie eine Kombination aus Platzhalter (`*`) und Rohr (``) des Filterbedieners verwenden. Es kann eine falsche Anzahl von Objekten abrufen.
+

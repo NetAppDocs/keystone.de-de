@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_user_details.html 
+keywords: netapp, keystone, modify, user, details, 
+summary: Keystone – Benutzerdetails ändern 
+---
+= Benutzerdetails ändern
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Verwenden Sie diese Methode, um die Angaben eines Benutzers zu ändern. Ihre Vorteile:
+
+* Ändern Sie den Vornamen, den Nachnamen und den Anzeigenamen des Benutzers.
+* Hinzufügen oder Entfernen von Tenancies, auf die der Benutzer Zugriff hat.
+* Ändern Sie die Rolle des Benutzers in jeder dieser Mandanten, auf die der Benutzer Zugriff hat.
+
+
+.Schritte
+. Wählen Sie *VERWALTUNG > Benutzer*.
+. Suchen Sie den Benutzer in der Liste, und klicken Sie auf das Symbol Bearbeiten.
+. Nehmen Sie im Dialogfeld Benutzer bearbeiten die gewünschten Änderungen vor.
+. Um die Rolle des Benutzers in einer Mandanten zu ändern, suchen Sie in der Liste Mandanten die Mandanten und wählen Sie die neue Rolle aus.
+. Um dem Benutzer Zugriff auf eine andere Mandantenfähigkeit zu gewähren, klicken Sie auf *Mandantenfähigkeit hinzufügen* und wählen Sie in den neuen Eingabefeldern den Mandanten und die Rolle des Benutzers in dieser Umgebung aus.
+. Um den Zugriff für den Benutzer auf eine Mandanten zu entfernen, suchen Sie in der Liste Mandanten die Mandanten und wählen Sie das Symbol Löschen aus.
+. Klicken Sie Auf *Aktualisieren*.
+

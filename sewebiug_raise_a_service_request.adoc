@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_raise_a_service_request.html 
+keywords: netapp, keystone, raise, service, request, NetApp GSSC, tenant support 
+summary: Keystone macht eine Serviceanfrage 
+---
+= Eine Serviceanfrage stellen
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Auf dem Bildschirm Service-Anfragen können Sie neue Service-Anfragen von Ihrem eigenen Support-Team oder NetApp GSSC beantworten.
+
+Sie können die Zusammenfassung der letzten Service-Anfragen, sortiert nach Priorität und Erstellungszeit, im Widget *Service Requests* auf dem Dashboard anzeigen. Sie können auch den Bildschirm „Service Requests“ aufrufen, um die Details aller in Ihrer Umgebung aufgeworfenen Serviceanfragen anzuzeigen.
+
+Befolgen Sie zum Erstellen einer neuen Serviceanforderung diesen Vorgang.
+
+.Schritte
+. Wählen Sie im Menü *SUPPORT > Service Requests* und klicken Sie auf *Neue Serviceanfrage*.
+. Wählen Sie auf der Seite Neue Serviceanfrage die Kategorie und Priorität für die Anfrage aus, und klicken Sie dann auf *Weiter*.
+. Die Felder auf dem Bildschirm Details ändern sich je nach der von Ihnen ausgewählten Kategorie. Geben Sie die erforderlichen Angaben ein. Klicken Sie Auf *Weiter*.
+. Prüfen Sie die Anfragedetails. Wenn Sie etwas korrigieren möchten, verwenden Sie die Schaltfläche Zurück, um zur vorherigen Seite zurückzukehren und die Details zu korrigieren. Wenn alle Angaben korrekt sind, klicken Sie auf *Absenden*.
+. Die Service-Anforderung wird erstellt und im Bildschirm Service-Anfragen aufgelistet. Eine neu geöffnete Serviceanforderung hat einen Status von `Neu`.
+
+
+Eine E-Mail wird an den Anforderer gesendet, der angibt, dass die Anforderung erstellt wurde. Die E-Mail wird an die für den anfragenden NetApp Service Engine-Benutzer registrierte E-Mail-Adresse gesendet.

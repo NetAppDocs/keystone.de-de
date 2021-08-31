@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_dashboard.html 
+keywords: netapp, keystone, view, dashboard, capacity utilization, monthly charges, alerts, service request 
+summary: Dashboard-Ansicht 
+---
+= Zeigen Sie Das Flex Subscription Dashboard An
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Das Dashboard bietet einen schnellen Überblick über Ihre NetApp Keystone Storage-Abonnements. Sie zeigt Informationen zur verwendeten Kapazität, zur Abrechnung der Nutzung sowie zu aktuellen Warnmeldungen und Service-Anfragen an.
+
+Das Dashboard zeigt wichtige Informationen über die folgenden Widgets an. Durch diese können Sie eine detaillierte Analyse durchführen:
+
+* *Kapazitätsauslastung:* zeigt Ihre Kapazitätsauslastung für abonnierte Services an, z. B. Keystone Flex Subscription, Keystone Flex Utility und Cloud Services. Wenn Sie die Maus über die Balkendiagramme bewegen, wird die Aufschlüsselung der verwendeten Kapazität angezeigt. Sie können die zuviel- und verbrauchten Kapazitäten sowie die Kapazität in Burst anzeigen und feststellen, ob Sie Ihren Abonnements mehr Kapazität hinzufügen müssen. Klicken Sie auf das Balkendiagramm, um alle Abonnements für Ihren abonnierten Service in einem neuen Popup-Fenster anzuzeigen. Wenn Sie in diesem Popup-Fenster auf die Abonnementdiagramme klicken, werden die Kapazitäten ermittelt, die pro Service-Level genutzt werden. Sie können die genutzte Kapazität auch für Ihre zusätzlichen Services, wie z. B. Datensicherung oder erweiterte Sicherung, anzeigen, falls zutreffend.
+* *Monatliche Gebühren (Abrechnung):* zeigt die aggregierten monatlichen Gebühren für alle Ihre Abonnements an. Sie können die Rechnungsdetails für die letzten drei Monate anzeigen. Wenn Sie den Cursor über das Diagramm bewegen, können Sie die Kosten, die nach der geteilten und Burst-Nutzung aufgeteilt werden, anzeigen. Wenn Sie über mehrere Abonnements für einen abonnierten Dienst verfügen, wird die Abonnementliste auf dem Bildschirm Abrechnung angezeigt, wenn Sie auf die Balkenübersicht für einen Monat klicken. Weitere Informationen zur Abrechnung finden Sie unter link:sewebiug_billing.html["Rechnung anzeigen"].
+* *Alerts:* zeigt die Zusammenfassung der letzten Warnungen an, wie z. B. Status, Meldung und Zeitpunkt der Erstellung. Weitere Informationen zu Warnmeldungen finden Sie unter link:sewebiug_alerts.html["Erstellen und Managen von Warnmeldungen"].
+* *Service Requests:* zeigt die Zusammenfassung der letzten Service Requests an, sortiert nach Priorität und Zeitpunkt ihrer Erstellung. Weitere Informationen zu Serviceanfragen finden Sie unter link:sewebiug_raise_a_service_request.html["Eine Serviceanfrage stellen"].
+
+
+image:sewebiug_image9_dashboard1.png["NSE Dashboard-1"]
+
+image:sewebiug_image9_dashboard2.png["NSE Dashboard-2"]
+
+
+
+== Dashboard-Ansicht für einen Service Provider mit Mandantenfähigkeit
+
+Als Partneradministrator in einer mandantenfähigen Umgebung bietet das Dashboard einen allgemeinen Überblick über alle Ihre abonnierten Services für NetApp Keystone. Die Widget-Daten zur Kapazitätsauslastung und Abrechnung stellen unter anderem Ihre Abonnement- und Abrechnungsbeziehung mit NetApp dar.
+
+Sie können die Kapazitätsauslastung auch für jeden Mandanten anzeigen, indem Sie oben rechts einen bestimmten Mandanten auswählen. Die Daten im Widget zur Kapazitätsauslastung stellen die Datennutzung des ausgewählten Mandanten dar, während die Daten in allen anderen Widgets konstant bleiben und Ihre Speicherabonnements darstellen.
+
+
+
+== Dashboard-Ansicht für Mandanten in Mandantenfähigkeit
+
+Wenn Sie als Mandantenadministrator in einer mandantenfähigen Umgebung arbeiten, können Sie die Kapazitätsauslastung, aktuelle Warnmeldungen und Serviceanforderungen für die Mandantenfähigkeit anzeigen und durch die Widgets für weitere Details klicken. Wenden Sie sich an Ihren Dienstanbieter, um die Rechnungsdaten zu erfahren.

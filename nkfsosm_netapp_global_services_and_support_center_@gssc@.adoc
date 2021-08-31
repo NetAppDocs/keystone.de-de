@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_netapp_global_services_and_support_center_@gssc@.html 
+keywords: netapp, keystone, global, services, support, center, gssc, 
+summary: NetApp Global Services und Support Center (GSSC) 
+---
+= Flex Subscription Services Operations
+
+
+[role="lead"]
+NetApp Keystone Flex Abonnementservices werden unter Ausnutzung des NetApp Global Services and Support Center (GSSC), des NetApp Keystone Success Managers und des NetApp Keystone Service Delivery Managers erbracht.
+
+
+
+== NetApp Global Services und Support Center (GSSC)
+
+NetApp bietet NetApp Keystone Kunden Remote operative Services. Diese Services umfassen Betriebsdisziplinen, die zu Storage-Management-Aktivitäten gehören, darunter Asset- und Konfigurations-Management, Kapazitäts- und Performance-Management, Änderungsmanagement, Ereignis-, Vorfall- und Problemmanagement, Bearbeitung von Service-Anfragen und Berichterstellung. NetApp demonstriert bei Bedarf die nötige Kontrolle und belegt Belege.
+
+
+
+== Kontakt für weitere Informationen und Support
+
+Das NetApp Global Services and Support Center (GSSC) Team unterstützt in erster Linie die Services für NetApp Keystone Flex Subscription Kunden.
+
+Ein Ticket direkt über das NetApp Service Engine Portal (*Support > Service Requests*) mit den entsprechenden Details der Problemstellung anheben.
+
+Mithilfe der folgenden Informationen können Sie sich auch an das Support-Team wenden.
+
+* Global Service-Kontakte:https://www.netapp.com/us/contact-us/support.aspx[]
+* Falls Sie über einen offenen Fall/ein Ticket verfügen, der eskaliert werden muss, senden Sie bitte eine E-Mail an eine der folgenden Adressen: Keystone.services@netapp.com Keystone.escalations@netapp.com
+* NetApp nutzt OpsRamp, eine Cloud-basierte Remote-Gateway-Lösung, um proaktiv die NetApp Keystone-Umgebung zu Fehlerbehebungszwecken zu überwachen und eine Verbindung herzustellen. Informationen zu OpsRamp finden Sie unter https://www.opsramp.com/#[].
+
+
+
+NOTE: In einem von Partnern betriebenen Modell werden die Service-Requests des Mandanten und Untermieters dem Service Desk des Partners zugeordnet. Das Support-Tool des Partners kann mit OpsRamp- und GSSC-Applikationen integriert werden. Es werden nur L3-Probleme über GSSC an NetApp eskaliert.
+
+Sehen Sie sich die folgenden Dokumente und/oder Websites an, um mehr über die in diesem Dokument beschriebenen Informationen zu erfahren:
+
+* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* NetApp Produktdokumentationhttps://docs.netapp.com["https://docs.netapp.com"^]
+

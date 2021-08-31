@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: rn_known_issues.html 
+keywords: netapp, keystone, release notes, known issues 
+summary: Bekannte Probleme in der NetApp Service Engine 
+---
+= Bekannte Probleme in der NetApp Service Engine
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die folgenden bekannten Probleme wurden in der NetApp Service Engine gemeldet. Diese Probleme können auftreten, wenn Sie Ihren Storage als Teil Ihres Flex Subscription bereitstellen oder verwenden.
+
+[cols="3*"]
+|===
+| Bekanntes Problem | Beschreibung | Behelfslösung 
+
+
+| Einschränkungen bei der synchronen Datensicherung | Beim sekundären Partner eines MetroCluster Clusters sind die VLANs, IPspaces und Broadcast-Domänen nicht definiert. Dieses Problem kann sich auf die Wiederherstellung von Daten aus der Replikatzone auswirken. | Senden Sie eine Service-Anfrage an GSSC, um eine manuelle Netzwerkkonfiguration auf dem Partner-Cluster durchzuführen. Die Netzwerkkonfiguration kann im Voraus vorgenommen werden, wenn die Netzwerkkomponenten (VLAN, IPspace und Broadcast Domains) bekannt sind. 
+
+
+| Einschränkungen beim Deaktivieren und Löschen von Volumes, die für die Disaster Recovery aktiviert sind | Wenn sich zwei oder mehr Volumes in einer Storage-VM befinden, die für die Disaster Recovery aktiviert sind, kann die Disaster Recovery nicht für File Shares oder Festplatten deaktiviert werden. | Eine Service-Anfrage an GSSC richten, um das Problem zu lösen. 
+
+
+| Einschränkungen beim Löschen von File-Servern und Block-Stores, für die Disaster Recovery aktiviert ist | Beim Löschen eines Disaster Recovery-aktivierten Blockspeichers oder einer Dateifreigabe kann der Fehler fehlschlagen, da Peering aufgrund eines Timeout nicht entfernt wird. | Das Löschen ist fehlgeschlagen und wird über OpsRamp Ticket benachrichtigt. 
+
+
+| Einschränkungen für lange laufende Jobs, die in den Status „Queued“ versetzt werden. | Wenn Jobs längere Zeit laufen, werden sie in den Status „Queued“ versetzt. Zur Identifizierung des Problems ist ein Support Ticket erforderlich. | Eine Service-Anfrage an GSSC richten, um das Problem zu lösen. 
+
+
+| Einschränkung beim Erstellen mehrerer Snapshots | Wenn mehrere Snapshots zur Erstellung ausgelöst werden, zeigt die Webseite zunächst nur den letzten erstellten Snapshot an. | Auto Job nimmt die anderen Snapshots innerhalb von 15 Minuten auf. 
+
+
+| Disaster Recovery-fähige Dateiserver auf den sekundären Controllern werden nicht gelöscht. | Alle primären Volumes und Replikationsbeziehungen werden entfernt. Das Disaster-Recovery-Objekt wird jedoch nicht gelöscht. Dieses Objekt verbraucht keine Kapazität und kein Netzwerk. | Es gibt keine Behelfslösung für dieses Problem. 
+
+
+| Einschränkung bei der Deaktivierung von Backup auf Volumes | Eine Service-Anfrage an GSSC richten, um das Problem zu lösen. | Es gibt keine Behelfslösung für dieses Problem. 
+
+
+| Einschränkung beim Löschen von Netzwerknetzen | Kunden können keine Netzwerknetze löschen. | Eine Service-Anfrage an GSSC richten, um das Problem zu lösen. 
+
+
+| Einschränkung beim Löschen von VLANs mithilfe der API | Das Löschen eines VLANs, das ein mit ihm verbundener Subnetz hat, hinterlässt eine leere Subnetz-Stub in der UI. | Eine Service-Anfrage an GSSC richten, um das Problem zu lösen. 
+
+
+| Einschränkung beim Importieren von Storage-VMs mit nicht standardmäßigen Subnetzes | Storage-VMs (Storage Virtual Machines, auch SVMs genannt), die außerhalb der NetApp Service Engine erstellt wurden, können aufgrund eines nicht standardmäßigen Subnetzes nicht betriebsbereit sein. Die Storage-VMs werden mit dem Status `Kontakted Support` importiert. | Eine Service-Anfrage an GSSC richten, um das Problem zu lösen. 
+
+
+| Berichte zu Kapazität und Abrechnung können in von NetApp gemanagten Umgebungen ungenau sein | In einer von NetApp gemanagten Umgebung können sich die über die UI generierten Kapazitäts- und Abrechnungsberichte möglicherweise auf Grund fehlender LUN-Größenmetriken und Service-Level für Backup-Volumes auswirken. | Eine Service-Anfrage an GSSC richten, um das Problem zu lösen. 
+|===

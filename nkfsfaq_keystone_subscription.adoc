@@ -1,0 +1,142 @@
+---
+sidebar: sidebar 
+permalink: nkfsfaq_keystone_subscription.html 
+keywords: netapp, keystone, subscription, subscriptions, 
+summary: NetApp Keystone-Abonnement 
+---
+= NetApp Keystone Flex Abonnement-FAQ
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die folgenden Fragen geben Antworten auf Ihre häufigen Fragen zu NetApp Keystone Flex Subscription Services.
+
+
+
+=== Was wird im Rahmen des NetApp Keystone Flex Subscription angeboten?
+
+NetApp Keystone Flex Subscription (Flex Subscription) ist ein abonnementbasiertes Serviceangebot für Block-, Datei- und Objektdatenservices, die vor Ort implementiert und von NetApp, einem Partner oder Kunden bedient werden können.
+
+
+
+=== Welche Storage-Service-Angebote werden im Rahmen des Flex Subscription bereitgestellt?
+
+Die folgende Übersicht zeigt die Service Level-Angebote für die Storage-Performance.
+
+image:nkfsosm_image5.png["Flex Subscription Performance Service-Level"]
+
+
+
+=== Welche Add-on-Services werden unterstützt?
+
+Erweiterte Datensicherung (Backup und Disaster Recovery) und Hybrid Cloud Tiering mit FabricPool sind zusätzliche Services, die gegen Aufpreis ausgewählt werden können.
+
+
+
+=== Welche Service-Level garantiert NetApp diesen Service?
+
+In einem von NetApp betriebenen Szenario garantiert NetApp Keystone IOPS/tib für den bereitgestellten Storage und die Latenz für die einzelnen Service-Level.
+
+
+
+=== Was bedeutet Flex Subscription?
+
+Flex Subscription kann einem einzelnen Standort oder einem einzelnen Datacenter zugeordnet werden und aus verschiedenen Performance-Service-Leveln bestehen.
+
+
+
+=== Welche Vorteile bietet das extreme Tiering und das Premium-Tiering Performance?
+
+Das Tiering wird in den Leistungsstufen extreme Tiers und Premium-Tiering aktiviert, wodurch Sie den Platzbedarf für Storage und die damit verbundenen Kosten reduzieren können. NetApp geht davon aus, dass 25 % Ihrer Daten „heiß“ sind, die restlichen 75 % weniger häufig genutzt oder selten genutzt werden, und verschieben sie in „Cold Storage“. Darüber hinaus können Sie anhand von Nutzungsberichten überprüfen, um die Häufigkeit des Zugriffs auf Daten zu ermitteln und basierend auf den Informationen Tiering-Services zu ermöglichen.
+
+
+
+=== Können Partner mehr Kapazität verkaufen, als sie NetApp gekauft haben?
+
+Mandantenabonnements sind nicht von der Kapazität beschränkt, die der Partner erworben hat. Partner können mehr Kapazität verkaufen, als sie NetApp ihren Kunden gekauft haben. Die Kapazität, die über der erworbenen Kapazität liegt, wird als Überzeichnung bezeichnet.
+
+
+
+=== Werden APIs zur Integration in Kunden-Tools bereitgestellt?
+
+Ja, es stehen RESTful APIs zur Verfügung, die sich in Ihre eigenen Applikationen integrieren lassen. Navigieren Sie zu *SUPPORT> API-Dokumentation*, um die API-Dokumentation für Flex Subscription-Dienste anzuzeigen. Weitere Informationen finden Sie im link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Keystone Flex Abonnement-API-Leitfaden"].
+
+
+
+=== Was ist Burst-Kapazität?
+
+Sie können den Bedarf um bis zu 20 % über der zugesagt Kapazität erhöhen und reduzieren. Die Burst-Kapazitätsnutzung wird täglich gemessen und nur bei Verwendung abgerechnet. Wenn beispielsweise die engagierte Kapazität 100 tib beträgt, können Sie einen Burst bis zu 120 tib festlegen.
+
+
+
+=== Wird für die Verwendung von Burst eine Prämie berechnet?
+
+Der Burst-Kapazitätsbedarf wird für bis zu 20 % der fest zugesagt Kapazität mit dem gleichen Satz wie für die geplante Kapazität in Rechnung gestellt. Für jede Nutzung, die über 20 % der zugesagt Kapazität liegt, wird eine Prämie in Höhe von 50 % in Rechnung gestellt.
+
+
+
+=== Welche Vorteile bietet die Burst-Kapazität?
+
+Burst-Kapazität bietet Ihnen die Flexibilität, Storage nach Bedarf zu nutzen und sie langfristig zu binden.
+
+
+
+=== Wie werden Mandanten Burst-Kapazitäten zugewiesen?
+
+Burst-Kapazitäten werden Partnern zugewiesen, die sie ihren Kunden entsprechend ihren Anforderungen weiterzuweisen.
+
+
+
+=== Wo kann ich die Auslastung der zugesagt und Burst-Kapazität erkennen?
+
+Die NetApp Service Engine verfügt über integrierte Dashboards zur Meldung der verbrauchten Kapazität auf zugesagt.
+
+
+
+=== Wird es Benachrichtigungen geben, wenn ich einen bestimmten Prozentsatz der zugesagt Kapazitätsnutzung erreiche?
+
+Ja, die Managementtools bieten über das Dashboard der NetApp Service Engine Benachrichtigungen zur Kapazitätsauslastung.
+
+
+
+=== Wie kann ich die Flex Subscription-Nutzung anzeigen?
+
+Die NetApp Service Engine stellt eine Dashboard-Ansicht bereit, die alle Services enthält, die abonniert wurden und über die Menge der Nutzung informiert ist. Details zur NetApp Service Engine finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["Hier"].
+
+
+
+=== Wie melde ich Probleme mit dem Service?
+
+NetApp Keystone-Support ist über folgende Kanäle erreichbar:
+
+* Support-E-Mail: Mailto:keystone.services@netapp.com[keystone.services@netapp.com^]
+* Eskalations-E-Mail: Mailto:keystone.escalations@netapp.com[keystone.escalations@netapp.com^]
+
+
+
+
+=== Kann ich neue Storage-Services bestellen?
+
+Ja, neuer Storage-Service oder die Erweiterung auf Storage-Service kann über das Portal der NetApp Service Engine angefordert werden. Die Anfrage wird vom NetApp Keystone Operations Team bearbeitet, bevor sie zur Verwendung zur Verfügung gestellt wird.
+
+
+
+=== Steigen die Storage-Verpflichtungen sofort ein?
+
+Je nach gewünschter Kapazität wird bestimmt, ob die Kapazität bereits bereitgestellt ist oder ob zusätzliche Ausstattung geliefert und installiert werden muss.
+
+
+
+=== Können Workloads zwischen den Tiers verschoben werden?
+
+Ja, Workloads können zwischen den Tiers verschoben werden, sofern der Benutzer die Tier abonniert hat, in die der Workload verschoben wird. Wir empfehlen jedoch nicht den Wechsel von einer höheren Ebene zu einer niedrigeren Ebene, da dies zu einer Verschlechterung der Performance führen kann. Um diesen Prozess zu erreichen, müssen Sie lediglich die Dateifreigabe bearbeiten und die Service-Level-Einstellung ändern.
+
+
+
+=== Welche Softwareversion (z. B. ONTAP) wird standardmäßig installiert?
+
+Je nach abonnierten Service-Tiers (z. B. ONTAP mit Datei- und Block-Services, SANtricity für Block und StorageGRID für Objekt) installiert das Support-Team das neueste stabile Release ohne Sicherheits- oder Funktionsprobleme.

@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_keystone_service_capacity_definitions.html 
+keywords: netapp, keystone, service, capacity, definitions, 
+summary: Keystone Service-Kapazitätsdefinitionen 
+---
+= Kapazitätsdefinitionen für Flex Subscription Service
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die Servicekapazitäten des NetApp Keystone Flex Subscription (Flex Subscription) umfassen:
+
+* *logische Kapazität.* Daten, die von einem Kunden in die Flex Subscription-Infrastruktur gespeichert werden:
++
+** Alle Flex Subscription-Kapazitäten beziehen sich auf eine logische Kapazität.
++
+Wenn beispielsweise eine 1 tib Datei auf der Flex Subscription Infrastruktur gespeichert ist, muss mindestens 1 tib Kapazität erworben werden.
+
+
+
+* *engagierte Kapazität.* die minimale logische Kapazität wird monatlich für die Dauer der Laufzeit in Rechnung gestellt:
++
+** Die Kapazität ist jedem Performance-Level zugeordnet.
+** Die zugewiesene Kapazität kann während der Laufzeit nicht verringert werden.
+** Auch engagierte Kapazität und zusätzliche Performance können während der Laufzeit hinzugefügt werden.
+
+
+* *Burst-Kapazität.* logische Kapazität, überzuviel Kapazität:
++
+** Die Flex Subscription Services bieten 20 % mehr Kapazität als die zustehende Kapazität.
+** Burst-Kapazität kann flexibel genutzt werden und wird auf täglicher, durchschnittlicher Verbrauch berechnet.
+** Burst-Kapazität wird auf bis zu 20 % mit derselben Rate für die engagierte Kapazität berechnet.
+** Burst-Kapazität über 20 % der Verpflichtung wird mit einem Premiumsatz berechnet. Wenden Sie sich an den Support für alle zusätzlichen Burst-Anforderungen über 20 %.
+
+
+* *verbrauchte/bereitgestellte Kapazität.* Summe aller konfigurierten Volume-Größen:
++
+** Kapazität wird bereitgestellt durch die Erstellung, Änderung, Löschung oder das potenzielle automatische Wachstum von Volumes.
+** Umfasst Snapshots und Klone.
+** Die Menge der im Rahmen der bereitgestellten Kapazität gespeicherten Daten wird nicht berücksichtigt.
+** Die Menge der tatsächlich auf die Festplatte geschriebenen Daten wird nicht berücksichtigt.
+
+
+* *Rechnungslegung.* Monatliche Rechnung = (engagierte Kapazität [tib] * engagierte Rate [€/tib]) + (tägliche durchschnittliche bereitgestellte Burst-Kapazität [tib] * Burst-Rate [€/tib]):
++
+** Die monatliche Abrechnung enthält eine Mindestgebühr, die sich auf die engagierte Kapazität basiert.
++
+Die monatliche Rechnung variiert über die Mindestgebühr basierend auf dem täglichen durchschnittlichen Burst-Kapazitätsverbrauch.
+
+
+
+

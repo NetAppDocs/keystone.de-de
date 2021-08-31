@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_subscriptions.html 
+keywords: netapp, keystone, managing, subscriptions, 
+summary: Keystone Verwalten von Abonnements 
+---
+= Verwalten von Abonnements
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Zum Verwalten von Abonnements gehören die Zuweisung von Service-Leveln zu Ihren NetApp Keystone Flex Subscription (Flex Subscription)- und Mandantenabonnementservices. Sie können zudem über die NetApp Service Engine-Schnittstelle Kapazitäten den Service-Leveln zuweisen und ändern.
+
+Die Flex-Abonnements aus dem Verhältnis zwischen Service-Providern/Partnern und NetApp und den Mandanten-Abonnements repräsentieren die Beziehung zwischen dem Service-Provider und seinen Mandanten und Untermandanten (Endkunden). Wenn NetApp Administratoren oder GSSC flexible Abonnementservices für Partner und Mandanten erstellt, bedeutet dies, dass die Storage-Zuweisung erreicht wurde. Sofern jedoch nicht die Service Levels erstellt und die entsprechende Kapazitätszuweisung vollständig ist, kann Storage nicht von Submandanten oder Endkunden genutzt werden. Partneradministratoren können Storage für ihre Flex Subscription und Mandanten-Abonnements managen. Mandantenadministratoren können sich die Abonnementdetails und Services von Mandanten nur für ihre eigene Mandantenfähigkeit ansehen.
+
+
+
+== Flex-Abonnement Managen (Keystone-Abonnements)
+
+Als Partner-Administrator können Sie Ihre Flex Subscription-Services über *ABONNEMENTS* > *Keystone-Abonnements* anzeigen und verwalten. *Keystone Abonnements* stehen für die Flex Subscription Services bereit, die von NetApp Administratoren für Partner entwickelt wurden. Partneradministratoren können ihre Flex Subscription Services anzeigen und Service-Anfragen erstellen, um:
+
+* Erhöhen Sie die Kapazität eines Abonnements
+* Hinzufügen eines Service zu einem Abonnement (Zuweisung von Service Levels und Kapazität)
+
+
+Service-Anfragen werden vom Support-Team eingegangen und adressiert.
+
+Außerdem können Sie in separaten Registerkarten die von Ihnen abonnierten Services für die Datensicherung und den erweiterten Schutz anzeigen und verwalten.
+
+
+
+=== Erhöhen Sie die Kapazität eines Abonnements
+
+Sie können die verplante Kapazität für alle abonnierten Service Level erhöhen, um die Wachstumsanforderungen zu erfüllen.
+
+.Schritte
+. Wählen Sie im Dropdown-Menü das Abonnement aus, für das Sie die Kapazität erhöhen möchten.
+. Klicken Sie auf *höhere Kapazität* für das gewünschte Servicelevel.
+. Geben Sie die erforderliche Kapazität (in tib) an.
+. Klicken Sie Auf *Bestätigen*.
+
+
+
+
+=== Fügen Sie einen Service zu einem Abonnement hinzu
+
+Sie können einen Service zu einem Abonnement hinzufügen. Zum Hinzufügen eines Service gehört auch die Zuweisung eines Service Levels zu Ihrem Abonnement und die Angabe der Kapazität für dasselbe Service Level.
+
+Ein Abonnement verfügt möglicherweise nur über eine der einzelnen Leistungsstufen. Wenn Ihr Abonnement beispielsweise bereits einen Extreme- und einen Standard-Service enthält, können Sie einen Premium- oder Block-Service hinzufügen.
+
+.Schritte
+. Wählen Sie im Dropdown-Menü das Abonnement aus, für das Sie die Kapazität erhöhen möchten.
+. Klicken Sie auf *Dienst hinzufügen*.
+. Wählen Sie den Abonnementdienst aus, den Sie hinzufügen möchten, und fügen Sie die Kapazität (in tib) hinzu, die Sie auf das Servicelevel festlegen möchten.
+. Klicken Sie Auf *Bestätigen*.
+
+
+
+NOTE: Wenn Sie extreme-Tiering- oder Premium-Tiering-Abonnements abonniert haben, können Sie das Performance-Level einer vorhandenen Subscription bearbeiten und ein Performance-Level mit Tiering-Aktivierung aktivieren. Sie können auch die Umstellung von einem Performance-Level mit Tiering-Aktivierung auf ein Performance-Niveau ohne Tiering entscheiden.
+
+
+
+== Verwalten von Mandanten-Abonnements
+
+Als Partner-Administrator können Sie Ihre Mandantenabonnements von *ABONNEMENTS* > *Tenant-Abonnements* erstellen, anzeigen und aktualisieren. Als Mandantenadministrator können Sie nur die Abonnements anzeigen.
+
+
+
+=== Erstellen Sie ein Mandantenabonnement
+
+Sie können neue Abonnements für Ihre Mandanten erstellen.
+
+.Schritte
+. Klicken Sie Auf *Neues Abonnement*.
+. Geben Sie die Region, die Zone, den Abonnementzeitraum, die Tarifpläne und weitere Details an. Das Mandantenabonnement wird basierend auf der ausgewählten Zone einem Keystone-Abonnement zugewiesen. Das liegt daran, dass jedes Keystone-Abonnement an eine Zone gebunden ist.
++
+
+NOTE: Sie können sich überschneidende Abonnements nicht erstellen. Das Startdatum sollte mindestens am nächsten Tag liegen, da die Abonnements einen Tag vor dem angegebenen Startdatum beginnen. Außerdem darf es nicht mehr als 30 Tage nach dem aktuellen Datum liegen.
+
+. Klicken Sie Auf *Erstellen*.
+
+
+Sie können keine Abonnements löschen. Sie können nur bestehende Mandantenabonnements bearbeiten und neue Service-Level hinzufügen, die verplante Kapazität für ein Service-Level erhöhen und Abonnements von Tags hinzufügen.

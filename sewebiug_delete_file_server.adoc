@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_file_server.html 
+keywords: netapp, keystone, delete, file, server, 
+summary: Keystone delete Dateiserver 
+---
+= Dateiserver löschen
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+*Achtung:* beim Löschen eines Dateiservers wird auch Folgendes gelöscht:
+
+* Alle mit dem Dateiserver verbundenen Backups
+* Alle mit dem DateiserverSie verknüpften Kopien für die Disaster Recovery Sie können das Löschen eines Servers nicht rückgängig machen.
+
+
+
+
+=== Bevor Sie beginnen
+
+Zum Löschen eines Dateiservers müssen Sie zuerst alle auf dem Server vorhandenen Freigaben löschen.
+
+
+
+=== Schritte
+
+. Sehen Sie sich die an link:sewebiug_view_servers.html#view-servers["Liste der File-Server"].
+. Suchen Sie den Server in der Liste, und klicken Sie auf das Symbol Löschen für diesen Server. (Einzelheiten zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Aktionen zur Listenansicht"]).
+. Geben Sie im Dialogfeld Löschen bestätigen den Namen des Dateiservers ein, um zu bestätigen, dass Sie den Dateiserver löschen möchten.
++
+image:sewebiug_image21.png["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie Auf *Bestätigen*. Dadurch wird ein Job zum Löschen des Servers erstellt.
+
+
+
+
+=== Nachdem Sie fertig sind
+
+* Beim Löschen von CIFS-fähigen Dateiservern bleibt das Objekt des Active Directory-Computers erhalten. Bitten Sie Ihren Active Directory-Administrator, das Computerobjekt für den gelöschten Dateiserver manuell aus Active Directory zu entfernen.
+* Löschserver wird als asynchroner Job ausgeführt. Ihre Vorteile:
++
+** Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
+** Überprüfen Sie nach Abschluss des Jobs, ob der Server aus der Liste Server entfernt wurde.
+
+
+

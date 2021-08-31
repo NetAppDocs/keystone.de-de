@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_subscribed_services_overview.html 
+keywords: netapp, keystone, managing, cloud, services, overview, 
+summary: Keystone Management Cloud-Services – Übersicht 
+---
+= Überblick
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bei einer Registrierung mit der NetApp Service Engine können Sie Ihre Cloud Volumes Services (CVS) über das Web-Portal der NetApp Service Engine managen. Hierzu zählen folgende Optionen:
+
+* Azure NetApp Dateien (ANF)
+* (Zukunft) Amazon Web Services (AWS)
+* Google Cloud Platform (GCP) (zukünftig)
++
+Vorhandene CVS Abonnements können nur bei der NetApp Service Engine registriert werden. Für ein neues Abonnement muss das CVS Abonnement auf normale Weise erstellt und dann mithilfe der Zugangsdaten für ein Abonnement bei der NetApp Service Engine registriert werden.
+
++
+In diesem Abschnitt wird das Management von Cloud Services beschrieben
+
+
+
+
+NOTE: Für das Management von Cloud-Services ist der Administrator des Kunden erforderlich.
+
+Ihre Vorteile:
+
+* Hier finden Sie eine Liste der Cloud-Services
+* Fügen Sie einen Cloud-Service hinzu
+* Ändern Sie die Details für Cloud-Services
+* Löschen eines Cloud-Dienstes
+

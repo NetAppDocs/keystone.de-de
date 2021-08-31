@@ -1,0 +1,256 @@
+---
+sidebar: sidebar 
+permalink: seapiref_regions.html 
+keywords: netapp, keystone, regions, 
+summary: Keystone Regionen 
+---
+= Regionen
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden zum Erstellen, Ändern und Löschen von Regionen. APIs zum Abrufen von Regionen finden Sie in den (Consumer) Administration APIs.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung 
+
+
+| `GET` | `/v2.1/Regions` | Regionen abrufen. 
+
+
+| `GET` | `/v2.1/Regions/{Name}` | Regionen nach Namen abrufen 
+
+
+| `POST` | `/v2.1/Regions` | Erstellen Sie eine neue Region. 
+
+
+| `PUT` | `/v2.1/Regions/{Name}` | Ändern Sie die Details einer Region. 
+
+
+| `DELETE` | `/v2.1/Regions/{Name}` | Region löschen. 
+|===
+
+
+=== Attribute für die Region
+
+In der folgenden Tabelle sind die Attribute der Region aufgeführt.
+
+|===
+| Attribut | Typ | Beschreibung 
+
+
+| `id` | Zeichenfolge | Die eindeutige Kennung der Region. 
+
+
+| `Name` | Zeichenfolge | Der Name der Region. 
+
+
+| `DBeschreibung` | Zeichenfolge | Die Beschreibung der Region. 
+|===
+
+
+=== Bereiche abrufen
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um alle Regionen oder eine Teilmenge von Regionen abzurufen.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `GET` | `/v2.1/Regions` | Bereiche abrufen. | `Offset` und `Limit` – siehe link:seapiref_netapp_service_engine_rest_apis.html#pagination>["Gemeinsame Paginierung"] 
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+none
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "returned_records": 1,
+    "total_records": 4,
+    "sort_by": "created",
+    "order_by": "desc",
+    "offset": 0,
+    "limit": 1,
+    "records": [
+      {
+        "id": "5e7bf44daab46c00014ce77f",
+        "name": "au-east8",
+        "description": "This is the new region description",
+        "zones": []
+      }
+    ]
+  }
+}
+....
+
+
+=== Region nach Namen abrufen
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Region nach Namen abzurufen.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `GET` | `/v2.1/Regions/{Name}` | Region nach Namen abrufen. | `Name (String)`: Der Name der Region. 
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+none
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "string",
+    "verbose_message": "string",
+    "code": "string"
+  },
+  "result": {
+    "returned_records": 1,
+    "records": [
+      {
+        "id": "5d2fb0fb4f47df00015274e3",
+        "name": "au-east1",
+        "description": "string",
+        "zones": [
+          "au-east1-a"
+        ]
+      }
+    ]
+  }
+}
+....
+
+
+=== Erstellen Sie eine Region
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Region zu erstellen.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `POST` | `/v2.1/Regions` | Erstellen Sie eine neue Region. | Keine 
+|===
+Erforderliche Body-Attribute für Anforderung: `Name`
+
+*Beispiel des Körpers anfordern:*
+
+....
+{
+  "name": "MyRegionName",
+  "description": "DescriptionOfMyRegion"
+}
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. New resource created.",
+    "verbose_message": "",
+    "code": 201
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e616f849b64790001fe9658",
+        "name": "MyRegionName",
+        "Description": "DescriptionOfMyRegion",
+        "user_id": "5bbee380a2df7a04d43acaee",
+        "created": "0001-01-01T00:00:00Z",
+        "tags": null
+      }
+    ]
+  }
+}
+....
+
+
+=== Region ändern
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Region zu ändern.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `PUT` | `/v2.1/Regions/{Name}` | Ändern Sie eine Region, die nach Namen benannt ist. Sie können den Namen und die Beschreibung der Region ändern. | `Name (String)`: Der Name der Region. 
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+{
+  "name": "MyRegionName",
+  "description": "NewDescriptionOfMyRegion"
+}
+....
+*Beispiel des Antwortkörpers:*
+
+....
+{
+  "status": {
+    "user_message": "Okay. Returned 1 record.",
+    "verbose_message": "",
+    "code": 200
+  },
+  "result": {
+    "total_records": 1,
+    "records": [
+      {
+        "id": "5e616f849b64790001fe9658",
+        "name": "MyRegionName",
+        "description": "NewDescriptionOfMyRegion",
+        "zones": []
+      }
+    ]
+  }
+}
+....
+
+
+=== Region löschen
+
+Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Löschen einer Region.
+
+|===
+| HTTP-Methode | Pfad | Beschreibung | Parameter 
+
+
+| `DELETE` | `/v2.1/Regions{Name}` | Löschen Sie eine einzelne Region, die nach Namen benannt ist. Alle Zonen innerhalb einer Region müssen zuerst gelöscht werden. | `Name (String)`: Der Name der Region. 
+|===
+Erforderliche Body-Attribute für Anforderung: `none`
+
+*Beispiel des Körpers anfordern:*
+
+....
+none
+....
+*Beispiel des Antwortkörpers:*
+
+....
+No content for succesful delete
+....

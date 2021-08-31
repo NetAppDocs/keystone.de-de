@@ -1,0 +1,135 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_a_new_file_share.html 
+keywords: netapp, keystone, create, new, file, share, 
+summary: Keystone erstellt eine neue Dateifreigabe 
+---
+= Erstellen Sie eine Dateifreigabe
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+In diesem Abschnitt wird beschrieben, wie Sie eine neue Freigabe erstellen, indem Sie die Teilendetails direkt angeben. Informationen zum Erstellen einer neuen Freigabe auf Grundlage eines Snapshots einer vorhandenen Freigabe finden Sie unter link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share["Erstellen Sie Share from Snapshot"].
+
+
+
+=== Bevor Sie beginnen
+
+* Auf einem Dateiserver wird eine Freigabe erstellt. Der Dateiserver muss sich im Betriebszustand befinden, bevor Sie eine neue Dateifreigabe erstellen können.
+* Um eine CIFS- oder NFS-Dateifreigabe zu erstellen, muss der Server für den jeweiligen Service aktiviert sein. Für Dateifreigaben mit mehreren Protokollen sollte der Server sowohl CIFS- als auch NFS-Services unterstützen.
+* Um asynchrone Disaster-Recovery-Optionen für die Freigabe zu aktivieren, müssen Sie den Share auf einem Server erstellen, auf dem die asynchrone Disaster Recovery aktiviert ist. Weitere Informationen finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Disaster Recovery"].
+* Um eine synchrone Disaster Recovery für eine Freigabe zu ermöglichen, erstellen Sie die Freigabe in einer Zone, die MetroCluster aktiviert ist.
+* Sie können eine Backup-Richtlinie definieren, um Backups der Dateifreigabe auf geplanter Basis zu erfassen. Weitere Informationen finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups["Backups"].
+* Sie können eine Snapshot-Richtlinie definieren, um Snapshots der Dateifreigabe auf einer geplanten Basis zu erfassen. Weitere Informationen finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["Snapshots"].
+
+
+
+
+=== Schritte
+
+. Gehen Sie zu *FILE SERVICES > Shares*.
+. Klicken Sie Auf *Freigabe Erstellen*.
+. Wählen Sie im Dialogfeld „Freigabe erstellen“ die Option Neue Freigabe erstellen aus.
++
+image:sewebiug_image22.png["Fehler: Fehlendes Grafikbild"]
+
++
+Die Seite Freigabe erstellen wird angezeigt.
+
+. Wählen Sie den Freigabetyp NFS, CIFS oder Multi-Protocol. Die Optionen werden basierend auf den von Ihrem Server unterstützten Diensten aktiviert.
+. Füllen Sie die folgenden Felder aus:
++
+|===
+| Feld | Beschreibung 
+
+
+| Name | Geben Sie den Freigabenamen ein. 
+
+
+| Freigabspfad | Geben Sie den Pfad für die Dateifreigabe ein. Wenn Sie CIFS Shares hinzufügen, wird das Hinzufügen eines €-Zeichens zum Ende des Share-Pfads zu einem versteckten Anteil (beispielsweise Pathtomyhiddenshare€). 
+
+
+| Region | Wählen Sie den Bereich aus, in dem sich die Freigabe befindet. 
+
+
+| Zone | Wählen Sie die Zone der Freigabe aus. 
+
+
+| File Server | Wählen Sie den Dateiserver aus, auf dem die Freigabe gehostet werden soll. Die Liste des Dateiservers hängt von der ausgewählten Region, Zone und Freigabetyp ab. 
+
+
+| Sicherheitsstil | Wählen Sie den für die Dateifreigabe zutreffenden Sicherheitsstil aus. Diese Liste wird basierend auf dem ausgewählten Freigabetyp automatisch ausgefüllt. 
+|===
+. Wählen Sie ein Leistungsniveau aus. Die IOPS- und Durchsatzbegrenzungen werden basierend auf dem ausgewählten Service-Level angezeigt.
++
+
+NOTE: Wählen Sie eine Option aus, um die Performance-Details für dieses Level anzuzeigen (wie zu Spitzenzeiten/erwartete IOPS/Durchsatz). Wählen Sie den Service Level aus, der Ihren Anforderungen am besten entspricht.
+
+. Geben Sie die Kapazität der Dateifreigabe an.
++
+
+NOTE: Die NetApp Service Engine zeigt eine Warnung an und der Kapazitätsbalken ändert ihre Farbe, wenn die angegebene Kapazität die verbrauchte Kapazität in einen Burst (oder noch mehr in den Burst setzt, wenn sie sich bereits im Burst befindet). Die Kapazitätsprüfung erfolgt für alle im Mandanten verfügbaren Abonnements.
+
+. Wenn auf dem zugrunde liegenden Dateiserver ein asynchrones Disaster Recovery aktiviert ist, wird die asynchrone Disaster-Recovery-Replizierung automatisch für die neue Freigabe aktiviert. Wenn Sie die Freigabe von der asynchronen Disaster-Recovery-Replikation ausschließen möchten, aktivieren Sie die Schaltfläche Asynchronous Disaster Recovery, damit sie deaktiviert ist.
+. Wenn die Freigabe in einer Zone erstellt wird, die MetroCluster-aktiviert ist, wird die Schaltfläche Synchronous Disaster Recovery automatisch aktiviert und kann nicht deaktiviert werden. Die Freigabe wird in die Zone repliziert, die im Bedienfeld unter dem Synchronous Disaster Recovery-Schalter angezeigt wird.
+. Wenn Snapshots für diese Dateifreigabe erforderlich sind:
++
+.. Schalten Sie ein, um die Snapshot-Richtlinie zu aktivieren und die Felder für Snapshot-Richtlinien anzuzeigen.
+.. Geben Sie an, wann die Snapshots erstellt werden sollen:
++
+*** *hourly.* Geben Sie an, welche Minute (der Stunde) der Snapshot erstellt werden soll und wie viele stündliche Snapshots gespeichert werden sollen.
+*** *Daily.* Geben Sie an, wann (Stunde und Minute) der Snapshot die Anzahl der täglichen Snapshots zu behalten. Wenn Sie mehrere Stunden angeben möchten, während der Snapshot täglich erstellt werden muss, können Sie die Werte der Stunden in einer durch Kommas getrennten Liste hinzufügen, z. B. 5, 10, 15 Und so weiter.
+*** *wöchentlich.* Geben Sie an, wann (Wochentag, Stunde und Minute) Snapshot erstellt werden soll und wie viele wöchentliche Snapshots gespeichert werden sollen.
+*** *monatlich.* Geben Sie an, wann (Tag des Monats, Stunde und Minute) Snapshot und die Anzahl der monatlichen Snapshots zu behalten.
+
+
+
+
+. So aktivieren Sie Backups für diese Dateifreigabe:
++
+.. Aktivieren Sie die Backup-Richtlinie und die Felder Backup-Richtlinie.
+.. Geben Sie den Backup-Bereich an.
+.. Geben Sie an, wie viele der einzelnen Backup-Typen gehalten werden sollen: Täglich, wöchentlich und/oder monatlich.
+
+
+. Geben Sie bei NFS- oder Multi-Protokoll-Freigaben die Exportrichtlinie an. Sie können mehrere Exportrichtlinien auf einer Freigabe anwenden. Dieser Abschnitt ist nur für NFS- und Multiprotokoll-Freigaben verfügbar.
++
+.. Fügen Sie die IPv4-Adresse (mit einer Subnetzmaske, die als Anzahl von Bits ausgedrückt wird) des Clients hinzu, auf den die Regel zutrifft.
+.. Geben Sie den Lese- und Schreibzugriff an, und ob der Client über Root-Zugriff (Superuser) verfügt.
+
+
+. Geben Sie bei CIFS- (SMB) oder Multiprotokoll-Freigaben die Access Control List (ACL) an, um den Benutzerzugriff zu beschränken. Dieser Abschnitt ist nur für CIFS- und Multiprotokoll-Freigaben verfügbar.
++
+.. Legen Sie den Windows-Benutzer oder die Windows-Gruppe basierend auf den Active Directory (AD)-Einstellungen fest, die zur ACL hinzugefügt werden sollen. Wenn Sie den Benutzernamen angeben, geben Sie die Domäne des Benutzers im Format `<Domain>\<username>` an. Der Standardwert ist `Everyone`.
+.. Geben Sie die Windows-Berechtigung an. Der Standardwert ist `Full control`. Wenn ein Benutzer Teil von zwei Gruppen ist, werden die Berechtigungen der Gruppe mit höheren Berechtigungen auf den Zugriff des Benutzers angewendet.
++
+
+NOTE: Der Benutzer- oder Gruppenname sollte dem Standard-AD-Format entsprechen. Wenn der eingegebene Benutzer oder die eingegebene Gruppe nicht mit dem auf ONTAP konfigurierten Benutzer oder der Benutzergruppe übereinstimmt, schlägt die ACL-Validierung während eines CIFS-Vorgangs fehl, selbst wenn die Dateifreigabe funktionsfähig ist.
+
+
+
+. Wenn Sie Tags (Schlüssel-Wert-Paare) zur Dateifreigabe hinzufügen möchten, geben Sie diese im Abschnitt Tags an.
+. Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Erstellen der Freigabe erstellt.
+
+
+
+
+=== Nachdem Sie fertig sind
+
+* Nur für CIFS-Freigaben: Um die Freigaben nach Hostnamen zur Verfügung zu stellen, muss der Domänenadministrator die DNS-Datensätze mit dem CIFS-Servernamen und der IP-Adresse aktualisieren. Andernfalls ist der Zugriff auf die Freigabe nur über die IP-Adresse möglich. Beispiel:
++
+** Verwenden Sie bei aktualisierten DNS-Datensätzen entweder den Hostnamen oder die IP, um auf die Freigabe zuzugreifen, z. B. file://hostname/share["\\hostname\Freigabe"^] Oder
+** Wenn keine DNS-Einträge aktualisiert werden, müssen Sie die IP-Adresse verwenden, um auf die Freigabe zuzugreifen, d. h. file://IP/share["\\IP\-Freigabe"^]
+
+
+* Freigabe erstellen wird als asynchroner Job ausgeführt. Ihre Vorteile:
++
+** Überprüfen Sie den Status des Jobs in der Jobliste.
+** Überprüfen Sie nach Abschluss des Jobs den Status der Freigabe in der Liste „Shares“.
+
+
+

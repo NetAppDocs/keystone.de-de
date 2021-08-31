@@ -1,0 +1,102 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_a_file_server.html 
+keywords: netapp, keystone, create, file, server, 
+summary: Keystone erstellt einen Dateiserver 
+---
+= Erstellen Sie einen Dateiserver
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Dateiserver gehören einem Untermandanten an und werden innerhalb einer Zone erstellt. Beim Erstellen eines Servers können Sie optional Folgendes ausführen:
+
+* Aktivieren Sie Disaster Recovery DP für den Server. Weitere Informationen zur Funktionsweise von Disaster Recovery in NetApp Service Engine finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Disaster Recovery"].
+* Aktivieren Sie es CIFS-aktiviert. Für CIFS-fähige Server:
++
+** Sie müssen den Active Directory-Benutzernamen, das Active Directory-Kennwort, die Domäne, die DNS-Server, den Servernamen und Optional kann die Organisationseinheit (OU) des Active Directory verwendet werden.
+** Die Active Directory-Anmeldeinformationen (Active Directory-Benutzername und Active Directory-Kennwort) müssen für einen Benutzer verwendet werden, der über die Berechtigung verfügt, einem Computer der Active Directory-Domäne beizutreten.
+** Wenn die OU-Struktur des Active Directory hierarchisch ist, wie in der Abbildung unten gezeigt, geben Sie die OUs von der untersten bis zum oberen Bereich an. In diesem Beispiel, um die OU von Melbourne anzugeben, stellen Sie `cifs_ou` als `„cifs_ou“ auf „ou=melbourne, ou=cifs“.`
+
+
+
+
+image:sewebiug_image20.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+=== Bevor Sie beginnen
+
+Stellen Sie sicher, dass Sie folgende Funktionen zum Erstellen des Servers haben:
+
+* Der Submandant, der den Server hostet.
+* Die Region und die Zone, in der der Server gehört.
+* Netzwerkdetails wie Subnetz und IP-Adresse (optional). Wenn Sie mit Ihrem Netzwerk nicht vertraut sind, fragen Sie bei Ihrer IT-Abteilung nach den entsprechenden Werten.
+* Um asynchrone Disaster Recovery auf dem Dateiserver zu ermöglichen, ist die Disaster-Recovery-Zone (die Zone, auf die der Dateiserver repliziert wird).
+
+
+
+
+=== Schritte
+
+. Sehen Sie sich die an link:sewebiug_view_servers.html#view-servers["Liste der File-Server"].
+. Klicken Sie Auf *Server Erstellen*.
+. Füllen Sie auf der Seite Server erstellen die folgenden Felder aus:
++
+|===
+| Feld | Beschreibung 
+
+
+| Untermandant | Wählen Sie den Untermandanten aus der Liste aus. 
+
+
+| Region | Wählen Sie die Region aus, in der sich der Server befindet. 
+
+
+| Zone | Wählen Sie die Zone aus, in der sich der Server befindet. 
+
+
+| Name | Geben Sie den Servernamen ein. 
+
+
+| Subnetz | Wählen Sie ein beliebiges vordefiniertes Subnetz aus der Liste aus. 
+
+
+| IP-Adresse | (Optional) Geben Sie eine IP-Adresse an. Wenn nicht angegeben, erhält der Server die nächste verfügbare IP-Adresse. 
+|===
+. Wählen Sie die Services aus:
++
+NFS ist standardmäßig aktiviert. Das verwendete NFS-Protokoll wird angezeigt.
+
++
+Wenn Sie einen CIFS-fähigen Dateiserver erstellen:
+
++
+.. Durch Umschalten der Schaltfläche CIFS aktiviert werden die Felder für CIFS angezeigt.
+.. Geben Sie den Active Directory-Benutzernamen, das Active Directory-Kennwort, die Domäne, die DNS-Server, den Servernamen und Optional kann die Active Directory-Organisationseinheit verwendet werden. Die Active Directory-Anmeldeinformationen müssen für einen Benutzer mit der Berechtigung zum Beitritt zu einem Computer zur Active Directory-Domäne verwendet werden.
+
+
+. So aktivieren Sie asynchrone Disaster Recovery-DP auf diesem Dateiserver:
++
+.. Aktivieren Sie die Schaltfläche „Asynchronous Disaster Recovery“.
+.. Wählen Sie die Disaster Recovery-Region und -Zone aus.
+.. Wählen Sie den Replikationszeitplan für die Disaster Recovery aus.
+
+
+. Wenn die synchrone Disaster Recovery-DP aktiviert ist, ist der Synchronous Disaster Recovery-Schalter aktiviert und kann nicht deaktiviert werden.
+. Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Erstellen des Servers erstellt.
+
+
+
+
+=== Nachdem Sie fertig sind
+
+Server erstellen wird als asynchroner Job ausgeführt. Ihre Vorteile:
+
+* Überprüfen Sie den Status des Jobs in der Jobliste.
+* Überprüfen Sie nach Abschluss des Jobs den Status des Servers in der Liste Server.
+

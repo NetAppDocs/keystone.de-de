@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_file_server.html 
+keywords: netapp, keystone, modify, file, server, 
+summary: Dateiserver ändern 
+---
+= Dateiserver ändern
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können die folgenden Änderungen an einem vorhandenen Server vornehmen:
+
+. Ändern Sie den Servernamen
+. Machen Sie den Server CIFS-aktiviert, und geben Sie den Active Directory-Benutzernamen und das Kennwort, die Active Directory-Domäne, den DNS-Server, den Servernamen und optional die Active Directory-Organisationseinheit an. Die Active Directory-Anmeldeinformationen müssen für einen Benutzer mit der Berechtigung zum Beitritt zu einem Computer zur Active Directory-Domäne verwendet werden.
+. Aktivieren Sie die asynchrone Disaster-Recovery-DP, indem Sie eine Region oder Zone angeben, in die der Server repliziert werden soll.
+
+
+
+NOTE: Wenn die asynchrone Disaster Recovery bereits aktiviert ist, kann sie nicht deaktiviert werden. Weitere Informationen finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Disaster Recovery"].
+
+
+
+=== Schritte
+
+. Sehen Sie sich die an link:sewebiug_view_servers.html#view-servers["Liste der File-Server"].
+. Suchen Sie den Server in der Liste, und klicken Sie auf das Symbol Bearbeiten für diesen Server. (Einzelheiten zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Aktionen zur Listenansicht"]).
+. Nehmen Sie ggf. Änderungen vor, siehe link:sewebiug_create_a_file_server.html["Erstellen Sie einen Dateiserver"] Für Feldbeschreibungen.
+. Klicken Sie Auf *Fertig*. Dadurch wird ein Job zum Ändern des Servers erstellt.
+
+
+
+
+=== Nachdem Sie fertig sind
+
+Änderungsserver wird als asynchroner Job ausgeführt. Ihre Vorteile:
+
+* Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
+* Überprüfen Sie nach Abschluss des Jobs den Status des Servers in der Liste Server.
+

@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_service_level_metrics_and_definitions.html 
+keywords: netapp, keystone, service, level, metrics, definitions, 
+summary: Keystone Service Level-Kennzahlen und Definitionen 
+---
+= Service Level-Kennzahlen und -Definitionen
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die folgenden Begriffe und Definitionen werden im NetApp Keystone Flex Subscription Service verwendet:
+
+* *gib, tib und PiB.* Messungen der Datenspeicherkapazität mit Basis von 1024 (1 gib = 1024^3^ Byte, 1 tib = 1024^4^ Byte und 1 PiB = 1024^5^ Byte).
+* *IOPS/tib.* die Protokollvorgänge pro Sekunde, die von der Applikation angefordert werden, geteilt durch die zugewiesene logische Größe des Volumes.
+* *Verfügbarkeit* wird als Prozentsatz der vom Service erfolgreich beantworteten I/O-Anfragen gemessen, geteilt durch die Gesamtzahl der E/A-Anfragen, die an der Serviceeingrenzung gemessen wurden, in einem bestimmten Monat, ohne geplante Service-Ausfallzeit oder Nichtverfügbarkeit der erforderlichen Einrichtungen, Netzwerk oder andere Services, die vom Kunden bereitgestellt werden sollen.
+* *Langlebigkeit* ist der Prozentsatz der Daten, auf die ohne Verlust der Treue zugegriffen wird, ohne kundenbedingte Löschung oder Beschädigung auszuschließen.
+* *Ziel-IOPS pro tib.* der garantierte IOPS für alle I/O-Anfragen an ein Volume, bevor der Ziel-IOPS pro tib-Schwellenwert erreicht wird. Die Performance auf dem Volume wird auf den ausgewählten IOPS pro tib begrenzt.
+
+
+
+NOTE: Die Ziel-IOPS pro tib-Performance-Metrik wird auf Grundlage der logischen verbrauchten Kapazität in tib berechnet.
+
+* *Latenz.* Zeit zur Verarbeitung einer I/O-Anfrage, die von einem Client erhalten wurde, gemessen an der Serviceeingrenzung (Storage-Controller-I/O-Port).
+

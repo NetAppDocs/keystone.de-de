@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_initialize_object_storage.html 
+keywords: netapp, keystone, initialize, object, storage, 
+summary: Keystone initialisiert den Objekt-Storage 
+---
+= Objektspeicher initialisieren
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Objekt-Storage muss initialisiert werden, bevor er verwendet werden kann.
+
+Wenn Sie versuchen, einen Speicher-Bucket auf Objekt-Storage zu erstellen, der noch nicht initialisiert wurde, wird die Eingabeaufforderung zum Initialisieren des Speichers angezeigt. Im folgenden Abschnitt wird der Vorgang beschrieben.
+
+
+
+=== Schritte
+
+. Sehen Sie sich die an link:sewebiug_view_buckets.html#view-buckets["Buckets-Liste"] Wählen Sie anschließend den Untermandanten aus, unter dem der Bucket erstellt werden soll.
+. Wenn der Objektspeicher für diesen Untermandanten nicht initialisiert wurde, wird die folgende Meldung angezeigt:
++
+image:sewebiug_image31.png["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie Auf *Objekt-Storage Initialisieren*.
+. Wählen Sie im Dialogfeld Objekt-Speicher initialisieren das Kontingent für den Objektspeicher aus und klicken Sie auf *Erstellen*.
++
+image:sewebiug_image32.png["Fehler: Fehlendes Grafikbild"]
+
+. Überprüfen Sie die Jobliste, um sicherzustellen, dass der Objektspeicher erfolgreich initialisiert wurde.
+

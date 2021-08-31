@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_delete_a_user.html 
+keywords: netapp, keystone, delete, user, 
+summary: Keystone löscht einen Benutzer 
+---
+= Löschen Sie einen Benutzer
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Verwenden Sie diese Methode, um einen Benutzer zu löschen.
+
+
+NOTE: Ein gelöschter Benutzer kann nicht wiederhergestellt werden.
+
+
+
+=== Schritte
+
+. Wählen Sie im Menü Administration > Users aus.
+. Suchen Sie den Benutzer in der Liste, und klicken Sie auf das Symbol Löschen.
+. Geben Sie im Dialogfeld Löschen bestätigen den Namen des zu löschenden Benutzers ein.
+. Klicken Sie Auf *Bestätigen*.
+

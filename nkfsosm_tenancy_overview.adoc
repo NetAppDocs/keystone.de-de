@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: nkfsosm_tenancy_overview.html 
+keywords: netapp, keystone, tenants, subtenants, hierarchy, tenancy 
+summary: NetApp Keystone Flex Subscription Tenancy Overview 
+---
+= Mandantenfähigkeit und Mandantenfähigkeit in Flex Subscription
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Keystone Flex Subscription (Flex Subscription) verwendet die Konzepte von *Tenant* und *subTenant* als hierarchische Einheiten mit logischen Speicherressourcen. Auch das Konzept der Mandantenfähigkeit wird unterstützt, wobei mehrere Mandanten an einen Partner oder Service Provider gebunden sind. Die Entitäten Partner und Service-Provider werden hier synonym verwendet.
+
+
+NOTE: Im Rahmen von Flex Subscription handelt es sich bei der einzelnen Mandanten um ein von NetApp betriebenes Modell, bei der Mandantenfähigkeit um ein vom Partner betriebenes Modell.
+
+Ein Mandant ist die primäre Rechnungseinheit, die in Flex Subscription definiert ist. Jeder Kunde, der in das Flex Subscription aufgenommen wird und ein Abonnement der Services beinhaltet, existiert als Flex-Abonnementmandant. Der Kunde stellt NetApp einen Kundennamen und/oder eine Kennung zur Verfügung, die zum Zweck des Onboarding von Mandanten und der Nachverfolgung von Abonnementdaten und Vertragsbedingungen erforderlich sind.
+
+In einer mandantenfähigen Umgebung ist ein Partner ein Mandant/Kunde von NetApp in einer Flex Subscription-Umgebung. Der Partner wiederum kann mehrere Mandanten oder Kunden übernehmen, die mit Endkunden/Untermietern verbunden sind. In diesem Modell sind Mandanten/Untermandanten Kunden der Service Provider und haben keine Abrechnungsbeziehung zu NetApp.
+
+Untermandanten von Flex Subscription befinden sich vollständig innerhalb eines übergeordneten Mandanten mit einer Many-to-One-Beziehung. Untermandanten ermöglichen die Trennung logischer Ressourcen innerhalb einer Mandanten und werden als Basis für die Showback-Berichterstattung verwendet. Alle Storage-Ressourcen (File-Services, Block-Storage und Objekt-Storage) gehören zu einer Untermandant.
+
+image:nkfsosm_image10.png[""]
+
+
+
+== Abonnementmodell in einer von NetApp betriebenen (Single-Tenant-Umgebung)
+
+* Ein Abonnement wird von einem NetApp Administrator oder GSSC für einen Mandanten und eine Zone erstellt.
+* Die Abonnementnamen werden von der Rechnungseinheit abgeleitet, für die der Mieter registriert ist.
+* Im Abonnement werden Start- und Vertragslaufzeit konfiguriert.
+* Für jede Mandantenzone kann nur ein aktives Abonnement vorhanden sein
+* Ein Abonnement kann mehrere Tarifpläne haben, und jeder Preisplan entspricht einem Service-Level.
+* Für jeden Preisplan ist eine bestimmte Kapazität je Service-Level vorgesehen.
+* Die folgenden Service Levels können enthalten:
++
+** Extrem
+** Tiering
+** Leistung
+** Performance Tiering
+** Wert
+** Datensicherung für jedes Service Level
+** Erweiterte Datensicherung für extreme Performance und Mehrwert
+** Storage-Objekte
+
+
+
+
+
+
+== Abonnementmodell in einer mandantenfähigen Umgebung
+
+* Service-Provider sind Flex Subscription-Kunden und haben Abonnements als Mandanten. Die Abonnements basieren auf folgenden Komponenten:
++
+** Verpflichtungen pro Service-Level und Zone
+** Wird auf der zugewiesenen Kapazität mit mindestens 100 tib geladen
+** Burst-Gebühren für 100–120 % der zugesagt Kapazität
+
+
+* NetApp berechnet den Provider monatlich im Rahmen der üblichen Mietbedingungen.
+* Damit ein Service-Level für Mandanten verfügbar ist, muss der Service-Provider oder Partner zunächst über ein Flex-Abonnement für das Service-Level verfügen.
+* Der Service-Provider erstellt Mandantenabonnements pro Service-Level, Zone und flexiblen Mindestwerte.
+* Service-Provider können ihren Mandanten mehr Kapazität verkaufen, als sie es von NetApp gekauft haben (Überzeichnung). Daher ist die von Mandanten genutzte Kapazität nicht durch die Kapazität begrenzt, die der Service-Provider abonniert hat.
+* Mandanten können Storage-Kapazitäten für ihren abonnierten Betrag nutzen, der als „Burst“ für Nutzungsberichte aufgeführt ist.
+* Mandanten-Nutzungsberichte stehen Partnern zur Verfügung, die sie täglich oder monatlich anzeigen können.
+* Mandanten können Abonnements für längere Zeit im Vergleich zum entsprechenden Flex Subscription erstellen. Während dieser Aktivität wird dem Endkunden jedoch eine Warnmeldung angezeigt.
+* Das Flex Abonnement für einen Partner wird von NetApp Administratoren oder GSSC konfiguriert. Das Management von Flex Subscription- und Mandantenabonnements wird von einem Benutzer mit der Rolle „Partner Admin“ durchgeführt.
+* Benutzer mit den Administratorrollen für Mandanten können nur das Mandantenabonnement anzeigen (nicht das Flex Subscription des Partners). Sie können das Abonnement aktualisieren, um Kapazität und Service Level zu ändern. Sie können Service-Anfragen für zusätzliche Abonnements aufwerfen.
+* Der Partner-Administrator kann ein weiteres Abonnement erstellen, entweder wenn das vorhandene Abonnement abgelaufen ist, oder für ein zukünftiges Datum, an dem das vorhandene Abonnement nicht mehr gültig ist. Das Startdatum für ein neues Abonnement muss größer oder gleich dem aktuellen Enddatum sein.
+

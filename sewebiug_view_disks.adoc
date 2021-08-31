@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_view_disks.html 
+keywords: netapp, keystone, view, buckets, 
+summary: Keystone Ansicht Festplatten 
+---
+= Zeigen Sie Festplatten an
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+In der Liste Festplatten werden die Laufwerke angezeigt, die zum ausgewählten Mandanten gehören. Um die Liste anzuzeigen, wählen Sie im Menü *BLOCKSPEICHER > Festplatten* aus.
+
+Die Festplatten, die bereits in Ihre bestehende Umgebung integriert sind und zu den in Ihrer NetApp Service Engine konfigurierten Storage VMs gehören, können auch auf diesem Bildschirm angezeigt und als Teil Ihrer NetApp Keystone Flex Subscription (Flex Subscription)-Services gemanagt werden. Die außerhalb der NetApp Service Engine bereitgestellten Festplatten werden regelmäßig importiert und auf dieser Seite mit entsprechenden Statuscodes aufgelistet.
+
+Wenn die importierten Festplatten sich in den akzeptablen Standards der NetApp Service Engine befinden, das heißt, wenn alle Parameter, die für die betriebsbereiten Festplatten erforderlich sind, verfügbar sind, werden sie mit dem Status als `Operational` importiert und direkt über die NetApp Service Engine gemanagt. Einige Festplatten liegen jedoch möglicherweise nicht im gleichen Standard wie die vorhandenen Festplatten bei der NetApp Service Engine. Nach dem Import werden diese Laufwerke mit dem Status `imported` oder `Non-Standard` kategorisiert. Informationen zum Status der Festplatte und zu den nötigen Schritten zum Betrieb finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["Objektstatus"]
+
+Zeigen Sie in der Liste Festplatten einfache Informationen an. Weitere Informationen zur Verwendung der Funktionen einer Liste finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Listenansicht"].
+
+* Festplattenname
+* Pfad zur Festplatte
+* Festplattengröße
+* Protokoll
+* Submandant, zu dem die Festplatte gehört
+* Zone, in der ein Laufwerk vorhanden ist
+* Betriebsstatus
+

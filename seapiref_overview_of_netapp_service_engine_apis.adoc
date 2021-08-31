@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: seapiref_overview_of_netapp_service_engine_apis.html 
+keywords: netapp, overview, service, engine, apis, 
+summary: Überblick über NetApp Service Engine APIs 
+---
+= Überblick über die NetApp Service Engine APIs
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die NetApp Service Engine umfasst einen Satz von APIs zum Management von Storage-Ressourcen auf den unterstützten Storage-Systemen über eine RESTful Web Service-Schnittstelle für eine beliebige Integration von Lösungen anderer Hersteller. Die APIs decken alle Funktionen ab, die durch die GUI unterstützt werden. NetApp stellt die API-Dokumentation zur Verfügung, aber der Kunde ist für die Integration in seine Applikationen verantwortlich.
+
+Diese NetApp Service Engine API-Referenzhandbuch enthält Informationen zu APIs und Beispielcodes. Mit den im Leitfaden enthaltenen Informationen können Sie RESTful Clients von NetApp Service Engine erstellen. Die APIs basieren auf dem Rest-Architekturstil (Representational State Transfer).
+
+
+
+=== Zielgruppe
+
+Dieser Leitfaden richtet sich an Entwickler, die Applikationen erstellen, die über REST-APIs mit der Software der NetApp Service Engine integriert werden können.
+
+Sie sollten diesen Leitfaden verwenden, wenn Sie den Storage-Provider, den NetApp ONTAP Cluster und Management-Administrations-APIs für das Storage Management verwenden möchten.
+
+
+
+=== Zugriff und Kategorien der NetApp Service Engine-API
+
+
+
+==== Bauen einer URL für den direkten Zugriff AUF REST-APIs
+
+Sie können direkt über eine Programmiersprache wie Python, C#, C++, JavaScript auf DIE REST-APIs zugreifen. Und so weiter. Um auf DIE REST-APIs im Format `https:// <hostname> /API` zuzugreifen, geben Sie den Host-Namen oder die IP-Adresse sowie die URL ein.
+
+
+
+==== Verbraucher- und Administrator-APIs
+
+In diesem Dokument werden die API-Beschreibungen in zwei Abschnitte unterteilt:
+
+* Consumer-APIs
+* Administrator-APIs
+
+
+
+
+=== Wichtige Konzepte der NetApp Service Engine
+
+NetApp Service Engine unterstützt die Konzepte von Regionen und Zonen, wie in der nachfolgenden Abbildung dargestellt. Eine Region repräsentiert ein Datacenter oder einen Standort, während eine Zone eine Storage-Untereinheit innerhalb der Region darstellt (technisch ein Cluster innerhalb eines Datacenters/Standorts). Mehrere Zonen unterstützen Data Availability- und Datensicherungsfunktionen (DP).
+
+image:seapiref_image1.png["Fehler: Fehlendes Grafikbild"]
+
+Eine einzelne NetApp Service Engine-Instanz kann einen oder mehrere Mandanten unterstützen. Die NetApp Service Engine verwendet die Konzepte von Mandanten und Untermandanten als hierarchische Einheiten, die den Storage-Service besitzen bzw. managen.
+
+Ein Mandant kann ein Kunde, Partner oder eine Rechnungseinheit sein. Ein Mandant besitzt das Abonnement (oder mehrere Abonnements) für den Flex Subscription Service.
+
+Ein Untermieter ist eine Einheit, die vollständig im Mieter ist. Er kann für Showback, Security Separation usw. verwendet werden.
+
+Storage-Elemente werden pro Untermandant erstellt. Jeder Untermandant kann mehrere Storage-Elemente vom Typ und der Nummer enthalten, die für diesen Untermandant geeignet sind.
+
+Die NetApp Service Engine unterstützt folgende Storage-Typen:
+
+* Block-Storage in Block-Stores und Festplatten
+* File-Storage in File-Servern und File Shares
+* Objekt-Storage in Buckets
+

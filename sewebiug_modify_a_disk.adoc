@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_modify_a_disk.html 
+keywords: netapp, keystone, modify, disk, 
+summary: Keystone ändert eine Festplatte 
+---
+= Ändern Sie eine Festplatte
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können den Festplattennamen, die Host-Gruppen-Zuordnung, den Performance-Service-Level, die Kapazität und die Snapshot-Richtlinie ändern. Mit dieser Methode können Sie Ihre Festplatten auf andere Service-Level verschieben, falls verfügbar.
+
+
+
+=== Bevor Sie beginnen
+
+Die Festplatte muss sich im Betriebszustand befinden. Informationen zum Verständnis der Volume-Status und der Schritte, die für deren Betrieb erforderlich sind, finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["Zeigen Sie Festplatten an"] Und 
+
+
+
+=== Schritte
+
+. Sehen Sie sich die an link:sewebiug_view_disks.html#view-disks["Festplattenliste"].
+. Suchen Sie den Datenträger in der Liste, und klicken Sie auf das Symbol Bearbeiten für diesen Datenträger. (Einzelheiten zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Aktionen zur Listenansicht"]).
+. Nehmen Sie ggf. Änderungen vor, siehe link:sewebiug_create_a_new_disk.html["Erstellen Sie ein neues Laufwerk"] Für Feldbeschreibungen.
+. Klicken Sie Auf *Fertig*. Dadurch wird ein Job zum Ändern der Festplatte erstellt.
+
+
+
+
+=== Nachdem Sie fertig sind
+
+Festplatte bearbeiten wird als asynchroner Job ausgeführt. Ihre Vorteile:
+
+* Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
+* Überprüfen Sie nach Abschluss des Jobs den Status der Festplatte in der Liste Festplatten.
+

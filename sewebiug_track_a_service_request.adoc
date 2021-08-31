@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_track_a_service_request.html 
+keywords: netapp, keystone, track, service, request, 
+summary: Keystone verfolgt eine Serviceanfrage 
+---
+= Verfolgen Sie eine Service-Anfrage
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Eine Serviceanfrage folgt dem in diesem Abschnitt beschriebenen Prozess.
+
+Die folgende Tabelle enthält eine Liste der Status von Service-Anfragen.
+
+|===
+| Status | Beschreibung 
+
+
+| Neu | Dies ist eine neu erstellte Anforderung. 
+
+
+| Offen | Der Antrag wird geprüft/bearbeitet. 
+
+
+| Ausstehend | Die Anfrage wird auf Aktion von einem Dritten (d. h. auf zusätzliche Informationen warten) gewartet. 
+
+
+| Behoben | Die Anfrage wurde gelöst. 
+
+
+| Zurückgestellt | Die Anforderung wartet auf eine Aktivität, die nicht unter der Kontrolle des Supports liegt und sich einige Zeit nehmen kann, bevor die Anfrage bearbeitet werden kann. 
+
+
+| Geschlossen | Die Anfrage ist geschlossen. 
+|===
+Verfolgen Sie den Status einer Service-Anfrage, indem Sie den Status in der NetApp Service Engine überprüfen. Wie unten beschrieben, können Sie den Status in den im Rahmen des Prozesses gesendeten automatisierten E-Mails verfolgen.
+
+. Wählen Sie im Menü Support > Service Requests. Die Liste Service Requests wird angezeigt.
++
+image:sewebiug_image44.png["Fehler: Fehlendes Grafikbild"]
+
+. Suchen Sie in der Liste nach der Service-Anforderung, und zeigen Sie den Status in der Spalte Status an.
+
+
+image:sewebiug_image42.png["Fehler: Fehlendes Grafikbild"]

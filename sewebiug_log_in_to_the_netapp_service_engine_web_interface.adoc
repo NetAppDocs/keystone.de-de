@@ -1,0 +1,106 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_log_in_to_the_netapp_service_engine_web_interface.html 
+keywords: netapp, keystone, log, in, netapp, service, engine, web, interface, 
+summary: Melden Sie sich beim Web-Interface der NetApp Service Engine an 
+---
+= Melden Sie sich auf der Webschnittstelle der NetApp Service Engine an
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Um die NetApp Service Engine Web-Schnittstelle zu verwenden, müssen Sie über ein Konto verfügen. Ihrem Konto wird eine oder mehrere Rollen (durch Ihren NetApp Service Engine Administrator) zugewiesen, die Ihre Berechtigungen festlegen und somit welche Aktivitäten Sie im NetApp Service Engine Portal ausführen können.
+
+Mit der NetApp Service Engine können Sie sich mit den folgenden Anmeldedaten anmelden:
+
+* Benutzername und Passwort (siehe link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-user-name-and-password["Melden Sie sich mit Benutzernamen und Passwort an"])
+* NetApp SSO (siehe link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html#log-in-with-netapp-sso["Melden Sie sich mit NetApp SSO an"])
++
+Bestätigen Sie die Anmelde-Option, die bei Ihrer NetApp Service Engine-Instanz beim Administrator der NetApp Service Engine verwendet wird.
+
+
+
+
+
+=== Rollenbasierter Zugriff
+
+In der folgenden Tabelle sind die Beschreibungen für den rollenbasierten Zugriff aufgeführt.
+
+|===
+| Rolle | Datenzugriff 
+
+
+| Partner Admin/Account-Inhaber | Sämtliche Aufgaben des Managements von Mandanten und deren Abonnements können ausgeführt werden. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["Dieser Link"]. 
+
+
+| Kunden-/Mandantenadministrator | Der Kunde oder Mandantenadministrator kann alle Aktionen durchführen, die mit dem Management von Untermandanten zusammenhängen. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["Dieser Link"]. 
+
+
+| NetApp Admin (gelesen) | Schreibgeschützter Zugriff über alle Komponenten hinweg. 
+
+
+| NetApp Admin | Vollständiger Zugriff und Berechtigungen zum Durchführen aller Funktionen im Web-Portal der NetApp Service Engine zum Management von NetApp Keystone Flex Subscription und aller Aktivitäten für die Partner- und Mandantenadministration. 
+|===
+
+
+=== Melden Sie sich mit Benutzernamen und Passwort an
+
+Um sich mit einem Benutzernamen und einem Kennwort anzumelden, benötigen Sie Folgendes:
+
+* Benutzername und Passwort für die NetApp Service Engine Web-Schnittstelle
+* Die URL zum NetApp Service Engine Portal
+* Einen Webbrowser
+
+
+
+
+==== Schritte
+
+. Rufen Sie in Ihrem Webbrowser die URL Ihres NetApp Service Engine Portals auf. Die Anmeldeseite wird angezeigt.
+. Wählen Sie * Lokale Benutzeranmelde* aus.
+. Geben Sie auf der Seite Anmelden bei NetApp Keystone Ihren Benutzernamen und Ihr Kennwort ein und klicken Sie auf *Anmelden*.
+. Nach der erfolgreichen Anmeldung wird die Webschnittstelle der NetApp Service Engine geladen und kann im Dashboard geöffnet werden. Eine Übersicht über die GUI finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["Übersicht über die Webschnittstelle der NetApp Service Engine"].
+
+
+
+NOTE: Wenn Ihre Anmeldung erfolgreich ist, das Dashboard jedoch nicht angezeigt wird, wenden Sie sich an den Portaladministrator der NetApp Service Engine. So stellen Sie sicher, dass Ihrem NetApp Service Engine Portalkonto die richtige Rolle zugewiesen wurde.
+
+
+
+=== Melden Sie sich mit NetApp SSO an
+
+Zur Anmeldung mit NetApp SSO benötigen Sie:
+
+* Ein NetApp SSO-Konto Sie können auf der NetApp Support-Website ein Konto anfordern. Wählen Sie dazu auf dem Anmeldebildschirm die Option *NetApp SSO-Konto erstellen* aus und folgen Sie den nächsten Schritten.
+* Die URL zum NetApp Service Engine Portal
+* Einen Webbrowser.
+
+
+
+
+==== Schritte
+
+. Rufen Sie in Ihrem Webbrowser die URL Ihres NetApp Service Engine Portals auf. Die Anmeldeseite wird angezeigt.
+. Wählen Sie NetApp SSO aus.
+. Geben Sie auf der SSO-Anmeldeseite Ihren Benutzernamen und Ihr Kennwort ein und klicken Sie auf *Anmelden*.
++
+Nachdem die erfolgreiche Anmeldung bei der NetApp Service Engine Web-Schnittstelle geladen wurde, wird das Flex Subscription Dashboard angezeigt. Eine Übersicht über die GUI finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["Übersicht über die Webschnittstelle der NetApp Service Engine"].
+
+
+
+
+
+=== Loggen Sie sich über die Webschnittstelle der NetApp Service Engine aus
+
+
+
+==== Schritte
+
+. Um sich von der Benutzeroberfläche abzumelden, klicken Sie auf das Benutzersymbol und klicken Sie auf *Abmelden*.
+
+
+image:sewebiug_image7.png["Fehler: Fehlendes Grafikbild"]

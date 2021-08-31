@@ -1,0 +1,130 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_create_a_new_disk.html 
+keywords: netapp, keystone, create, new, disk, 
+summary: Keystone erstellt ein neues Laufwerk 
+---
+= Erstellen Sie eine Festplatte
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+In diesem Abschnitt wird beschrieben, wie Sie eine neue Festplatte erstellen, indem Sie die Festplattendetails direkt angeben. Anweisungen zum Erstellen einer Festplatte auf Basis eines Snapshots eines vorhandenen Laufwerks finden Sie unter link:sewebiug_create_a_disk_from_a_snapshot.html#create-a-disk-from-a-snapshot["Erstellen Sie eine Festplatte aus einem Snapshot"].
+
+
+
+=== Bevor Sie beginnen
+
+* Wenn Block-Speicher verfügbar ist, aber nicht initialisiert wird, werden Sie aufgefordert, ihn zu initialisieren, bevor Sie die Festplatte erstellen können. Zum Initialisieren des Blockspeichers benötigen Sie:
++
+** Das Subnetz für den Blockspeicher. Wenn Sie mit Ihrer Netzwerkumgebung nicht vertraut sind, wenden Sie sich bitte AN IHRE IT-Abteilung, um die relevanten Werte zu erfahren.
+** Das zu verwendenden Protokoll. Standardmäßig ist der iSCSI-Service für Blockspeicher aktiviert. Stellen Sie sicher, dass das Subnetz bereits erstellt wurde, um Block Storage Services (iSCSI) für den Untermandanten in der angegebenen Zone zu initialisieren. Sie können den FCP-Service optional aktivieren, wenn die Infrastruktur es zulässt.
+** Die Disaster Recovery-Region, -Zone und -Planung, wenn Sie asynchrone Disaster Recovery-DP für die Festplatte aktivieren möchten. Weitere Informationen finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Disaster Recovery"].
+
+
+* Identifizieren oder definieren Sie die Host-Gruppen, die der Festplatte zugeordnet werden sollen. Sie können auch eine Host-Gruppe als Teil der Datenträgererstellung erstellen.
+* Um die DP-Optionen zur asynchronen Disaster Recovery für die Festplatte zu aktivieren, müssen Sie die Festplatte in einem Blockspeicher erstellen, der für die asynchrone Disaster Recovery aktiviert ist. Weitere Informationen finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Disaster Recovery"].
+* Um eine synchrone Disaster Recovery für eine Festplatte zu ermöglichen, erstellen Sie die Festplatte in einer für MetroCluster aktivierten Zone.
+* Sie können eine Backup-Richtlinie definieren, um Backups der Festplatte nach einem Zeitplan zu erfassen. Weitere Informationen finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups["Backups"].
+
+
+
+
+=== Schritte
+
+. Sehen Sie sich die an link:sewebiug_view_disks.html#view-disks["Festplattenliste"].
+. Klicken Sie Auf *Datenträger Erstellen*.
+. Wählen Sie im Dialogfeld Datenträger erstellen die Option Neue Festplatte erstellen aus.
++
+image:sewebiug_image26.png["Fehler: Fehlendes Grafikbild"]
+
++
+Die Seite Festplatte erstellen wird angezeigt.
+
+. Wählen Sie das Protokoll für den Zugriff auf die Festplatte aus: ISCSI oder FCP.
+. Wählen Sie den Untermandanten, die Region und die Zone und den Untermandanten für das neue Laufwerk aus. Die Details zum Blockspeicher für die ausgewählte Region, Zone und Untermandanten werden angezeigt.
+. Wenn der Blockspeicher in der ausgewählten Zone für den ausgewählten Untermandanten nicht aktiviert ist, wird eine Meldung angezeigt, um ihn zu initialisieren.
++
+image:sewebiug_image27.png["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie Auf *Blockspeicher Initialisieren*.
+. Im Dialogfeld Blockspeicher initialisieren:
++
+.. Geben Sie im iSCSI-Panel das Subnetz mandatorily an. Der iSCSI-Dienst ist standardmäßig für alle Festplatten aktiviert.
+.. Aktivieren Sie bei Bedarf das FCP-Protokoll (nur verfügbar, wenn die zugrunde liegende Infrastruktur es unterstützt).
+.. Aktivieren Sie bei Bedarf die Optionen für asynchrone Disaster Recovery (aktivieren und wählen Sie Region, Zone und Zeitplan aus).
+.. Wenn die ausgewählte Zone MCC-aktiviert ist, ist der Schalter für synchrone Disaster Recovery aktiviert und kann nicht deaktiviert werden. In diesem Blockspeicher erstellte Laufwerke replizieren synchron auf die im Fenster „synchrone Disaster Recovery“ angezeigte Zone.
+.. Klicken Sie auf *Erstellen*, um den Blockspeicher zu initialisieren. Warten Sie, bis der Blockspeicher initialisiert wird. Die Anzeige kehrt zur Seite Datenträger erstellen zurück.
+
+
+. Füllen Sie die folgenden Felder aus:
++
+|===
+| Feld | Beschreibung 
+
+
+| Name | Geben Sie den Festplattennamen ein. 
+
+
+| Festplattenpfad | Geben Sie den Pfad für die Festplatte ein. 
+
+
+| Betriebssystem | Wählen Sie ein Betriebssystem für die Festplatte aus. 
+
+
+| Host-Gruppen | In dieser Liste werden vorhandene Hostgruppen angezeigt, die mit dem für das Laufwerk ausgewählten Protokoll, dem Betriebssystemtyp, dem Untermandanten und der für das Laufwerk ausgewählten Zone übereinstimmen. Wählen Sie eine oder mehrere Hostgruppen aus. Informationen zum Definieren einer neuen Hostgruppe finden Sie im nächsten Schritt. 
+|===
+. Erstellen Sie bei Bedarf eine neue Host-Gruppe:
++
+.. Klicken Sie Auf *Hostgruppe Erstellen*. Das Dialogfeld Host-Gruppe erstellen wird angezeigt.
+.. Geben Sie den Namen der Host-Gruppe an.
+.. Fügen Sie die Initiatoren für die Gruppe hinzu. Geben Sie für jeden Initiator den Alias und den Initiator an.
+.. Fügen Sie bei Bedarf Tags (Schlüsselwert-Paare) zur Host-Gruppe im Abschnitt Tags hinzu.
+.. Klicken Sie Auf *Erstellen*. Das System erstellt die Host-Gruppe und zeigt eine Meldung an, wenn sie erfolgreich erstellt wurde.
+.. Um die neu erstellte Host-Gruppe dem Datenträger zuzuordnen, gehen Sie zum Feld Host Groups und wählen Sie sie aus.
+
+
+. Wählen Sie ein Service-Level für die Performance aus.
++
+Wählen Sie eine Option aus, um die Performance-Details für dieses Level anzuzeigen (wie zu Spitzenzeiten/erwartete IOPS/Durchsatz). Wählen Sie den Service Level aus, der Ihren Anforderungen am besten entspricht.
+
+. Geben Sie die Kapazität der Festplatte an.
+. Falls für dieses Laufwerk Snapshots erforderlich sind:
++
+.. Schalten Sie ein, um die Snapshot-Richtlinie zu aktivieren, um die Felder für Snapshot-Richtlinien anzuzeigen.
+.. Geben Sie an, wann die Snapshots erstellt werden sollen:
++
+*** *stündlich.* Geben Sie an, welche Minute (der Stunde) Snapshot (prüfen) und die Anzahl der stündlichen Snapshots zu behalten.
+*** *Täglich.* Geben Sie an, wann (Stunde und Minute) der Snapshot (Prüfung) und die Anzahl der stündlichen Snapshots zu behalten. Wenn Sie mehrere Stunden angeben möchten, während der Snapshot täglich erstellt werden muss, können Sie die Werte der Stunden in einer durch Kommas getrennten Liste hinzufügen, z. B. 5, 10, 15 Und so weiter.
+*** *wöchentlich.* Geben Sie an, wann (Wochentag, Stunde und Minute) Snapshot (Prüfung) und die Anzahl der wöchentlichen Snapshots, die beibehalten werden sollen.
+*** *monatlich.* Geben Sie an, wann (Tag des Monats, Stunde und Minute) Snapshot zu machen und die Anzahl der monatlichen Schnappschüsse zu behalten.
+
+
+
+
+. Wenn auf dem zugrunde liegenden Block-Store ein asynchrones Disaster Recovery aktiviert ist, wird die asynchrone Disaster Recovery-Replizierung automatisch für die neue Festplatte aktiviert. Wenn Sie die Festplatte von asynchronen Disaster Recovery-Replikationen ausschließen möchten, schalten Sie den Schalter Asynchronous Disaster Recovery aus, damit die asynchrone Disaster Recovery deaktiviert ist.
+. Wenn die Festplatte in einer Zone erstellt wird, die MetroCluster-fähig ist, ist die Schaltfläche „Synchronous Disaster Recovery“ aktiviert und kann nicht deaktiviert werden. Der Datenträger wird in den Bereich repliziert, der im Fenster „synchrone Disaster Recovery“ angezeigt wird.
+. So aktivieren Sie Backups für diese Festplatte:
++
+.. Aktivieren Sie die Option Backup Policy, um die Felder Backup Policy anzuzeigen.
+.. Geben Sie den Backup-Bereich an.
+.. Geben Sie an, wie viele der einzelnen Backup-Typen gehalten werden sollen: Täglich, wöchentlich und/oder monatlich.
+
+
+. Wenn Sie Tags (Schlüsselwertpaare) zur Festplatte hinzufügen möchten, geben Sie diese im Abschnitt Tags an.
+. Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Erstellen der Festplatte erstellt.
+
+
+
+
+=== Nachdem Sie fertig sind
+
+Datenträger erstellen wird als asynchroner Job ausgeführt. Ihre Vorteile:
+
+* Überprüfen Sie den Status des Jobs in der Jobliste.
+* Überprüfen Sie nach Abschluss des Jobs den Status der Festplatte in der Liste Festplatten.
+

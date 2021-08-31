@@ -1,0 +1,14 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_managing_subscribed_services.html 
+keywords: netapp, keystone, managing, cloud, services, 
+summary: Keystone managt Cloud-Services 
+---
+= Management von Cloud-Services
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

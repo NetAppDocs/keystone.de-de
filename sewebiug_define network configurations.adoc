@@ -1,0 +1,77 @@
+---
+sidebar: sidebar 
+permalink: sewebiug_define_network_configurations.html 
+keywords: netapp, keystone, subnet, subtenant, network, tenant network, IPspace, VLAN, port 
+summary: Subnetze erstellen und löschen 
+---
+= Netzwerkkonfigurationen für Mandanten und Untermandanten definieren
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ein Service-Provider oder Partneradministrator kann anhand ihrer Abonnementzonen Netzwerkkonfigurationen für Mandanten definieren und jeder Netzwerkkonfiguration VLANs zuweisen. Sie können auch ein Subnetz mit jedem VLAN erstellen, das zu derselben Zone und derselben Mandantenfähigkeit gehört, und es einem Untermandanten unter dieser Mandantenfähigkeit zuweisen.
+
+Zum Erstellen des Subnetzes ist ein vorkonfiguriertes Mandantennetzwerk erforderlich. Ein Subnetz ist erforderlich, wenn ein Untermandant oder Endkunde Dateiserver oder Blockspeicher bereitstellt. Datei- und Block-Storage-VMs sind Eigentum von Untermandanten in der NetApp Service Engine, wohingegen sie im Besitz von IPspaces im ONTAP sind. Wenn Sie die Netzwerkgrenze auf Untermandenebene definieren, ordnet der Untermandant in der NetApp Service Engine einem einzelnen ONTAP IPspace für diese Zone zu. Dadurch werden Risiken vermieden und es wird sichergestellt, dass zwei unterschiedliche Untermandanten nicht dieselbe VLAN-ID auswählen und sich im gleichen IPspace befinden.
+
+* In jeder Zone können mehrere Subnetze erstellt werden. Einer bestimmten Zone wird eine entsprechende Liste von VLANs zugewiesen. Für alle verfügbaren VLANs können entsprechende Subnetze erstellt werden. Es gibt eine 1:1-Zuordnung zwischen einem Subnetz und einem VLAN. Während, gibt es eine ist zu vielen Mapping zwischen einer Zone und Subnetzen.
+* Ein Mandant kann mehrere Subnetze haben, eins für jedes verfügbare VLAN unter einer Zone. Sie werden für jede Zone unter einer einzelnen Netzwerkkonfiguration angezeigt.
+* Es kann nur ein VLAN für jedes Netzwerk-Subnetz vorhanden sein. Bei jeder Netzwerkkonfiguration ist eine Liste der verfügbaren VLANs aufgeführt.
+* Für eine Zone und VLAN-Kombination für einen Untermandanten kann nur ein Subnetz erstellt werden.
+
+
+
+NOTE: Ein Mandantenadministrator kann die Netzwerkkonfigurationen für seine Mandanten und die Subnetze für ihre Untermandanten nur anzeigen.
+
+
+
+== Netzwerkkonfiguration für einen Mandanten definieren
+
+Als Partner-Administrator können Sie für jeden Mandanten Netzwerkkonfigurationen erstellen. Jedem Mandanten kann je nach Anforderung ein konfigurierbarer und eindeutiger VLAN-Pool zugewiesen werden. Wenn ein Mandant gelöscht wird, werden die ihm zugeordneten VLANs zurück in den Mandanten-VLAN-Pool freigegeben.
+
+.Bevor Sie beginnen
+* Stellen Sie sicher, dass die Mandanten erstellt wurden
+* Sie sollten die Konfiguration Zone, VLANs und Port-Override kennen
+
+
+.Schritte
+. Wählen Sie unter *VERWALTUNG* > *Mieter* den gewünschten Mieter aus.
+. Klicken Sie auf das Netzwerk-Symbol. Der Bildschirm Netzwerke wird mit der Liste der Netzwerkkonfigurationen für den Mandanten angezeigt.
+. Klicken Sie Auf *Netzwerk Erstellen*. Geben Sie ggf. Zone, VLAN und Port Override an.
++
+
+NOTE: Die Portüberschreibung wird vom Support-Team während der Zonenkonfiguration konfiguriert. Wenn keine Portüberschreibung angegeben ist, verwendet das Netzwerk den Standardport und erstellt ein neues VLAN im IPspace für diesen Mandanten.
+
+. Klicken Sie Auf *Erstellen*. Die neue Netzwerkkonfiguration wird für den Mandanten im Bildschirm Netzwerke angezeigt.
+
+
+Wenn die Netzwerkkonfiguration für eine Zone erstellt wird, können Sie der Netzwerkkonfiguration nur neue VLANs zuweisen. Klicken Sie auf das *+*-Symbol, und fügen Sie die Details zum VLAN- und Port-Override hinzu. Klicken Sie Auf *Aktualisieren*.
+
+
+
+== Erstellen Sie ein Subnetz für einen Untermandanten
+
+Als Partner-Administrator können Sie Subnetze für Ihre Untermieter aus *NETWORKS* > *Subnets* erstellen. Die Subnetz-Definition umfasst die in ONTAP implementierte VLAN-ID, den CIDR-Adressbereich und eine Routenspezifikation. Ein Subnetz ist auf ein VLAN innerhalb eines Mandanten und einer Zone ausgerichtet. Es können keine zwei Subnetze mit demselben VLAN für eine Zone erstellt werden.
+
+.Bevor Sie beginnen
+* Die VLAN- und Zonenkonfiguration hätte für den Mandanten bereits abgeschlossen sein müssen
+* Sie sollten die Anforderungen für das zu erstellenden Subnetz kennen
+
+
+.Schritte
+. Wählen Sie den gewünschten Mieter aus. Die Untermieter, für die Sie die Subnetze erstellen, sollten unter diesem Mandanten liegen.
+. Klicken Sie auf *NETZWERKE* > *Subnetze*. Auf der Seite *Subnets* können Sie die Liste der für Ihre Untermieter erstellten Subnetze anzeigen.
+. Klicken Sie Auf *Subnetz Erstellen*.
+. Geben Sie den Untermandanten, die Zone, den Namen des Subnetzes, das VLAN und das Subnetz CIDR an. Sie können auch Routenspezifikation und -Tags hinzufügen.
++
+
+NOTE: In der Routenspezifikation sollte die *Destination* einzigartig sein und Teil des genannten VLAN sein, und mehrere Routen können den gleichen Wert für *Metric* haben.
+
+. Klicken Sie Auf *Erstellen*.
+
+
+
+NOTE: Sie können ein Subnetz nicht bearbeiten oder löschen. Sie können nur die ihr zugeordneten Tags bearbeiten.

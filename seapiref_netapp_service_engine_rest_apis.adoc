@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: seapiref_netapp_service_engine_rest_apis.html 
+keywords: netapp, keystone, service, engine, rest, apis, 
+summary: REST-APIs der NetApp Service Engine 
+---
+= Rest-APIs der NetApp Service Engine
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+=== Paginierung
+
+Viele API-Aufrufe liefern eine große Anzahl von Datensätzen. Die Anzahl der Datensätze kann durch Angabe der Werte `Offset` und `Limit` begrenzt werden:
+
+* *Limit.* Anzahl der zurückzukehrenden Datensätze.
+* *Offset.* die Anzahl der zu übersprinenden Datensätze, bevor der erste Datensatz zurückgegeben wird. Ein Offset von einem überspringt z. B. den ersten Datensatz und gibt die Datensätze ab zwei zurück.
+
+
+Sie können die Antworten auch sortieren und bestellen:
+
+* *Sort_by.* Sortieren Sie die Datensätze mit dem angegebenen Attribut. Wenn Sie beispielsweise nach dem Erstellungsdatum sortieren möchten, geben Sie erstellt an.
+* *Order_by.* bestellt die Datensätze durch aufsteigende (asc) oder absteigende (desc) Reihenfolge.
+
