@@ -27,10 +27,6 @@ Dateiserver gehören einem Untermandanten an und werden innerhalb einer Zone ers
 
 image:sewebiug_image20.png["Fehler: Fehlendes Grafikbild"]
 
-
-
-=== Bevor Sie beginnen
-
 Stellen Sie sicher, dass Sie folgende Funktionen zum Erstellen des Servers haben:
 
 * Der Submandant, der den Server hostet.
@@ -39,10 +35,7 @@ Stellen Sie sicher, dass Sie folgende Funktionen zum Erstellen des Servers haben
 * Um asynchrone Disaster Recovery auf dem Dateiserver zu ermöglichen, ist die Disaster-Recovery-Zone (die Zone, auf die der Dateiserver repliziert wird).
 
 
-
-
-=== Schritte
-
+.Schritte
 . Sehen Sie sich die an link:sewebiug_view_servers.html#view-servers["Liste der File-Server"].
 . Klicken Sie Auf *Server Erstellen*.
 . Füllen Sie auf der Seite Server erstellen die folgenden Felder aus:
@@ -90,10 +83,6 @@ Wenn Sie einen CIFS-fähigen Dateiserver erstellen:
 . Wenn die synchrone Disaster Recovery-DP aktiviert ist, ist der Synchronous Disaster Recovery-Schalter aktiviert und kann nicht deaktiviert werden.
 . Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Erstellen des Servers erstellt.
 
-
-
-
-=== Nachdem Sie fertig sind
 
 Server erstellen wird als asynchroner Job ausgeführt. Ihre Vorteile:
 

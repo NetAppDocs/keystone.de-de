@@ -15,10 +15,7 @@ summary: Keystone erstellt eine Objekt-Storage-Gruppe
 [role="lead"]
 Verwenden Sie diese Methode, um eine neue Objekt-Speichergruppe zu erstellen.
 
-
-
-=== Schritte
-
+.Schritte
 . Sehen Sie sich die an link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["Benutzerliste"].
 . Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und dass im Display Gruppen angezeigt werden (nicht Benutzer).
 . Klicken Sie Auf *Gruppe Erstellen*.
@@ -26,9 +23,5 @@ Verwenden Sie diese Methode, um eine neue Objekt-Speichergruppe zu erstellen.
 . Wählen Sie die S3-Richtlinie aus der Liste aus.
 . Klicken Sie Auf *Erstellen*. Dadurch wird ein Job erstellt, um die Gruppe mit den angegebenen Einstellungen zu erstellen.
 
-
-
-
-=== Nachdem Sie fertig sind
 
 Objekt-Storage-Gruppe erstellen wird als asynchroner Job ausgeführt. Sie können den Status des Jobs in der Liste Jobs überprüfen. Informationen zur Verfolgung von Jobs finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].

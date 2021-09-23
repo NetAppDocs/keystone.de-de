@@ -24,10 +24,6 @@ NOTE: Die Cloud Volumes Service-Konten für die Mandanten und Untermandanten sol
 
 Sie können Ihre Cloud-Services auf Google Cloud verwalten, indem Sie im linken Navigationsbereich im Menü *CLOUD SERVICES* klicken. Auf der Seite Cloud Services werden alle Cloud-Services für alle Untermandanten eines ausgewählten Mandanten angezeigt. Sie können die Cloud-Services auf dieser Seite anzeigen, ändern und löschen. Sie können auch einen neuen Service hinzufügen, indem Sie diese Schritte ausführen.
 
-
-
-=== Bevor Sie beginnen
-
 Dafür müssen Sie Folgendes gewährleisten:
 
 * Der Untermieter ist für den Google Cloud-Service abonniert.
@@ -35,10 +31,7 @@ Dafür müssen Sie Folgendes gewährleisten:
 * Damit Cloud Volumes Service für GCP bereits vom Support-Team des jeweiligen Support-Teams konfiguriert ist. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["Einrichtung von Cloud Volumes Service für Google Cloud"].
 
 
-
-
-==== Schritte
-
+.Schritte
 . Wählen Sie im Menü * CLOUD SERVICES* aus.
 . Klicken Sie auf *Erstellen* und dann auf *Google Cloud*.
 . Wählen Sie auf der Seite Cloud-Service für Google Cloud erstellen den Untermandanten aus, für den Sie den Service erstellen möchten, und fügen Sie einen Namen und die GCP-Projektnummer hinzu.
@@ -55,10 +48,7 @@ Vor dem Managen von Cloud Volumes auf GCP sollte das Cloud Volumes Service-Konto
 
 Im linken Navigationsbereich können Sie Volumes für einen Untermandanten auf GCP über *FILESERVICES > GCP Volumes* verwalten. Auf der Seite GCP Volumes werden die bestehenden Cloud Volumes aufgeführt, die auf GCP für den ausgewählten Submandanten und die entsprechende Region erstellt wurden. Sie können die vorhandenen Volumes auf dieser Seite anzeigen, ändern und löschen. Sie können auch ein neues Cloud-Volume bereitstellen. Gehen Sie dazu wie folgt vor.
 
-
-
-==== Schritte
-
+.Schritte
 . Wählen Sie im Menü * FILE SERVICES > GCP Volumes* aus.
 . Klicken Sie Auf *Erstellen*. Die Seite GCP Volume erstellen wird angezeigt.
 . Wählen Sie den Untermandanten aus, für den Sie das Volume erstellen möchten.

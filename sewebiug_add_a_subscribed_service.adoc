@@ -17,16 +17,9 @@ In diesem Abschnitt wird das Hinzufügen eines Cloud-Service beschrieben.
 
 Die NetApp Service Engine unterstützt Azure NetApp Files.
 
-
-
-=== Bevor Sie beginnen
-
 Sie benötigen die Informationen zu den Cloud-Services, einschließlich der Zugangsdaten, um sich mit dem Service verbinden zu können. Die Informationen variieren je nach Typ des Cloud-Service.
 
-
-
-=== Schritte
-
+.Schritte
 . Wählen Sie im Menü * Cloud Services* aus.
 . Klicken Sie Auf *Erstellen*.
 . Wählen Sie auf der Seite „Cloud Service erstellen“ den Cloud-Servicetyp aus und geben Sie die relevanten Informationen für diesen Service-Typ an:

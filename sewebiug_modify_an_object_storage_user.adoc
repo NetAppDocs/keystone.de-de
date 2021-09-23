@@ -15,10 +15,7 @@ summary: Keystone ändert einen Objekt-Storage-Benutzer
 [role="lead"]
 Verwenden Sie diese Methode, um Details eines Objektspeicherbenutzers, z. B. des Benutzernamens und der Gruppe, der sie zugewiesen sind, zu ändern.
 
-
-
-=== Schritte
-
+.Schritte
 . Sehen Sie sich die an link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["Benutzerliste"].
 . Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und auf der Anzeige Benutzer (nicht Gruppen) angezeigt werden.
 . Suchen Sie den Benutzer in der Liste, und klicken Sie auf das Symbol Bearbeiten für die Gruppe.

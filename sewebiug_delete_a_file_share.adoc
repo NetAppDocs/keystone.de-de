@@ -21,10 +21,7 @@ In diesem Abschnitt wird beschrieben, wie Sie eine Dateifreigabe löschen.
 * Wenn Sie eine primäre Dateifreigabe löschen, werden alle zugehörigen Backups gelöscht
 
 
-
-
-=== Schritte
-
+.Schritte
 . Sehen Sie sich die an link:sewebiug_view_shares.html#view-shares["Shares-Liste"].
 . Suchen Sie die Freigabe in der Liste, und klicken Sie auf das Symbol Löschen für diese Freigabe. (Einzelheiten zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Aktionen zur Listenansicht"]).
 . Geben Sie im Dialogfeld Löschen bestätigen den Namen der Dateifreigabe ein, um zu bestätigen, dass Sie die Dateifreigabe löschen möchten.
@@ -33,10 +30,6 @@ image:sewebiug_image25.png["Fehler: Fehlendes Grafikbild"]
 
 . Klicken Sie Auf *Bestätigen*. Dadurch wird ein Job zum Löschen der Freigabe erstellt.
 
-
-
-
-=== Nachdem Sie fertig sind
 
 Freigabe löschen wird als asynchroner Job ausgeführt. Ihre Vorteile:
 

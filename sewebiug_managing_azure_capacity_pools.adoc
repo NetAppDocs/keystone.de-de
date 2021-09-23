@@ -40,10 +40,6 @@ In der Liste werden einfache Informationen zu den einzelnen Azure-Kapazitätspoo
 
 In diesem Abschnitt wird das Hinzufügen eines Azure Capacity Pools beschrieben.
 
-
-
-==== Bevor Sie beginnen
-
 Sie benötigen:
 
 * Der Untermandant, zu dem die Kapazität gehört
@@ -53,10 +49,7 @@ Sie benötigen:
 * Die Größe des Pools
 
 
-
-
-==== Schritte
-
+.Schritte
 . Wählen Sie aus dem Menü *FILE SERVICES > Azure Capacity Pools* aus.
 . Klicken Sie Auf *Erstellen*.
 . Geben Sie im Dialogfeld Azure Capacity Pool erstellen den Untermandanten, das ANF-Konto, das Service-Level, den Namen und die Größe an.
@@ -70,10 +63,7 @@ Sie benötigen:
 
 Verwenden Sie diese Methode, um die Details eines Azure-Kapazitätspools zu ändern. Sie können den Service-Level die Größe des Pools ändern und Tags hinzufügen oder entfernen.
 
-
-
-==== Schritte
-
+.Schritte
 . Wählen Sie aus dem Menü *FILE SERVICES > Azure Capacity Pools* aus.
 . Suchen Sie in der Liste den Azure Capacity Pool und klicken Sie auf das Bearbeiten-Symbol.
 . Nehmen Sie im Dialogfeld Azure-Kapazitätspool managen alle erforderlichen Änderungen vor.
@@ -86,10 +76,7 @@ Verwenden Sie diese Methode, um die Details eines Azure-Kapazitätspools zu änd
 
 Verwenden Sie diese Methode, um einen Azure-Kapazitätspool zu löschen.
 
-
-
-==== Schritte
-
+.Schritte
 . Wählen Sie aus dem Menü *FILE SERVICES > Azure Capacity Pools* aus.
 . Suchen Sie in der Liste den Azure Capacity Pool und klicken Sie auf das Löschsymbol.
 . Geben Sie im Dialogfeld Löschen bestätigen den Namen des zu löschenden Azure-Kapazitätspools ein.

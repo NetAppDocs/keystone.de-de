@@ -25,7 +25,13 @@ Zu den neuen Funktionen in dieser Version gehört ein überarbeitetes Dashboard 
 
 === Erweiterte Dashboard-Ansicht
 
-Das Dashboard der NetApp Service Engine wurde neu gestaltet und umfasst nun folgende neue Komponenten: * *Kapazitätsauslastung* zur Anzeige der genutzten Kapazität für abonnierte Services. * * Monatliche Gebühren (Abrechnung)* für die Anzeige der aggregierten monatlichen Gebühren für alle Ihre Abonnements. * *Alerts* zur Anzeige der Zusammenfassung der neuesten Warnungen in Ihrer Umgebung. * * Service Requests* für die Anzeige der Liste der letzten Service Requests in Ihrer Umgebung generiert. Weitere Informationen finden Sie unter link:sewebiug_dashboard.html["Zeigen Sie Das Flex Subscription Dashboard An"]
+Das Dashboard von NetApp Service Engine wurde neu gestaltet und umfasst folgende neue Komponenten:
+
+* *Kapazitätsauslastung* zur Anzeige der genutzten Kapazität für Ihre abonnierten Dienste.
+* *Monatliche Gebühren (Abrechnung)* für die Anzeige der aggregierten monatlichen Gebühren für alle Ihre Abonnements.
+* *Alerts* zur Anzeige der Zusammenfassung der neuesten Warnungen in Ihrer Umgebung.
+* *Service Requests* für die Anzeige der Liste der letzten Serviceanforderungen, die in Ihrer Umgebung erzeugt wurden. Weitere Informationen finden Sie unter link:sewebiug_dashboard.html["Zeigen Sie Das Flex Subscription Dashboard An"].
+
 
 
 
@@ -33,19 +39,23 @@ Das Dashboard der NetApp Service Engine wurde neu gestaltet und umfasst nun folg
 
 Für die einfache Zugänglichkeit und Berechnung Ihrer historischen Rechnungsdaten wurde ein neuer *Billing*-Bildschirm hinzugefügt. Der Bildschirm bietet eine ganzheitliche Ansicht der monatlichen Gebühren, die mit allen abonnierten Services verbunden sind.
 
-Navigieren Sie zu diesem Bildschirm über das Widget * Monthly Lades* auf dem Dashboard oder von *ADMINISTRATION > Billing*, um eine monatliche Aufschlüsselung der Gebühren für alle abonnierten Dienste anzuzeigen. Die Rechnungsdaten basieren auf Ihrer zugesagt- und Burst-Kapazitätsauslastung und können für Ihre Nutzung in den vorherigen Monaten bereitgestellt werden. Weitere Informationen finden Sie unter link:sewebiug_billing.html["Rechnung anzeigen"]
+Navigieren Sie zu diesem Bildschirm über das Widget * Monthly Lades* auf dem Dashboard oder von *ADMINISTRATION > Billing*, um eine monatliche Aufschlüsselung der Gebühren für alle abonnierten Dienste anzuzeigen. Die Rechnungsdaten basieren auf Ihrer zugesagt- und Burst-Kapazitätsauslastung und können für Ihre Nutzung in den vorherigen Monaten bereitgestellt werden. Weitere Informationen finden Sie unter link:sewebiug_billing.html["Rechnung anzeigen"].
 
 
 
 === Bildschirm „Neue Warnungen“
 
-In dieser Version wird ein neuer *Alerts*-Bildschirm eingeführt, der alle vom System erzeugten und vom Benutzer generierten Warnmeldungen auflistet. Auf dem Bildschirm können Sie außerdem benutzerdefinierte Warnmeldungen für kritische Ereignisse erstellen, die Ihre Umgebung betreffen, und diese anderen Benutzern vermitteln. Gegebenenfalls können sie die Alarme anzeigen und verwerfen. Weitere Informationen finden Sie unter link:sewebiug_alerts.html["Erstellen und Managen von Warnmeldungen"]
+In dieser Version wird ein neuer *Alerts*-Bildschirm eingeführt, der alle vom System erzeugten und vom Benutzer generierten Warnmeldungen auflistet. Auf dem Bildschirm können Sie außerdem benutzerdefinierte Warnmeldungen für kritische Ereignisse erstellen, die Ihre Umgebung betreffen, und diese anderen Benutzern vermitteln. Gegebenenfalls können sie die Alarme anzeigen und verwerfen. Weitere Informationen finden Sie unter link:sewebiug_alerts.html["Erstellen und Managen von Warnmeldungen"].
 
 
 
 === Verbesserte Benutzeroberfläche
 
-Die folgenden Verbesserungen wurden an der Benutzeroberfläche der NetApp Service Engine vorgenommen: * das Menü *Dashboard* auf der linken Navigationsleiste zeigt einen intuitiven Navigationspunkt zum Zugriff auf das Dashboard. * das Menü *abonnierte Dienste* im linken Navigationsbereich wurde in *Cloud Services* umbenannt.
+Die folgenden Verbesserungen wurden auf der Benutzeroberfläche der NetApp Service Engine vorgenommen:
+
+* Das Menü *Dashboard* im linken Navigationsbereich bietet einen intuitiven Navigationspunkt für den Zugriff auf das Dashboard.
+* Das Menü *abonnierte Services* im linken Navigationsbereich wurde in *Cloud Services* umbenannt.
+
 
 ====
 
@@ -70,7 +80,16 @@ Die NetApp Service Engine unterstützt jetzt das Management einer mandantenfähi
 * API-Unterstützung: Die `/Tenant/{Tenant_id}/Zones/{Zone_Name}/Subnets` und `/Tenant/{Tenant_id}/Zones/{Zone_Name}/Subnets/{id}/Tags` APIs werden im Rahmen dieser Version angeboten, um Subnetze für Untermandanten zu erstellen und anzuzeigen.
 
 
-Weitere Informationen zu dieser Funktion finden Sie unter den folgenden Links: * link:nkfsosm_overview.html["Betriebsmodell, Rollen und Verantwortlichkeiten"]* * * * * * 
+Weitere Informationen zu dieser Funktion finden Sie unter den folgenden Links:
+
+* link:nkfsosm_overview.html["Betriebsmodell, Rollen und Verantwortlichkeiten"]
+* link:nkfsosm_tenancy_overview.html["Mandantenfähigkeit und Mandantenfähigkeit in Flex Subscription"]
+* link:sewebiug_dashboard.html["Zeigen Sie Das Flex Subscription Dashboard An"]
+* link:sewebiug_working_with_reports.html["Berichte anzeigen"]
+* link:sewebiug_managing_subscriptions.html["Verwalten von Abonnements"]
+* link:sewebiug_managing_tenants_and_subtenants.html["Management von Mandanten und Mandanten"]
+* link:sewebiug_define_network_configurations.html["Netzwerke für Mandanten und Untermandanten definieren"]
+
 
 
 
@@ -84,7 +103,11 @@ Die folgenden APIs wurden geändert und umfassen neue Attributwerte für die neu
 * Block-Store-APIs
 
 
-Weitere Informationen finden Sie unter den folgenden Links: * link:nkfsosm_tiering.html["Tiering"]* 
+Weitere Informationen finden Sie unter den folgenden Links:
+
+* link:nkfsosm_tiering.html["Tiering"]
+* link:nkfsosm_performance.html["Performance Service Level"]
+
 
 ====
 
@@ -126,7 +149,7 @@ Mit dem neuen *Backup*-Bildschirm können Sie die Backups der in Ihrer Umgebung 
 
 === Bereitstellung zur Einschränkung des Benutzerzugriffs auf CIFS-Freigaben
 
-Sie können nun die Access Control List (ACL) angeben, um den Benutzerzugriff auf eine CIFS (SMB)- oder Multi-Protokoll-Freigabe zu beschränken. Sie können Windows-Benutzer oder -Gruppen auf Basis der Active Directory (AD)-Einstellungen festlegen, die zur ACL hinzugefügt werden sollen.link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["Weitere Informationen ."]
+Sie können nun die Access Control List (ACL) angeben, um den Benutzerzugriff auf eine CIFS (SMB)- oder Multi-Protokoll-Freigabe zu beschränken. Sie können Windows-Benutzer oder -Gruppen auf Basis der Active Directory (AD)-Einstellungen festlegen, die zur ACL hinzugefügt werden sollen.link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html#steps["Weitere Informationen ."].
 
 ====
 
@@ -178,19 +201,19 @@ Bei einigen von der NetApp Service Engine unterstützten Storage-Abonnements kö
 
 ==== Erfolgt eine Benachrichtigung, wenn eine vorgeschlagene Änderung die Nutzung von Burst-Kapazität zur Folge hat
 
-Eine Benachrichtigung zur Anzeige einer Änderung der vorgeschlagenen Bereitstellung, die zu einem Burst-Anstieg eines Abonnements führt. Der Benutzer kann den Vorgang fortsetzen, da er weiß, dass das Abonnement in den Burst-Wert gesetzt wird oder sich entscheidet, nicht mit der Aktion fortzufahren.link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["Weitere Informationen ."]
+Eine Benachrichtigung zur Anzeige einer Änderung der vorgeschlagenen Bereitstellung, die zu einem Burst-Anstieg eines Abonnements führt. Der Benutzer kann den Vorgang fortsetzen, da er weiß, dass das Abonnement in den Burst-Wert gesetzt wird oder sich entscheidet, nicht mit der Aktion fortzufahren.link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["Weitere Informationen ."].
 
 
 
 ==== Benachrichtigung, wenn das Abonnement in Burst ist
 
-Ein Benachrichtigungsbanner wird angezeigt, wenn ein Abonnement in einem Burst steht.link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["Weitere Informationen ."]
+Ein Benachrichtigungsbanner wird angezeigt, wenn ein Abonnement in einem Burst steht.link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#burst-usage-notifications["Weitere Informationen ."].
 
 
 
 ==== Der Kapazitätsbericht zeigt die Burst-Nutzung an
 
-Der Kapazitätsbericht zeigt die Anzahl der Tage, die das Abonnement in Burst hatte, und die Menge der verwendeten Burst-Kapazität an.link:sewebiug_working_with_reports.html#capacity-usage["Weitere Informationen ."]
+Der Kapazitätsbericht zeigt die Anzahl der Tage, die das Abonnement in Burst hatte, und die Menge der verwendeten Burst-Kapazität an.link:sewebiug_working_with_reports.html#capacity-usage["Weitere Informationen ."].
 
 
 

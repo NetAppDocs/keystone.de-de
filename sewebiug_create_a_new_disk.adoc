@@ -15,10 +15,7 @@ summary: Keystone erstellt ein neues Laufwerk
 [role="lead"]
 In diesem Abschnitt wird beschrieben, wie Sie eine neue Festplatte erstellen, indem Sie die Festplattendetails direkt angeben. Anweisungen zum Erstellen einer Festplatte auf Basis eines Snapshots eines vorhandenen Laufwerks finden Sie unter link:sewebiug_create_a_disk_from_a_snapshot.html#create-a-disk-from-a-snapshot["Erstellen Sie eine Festplatte aus einem Snapshot"].
 
-
-
-=== Bevor Sie beginnen
-
+.Bevor Sie beginnen
 * Wenn Block-Speicher verfügbar ist, aber nicht initialisiert wird, werden Sie aufgefordert, ihn zu initialisieren, bevor Sie die Festplatte erstellen können. Zum Initialisieren des Blockspeichers benötigen Sie:
 +
 ** Das Subnetz für den Blockspeicher. Wenn Sie mit Ihrer Netzwerkumgebung nicht vertraut sind, wenden Sie sich bitte AN IHRE IT-Abteilung, um die relevanten Werte zu erfahren.
@@ -32,10 +29,7 @@ In diesem Abschnitt wird beschrieben, wie Sie eine neue Festplatte erstellen, in
 * Sie können eine Backup-Richtlinie definieren, um Backups der Festplatte nach einem Zeitplan zu erfassen. Weitere Informationen finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#backups["Backups"].
 
 
-
-
-=== Schritte
-
+.Schritte
 . Sehen Sie sich die an link:sewebiug_view_disks.html#view-disks["Festplattenliste"].
 . Klicken Sie Auf *Datenträger Erstellen*.
 . Wählen Sie im Dialogfeld Datenträger erstellen die Option Neue Festplatte erstellen aus.
@@ -118,10 +112,6 @@ Wählen Sie eine Option aus, um die Performance-Details für dieses Level anzuze
 . Wenn Sie Tags (Schlüsselwertpaare) zur Festplatte hinzufügen möchten, geben Sie diese im Abschnitt Tags an.
 . Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Erstellen der Festplatte erstellt.
 
-
-
-
-=== Nachdem Sie fertig sind
 
 Datenträger erstellen wird als asynchroner Job ausgeführt. Ihre Vorteile:
 

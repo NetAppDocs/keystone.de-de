@@ -15,10 +15,7 @@ summary: Keystone erstellt eine neue Dateifreigabe
 [role="lead"]
 In diesem Abschnitt wird beschrieben, wie Sie eine neue Freigabe erstellen, indem Sie die Teilendetails direkt angeben. Informationen zum Erstellen einer neuen Freigabe auf Grundlage eines Snapshots einer vorhandenen Freigabe finden Sie unter link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share["Erstellen Sie Share from Snapshot"].
 
-
-
-=== Bevor Sie beginnen
-
+.Bevor Sie beginnen
 * Auf einem Dateiserver wird eine Freigabe erstellt. Der Dateiserver muss sich im Betriebszustand befinden, bevor Sie eine neue Dateifreigabe erstellen können.
 * Um eine CIFS- oder NFS-Dateifreigabe zu erstellen, muss der Server für den jeweiligen Service aktiviert sein. Für Dateifreigaben mit mehreren Protokollen sollte der Server sowohl CIFS- als auch NFS-Services unterstützen.
 * Um asynchrone Disaster-Recovery-Optionen für die Freigabe zu aktivieren, müssen Sie den Share auf einem Server erstellen, auf dem die asynchrone Disaster Recovery aktiviert ist. Weitere Informationen finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Disaster Recovery"].
@@ -27,10 +24,7 @@ In diesem Abschnitt wird beschrieben, wie Sie eine neue Freigabe erstellen, inde
 * Sie können eine Snapshot-Richtlinie definieren, um Snapshots der Dateifreigabe auf einer geplanten Basis zu erfassen. Weitere Informationen finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["Snapshots"].
 
 
-
-
-=== Schritte
-
+.Schritte
 . Gehen Sie zu *FILE SERVICES > Shares*.
 . Klicken Sie Auf *Freigabe Erstellen*.
 . Wählen Sie im Dialogfeld „Freigabe erstellen“ die Option Neue Freigabe erstellen aus.
@@ -116,10 +110,7 @@ NOTE: Der Benutzer- oder Gruppenname sollte dem Standard-AD-Format entsprechen. 
 . Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Erstellen der Freigabe erstellt.
 
 
-
-
-=== Nachdem Sie fertig sind
-
+.Nachdem Sie fertig sind
 * Nur für CIFS-Freigaben: Um die Freigaben nach Hostnamen zur Verfügung zu stellen, muss der Domänenadministrator die DNS-Datensätze mit dem CIFS-Servernamen und der IP-Adresse aktualisieren. Andernfalls ist der Zugriff auf die Freigabe nur über die IP-Adresse möglich. Beispiel:
 +
 ** Verwenden Sie bei aktualisierten DNS-Datensätzen entweder den Hostnamen oder die IP, um auf die Freigabe zuzugreifen, z. B. file://hostname/share["\\hostname\Freigabe"^] Oder

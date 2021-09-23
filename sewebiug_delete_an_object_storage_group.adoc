@@ -15,10 +15,7 @@ summary: Keystone löscht eine Objekt-Storage-Gruppe
 [role="lead"]
 Verwenden Sie diese Methode, um eine Objekt-Speichergruppe zu löschen.
 
-
-
-=== Schritte
-
+.Schritte
 . Anzeigen link:sewebiug_view_host_groups.html#view-host-groups["Die Gruppenliste"].
 . Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und dass im Display Gruppen angezeigt werden (nicht Benutzer).
 . Suchen Sie die Gruppe in der Liste, und klicken Sie auf das Symbol Löschen für diese Gruppe.

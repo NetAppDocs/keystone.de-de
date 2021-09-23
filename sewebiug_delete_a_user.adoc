@@ -18,10 +18,7 @@ Verwenden Sie diese Methode, um einen Benutzer zu löschen.
 
 NOTE: Ein gelöschter Benutzer kann nicht wiederhergestellt werden.
 
-
-
-=== Schritte
-
+.Schritte
 . Wählen Sie im Menü Administration > Users aus.
 . Suchen Sie den Benutzer in der Liste, und klicken Sie auf das Symbol Löschen.
 . Geben Sie im Dialogfeld Löschen bestätigen den Namen des zu löschenden Benutzers ein.

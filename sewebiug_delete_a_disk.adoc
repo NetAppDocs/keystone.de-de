@@ -21,10 +21,7 @@ In diesem Abschnitt wird das Löschen einer Festplatte beschrieben.
 * Wenn Sie ein primäres Laufwerk löschen, werden alle zugehörigen Backups gelöscht
 
 
-
-
-=== Schritte
-
+.Schritte
 . Sehen Sie sich die an link:sewebiug_view_disks.html#view-disks["Festplattenliste"].
 . Suchen Sie den Datenträger in der Liste, und klicken Sie auf das Symbol Löschen für diesen Datenträger. (Einzelheiten zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Aktionen zur Listenansicht"].
 . Geben Sie im Dialogfeld Löschen bestätigen den Festplattennamen ein, um zu bestätigen, dass Sie das Laufwerk löschen möchten.
@@ -33,10 +30,6 @@ image:sewebiug_image30.png["Fehler: Fehlendes Grafikbild"]
 
 . Klicken Sie Auf *Bestätigen*. Dadurch wird ein Job zum Löschen der Festplatte erstellt.
 
-
-
-
-=== Nachdem Sie fertig sind
 
 Datenträger löschen wird als asynchroner Job ausgeführt. Ihre Vorteile:
 

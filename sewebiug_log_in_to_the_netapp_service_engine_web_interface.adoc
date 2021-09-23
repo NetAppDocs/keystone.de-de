@@ -56,10 +56,7 @@ Um sich mit einem Benutzernamen und einem Kennwort anzumelden, benötigen Sie Fo
 * Einen Webbrowser
 
 
-
-
-==== Schritte
-
+.Schritte
 . Rufen Sie in Ihrem Webbrowser die URL Ihres NetApp Service Engine Portals auf. Die Anmeldeseite wird angezeigt.
 . Wählen Sie * Lokale Benutzeranmelde* aus.
 . Geben Sie auf der Seite Anmelden bei NetApp Keystone Ihren Benutzernamen und Ihr Kennwort ein und klicken Sie auf *Anmelden*.
@@ -80,10 +77,7 @@ Zur Anmeldung mit NetApp SSO benötigen Sie:
 * Einen Webbrowser.
 
 
-
-
-==== Schritte
-
+.Schritte
 . Rufen Sie in Ihrem Webbrowser die URL Ihres NetApp Service Engine Portals auf. Die Anmeldeseite wird angezeigt.
 . Wählen Sie NetApp SSO aus.
 . Geben Sie auf der SSO-Anmeldeseite Ihren Benutzernamen und Ihr Kennwort ein und klicken Sie auf *Anmelden*.
@@ -96,10 +90,7 @@ Nachdem die erfolgreiche Anmeldung bei der NetApp Service Engine Web-Schnittstel
 
 === Loggen Sie sich über die Webschnittstelle der NetApp Service Engine aus
 
-
-
-==== Schritte
-
+.Schritte
 . Um sich von der Benutzeroberfläche abzumelden, klicken Sie auf das Benutzersymbol und klicken Sie auf *Abmelden*.
 
 

@@ -15,10 +15,7 @@ summary: Keystone löscht einen S3-Schlüssel für einen Benutzer
 [role="lead"]
 Verwenden Sie diese Methode, um einen S3-Schlüssel für einen Benutzer zu löschen.
 
-
-
-=== Schritte
-
+.Schritte
 . Sehen Sie sich die an link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["Benutzerliste"].
 . Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und auf der Anzeige Benutzer (nicht Gruppen) angezeigt werden.
 . Suchen Sie den Benutzer in der Liste, und klicken Sie auf das Schlüsselsymbol für diese Gruppe.

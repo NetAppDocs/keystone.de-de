@@ -34,10 +34,7 @@ Verwenden Sie diese Methode, um die Details eines Cloud-Service zu ändern. Ihre
 
 | AWS | TBA 
 |===
-
-
-=== Schritte
-
+.Schritte
 . Wählen Sie im Menü * Cloud-Services* > *Cloud-Services* aus.
 . Suchen Sie den Cloud-Service in der Liste, und klicken Sie auf das Symbol Bearbeiten.
 . Nehmen Sie im Dialogfeld Cloud-Service aktualisieren alle erforderlichen Änderungen vor.

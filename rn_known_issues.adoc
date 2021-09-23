@@ -29,9 +29,6 @@ Die folgenden bekannten Probleme wurden in der NetApp Service Engine gemeldet. D
 | Einschränkungen beim Löschen von File-Servern und Block-Stores, für die Disaster Recovery aktiviert ist | Beim Löschen eines Disaster Recovery-aktivierten Blockspeichers oder einer Dateifreigabe kann der Fehler fehlschlagen, da Peering aufgrund eines Timeout nicht entfernt wird. | Das Löschen ist fehlgeschlagen und wird über OpsRamp Ticket benachrichtigt. 
 
 
-| Einschränkungen für lange laufende Jobs, die in den Status „Queued“ versetzt werden. | Wenn Jobs längere Zeit laufen, werden sie in den Status „Queued“ versetzt. Zur Identifizierung des Problems ist ein Support Ticket erforderlich. | Eine Service-Anfrage an GSSC richten, um das Problem zu lösen. 
-
-
 | Einschränkung beim Erstellen mehrerer Snapshots | Wenn mehrere Snapshots zur Erstellung ausgelöst werden, zeigt die Webseite zunächst nur den letzten erstellten Snapshot an. | Auto Job nimmt die anderen Snapshots innerhalb von 15 Minuten auf. 
 
 

@@ -40,10 +40,6 @@ In der Liste werden einfache Informationen zu jedem Azure-Volume angezeigt. Übe
 
 In diesem Abschnitt wird das Hinzufügen eines Azure-Volume beschrieben.
 
-
-
-==== Bevor Sie beginnen
-
 Sie benötigen:
 
 * Der Submandant, zu dem das Azure Volume gehört
@@ -55,10 +51,7 @@ Sie benötigen:
 * Die Quote (Größe) des Volumens
 
 
-
-
-==== Schritte
-
+.Schritte
 . Wählen Sie im Menü *FILE SERVICES > Azure Volumes* aus.
 . Klicken Sie Auf *Erstellen*.
 . Geben Sie im Dialogfeld Azure-Volume erstellen den Untermandanten, das ANF-Konto, das vnet, das Subnetz, Der Kapazitäts-Pool, der Name des Volume, der Dateipfad und das Kontingent. Stellen Sie sicher, dass Sie einen eindeutigen Dateipfad für eine erfolgreiche Volume-Erstellung eingeben.
@@ -72,10 +65,7 @@ Sie benötigen:
 
 Verwenden Sie diese Methode, um die Details eines Azure Volumes zu ändern. Sie können den Dateipfad und das Kontingent ändern und Tags hinzufügen oder entfernen.
 
-
-
-==== Schritte
-
+.Schritte
 . Wählen Sie im Menü *FILE SERVICES > Azure Volumes* aus.
 . Suchen Sie in der Liste das Azure Volume und klicken Sie auf das Bearbeiten-Symbol.
 . Nehmen Sie im Dialogfeld Azure-Volume managen die erforderlichen Änderungen vor. Wenn Sie den Dateipfad oder das Kontingent ändern, stellen Sie sicher, dass der Dateipfad eindeutig ist und dass das Kontingent nicht das verfügbare Kontingent im Pool überschreitet.
@@ -88,10 +78,7 @@ Verwenden Sie diese Methode, um die Details eines Azure Volumes zu ändern. Sie 
 
 Verwenden Sie diese Methode zum Löschen eines Azure Volumes.
 
-
-
-==== Schritte
-
+.Schritte
 . Wählen Sie im Menü *FILE SERVICES > Azure Volumes* aus.
 . Suchen Sie in der Liste das Azure Volume und klicken Sie auf das Löschsymbol.
 . Geben Sie im Dialogfeld Löschen bestätigen den Namen des zu löschenden Azure-Volumes ein.

@@ -17,10 +17,7 @@ Verwenden Sie diese Methode, um einen S3-Schlüssel für einen Benutzer zu erste
 
 Stellen Sie sicher, dass Sie den Schlüssel sofort nach der Erstellung erfassen. Es gibt keine Möglichkeit, Schlüsseldetails nach der Erstellung abzurufen.
 
-
-
-=== Schritte
-
+.Schritte
 . Sehen Sie sich die an link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["Benutzerliste"].
 . Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und auf der Anzeige Benutzer (keine Gruppen) angezeigt werden.
 . Suchen Sie den Benutzer in der Liste, und klicken Sie auf das Schlüsselsymbol für diese Gruppe.

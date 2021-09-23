@@ -40,10 +40,6 @@ In der Liste werden einfache Informationen zu jedem Azure NetApp Konto angezeigt
 
 In diesem Abschnitt wird das Hinzufügen eines Azure NetApp Accounts beschrieben.
 
-
-
-=== Bevor Sie beginnen
-
 Sie benötigen:
 
 * Der Untermandant, zu dem der Azure NetApp Account gehört
@@ -53,10 +49,7 @@ Sie benötigen:
 * Ein Name für das Konto
 
 
-
-
-==== Schritte
-
+.Schritte
 . Wählen Sie aus dem Menü * ADMINISTRATION > Azure NetApp Accounts* aus.
 . Klicken Sie Auf *Erstellen*.
 . Geben Sie im Dialogfeld Azure NetApp Konto erstellen den Untermandanten, den Azure-Standort (Region), die Azure-Ressourcengruppe und einen Namen für das Azure NetApp Konto an.
@@ -70,10 +63,7 @@ Sie benötigen:
 
 Verwenden Sie diese Methode, um Tags zu ändern, die einem Azure NetApp Konto zugeordnet sind.
 
-
-
-==== Schritte
-
+.Schritte
 . Wählen Sie aus dem Menü * ADMINISTRATION > Azure NetApp Accounts* aus.
 . Suchen Sie in der Liste den Azure NetApp Account und klicken Sie auf das Bearbeiten-Symbol.
 . Im Dialogfeld Azure NetApp Konto managen können Sie nach Bedarf Tags hinzufügen, entfernen oder bearbeiten.
@@ -86,10 +76,7 @@ Verwenden Sie diese Methode, um Tags zu ändern, die einem Azure NetApp Konto zu
 
 Verwenden Sie diese Methode, um einen Azure NetApp Account zu löschen.
 
-
-
-==== Schritte
-
+.Schritte
 . Wählen Sie aus dem Menü * ADMINISTRATION > Azure NetApp Accounts* aus.
 . Suchen Sie in der Liste den Azure NetApp Account und klicken Sie auf das Löschen-Symbol.
 . Geben Sie im Dialogfeld Löschen bestätigen den Namen des zu löschenden Azure NetApp Kontos ein.

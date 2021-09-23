@@ -15,10 +15,7 @@ summary: Keystone zeigt die Objekt-Storage-Gruppe und die Benutzer an
 [role="lead"]
 In der Liste Benutzerverwaltung werden die Benutzer und Gruppen des Objektspeichers für einen angegebenen Untermandanten angezeigt.
 
-
-
-=== Schritte
-
+.Schritte
 . Wählen Sie im Menü Objekt-Storage > Benutzer.
 . Verwenden Sie das Dropdown-Menü Untereinheit, um bei Bedarf einen anderen Untermandanten auszuwählen.
 . Verwenden Sie die Links Benutzer und Gruppen, um die Anzeige zwischen Benutzern und Gruppen umzuschalten.

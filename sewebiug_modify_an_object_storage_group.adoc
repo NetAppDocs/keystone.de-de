@@ -15,10 +15,7 @@ summary: Keystone ändert eine Objekt-Storage-Gruppe
 [role="lead"]
 Verwenden Sie diese Methode, um Details einer Objekt-Storage-Gruppe, z. B. des Gruppennamens und der S3-Richtlinie, zu ändern.
 
-
-
-=== Schritte
-
+.Schritte
 . Sehen Sie sich die an link:sewebiug_view_host_groups.html#view-host-groups["Gruppenliste"].
 . Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und dass im Display Gruppen angezeigt werden (nicht Benutzer).
 . Suchen Sie die Gruppe in der Liste, und klicken Sie auf das Symbol Bearbeiten für die Gruppe.

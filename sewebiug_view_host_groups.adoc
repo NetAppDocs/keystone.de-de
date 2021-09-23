@@ -38,10 +38,6 @@ Es ist möglich, eine leere Host-Gruppe zu erstellen und als Platzhalter einer F
 
 
 
-
-
-=== Bevor Sie beginnen
-
 Zum Erstellen der Host-Gruppe benötigen Sie Folgendes:
 
 * Der Untermandant, die Region und die Zone, in der die Host-Gruppe erstellt werden soll.
@@ -56,10 +52,7 @@ NOTE: Wenn der Blockspeicher für eine Submandant/Zone-Kombination noch nicht in
 * Ein Alias für jeden Initiator. Ein Alias ist ein Name, um den Initiator-Server oder einen individuellen Port/eine Schnittstelle auf dem Server zu identifizieren. Beispiel: Server 4.
 
 
-
-
-=== Schritte
-
+.Schritte
 . link:sewebiug_view_host_groups.html#view-host-groups["Zeigen Sie die Host-Gruppen an"] Liste.
 . Klicken Sie Auf *Hostgruppe Erstellen*.
 . Auf der Seite Host-Gruppe erstellen:
@@ -75,10 +68,6 @@ NOTE: Wenn der Blockspeicher für eine Submandant/Zone-Kombination noch nicht in
 . Klicken Sie Auf *Erstellen*. Dadurch wird die Host-Gruppe erstellt.
 
 
-
-
-=== Nachdem Sie fertig sind
-
 Nach der Erstellung der Host-Gruppe ist sie für die Zuordnung zu Festplatten verfügbar.
 
 
@@ -91,10 +80,7 @@ Durch das Ändern einer Host-Gruppe wird der Zugriff auf jede Festplatte geände
 
 Sie können den Alias eines Initiators nicht ändern. Um den Alias zu ändern, löschen Sie den Initiator aus der Gruppe, und erstellen Sie ihn dann erneut.
 
-
-
-=== Schritte
-
+.Schritte
 . Sehen Sie sich die an link:sewebiug_view_host_groups.html#view-host-groups["Host-Gruppen"] Liste.
 . Suchen Sie die Host-Gruppe in der Liste, und klicken Sie auf das Bearbeiten-Symbol für diese Host-Gruppe.
 +
@@ -121,10 +107,7 @@ Um einen Initiator aus der Host-Gruppe zu entfernen, suchen Sie den Initiator in
 
 Sie können eine Host-Gruppe löschen, wenn der Host-Gruppe keine Laufwerke zugeordnet sind.
 
-
-
-=== Schritte
-
+.Schritte
 . Sehen Sie sich die an link:sewebiug_view_host_groups.html#view-host-groups["Host-Gruppen"] Liste.
 . Suchen Sie die Host-Gruppe in der Liste, und klicken Sie auf das Symbol Löschen für diese Host-Gruppe.
 . Geben Sie im Dialogfeld Löschen bestätigen den Hostnamen ein, um zu bestätigen, dass Sie die Host-Gruppe löschen möchten.
