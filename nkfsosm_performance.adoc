@@ -19,8 +19,111 @@ Jedes Performance-Service-Level wird durch seine I/O-Dichte definiert. Dies ist 
 
 Jedes von den Flex-Abonnement-Services gemanagte Volume ist mit einem Service-Level für die Performance verknüpft. Alle I/O-Vorgänge und der gesamte auf dem jeweiligen Volume verwendete Storage werden in die E/A-Dichteberechnung des Volumes berücksichtigt.
 
-Die folgende Abbildung zeigt die Performance-Service-Level.
+Folgende Tabelle zeigt die Service Level für die Performance.
 
-image:nkfsosm_image5.png["Fehler: Fehlendes Grafikbild"]
+
+
+== Performance Service Levels für unterschiedliche Storage-Typen
+
+Hier sind die Service Level für Datei-, Block- und Objekt-Storage aufgeführt.
 
 Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte während der letzten Woche. Die Spitzen-Performance wird in einem stündlichen Zeitintervall festgelegt. Berichte zur I/O-Dichte nach Volumen werden monatlich erstellt, um die Einhaltung der jeweiligen Service-Level zu beurteilen.
+
+
+
+=== Dateifreigaben
+
+*Unterstützte Protokolle*: NFS und CIFS
+
+|===
+
+
+| *Service Level* | *Extreme* | *Premium* | *Standard* | *Wert* 
+
+
+| * Workload-Typ* | Analysen, Datenbanken | VDI, Virtualisierungsapplikationen, Software-Entwicklung | Dateifreigaben, Webserver | Backup 
+
+
+| *Ziel-IOPS/tib* | 6,144 | 2,048 | 128 | K. A. 
+
+
+| *max. IOPS/tib* | 12,288 | 4,096 | 512 | K. A. 
+
+
+| *maximaler Durchsatz MB/s (32 KB/IOP)* | 384 | 128 | 16 | K. A. 
+
+
+| *Latenz* | <1 ms | <2 ms | <17 ms | K. A. 
+
+
+.2+| *Mindestkapazität*^1,2^ 4+| 100 tib^1^ 
+
+
+| 15 tib^2^ | 25 tib^2^ | 50 tib^2^ | 50 tib^2^ 
+|===
+
+NOTE: ^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib für eine Kombination aus beliebigen Dateifreigabe- und Block-Performance-Service-Leveln für NetApp Lösungen. ^2^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Servicestufe, die für Channel-geführte Opportunitys ausgewählt wurde.
+
+
+
+=== Block-Storage
+
+* Unterstützte Protokolle*: FC und iSCSI
+
+|===
+
+
+| *Service Level* | *Extreme* | *Premium* | *Standard* 
+
+
+| * Workload-Typ* | HPC | Videoüberwachung | Backup 
+
+
+| *Ziel-IOPS/tib* 3+| K. A. 
+
+
+| *max. IOPS/tib* | 5.500 | 4,000 | K. A. 
+
+
+| *maximaler Durchsatz MB/s (32 KB/IOP)* | 43 | 31 | K. A. 
+
+
+| *Latenz* | <0.5 ms | <0.5 ms | K. A. 
+
+
+| *Mindestkapazität*^1,2^ | 100 tib^3^ | 100 tib^3^ | 300 tib^3^ 
+|===
+
+NOTE: ^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib für eine Kombination aus beliebigen Dateifreigabe- und Block-Performance-Service-Leveln für NetApp Lösungen. ^2^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Servicestufe für Channel-geführte Opportunitys ausgewählt. ^3^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Service-Tier ausgewählt für jeden Opportunity-Typ.
+
+
+
+=== Objekt-Storage
+
+*unterstütztes Protokoll*: S3
+
+|===
+
+
+| *Service Level* | Objekt 
+
+
+| * Workload-Typ* | Medien-Repository, Archivierung 
+
+
+| *Ziel-IOPS/tib* | K. A. 
+
+
+| *max. IOPS/tib* | K. A. 
+
+
+| *maximaler Durchsatz MB/s (32 KB/IOP)* | K. A. 
+
+
+| *Latenz* | K. A. 
+
+
+| *Mindestkapazität*^1,2^ | 500 tib^3^ 
+|===
+
+NOTE: ^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib für eine Kombination aus beliebigen Dateifreigabe- und Block-Performance-Service-Leveln für NetApp Lösungen. ^2^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Servicestufe für Channel-geführte Opportunitys ausgewählt. ^3^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Service-Tier ausgewählt für jeden Opportunity-Typ.

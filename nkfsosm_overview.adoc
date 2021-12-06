@@ -24,10 +24,30 @@ Flex Subscription bietet drei Betriebsmodelle für die Servicebereitstellung.
 
 Die Funktionen und Optionen des Angebots variieren je nach Modell. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["Rollen und Betriebsabläufe von Service-Providern und Kunden"]
 
-Diese Abbildung fasst das gesamte Service-Lifecycle-Modell zusammen und kategorisiert die zugehörigen Services.
 
-image:nkfsosm_image7.png["Fehler: Fehlendes Grafikbild"]
 
+== Rollen und Verantwortlichkeiten über den gesamten Servicezyklus hinweg
+
+* *NetApp-betriebene Modell*: NetApp führt das End-to-End Management von Installation, Implementierung, Betrieb, Monitoring, Optimierung und Support durch.
+* *Partner-Operated Model*: Der Anteil von Rollen und Verantwortlichkeiten hängt vom SLA zwischen Ihnen und dem Dienstleister oder Partner ab. Weitere Informationen erhalten Sie von Ihrem Dienstanbieter.
+* *vom Kunden betriebenes Modell*: Die folgende Tabelle fasst das gesamte Service Lifecycle Modell und die damit verbundenen Rollen und Verantwortlichkeiten in einer kundengesteuerten Umgebung zusammen.
+
+
+|===
+| Aufgabe | NetApp | Kunde 
+
+
+| Installation und zugehörige Aufgaben * Installieren * Konfigurieren * Bereitstellen * integriert | image:check.png[""] | Keine 
+
+
+| Administration and Monitoring * Monitor * Report * Durchführen von Verwaltungsaufgaben * Warnung | Keine | image:check.png[""] 
+
+
+| Betrieb und Optimierung * Kapazitätsmanagement * Performance managen * SLA managen | Keine | image:check.png[""] 
+
+
+| Support * Support-Kunde * Hardware-Reparatur * Software-Support * Upgrades und Patches | image:check.png[""] | Keine 
+|===
 
 
 === Zusammenfassung der Rollen und Verantwortlichkeiten

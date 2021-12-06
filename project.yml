@@ -21,10 +21,18 @@ sidebar:
         url: "/nkfsosm_performance.html"
       - title: Service Level-Kennzahlen und -Definitionen
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
+      - title: Abrechnung
+        url: "/nkfsosm_kfs_billing.html"
       - title: Datensicherung
         url: "/nkfsosm_data_protection.html"
       - title: Tiering
         url: "/nkfsosm_tiering.html"
+      - title: Non-Returnable Disk
+        url: "/nkfsosm_nrd.html"
+      - title: US Citizen Support
+        url: "/nkfsosm_uscs.html"
+      - title: Flex Abonnement und Equinix
+        url: "/nkfsosm_equinix.html"
     - title: Betriebsmodell und Verantwortlichkeiten
       url: "/nkfsosm_overview.html"
     - title: Und Mandantenfähigkeit
@@ -35,6 +43,8 @@ sidebar:
       url: "/nkfsosm_site_requirements.html"
     - title: Betrieb
       url: "/nkfsosm_netapp_global_services_and_support_center_@gssc@.html"
+    - title: Flex Abonnement und Active IQ
+      url: "/nkfsosm-keystone-and-aiq.html"
   - title: Versionshinweise
     entries:
     - title: Was ist neu

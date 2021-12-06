@@ -25,9 +25,7 @@ NetApp Keystone Flex Subscription (Flex Subscription) ist ein abonnementbasierte
 
 === Welche Storage-Service-Angebote werden im Rahmen des Flex Subscription bereitgestellt?
 
-Die folgende Übersicht zeigt die Service Level-Angebote für die Storage-Performance.
-
-image:nkfsosm_image5.png["Flex Subscription Performance Service-Level"]
+Weitere Informationen finden Sie unter link:nkfsosm_performance.html["Performance Service Level"]
 
 
 

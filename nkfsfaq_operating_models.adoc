@@ -19,10 +19,28 @@ Es gibt drei Betriebsmodelle in flexiblen Abonnements. Diese FAQs beziehen sich 
 
 === Welche Betriebsmodelle gibt es und wer ist verantwortlich für die wichtigsten Aktivitäten?
 
-Das folgende Diagramm zeigt die drei Betriebsmodelle auf, die ein Kunde auswählen kann: NetApp betrieben, Partner betrieben und vom Kunden betrieben. Für jedes der Betriebsmodelle werden die Rollen und Zuständigkeiten im gesamten Servicezyklus in der nachfolgenden Tabelle dargestellt.
+Das folgende Diagramm zeigt die drei Betriebsmodelle auf, die ein Kunde auswählen kann: NetApp betrieben, Partner betrieben und vom Kunden betrieben.
 
-image:nkfsfaq_image4.png["Betriebsmodelle und Verantwortlichkeiten"]
+* *NetApp-betriebene Modell*: NetApp führt das End-to-End Management von Installation, Implementierung, Betrieb, Monitoring, Optimierung und Support durch.
+* *Partner-Operated Model*: Der Anteil von Rollen und Verantwortlichkeiten hängt vom SLA zwischen Ihnen und dem Dienstleister oder Partner ab. Weitere Informationen erhalten Sie von Ihrem Dienstanbieter.
+* *vom Kunden betriebenes Modell*: Die folgende Tabelle fasst das gesamte Service Lifecycle Modell und die damit verbundenen Rollen und Verantwortlichkeiten in einer kundengesteuerten Umgebung zusammen.
 
+
+|===
+| Aufgabe | NetApp | Kunde 
+
+
+| Installation und zugehörige Aufgaben * Installieren * Konfigurieren * Bereitstellen * integriert | Symbol:prüfen[] | Keine 
+
+
+| Administration and Monitoring * Monitor * Report * Durchführen von Verwaltungsaufgaben * Warnung | Keine | Symbol:prüfen[] 
+
+
+| Betrieb und Optimierung * Kapazitätsmanagement * Performance managen * SLA managen | Keine | Symbol:prüfen[] 
+
+
+| Support * Support-Kunde * Hardware-Reparatur * Software-Support * Upgrades und Patches | Symbol:prüfen[] | Keine 
+|===
 
 
 === Was ist ein NetApp-operated Modell?

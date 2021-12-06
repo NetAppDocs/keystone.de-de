@@ -13,8 +13,37 @@ summary: Neue Funktionen der NetApp Service Engine
 
 
 [role="lead"]
-Die folgenden Funktionen und Verbesserungen wurden in dieser Version der NetApp Keystone Flex Subscription Services (Flex Subscription) eingeführt:
+Die folgende Funktion wurde mit der NetApp Service Engine 2.7 eingeführt, um erweiterte Services für das flexible NetApp Keystone Abonnement (Flex Subscription) zu unterstützen:
 
+
+
+== Funktionen der NetApp Service Engine 2.7
+
+Diese Version bietet u. a. folgende neue Funktionen:
+
+
+
+=== Möglichkeit zur Anzeige Ihrer Cloud Volumes ONTAP-Nutzung und -Abrechnung über Flex Subscription
+
+Wenn Sie NetApp Keystone Flex Subscription-Kunde sind und darüber hinaus über ein Cloud Volumes ONTAP Abonnement verfügen, können Sie die Nutzung und Abrechnung Ihrer Cloud Volumes über Flex Subscription anzeigen. Cloud Manager kann jetzt die Details zu Ihren Flex-Abonnements entdecken und sie in der Cloud Manager-Benutzeroberfläche anzeigen. Wenn Sie auf die Registerkarte *All Services > Digital Wallet > Keystone Flex Subscription* klicken, können Sie die folgenden Aktionen durchführen:
+
+* Zeigen Sie einen Willkommensbildschirm an, in dem Sie Ihren Flex Subscription Administrator bitten können, Ihre Cloud Manager Benutzer-ID mit Ihrer Flex Subscription-Benutzer-ID zu verknüpfen. So erhalten Sie Zugriff auf die Registerkarte *Keystone Flex Subscription*.
+* Zeigen Sie die Verbrauchsdaten der zugesagt und konsumierten Services auf Ihren On-Premises-Systemen und Cloud Volumes ONTAP an.
+* Zeigen Sie die Flex-Abonnementdetails an, die mit Ihrem Cloud Manager Konto verknüpft sind. Einzelheiten werden angezeigt, beispielsweise die belegte, verbrauchte und Burst-Kapazität.
+* Verknüpfen Sie Ihr Cloud Volumes ONTAP Konto mit Ihren Flex-Abonnement-IDs, um das Konto für die Abrechnung und Kapazitätsauslastung zu verknüpfen.
+* Anfrage zur Erhöhung oder Reduzierung der für die abonnierten Flex Subscription Services vergebenen Kapazität.
+* Die verknüpfte Flex-Abonnement-ID als Abrechnungsmethode für den Cloud Volumes ONTAP-Verbrauch anzeigen und verwenden (nur verknüpfte IDs).
+
+
+Weitere Informationen finden Sie unter den folgenden Links in den Dokumenten zu Cloud Manager:link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription["Keystone Flex Abonnement"]
+
+
+
+NOTE: Die veröffentlichte Version von NetApp Keystone Flex Subscription 2.7 ist die wichtigste Version nach Version 2.2. Die internen Releases zwischen 2.2 und 2.7 haben nur kleinere Korrekturen.
+
+====
+
+====
 
 
 == Funktionen der NetApp Service Engine 2.2
@@ -114,7 +143,7 @@ Weitere Informationen finden Sie unter den folgenden Links:
 ====
 
 
-== Die NetApp Keystone Flex Subscription 2.0.1 bietet neue Funktionen
+== Funktionen der NetApp Service Engine 2.0.1
 
 
 
@@ -156,7 +185,7 @@ Sie können nun die Access Control List (ACL) angeben, um den Benutzerzugriff au
 ====
 
 
-== Die NetApp Keystone Flex Subscription 2.0 bietet neue Funktionen
+== Funktionen der NetApp Service Engine 2.0
 
 
 

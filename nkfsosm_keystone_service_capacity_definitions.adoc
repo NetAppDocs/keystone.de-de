@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: nkfsosm_keystone_service_capacity_definitions.html 
-keywords: netapp, keystone, service, capacity, definitions, 
+keywords: netapp, keystone, service, capacity, definitions, burst, committed capacity, consumed capacity, billed capacity 
 summary: Keystone Service-Kapazitätsdefinitionen 
 ---
 = Kapazitätsdefinitionen für Flex Subscription Service
@@ -15,43 +15,64 @@ summary: Keystone Service-Kapazitätsdefinitionen
 [role="lead"]
 Die Servicekapazitäten des NetApp Keystone Flex Subscription (Flex Subscription) umfassen:
 
-* *logische Kapazität.* Daten, die von einem Kunden in die Flex Subscription-Infrastruktur gespeichert werden:
+
+
+== Logische Kapazität
+
+Diese Daten werden von einem Kunden in die Flex Subscription Infrastruktur abgelegt. Alle Flex Subscription-Kapazitäten beziehen sich auf eine logische Kapazität. Wenn beispielsweise eine 1 tib Datei auf der Flex Subscription Infrastruktur gespeichert ist, muss mindestens 1 tib Kapazität erworben werden.
+
+
+
+== Engagierte Kapazität
+
+Die minimale logische Kapazität, die jeden Monat für die Dauer der Laufzeit in Rechnung gestellt wird:
+
+* Die Kapazität ist jedem Performance-Level zugeordnet.
+* Die zugewiesene Kapazität kann während der Laufzeit nicht verringert werden.
+* Auch engagierte Kapazität und zusätzliche Performance können während der Laufzeit hinzugefügt werden.
+
+
+
+
+=== Änderungen der zugesagt Kapazität
+
+Während der Laufzeit eines Abonnements können Sie die zugesagt Kapazitäten ändern. Es gibt jedoch bestimmte Voraussetzungen:
+
+* Die zugewiesene Kapazität kann nicht verringert werden
+* Die verplante Kapazität kann nicht 90 Tage vor Ablauf Ihres Abonnements verlängert werden, es sei denn, das Abonnement muss für eine zusätzliche Laufzeit von 12 Monaten verlängert werden.
+* Änderungen der zugesagt Kapazität können Sie über die NetApp Service Engine Schnittstelle oder über Keystone Success Manager anfordern. Informationen zum anfordern von Änderungen finden Sie unter link:sewebiug_raise_a_service_request.html["Eine Serviceanfrage stellen"].
+
+
+
+
+== Burst-Kapazität
+
+Dies ist die logische Kapazität, die die verplante Kapazität überschritten hat. Beachten Sie folgende Punkte:
+
+* Der Flex Subscription Service bietet 20 % mehr Kapazität als die zustehende Kapazität.
+* Burst-Kapazität kann flexibel genutzt werden und wird auf täglicher Basis des verbrauchten Durchschnitts abgerechnet.
+* Burst-Kapazität wird auf bis zu 20 % mit derselben Rate für die engagierte Kapazität berechnet.
+* Burst-Kapazität über 20 % der Verpflichtung wird mit einem Premiumsatz berechnet. Wenden Sie sich an den Support für alle zusätzlichen Burst-Anforderungen über 20 %.
+
+
+
+
+== Verbrauchte/bereitgestellte Kapazität
+
+Die verbrauchte Kapazität bezieht sich auf die Kapazität in tib Speicherplatz, die derzeit auf dem Service genutzt wird. Flex Subscription Service berücksichtigt die Summe der bereitgestellten Größen (nicht der verwendeten logischen oder physischen Kapazität) aller Volumes auf einem bestimmten Performance Service Level, die als genutzte Kapazität für dieses Performance Service Level betrachtet werden sollen. Hierzu zählen folgende Optionen:
+
+* Die Kapazität, die Bereitstellung über die Erstellung, Änderung, Löschung oder ein potenzielles automatische Wachstum von Volumes erfolgt.
+* Die Snapshot Kopien und Klone.
 +
-** Alle Flex Subscription-Kapazitäten beziehen sich auf eine logische Kapazität.
-+
-Wenn beispielsweise eine 1 tib Datei auf der Flex Subscription Infrastruktur gespeichert ist, muss mindestens 1 tib Kapazität erworben werden.
 
-
-
-* *engagierte Kapazität.* die minimale logische Kapazität wird monatlich für die Dauer der Laufzeit in Rechnung gestellt:
-+
-** Die Kapazität ist jedem Performance-Level zugeordnet.
-** Die zugewiesene Kapazität kann während der Laufzeit nicht verringert werden.
-** Auch engagierte Kapazität und zusätzliche Performance können während der Laufzeit hinzugefügt werden.
-
-
-* *Burst-Kapazität.* logische Kapazität, überzuviel Kapazität:
-+
-** Die Flex Subscription Services bieten 20 % mehr Kapazität als die zustehende Kapazität.
-** Burst-Kapazität kann flexibel genutzt werden und wird auf täglicher, durchschnittlicher Verbrauch berechnet.
-** Burst-Kapazität wird auf bis zu 20 % mit derselben Rate für die engagierte Kapazität berechnet.
-** Burst-Kapazität über 20 % der Verpflichtung wird mit einem Premiumsatz berechnet. Wenden Sie sich an den Support für alle zusätzlichen Burst-Anforderungen über 20 %.
-
-
-* *verbrauchte/bereitgestellte Kapazität.* Summe aller konfigurierten Volume-Größen:
-+
-** Kapazität wird bereitgestellt durch die Erstellung, Änderung, Löschung oder das potenzielle automatische Wachstum von Volumes.
-** Umfasst Snapshots und Klone.
-** Die Menge der im Rahmen der bereitgestellten Kapazität gespeicherten Daten wird nicht berücksichtigt.
-** Die Menge der tatsächlich auf die Festplatte geschriebenen Daten wird nicht berücksichtigt.
-
-
-* *Rechnungslegung.* Monatliche Rechnung = (engagierte Kapazität [tib] * engagierte Rate [€/tib]) + (tägliche durchschnittliche bereitgestellte Burst-Kapazität [tib] * Burst-Rate [€/tib]):
-+
-** Die monatliche Abrechnung enthält eine Mindestgebühr, die sich auf die engagierte Kapazität basiert.
-+
-Die monatliche Rechnung variiert über die Mindestgebühr basierend auf dem täglichen durchschnittlichen Burst-Kapazitätsverbrauch.
+NOTE: Die Menge der im Rahmen der bereitgestellten Kapazität gespeicherten Daten oder die tatsächlich auf Festplatte geschriebene Datenmenge werden nicht berücksichtigt.
 
 
 
 
+
+== Rechnungskapazität
+
+Monatliche Rechnung = (engagierte Kapazität [tib] * engagierte Rate [€/tib]) + (durchschnittliche tägliche bereitgestellte Burst-Kapazität [tib] * Burst-Rate [€/tib]). Die monatliche Abrechnung enthält eine Mindestgebühr, die sich auf die engagierte Kapazität basiert.
+
+Die monatliche Rechnung variiert über die Mindestgebühr basierend auf dem täglichen durchschnittlichen Burst-Kapazitätsverbrauch. Weitere Informationen zur Abrechnung finden Sie unter link:nkfsosm_kfs_billing.html["Flex Abonnement Abrechnung"].
