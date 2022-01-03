@@ -31,9 +31,9 @@ Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte wäh
 
 
 
-=== Dateifreigaben
+=== Fileservices
 
-*Unterstützte Protokolle*: NFS und CIFS
+* Unterstützte Protokolle*: NFS, CIFS, iSCSI und FC
 
 |===
 

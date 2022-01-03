@@ -13,7 +13,19 @@ summary: Keystone Flex Abonnement-Abrechnung
 
 
 [role="lead"]
-Die Abrechnung für NetApp Keystone Flex Subscription (Flex Subscription) basiert auf der verplanten Kapazität und dem Burst-Verbrauch.
+NetApp Keystone Flex Subscription (Flex Subscription) ermöglicht planbare und vorab einplanbare Preise für Ihr Storage-Abonnement.
+
+Wenn Sie Betriebskosten (OPEX) Verbrauchsmodell für Investitionskosten (CAPEX) oder Leasing bevorzugen, können Sie sich für das flexible und skalierbare Nutzungsmodell „Flex Subscription Pay-as-you-grow“-Modell entscheiden.
+
+Flex Subscription bietet Ihnen die folgenden Abrechnungsmöglichkeiten:
+
+* Die Bezahlung basiert auf der Festlegung von IOPS und der Latenz-Kapazität, um verschiedene Workload-Anforderungen zu erfüllen. Mit den verschiedenen Performance-Service-Tiers – Extreme, Premium, Standard und Value – können Sie Ihren Storage basierend auf dem von Ihnen erworbenen Service Level für Ihr Flex Abonnement verwalten.
+* Sie bietet planbare Abrechnung für die verplante Kapazität und „Pay-per-use“-Funktion für die variable (Burst) Kapazitätsauslastung.
+* Sie können einen Paketpreis für Hardware, Betriebssystem und Support für ein US-Dollar/tib-Preis auswählen. Sie verfügen über eine einzelne Rechnung für jeden Storage-Typ, jeden File-, Block-, Objekt- oder Cloud-Storage-Service.
+* Wählen Sie einen flexiblen Begriff für die Services und die Zahlung aus: Sie können 12 Monate, 100 tib oder mehr pro Standort auswählen. Danach können Sie die automatische Verlängerung 12 Monate lang oder monatlich durchführen.
+
+
+Die Abrechnung für das Flex-Abonnement basiert auf der vorgegebenen Kapazität und dem variablen Burst-Verbrauch.
 
 Informationen zur Verwendung der zugesagt- und Burst-Kapazität finden Sie unter link:nkfsosm_keystone_service_capacity_definitions.html["Kapazitätsdefinitionen für Flex Subscription Service"].
 
@@ -80,3 +92,31 @@ Gelegentlich werden durch ONTAP temporäre Volumes (TMP) beim Verschieben von Vo
 === Abrechnung und anpassungsfähige QoS-Richtlinien
 
 Flex Subscription misst die Nutzung basierend auf Performance-Service-Leveln. Jedes Performance-Service-Level ist mit einer spezifischen QoS-Richtlinie (Quality of Service) verknüpft. Während der Bereitstellung werden Sie über die Details der einzelnen QoS-Richtlinien für Ihre abonnierten Flex Subscription Services informiert. Stellen Sie während des Storage-Managements sicher, dass Ihren Volumes über die entsprechenden QoS-Richtlinien verfügen, die Ihren abonnierten Performance-Service-Leveln zugewiesen werden, um eine unerwartete Abrechnung zu vermeiden. Weitere Informationen zu QoS-Richtlinien in ONTAP finden Sie unter link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Durchsatz garantieren mit QoS-Übersicht"].
+
+
+
+=== Abrechnung für SnapMirror Ziele
+
+Die Preise für das SnapMirror Ziel-Volume unterliegen der QoS-Richtlinie für das auf dem Quell-Volume zugewiesene Performance Service Level (Service Level). Wenn der Quelle jedoch keine zugewiesene QoS-Richtlinie vorliegt, wird das Ziel basierend auf dem niedrigsten verfügbaren Service-Level in Rechnung gestellt.
+
+
+
+=== Abrechnung für FlexGroups
+
+FlexGroups werden basierend auf der adaptiven QoS-Richtlinie des FlexGroup abgerechnet. Die QoS-Richtlinien ihrer Komponenten werden nicht berücksichtigt.
+
+
+
+=== Abrechnung für LUNs
+
+Bei LUNs wird in der Regel dasselbe Abrechnungsmuster wie bei den Volumes befolgt, die durch QoS-Richtlinien unterliegen. Wenn separate QoS-Richtlinien auf LUNs festgelegt sind, dann:
+
+* Die LUN-Größe wird gemäß dem zugehörigen Service-Level der LUN für den Verbrauch gezählt.
+* Der restliche Speicherplatz im Volume wird, falls vorhanden, gemäß der QoS-Richtlinie des Service-Levels, die auf dem Volume festgelegt sind, berechnet.
+
+
+
+
+=== System- und Root-Volumes
+
+System- und Root-Volumes werden als Teil der Gesamtüberwachung des Flex Subscription-Dienstes überwacht, werden aber nicht gezählt oder in Rechnung gestellt. Der Verbrauch auf diesen Mengen ist für die Abrechnung ausgenommen.

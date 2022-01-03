@@ -1698,12 +1698,8 @@
   <block id="edea9398bafcc918142f79d91b628f61" category="list-text">Klicken Sie erneut auf *Schließen*, um das Dialogfeld S3-Schlüssel verwalten zu schließen.</block>
   <block id="e4355ea354829ede276c4aa44fe13eb2" category="summary">Willkommen beim Keystone Dokumentationsportal.</block>
   <block id="70b7e76ada1def06c1f069b092352192" category="doc">Dokumentation für NetApp Keystone Flex Subscription</block>
-  <block id="75154c1c7433b00eeb604286d9a29cf1" category="paragraph">NetApp Keystone Flex-Abonnement ist Bestandteil des NetApp Keystone Serviceangebots. NetApp Keystone umfasst ein Portfolio an Alternativen für lokale Investitionskosten (On-Premises) für den Umstieg auf die Cloud. Dazu gehören NetApp Keystone Flex Pay und NetApp Keystone Flex Subscription Services.</block>
-  <block id="e49cf55687c692a556892a0f614ce9bf" category="list-text">*NetApp Keystone Flex Pay* - NetApp Keystone Flex Pay (Flex Pay) ist ein Portfolio flexibler finanzieller Alternativen, die traditionelle Finanzierung, Leasing und feste/variable Optionen umfassen, um die Anforderungen Ihrer Kunden an den Cashflow zu erfüllen.</block>
-  <block id="cf7ec62445091377db24ebd1c9fd2d93" category="list-text">*NetApp Keystone Flex Subscription* - NetApp Keystone Flex Subscription (Flex Subscription) ist ein ergebnibasierter Abonnementservice mit nutzungsbasierter Abrechnung, der ein Cloud-ähnliches On-Premises-Erlebnis bietet.</block>
   <block id="3799607edcd82b379d62cf94110a1f1a" category="paragraph"><block ref="3799607edcd82b379d62cf94110a1f1a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fdba3cae37eccb96c4307e07af690784" category="section-title">Flex-Abonnement</block>
-  <block id="0e8fe1ec8af71b797b941560e704d2f7" category="paragraph">Flex Subscription ist ein ergebnibasiertes, on-Premises-Servicemodell für Abonnements. Kunden profitieren von einer schnelleren Amortisierung, indem sie Hürden für das Management des unvorhersehbaren Kapazitätswachstums und die komplexen Beschaffungszyklen überwinden. Mit Flex Subscription können Kunden Wirtschaftlichkeit und Betrieb auf ihre Geschäftsprioritäten abstimmen.</block>
   <block id="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="paragraph"><block ref="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af401326a6f27af7fc3bb2ff21b788dc" category="paragraph">Flex Subscription ist ein abonnementbasierter Service-Angebot, das Storage-Kapazität für vordefinierte Performance-Service Level für Block-, Datei- und Objektdatentypen bietet, die lokal implementiert und von NetApp, einem Partner oder dem Kunden bedient werden können. Zusätzlich zum Basis-Service von Flex Subscription können zusätzliche Services gegen Aufpreis ausgewählt werden. Diese Services sind in der folgenden Abbildung beschrieben.</block>
   <block id="173cfa01f909dadb1cc7bb7d43b24a2e" category="list-text">*der Basic* Service für Datensicherung bietet NetApp SnapMirror und NetApp SnapVault Funktionen mit Standardeinstellungen.</block>
@@ -2891,7 +2887,6 @@
   <block id="78c10cb50c4cd8e6713eccd09451bc7b" category="paragraph">In dieser Version wird ein neuer *Alerts*-Bildschirm eingeführt, der alle vom System erzeugten und vom Benutzer generierten Warnmeldungen auflistet. Auf dem Bildschirm können Sie außerdem benutzerdefinierte Warnmeldungen für kritische Ereignisse erstellen, die Ihre Umgebung betreffen, und diese anderen Benutzern vermitteln. Gegebenenfalls können sie die Alarme anzeigen und verwerfen. Weitere Informationen finden Sie unter <block ref="0496064ad24390fb53c5f07bbecacf07" category="inline-link-macro-rx"></block>.</block>
   <block id="5edd9100af263950a47e74c117e19f7c" category="paragraph">Die folgenden Verbesserungen wurden auf der Benutzeroberfläche der NetApp Service Engine vorgenommen:</block>
   <block id="787b14bb23fa38c0a9cf37fcf840abf0" category="list-text">Das Menü *Dashboard* im linken Navigationsbereich bietet einen intuitiven Navigationspunkt für den Zugriff auf das Dashboard.</block>
-  <block id="d462ad78106f749467b02f63cf18f585" category="list-text">Das Menü *abonnierte Services* im linken Navigationsbereich wurde in *Cloud Services* umbenannt.</block>
   <block id="f617d7068a52e45a25c2eac0d3e8f1db" category="paragraph">Weitere Informationen zu dieser Funktion finden Sie unter den folgenden Links:</block>
   <block id="6c1babef94ecdfe13ce1038b7eabf5ab" category="list-text"><block ref="6c1babef94ecdfe13ce1038b7eabf5ab" category="inline-link-macro-rx"></block></block>
   <block id="3a337ffb28bf0d116cc65c4b009401e6" category="list-text"><block ref="3a337ffb28bf0d116cc65c4b009401e6" category="inline-link-macro-rx"></block></block>
@@ -2923,11 +2918,7 @@
   <block id="463c3a95787ac56f36c227feeb7bd389" category="list-text">*vom Kunden betriebenes Modell*: Die folgende Tabelle fasst das gesamte Service Lifecycle Modell und die damit verbundenen Rollen und Verantwortlichkeiten in einer kundengesteuerten Umgebung zusammen.</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">Aufgabe</block>
   <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="cell">NetApp</block>
-  <block id="f65fb766c7d030aa6abd4c295a31c4c0" category="cell">Installation und zugehörige Aufgaben * Installieren * Konfigurieren * Bereitstellen * integriert</block>
   <block id="244f78a4e039400f39e0eb94595bdc02" category="cell"><block ref="244f78a4e039400f39e0eb94595bdc02" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0a42ace755e3b3ce6cac106e8608f0b5" category="cell">Administration and Monitoring * Monitor * Report * Durchführen von Verwaltungsaufgaben * Warnung</block>
-  <block id="28d3eeb3a2cb3e9bf8861c7bae6f4266" category="cell">Betrieb und Optimierung * Kapazitätsmanagement * Performance managen * SLA managen</block>
-  <block id="830a98b50bf596db55a80460163ac880" category="cell">Support * Support-Kunde * Hardware-Reparatur * Software-Support * Upgrades und Patches</block>
   <block id="7feb8545e008b64a43a24668068761be" category="summary">Was können Kunden in Active IQ für einen Grundpfeiler sehen</block>
   <block id="262343e94e4c53e68a3899e4036dbba5" category="doc">Was können Flex-Subscription-Kunden in Active IQ anzeigen?</block>
   <block id="902acbb4ec533e7ef722d0120abac953" category="paragraph">Wenn Sie die NetApp Keystone Flex Subscription (Flex Subscription)-Services abonniert haben, können Sie Ihre Nutzungsberichte und Diagramme im Active IQ Digital Advisor Dashboard anzeigen.</block>
@@ -2943,8 +2934,6 @@
   <block id="a47468120853c1eae9253fff2798d8d6" category="paragraph">Folgende Tabelle zeigt die Service Level für die Performance.</block>
   <block id="ae14ae08bc11163da49596ed847fb224" category="section-title">Performance Service Levels für unterschiedliche Storage-Typen</block>
   <block id="28307c52fb9de3f0b2b26086b89eb8f3" category="paragraph">Hier sind die Service Level für Datei-, Block- und Objekt-Storage aufgeführt.</block>
-  <block id="c2d47b6bc95c845ff73e9809734fad1a" category="section-title">Dateifreigaben</block>
-  <block id="af2d7929bc6a3f27f8ef1349af16d6bb" category="paragraph">*Unterstützte Protokolle*: NFS und CIFS</block>
   <block id="079bbc110741f438dfb37f32218c4c21" category="cell">*Service Level*</block>
   <block id="cdf0cc519fabc4c14999e89090d33dc1" category="cell">*Extreme*</block>
   <block id="153a19d482de580ce84c77ac52c6f907" category="cell">*Premium*</block>
@@ -2994,7 +2983,6 @@
   <block id="346ddf53d2d569d0bb73eb7826cf95d8" category="cell">Medien-Repository, Archivierung</block>
   <block id="29de402441037919e9b47a4ad8a12baa" category="cell">500 tib^3^</block>
   <block id="f1dae87d14ba76423e263dc9a79acdd7" category="paragraph">Das folgende Diagramm zeigt die drei Betriebsmodelle auf, die ein Kunde auswählen kann: NetApp betrieben, Partner betrieben und vom Kunden betrieben.</block>
-  <block id="b2e00d582e399129fd88a8c0f4a49c24" category="cell">Symbol:prüfen[]</block>
   <block id="10288ddd3c9dd46deaa222ee129df3fb" category="doc">US Citizen Support (USCS)</block>
   <block id="b705fe2f9502ab5e1421d02eae05ad9f" category="paragraph">NetApp Keystone Flex Subscription (Flex Subscription) bietet über das NetApp Global Services and Support Center (GSSC) einen kontinuierlichen Monitoring- und Support-Service für den US Citizen Support (USCS).</block>
   <block id="437e64ea2377702ad2881edf8040c7c0" category="paragraph">Bei GSSC handelt es sich um ein geografisch verteiltes Team, das verschiedene NetApp Kunden betreut. Das USCS-Angebot für Flex Subscription stellt sicher, dass die Überwachung und der Support des Flex Subscription-Services von US-Bürgern in den USA erbracht werden. Auch vor-Ort-Support und -Fehlerbehebung, falls für die Wartung der Systeme erforderlich, sind inbegriffen.</block>
@@ -3025,7 +3013,6 @@
   <block id="4b894cf74c19de19660a5ffeee9a97ec" category="paragraph">Das von Equinix unterstützte Flex-Abonnement wurde im Vergleich zum standardmäßigen Flex-Abonnement-Angebot nicht geändert.</block>
   <block id="bc54a58207fd4d61b1d1879b8e83baf5" category="paragraph">Zusätzlich zum Flex-Abonnement-Standardangebot müssen Sie ein Equinix Datacenter auswählen, um Ihre Flex-Abonnementgeräte zu hosten.</block>
   <block id="6b75063f02ddd200c4e0552e16617253" category="summary">Keystone Flex Abonnement-Abrechnung</block>
-  <block id="64dd6ef1863bf8e7223bfb0b6a76dc35" category="paragraph">Die Abrechnung für NetApp Keystone Flex Subscription (Flex Subscription) basiert auf der verplanten Kapazität und dem Burst-Verbrauch.</block>
   <block id="cb89411dcf9eebdd80bb208fdd32b0ca" category="paragraph">Informationen zur Verwendung der zugesagt- und Burst-Kapazität finden Sie unter <block ref="a5de5e295217718375a90b1ecd6ab5f8" category="inline-link-macro-rx"></block>.</block>
   <block id="fc741d08744d3f762b0e8f40143e0c9f" category="paragraph">Informationen zum Anzeigen von Rechnungsdetails finden Sie unter <block ref="ff5019e651b45dce6edea337a584798f" category="inline-link-macro-rx"></block>.</block>
   <block id="da0abce09003b51065ed5b06d06021f1" category="section-title">Abrechnung basiert auf der verplante Kapazität</block>
@@ -3055,22 +3042,16 @@
   <block id="c84b839ec902b06b55455b45091db81d" category="paragraph">Die monatlichen Gebühren für alle abonnierten Services in Ihrem NetApp Keystone Flex Abonnement (Flex Abonnement) können Sie auf dem Dashboard und auf dem Bildschirm „Rechnungen“ der NetApp Service Engine einsehen.</block>
   <block id="bb75d5742f3f8cd7ea2b3326b4ead1a8" category="paragraph">Sie können die Rechnungsdetails für alle abonnierten Services für Flex Subscription für die vorangegangenen Monate anzeigen. Die Abrechnung mit der Burst-Kapazität für jeden Monat wird hervorgehoben.</block>
   <block id="61813b3866df19ca76d72405fbac5ce9" category="paragraph">Weitere Informationen finden Sie unter <block ref="eb5228f75c5e56b970f5ae0448055097" category="inline-link-macro-rx"></block></block>
-  <block id="2a56bee7f3b19653c23e02991c687747" category="paragraph">Die folgende Funktion wurde mit der NetApp Service Engine 2.7 eingeführt, um erweiterte Services für das flexible NetApp Keystone Abonnement (Flex Subscription) zu unterstützen:</block>
-  <block id="d935429310d3dd0ed962c755740fb123" category="section-title">Funktionen der NetApp Service Engine 2.7</block>
   <block id="6100897489646888867118f23efef503" category="paragraph">Diese Version bietet u. a. folgende neue Funktionen:</block>
-  <block id="0678836712433ff7db78b2ffd5f26af1" category="section-title">Möglichkeit zur Anzeige Ihrer Cloud Volumes ONTAP-Nutzung und -Abrechnung über Flex Subscription</block>
-  <block id="7f7472103c50a9845b3d7cebcb44330e" category="paragraph">Wenn Sie NetApp Keystone Flex Subscription-Kunde sind und darüber hinaus über ein Cloud Volumes ONTAP Abonnement verfügen, können Sie die Nutzung und Abrechnung Ihrer Cloud Volumes über Flex Subscription anzeigen. Cloud Manager kann jetzt die Details zu Ihren Flex-Abonnements entdecken und sie in der Cloud Manager-Benutzeroberfläche anzeigen. Wenn Sie auf die Registerkarte *All Services &gt; Digital Wallet &gt; Keystone Flex Subscription* klicken, können Sie die folgenden Aktionen durchführen:</block>
   <block id="5238fb622db8670699adbf5b482678e6" category="list-text">Zeigen Sie einen Willkommensbildschirm an, in dem Sie Ihren Flex Subscription Administrator bitten können, Ihre Cloud Manager Benutzer-ID mit Ihrer Flex Subscription-Benutzer-ID zu verknüpfen. So erhalten Sie Zugriff auf die Registerkarte *Keystone Flex Subscription*.</block>
   <block id="c1a093259dea21d070b755503e96dcdf" category="list-text">Zeigen Sie die Verbrauchsdaten der zugesagt und konsumierten Services auf Ihren On-Premises-Systemen und Cloud Volumes ONTAP an.</block>
   <block id="85d3d7bdabae93d4846321bc050d6645" category="list-text">Zeigen Sie die Flex-Abonnementdetails an, die mit Ihrem Cloud Manager Konto verknüpft sind. Einzelheiten werden angezeigt, beispielsweise die belegte, verbrauchte und Burst-Kapazität.</block>
-  <block id="ca42416279e3cfdb651eeba1f68765de" category="list-text">Verknüpfen Sie Ihr Cloud Volumes ONTAP Konto mit Ihren Flex-Abonnement-IDs, um das Konto für die Abrechnung und Kapazitätsauslastung zu verknüpfen.</block>
   <block id="88f141f3566ea09da3443b01f7f089fb" category="list-text">Anfrage zur Erhöhung oder Reduzierung der für die abonnierten Flex Subscription Services vergebenen Kapazität.</block>
   <block id="b20b42d4f6cb65fa8e788ec44f8341a5" category="list-text">Die verknüpfte Flex-Abonnement-ID als Abrechnungsmethode für den Cloud Volumes ONTAP-Verbrauch anzeigen und verwenden (nur verknüpfte IDs).</block>
   <block id="a47bcecd4f4a1f89ad4e82bca88975ab" category="inline-link-macro">Keystone Flex Abonnement</block>
   <block id="46172ce69f0d69dc6b2a28ea9573950b" category="inline-link-macro">Managen Sie Keystone Flex-Abonnements</block>
   <block id="dd8bfc39d1b97c46fd88e0e7b3533909" category="paragraph">Weitere Informationen finden Sie unter den folgenden Links in den Dokumenten zu Cloud Manager:<block ref="4f790696e8e1be6ca66a4737e5e654e6" category="inline-link-macro-rx"></block>
 <block ref="1e99115c1a8b1bdb052bb8f16835e10f" category="inline-link-macro-rx"></block></block>
-  <block id="6505b63ebb98715b5081b2c13c7f1f62" category="admonition">Die veröffentlichte Version von NetApp Keystone Flex Subscription 2.7 ist die wichtigste Version nach Version 2.2. Die internen Releases zwischen 2.2 und 2.7 haben nur kleinere Korrekturen.</block>
   <block id="44f95b8178b2bd2c0cde2f2b9c0f84c8" category="section-title">Funktionen der NetApp Service Engine 2.0.1</block>
   <block id="d2f339d731af47b666b5930ce1c2a0ec" category="section-title">Funktionen der NetApp Service Engine 2.0</block>
   <block id="780c462e85ba4399a5d42e88f69a15ca" category="sidebar">Abrechnung</block>
@@ -3078,4 +3059,57 @@
   <block id="0e0fe605239796a7018441e65fa28979" category="sidebar">US Citizen Support</block>
   <block id="c2c19492d8278f541b461dfa6849c504" category="sidebar">Flex Abonnement und Equinix</block>
   <block id="6b9cddec4dacfc2b279a47aff83fcc02" category="sidebar">Flex Abonnement und Active IQ</block>
+  <block id="faf37da472ffd232f9810c360b4c1f18" category="paragraph">Installation und zugehörige Aufgaben</block>
+  <block id="349838fb1d851d3e2014b9fe39203275" category="list-text">Installieren</block>
+  <block id="f1206f9fadc5ce41694f69129aecac26" category="list-text">Konfigurieren</block>
+  <block id="507a3a88cebc46603ce2be8eaa924eee" category="list-text">Implementieren</block>
+  <block id="79b7581616a6892a33647af8676f7c45" category="list-text">Onboarding</block>
+  <block id="b407d85189fae6568411d1e0477e1a61" category="paragraph">Administration und Monitoring</block>
+  <block id="d2986ac8cb6bd55892099c1ffd6b1f6f" category="list-text">Überwachen</block>
+  <block id="4b1b4dc8cf38b3c64b1d657da8f5ac8c" category="list-text">Bericht</block>
+  <block id="b92071d61c88498171928745ca53078b" category="list-text">Alarm</block>
+  <block id="c22aff68d4c151984d3e3059f7389289" category="paragraph">Betrieb und Optimierung</block>
+  <block id="29930ffab2df479b4c9daf785d967075" category="list-text">Kapazitätsmanagement</block>
+  <block id="c34138e317002ec9728d2c9e157799ee" category="list-text">Performance-Management</block>
+  <block id="07de8c2f393655cba5ee3012e3689412" category="list-text">SLA-Management</block>
+  <block id="db5eb84117d06047c97c9a0191b5fffe" category="paragraph">Unterstützung</block>
+  <block id="b932b332a780d244d163d8aeaa1cc82e" category="list-text">Kunden-Support</block>
+  <block id="550340cfbad3ac61a634336458de3119" category="list-text">Behebung von Hardware-Problemen</block>
+  <block id="9f65492afee4fdfba75618fed6d0f9dd" category="list-text">Softwaresupport</block>
+  <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">Upgrades und Patches</block>
+  <block id="e674e65192e6527dabaf52c23f514da4" category="section-title">Fileservices</block>
+  <block id="73cf2790a3f92d26764722174d70cf34" category="paragraph">* Unterstützte Protokolle*: NFS, CIFS, iSCSI und FC</block>
+  <block id="c5ffad16a8fef3a87dd99f3ee19c48b2" category="summary">Integration von Keystone und Cloud Manager</block>
+  <block id="86ab31ff62a64b275109761b712760ae" category="doc">Welche Vorteile bietet Ihnen das Flex Abonnement bei Ihrer Cloud Volumes ONTAP-Nutzung</block>
+  <block id="12ab7d2a453cfba801dd3a48030aa11a" category="paragraph">Mit Ihrem Abonnement von NetApp Keystone Flex Subscription Services (Flex Subscription) erfüllen Sie die Nutzung und die Abrechnung Ihrer Cloud Volumes ONTAP Nutzung. Wenn Sie NetApp Keystone Flex Subscription-Kunde sind und darüber hinaus über ein Cloud Volumes ONTAP Abonnement verfügen, können Sie mit Flex Subscription Ihre Cloud Volumes ONTAP-Nutzung berechnen und die Rechnungs- und Verbrauchsdetails einsehen.</block>
+  <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
+  <block id="6365a10673e69e63960434eee08936a3" category="paragraph">NetApp Keystone Flex-Abonnement ist Bestandteil des NetApp Keystone Serviceangebots. NetApp Keystone umfasst ein Portfolio an Alternativen für lokale Investitionskosten (On-Premises) für den Umstieg auf die Cloud. Dazu gehören NetApp Keystone Flex Pay und NetApp Keystone Flex Subscription Services. Mit Storage-Services vor Ort und in der Cloud ermöglicht NetApp Keystone Ihnen ein nahtloses Arbeiten in der Hybrid Cloud. Weitere Informationen zu NetApp Keystone finden Sie unter <block ref="17e1729d4a77db88a0bc2ee74a2207b1" category="inline-link-macro-rx"></block></block>
+  <block id="84df3063bf7c9a845b2944da17dc7ada" category="paragraph">Weitere Informationen zu NetApp Keystone Flex Subscription finden Sie unter <block ref="dd62aedd4673206c815c56eddc5536f2" category="inline-link-macro-rx"></block></block>
+  <block id="ac6330b2ef35ed0beec99df3fdccc9e2" category="paragraph">Flex Subscription ist ein Storage-as-a-Service-Angebot, das Ihnen ein Cloud-ähnliches Erlebnis auf Ihren On-Premises-Systemen mit Konnektivität zur Cloud bietet – zu Ihren Bedingungen verfügbar. * *NetApp Keystone Flex Pay* - NetApp Keystone Flex Pay (Flex Pay) ist ein Portfolio flexibler finanzieller Alternativen, die traditionelle Finanzierung, Leasing und feste/variable Optionen beinhalten, um die Anforderungen Ihrer Kunden an den Cashflow zu erfüllen. * *NetApp Keystone Flex Subscription* - NetApp Keystone Flex Subscription (Flex Subscription) ist ein ergebnisobasierter Abonnementservice mit nutzungsbasierter Abrechnung, der ein Cloud-ähnliches On-Premises-Erlebnis bietet.</block>
+  <block id="60e9d00fe6da3c4a7ff384bed342bf02" category="paragraph">Bei Flex Subscription handelt es sich um ein abonnementbasiertes Servicemodell, bei dem das Modell der nutzungsbasierten Abrechnung nach einem nahtlosen Hybrid-Cloud-Modell funktioniert. Es eignet sich besonders für Kunden, die einen Investitions- oder Leasingverbrauch in Kauf nehmen. Kunden profitieren von einer schnelleren Amortisierung, indem sie Hürden für das Management des unvorhersehbaren Kapazitätswachstums und die komplexen Beschaffungszyklen überwinden. Mit Flex Subscription können Kunden Wirtschaftlichkeit und Betrieb auf ihre Geschäftsprioritäten abstimmen.</block>
+  <block id="dc9a1eb62617a53e09590e225defee14" category="paragraph">NetApp Keystone Flex Subscription (Flex Subscription) ermöglicht planbare und vorab einplanbare Preise für Ihr Storage-Abonnement.</block>
+  <block id="b1abcf87d81cee786e5ff7efba9f8162" category="paragraph">Wenn Sie Betriebskosten (OPEX) Verbrauchsmodell für Investitionskosten (CAPEX) oder Leasing bevorzugen, können Sie sich für das flexible und skalierbare Nutzungsmodell „Flex Subscription Pay-as-you-grow“-Modell entscheiden.</block>
+  <block id="b9d67fd7da1429660d7fcfc1925f1beb" category="paragraph">Flex Subscription bietet Ihnen die folgenden Abrechnungsmöglichkeiten:</block>
+  <block id="70eb65f810b8fa33ab14a55587c9dce5" category="list-text">Die Bezahlung basiert auf der Festlegung von IOPS und der Latenz-Kapazität, um verschiedene Workload-Anforderungen zu erfüllen. Mit den verschiedenen Performance-Service-Tiers – Extreme, Premium, Standard und Value – können Sie Ihren Storage basierend auf dem von Ihnen erworbenen Service Level für Ihr Flex Abonnement verwalten.</block>
+  <block id="5866f5199f36da24870932aa9db6ab49" category="list-text">Sie bietet planbare Abrechnung für die verplante Kapazität und „Pay-per-use“-Funktion für die variable (Burst) Kapazitätsauslastung.</block>
+  <block id="a40d52252bf8cd6939e9352eeffb837b" category="list-text">Sie können einen Paketpreis für Hardware, Betriebssystem und Support für ein US-Dollar/tib-Preis auswählen. Sie verfügen über eine einzelne Rechnung für jeden Storage-Typ, jeden File-, Block-, Objekt- oder Cloud-Storage-Service.</block>
+  <block id="40729792b47d4ca2beff3d5aaa13c6e0" category="list-text">Wählen Sie einen flexiblen Begriff für die Services und die Zahlung aus: Sie können 12 Monate, 100 tib oder mehr pro Standort auswählen. Danach können Sie die automatische Verlängerung 12 Monate lang oder monatlich durchführen.</block>
+  <block id="4ec4e822132124cf94b121ed6e88e49b" category="paragraph">Die Abrechnung für das Flex-Abonnement basiert auf der vorgegebenen Kapazität und dem variablen Burst-Verbrauch.</block>
+  <block id="18b8a063bbf57f20dcdbb6f12a9dc0e9" category="section-title">Abrechnung für SnapMirror Ziele</block>
+  <block id="73b8b41eb9fb2753d0aa2c1ae6b36a05" category="paragraph">Die Preise für das SnapMirror Ziel-Volume unterliegen der QoS-Richtlinie für das auf dem Quell-Volume zugewiesene Performance Service Level (Service Level). Wenn der Quelle jedoch keine zugewiesene QoS-Richtlinie vorliegt, wird das Ziel basierend auf dem niedrigsten verfügbaren Service-Level in Rechnung gestellt.</block>
+  <block id="4bda389d4364c3a5f8e0002b0f1d48a6" category="section-title">Abrechnung für FlexGroups</block>
+  <block id="13a0b5a0cf8933d6ff04c50c4b84bac9" category="paragraph">FlexGroups werden basierend auf der adaptiven QoS-Richtlinie des FlexGroup abgerechnet. Die QoS-Richtlinien ihrer Komponenten werden nicht berücksichtigt.</block>
+  <block id="c73be2f2aaeb82cecf852c49f3ea4cce" category="section-title">Abrechnung für LUNs</block>
+  <block id="05741b4ec38077cef83606c70f08f335" category="paragraph">Bei LUNs wird in der Regel dasselbe Abrechnungsmuster wie bei den Volumes befolgt, die durch QoS-Richtlinien unterliegen. Wenn separate QoS-Richtlinien auf LUNs festgelegt sind, dann:</block>
+  <block id="cb1713b138a78b69b1922aa45131c2df" category="list-text">Die LUN-Größe wird gemäß dem zugehörigen Service-Level der LUN für den Verbrauch gezählt.</block>
+  <block id="a0426b9dc757c80060e1b3657daf68d2" category="list-text">Der restliche Speicherplatz im Volume wird, falls vorhanden, gemäß der QoS-Richtlinie des Service-Levels, die auf dem Volume festgelegt sind, berechnet.</block>
+  <block id="1eba80d57d3138b5dae3b976f061f9d9" category="section-title">System- und Root-Volumes</block>
+  <block id="076ac590232b28791043054102a0cc92" category="paragraph">System- und Root-Volumes werden als Teil der Gesamtüberwachung des Flex Subscription-Dienstes überwacht, werden aber nicht gezählt oder in Rechnung gestellt. Der Verbrauch auf diesen Mengen ist für die Abrechnung ausgenommen.</block>
+  <block id="53a68c6a8d27bd5b379a7dc2368c5756" category="paragraph">Die Versionshinweise informieren Sie über die neuen Funktionen und Verbesserungen, die in den NetApp Keystone Flex Subscription (Flex Subscription)-Services eingeführt wurden, sowie über die bekannten Einschränkungen und Fehlerbehebungen.</block>
+  <block id="5c333f255c8b8fe478018b592064ef12" category="section-title">Anzeige Ihrer Cloud Volumes ONTAP-Nutzung und -Abrechnung (05. Dezember 2021)</block>
+  <block id="c3e11b13166205f01b3a91c292ed2ef8" category="paragraph">Wenn Sie Cloud Volumes ONTAP Flex Subscription (Flex Subscription)-Kunde sind und darüber hinaus über ein NetApp Keystone Abonnement verfügen, können Sie mit Flex Subscription Ihre Cloud Volumes ONTAP-Nutzung berechnen und Ihre Rechnungs- und Verbrauchsdetails anzeigen. Cloud Manager kann jetzt Ihre Flex Subscription-Konten entdecken und die Details auf der Cloud Manager-Schnittstelle anzeigen. Wenn Sie auf die Registerkarte *All Services &gt; Digital Wallet &gt; Keystone Flex Subscription* klicken, können Sie die folgenden Aktionen durchführen:</block>
+  <block id="1fe79890d855ed34bd46612c12db6061" category="list-text">Verknüpfen Sie Ihr Cloud Volumes ONTAP Konto mit Ihren Flex-Abonnement-IDs, um das Konto für Abrechnungs- und Kapazitätsnutzungsberichte zu verknüpfen.</block>
+  <block id="3be9d287dfe7e07ebfb53a3c94eb47ad" category="paragraph">{sp} + {sp} + {sp} wurde in verschiedenen Versionen der NetApp Service Engine eingeführt, um erweiterte Funktionalitäten zu unterstützen, die durch das flexible NetApp Keystone Abonnement (flexible Subscription) angeboten werden:</block>
+  <block id="977c206c65138747de0f437c3e9da160" category="list-text">Das Menü *abonnierte Services* im linken Navigationsbereich wurde in *Cloud Services* umbenannt. +</block>
+  <block id="60b9454b357d4028e1a44f67fe213faa" category="paragraph">{sp} + {sp} + {sp}</block>
 </blocks>

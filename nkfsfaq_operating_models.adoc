@@ -30,16 +30,47 @@ Das folgende Diagramm zeigt die drei Betriebsmodelle auf, die ein Kunde auswähl
 | Aufgabe | NetApp | Kunde 
 
 
-| Installation und zugehörige Aufgaben * Installieren * Konfigurieren * Bereitstellen * integriert | Symbol:prüfen[] | Keine 
+ a| 
+Installation und zugehörige Aufgaben
+
+* Installieren
+* Konfigurieren
+* Implementieren
+* Onboarding
+
+| image:check.png[""] | Keine 
 
 
-| Administration and Monitoring * Monitor * Report * Durchführen von Verwaltungsaufgaben * Warnung | Keine | Symbol:prüfen[] 
+ a| 
+Administration und Monitoring
+
+* Überwachen
+* Bericht
+* Ausführung administrativer Aufgaben
+* Alarm
+
+| Keine | image:check.png[""] 
 
 
-| Betrieb und Optimierung * Kapazitätsmanagement * Performance managen * SLA managen | Keine | Symbol:prüfen[] 
+ a| 
+Betrieb und Optimierung
+
+* Kapazitätsmanagement
+* Performance-Management
+* SLA-Management
+
+| Keine | image:check.png[""] 
 
 
-| Support * Support-Kunde * Hardware-Reparatur * Software-Support * Upgrades und Patches | Symbol:prüfen[] | Keine 
+ a| 
+Unterstützung
+
+* Kunden-Support
+* Behebung von Hardware-Problemen
+* Softwaresupport
+* Upgrades und Patches
+
+| image:check.png[""] | Keine 
 |===
 
 
