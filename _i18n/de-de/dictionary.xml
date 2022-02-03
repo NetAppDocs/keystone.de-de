@@ -570,7 +570,6 @@
   <block id="672993dd6c7cdd1424762e0e618fd823" category="list-text">Überprüfen Sie den Status des Jobs in der Jobliste.</block>
   <block id="8e6fc98e081283f66ed3168150e5d498" category="list-text">Überprüfen Sie nach Abschluss des Jobs den Status der Freigabe in der Benutzerliste.</block>
   <block id="a569539ebc048051428ba08b3174903c" category="summary">Neue Funktionen der NetApp Service Engine</block>
-  <block id="d72649d2d9afbaa244cbf7f2572c81ea" category="doc">What&amp;#8217;s neu in dieser Version von NetApp Keystone Flex Subscription Services</block>
   <block id="cd7a86fe2c68638edfc590d0348e2ac6" category="section-title">Funktionen der NetApp Service Engine 2.2</block>
   <block id="d10191cc409a22b097fadfc82b9dc423" category="paragraph">Zu den neuen Funktionen in dieser Version gehört ein überarbeitetes Dashboard mit neuen Widgets für Abrechnung, Kapazitätsauslastung, Service-Anfragen und Warnmeldungen. Dieses Release enthält auch neue Bildschirme für Rechnungs- und Warnmeldungs-Management sowie die Umbenennung des Menüs „abonnierte Services“ in Cloud Services.</block>
   <block id="7e65194cd4a857baedc63512c62ee99a" category="section-title">Erweiterte Dashboard-Ansicht</block>
@@ -3112,4 +3111,5 @@
   <block id="3be9d287dfe7e07ebfb53a3c94eb47ad" category="paragraph">{sp} + {sp} + {sp} wurde in verschiedenen Versionen der NetApp Service Engine eingeführt, um erweiterte Funktionalitäten zu unterstützen, die durch das flexible NetApp Keystone Abonnement (flexible Subscription) angeboten werden:</block>
   <block id="977c206c65138747de0f437c3e9da160" category="list-text">Das Menü *abonnierte Services* im linken Navigationsbereich wurde in *Cloud Services* umbenannt. +</block>
   <block id="60b9454b357d4028e1a44f67fe213faa" category="paragraph">{sp} + {sp} + {sp}</block>
+  <block id="1754f916c701cd7759c35b6738e4fbc0" category="doc">Was ist neu in dieser Version von NetApp Keystone Flex Subscription Services</block>
 </blocks>

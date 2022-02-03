@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: nkfsosm_netapp_global_services_and_support_center_@gssc@.html 
 keywords: netapp, keystone, global, services, support, center, gssc, 
-summary: NetApp Global Services und Support Center (GSSC) 
+summary: 'NetApp Global Services und Support Center (GSSC)' 
 ---
 = Flex Subscription Services Operations
 

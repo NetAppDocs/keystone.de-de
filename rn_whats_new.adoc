@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: rn_whats_new.html 
-keywords: netapp, keystone, release notes, new features, what's new, 
+keywords: 'netapp, keystone, release notes, new features, what"s new,' 
 summary: Neue Funktionen der NetApp Service Engine 
 ---
-= What&#8217;s neu in dieser Version von NetApp Keystone Flex Subscription Services
+= Was ist neu in dieser Version von NetApp Keystone Flex Subscription Services
 :hardbreaks:
 :nofooter: 
 :icons: font
