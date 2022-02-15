@@ -48,4 +48,13 @@ Die folgenden bekannten Probleme wurden in der NetApp Service Engine gemeldet. D
 
 
 | Berichte zu Kapazität und Abrechnung können in von NetApp gemanagten Umgebungen ungenau sein | In einer von NetApp gemanagten Umgebung können sich die über die UI generierten Kapazitäts- und Abrechnungsberichte möglicherweise auf Grund fehlender LUN-Größenmetriken und Service-Level für Backup-Volumes auswirken. | Eine Service-Anfrage an GSSC richten, um das Problem zu lösen. 
+
+
+ a| 
+15-Minuten-Verzögerung beim Reporting der Kapazität auf Diagrammen nach dem Erstellen eines Abonnements
+ a| 
+Wenn ein Mandantenabonnement erstellt wird und die Berichtdiagramme sofort geprüft werden (innerhalb von 15 Minuten nach der Erstellung des Abonnements), wird die zugesagt Kapazität nicht korrekt gemeldet.
+ a| 
+Überprüfen Sie die Berichtdiagramme mindestens 15 Minuten nach der Erstellung des Abonnements.
+
 |===
