@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="de">
   <head class="at-element-marker">
-  <title>Search results</title>
+  <title>Fehler wurden in der NetApp Service Engine behoben</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Search results" />
+  <meta property="og:title" content="Fehler wurden in der NetApp Service Engine behoben" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/de-de/keystone/search.html" />
-	<meta property="og:description" content="" />
+	<meta property="og:url" content="https://docs.netapp.com/de-de/keystone/rn_fixed_issues.html" />
+	<meta property="og:description" content="Fehler wurden in der NetApp Service Engine behoben" />
   <meta property="og:image" content="https://docs.netapp.com/de-de/keystone/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="">
-  <meta name="keywords" content=" "><meta name="translate" content="false"/><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Fehler wurden in der NetApp Service Engine behoben">
+  <meta name="keywords" content=" netapp, keystone, release notes, fixed issues, hot fixes"><!-- Icons -->
   <link rel="icon" href="/de-de/keystone/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -54,7 +54,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><link rel='stylesheet' href='/de-de/keystone/css/prism.css' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/de-de/keystone/js/na-search.js'></script><script src='/de-de/keystone/js/na-pagenav.js'></script><link rel='stylesheet' href='/de-de/keystone/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/de-de/keystone/css/prism-netapp.css' type='text/css'>
 
 
@@ -144,6 +144,24 @@
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/keystone/issues/new?body=Page%3A%20[Fehler wurden in der NetApp Service Engine behoben](https://docs.netapp.com/de-de/keystone/rn_fixed_issues.html)" class="page-nav-contribute-link" role="button"><img src="/de-de/keystone/images/discuss-sm.svg" class="github-icon" />Dokumentationsänderungen beantragen</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/keystone/blob/main/rn_fixed_issues.adoc" class="page-nav-contribute-link" role="button"><img src="/de-de/keystone/images/edit-sm.svg" class="github-icon" />In GitHub bearbeiten</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/de-de/keystone/images/article-sm.svg" class="github-icon" />Leitfaden für Beitragende</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">AUF DIESER SEITE</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -216,6 +234,26 @@
       </div>
 
       
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/de-de/keystone/search.html"
+          data-type="widget" 
+          data-placeholder="Dokumentation durchsuchen" 
+          data-no-results-found="Keine Ergebnisse für {query} gefunden" 
+          data-did-you-mean="Nach {suggestion} suchen." 
+          data-no-results-found-did-you-mean="Keine Ergebnisse für {query} gefunden. Meinten Sie {suggestion}?" 
+          data-results-found="{hitCount} Ergebnisse gefunden"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/de-de/keystone/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
     </div>
   </div>
   <div class="n-property-bar__toolbar">
@@ -234,15 +272,15 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
+                  <a href="https://docs.netapp.com/de-de/keystone/rn_fixed_issues.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/keystone/rn_fixed_issues.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/keystone/rn_fixed_issues.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/keystone/rn_fixed_issues.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/keystone/rn_fixed_issues.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -388,6 +426,15 @@
           
 
 
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/de-de/keystone/pdfs/pages/rn_fixed_issues.pdf" >
+    <img src="/de-de/keystone/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -981,7 +1028,7 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/de-de/keystone/rn_whats_new.html">
         Was ist neu
-      </a></li><li class=" "><a class="na-navbar-padding" href="/de-de/keystone/rn_fixed_issues.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/de-de/keystone/rn_fixed_issues.html">
         Probleme wurden behoben
       </a></li><li class=" "><a class="na-navbar-padding" href="/de-de/keystone/rn_known_issues.html">
         Bekannte Probleme
@@ -1255,28 +1302,59 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Search results</h1>
+  <h1 class="n-doc__component-detail-heading">Fehler wurden in der NetApp Service Engine behoben</h1>
 </div>
 
 
-<div id="search-demo-container" class="n-property-bar__search">
-  <div id="react-search" 
-  data-search-html="/de-de/keystone/search.html"
-  data-type="page" 
-  data-placeholder="Dokumentation durchsuchen" 
-  data-no-results-found="Keine Ergebnisse für {query} gefunden" 
-  data-did-you-mean="Nach {suggestion} suchen." 
-  data-no-results-found-did-you-mean="Keine Ergebnisse für {query} gefunden. Meinten Sie {suggestion}?" 
-  data-results-found="{hitCount} Ergebnisse gefunden"
-  data-sk-es-pf-indexes=""></div>
-  <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
-    <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
-      <title>search</title>
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/de-de/keystone/common/svg/sprite.svg#search"></use>
-    </svg>
-  </button>
-</div>
+<p class="page-details">
+  
+    
+    <time datetime="2022-03-23 08:44:36 +0000">03/23/2022</time>
+    
+  
 
+
+</p>
+
+<div class="paragraph lead">
+<p>Die folgenden Probleme, die in einer früheren Version der NetApp Service Engine zu finden waren, wurden behoben, damit Sie Ihre NetApp Keystone Flex-Abonnementservices erfolgreich nutzen können.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Problembeschreibung</th>
+<th class="tableblock halign-left valign-top">Nach dem Fix</th>
+<th class="tableblock halign-left valign-top">Fest in Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die Verschiebung von Volumes wurde automatisch ausgelöst, wenn ein nicht-FabricPool Aggregat im Cluster vorhanden war. Jegliche Änderungen an Volumes oder Festplatten haben eine Verschiebung eines Volumes zu einem anderen Aggregat ausgelöst.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Für Volume-Vorgänge wird keine Volume-Verschiebung ausgelöst.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NetApp Service Engine 2.2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Das Löschen von Host-Gruppen wurde von der NetApp Service Engine User Interface (UI), aber nicht vom Cluster entfernt.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Behoben.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NetApp Service Engine 2.2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die Zuordnung von Host-Gruppen zu Festplatten auf der NetApp Service Engine UI konnte aufgehoben werden, nicht jedoch vom Cluster.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Behoben.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NetApp Service Engine 2.2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exportrichtlinien konnten nicht aus der NetApp Service Engine UI gelöscht werden.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die geänderten Richtlinien können über die UI gespeichert werden.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NetApp Service Engine 2.2</p></td>
+</tr>
+</tbody>
+</table>
 
     </article>
     <!-- Page Container -->
@@ -1399,27 +1477,4 @@
     </script>
     <script src='/de-de/keystone/js/www-ntap.js'></script>
     <script src='/de-de/keystone/js/tabbed-blocks.js'></script>
-  </body><script>
-      if(hasParameter(window.location.search,'q')) {
-        var queryString = decodeURI(getParameter(window.location.search, 'q'));
-        document.getElementsByClassName("sk-search-box__text")[0].setAttribute("value", queryString);
-      }
-
-      function getParameter(searchString,param) {
-        var params = searchString.split('?&');
-        for(var i=0;i<params.length;i++) {
-          var paramIndex = params[i].indexOf(param+"=");
-          if(paramIndex != -1) {
-            return params[i].substring(paramIndex+param.length+1);
-          }
-        }
-
-        return "";
-      }
-
-      function hasParameter(searchString,param) {
-        searchString = searchString || "";
-        param = param || "";
-        return (searchString.indexOf("?"+param+"=") != -1 || searchString.indexOf("&"+param+"=") != -1);
-      }
-  </script></html>
+  </body></html>
