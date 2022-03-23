@@ -3115,4 +3115,25 @@
   <block id="c07c08a8bb12ddacd97c50e289cfeabb" category="paragraph">15-Minuten-Verzögerung beim Reporting der Kapazität auf Diagrammen nach dem Erstellen eines Abonnements</block>
   <block id="d56ad7d41c9c131e7177635c575214ef" category="paragraph">Wenn ein Mandantenabonnement erstellt wird und die Berichtdiagramme sofort geprüft werden (innerhalb von 15 Minuten nach der Erstellung des Abonnements), wird die zugesagt Kapazität nicht korrekt gemeldet.</block>
   <block id="d5ef5fd8e9c00193aa18dda53d77e710" category="paragraph">Überprüfen Sie die Berichtdiagramme mindestens 15 Minuten nach der Erstellung des Abonnements.</block>
+  <block id="c158748a3e69a9b1c13a961e778ec66b" category="paragraph">Bei Änderungen an Performance-Service-Leveln werden Volumes nicht verschoben</block>
+  <block id="1783b0f8371d7661f74ab43e7076b5ef" category="paragraph">Wenn zwei verschiedene Aggregate im selben Cluster für zwei Service-Level verwendet werden, verschiebt das Service-Level auf einem Volume zu einem anderen nicht das Volume in ein anderes Aggregat. Es wird nur die adaptive QoS Policy angewendet.</block>
+  <block id="44d15e01a306125fbc9b5a504261f2c3" category="paragraph">Die Erstellung von FCP SVM erfordert iSCSI-Aktivierung</block>
+  <block id="452ff3a7d441b2a105350eaeb7f00609" category="paragraph">Um eine Storage Virtual Machine (SVM) zu erstellen und darauf FCP-Unterstützung zu aktivieren, ist eine iSCSI-Schnittstellenaktivierung erforderlich.</block>
+  <block id="25af90aa8eda6df4dff2dd44b18198ab" category="paragraph">Einschränkung bei mehreren Host-Gruppen mit demselben Initiator</block>
+  <block id="d5a6291a0291469140c54e77e4b9ffce" category="paragraph">Wenn mehrere Host-Gruppen mit demselben Initiatornamen erstellt werden und Festplatten allen Host-Gruppen zugeordnet sind, werden die Festplatten nur einer Host-Gruppe im Cluster zugeordnet.</block>
+  <block id="b6727396faa1e4cf255c182ddc668fb9" category="summary">Fehler wurden in der NetApp Service Engine behoben</block>
+  <block id="33659bd1c7f876bf4e9d181ffeebe959" category="doc">Fehler wurden in der NetApp Service Engine behoben</block>
+  <block id="08742bb18ffa6199e545bb58248ee780" category="paragraph">Die folgenden Probleme, die in einer früheren Version der NetApp Service Engine zu finden waren, wurden behoben, damit Sie Ihre NetApp Keystone Flex-Abonnementservices erfolgreich nutzen können.</block>
+  <block id="3e6913b831218e5028d3a4532f801a65" category="cell">Problembeschreibung</block>
+  <block id="ad7fffc52967fac2195a87d71ddfefed" category="cell">Nach dem Fix</block>
+  <block id="c2d43cce4d21238bde127e51e8abf23a" category="cell">Fest in Version</block>
+  <block id="31e90b75256e52a204cc966bbcfc52ec" category="cell">Die Verschiebung von Volumes wurde automatisch ausgelöst, wenn ein nicht-FabricPool Aggregat im Cluster vorhanden war. Jegliche Änderungen an Volumes oder Festplatten haben eine Verschiebung eines Volumes zu einem anderen Aggregat ausgelöst.</block>
+  <block id="1a54cda28aa8548ea53bccf486f1fae0" category="cell">Für Volume-Vorgänge wird keine Volume-Verschiebung ausgelöst.</block>
+  <block id="2f7daf18759a2f708f89c67f9ea296e0" category="cell">NetApp Service Engine 2.2</block>
+  <block id="5e5483d38497c131d13b217cfbe624a7" category="cell">Das Löschen von Host-Gruppen wurde von der NetApp Service Engine User Interface (UI), aber nicht vom Cluster entfernt.</block>
+  <block id="af70f3681f4f3ba4f5b6940d7863a08b" category="cell">Behoben.</block>
+  <block id="1b0fa9db56937e5f35319d185505e24d" category="cell">Die Zuordnung von Host-Gruppen zu Festplatten auf der NetApp Service Engine UI konnte aufgehoben werden, nicht jedoch vom Cluster.</block>
+  <block id="38e55e934e595693c4955be6041102a9" category="cell">Exportrichtlinien konnten nicht aus der NetApp Service Engine UI gelöscht werden.</block>
+  <block id="a9835757eaec1d4ebc950e91ee095db7" category="cell">Die geänderten Richtlinien können über die UI gespeichert werden.</block>
+  <block id="69464e68a5cdd0b54694ac92276fa1a3" category="sidebar">Probleme wurden behoben</block>
 </blocks>

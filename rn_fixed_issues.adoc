@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: rn_fixed_issues.html 
+keywords: netapp, keystone, release notes, fixed issues, hot fixes 
+summary: Fehler wurden in der NetApp Service Engine behoben 
+---
+= Fehler wurden in der NetApp Service Engine behoben
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Die folgenden Probleme, die in einer früheren Version der NetApp Service Engine zu finden waren, wurden behoben, damit Sie Ihre NetApp Keystone Flex-Abonnementservices erfolgreich nutzen können.
+
+[cols="3*"]
+|===
+| Problembeschreibung | Nach dem Fix | Fest in Version 
+
+
+| Die Verschiebung von Volumes wurde automatisch ausgelöst, wenn ein nicht-FabricPool Aggregat im Cluster vorhanden war. Jegliche Änderungen an Volumes oder Festplatten haben eine Verschiebung eines Volumes zu einem anderen Aggregat ausgelöst. | Für Volume-Vorgänge wird keine Volume-Verschiebung ausgelöst. | NetApp Service Engine 2.2 
+
+
+| Das Löschen von Host-Gruppen wurde von der NetApp Service Engine User Interface (UI), aber nicht vom Cluster entfernt. | Behoben. | NetApp Service Engine 2.2 
+
+
+| Die Zuordnung von Host-Gruppen zu Festplatten auf der NetApp Service Engine UI konnte aufgehoben werden, nicht jedoch vom Cluster. | Behoben. | NetApp Service Engine 2.2 
+
+
+| Exportrichtlinien konnten nicht aus der NetApp Service Engine UI gelöscht werden. | Die geänderten Richtlinien können über die UI gespeichert werden. | NetApp Service Engine 2.2 
+|===

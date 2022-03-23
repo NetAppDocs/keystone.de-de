@@ -57,4 +57,31 @@ Wenn ein Mandantenabonnement erstellt wird und die Berichtdiagramme sofort gepr�
  a| 
 Überprüfen Sie die Berichtdiagramme mindestens 15 Minuten nach der Erstellung des Abonnements.
 
+
+
+ a| 
+Bei Änderungen an Performance-Service-Leveln werden Volumes nicht verschoben
+ a| 
+Wenn zwei verschiedene Aggregate im selben Cluster für zwei Service-Level verwendet werden, verschiebt das Service-Level auf einem Volume zu einem anderen nicht das Volume in ein anderes Aggregat. Es wird nur die adaptive QoS Policy angewendet.
+ a| 
+Eine Service-Anfrage an GSSC richten, um das Problem zu lösen.
+
+
+
+ a| 
+Die Erstellung von FCP SVM erfordert iSCSI-Aktivierung
+ a| 
+Um eine Storage Virtual Machine (SVM) zu erstellen und darauf FCP-Unterstützung zu aktivieren, ist eine iSCSI-Schnittstellenaktivierung erforderlich.
+ a| 
+Eine Service-Anfrage an GSSC richten, um das Problem zu lösen.
+
+
+
+ a| 
+Einschränkung bei mehreren Host-Gruppen mit demselben Initiator
+ a| 
+Wenn mehrere Host-Gruppen mit demselben Initiatornamen erstellt werden und Festplatten allen Host-Gruppen zugeordnet sind, werden die Festplatten nur einer Host-Gruppe im Cluster zugeordnet.
+ a| 
+Eine Service-Anfrage an GSSC richten, um das Problem zu lösen.
+
 |===

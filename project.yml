@@ -50,6 +50,8 @@ sidebar:
     entries:
     - title: Was ist neu
       url: "/rn_whats_new.html"
+    - title: Probleme wurden behoben
+      url: "/rn_fixed_issues.html"
     - title: Bekannte Probleme
       url: "/rn_known_issues.html"
   - title: FAQ zu Flex Abonnement
