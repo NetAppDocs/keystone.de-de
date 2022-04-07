@@ -2,7 +2,14 @@ $(document).ready(function () {
   try {
     // intialize config variables
     let zipLevel = "";
-    let baseUrlSection = "/de-de/keystone/pdfs/sidebar/";
+
+    let baseUrlSection = "/de-de/keystone/pdfs/";
+    const flavor = $("body").data("flavor");
+    if (flavor) {
+      baseUrlSection += flavor + "/";
+    }
+    baseUrlSection += "sidebar/";
+
     let zipFilename = "";
     let zipFileSize = 0;
     zipLevel = zipLevel !== ""?zipLevel:1;
