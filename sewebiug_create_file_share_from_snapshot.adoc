@@ -33,7 +33,7 @@ Sie können nach einem bestimmten Snapshot suchen oder den Zeitplantyp auswähle
 .Nachdem Sie fertig sind
 * Nur für CIFS-Freigaben: Um die Freigaben nach Hostnamen zur Verfügung zu stellen, sollte der Domänenadministrator die DNS-Datensätze mit dem CIFS-Servernamen und der IP-Adresse aktualisieren. Andernfalls ist der Zugriff auf die Freigabe nur über die IP-Adresse möglich. Beispiel:
 +
-** Verwenden Sie bei aktualisierten DNS-Datensätzen entweder den Hostnamen oder die IP, um auf die Freigabe zuzugreifen, z. B. file://hostname/share["\\hostname\Freigabe"^] Oder
+** Verwenden Sie bei aktualisierten DNS-Datensätzen entweder den Hostnamen oder die IP, um auf die Freigabe zuzugreifen, z. B. file://hostname/share["\\hostname\Freigabe"^] Oder file://IP/share["\\IP\-Freigabe"^]
 ** Wenn keine DNS-Einträge aktualisiert werden, sollten Sie die IP-Adresse verwenden, um auf die Freigabe zuzugreifen, d. h. file://IP/share["\\IP\-Freigabe"^]
 
 

@@ -684,8 +684,6 @@
   <block id="36fb5c07f0b0b78c83b989e4caa15fcc" category="paragraph">Erforderliche Body-Attribute für Anforderung: `Name`</block>
   <block id="0ac8caaee0e274f9f7e62a7cb2ea8a71" category="paragraph">Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Untermandanten nach ID zu löschen.</block>
   <block id="a1d122241ce16ad6ba056c39a1e256fb" category="cell">Löschen Sie den von der ID angegebenen Untermandanten.</block>
-  <block id="6f2229565e303cc23cce957bf5939451" category="summary">Keystone ist mit Objekt-Storage arbeiten</block>
-  <block id="491da0d77ad2ffda662200ba7b8bb157" category="doc">Arbeiten mit Objekt-Storage</block>
   <block id="29109dc5270edc08f080a36766a2a630" category="summary">Keystone zeigt Host-Gruppen an</block>
   <block id="dde43dbd895f6357fc850b7fd654a02b" category="doc">Arbeiten Sie mit Host-Gruppen</block>
   <block id="53fbfda0d450075d52315d5b09703b67" category="paragraph">Hostgruppen sind definiert, um den Zugriff auf Festplatten zu bestimmen. Auf der Grundlage der Initiator-Nodes, die einer Host-Gruppe zugewiesen sind, wird der Zugriff dieser Host-Gruppe festgelegt.</block>
@@ -1151,8 +1149,6 @@
   <block id="f177e1a19970ff5e25307154c24a4391" category="paragraph">Sie können die Kapazitätsauslastung auch für jeden Mandanten anzeigen, indem Sie oben rechts einen bestimmten Mandanten auswählen. Die Daten im Widget zur Kapazitätsauslastung stellen die Datennutzung des ausgewählten Mandanten dar, während die Daten in allen anderen Widgets konstant bleiben und Ihre Speicherabonnements darstellen.</block>
   <block id="089e685563941e94026d37cb86934aed" category="section-title">Dashboard-Ansicht für Mandanten in Mandantenfähigkeit</block>
   <block id="130df011efb540e36544c1adf704710b" category="paragraph">Wenn Sie als Mandantenadministrator in einer mandantenfähigen Umgebung arbeiten, können Sie die Kapazitätsauslastung, aktuelle Warnmeldungen und Serviceanforderungen für die Mandantenfähigkeit anzeigen und durch die Widgets für weitere Details klicken. Wenden Sie sich an Ihren Dienstanbieter, um die Rechnungsdaten zu erfahren.</block>
-  <block id="91ddc16de769a9f97aed8824a94f4eff" category="summary">Keystone arbeitet mit Block-Storage</block>
-  <block id="378550b5a79b735cc6584d4de45ce11c" category="doc">Arbeit mit Block-Storage</block>
   <block id="e69a67ee29567c85d079a5da92e0021d" category="summary">Keystone ändert eine Festplatte</block>
   <block id="99e386b08e85bd69bd5c2cf4790ac52c" category="paragraph">Sie können den Festplattennamen, die Host-Gruppen-Zuordnung, den Performance-Service-Level, die Kapazität und die Snapshot-Richtlinie ändern. Mit dieser Methode können Sie Ihre Festplatten auf andere Service-Level verschieben, falls verfügbar.</block>
   <block id="01e4e789a3c7b5698552e1195e37cb41" category="paragraph">Die Festplatte muss sich im Betriebszustand befinden. Informationen zum Verständnis der Volume-Status und der Schritte, die für deren Betrieb erforderlich sind, finden Sie unter <block ref="7e36d1153c26a010b4cff09ad58116d3" category="inline-link-macro-rx"></block> Und <block ref="1dd0eaff8c7fecd5c80f4e2420f50d3b" category="inline-link-macro-rx"></block></block>
@@ -1243,19 +1239,8 @@
   <block id="da5d112bd273df54b63928cc644e122f" category="paragraph">Sie können einen Initiator mit der ID der Host-Gruppe und dem Alias des Initiators löschen.</block>
   <block id="47a6272e6bd00815d552cf2a794666db" category="paragraph">Wenn Initiatoren zu einer Host-Gruppe hinzugefügt werden, sollte der Initiator mit dem Host-Gruppenprotokoll übereinstimmen. Sie sollten IQNs für Hostgruppen mit iSCSI-Protokoll und WWPNs für Hostgruppen mit FC-Protokoll verwenden.</block>
   <block id="c9a807d15738b1059fe78763b600d98e" category="paragraph">Das Löschen eines Initiators aus einer Host-Gruppe wirkt sich auf alle Festplatten aus, denen die Host-Gruppe zugeordnet ist.</block>
-  <block id="d700018034ba1791acaf8b8f2d55cf06" category="summary">Betrieb und Support</block>
-  <block id="3f4323f493fa17b2a55be0cb5d3fc084" category="doc">Flex Abonnement Betrieb und Support</block>
-  <block id="5418a29e251ddd457b45c4728c44077b" category="paragraph">Spätere Entfernung wird nicht verwendet</block>
-  <block id="4419434a1b65d14caa10786114db3112" category="paragraph">*wie sehe ich die Flex Subscription Nutzung an?* NetApp Service Engine stellt eine Dashboard-Ansicht zur Verfügung, die Informationen zu allen abonnierten Services und wie viel genutzt wird. Details zur NetApp Service Engine finden Sie unter <block ref="8d35461a50e9d2cb480a76a035c5e522" category="inline-link-macro-rx"></block>.</block>
-  <block id="5a3115449a2b3065d5bb7484cfe4f999" category="paragraph">*wie melde ich Probleme mit dem Service?* NetApp Keystone Support kann über diese verschiedenen Kanäle erreicht werden:</block>
   <block id="f65085dc4bb69a27d3e266d2c5504a2b" category="list-text">Support-E-Mail: Mailto:keystone.services@netapp.com[keystone.services@netapp.com^]</block>
   <block id="d0a96adfc74a1b7215d05e43eb9ac7eb" category="list-text">Eskalations-E-Mail: Mailto:keystone.escalations@netapp.com[keystone.escalations@netapp.com^]</block>
-  <block id="00b8e318a80a143ca212b4f3b0cb449f" category="paragraph">*kann ich neuen Storage-Service bestellen?* Ja, neuer Storage-Service oder Erweiterungen des Storage-Service können über das NetApp Service Engine Portal angefordert werden. Die Anfrage wird vom NetApp Keystone Operations Team bearbeitet, bevor sie zur Verwendung zur Verfügung gestellt wird.</block>
-  <block id="eff136c1ba2e8a2d6e4b14ddd6a80383" category="paragraph">*sind die Erhöhung der Lagerverpflichtungen sofort verfügbar?* in Abhängigkeit von der angeforderten Kapazität wird bestimmt, ob die Kapazität bereits bereitgestellt ist oder ob zusätzliche Geräte ausgeliefert und installiert werden müssen.</block>
-  <block id="f71fb6dbf8a02dfaed157786a5d1337e" category="paragraph">*können Workloads zwischen den Tiers verschoben werden?* Ja, Workloads können zwischen den Tiers verschoben werden, vorausgesetzt der Benutzer hat die Ebene abonniert, in die der Workload verschoben wird. Wir empfehlen jedoch nicht den Wechsel von einer höheren Ebene zu einer niedrigeren Ebene, da dies zu einer Verschlechterung der Performance führen kann. Um diesen Prozess zu erreichen, müssen Sie lediglich die Dateifreigabe bearbeiten und die Service-Level-Einstellung ändern.</block>
-  <block id="0d5e545b2de42575e5208d3abb79f68c" category="paragraph">*welche Software-Version (z.B. ONTAP) ist standardmäßig installiert?* abhängig vom Servicestufe abonniert (z. B. ONTAP mit Datei- und Blockdiensten, SANtricity für Block und StorageGRID für Objekt) das Support-Team installiert die neueste stabile Version ohne Sicherheits- oder Funktionsprobleme.</block>
-  <block id="f02a13196264a51fda1b26c5e2a551ec" category="paragraph">*kann ich eine bestimmte Software-Version anfordern?* Nein NetApp Keystone hat die Softwareversion für den gesamten Kundenstamm standardisiert.</block>
-  <block id="1a5e72df744341345327e87c09268047" category="paragraph">*werde ich über Software-Upgrades informiert?* Ja. Alle Wartungs-/Upgrade-Aktivitäten werden mit dem NetApp Keystone Success Manager kommuniziert und zu einem Zeitpunkt geplant, mit dem sich beide Seiten vereinbaren lassen.</block>
   <block id="e30f63950de5eb7cabdf63338b63b720" category="summary">Keystone Objekt-Storage-APIs</block>
   <block id="e714b8004e2284dd893321431bc030df" category="doc">Objekt-Storage-APIs</block>
   <block id="37deb72473c94f177d40086068ef7480" category="paragraph">In diesem Abschnitt werden APIs zum Managen von Objekt-Storage, Objekt-Storage-Benutzern und Objekt-Storage-Gruppen bereitgestellt.</block>
@@ -1556,8 +1541,6 @@
   <block id="338ff852a30204809c638053667e5bc0" category="paragraph">Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Löschen einer Zone.</block>
   <block id="76bb4544baa185e4267cc26594a9e9d1" category="cell">Löschen Sie eine einzelne Zone, die durch den Namen gekennzeichnet ist. Alle Speicherressourcen in einer Zone müssen zuerst gelöscht werden.</block>
   <block id="ad08458bea3ad21f1766baa2eae4bb9f" category="paragraph">Kein Inhalt, der beim erfolgreichen Löschen zurückgegeben werden muss.</block>
-  <block id="eb7dc54ae67b4113bd8f2e3cfdd3cd99" category="summary">Keystone – Verwalten von Benutzern</block>
-  <block id="93e4e8b56119093f81b4aed41ceeea38" category="doc">Managen von Benutzern</block>
   <block id="7373680aa88b367bc7b0be53010ec82c" category="summary">Keystone Arbeiten mit Objekt-Storage – Übersicht</block>
   <block id="a57a35a8efe969d50a1f98ce9971fc96" category="paragraph">Für Objekt-Storage ist ein Objekt-Storage-Service-Abonnement erforderlich. Wenn ein Objekt-Speicherdienst im Rahmen des Abonnements verfügbar ist, muss der Speicher initialisiert werden, bevor er verwendet werden kann.</block>
   <block id="7c6f436812b25d3ddbf2d6db58ada2bc" category="paragraph">Beim Objekt-Storage werden Objekte in S3 Buckets gespeichert. Der Zugriff auf die S3-Buckets wird über Berechtigungen gemanagt, die für Objekt-Storage-Gruppen festgelegt sind. Objektspeicherbenutzer werden einer oder mehreren Objektspeichergruppen Mitgliedschaft gewährt, was Berechtigungen aus der Gruppenmitgliedschaft vererbt.</block>
@@ -1709,21 +1692,7 @@
   <block id="aec784453871c969db30ddf8954f7b70" category="paragraph">Flex Subscription bietet die folgenden Vorteile:</block>
   <block id="1a8f20342523eaa8f9195dffa647161c" category="list-text">Ordnungsgemäße Kontrolle über Compliance, Performance und Sicherheit</block>
   <block id="a0a35eef0076381c8b78bfe2cdbed28b" category="paragraph"><block ref="a0a35eef0076381c8b78bfe2cdbed28b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="161ad817030874893546af0d58614618" category="summary">Keystone arbeitet mit Cloud Manager</block>
-  <block id="dce9eeb81c0ba57d0b2f61915e5252c5" category="doc">Zusammenarbeit mit Cloud Manager</block>
-  <block id="db86d84f317b816ba1a698ab59703ba1" category="paragraph">Die NetApp Service Engine kann eine Verbindung zu NetApp Cloud Manager herstellen. In diesem Abschnitt wird beschrieben, wie ein NetApp Administratorbenutzer die folgenden Aufgaben durchführen kann:</block>
-  <block id="213cfa9430289b17153b74af2bf4838c" category="list-text">Stellen Sie eine Verbindung zu Cloud Manager her</block>
-  <block id="0d5eb8aed41b9ec328e17b1255fb7adc" category="list-text">Den Status der Verbindung zu Cloud Manager anzeigen</block>
   <block id="64cb5f10c6949d975da63108f4244697" category="paragraph">Sie benötigen:</block>
-  <block id="ed8f5a635964432920379bf2e5e8627d" category="list-text">Die Endpunkt-URL der Cloud Manager API</block>
-  <block id="d339114e912d2c7ce09638812f77dd96" category="list-text">Die Client-ID des Cloud Manager-SaaS-Service</block>
-  <block id="5f448ec8d9c86c57e21f44790cfe7aa2" category="list-text">Das Refresh-Token des Cloud Manager-SaaS-Service</block>
-  <block id="3cb7a7d3c577f380ab4045baaceb18dc" category="list-text">Wählen Sie im Menü Administration &gt; OCCM-Verbindung.</block>
-  <block id="91ff0584115ddaface4284e480ac8de4" category="list-text">Geben Sie die OCCM-API-Endpunkt-URL an</block>
-  <block id="05ce373a0178041c09cbd3115554885e" category="list-text">Geben Sie die Client-ID ein.</block>
-  <block id="2a10e639a91338d915c46d1dcfb06495" category="list-text">Geben Sie das OCCM-Aktualisierungs-Token ein.</block>
-  <block id="f8666bf87bae2c9aef8090ddc6d3b590" category="inline-link"><block ref="f8666bf87bae2c9aef8090ddc6d3b590" category="inline-link-rx"></block></block>
-  <block id="e582f390ab8b6e0709976f564e66d228" category="paragraph"><block ref="e582f390ab8b6e0709976f564e66d228" category="inline-link-rx"></block></block>
   <block id="02154846d04868cd579969e490705c31" category="summary">Melden Sie sich beim Web-Interface der NetApp Service Engine an</block>
   <block id="6502fca6147310b6dade74cf980b775c" category="doc">Melden Sie sich auf der Webschnittstelle der NetApp Service Engine an</block>
   <block id="61c7ff0fadf9ef207b62f81c88cd67aa" category="paragraph">Um die NetApp Service Engine Web-Schnittstelle zu verwenden, müssen Sie über ein Konto verfügen. Ihrem Konto wird eine oder mehrere Rollen (durch Ihren NetApp Service Engine Administrator) zugewiesen, die Ihre Berechtigungen festlegen und somit welche Aktivitäten Sie im NetApp Service Engine Portal ausführen können.</block>
@@ -1764,8 +1733,6 @@
   <block id="a124e126039367350c2bd3e2dffea7f4" category="paragraph">Nachdem die erfolgreiche Anmeldung bei der NetApp Service Engine Web-Schnittstelle geladen wurde, wird das Flex Subscription Dashboard angezeigt. Eine Übersicht über die GUI finden Sie unter <block ref="2f9b8af2c7d5dd961826f7a81f97b9de" category="inline-link-macro-rx"></block>.</block>
   <block id="9cca15dcee862bea12a0f1b1f2c84fe4" category="list-text">Um sich von der Benutzeroberfläche abzumelden, klicken Sie auf das Benutzersymbol und klicken Sie auf *Abmelden*.</block>
   <block id="2f67801bbc64ccc68a6a7e45990d9f24" category="paragraph"><block ref="2f67801bbc64ccc68a6a7e45990d9f24" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="189883a9b3994b084f540d287e546a8e" category="summary">Keystone – erste Schritte</block>
-  <block id="cb59b87e00d11222bfd9159d0d23836f" category="doc">Erste Schritte</block>
   <block id="ee966310f09723c05298f5d7d7aa6f27" category="summary">Erstellen Sie eine Dateifreigabe aus einem Snapshot</block>
   <block id="298c17df37c9568ee5167ba1ad189316" category="paragraph">Sie können eine neue Dateifreigabe aus einem vorhandenen Snapshot erstellen. Die neue, aus dem Snapshot geklonte Dateifreigabe verfügt über die gleichen Eigenschaften wie die Dateifreigabe, aus der der Snapshot erstellt wird.</block>
   <block id="ba791218e3e41923099db15abe057c18" category="list-text">Wählen Sie im linken Navigationsbereich *FILE SERVICES* aus und wählen Sie *Shares*.</block>
@@ -1907,7 +1874,6 @@
   <block id="468c95ce8260e42060992d5c99daa33b" category="paragraph">Verwenden Sie diese Methode, um einen Azure NetApp Account zu löschen.</block>
   <block id="03ec8f9354501e9c2c8a10dfba0b8819" category="list-text">Suchen Sie in der Liste den Azure NetApp Account und klicken Sie auf das Löschen-Symbol.</block>
   <block id="d1bd03dea5e50660d5be4ae12156bba8" category="list-text">Geben Sie im Dialogfeld Löschen bestätigen den Namen des zu löschenden Azure NetApp Kontos ein.</block>
-  <block id="603f84c5ec6ba84bbd05890b124d6501" category="summary">Keystone Verbraucher-APIs</block>
   <block id="a597fcc752926830c3e3aec481c0b755" category="summary">Keystone managt Untermandanten</block>
   <block id="2125e8d6093cd73490e417b762ef2aa9" category="paragraph">Mandanten und Untermandanten können über die NetApp Service Engine angezeigt und gemanagt werden. Diese ist durch NetApp Support für Service Provider/Partner und Mandanten eingerichtet. Die Region, Zone und das Abonnement sind bereits durch Support konfiguriert und stehen zur Verfügung, wenn Sie Mandanten und Untermandanten unter Ihrer Mandantenfähigkeit erstellen.</block>
   <block id="2369c5c1246ccd710ecb61d29b2e3ff5" category="paragraph">Wenn Sie ein Partner-Administrator sind, können Sie einen Mandanten aus *VERWALTUNG* &gt; *Mandanten* erstellen, ändern und löschen. Mandantenadministratoren können ihre jeweiligen Mandantenabonnements und -Untermandanten nur anzeigen. Auch für die Mandanten unter Ihrer Partnermandanten können Sie das Netzwerk definieren.</block>
@@ -2206,10 +2172,6 @@
   <block id="d28310f59eb153f28bc11be01c1ce4ab" category="list-text">Verwendete Protokolle (NFS, CIFS)</block>
   <block id="3f0c23d19cad0108dad2e160c8794205" category="list-text">Der CIFS-Servername (falls relevant).</block>
   <block id="7851f0fd079b9408c0e43475b6a7c5ef" category="paragraph">Weitere Informationen zur Verwendung der Funktionen einer Liste finden Sie unter <block ref="06c69cf03ada5a3283b333d7ac5a7d25" category="inline-link-macro-rx"></block>.</block>
-  <block id="b9f431015005979712525d673ef8e68a" category="summary">Keystone sind weitere Informationen verfügbar</block>
-  <block id="3887d417240a72ab69f6d0301efd3b2b" category="doc">Weitere Informationen</block>
-  <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="paragraph">NetApp Produktdokumentation</block>
-  <block id="2e85fc867cab94d246e0bf6043b361cd" category="paragraph"><block ref="2e85fc867cab94d246e0bf6043b361cd" category="inline-link-rx"></block></block>
   <block id="efe1af10fee306e4da483388593432ed" category="summary">Keystone Fileservices-APIs</block>
   <block id="d4645c3c664d980b7130691e0352abce" category="paragraph">Mit File Services-APIs können Ihre File-Server und File Shares angezeigt und gemanagt werden.</block>
   <block id="47b6bb2cce100732829dd417cfe27e9d" category="paragraph">Bevor Sie Dateifreigaben erstellen, müssen Sie Dateiserver erstellen, um sie zu hosten.</block>
@@ -2256,7 +2218,6 @@
   <block id="6e38eaf3c64cc8f5260081b7bb3a1eb2" category="paragraph">Sie können die Antworten auch sortieren und bestellen:</block>
   <block id="01d1f93c48d9fc7d410a036fa64ec37c" category="list-text">*Sort_by.* Sortieren Sie die Datensätze mit dem angegebenen Attribut. Wenn Sie beispielsweise nach dem Erstellungsdatum sortieren möchten, geben Sie erstellt an.</block>
   <block id="5fa4c576a4973e9d5d057e34b449b0d2" category="list-text">*Order_by.* bestellt die Datensätze durch aufsteigende (asc) oder absteigende (desc) Reihenfolge.</block>
-  <block id="7a59e920c74c196d0f57ba4b6a8d1185" category="summary">Keystone Administrator-APIs</block>
   <block id="85dac96112743e58b2685d4be2d26037" category="summary">Keystone managt Azure-Kapazitätspools</block>
   <block id="c8b1502f7cf0ad4e087f224a2c408756" category="doc">Verwalten von Azure-Kapazitätspools</block>
   <block id="6cd169fe355cb205cd1b4f241e34baab" category="paragraph">In diesem Abschnitt wird das Management von Azure-Kapazitätspools beschrieben:</block>
@@ -2378,16 +2339,6 @@
   <block id="6aabc28e97e5b07ba5874eb058e7c779" category="paragraph">Verwenden Sie diese Methode zum Löschen eines Azure Volumes.</block>
   <block id="d473b43cbc289b5d22f96515d63627bd" category="list-text">Suchen Sie in der Liste das Azure Volume und klicken Sie auf das Löschsymbol.</block>
   <block id="b88fffaac19d5aeb6ed0d2a1b5b615d8" category="list-text">Geben Sie im Dialogfeld Löschen bestätigen den Namen des zu löschenden Azure-Volumes ein.</block>
-  <block id="09d86387c57736659bbab38839c5f2da" category="summary">Keystone managt Cloud-Services</block>
-  <block id="27ee5c08c2a81e9de81aff03196f5e43" category="doc">Management von Cloud-Services</block>
-  <block id="5b2f0bd4fc7bb59187f107fcb9a848fa" category="summary">Keystone Managen von Service-Anfragen</block>
-  <block id="cbf99d0314c4530c4f7c8155643e7e2d" category="doc">Verwalten von Serviceanfragen</block>
-  <block id="57ca22f6724957bd8f72afe27628993a" category="summary">Keystone Verwalten von Benutzern – Übersicht</block>
-  <block id="e8ff30361af2dd520948eb0660b6d477" category="paragraph">In diesem Abschnitt wird die Verwaltung von Benutzern beschrieben:</block>
-  <block id="8c843ad1aee6e372e5633948a6640fbe" category="admonition">Das Verwalten von Benutzern erfordert den Administratorzugriff des Kunden.</block>
-  <block id="9d83936f36f2c3a28508e6773d80030b" category="list-text">Zeigen Sie eine Liste der Benutzer an.</block>
-  <block id="548af37b2544b71473c1539bb4a68df9" category="list-text">Fügen Sie einen Benutzer hinzu.</block>
-  <block id="1cebf46707524678b62437238f0c5bb5" category="list-text">Benutzerdetails wie Vorname, Nachname, Anzeigename, die Mandanten, auf die der Benutzer Zugriff hat, und die Rolle des Benutzers innerhalb dieser Mandanten ändern.</block>
   <block id="9e6a9bc413f130a4dbd0233b18e642e1" category="list-text">Löschen Sie einen Benutzer.</block>
   <block id="ac7d21b63f88f561c798cfcfabd678f4" category="summary">NetApp Service Engine/Self-Service Access Portal</block>
   <block id="fb7268175d0ac71e5fdf71ab277aca4b" category="doc">NetApp Service Engine/Self-Service-Zugriffsportal</block>
@@ -2546,8 +2497,6 @@
   <block id="f19d5dd3a3e7b41ea53b7235d13b34ce" category="list-text">Geben Sie den Untermandanten, die Zone, den Namen des Subnetzes, das VLAN und das Subnetz CIDR an. Sie können auch Routenspezifikation und -Tags hinzufügen.</block>
   <block id="48317d60b65cfa7212c3f635b1d1ee18" category="admonition">In der Routenspezifikation sollte die *Destination* einzigartig sein und Teil des genannten VLAN sein, und mehrere Routen können den gleichen Wert für *Metric* haben.</block>
   <block id="040baf1e68e10c200531c74cedffdcde" category="admonition">Sie können ein Subnetz nicht bearbeiten oder löschen. Sie können nur die ihr zugeordneten Tags bearbeiten.</block>
-  <block id="b268d7d0d9afd8d193fa80aa1622a161" category="summary">Keystone arbeitet mit Fileservices</block>
-  <block id="a5ad8b42722c291ff0a2b6ad207fa790" category="doc">Arbeiten mit Fileservices</block>
   <block id="7fdb44c4efca9cb2f8ad3b4db2328a89" category="summary">Keystone Backup-APIs</block>
   <block id="160dacdfe2b74f89864f2e85eafc1976" category="doc">Backup-APIs</block>
   <block id="0d7d4c02eb916025bec65984e23e01bf" category="paragraph">Mit Backup-APIs können Snapshots (Backups oder Recovery-Punkte) der Volumes (Dateifreigaben und Festplatten) in der Systemumgebung angezeigt und gemanagt werden.</block>
@@ -3078,9 +3027,6 @@
   <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">Upgrades und Patches</block>
   <block id="e674e65192e6527dabaf52c23f514da4" category="section-title">Fileservices</block>
   <block id="73cf2790a3f92d26764722174d70cf34" category="paragraph">* Unterstützte Protokolle*: NFS, CIFS, iSCSI und FC</block>
-  <block id="c5ffad16a8fef3a87dd99f3ee19c48b2" category="summary">Integration von Keystone und Cloud Manager</block>
-  <block id="86ab31ff62a64b275109761b712760ae" category="doc">Welche Vorteile bietet Ihnen das Flex Abonnement bei Ihrer Cloud Volumes ONTAP-Nutzung</block>
-  <block id="12ab7d2a453cfba801dd3a48030aa11a" category="paragraph">Mit Ihrem Abonnement von NetApp Keystone Flex Subscription Services (Flex Subscription) erfüllen Sie die Nutzung und die Abrechnung Ihrer Cloud Volumes ONTAP Nutzung. Wenn Sie NetApp Keystone Flex Subscription-Kunde sind und darüber hinaus über ein Cloud Volumes ONTAP Abonnement verfügen, können Sie mit Flex Subscription Ihre Cloud Volumes ONTAP-Nutzung berechnen und die Rechnungs- und Verbrauchsdetails einsehen.</block>
   <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
   <block id="6365a10673e69e63960434eee08936a3" category="paragraph">NetApp Keystone Flex-Abonnement ist Bestandteil des NetApp Keystone Serviceangebots. NetApp Keystone umfasst ein Portfolio an Alternativen für lokale Investitionskosten (On-Premises) für den Umstieg auf die Cloud. Dazu gehören NetApp Keystone Flex Pay und NetApp Keystone Flex Subscription Services. Mit Storage-Services vor Ort und in der Cloud ermöglicht NetApp Keystone Ihnen ein nahtloses Arbeiten in der Hybrid Cloud. Weitere Informationen zu NetApp Keystone finden Sie unter <block ref="17e1729d4a77db88a0bc2ee74a2207b1" category="inline-link-macro-rx"></block></block>
   <block id="84df3063bf7c9a845b2944da17dc7ada" category="paragraph">Weitere Informationen zu NetApp Keystone Flex Subscription finden Sie unter <block ref="dd62aedd4673206c815c56eddc5536f2" category="inline-link-macro-rx"></block></block>
@@ -3136,4 +3082,6 @@
   <block id="38e55e934e595693c4955be6041102a9" category="cell">Exportrichtlinien konnten nicht aus der NetApp Service Engine UI gelöscht werden.</block>
   <block id="a9835757eaec1d4ebc950e91ee095db7" category="cell">Die geänderten Richtlinien können über die UI gespeichert werden.</block>
   <block id="69464e68a5cdd0b54694ac92276fa1a3" category="sidebar">Probleme wurden behoben</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Rechtliche Hinweise</block>
+  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
 </blocks>

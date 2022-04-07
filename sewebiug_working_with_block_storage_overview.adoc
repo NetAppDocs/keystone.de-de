@@ -19,7 +19,7 @@ Blockspeicher gehören zu einem Untermandanten und werden innerhalb einer Zone (
 
 Blockspeicher müssen initialisiert werden, bevor sie verwendet werden können. Wenn Block-Speicher verfügbar ist und nicht initialisiert wurde, kann er initialisiert werden, bevor die erste Festplatte im Blockspeicher im Rahmen des Prozesses „Create Disk“ erstellt wird.
 
-Festplatten werden in Blockspeichern erstellt. Festplatten verfügen über viele konfigurierbare Attribute Kapazität und zugehöriger Service-Level. DP-Optionen wie link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["Snapshots"] Und  Kann für eine Festplatte aktiviert werden.
+Festplatten werden in Blockspeichern erstellt. Festplatten verfügen über viele konfigurierbare Attribute Kapazität und zugehöriger Service-Level. DP-Optionen wie link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#snapshots["Snapshots"] Und link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Disaster Recovery"] Kann für eine Festplatte aktiviert werden.
 
 Der Zugriff auf Festplatten wird über Host-Gruppen gesteuert. Host-Gruppen bestehen aus Initiator-Node-Namen. Durch Zuordnung einer oder mehrerer Host-Gruppen zu einer Festplatte können Sie festlegen, welche Initiatoren Zugriff auf die Festplatte haben.
 

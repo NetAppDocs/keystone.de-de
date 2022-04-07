@@ -49,7 +49,7 @@ In der folgenden Tabelle werden die Attribute der StorageGRID Instanz aufgeführ
 | `admin_Rest_uri` | Zeichenfolge (uri in Höhe von USD) | Endpunkt des StorageGRID-Admin-Nodes: 
 
 
-| `s 3_Endpunkte` | Zeichenfolge (uri in Höhe von USD) | Die StorageGRID-Endpunkte. Beispiel: [ `"https://s3.examplegrid.com"[],  ] 
+| `s 3_Endpunkte` | Zeichenfolge (uri in Höhe von USD) | Die StorageGRID-Endpunkte. Beispiel: [ `"https://s3.examplegrid.com"[], "https://s3.location.company.com"`[] ] 
 
 
 | `Grid_username` | Zeichenfolge | Der StorageGRID-Benutzername. 

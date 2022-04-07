@@ -6,8 +6,8 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
-    langs: de-de,us-en,ja-jp,zh-cn,ko-kr
-  langs: de-de,us-en,ja-jp,zh-cn,ko-kr
+    langs: de-de,us-en,ja-jp,ko-kr,zh-cn
+  langs: de-de,us-en,ja-jp,ko-kr,zh-cn
 sidebar:
   entries:
   - title: NetApp Keystone Flex-Abonnement
@@ -261,3 +261,5 @@ sidebar:
         url: "/seapiref_service_requests.html"
       - title: Jobs
         url: "/seapiref_jobs.html"
+  - title: Rechtliche Hinweise
+    url: "/legal-notices.html"

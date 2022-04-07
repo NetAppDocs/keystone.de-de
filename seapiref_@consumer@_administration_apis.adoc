@@ -18,15 +18,15 @@ Die (Verbraucher-)Administrations-APIs bestehen aus Methoden, mit denen Sie die 
 * Melden Sie sich an, legen Sie ein Passwort fest und aktualisieren Sie ein Authentifizierungs-Token.
 * Jobs abrufen und Jobdetails anzeigen.
 +
-Siehe link:seapiref_jobs.html#retrieve-jobs["Jobs abrufen"] Und .
+Siehe link:seapiref_jobs.html#retrieve-jobs["Jobs abrufen"] Und link:seapiref_jobs.html#retrieve-a-job-by-job-id["Abrufen einer Job-by-Job-ID"].
 
 * Bereiche abrufen.
 +
-Siehe link:seapiref_regions.html#retrieve-regions["Bereiche abrufen"] Und .
+Siehe link:seapiref_regions.html#retrieve-regions["Bereiche abrufen"] Und link:seapiref_regions.html#retrieve-a-region-by-name["Region nach Namen abrufen"].
 
 * Abrufen von Service-Leveln:
 +
-Siehe link:seapiref_service_levels.html#retrieve-service-levels["Abrufen Von Service-Leveln"] Und .
+Siehe link:seapiref_service_levels.html#retrieve-service-levels["Abrufen Von Service-Leveln"] Und link:seapiref_service_levels.html#retrieve-service-levels-by-name["Service-Level nach Name abrufen"].
 
 * Arbeiten Sie mit Untermietern zusammen.
 +
@@ -53,11 +53,11 @@ Siehe:
 
 * Abrufen von Benutzern.
 +
-link:seapiref_users.html#retrieve-all-users["Rufen Sie alle Benutzer ab"], , und .
+link:seapiref_users.html#retrieve-all-users["Rufen Sie alle Benutzer ab"], link:seapiref_users.html#retrieve-a-user-by-id["Einen Benutzer anhand seiner ID abrufen"], und link:seapiref_users.html#retrieve-a-user-by-user-name["Rufen Sie einen Benutzer nach Benutzernamen ab"].
 
 * Zonen abrufen.
 +
-Siehe link:seapiref_zones.html#retrieve-all-zones["Alle Zonen abrufen"] Und 
+Siehe link:seapiref_zones.html#retrieve-all-zones["Alle Zonen abrufen"] Und link:seapiref_zones.html#retrieve-a-zone-by-name["Rufen Sie eine Zone nach Namen ab"]
 
 
 

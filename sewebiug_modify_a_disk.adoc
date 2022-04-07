@@ -15,7 +15,7 @@ summary: Keystone ändert eine Festplatte
 [role="lead"]
 Sie können den Festplattennamen, die Host-Gruppen-Zuordnung, den Performance-Service-Level, die Kapazität und die Snapshot-Richtlinie ändern. Mit dieser Methode können Sie Ihre Festplatten auf andere Service-Level verschieben, falls verfügbar.
 
-Die Festplatte muss sich im Betriebszustand befinden. Informationen zum Verständnis der Volume-Status und der Schritte, die für deren Betrieb erforderlich sind, finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["Zeigen Sie Festplatten an"] Und 
+Die Festplatte muss sich im Betriebszustand befinden. Informationen zum Verständnis der Volume-Status und der Schritte, die für deren Betrieb erforderlich sind, finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["Zeigen Sie Festplatten an"] Und link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["Objektstatus"]
 
 .Schritte
 . Sehen Sie sich die an link:sewebiug_view_disks.html#view-disks["Festplattenliste"].

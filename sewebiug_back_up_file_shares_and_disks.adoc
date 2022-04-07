@@ -34,7 +34,7 @@ Auf der Seite *Backups* können Sie die Liste der für Ihre Dateifreigaben und D
 
 == Erstellen eines Backup-Objekts
 
-Sie können Snapshots für Ihre Volumes erstellen, indem Sie die Backup-Richtlinie bei Ihnen definieren link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html["Erstellen Sie eine Dateifreigabe"] Oder .
+Sie können Snapshots für Ihre Volumes erstellen, indem Sie die Backup-Richtlinie bei Ihnen definieren link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html["Erstellen Sie eine Dateifreigabe"] Oder link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_disk.html["Erstellen Sie eine Festplatte"].
 
 .Schritte
 . Aktivieren Sie * Backup Policy*.

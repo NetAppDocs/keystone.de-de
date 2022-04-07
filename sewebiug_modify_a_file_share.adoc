@@ -18,7 +18,7 @@ Sie können den Freigabennamen, den Freigabetyp (CIFS, NFS, Multi-Protocol), Ser
 
 NOTE: Mit dieser Methode können Sie Ihre Shares in unterschiedliche Leistungsstufen verschieben, wenn diese verfügbar sind. Sie können den Freigabetyp nur ändern, wenn der Server die entsprechenden Dienste unterstützt.
 
-Die Dateifreigabe muss sich im Betriebszustand befinden. Informationen zum Verständnis der Volume-Status und der Schritte, die für deren Betrieb erforderlich sind, finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["Zeigen Sie Festplatten an"] Und 
+Die Dateifreigabe muss sich im Betriebszustand befinden. Informationen zum Verständnis der Volume-Status und der Schritte, die für deren Betrieb erforderlich sind, finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["Zeigen Sie Festplatten an"] Und link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["Objektstatus"]
 
 .Schritte
 . Sehen Sie sich die an link:sewebiug_view_shares.html#view-shares["Shares-Liste"].

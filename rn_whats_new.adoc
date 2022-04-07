@@ -30,7 +30,7 @@ Wenn Sie Cloud Volumes ONTAP Flex Subscription (Flex Subscription)-Kunde sind un
 
 
 Weitere Informationen finden Sie unter den folgenden Links in den Dokumenten zu Cloud Manager:link:https://docs.netapp.com/us-en/occm/concept_licensing.html#keystone-flex-subscription["Keystone Flex Abonnement"]
-
+link:https://docs.netapp.com/us-en/occm/task_managing_licenses.html#manage-keystone-flex-subscriptions["Managen Sie Keystone Flex-Abonnements"]
 
 {sp} + {sp} + {sp} wurde in verschiedenen Versionen der NetApp Service Engine eingeführt, um erweiterte Funktionalitäten zu unterstützen, die durch das flexible NetApp Keystone Abonnement (flexible Subscription) angeboten werden:
 
