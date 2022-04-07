@@ -6,6 +6,7 @@ summary: Keystone delete Dateiserver
 ---
 = Dateiserver löschen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone erstellt einen S3-Schlüssel für einen Benutzer
 ---
 = Erstellen eines S3-Schlüssels für einen Benutzer
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

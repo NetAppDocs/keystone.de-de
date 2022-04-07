@@ -6,6 +6,7 @@ summary: Keystone löscht einen Benutzer
 ---
 = Löschen Sie einen Benutzer
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

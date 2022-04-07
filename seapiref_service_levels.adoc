@@ -6,6 +6,7 @@ summary: Keystone Service-Level
 ---
 = Service-Leveln
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

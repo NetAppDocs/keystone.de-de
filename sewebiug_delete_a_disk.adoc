@@ -6,6 +6,7 @@ summary: Keystone löscht eine Festplatte
 ---
 = Löschen Sie eine Festplatte
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone löscht einen Cloud-Service
 ---
 = Löschen eines Cloud-Dienstes
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

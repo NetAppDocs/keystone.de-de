@@ -6,6 +6,7 @@ summary: Keystone erstellt Benutzer von Objekt-Storage
 ---
 = Objektspeicherbenutzer Erstellen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

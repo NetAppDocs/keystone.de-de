@@ -6,6 +6,7 @@ summary: Was können Kunden in Active IQ für einen Grundpfeiler sehen
 ---
 = Was können Flex-Subscription-Kunden in Active IQ anzeigen?
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

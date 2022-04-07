@@ -6,6 +6,7 @@ summary: Verwalten von Azure NetApp Accounts
 ---
 = Verwalten von Azure NetApp Accounts
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

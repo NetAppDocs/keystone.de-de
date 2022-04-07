@@ -6,6 +6,7 @@ summary: Keystone zeigt Host-Gruppen an
 ---
 = Arbeiten Sie mit Host-Gruppen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

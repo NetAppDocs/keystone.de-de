@@ -6,6 +6,7 @@ summary: Keystone Ansicht Buckets
 ---
 = Buckets anzeigen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

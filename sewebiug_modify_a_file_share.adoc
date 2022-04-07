@@ -6,6 +6,7 @@ summary: Keystone Ändern einer Dateifreigabe
 ---
 = Ändern Sie eine Dateifreigabe
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

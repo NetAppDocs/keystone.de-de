@@ -6,6 +6,7 @@ summary: Keystone löscht eine Dateifreigabe
 ---
 = Löschen Sie eine Dateifreigabe
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

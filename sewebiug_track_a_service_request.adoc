@@ -6,6 +6,7 @@ summary: Keystone verfolgt eine Serviceanfrage
 ---
 = Verfolgen Sie eine Service-Anfrage
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Subnetze erstellen und löschen
 ---
 = Netzwerkkonfigurationen für Mandanten und Untermandanten definieren
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

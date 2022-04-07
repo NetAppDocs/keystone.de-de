@@ -6,6 +6,7 @@ summary: Keystone Block-Storage-APIs
 ---
 = Block-Storage-APIs
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

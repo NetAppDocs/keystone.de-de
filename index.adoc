@@ -6,6 +6,7 @@ summary: Willkommen beim Keystone Dokumentationsportal.
 ---
 = Dokumentation für NetApp Keystone Flex Subscription
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

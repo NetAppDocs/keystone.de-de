@@ -6,6 +6,7 @@ summary: Keystone macht eine Serviceanfrage
 ---
 = Eine Serviceanfrage stellen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

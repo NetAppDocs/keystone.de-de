@@ -6,6 +6,7 @@ summary: Backups oder Restores aus Backups erstellen, ändern und löschen
 ---
 = Sichern Sie File Shares und Festplatten
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

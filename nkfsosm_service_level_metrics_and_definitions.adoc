@@ -6,6 +6,7 @@ summary: Keystone Service Level-Kennzahlen und Definitionen
 ---
 = Service Level-Kennzahlen und -Definitionen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

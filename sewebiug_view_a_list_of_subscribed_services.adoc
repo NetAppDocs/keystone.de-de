@@ -6,6 +6,7 @@ summary: Keystone zeigt eine Liste von Cloud-Services
 ---
 = Hier finden Sie eine Liste der Cloud-Services
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

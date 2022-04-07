@@ -6,6 +6,7 @@ summary: Keystone erstellt einen Ad-hoc-Snapshot einer Festplatte
 ---
 = Erstellen Sie einen Ad-hoc-Snapshot einer Festplatte
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

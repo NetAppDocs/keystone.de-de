@@ -6,6 +6,7 @@ summary: 'Keystone (für Verbraucher) Administrations-APIs'
 ---
 = (Verbraucher-)Administrations-APIs
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

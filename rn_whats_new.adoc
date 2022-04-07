@@ -6,6 +6,7 @@ summary: Neue Funktionen der NetApp Service Engine
 ---
 = Was ist neu in dieser Version von NetApp Keystone Flex Subscription Services
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

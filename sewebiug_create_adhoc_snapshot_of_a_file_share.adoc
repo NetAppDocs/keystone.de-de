@@ -6,6 +6,7 @@ summary: Keystone erstellt Ad-hoc-Snapshot einer Dateifreigabe
 ---
 = Erstellen Sie einen Ad-hoc-Snapshot einer Dateifreigabe
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone Netzwerk-APIs
 ---
 = Netzwerkkonfigurationen mit Subnets APIs definieren
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

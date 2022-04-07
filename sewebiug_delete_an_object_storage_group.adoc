@@ -6,6 +6,7 @@ summary: Keystone löscht eine Objekt-Storage-Gruppe
 ---
 = Löschen einer Objektspeichergruppe
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

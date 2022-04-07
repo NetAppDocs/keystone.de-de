@@ -6,6 +6,7 @@ summary: Erstellen Sie eine Dateifreigabe aus einem Snapshot
 ---
 = Erstellen Sie eine Dateifreigabe aus einem Snapshot
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

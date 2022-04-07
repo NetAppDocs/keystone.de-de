@@ -6,6 +6,7 @@ summary: Keystone löscht einen S3-Schlüssel für einen Benutzer
 ---
 = Löschen Sie einen S3-Schlüssel für einen Benutzer
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

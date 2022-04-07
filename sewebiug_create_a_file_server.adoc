@@ -6,6 +6,7 @@ summary: Keystone erstellt einen Dateiserver
 ---
 = Erstellen Sie einen Dateiserver
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

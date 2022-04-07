@@ -6,6 +6,7 @@ summary: Keystone erstellt Buckets
 ---
 = Buckets erstellen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

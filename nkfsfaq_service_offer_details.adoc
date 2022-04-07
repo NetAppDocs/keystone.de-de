@@ -6,6 +6,7 @@ summary: Details zum Serviceangebot
 ---
 = Einzelheiten zum Angebot des Flex Subscription Service
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

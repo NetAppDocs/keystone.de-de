@@ -6,6 +6,7 @@ summary: Keystone Select-Mandant
 ---
 = Wählen Sie einen Mandanten aus
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

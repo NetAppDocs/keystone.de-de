@@ -6,6 +6,7 @@ summary: Keystone Serviceinterms und Beschreibungs-Überblick
 ---
 = Bedingungen und Beschreibungen des Flex Subscription Service
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

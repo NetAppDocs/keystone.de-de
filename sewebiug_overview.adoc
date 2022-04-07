@@ -6,6 +6,7 @@ summary: Übersicht über das Web-Portal der NetApp Service Engine
 ---
 = Webschnittstelle der NetApp Service Engine
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

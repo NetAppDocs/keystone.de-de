@@ -6,6 +6,7 @@ summary: Keystone erstellt ein neues Laufwerk
 ---
 = Erstellen Sie eine Festplatte
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

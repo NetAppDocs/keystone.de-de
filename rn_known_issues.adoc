@@ -6,6 +6,7 @@ summary: Bekannte Probleme in der NetApp Service Engine
 ---
 = Bekannte Probleme in der NetApp Service Engine
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

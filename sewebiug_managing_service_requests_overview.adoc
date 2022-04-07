@@ -6,6 +6,7 @@ summary: Keystone Managen von Service-Anfragen – Übersicht
 ---
 = Überblick
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

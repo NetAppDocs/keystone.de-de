@@ -6,6 +6,7 @@ summary: Keystone – Benutzerdetails ändern
 ---
 = Benutzerdetails ändern
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

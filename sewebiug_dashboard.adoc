@@ -6,6 +6,7 @@ summary: Dashboard-Ansicht
 ---
 = Zeigen Sie Das Flex Subscription Dashboard An
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone managt Azure-Kapazitätspools
 ---
 = Verwalten von Azure-Kapazitätspools
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone View Server
 ---
 = View Server
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

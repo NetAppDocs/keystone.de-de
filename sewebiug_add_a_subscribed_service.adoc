@@ -6,6 +6,7 @@ summary: Keystone ist als Cloud-Service erhältlich
 ---
 = Fügen Sie einen Cloud-Service hinzu
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

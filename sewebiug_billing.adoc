@@ -6,6 +6,7 @@ summary: Rechnungsdaten anzeigen und herunterladen
 ---
 = Rechnung anzeigen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

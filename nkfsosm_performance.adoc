@@ -6,6 +6,7 @@ summary: Keystone Flex Abonnement-Performance
 ---
 = Performance Service Level
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

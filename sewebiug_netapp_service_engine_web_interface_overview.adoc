@@ -6,6 +6,7 @@ summary: Übersicht über die NetApp Service Engine Web-Schnittstelle
 ---
 = Übersicht über die Webschnittstelle der NetApp Service Engine
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Anforderungen für die Keystone-Website
 ---
 = Standortanforderungen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Erstellen und Managen von Warnmeldungen
 ---
 = Erstellen und Managen von Warnmeldungen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

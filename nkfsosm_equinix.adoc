@@ -6,6 +6,7 @@ summary: Keystone Flex Abonnement und Equinix
 ---
 = Flex Subscription auf Basis von Equinix
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

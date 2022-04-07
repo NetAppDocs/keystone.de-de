@@ -6,6 +6,7 @@ summary: Keystone zeigt die Objekt-Storage-Gruppe und die Benutzer an
 ---
 = Zeigen Sie die Objekt-Storage-Gruppe und Benutzer an
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

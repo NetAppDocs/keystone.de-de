@@ -6,6 +6,7 @@ summary: Keystone managt Untermandanten
 ---
 = Management von Mandanten und Mandanten
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone Service-Anfragen
 ---
 = Service-Anfragen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

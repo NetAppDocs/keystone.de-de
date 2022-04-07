@@ -6,6 +6,7 @@ summary: Keystone ändert die Details für den Cloud-Service
 ---
 = Sie ändern die Cloud-Service-Details
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

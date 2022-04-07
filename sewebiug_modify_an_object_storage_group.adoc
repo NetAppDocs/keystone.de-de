@@ -6,6 +6,7 @@ summary: Keystone ändert eine Objekt-Storage-Gruppe
 ---
 = Ändern einer Objektspeichergruppe
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

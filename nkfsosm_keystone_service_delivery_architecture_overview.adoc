@@ -6,6 +6,7 @@ summary: Übersicht über die Service-Erbringung-Architektur
 ---
 = Flex Subscription-Infrastruktur
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

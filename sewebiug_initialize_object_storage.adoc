@@ -6,6 +6,7 @@ summary: Keystone initialisiert den Objekt-Storage
 ---
 = Objektspeicher initialisieren
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

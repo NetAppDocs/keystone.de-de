@@ -6,6 +6,7 @@ summary: Keystone Service-Request-Prozess
 ---
 = Service-Request-Prozess
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

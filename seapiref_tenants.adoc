@@ -6,6 +6,7 @@ summary: Keystone Mandanten
 ---
 = Mandanten
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

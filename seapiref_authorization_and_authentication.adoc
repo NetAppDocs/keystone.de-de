@@ -6,6 +6,7 @@ summary: Keystone Autorisierung und Authentifizierung
 ---
 = Autorisierung und Authentifizierung
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone Verwalten von Abonnements
 ---
 = Verwalten von Abonnements
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

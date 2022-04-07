@@ -6,6 +6,7 @@ summary: Keystone arbeitet mit Berichten
 ---
 = Berichte anzeigen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

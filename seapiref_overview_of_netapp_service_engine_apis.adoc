@@ -6,6 +6,7 @@ summary: Überblick über NetApp Service Engine APIs
 ---
 = Überblick über die NetApp Service Engine APIs
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

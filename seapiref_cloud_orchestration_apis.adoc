@@ -6,6 +6,7 @@ summary:
 ---
 = APIs zur Cloud-Orchestrierung
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

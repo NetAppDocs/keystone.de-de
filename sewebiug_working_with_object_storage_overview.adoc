@@ -6,6 +6,7 @@ summary: Keystone Arbeiten mit Objekt-Storage – Übersicht
 ---
 = Überblick
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

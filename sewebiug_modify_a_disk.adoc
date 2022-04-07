@@ -6,6 +6,7 @@ summary: Keystone ändert eine Festplatte
 ---
 = Ändern Sie eine Festplatte
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Betriebsmodelle
 ---
 = Betriebsmodelle und Verantwortlichkeiten
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: Keystone StorageGRID Instanzen
 ---
 = StorageGRID Instanzen
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

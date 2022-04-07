@@ -6,6 +6,7 @@ summary: Keystone erstellt eine Objekt-Storage-Gruppe
 ---
 = Erstellen Sie eine Objekt-Storage-Gruppe
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

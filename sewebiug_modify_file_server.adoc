@@ -6,6 +6,7 @@ summary: Dateiserver ändern
 ---
 = Dateiserver ändern
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

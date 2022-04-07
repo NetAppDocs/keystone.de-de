@@ -6,6 +6,7 @@ summary: Keystone ändert einen Objekt-Storage-Benutzer
 ---
 = Ändern eines Objektspeicherbenutzers
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

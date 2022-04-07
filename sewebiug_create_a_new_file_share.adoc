@@ -6,6 +6,7 @@ summary: Keystone erstellt eine neue Dateifreigabe
 ---
 = Erstellen Sie eine Dateifreigabe
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

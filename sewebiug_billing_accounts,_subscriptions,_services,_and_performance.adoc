@@ -6,6 +6,7 @@ summary: Keystone Rechnungskonten, Abonnements, Services und Performance
 ---
 = Abrechnung von Konten, Abonnements, Services und Performance
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

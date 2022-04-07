@@ -6,6 +6,7 @@ summary: Keystone Ansicht Festplatten
 ---
 = Zeigen Sie Festplatten an
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

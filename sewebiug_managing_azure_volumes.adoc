@@ -6,6 +6,7 @@ summary: Keystone – Managen von Azure Volumes
 ---
 = Verwalten von Azure Volumes
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

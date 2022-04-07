@@ -6,6 +6,7 @@ summary: Keystone Ansicht von Freigaben
 ---
 = Anzeigen von Dateifreigaben
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
