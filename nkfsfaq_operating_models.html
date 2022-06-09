@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">Deutsch</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Deutsch</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/de-de/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_operating_models.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/de-de/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/nkfsfaq_operating_models.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/de-de/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone Flex-Abonnement</div>
       </a>
@@ -1395,22 +1387,19 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:20:25 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:23:37 +0000">06/09/2022</time>
     
   
 
 
 </p>
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
 <p>Es gibt drei Betriebsmodelle in flexiblen Abonnements. Diese FAQs beziehen sich auf die Betriebsmodelle.</p>
 </div>
+<div class="paragraph">
+<p><strong>Was sind die verschiedenen Betriebsmodelle und wer ist verantwortlich für die wichtigsten Aktivitäten?</strong></p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="welche-betriebsmodelle-gibt-es-und-wer-ist-verantwortlich-für-die-wichtigsten-aktivitäten">Welche Betriebsmodelle gibt es und wer ist verantwortlich für die wichtigsten Aktivitäten?</h3>
 <div class="paragraph">
 <p>Das folgende Diagramm zeigt die drei Betriebsmodelle auf, die ein Kunde auswählen kann: NetApp betrieben, Partner betrieben und vom Kunden betrieben.</p>
 </div>
@@ -1532,33 +1521,36 @@
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p><strong>Was ist ein NetApp-betriebenes Modell?</strong></p>
 </div>
-<div class="sect2">
-<h3 id="was-ist-ein-netapp-operated-modell">Was ist ein NetApp-operated Modell?</h3>
 <div class="paragraph">
 <p>Bei diesem Betriebsmodell kann der Kunde die angebotenen Services gemäß den ausgewählten Performance Tiers und Storage-Service-Typen abonnieren und die von NetApp betriebene Option gegen Aufpreis auswählen. NetApp definiert die Architektur und die Produkte, wird beim Kunden installiert und NetApp managt die täglichen Infrastrukturmanagement-Vorgänge mithilfe unserer Storage- und IT-Ressourcen. Verfügbare Storage-Servicetypen sind File, Block (iSCSI) und Objekt. Cloud Volumes Service für GCP und AWS werden ebenfalls unterstützt.</p>
 </div>
 <div class="paragraph">
 <p>NetApp erstellt und managt zudem Partner, Mandanten, falls zutreffend, und das Abonnement.</p>
 </div>
+<div class="paragraph">
+<p><strong>Was ist ein Partnermodell?</strong></p>
 </div>
-<div class="sect2">
-<h3 id="was-ist-ein-partnerbetriebenes-modell">Was ist ein partnerbetriebenes Modell?</h3>
 <div class="paragraph">
 <p>Das Betriebsmodell für den Partner oder Dienstleister ist dem von NetApp betriebenen Modell ähnlich, wobei der Partner den Service für seinen Endkunden aufführt. In diesem Modell wird der Partner als Vertragspartei referenziert. Mandanten sind Kunden der Service Provider und haben keine Abrechnungsbeziehung zu NetApp. Sie managen ihre Mandantenfähigkeit und ihre Kunden. Die Support-Anfragen für Mandanten werden zuerst vom Service-Provider bearbeitet, bevor sie an NetApp weitergeleitet werden.</p>
 </div>
+<div class="paragraph">
+<p><strong>Was ist ein kundengeführtes Modell?</strong></p>
 </div>
-<div class="sect2">
-<h3 id="was-ist-ein-kundengetriebenes-modell">Was ist ein kundengetriebenes Modell?</h3>
 <div class="paragraph">
 <p>Mit diesem Betriebsmodell kann der Kunde einen angebotenen Service gemäß den ausgewählten Performance Tiers und Storage-Servicetypen abonnieren. NetApp definiert die Architektur und die Produkte und wird beim Kunden vor Ort installiert und ermöglicht Kunden das Management der Infrastruktur mithilfe ihrer Storage- und IT-Ressourcen. Verfügbare Storage-Servicetypen sind File, Block (iSCSI) und Objekt. In diesem Modell hat der Kunde auf den unter Vertrag genommenen Hersteller Bezug genommen, und dies kann ein Endbenutzer oder Partner sein.</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>Wer besitzt die Ausrüstung?*</p>
+</li>
+</ul>
 </div>
-<div class="sect2">
-<h3 id="wer-besitzt-die-ausrüstung">Wer besitzt die Ausrüstung?</h3>
 <div class="paragraph">
 <p>Bei allen drei Betriebsmodellen ist NetApp für die gesamte Hardware und Software verantwortlich, die beim Kunden vor Ort installiert ist.</p>
-</div>
 </div>
 
     </article>
@@ -1706,4 +1698,5 @@
     </script>
     <script src='/de-de/keystone/js/www-ntap.js'></script>
     <script src='/de-de/keystone/js/tabbed-blocks.js'></script>
+    <script src='/de-de/keystone/js/sidebar.js'></script>
   </body></html>

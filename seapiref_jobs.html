@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">Deutsch</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Deutsch</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/de-de/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_jobs.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/de-de/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/seapiref_jobs.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/de-de/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone Flex-Abonnement</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:20:25 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:23:37 +0000">06/09/2022</time>
     
   
 
@@ -1409,8 +1401,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="jobs-abrufen">Jobs abrufen</h3>
+<div class="sect1">
+<h2 id="jobs-abrufen">Jobs abrufen</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Abrufen aller Jobs oder einer Teilmenge der Jobs. Wenn Sie eine <code>Tenant_id</code> angeben, werden nur die Jobs zurückgegeben, die zu diesem Mandanten gehören.</p>
 </div>
@@ -1509,8 +1502,8 @@
 }</pre>
 </div>
 </div>
-<div class="sect3">
-<h4 id="abrufen-eines-jobs-nach-job-id">Abrufen eines Jobs nach Job-ID</h4>
+<div class="sect2">
+<h3 id="abrufen-eines-jobs-nach-job-id">Abrufen eines Jobs nach Job-ID</h3>
 <div class="paragraph">
 <p>Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Job anhand der ID abzurufen.</p>
 </div>
@@ -1605,16 +1598,18 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="api-und-asynchrone-prozesse-für-job-objekte">API und asynchrone Prozesse für Job-Objekte</h3>
+</div>
+<div class="sect1">
+<h2 id="api-und-asynchrone-prozesse-für-job-objekte">API und asynchrone Prozesse für Job-Objekte</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Einige der API-Aufrufe, insbesondere solche, die zum Hinzufügen oder Ändern von Ressourcen verwendet werden, können länger dauern als andere Anrufe. Die NetApp Service Engine verarbeitet diese langfristigen Anforderungen asynchron.</p>
 </div>
 <div class="paragraph">
 <p>Nach einem API-Aufruf, der asynchron ausgeführt wird, weist der HTTP-Antwortcode 202 darauf hin, dass die Anforderung erfolgreich validiert und akzeptiert, aber noch nicht abgeschlossen wurde. Die Anforderung wird als Hintergrundaufgabe verarbeitet, die nach der ersten HTTP-Antwort auf den Client weiter ausgeführt wird. Die Antwort umfasst das Auftragsobjekt, das die Anfrage einschließlich der eindeutigen Kennung anverankert.</p>
 </div>
-<div class="sect3">
-<h4 id="abfragen-des-mit-einer-api-anforderung-verknüpften-jobobjekts">Abfragen des mit einer API-Anforderung verknüpften Jobobjekts</h4>
+<div class="sect2">
+<h3 id="abfragen-des-mit-einer-api-anforderung-verknüpften-jobobjekts">Abfragen des mit einer API-Anforderung verknüpften Jobobjekts</h3>
 <div class="paragraph">
 <p>Das in der HTTP-Antwort zurückgegebene Jobobjekt enthält mehrere Eigenschaften. Sie können die Statuseigenschaft abfragen, um festzustellen, ob die Anfrage erfolgreich abgeschlossen wurde. Ein Job-Objekt kann sich in einem der folgenden Zustände befinden:</p>
 </div>
@@ -1648,8 +1643,8 @@
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="schritte-für-asynchrone-anfragen">Schritte für asynchrone Anfragen</h4>
+<div class="sect2">
+<h3 id="schritte-für-asynchrone-anfragen">Schritte für asynchrone Anfragen</h3>
 <div class="paragraph">
 <p>Sie können den folgenden grundlegenden Vorgang verwenden, um einen asynchronen API-Aufruf abzuschließen:</p>
 </div>
@@ -1671,6 +1666,7 @@
 <p>Überprüfen Sie den Terminalstatus des Jobs und rufen Sie das Jobergebnis ab.</p>
 </li>
 </ol>
+</div>
 </div>
 </div>
 </div>
@@ -1820,4 +1816,5 @@
     </script>
     <script src='/de-de/keystone/js/www-ntap.js'></script>
     <script src='/de-de/keystone/js/tabbed-blocks.js'></script>
+    <script src='/de-de/keystone/js/sidebar.js'></script>
   </body></html>

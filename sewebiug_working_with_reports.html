@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">Deutsch</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Deutsch</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/de-de/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_working_with_reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/de-de/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_working_with_reports.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/de-de/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone Flex-Abonnement</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:20:25 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:23:37 +0000">06/09/2022</time>
     
   
 
@@ -1409,8 +1401,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="keystone-bericht-zur-kapazitätsauslastung-des-abonnements">Keystone Bericht zur Kapazitätsauslastung des Abonnements</h3>
+<div class="sect1">
+<h2 id="keystone-bericht-zur-kapazitätsauslastung-des-abonnements">Keystone Bericht zur Kapazitätsauslastung des Abonnements</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Auf der Seite Kapazitätsnutzung für Keystone-Abonnements werden die Kapazitätsauslastung für jeden Storage-Service in einem Abonnement über einen bestimmten Zeitraum angezeigt. Als NetApp Administrator können Sie den Bericht zur Kapazitätsauslastung für alle Mandanten und Partner in einem Abonnement einsehen. Als Partneradministrator können Sie den Kapazitätsbericht für Ihre Flex-Abonnement-Nutzung einsehen. Verwenden Sie die grafischen Berichte auf dieser Seite, um die Trends, die für alle Storage-Services verwendet werden, sowie Add-on-Datensicherungsservices in separaten Registerkarten anzuzeigen. Wenn ein Service in Burst ist, zeigt ein Banner die Burst-Kapazität an, die im aktuellen Abrechnungszyklus verwendet wird.</p>
 </div>
@@ -1438,8 +1431,10 @@
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="bericht-zur-kapazitätsauslastung-des-mandanten">Bericht zur Kapazitätsauslastung des Mandanten</h3>
+</div>
+<div class="sect1">
+<h2 id="bericht-zur-kapazitätsauslastung-des-mandanten">Bericht zur Kapazitätsauslastung des Mandanten</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Auf der Seite Kapazitätsnutzung für Mandanten-Abonnements werden für jeden Mandanten die abonnierten Storage-Services in Flex Subscription für die Kapazitätsauslastung angezeigt. Diese Seite steht den Administratoren von NetApp, Partnern und Mandanten oder Kunden zur Verfügung, um die Berichte zur Kapazitätsauslastung für einen bestimmten Mandanten anzuzeigen.</p>
 </div>
@@ -1479,8 +1474,10 @@ Für den Mandantenadministrator wird die Seite als „Kapazitätsnutzung“ ange
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="performance-bericht">Performance-Bericht</h3>
+</div>
+<div class="sect1">
+<h2 id="performance-bericht">Performance-Bericht</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Auf der Seite Performance (dargestellt in der Abbildung unten) werden Informationen zur Performance einzelner Festplatten oder Freigaben angezeigt. Es zeigt Informationen zu drei Leistungskennzahlen an:</p>
 </div>
@@ -1537,6 +1534,7 @@ Für den Mandantenadministrator wird die Seite als „Kapazitätsnutzung“ ange
 <p>Bewegen Sie den Mauszeiger über einen Punkt im Diagramm, um weitere Informationen zu diesem Punkt anzuzeigen.</p>
 </li>
 </ul>
+</div>
 </div>
 </div>
 
@@ -1685,4 +1683,5 @@ Für den Mandantenadministrator wird die Seite als „Kapazitätsnutzung“ ange
     </script>
     <script src='/de-de/keystone/js/www-ntap.js'></script>
     <script src='/de-de/keystone/js/tabbed-blocks.js'></script>
+    <script src='/de-de/keystone/js/sidebar.js'></script>
   </body></html>

@@ -277,39 +277,31 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">Deutsch</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">Deutsch</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/de-de/keystone/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/de-de/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">Deutsch</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" class="n-menu__header-text"><span translate="no" class="notranslate">Français</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/de-de/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/fr-fr/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html" target="_self"><span translate="no" class="notranslate">Français</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1069,7 +1061,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/de-de/keystone/index.html">
         <div class="na-navbar-padding"> NetApp Keystone Flex-Abonnement</div>
       </a>
@@ -1395,7 +1387,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-18 06:20:25 +0000">04/18/2022</time>
+    <time datetime="2022-06-09 10:23:37 +0000">06/09/2022</time>
     
   
 
@@ -1449,8 +1441,9 @@ Wenn Storage in mehreren Datacentern benötigt wird, ist für jedes Datacenter e
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="engagierte-verbrauchte-und-burst-kapazitäten-und-übermäßige-nutzung">Engagierte, verbrauchte und Burst-Kapazitäten und übermäßige Nutzung</h3>
+<div class="sect1">
+<h2 id="engagierte-verbrauchte-und-burst-kapazitäten-und-übermäßige-nutzung">Engagierte, verbrauchte und Burst-Kapazitäten und übermäßige Nutzung</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Verbrauchte Kapazität ist die Menge an Kapazität, die zugewiesen wurde (aber nicht unbedingt verwendet). Die zugesetzte Kapazität ist die in einem Abonnement festgesetzte Kapazität. Der Abonnent wird unabhängig von der genutzten Kapazität mit einem festen Satz in Rechnung gestellt.</p>
 </div>
@@ -1475,7 +1468,6 @@ Neben dem primären Storage tragen Funktionen wie Snapshots, Backup und Disaster
 </tr>
 </table>
 </div>
-</div>
 <div class="sect2">
 <h3 id="benachrichtigungen-über-burst-nutzung">Benachrichtigungen über Burst-Nutzung</h3>
 <div class="paragraph">
@@ -1494,8 +1486,9 @@ Neben dem primären Storage tragen Funktionen wie Snapshots, Backup und Disaster
 </li>
 </ul>
 </div>
-<div class="sect3">
-<h4 id="sie-erhalten-eine-benachrichtigung-wenn-eine-vorgeschlagene-änderung-die-nutzung-von-burst-kapazität-zur-folge-hat">Sie erhalten eine Benachrichtigung, wenn eine vorgeschlagene Änderung die Nutzung von Burst-Kapazität zur Folge hat</h4>
+</div>
+<div class="sect2">
+<h3 id="sie-erhalten-eine-benachrichtigung-wenn-eine-vorgeschlagene-änderung-die-nutzung-von-burst-kapazität-zur-folge-hat">Sie erhalten eine Benachrichtigung, wenn eine vorgeschlagene Änderung die Nutzung von Burst-Kapazität zur Folge hat</h3>
 <div class="paragraph">
 <p>Diese Abbildung zeigt ein Beispiel für eine Benachrichtigung, die angezeigt wird, wenn eine vorgeschlagene Bereitstellungsänderung dazu führt, dass ein Abonnement in den Burst-Wert geht. Sie können sich entscheiden, weiterhin zu wissen, dass das Abonnement in Burst gesetzt wird, oder sich entscheiden, nicht mit der Aktion fortzufahren.</p>
 </div>
@@ -1575,8 +1568,8 @@ Neben dem primären Storage tragen Funktionen wie Snapshots, Backup und Disaster
 </tbody>
 </table>
 </div>
-<div class="sect3">
-<h4 id="benachrichtigung-wenn-das-abonnement-in-burst-ist">Benachrichtigung, wenn das Abonnement in Burst ist</h4>
+<div class="sect2">
+<h3 id="benachrichtigung-wenn-das-abonnement-in-burst-ist">Benachrichtigung, wenn das Abonnement in Burst ist</h3>
 <div class="paragraph">
 <p>Das folgende Benachrichtigungsbanner wird angezeigt, wenn ein Abonnement im Burst ist. Die Benachrichtigung wird dem Administrator des Kunden für die Mandantenfähigkeit angezeigt und angezeigt, bis die Benachrichtigung bestätigt wird.</p>
 </div>
@@ -1585,8 +1578,10 @@ Neben dem primären Storage tragen Funktionen wie Snapshots, Backup und Disaster
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="datensicherung">Datensicherung</h3>
+</div>
+<div class="sect1">
+<h2 id="datensicherung">Datensicherung</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>DP bezieht sich auf Methoden, die Daten-Backups unterstützen und bei Bedarf die Möglichkeit zur Wiederherstellung bieten.</p>
 </div>
@@ -1606,8 +1601,8 @@ Neben dem primären Storage tragen Funktionen wie Snapshots, Backup und Disaster
 </li>
 </ul>
 </div>
-<div class="sect3">
-<h4 id="snapshots">Snapshots</h4>
+<div class="sect2">
+<h3 id="snapshots">Snapshots</h3>
 <div class="paragraph">
 <p>Snapshots sind zeitpunktgenaue Kopien von Daten. Snapshots können geklont werden, um eine neue Festplatte zu bilden oder mit denselben oder ähnlichen Funktionen zu teilen.</p>
 </div>
@@ -1627,8 +1622,8 @@ Snapshots tragen zur verbrauchten Kapazität eines Service bei.
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="backups">Backups</h4>
+<div class="sect2">
+<h3 id="backups">Backups</h3>
 <div class="paragraph">
 <p>Beim Backup wird die Kopie eines Objekts erstellt, repliziert und in einer anderen Zone als der Originalzone gespeichert, wobei das jeweilige Protokoll aktiviert ist (nur bei Block-Storage) und nicht von MetroCluster aktiviert ist. NetApp Service Engine bietet Backups auf Datei- und Block-Storage (für ein DP-Service auf dem Abonnement erforderlich). Backups von Shares/Festplatten werden in der Backup-Zone auf der Tier mit der niedrigsten Performance (Standard) im Abonnement gespeichert.</p>
 </div>
@@ -1681,8 +1676,10 @@ Snapshots tragen zur verbrauchten Kapazität eines Service bei.
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="disaster-recovery">Disaster Recovery</h3>
+</div>
+<div class="sect1">
+<h2 id="disaster-recovery">Disaster Recovery</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Disaster Recovery bezieht sich auf die Möglichkeit einer Recovery auf normalen Betrieb bei einem Notfall.</p>
 </div>
@@ -1701,8 +1698,8 @@ Der Support für Disaster Recovery hängt von der Infrastruktur ab, die von der 
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="disaster-recovery-asynchron">Disaster Recovery – asynchron</h4>
+<div class="sect2">
+<h3 id="disaster-recovery-asynchron">Disaster Recovery – asynchron</h3>
 <div class="paragraph">
 <p>Die NetApp Service Engine unterstützt asynchrone Disaster Recovery mit folgenden Funktionen:</p>
 </div>
@@ -1735,14 +1732,9 @@ Der Support für Disaster Recovery hängt von der Infrastruktur ab, die von der 
 </li>
 </ul>
 </div>
-<div class="sect4">
-<h5 id="dateiserver-oder-block-speicher-zur-unterstützung-der-asynchronen-disaster-recovery-konfigurieren">Dateiserver oder Block-Speicher zur Unterstützung der asynchronen Disaster Recovery konfigurieren</h5>
 <div class="paragraph">
 <p>Ermöglichen Sie asynchrone Disaster Recovery auf einem File-Server oder Block-Storage bei der Erstellung oder zu einem späteren Zeitpunkt. Nach Aktivierung kann die Disaster Recovery nicht deaktiviert werden, und die Disaster-Recovery-Zone kann nicht mehr geändert werden. Der Disaster Recovery-Zeitplan gibt an, wie oft die Daten an den Disaster-Recovery-Standort repliziert werden (stündlich, vier Stunden oder täglich).</p>
 </div>
-</div>
-<div class="sect4">
-<h5 id="ermöglichen-sie-asynchrones-disaster-recovery-auf-file-shares-oder-festplatte">Ermöglichen Sie asynchrones Disaster Recovery auf File Shares oder Festplatte</h5>
 <div class="paragraph">
 <p>Eine Dateifreigabe oder Festplatte kann nur für eine asynchrone Disaster-Recovery-Replizierung konfiguriert werden, wenn der übergeordnete Dateiserver oder Block-Speicher zum asynchronen Disaster Recovery konfiguriert wurde. Wenn die Replikation im übergeordneten Objekt aktiviert ist, wird die Replikation in den Dateifreigaben oder Festplatten aktiviert, die von den übergeordneten Hosts genutzt werden. Sie können die Replikation einer bestimmten Freigabe oder Festplatte ausschließen, indem Sie die Disaster Recovery auf dieser Freigabe/Festplatte deaktivieren. Es ist möglich, zwischen Aktivierung und Deaktivierung der Replikation auf diesen Freigaben/Festplatten umzuschalten.</p>
 </div>
@@ -1763,9 +1755,8 @@ Der Support für Disaster Recovery hängt von der Infrastruktur ab, die von der 
 </ul>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="disaster-recovery-synchron">Disaster Recovery – synchron</h4>
+<div class="sect2">
+<h3 id="disaster-recovery-synchron">Disaster Recovery – synchron</h3>
 <div class="paragraph">
 <p>MetroCluster ist eine DP-Funktion, die Daten und Konfigurationen synchron zwischen zwei verschiedenen Zonen repliziert und sich an separaten Standorten oder Ausfall-Domains befindet. Bei einem Ausfall an einem Standort kann ein Administrator die Daten vom verbleibenden Standort aus bedienen.</p>
 </div>
@@ -1794,15 +1785,15 @@ Der Support für Disaster Recovery hängt von der Infrastruktur ab, die von der 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="datensicherung-verbrauchte-kapazität-und-kosten">Datensicherung, verbrauchte Kapazität und Kosten</h3>
+</div>
+<div class="sect1">
+<h2 id="datensicherung-verbrauchte-kapazität-und-kosten">Datensicherung, verbrauchte Kapazität und Kosten</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>In den Abbildungen in diesem Abschnitt wird beschrieben, wie DP-Gebühren berechnet werden.</p>
 </div>
-<div class="sect3">
-<h4 id="disaster-recovery-2">Disaster Recovery</h4>
-<div class="sect4">
-<h5 id="asynchrone-disaster-recovery">Asynchrone Disaster Recovery</h5>
+<div class="sect2">
+<h3 id="asynchrone-disaster-recovery">Asynchrone Disaster Recovery</h3>
 <div class="paragraph">
 <p>Bei asynchronem Disaster Recovery werden Verbrauch und Kosten folgendermaßen berechnet:</p>
 </div>
@@ -1823,8 +1814,8 @@ Der Support für Disaster Recovery hängt von der Infrastruktur ab, die von der 
 <p><span class="image"><img src="./media/sewebiug_image4.png" alt="Fehler: Fehlendes Grafikbild"></span></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="synchrone-disaster-recovery">Synchrone Disaster Recovery</h5>
+<div class="sect2">
+<h3 id="synchrone-disaster-recovery">Synchrone Disaster Recovery</h3>
 <div class="paragraph">
 <p>Bei synchroner Disaster Recovery werden Verbrauch und Kosten berechnet:</p>
 </div>
@@ -1832,9 +1823,8 @@ Der Support für Disaster Recovery hängt von der Infrastruktur ab, die von der 
 <p><span class="image"><img src="./media/sewebiug_image5.png" alt="Fehler: Fehlendes Grafikbild"></span></p>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="backup">Backup</h4>
+<div class="sect2">
+<h3 id="backup">Backup</h3>
 <div class="paragraph">
 <p>Beim Backup sind die Nutzung und die Kosten aus den folgenden Gebühren verbunden:</p>
 </div>
@@ -1853,6 +1843,7 @@ Der Support für Disaster Recovery hängt von der Infrastruktur ab, die von der 
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/sewebiug_image6.png" alt="Fehler: Fehlendes Grafikbild"></span></p>
+</div>
 </div>
 </div>
 </div>
@@ -2002,4 +1993,5 @@ Der Support für Disaster Recovery hängt von der Infrastruktur ab, die von der 
     </script>
     <script src='/de-de/keystone/js/www-ntap.js'></script>
     <script src='/de-de/keystone/js/tabbed-blocks.js'></script>
+    <script src='/de-de/keystone/js/sidebar.js'></script>
   </body></html>
