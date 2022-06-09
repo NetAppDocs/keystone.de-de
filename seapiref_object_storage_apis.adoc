@@ -26,7 +26,7 @@ Der Objekt-Storage-Workflow umfasst die folgenden Aufgaben:
 
 
 
-=== Objekt-Storage-Gruppen
+== Objekt-Storage-Gruppen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden zum Abrufen, Erstellen oder Ändern von Objekt-Storage-Gruppen.
 
@@ -50,7 +50,7 @@ Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden zum Abrufen, E
 |===
 
 
-==== Attribute für Objekt-Storage-Gruppen
+=== Attribute für Objekt-Storage-Gruppen
 
 In der folgenden Tabelle werden die Attribute des Objekt-Storage aufgeführt.
 
@@ -152,7 +152,7 @@ none
 ....
 
 
-==== Abrufen einer Objekt-Storage-Gruppe nach ID
+=== Abrufen einer Objekt-Storage-Gruppe nach ID
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Objekt-Storage-Gruppe nach ID abzurufen.
 
@@ -205,7 +205,7 @@ none
 ....
 
 
-==== Erstellen Sie eine Objekt-Storage-Gruppe
+=== Erstellen Sie eine Objekt-Storage-Gruppe
 
 Verwenden Sie die im Folgenden aufgeführte Methode zum Erstellen einer Objekt-Speichergruppe.
 
@@ -267,7 +267,7 @@ Erforderliche Body-Attribute für Anforderung: `Name`, `subtenant_id`, `s3Policy
 ....
 
 
-==== Ändern einer Objektspeichergruppe
+=== Ändern einer Objektspeichergruppe
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Objekt-Speichergruppe zu ändern.
 
@@ -335,7 +335,7 @@ Erforderliche Body-Attribute für Anforderung: `Name`, `subtenant_id`, `s3Policy
 ....
 
 
-==== Löschen Sie eine Objekt-Storage-Gruppe nach ID
+=== Löschen Sie eine Objekt-Storage-Gruppe nach ID
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Objekt-Storage-Gruppe nach ID zu löschen.
 
@@ -388,7 +388,7 @@ none
 ....
 
 
-=== Objekt-Storage-Benutzer
+== Objekt-Storage-Benutzer
 
 Führen Sie die folgenden Aufgaben mithilfe der in der folgenden Tabelle aufgeführten Methoden aus:
 
@@ -428,7 +428,7 @@ Führen Sie die folgenden Aufgaben mithilfe der in der folgenden Tabelle aufgef�
 |===
 
 
-==== Benutzerattribute für Objekt-Storage
+=== Benutzerattribute für Objekt-Storage
 
 In der folgenden Tabelle werden die Attribute des Objekt-Storage-Benutzers aufgeführt.
 
@@ -513,7 +513,7 @@ none
 ....
 
 
-==== Abrufen eines Objekt-Storage-Benutzers anhand der ID
+=== Abrufen eines Objekt-Storage-Benutzers anhand der ID
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen anhand der ID verwendeten Objekt-Storage abzurufen.
 
@@ -560,7 +560,7 @@ none
 ....
 
 
-==== Erstellen Sie einen Objekt-Storage-Benutzer
+=== Erstellen Sie einen Objekt-Storage-Benutzer
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Erstellen eines Objekt-Storage-Benutzers.
 
@@ -616,7 +616,7 @@ Erforderliche Body-Attribute für Anforderung: `Display_Name`, `subtenant_id`, `
 ....
 
 
-==== Ändern eines Objektspeicherbenutzers
+=== Ändern eines Objektspeicherbenutzers
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Objekt-Storage-Benutzer zu ändern.
 
@@ -672,7 +672,7 @@ Erforderliche Body-Attribute für Anforderung: `Display_Name`, `subtenant_id`, `
 ....
 
 
-==== Ordnen Sie alle S3-Schlüssel einem Objekt-Storage-Benutzer zu
+=== Ordnen Sie alle S3-Schlüssel einem Objekt-Storage-Benutzer zu
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um alle S3-Schlüssel einem Objekt-Storage-Benutzer zuzuordnen.
 
@@ -715,7 +715,7 @@ none
 ....
 
 
-==== Erstellen eines S3-Schlüssels für einen Objekt-Storage-Benutzer
+=== Erstellen eines S3-Schlüssels für einen Objekt-Storage-Benutzer
 
 Verwenden Sie die im Folgenden aufgeführte Methode, um einen S3-Schlüssel für einen Objekt-Storage-Benutzer zu erstellen.
 
@@ -766,7 +766,7 @@ NOTE: Das Ablaufdatum für Schlüssel wird in UTC festgelegt – es muss in der 
 ....
 
 
-==== S3-Schlüssel für Objekt-Storage-Benutzer anhand von Schlüssel-ID
+=== S3-Schlüssel für Objekt-Storage-Benutzer anhand von Schlüssel-ID
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um S3-Schlüssel für einen Objekt-Storage-Benutzer anhand der Schlüssel-ID zu erhalten.
 
@@ -815,7 +815,7 @@ none
 ....
 
 
-==== Löschen Sie einen S3-Schlüssel anhand der Schlüssel-ID
+=== Löschen Sie einen S3-Schlüssel anhand der Schlüssel-ID
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen S3-Schlüssel anhand der Schlüssel-ID zu löschen.
 
@@ -843,7 +843,7 @@ No content to return for succesful execution
 ....
 
 
-=== Objekt-Storage-Konten
+== Objekt-Storage-Konten
 
 Führen Sie die folgenden Aufgaben mithilfe der in der folgenden Tabelle aufgeführten Methoden aus:
 
@@ -877,7 +877,7 @@ Führen Sie die folgenden Aufgaben mithilfe der in der folgenden Tabelle aufgef�
 |===
 
 
-==== Attribute für Objekt-Storage-Konten
+=== Attribute für Objekt-Storage-Konten
 
 In der folgenden Tabelle werden die Attribute des Objekt-Storage-Kontos aufgeführt.
 
@@ -947,7 +947,7 @@ none
 ....
 
 
-==== Abrufen eines Objekt-Storage-Kontos anhand der ID
+=== Abrufen eines Objekt-Storage-Kontos anhand der ID
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um ein Objekt-Storage-Konto anhand der ID abzurufen.
 
@@ -993,7 +993,7 @@ none
 ....
 
 
-==== Aktivieren eines Objekt-Storage-Kontos
+=== Aktivieren eines Objekt-Storage-Kontos
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zur Aktivierung eines Objekt-Storage-Kontos.
 
@@ -1046,7 +1046,7 @@ Erforderliche Body-Attribute für Anforderung: `subTenant_id, quota_gb`
 ....
 
 
-==== Ändern eines Objekt-Storage-Kontos
+=== Ändern eines Objekt-Storage-Kontos
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Ändern eines Objekt-Storage-Kontos.
 
@@ -1100,7 +1100,7 @@ Erforderliche Body-Attribute für Anforderung: `Name`, `subtenant_id`, `quota_gb
 ....
 
 
-==== Löschen eines Objekt-Storage-Kontos
+=== Löschen eines Objekt-Storage-Kontos
 
 Bevor Sie ein Objekt-Storage-Konto löschen können, müssen Sie zuerst alle zugehörigen Gruppen, Benutzer und Buckets löschen. Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Löschen eines Objekt-Storage-Kontos.
 
@@ -1153,7 +1153,7 @@ Erforderliche Body-Attribute für Anforderung: `none`
 ....
 
 
-=== Objekt-Storage-Buckets
+== Objekt-Storage-Buckets
 
 Verwenden Sie die APIs in der folgenden Tabelle, um Objekt-Storage-Buckets zu erstellen und abzurufen.
 
@@ -1168,7 +1168,7 @@ Verwenden Sie die APIs in der folgenden Tabelle, um Objekt-Storage-Buckets zu er
 |===
 
 
-==== Attribute für Objekt-Storage-Buckets
+=== Attribute für Objekt-Storage-Buckets
 
 In der folgenden Tabelle werden die Attribute des Objekt-Storage-Buckets aufgeführt.
 
@@ -1186,7 +1186,7 @@ In der folgenden Tabelle werden die Attribute des Objekt-Storage-Buckets aufgef�
 |===
 
 
-==== Abrufen von S3-Buckets
+=== Abrufen von S3-Buckets
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Abrufen von S3-Buckets.
 
@@ -1225,7 +1225,7 @@ none
 ....
 
 
-==== Erstellung von S3 Buckets
+=== Erstellung von S3 Buckets
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Erstellen eines S3-Buckets.
 

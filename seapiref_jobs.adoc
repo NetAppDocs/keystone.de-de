@@ -18,7 +18,7 @@ Verwenden Sie die Job-APIs zum Überprüfen von Jobdetails. Weitere Informatione
 
 
 
-=== Jobs abrufen
+== Jobs abrufen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Abrufen aller Jobs oder einer Teilmenge der Jobs. Wenn Sie eine `Tenant_id` angeben, werden nur die Jobs zurückgegeben, die zu diesem Mandanten gehören.
 
@@ -94,7 +94,7 @@ none
 ....
 
 
-==== Abrufen eines Jobs nach Job-ID
+=== Abrufen eines Jobs nach Job-ID
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Job anhand der ID abzurufen.
 
@@ -164,7 +164,7 @@ none
 ....
 
 
-=== API und asynchrone Prozesse für Job-Objekte
+== API und asynchrone Prozesse für Job-Objekte
 
 Einige der API-Aufrufe, insbesondere solche, die zum Hinzufügen oder Ändern von Ressourcen verwendet werden, können länger dauern als andere Anrufe. Die NetApp Service Engine verarbeitet diese langfristigen Anforderungen asynchron.
 
@@ -172,7 +172,7 @@ Nach einem API-Aufruf, der asynchron ausgeführt wird, weist der HTTP-Antwortcod
 
 
 
-==== Abfragen des mit einer API-Anforderung verknüpften Jobobjekts
+=== Abfragen des mit einer API-Anforderung verknüpften Jobobjekts
 
 Das in der HTTP-Antwort zurückgegebene Jobobjekt enthält mehrere Eigenschaften. Sie können die Statuseigenschaft abfragen, um festzustellen, ob die Anfrage erfolgreich abgeschlossen wurde. Ein Job-Objekt kann sich in einem der folgenden Zustände befinden:
 
@@ -190,7 +190,7 @@ Es gibt zwei Verfahren, die Sie beim Abfragen eines Jobobjekts verwenden können
 
 
 
-==== Schritte für asynchrone Anfragen
+=== Schritte für asynchrone Anfragen
 
 Sie können den folgenden grundlegenden Vorgang verwenden, um einen asynchronen API-Aufruf abzuschließen:
 

@@ -36,7 +36,7 @@ Die Burst-Nutzung ist für Dienste bis zu einem bestimmten Zeitpunkt zulässig; 
 
 
 
-=== Engagierte, verbrauchte und Burst-Kapazitäten und übermäßige Nutzung
+== Engagierte, verbrauchte und Burst-Kapazitäten und übermäßige Nutzung
 
 Verbrauchte Kapazität ist die Menge an Kapazität, die zugewiesen wurde (aber nicht unbedingt verwendet). Die zugesetzte Kapazität ist die in einem Abonnement festgesetzte Kapazität. Der Abonnent wird unabhängig von der genutzten Kapazität mit einem festen Satz in Rechnung gestellt.
 
@@ -62,7 +62,7 @@ Aufgrund von zusätzlichen Kosten für Burst-Nutzung wird die NetApp Service Eng
 
 
 
-==== Sie erhalten eine Benachrichtigung, wenn eine vorgeschlagene Änderung die Nutzung von Burst-Kapazität zur Folge hat
+=== Sie erhalten eine Benachrichtigung, wenn eine vorgeschlagene Änderung die Nutzung von Burst-Kapazität zur Folge hat
 
 Diese Abbildung zeigt ein Beispiel für eine Benachrichtigung, die angezeigt wird, wenn eine vorgeschlagene Bereitstellungsänderung dazu führt, dass ein Abonnement in den Burst-Wert geht. Sie können sich entscheiden, weiterhin zu wissen, dass das Abonnement in Burst gesetzt wird, oder sich entscheiden, nicht mit der Aktion fortzufahren.
 
@@ -104,7 +104,7 @@ In der folgenden Tabelle werden die Benachrichtigungen für derartige Burst-Meld
 |===
 
 
-==== Benachrichtigung, wenn das Abonnement in Burst ist
+=== Benachrichtigung, wenn das Abonnement in Burst ist
 
 Das folgende Benachrichtigungsbanner wird angezeigt, wenn ein Abonnement im Burst ist. Die Benachrichtigung wird dem Administrator des Kunden für die Mandantenfähigkeit angezeigt und angezeigt, bis die Benachrichtigung bestätigt wird.
 
@@ -112,7 +112,7 @@ image:sewebiug_image3.png["Fehler: Fehlendes Grafikbild"]
 
 
 
-=== Datensicherung
+== Datensicherung
 
 DP bezieht sich auf Methoden, die Daten-Backups unterstützen und bei Bedarf die Möglichkeit zur Wiederherstellung bieten.
 
@@ -125,7 +125,7 @@ NetApp Service Engine DP Funktionen umfassen:
 
 
 
-==== Snapshots
+=== Snapshots
 
 Snapshots sind zeitpunktgenaue Kopien von Daten. Snapshots können geklont werden, um eine neue Festplatte zu bilden oder mit denselben oder ähnlichen Funktionen zu teilen.
 
@@ -136,7 +136,7 @@ NOTE: Snapshots tragen zur verbrauchten Kapazität eines Service bei.
 
 
 
-==== Backups
+=== Backups
 
 Beim Backup wird die Kopie eines Objekts erstellt, repliziert und in einer anderen Zone als der Originalzone gespeichert, wobei das jeweilige Protokoll aktiviert ist (nur bei Block-Storage) und nicht von MetroCluster aktiviert ist. NetApp Service Engine bietet Backups auf Datei- und Block-Storage (für ein DP-Service auf dem Abonnement erforderlich). Backups von Shares/Festplatten werden in der Backup-Zone auf der Tier mit der niedrigsten Performance (Standard) im Abonnement gespeichert.
 
@@ -164,7 +164,7 @@ Geplante Backups werden regelmäßig erstellt und können nicht gelöscht werden
 
 
 
-=== Disaster Recovery
+== Disaster Recovery
 
 Disaster Recovery bezieht sich auf die Möglichkeit einer Recovery auf normalen Betrieb bei einem Notfall.
 
@@ -175,7 +175,7 @@ NOTE: Der Support für Disaster Recovery hängt von der Infrastruktur ab, die vo
 
 
 
-==== Disaster Recovery – asynchron
+=== Disaster Recovery – asynchron
 
 Die NetApp Service Engine unterstützt asynchrone Disaster Recovery mit folgenden Funktionen:
 
@@ -193,15 +193,7 @@ Asynchrone Disaster Recovery-Replizierung für ein primäres Volume erfordert Fo
 * Aktivieren oder Deaktivieren der Disaster Recovery-Replizierung der Dateifreigabe oder Festplatte Standardmäßig sind Freigaben und Festplatten für die Disaster-Recovery-Replizierung aktiviert, wenn Disaster Recovery konfiguriert ist.
 
 
-
-
-===== Dateiserver oder Block-Speicher zur Unterstützung der asynchronen Disaster Recovery konfigurieren
-
 Ermöglichen Sie asynchrone Disaster Recovery auf einem File-Server oder Block-Storage bei der Erstellung oder zu einem späteren Zeitpunkt. Nach Aktivierung kann die Disaster Recovery nicht deaktiviert werden, und die Disaster-Recovery-Zone kann nicht mehr geändert werden. Der Disaster Recovery-Zeitplan gibt an, wie oft die Daten an den Disaster-Recovery-Standort repliziert werden (stündlich, vier Stunden oder täglich).
-
-
-
-===== Ermöglichen Sie asynchrones Disaster Recovery auf File Shares oder Festplatte
 
 Eine Dateifreigabe oder Festplatte kann nur für eine asynchrone Disaster-Recovery-Replizierung konfiguriert werden, wenn der übergeordnete Dateiserver oder Block-Speicher zum asynchronen Disaster Recovery konfiguriert wurde. Wenn die Replikation im übergeordneten Objekt aktiviert ist, wird die Replikation in den Dateifreigaben oder Festplatten aktiviert, die von den übergeordneten Hosts genutzt werden. Sie können die Replikation einer bestimmten Freigabe oder Festplatte ausschließen, indem Sie die Disaster Recovery auf dieser Freigabe/Festplatte deaktivieren. Es ist möglich, zwischen Aktivierung und Deaktivierung der Replikation auf diesen Freigaben/Festplatten umzuschalten.
 
@@ -214,7 +206,7 @@ Eine Dateifreigabe oder Festplatte kann nur für eine asynchrone Disaster-Recove
 
 
 
-==== Disaster Recovery – synchron
+=== Disaster Recovery – synchron
 
 MetroCluster ist eine DP-Funktion, die Daten und Konfigurationen synchron zwischen zwei verschiedenen Zonen repliziert und sich an separaten Standorten oder Ausfall-Domains befindet. Bei einem Ausfall an einem Standort kann ein Administrator die Daten vom verbleibenden Standort aus bedienen.
 
@@ -231,17 +223,13 @@ Die mit MetroCluster konfigurierten NetApp Service Engine unterstützen eine syn
 
 
 
-=== Datensicherung, verbrauchte Kapazität und Kosten
+== Datensicherung, verbrauchte Kapazität und Kosten
 
 In den Abbildungen in diesem Abschnitt wird beschrieben, wie DP-Gebühren berechnet werden.
 
 
 
-==== Disaster Recovery
-
-
-
-===== Asynchrone Disaster Recovery
+=== Asynchrone Disaster Recovery
 
 Bei asynchronem Disaster Recovery werden Verbrauch und Kosten folgendermaßen berechnet:
 
@@ -254,7 +242,7 @@ image:sewebiug_image4.png["Fehler: Fehlendes Grafikbild"]
 
 
 
-===== Synchrone Disaster Recovery
+=== Synchrone Disaster Recovery
 
 Bei synchroner Disaster Recovery werden Verbrauch und Kosten berechnet:
 
@@ -262,7 +250,7 @@ image:sewebiug_image5.png["Fehler: Fehlendes Grafikbild"]
 
 
 
-==== Backup
+=== Backup
 
 Beim Backup sind die Nutzung und die Kosten aus den folgenden Gebühren verbunden:
 

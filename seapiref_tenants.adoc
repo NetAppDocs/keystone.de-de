@@ -36,7 +36,7 @@ Nutzen Sie die in der folgenden Tabelle aufgeführten Methoden zum Abrufen, Erst
 |===
 
 
-=== Mandantenattribute
+== Mandantenattribute
 
 In der folgenden Tabelle werden die Mandantenattribute aufgeführt.
 
@@ -66,7 +66,7 @@ In der folgenden Tabelle werden die Mandantenattribute aufgeführt.
 |===
 
 
-=== Rufen Sie alle Mandanten ab
+== Rufen Sie alle Mandanten ab
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Abrufen aller Mandanten oder einer Untermenge aller Mandanten.
 
@@ -170,7 +170,7 @@ none
 ....
 
 
-=== Einen Mandanten per ID abrufen
+== Einen Mandanten per ID abrufen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Mandanten nach ID abzurufen.
 
@@ -263,7 +263,7 @@ none
 ....
 
 
-=== Erstellen eines Mandanten
+== Erstellen eines Mandanten
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Erstellen eines Mandanten.
 
@@ -313,7 +313,7 @@ Erforderliche Body-Attribute für Anforderung: `Code`, `Name`, `zuora_Account_Na
 ....
 
 
-=== Ändern Sie den Mandanten
+== Ändern Sie den Mandanten
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um den Mandanten zu ändern.
 
@@ -363,7 +363,7 @@ Erforderliche Body-Attribute für Anforderung: `Code`
 ....
 
 
-=== Löschen Sie den Mandanten
+== Löschen Sie den Mandanten
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Löschen des Mandanten.
 

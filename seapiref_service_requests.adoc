@@ -33,7 +33,7 @@ Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden zum Erstellen 
 |===
 
 
-=== Attribute für Serviceanfrage
+== Attribute für Serviceanfrage
 
 In der folgenden Tabelle sind die Attribute für Serviceanfragen aufgeführt.
 
@@ -84,7 +84,7 @@ Einzelheiten zum Abonnement, darunter:
 |===
 
 
-=== Abrufen von Service-Anfragen
+== Abrufen von Service-Anfragen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Abrufen der Service-Request-Kategorien für den angegebenen Mandanten.
 
@@ -133,7 +133,7 @@ none
 ....
 
 
-=== Service-Anfrage nach ID abrufen
+== Service-Anfrage nach ID abrufen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Serviceanfrage nach Service-Request-ID abzurufen.
 
@@ -181,129 +181,34 @@ none
 ....
 
 
-=== Erstellen einer Serviceanfrage
+== Erstellen einer Serviceanfrage
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Erstellen einer Service-Anforderung.
 
-|===
-| HTTP-Methode | Pfad | Beschreibung | Parameter 
+Parameter der HTTP-Methode
 
-
-| `POST` | `/v2.1/Tenants/{Tenant_id}/servicerequests/categories` | Erstellen einer Serviceanfrage. | `Tenant_id`: Die Mandanten-ID. 
-|===
-Erforderliche Body-Attribute der Anforderung: Die erforderlichen Attribute sind abhängig von der Kategorie der Service-Anforderung. In der folgenden Tabelle sind die Attribute für den Anfraentext aufgeführt.
+`POST`/v2.1/Tenant/{Tenant_id}/serviceresquests/categories`` Erstellen Sie eine Service-Anfrage. `Tenant_id`: Die Mandanten-ID.
 
 |===
-| Kategorie | Erforderlich 
 
 
-| Abonnement | `sSubskription` und `Commitment` 
-
-
-| Disaster Recovery | `storage_object_type`, `subTenant_id` und `storage_object_id` 
-
-
-| Technik | `subTenant_id` und `sService_type` Wenn `sService_type` Dateidienste oder Blockspeicher ist, ist Zone erforderlich. 
-
-
-| Andere | Zone 
+| Erforderliche Body-Attribute der Anforderung: Die erforderlichen Attribute sind abhängig von der Kategorie der Service-Anforderung. In der folgenden Tabelle sind die Attribute für den Anfraentext aufgeführt. 
 |===
-*Beispiel des Körpers anfordern:*
+Kategorie Erforderlich
 
-....
-{
-  "subject": "string",
-  "comment": "string",
-  "category": "subscription",
-  "priority": "Normal",
-  "subscription": "A-S00003969",
-  "commitment": {
-    "service_level": "standard",
-    "new_commitment": 10
-  },
-  "zone": "au-east1-a",
-  "subtenant_id": "5d2fb0fb4f47df00015274e3",
-  "storage_object_type": "fileserver",
-  "storage_object_id": "5d2fb0fb4f47df00015274e3",
-  "service_type": "File Services"
-}
-....
-*Beispiel des Antwortkörpers:*
-
-....
-{
-  "status": {
-    "user_message": "string",
-    "verbose_message": "string",
-    "code": "string"
-  },
-  "result": {
-    "returned_records": 1,
-    "records": [
-      {
-        "id": "string",
-        "subject": "string",
-        "description": "string",
-        "status": "New",
-        "priority": "Normal",
-        "createdDate": "2020-05-12T03:18:25+0000",
-        "UpdatedDate": "2020-05-12T03:18:25+0000"
-      }
-    ]
-  }
-....
-
-
-=== Service-Request-Kategorien abrufen
-
-In der folgenden Tabelle sind die Kategorien für Service-Anfragen für einen bestimmten Mandanten aufgeführt.
+Abonnement `sSubskription` und `Commitment` Disaster Recovery `storage_object_type`, `subtenter_id` und `storage_object_id` Technical `subtente_id` und `service_type` ist `service_type` Dateidienste oder Blockspeicher, ist die Zone erforderlich. Andere Zone
 
 |===
-| HTTP-Methode | Pfad | Beschreibung | Parameter 
 
 
-| `GET` | `/v2.1/Tenants/{Tenant_id}/servicerequests/categories` | Abrufen der Kategorien von Service-Anfragen. | `Tenant_id:` (optional) gibt die Serviceanforderungen für einen angegebenen Mandanten zurück. 
+| *Körperbeispiel anfordern:* .... { "Betreff": "String", "Kommentar": "String", "Kategorie": "Abonnement", "Priorität": "Normal", "Abonnement": "A-S00003969", „Engagement“: { „Service_Level“: „Standard“, „New_Commitment“: 10 }, „Zone“: „au-ost1-A“, „subTenant_id“: „5d2fb0fb4f47df00015274e3“, „Storage_object_type“: „Dateiserver“, „Storage_object_id“: „5d2fb0fb4f47df00015274e3“, „Service_type“: „File Services“ } .... *Beispiel des Antwortkörpers:* .... { "Status": { "User_message": "String", "verbose_message": "String", "Code": "String" }, "Ergebnis": { "Reted_Records": 1, "Records": [ { "id": "String", "Subject": "String", "description": "String", "Status": "Neu", "Priority": "Normal", "normal" "CreatedDate": "2020-05-12T03:18:25+0000", "UpdatedDate": "2020-05-12T03:18:25+0000" } ] } .... == Service-Request-Kategorien abrufen die folgende Tabelle enthält die Kategorien der Service-Request-Anforderung für einen bestimmten Mandanten. 
 |===
-Erforderliche Body-Attribute für Anforderung: `none`
+HTTP-Methode Pfad Beschreibung Parameter
 
-*Beispiel des Körpers anfordern:*
+`GET``/v2.1/Tenant/{Tenant_id}/serviceresquests/categories` Retrieve Service Requests categories. `Tenant_id:` (optional) gibt die Serviceanforderungen für einen bestimmten Mandanten zurück.
 
-....
-none
-....
-*Beispiel des Antwortkörpers:*
+|===
 
-....
-{
-  "status": {
-    "user_message": "Okay. Returned 5 records.",
-    "verbose_message": "",
-    "code": 200
-  },
-  "result": {
-    "returned_records": 5,
-    "records": [
-      {
-        "key": "dr",
-        "value": "Disaster Recovery Failover"
-      },
-      {
-        "key": "technical",
-        "value": "Technical Issue"
-      },
-      {
-        "key": "other",
-        "value": "Other"
-      },
-      {
-        "key": "subscription",
-        "value": "Subscription Management"
-      },
-      {
-        "key": "backup",
-        "value": "Backup Restore"
-      }
-    ]
-  }
-}
-....
+
+| Anforderung Körperattribute: `none` *Körperbeispiel anfordern:* .... Keine .... *Beispiel des Antwortkörpers:* .... { „Status“: { „User_message“: „OK. 5 Datensätze zurückgegeben.", "verbose_message": "", "Code": 200 }, "Ergebnis": { "Reted_Records": 5, "Records": [ { "Schlüssel": "dr", "Wert": "Disaster Recovery Failover" }, { "Schlüssel": "Technischer Wert": "Technischer Wert": "Anderer Schlüssel", "anderer Wert": "Abonnement", "anderer Schlüssel": } { } { } { "Backup Restore" } ] } } .... 
+|===

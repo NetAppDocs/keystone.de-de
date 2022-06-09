@@ -36,7 +36,7 @@ Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden, um ONTAP Clus
 |===
 
 
-=== Attribute für ONTAP Cluster
+== Attribute für ONTAP Cluster
 
 In der folgenden Tabelle werden die ONTAP-Cluster-Attribute aufgeführt.
 
@@ -157,7 +157,7 @@ Liste der Nodes und Ports für FCP-fähige ONTAP Cluster Beispiel:
 |===
 
 
-=== Rufen Sie alle ONTAP Cluster ab
+== Rufen Sie alle ONTAP Cluster ab
 
 Verwenden Sie die im Folgenden aufgeführte Methode zum Abrufen aller ONTAP Cluster oder einer Untermenge an ONTAP Clustern.
 
@@ -302,7 +302,7 @@ none
 ....
 
 
-=== Abrufen von ONTAP Clustern nach ID
+== Abrufen von ONTAP Clustern nach ID
 
 Verwenden Sie die im Folgenden aufgeführte Methode, um ONTAP Cluster nach ID abzurufen.
 
@@ -376,7 +376,7 @@ none
 ....
 
 
-=== ONTAP Cluster erstellen
+== ONTAP Cluster erstellen
 
 Verwenden Sie die API in der folgenden Tabelle, um ein ONTAP-Cluster zu erstellen.
 
@@ -493,7 +493,7 @@ Wenn `is_mcc` TRUE ist, ist der `mcc_Partner_Cluster` erforderlich.
 ....
 
 
-=== ONTAP-Cluster ändern
+== ONTAP-Cluster ändern
 
 Verwenden Sie die im Folgenden aufgeführte Methode, um den ONTAP-Cluster zu ändern.
 
@@ -603,7 +603,7 @@ Erforderliche Body-Attribute für Anforderung: `none`
 ....
 
 
-=== Löschen eines ONTAP-Clusters
+== Löschen eines ONTAP-Clusters
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Löschen eines ONTAP-Clusters.
 

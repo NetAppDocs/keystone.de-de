@@ -16,9 +16,7 @@ summary: Betriebsmodelle
 [role="lead"]
 Es gibt drei Betriebsmodelle in flexiblen Abonnements. Diese FAQs beziehen sich auf die Betriebsmodelle.
 
-
-
-=== Welche Betriebsmodelle gibt es und wer ist verantwortlich für die wichtigsten Aktivitäten?
+*Was sind die verschiedenen Betriebsmodelle und wer ist verantwortlich für die wichtigsten Aktivitäten?*
 
 Das folgende Diagramm zeigt die drei Betriebsmodelle auf, die ein Kunde auswählen kann: NetApp betrieben, Partner betrieben und vom Kunden betrieben.
 
@@ -73,28 +71,20 @@ Unterstützung
 
 | image:check.png[""] | Keine 
 |===
-
-
-=== Was ist ein NetApp-operated Modell?
+*Was ist ein NetApp-betriebenes Modell?*
 
 Bei diesem Betriebsmodell kann der Kunde die angebotenen Services gemäß den ausgewählten Performance Tiers und Storage-Service-Typen abonnieren und die von NetApp betriebene Option gegen Aufpreis auswählen. NetApp definiert die Architektur und die Produkte, wird beim Kunden installiert und NetApp managt die täglichen Infrastrukturmanagement-Vorgänge mithilfe unserer Storage- und IT-Ressourcen. Verfügbare Storage-Servicetypen sind File, Block (iSCSI) und Objekt. Cloud Volumes Service für GCP und AWS werden ebenfalls unterstützt.
 
 NetApp erstellt und managt zudem Partner, Mandanten, falls zutreffend, und das Abonnement.
 
-
-
-=== Was ist ein partnerbetriebenes Modell?
+*Was ist ein Partnermodell?*
 
 Das Betriebsmodell für den Partner oder Dienstleister ist dem von NetApp betriebenen Modell ähnlich, wobei der Partner den Service für seinen Endkunden aufführt. In diesem Modell wird der Partner als Vertragspartei referenziert. Mandanten sind Kunden der Service Provider und haben keine Abrechnungsbeziehung zu NetApp. Sie managen ihre Mandantenfähigkeit und ihre Kunden. Die Support-Anfragen für Mandanten werden zuerst vom Service-Provider bearbeitet, bevor sie an NetApp weitergeleitet werden.
 
-
-
-=== Was ist ein kundengetriebenes Modell?
+*Was ist ein kundengeführtes Modell?*
 
 Mit diesem Betriebsmodell kann der Kunde einen angebotenen Service gemäß den ausgewählten Performance Tiers und Storage-Servicetypen abonnieren. NetApp definiert die Architektur und die Produkte und wird beim Kunden vor Ort installiert und ermöglicht Kunden das Management der Infrastruktur mithilfe ihrer Storage- und IT-Ressourcen. Verfügbare Storage-Servicetypen sind File, Block (iSCSI) und Objekt. In diesem Modell hat der Kunde auf den unter Vertrag genommenen Hersteller Bezug genommen, und dies kann ein Endbenutzer oder Partner sein.
 
-
-
-=== Wer besitzt die Ausrüstung?
+* Wer besitzt die Ausrüstung?*
 
 Bei allen drei Betriebsmodellen ist NetApp für die gesamte Hardware und Software verantwortlich, die beim Kunden vor Ort installiert ist.

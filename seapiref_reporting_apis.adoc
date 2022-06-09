@@ -27,7 +27,7 @@ Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden zum Abrufen un
 |===
 
 
-=== Eine Liste von Berichten abrufen
+== Eine Liste von Berichten abrufen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Liste von Berichten abzurufen.
 
@@ -70,7 +70,7 @@ none
 ....
 
 
-==== Abrufen eines Berichts nach Dateiname
+=== Abrufen eines Berichts nach Dateiname
 
 Verwenden Sie die Methode in der folgenden Tabelle, um einen Bericht abzurufen, der durch den Dateinamen gekennzeichnet ist.
 

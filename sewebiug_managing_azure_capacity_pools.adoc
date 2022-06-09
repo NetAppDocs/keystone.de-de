@@ -29,7 +29,7 @@ In diesem Abschnitt wird die Ausführung der folgenden Aufgaben beschrieben:
 
 
 
-=== Zeigen Sie eine Liste der Azure-Kapazitätspools an
+== Zeigen Sie eine Liste der Azure-Kapazitätspools an
 
 In der Liste der Azure Kapazitätspools wird eine Liste der Kapazitätspools für einen angegebenen Untermandanten und Speicherort angezeigt. Um die Liste anzuzeigen, wählen Sie im Menü *FILE SERVICES > Azure Capacity Pools* aus.
 
@@ -37,7 +37,7 @@ In der Liste werden einfache Informationen zu den einzelnen Azure-Kapazitätspoo
 
 
 
-=== Fügen Sie einen Azure-Kapazitätspool hinzu
+== Fügen Sie einen Azure-Kapazitätspool hinzu
 
 In diesem Abschnitt wird das Hinzufügen eines Azure Capacity Pools beschrieben.
 
@@ -60,7 +60,7 @@ Sie benötigen:
 
 
 
-=== Ändern Sie die Details zum Azure Capacity Pool
+== Ändern Sie die Details zum Azure Capacity Pool
 
 Verwenden Sie diese Methode, um die Details eines Azure-Kapazitätspools zu ändern. Sie können den Service-Level die Größe des Pools ändern und Tags hinzufügen oder entfernen.
 
@@ -73,7 +73,7 @@ Verwenden Sie diese Methode, um die Details eines Azure-Kapazitätspools zu änd
 
 
 
-=== Löschen Sie einen Azure-Kapazitätspool
+== Löschen Sie einen Azure-Kapazitätspool
 
 Verwenden Sie diese Methode, um einen Azure-Kapazitätspool zu löschen.
 

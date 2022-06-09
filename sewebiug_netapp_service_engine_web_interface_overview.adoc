@@ -41,7 +41,7 @@ Das Dashboard zeigt Informationen zu Ihren NetApp Keystone-Storage-Abonnements a
 
 
 
-== Listenansicht
+=== Listenansicht
 
 Eine Listenansicht wird verwendet, um eine Liste von Objekten anzuzeigen. Beispielsweise wird die Liste der Server, die die Dateifreigaben in einem Abonnement unterstützen, in einer Listenansicht angezeigt, wie in der Abbildung unten gezeigt.
 

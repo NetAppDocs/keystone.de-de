@@ -18,7 +18,7 @@ In Bezug auf die Nutzung des NetApp Keystone Flex Subscription können Sie Kapaz
 
 
 
-=== Keystone Bericht zur Kapazitätsauslastung des Abonnements
+== Keystone Bericht zur Kapazitätsauslastung des Abonnements
 
 Auf der Seite Kapazitätsnutzung für Keystone-Abonnements werden die Kapazitätsauslastung für jeden Storage-Service in einem Abonnement über einen bestimmten Zeitraum angezeigt. Als NetApp Administrator können Sie den Bericht zur Kapazitätsauslastung für alle Mandanten und Partner in einem Abonnement einsehen. Als Partneradministrator können Sie den Kapazitätsbericht für Ihre Flex-Abonnement-Nutzung einsehen. Verwenden Sie die grafischen Berichte auf dieser Seite, um die Trends, die für alle Storage-Services verwendet werden, sowie Add-on-Datensicherungsservices in separaten Registerkarten anzuzeigen. Wenn ein Service in Burst ist, zeigt ein Banner die Burst-Kapazität an, die im aktuellen Abrechnungszyklus verwendet wird.
 
@@ -36,7 +36,7 @@ So zeigen Sie die Kapazitätsauslastung für einen Service an:
 
 
 
-=== Bericht zur Kapazitätsauslastung des Mandanten
+== Bericht zur Kapazitätsauslastung des Mandanten
 
 Auf der Seite Kapazitätsnutzung für Mandanten-Abonnements werden für jeden Mandanten die abonnierten Storage-Services in Flex Subscription für die Kapazitätsauslastung angezeigt. Diese Seite steht den Administratoren von NetApp, Partnern und Mandanten oder Kunden zur Verfügung, um die Berichte zur Kapazitätsauslastung für einen bestimmten Mandanten anzuzeigen.
 
@@ -57,7 +57,7 @@ So zeigen Sie die Kapazitätsauslastung für einen Mandanten an:
 
 
 
-=== Performance-Bericht
+== Performance-Bericht
 
 Auf der Seite Performance (dargestellt in der Abbildung unten) werden Informationen zur Performance einzelner Festplatten oder Freigaben angezeigt. Es zeigt Informationen zu drei Leistungskennzahlen an:
 

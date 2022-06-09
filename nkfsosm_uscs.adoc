@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: nkfsosm_uscs.html 
-keywords: netapp, keystone, US citizen support, USCS 
-summary: Keystone Flex Abonnement-Performance 
+keywords: netapp, keystone, US citizen support, USCS GSSC, Keystone Success Manager, USCS support 
+summary: 'US Citizen Support (USCS)' 
 ---
-= US Citizen Support (USCS)
+= USA Citizen Support (USCS)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,30 @@ summary: Keystone Flex Abonnement-Performance
 
 
 [role="lead"]
-NetApp Keystone Flex Subscription (Flex Subscription) bietet über das NetApp Global Services and Support Center (GSSC) einen kontinuierlichen Monitoring- und Support-Service für den US Citizen Support (USCS).
+USA Citizen Support (USCS) ist ein Add-on-Angebot für NetApp Keystone-Abonnements. Sie erhalten Anspruch auf Lieferung und Support von laufenden Keystone-Services von den USA US-Bürger Bereitgestellt.
 
-Bei GSSC handelt es sich um ein geografisch verteiltes Team, das verschiedene NetApp Kunden betreut. Das USCS-Angebot für Flex Subscription stellt sicher, dass die Überwachung und der Support des Flex Subscription-Services von US-Bürgern in den USA erbracht werden. Auch vor-Ort-Support und -Fehlerbehebung, falls für die Wartung der Systeme erforderlich, sind inbegriffen.
+Lesen Sie die folgenden Abschnitte, um zu erfahren, welche Elemente Ihrer Abonnements von diesem Add-on-Service gebunden sind und die unter den Bedingungen der NetApp Keystone-Vereinbarung bereitgestellt werden.Fußnote:haftungsausschluss1[die hier beschriebenen Services und Angebote unterliegen einer vollständig ausgeführten Keystone-Vereinbarung und unterliegen diesen Einschränkungen.]
+
+
+
+== Monitoring des NetApp Global Services Support Center
+
+Das NetApp Global Services and Support Center (GSSC) überwacht den Zustand Ihrer Produkte und abonnierten Services, bietet Remote-Support und arbeitet mit Ihrem Keystone Success Manager zusammen. Alle Mitarbeiter, die die Produkte im Zusammenhang mit den entsprechenden Keystone Abonnement-Bestellungen überwachen, sind US-Bürger, die in den USA tätig sind Bereitgestellt.
+
+
+
+== Keystone Success Manager
+
+Der Keystone Success Manager ist ein U.S. US-Bürger ist tätig Bereitgestellt. Deren Verantwortlichkeiten werden in Ihrer NetApp Keystone-Vereinbarung festgelegt.
+
+
+
+== Implementierungsaktivitäten
+
+Sofern verfügbar, werden die Implementierungs- und Installationsaktivitäten vor Ort oder per Remote-Zugriff von US-amerikanischen Unternehmen durchgeführt US-Bürger Bereitgestellt. Fußnote:Haftungsausschluss[die Verfügbarkeit eines geeigneten Personals für Aktivitäten vor Ort ist von dem geografischen Standort abhängig, an dem die Keystone Systeme eingesetzt werden.]
+
+
+
+== Unterstützung
+
+Sofern verfügbar, werden die notwendigen Fehlerbehebungs- und Support-Aktivitäten vor Ort von US-amerikanischen durchgeführt US-Bürger Bereitgestellt. Fußnote:Haftungsausschluss[]

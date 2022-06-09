@@ -29,7 +29,7 @@ In diesem Abschnitt wird die Ausführung der folgenden Aufgaben beschrieben:
 
 
 
-=== Liste von Azure Volumes anzeigen
+== Liste von Azure Volumes anzeigen
 
 In der Liste der Azure Volumes wird eine Liste der Azure Volumes Pools für einen bestimmten Untermandanten und Speicherort angezeigt. Um die Liste anzuzeigen, wählen Sie im Menü *FILE SERVICES > Azure Volumes* aus.
 
@@ -37,7 +37,7 @@ In der Liste werden einfache Informationen zu jedem Azure-Volume angezeigt. Übe
 
 
 
-=== Fügen Sie ein Azure Volume hinzu
+== Fügen Sie ein Azure Volume hinzu
 
 In diesem Abschnitt wird das Hinzufügen eines Azure-Volume beschrieben.
 
@@ -62,7 +62,7 @@ Sie benötigen:
 
 
 
-=== Ändern Sie die Details zu Azure Volumes
+== Ändern Sie die Details zu Azure Volumes
 
 Verwenden Sie diese Methode, um die Details eines Azure Volumes zu ändern. Sie können den Dateipfad und das Kontingent ändern und Tags hinzufügen oder entfernen.
 
@@ -75,7 +75,7 @@ Verwenden Sie diese Methode, um die Details eines Azure Volumes zu ändern. Sie 
 
 
 
-=== Löschen Sie ein Azure Volume
+== Löschen Sie ein Azure Volume
 
 Verwenden Sie diese Methode zum Löschen eines Azure Volumes.
 

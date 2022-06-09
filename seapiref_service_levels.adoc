@@ -36,7 +36,7 @@ Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden, um Service-Le
 |===
 
 
-=== Service Level-Attribute
+== Service Level-Attribute
 
 In der folgenden Tabelle werden die Service Level-Attribute aufgeführt.
 
@@ -126,7 +126,7 @@ Die Liste der ONTAP-Aggregate Ein ONTAP Aggregat besteht aus:
 |===
 
 
-=== Abrufen von Service-Leveln
+== Abrufen von Service-Leveln
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um alle Service-Level abzurufen.
 
@@ -209,7 +209,7 @@ none
 ....
 
 
-=== Abrufen von Service-Leveln nach Name
+== Abrufen von Service-Leveln nach Name
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um Service-Level nach Namen abzurufen.
 
@@ -260,7 +260,7 @@ none
 ....
 
 
-=== Erstellen Sie einen Service Level
+== Erstellen Sie einen Service Level
 
 Verwenden Sie zum Erstellen eines Service Levels die in der folgenden Tabelle aufgeführte Methode.
 
@@ -339,7 +339,7 @@ Erforderliche Body-Attribute für Anforderung: `Name`, `Policy_Name`
 ....
 
 
-=== Ändern Sie einen Service-Level
+== Ändern Sie einen Service-Level
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Ändern eines Service-Levels.
 
@@ -391,7 +391,7 @@ TBA
 ....
 
 
-=== Service-Level nach ID löschen
+== Service-Level nach ID löschen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Service Level nach ID zu löschen.
 

@@ -29,7 +29,7 @@ In diesem Abschnitt:
 
 
 
-=== Zeigen Sie eine Liste der Azure NetApp Accounts an
+== Zeigen Sie eine Liste der Azure NetApp Accounts an
 
 In der Liste der Azure NetApp Accounts wird eine Liste aller Azure NetApp Accounts in den Mandanten angezeigt, auf die der angemeldete Benutzer Zugriff hat. Um die Liste anzuzeigen, wählen Sie im Menü *ADMINISTRATION > Azure NetApp Accounts* aus.
 
@@ -37,7 +37,7 @@ In der Liste werden einfache Informationen zu jedem Azure NetApp Konto angezeigt
 
 
 
-=== Fügen Sie einen Azure NetApp Account hinzu
+== Fügen Sie einen Azure NetApp Account hinzu
 
 In diesem Abschnitt wird das Hinzufügen eines Azure NetApp Accounts beschrieben.
 
@@ -60,7 +60,7 @@ Sie benötigen:
 
 
 
-=== Ändern Sie die Azure NetApp Konto-Tags
+== Ändern Sie die Azure NetApp Konto-Tags
 
 Verwenden Sie diese Methode, um Tags zu ändern, die einem Azure NetApp Konto zugeordnet sind.
 
@@ -73,7 +73,7 @@ Verwenden Sie diese Methode, um Tags zu ändern, die einem Azure NetApp Konto zu
 
 
 
-=== Löschen Sie einen Azure NetApp Account
+== Löschen Sie einen Azure NetApp Account
 
 Verwenden Sie diese Methode, um einen Azure NetApp Account zu löschen.
 

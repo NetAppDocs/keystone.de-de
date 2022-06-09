@@ -30,7 +30,7 @@ Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden zum Erstellen,
 |===
 
 
-=== Zonenattribute
+== Zonenattribute
 
 In der folgenden Tabelle sind die Zonenattribute aufgeführt.
 
@@ -51,7 +51,7 @@ In der folgenden Tabelle sind die Zonenattribute aufgeführt.
 |===
 
 
-=== Alle Zonen abrufen
+== Alle Zonen abrufen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um alle Zonen oder eine Untermenge von Zonen abzurufen. Wenn Sie einen Bereich angeben, werden nur die zu diesem Mandanten gehörenden Blockspeicher zurückgegeben.
 
@@ -96,7 +96,7 @@ none
 ....
 
 
-=== Rufen Sie eine Zone nach Namen ab
+== Rufen Sie eine Zone nach Namen ab
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Zone nach dem Zonennamen abzurufen.
 
@@ -137,7 +137,7 @@ none
 ....
 
 
-=== Erstellen Sie eine Zone
+== Erstellen Sie eine Zone
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Zone zu erstellen.
 
@@ -182,7 +182,7 @@ Erforderliche Body-Attribute der Anforderung: `Name`, `dBeschreibung`, `reRegion
 ....
 
 
-=== Ändern Sie eine Zone
+== Ändern Sie eine Zone
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Zone zu ändern.
 
@@ -226,7 +226,7 @@ Erforderliche Body-Attribute für Anforderung: `none`
 ....
 
 
-=== Löschen Sie eine Zone
+== Löschen Sie eine Zone
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Löschen einer Zone.
 

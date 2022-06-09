@@ -18,7 +18,7 @@ Auf die NetApp Service Engine REST API kann jeder Webbrowser oder jede Programmi
 
 
 
-=== HTTP-Statuscodes
+== HTTP-Statuscodes
 
 Bei Ausführung der APIs oder bei der Fehlerbehebung sollten Sie die verschiedenen HTTP-Statuscodes und Fehlercodes kennen, die von den NetApp Service Engine APIs verwendet werden.
 
@@ -59,7 +59,7 @@ In der folgenden Tabelle sind die Fehlercodes für die Authentifizierung aufgef�
 |===
 
 
-=== Empfehlungen für die Verwendung der APIs
+== Empfehlungen für die Verwendung der APIs
 
 Bei Verwendung der APIs sollten bestimmte empfohlene Methoden befolgt werden:
 

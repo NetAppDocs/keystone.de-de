@@ -36,7 +36,7 @@ Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden zum Abrufen, E
 |===
 
 
-=== Attribute für untergeordnete Mandanten
+== Attribute für untergeordnete Mandanten
 
 In der folgenden Tabelle werden die Attribute des Untermandanten aufgeführt.
 
@@ -57,7 +57,7 @@ In der folgenden Tabelle werden die Attribute des Untermandanten aufgeführt.
 |===
 
 
-=== Alle Untermandanten abrufen
+== Alle Untermandanten abrufen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Abrufen aller Untermandanten oder einer Untermenge aller Untermandanten. Wenn Sie eine `Tenant_id` angeben, werden nur die Untermandanten zurückgegeben, die zu diesem Mandanten gehören.
 
@@ -112,7 +112,7 @@ none
 ....
 
 
-=== Abrufen eines Submandanten nach ID
+== Abrufen eines Submandanten nach ID
 
 Verwenden Sie die im Folgenden aufgeführte Methode, um einen Untermandanten nach ID abzurufen.
 
@@ -155,7 +155,7 @@ none
 ....
 
 
-=== Erstellen eines Untermandanten
+== Erstellen eines Untermandanten
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Erstellen eines Untermandanten.
 
@@ -202,7 +202,7 @@ Erforderliche Body-Attribute für Anforderung: `Name`, `Code`, `Tenant_id`
 ....
 
 
-=== Ändern Sie einen Untermandanten anhand der ID
+== Ändern Sie einen Untermandanten anhand der ID
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Untermandanten nach ID zu ändern.
 
@@ -247,7 +247,7 @@ Erforderliche Body-Attribute für Anforderung: `Name`
 ....
 
 
-=== Löschen Sie einen Untermandanten nach ID
+== Löschen Sie einen Untermandanten nach ID
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Untermandanten nach ID zu löschen.
 

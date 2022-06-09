@@ -36,7 +36,7 @@ Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden zum Erstellen,
 |===
 
 
-=== Attribute für die Region
+== Attribute für die Region
 
 In der folgenden Tabelle sind die Attribute der Region aufgeführt.
 
@@ -54,7 +54,7 @@ In der folgenden Tabelle sind die Attribute der Region aufgeführt.
 |===
 
 
-=== Bereiche abrufen
+== Bereiche abrufen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um alle Regionen oder eine Teilmenge von Regionen abzurufen.
 
@@ -100,7 +100,7 @@ none
 ....
 
 
-=== Region nach Namen abrufen
+== Region nach Namen abrufen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Region nach Namen abzurufen.
 
@@ -143,7 +143,7 @@ none
 ....
 
 
-=== Erstellen Sie eine Region
+== Erstellen Sie eine Region
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Region zu erstellen.
 
@@ -189,7 +189,7 @@ Erforderliche Body-Attribute für Anforderung: `Name`
 ....
 
 
-=== Region ändern
+== Region ändern
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um eine Region zu ändern.
 
@@ -233,7 +233,7 @@ Erforderliche Body-Attribute für Anforderung: `none`
 ....
 
 
-=== Region löschen
+== Region löschen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode zum Löschen einer Region.
 

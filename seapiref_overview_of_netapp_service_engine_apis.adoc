@@ -20,7 +20,7 @@ Diese NetApp Service Engine API-Referenzhandbuch enthält Informationen zu APIs 
 
 
 
-=== Zielgruppe
+== Zielgruppe
 
 Dieser Leitfaden richtet sich an Entwickler, die Applikationen erstellen, die über REST-APIs mit der Software der NetApp Service Engine integriert werden können.
 
@@ -28,17 +28,17 @@ Sie sollten diesen Leitfaden verwenden, wenn Sie den Storage-Provider, den NetAp
 
 
 
-=== Zugriff und Kategorien der NetApp Service Engine-API
+== Zugriff und Kategorien der NetApp Service Engine-API
 
 
 
-==== Bauen einer URL für den direkten Zugriff AUF REST-APIs
+=== Bauen einer URL für den direkten Zugriff AUF REST-APIs
 
 Sie können direkt über eine Programmiersprache wie Python, C#, C++, JavaScript auf DIE REST-APIs zugreifen. Und so weiter. Um auf DIE REST-APIs im Format `https:// <hostname> /API` zuzugreifen, geben Sie den Host-Namen oder die IP-Adresse sowie die URL ein.
 
 
 
-==== Verbraucher- und Administrator-APIs
+=== Verbraucher- und Administrator-APIs
 
 In diesem Dokument werden die API-Beschreibungen in zwei Abschnitte unterteilt:
 
@@ -48,7 +48,7 @@ In diesem Dokument werden die API-Beschreibungen in zwei Abschnitte unterteilt:
 
 
 
-=== Wichtige Konzepte der NetApp Service Engine
+== Wichtige Konzepte der NetApp Service Engine
 
 NetApp Service Engine unterstützt die Konzepte von Regionen und Zonen, wie in der nachfolgenden Abbildung dargestellt. Eine Region repräsentiert ein Datacenter oder einen Standort, während eine Zone eine Storage-Untereinheit innerhalb der Region darstellt (technisch ein Cluster innerhalb eines Datacenters/Standorts). Mehrere Zonen unterstützen Data Availability- und Datensicherungsfunktionen (DP).
 

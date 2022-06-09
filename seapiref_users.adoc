@@ -39,7 +39,7 @@ Verwenden Sie die in der folgenden Tabelle aufgeführten Methoden zum Abrufen, E
 |===
 
 
-=== Benutzerattribute
+== Benutzerattribute
 
 In der folgenden Tabelle sind die Benutzerattribute aufgeführt.
 
@@ -99,7 +99,7 @@ Details zum Authentifizierungs-Provider, bestehend aus:
 |===
 
 
-=== Rufen Sie alle Benutzer ab
+== Rufen Sie alle Benutzer ab
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um alle Benutzer abzurufen.
 
@@ -150,7 +150,7 @@ none
 ....
 
 
-=== Einen Benutzer anhand seiner ID abrufen
+== Einen Benutzer anhand seiner ID abrufen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Benutzer anhand der ID abzurufen.
 
@@ -201,7 +201,7 @@ none
 ....
 
 
-=== Rufen Sie einen Benutzer nach Benutzernamen ab
+== Rufen Sie einen Benutzer nach Benutzernamen ab
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Benutzer nach dem Benutzernamen abzurufen.
 
@@ -252,7 +252,7 @@ none
 ....
 
 
-=== Erstellen Sie einen Benutzer
+== Erstellen Sie einen Benutzer
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Benutzer zu erstellen.
 
@@ -324,7 +324,7 @@ Erforderliche Body-Attribute für Anforderung: `username`, `Tenant_id`, `Tenants
 ....
 
 
-=== Ändern Sie einen Benutzer anhand der ID
+== Ändern Sie einen Benutzer anhand der ID
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Benutzer nach Benutzer-ID zu ändern.
 
@@ -390,7 +390,7 @@ Erforderliche Body-Attribute für Anforderung: `none`
 ....
 
 
-=== Benutzer anhand der ID löschen
+== Benutzer anhand der ID löschen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um einen Benutzer anhand der ID zu löschen.
 

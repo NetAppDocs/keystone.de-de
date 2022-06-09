@@ -4,7 +4,7 @@ permalink: nkfsfaq_overview.html
 keywords: netapp, keystone, overview, 
 summary: Übersicht über NetApp Keystone 
 ---
-= NetApp Keystone FAQ
+= NetApp Keystone – Häufig gestellte Fragen (FAQs)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,9 +16,7 @@ summary: Übersicht über NetApp Keystone
 [role="lead"]
 Die folgenden Fragen geben Antworten auf Ihre häufigen Fragen zu NetApp Keystone.
 
-
-
-=== Was ist NetApp Keystone?
+*Was ist NetApp Keystone?*
 
 NetApp Keystone ist ein Portfolio an Alternativen für Investitionskosten vor Ort, das aus NetApp Keystone Flex Pay (Flex Pay) und NetApp Keystone Flex Subscription (Flex Subscription) besteht.
 
@@ -26,9 +24,7 @@ NetApp Keystone ist ein Portfolio an Alternativen für Investitionskosten vor Or
 * *Flex Subscription:* wachstumsorientierte, abonnementbasierter Service mit Cloud-ähnlicher On-Premises-Nutzung mit ergebnisobasierter Serviceoption (von NetApp betrieben). Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone/index.html["Hier"].
 
 
-
-
-=== Welche Vorteile bietet NetApp Keystone meinen Kunden?
+*Wie profitiert NetApp Keystone meinen Kunden?*
 
 NetApp Keystone verbindet die Säulen unserer Investitions- und Hybrid-Cloud-Strategie – mit Agilität, finanzieller Flexibilität und einem reduzierten finanziellen Risiko, das Kunden bei der Erfüllung ihres Cash Flows und ihrer Geschäftsanforderungen unterstützt.
 
@@ -55,21 +51,15 @@ Die Marke NetApp Keystone bietet ein Portfolio flexibler Zahlungslösungen, zu d
 
 
 
-
-
-=== Was ist das Flex-Abonnement?
+*Was ist Flex-Abonnement?*
 
 Flex Subscription ist ein neues, flexibles, on-Premises-abonnementbasiertes Beschaffungsmodell. Kunden profitieren von einer schnelleren Amortisierung, da Hürden beim Management der Ressourcen und einem längeren Beschaffungszyklus beseitigt werden. Mit Flex Subscription können Kunden die Wirtschaftlichkeit auf ihre Geschäftsprioritäten abstimmen. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone/index.html#netapp-keystone-flex-subscription["Hier"].
 
-
-
-=== Was bedeutet On-Premises?
+*Was bedeutet On-Premise?*
 
 Der lokale Standort wird als Datacenter des Kunden oder als eigener Platz in einem externen Rechenzentrum definiert. Der Kunde ist für den Platz-, Strom- und Kühlungsbedarf verantwortlich.
 
-
-
-=== Was sind die Vorteile der Flex Subscription Services?
+*Was sind die Vorteile von Flex Subscription Services?*
 
 Zu den Vorteilen der Flex Subscription Services gehören:
 

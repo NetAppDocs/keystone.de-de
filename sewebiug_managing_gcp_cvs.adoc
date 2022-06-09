@@ -64,4 +64,4 @@ Im linken Navigationsbereich können Sie Volumes für einen Untermandanten auf G
 
 In dem folgenden Video erfahren Sie, wie ein Volume auf GCP mithilfe von Cloud Volumes Service und der NetApp Service Engine erstellt wird:
 
-video::Crq5a1zi1Vg[youtube, width=750,height=400]
+video::Crq5a1zi1Vg[youtube,width=750,height=400]

@@ -96,7 +96,7 @@ Die folgende Tabelle enthält die in diesem Abschnitt dokumentierten Consumer-AP
 |===
 
 
-=== Benutzerpasswort zurücksetzen
+== Benutzerpasswort zurücksetzen
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um das Benutzerpasswort zurückzusetzen.
 
@@ -154,7 +154,7 @@ Erforderliche Body-Attribute für Anforderung: `Benutzername` (Zeichenfolge), `N
 ....
 
 
-=== Authentifizierungs-Token aktualisieren
+== Authentifizierungs-Token aktualisieren
 
 Verwenden Sie die in der folgenden Tabelle aufgeführte Methode, um das Authentifizierungs-Token zu aktualisieren.
 
@@ -214,7 +214,7 @@ none
 ....
 
 
-=== Anmelden
+== Anmelden
 
 Melden Sie sich mit der in der folgenden Tabelle aufgeführten Methode an.
 
