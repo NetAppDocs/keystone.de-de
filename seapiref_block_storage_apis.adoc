@@ -121,7 +121,7 @@ Sie können Festplatten-APIs verwenden, um Ihre Festplatten abzurufen und zu ver
  a| 
 `/v2.1/Disks`
 | Sie können eine Festplatte erstellen. Fügen Sie die Werte im Anfragebetext hinzu, um eine Festplatte mit den angegebenen Parametern zu erstellen, z. B. Untermandant-ID, Zone, Name, Festplattenpfad, Snapshot-Richtlinie, Backup-Richtlinie und Tags.  a| 
-`subTenant_id`: Die ID des Untermandanten. `Zone`: Der Name der Zone. `Name`: Der Name der Festplatte. `Disk_path`: Der Pfad der Festplatte. `Protocol`: Das Storage-Protokoll für den Zugriff auf Block-Geräte. `os_type`: Der Typ des Host-Betriebssystems. `hostgroup_Mappings`: Die Host-Gruppen-Zuordnungen. `service_Level`: Der Name des Service-Levels: Standard, Premium, Premium-Tiering, Extreme oder Extreme-Tiering. `size_gb`: Die Größe der Festplatte in GB.
+`subTenant_id`: Die ID des Untermandanten. `Zone`: Der Name der Zone. `Name`: Der Name der Festplatte. `Disk_path`: Der Pfad der Festplatte. `Protocol`: Das Storage-Protokoll für den Zugriff auf Block-Geräte. `os_type`: Der Typ des Host-Betriebssystems. `hostgroup_Mappings`: Die Host-Gruppen-Zuordnungen. `service_Level`: Der Name des Service-Levels: Standard, Premium, Premium-Tiering, Extreme oder Extreme-Tiering. `size_gb`: Die Größe der Festplatte in GIBS.
 
 
 

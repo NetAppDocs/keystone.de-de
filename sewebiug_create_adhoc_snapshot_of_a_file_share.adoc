@@ -18,8 +18,8 @@ In diesem Abschnitt wird beschrieben, wie ein Ad-hoc-Snapshot einer Dateifreigab
 
 .Schritte
 . Sehen Sie sich die an link:sewebiug_view_shares.html#view-shares["Shares-Liste"].
-. Suchen Sie in der Liste die Freigabe, und klicken Sie auf das Snapshot-Symbol für die Freigabe. (Einzelheiten zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Aktionen zur Listenansicht"].
+. Suchen Sie die Freigabe in der Liste, und klicken Sie auf das Snapshot-Symbol für diese Freigabe. (Einzelheiten zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Aktionen zur Listenansicht"].
 . Geben Sie im Dialogfeld Snapshot erstellen einen Namen für Ihren Snapshot ein und klicken Sie auf *Erstellen*.
 
 
-Der Snapshot kann ein paar Minuten dauern, bis er verfügbar ist.
+Der Snapshot kann ein paar Minuten dauern, bis er verfügbar ist. Wenn verfügbar, können Sie eine weitere Freigabe erstellen, indem Sie diesen Snapshot klonen. Weitere Informationen finden Sie unter link:sewebiug_create_file_share_from_snapshot.html["Erstellen Sie eine Dateifreigabe aus einem Snapshot"].

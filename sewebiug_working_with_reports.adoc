@@ -20,7 +20,9 @@ In Bezug auf die Nutzung des NetApp Keystone Flex Subscription können Sie Kapaz
 
 == Keystone Bericht zur Kapazitätsauslastung des Abonnements
 
-Auf der Seite Kapazitätsnutzung für Keystone-Abonnements werden die Kapazitätsauslastung für jeden Storage-Service in einem Abonnement über einen bestimmten Zeitraum angezeigt. Als NetApp Administrator können Sie den Bericht zur Kapazitätsauslastung für alle Mandanten und Partner in einem Abonnement einsehen. Als Partneradministrator können Sie den Kapazitätsbericht für Ihre Flex-Abonnement-Nutzung einsehen. Verwenden Sie die grafischen Berichte auf dieser Seite, um die Trends, die für alle Storage-Services verwendet werden, sowie Add-on-Datensicherungsservices in separaten Registerkarten anzuzeigen. Wenn ein Service in Burst ist, zeigt ein Banner die Burst-Kapazität an, die im aktuellen Abrechnungszyklus verwendet wird.
+Auf der Seite Kapazitätsnutzung für Keystone-Abonnements werden die Kapazitätsauslastung für jeden Storage-Service-Level in einem Abonnement im Laufe der Zeit angezeigt. Als NetApp Administrator können Sie den Bericht zur Kapazitätsauslastung für alle Mandanten und Partner in einem Abonnement einsehen. Als Partner-Administrator können Sie sich den Kapazitätsbericht für Ihre Flex-Abonnement-Nutzung im Hinblick auf die einzelnen abonnierten Service-Level anzeigen lassen.
+
+Verwenden Sie die grafischen Berichte auf dieser Seite, um die Trendnutzung für alle Service-Level sowie zusätzliche Datensicherungsservices in separaten Registerkarten anzuzeigen. Wenn ein Service in Burst ist, zeigt ein Banner die Burst-Kapazität an, die im aktuellen Abrechnungszyklus verwendet wird.
 
 image:sewebiug_image33.png["Fehler: Fehlendes Grafikbild"]
 
@@ -43,14 +45,14 @@ Auf der Seite Kapazitätsnutzung für Mandanten-Abonnements werden für jeden Ma
 
 NOTE: Für den Mandantenadministrator wird die Seite als „Kapazitätsnutzung“ angezeigt.
 
-Verwenden Sie die grafischen Berichte auf dieser Seite, um die Trends, die für alle Storage-Services verwendet werden, sowie Add-on-Services, wie z. B. Datensicherung, in separaten Registerkarten anzuzeigen. Wenn ein Service in Burst ist, zeigt ein Banner die Burst-Kapazität an, die im aktuellen Abrechnungszyklus verwendet wird.
+Nutzen Sie die grafischen Berichte auf dieser Seite, um die Trends, die die Storage-Services nutzen, sowie Add-on-Services wie Datensicherung und erweiterte Sicherung in separaten Registerkarten anzuzeigen. Wenn ein Service in Burst ist, zeigt ein Banner die Burst-Kapazität an, die im aktuellen Abrechnungszyklus verwendet wird.
 
 Um die Seite Kapazitätsnutzung für Mandanten-Abonnements anzuzeigen, wählen Sie im Menü die Option *Berichte > Mandantennutzung/Kapazitätsauslastung* aus.
 
 So zeigen Sie die Kapazitätsauslastung für einen Mandanten an:
 
 .Schritte
-. Wählen Sie aus der Dropdown-Liste Abonnement die Abonnementnummer aus, die den Service enthält.
+. Wählen Sie aus der Dropdown-Liste *Abonnement* die Abonnementnummer aus, die den Service enthält.
 . Sie können die Kapazitätsauslastung für Basis-Service Level oder Datensicherungsdienste über die jeweiligen Registerkarten anzeigen. Auf der Seite wird standardmäßig die Ansicht „Service Level“ angezeigt.
 . Sie können auf der Seite blättern, um die Dienste anzuzeigen, und die Zeitfilter verwenden, um die Anzeige auf einen ausgewählten Zeitraum zu beschränken.
 

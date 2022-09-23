@@ -125,7 +125,7 @@ Mit den APIs für Dateifreigaben können Dateifreigaben angezeigt und gemanagt w
  a| 
 `/v2.1/filehares`
 | Sie können eine Dateifreigabe erstellen. Fügen Sie die Werte in den Text der Anforderung hinzu, um eine Dateifreigabe mit den angegebenen Parametern zu erstellen, z. B. ID, Name, Snapshot-Richtlinie, Protokolle, IP und Tags für den Dateiserver.  a| 
-`Name`: Der Name der Dateifreigabe. `sHare_PATH`: Der Pfad der Dateifreigabe. `file_id`: Die ID des Dateiservers. `size_gb`: Die Größe der Dateifreigabe in GB. `service_Level`: Der Name des Service-Levels: Standard, Premium, Premium-Tiering, Extreme oder Extreme-Tiering. `Protocol`: Das Protokoll für den Zugriff auf die Dateifreigabe (NFS, CIFS oder Multiprotokoll). `security_style`: Der Sicherheitsstil (Unix oder NTFS). `Export_Policy`: Die Exportrichtlinie der Dateifreigabe.
+`Name`: Der Name der Dateifreigabe. `sHare_PATH`: Der Pfad der Dateifreigabe. `file_id`: Die ID des Dateiservers. `size_gb`: Die Größe der Dateifreigabe in Gibs. `service_Level`: Der Name des Service-Levels: Standard, Premium, Premium-Tiering, Extreme oder Extreme-Tiering. `Protocol`: Das Protokoll für den Zugriff auf die Dateifreigabe (NFS, CIFS oder Multiprotokoll). `security_style`: Der Sicherheitsstil (Unix oder NTFS). `Export_Policy`: Die Exportrichtlinie der Dateifreigabe.
 
 
 
@@ -152,7 +152,7 @@ Mit den APIs für Dateifreigaben können Dateifreigaben angezeigt und gemanagt w
  a| 
 `/v2.1/filehares/{id}`
 | Sie können jede Dateifreigabe basierend auf ihrer ID ändern. Fügen Sie die ID des Dateiservers und die Werte, die Sie im Anfraentext ändern möchten, wie z. B. Name, Protokoll, Snapshot-Richtlinie, Backup-Richtlinie und Tags hinzu.  a| 
-`id`: Die ID der Dateifreigabe. `Name`: Der Name der Dateifreigabe. `size_gb`: Die Größe der Dateifreigabe in GB. `service_Level`: Der Name des Service-Levels: Standard, Premium, Premium-Tiering, Extreme oder Extreme-Tiering. `Protocol`: Das Protokoll für den Zugriff auf die Dateifreigabe (NFS, CIFS oder Multiprotokoll). `Export_Policy`: Die Exportrichtlinie der Dateifreigabe.
+`id`: Die ID der Dateifreigabe. `Name`: Der Name der Dateifreigabe. `size_gb`: Die Größe der Dateifreigabe in Gibs. `service_Level`: Der Name des Service-Levels: Standard, Premium, Premium-Tiering, Extreme oder Extreme-Tiering. `Protocol`: Das Protokoll für den Zugriff auf die Dateifreigabe (NFS, CIFS oder Multiprotokoll). `Export_Policy`: Die Exportrichtlinie der Dateifreigabe.
 
 
 

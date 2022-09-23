@@ -25,7 +25,7 @@ Der NetApp Keystone Flex Subscription (Flex Subscription)-Datensicherungsservice
 NOTE: Backup- und Disaster Recovery-Services sind als Add-on-Services verfügbar, während Snapshot als Teil des Basis-Storage-Service verfügbar ist.
 
 |===
-|  | Snapshots in einzelnen Regionen (als Teil des Basis-Storage-Service verfügbar) | Backup in mehreren Regionen (Add-on für Datensicherung) | Disaster Recovery für mehrere Regionen (Add-on für Datensicherung) 
+|  | Single Region Snapshots (als Teil des Basis-Storage-Service verfügbar) | Backup in mehreren Regionen (Add-on für Datensicherung) | Disaster Recovery für mehrere Regionen (Add-on für Datensicherung) 
 
 
 | Anwendungsfall | Minimierung des Risikos bei der Löschung von Benutzer- oder Applikationsdaten, nicht bei Datenverlusten oder -Ausfällen der Infrastruktur | Verringerung des Risikos eines vollständigen Datenverlusts auf dem primären Volume aufgrund von Infrastrukturausfällen oder -Ausfällen | Mindern Sie das Risiko eines vollständigen Datenverlusts auf dem primären Volume aufgrund von Infrastrukturausfällen oder Ausfällen mit einer Recovery-Zeitvorgabe 

@@ -14,7 +14,7 @@ summary: Keystone erstellt ein neues Laufwerk
 
 
 [role="lead"]
-In diesem Abschnitt wird beschrieben, wie Sie eine neue Festplatte erstellen, indem Sie die Festplattendetails direkt angeben. Anweisungen zum Erstellen einer Festplatte auf Basis eines Snapshots eines vorhandenen Laufwerks finden Sie unter link:sewebiug_create_a_disk_from_a_snapshot.html#create-a-disk-from-a-snapshot["Erstellen Sie eine Festplatte aus einem Snapshot"].
+In diesem Abschnitt wird beschrieben, wie Sie eine neue Festplatte erstellen, indem Sie die Festplattendetails direkt angeben. Anweisungen zum Erstellen eines Laufwerks auf der Grundlage eines Snapshot eines vorhandenen Laufwerks finden Sie unter link:sewebiug_create_a_disk_from_a_snapshot.html#create-a-disk-from-a-snapshot["Erstellen Sie eine Festplatte aus einem Snapshot"].
 
 .Bevor Sie beginnen
 * Wenn Block-Speicher verfügbar ist, aber nicht initialisiert wird, werden Sie aufgefordert, ihn zu initialisieren, bevor Sie die Festplatte erstellen können. Zum Initialisieren des Blockspeichers benötigen Sie:
@@ -83,20 +83,21 @@ image:sewebiug_image27.png["Fehler: Fehlendes Grafikbild"]
 .. Um die neu erstellte Host-Gruppe dem Datenträger zuzuordnen, gehen Sie zum Feld Host Groups und wählen Sie sie aus.
 
 
-. Wählen Sie ein Service-Level für die Performance aus.
+. Wählen Sie ein Service-Level aus.
 +
-Wählen Sie eine Option aus, um die Performance-Details für dieses Level anzuzeigen (wie zu Spitzenzeiten/erwartete IOPS/Durchsatz). Wählen Sie den Service Level aus, der Ihren Anforderungen am besten entspricht.
+
+NOTE: Wählen Sie eine Option aus, um die Performance-Details für dieses Service-Level anzuzeigen (wie zu Spitzenzeiten/erwartete IOPS/Durchsatz). Wählen Sie den Service Level aus, der Ihren Anforderungen am besten entspricht.
 
 . Geben Sie die Kapazität der Festplatte an.
-. Falls für dieses Laufwerk Snapshots erforderlich sind:
+. Wenn für diese Festplatte Snapshots erforderlich sind:
 +
 .. Schalten Sie ein, um die Snapshot-Richtlinie zu aktivieren, um die Felder für Snapshot-Richtlinien anzuzeigen.
-.. Geben Sie an, wann die Snapshots erstellt werden sollen:
+.. Legen Sie fest, wann die Snapshots erstellt werden sollen:
 +
-*** *stündlich.* Geben Sie an, welche Minute (der Stunde) Snapshot (prüfen) und die Anzahl der stündlichen Snapshots zu behalten.
-*** *Täglich.* Geben Sie an, wann (Stunde und Minute) der Snapshot (Prüfung) und die Anzahl der stündlichen Snapshots zu behalten. Wenn Sie mehrere Stunden angeben möchten, während der Snapshot täglich erstellt werden muss, können Sie die Werte der Stunden in einer durch Kommas getrennten Liste hinzufügen, z. B. 5, 10, 15 Und so weiter.
-*** *wöchentlich.* Geben Sie an, wann (Wochentag, Stunde und Minute) Snapshot (Prüfung) und die Anzahl der wöchentlichen Snapshots, die beibehalten werden sollen.
-*** *monatlich.* Geben Sie an, wann (Tag des Monats, Stunde und Minute) Snapshot zu machen und die Anzahl der monatlichen Schnappschüsse zu behalten.
+*** *Stündlich.* Geben Sie an, welche Minute (der Stunde) Snapshot zu machen (prüfen) und die Anzahl der stündlichen Schnappschüsse zu behalten.
+*** *Daily.* Geben Sie an, wann (Stunde und Minute) der Snapshot (Prüfung) und die Anzahl der stündlichen Schnappschüsse zu behalten. Wenn Sie mehrere Stunden angeben möchten, wenn der Snapshot täglich erstellt werden soll, können Sie die Werte der Stunden in einer kommagetrennten Liste hinzufügen, z. B. 5, 10, 15, Und so weiter.
+*** *Wöchentlich.* Geben Sie an, wann (Wochentag, Stunde und Minute) Snapshot (Prüfung) und die Anzahl der wöchentlichen Schnappschüsse zu behalten.
+*** *Monatlich.* Geben Sie an, wann (Tag des Monats, Stunde und Minute) Snapshot und die Anzahl der monatlichen Schnappschüsse zu speichern.
 
 
 

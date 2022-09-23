@@ -33,7 +33,7 @@ Bei Flex Subscription handelt es sich um ein abonnementbasiertes Servicemodell, 
 
 image:nkfsosm_image2.png["Fehler: Fehlendes Grafikbild"]
 
-Flex Subscription ist ein abonnementbasierter Service-Angebot, das Storage-Kapazität für vordefinierte Performance-Service Level für Block-, Datei- und Objektdatentypen bietet, die lokal implementiert und von NetApp, einem Partner oder dem Kunden bedient werden können. Zusätzlich zum Basis-Service von Flex Subscription können zusätzliche Services gegen Aufpreis ausgewählt werden. Diese Services sind in der folgenden Abbildung beschrieben.
+Flex Subscription ist ein abonnementbasierter Service-Angebot, das Storage-Kapazität für vordefinierte Performance-Service-Level (Service Level) für Block-, Datei- und Objektdatentypen bietet, die lokal implementiert werden können und von NetApp, einem Partner oder dem Kunden bedient werden können. Zusätzlich zum Basis-Service von Flex Subscription können zusätzliche Services gegen Aufpreis ausgewählt werden. Diese Services sind in der folgenden Abbildung beschrieben.
 
 * *der Basic* Service für Datensicherung bietet NetApp SnapMirror und NetApp SnapVault Funktionen mit Standardeinstellungen.
 * *Data Protection Advanced* bietet einen Service mit SLAs von RPO=0 durch Nutzung der NetApp MetroCluster Funktionen.

@@ -30,7 +30,7 @@ Als Partner-Administrator können Sie Ihre Flex Subscription-Services über *ABO
 
 Service-Anfragen werden vom Support-Team eingegangen und adressiert.
 
-Außerdem können Sie in separaten Registerkarten die von Ihnen abonnierten Services für die Datensicherung und den erweiterten Schutz anzeigen und verwalten.
+Außerdem können Sie in separaten Registerkarten die von Ihnen abonnierten Services für die Datensicherung und den erweiterten Schutz anzeigen und verwalten. Weitere Informationen finden Sie unter link:index.html#flex-subscription["Datensicherung und Datensicherung erweitert"].
 
 
 
@@ -42,7 +42,8 @@ Sie können die verplante Kapazität für alle abonnierten Service Level erhöhe
 . Wählen Sie im Dropdown-Menü das Abonnement aus, für das Sie die Kapazität erhöhen möchten.
 . Klicken Sie auf *höhere Kapazität* für das gewünschte Servicelevel.
 . Geben Sie die erforderliche Kapazität (in tib) an.
-. Klicken Sie Auf *Bestätigen*.
+. Klicken Sie auf *Bestätigen*.Sie kehren zur Seite Keystone-Abonnements managen zurück.
+. Klicken Sie Auf *Änderungen Senden*. Zur Erhöhung der Kapazität wird eine Service-Anfrage erstellt. Sie können den Fortschritt der Service-Anforderung durch die in einer Meldung angezeigte SR-Nummer anzeigen und verfolgen. Weitere Informationen zur Verfolgung finden Sie unter link:sewebiug_track_a_service_request.html["Verfolgen Sie eine Service-Anfrage"].
 
 
 
@@ -51,17 +52,17 @@ Sie können die verplante Kapazität für alle abonnierten Service Level erhöhe
 
 Sie können einen Service zu einem Abonnement hinzufügen. Zum Hinzufügen eines Service gehört auch die Zuweisung eines Service Levels zu Ihrem Abonnement und die Angabe der Kapazität für dasselbe Service Level.
 
-Ein Abonnement verfügt möglicherweise nur über eine der einzelnen Leistungsstufen. Wenn Ihr Abonnement beispielsweise bereits einen Extreme- und einen Standard-Service enthält, können Sie einen Premium- oder Block-Service hinzufügen.
+Jedes Abonnement kann über eine der einzelnen Service-Level verfügen. Wenn Ihr Abonnement beispielsweise bereits einen Extreme und einen Standard-Service enthält, können Sie einen Premium- oder Block-Service hinzufügen.
 
 .Schritte
-. Wählen Sie im Dropdown-Menü das Abonnement aus, für das Sie die Kapazität erhöhen möchten.
+. Wählen Sie aus dem Dropdown-Menü den Service-Level aus, den Sie Ihrem Abonnement hinzufügen möchten.
 . Klicken Sie auf *Dienst hinzufügen*.
-. Wählen Sie den Abonnementdienst aus, den Sie hinzufügen möchten, und fügen Sie die Kapazität (in tib) hinzu, die Sie auf das Servicelevel festlegen möchten.
-. Klicken Sie Auf *Bestätigen*.
+. Wählen Sie das Service-Level aus, das Sie über das Dropdown-Menü abonnieren möchten, z. B. `Extreme-Tiering`, und fügen Sie die Kapazität (in tib) hinzu, die Sie auf das Service-Level festlegen möchten.
+. Klicken Sie Auf *Bestätigen*. Sie kehren zur Seite Keystone-Abonnements managen zurück.
+. Klicken Sie Auf *Änderungen Senden*. Es wird eine Serviceanfrage erstellt, damit GSSC Ihrem Abonnement den Service Level zuweisen kann. Sie können den Fortschritt der Service-Anforderung durch die in einer Meldung angezeigte SR-Nummer anzeigen und verfolgen.
 
 
-
-NOTE: Wenn Sie extreme-Tiering- oder Premium-Tiering-Abonnements abonniert haben, können Sie das Performance-Level einer vorhandenen Subscription bearbeiten und ein Performance-Level mit Tiering-Aktivierung aktivieren. Sie können auch die Umstellung von einem Performance-Level mit Tiering-Aktivierung auf ein Performance-Niveau ohne Tiering entscheiden.
+Weitere Informationen zur Verfolgung finden Sie unter link:sewebiug_track_a_service_request.html["Verfolgen Sie eine Service-Anfrage"].
 
 
 
@@ -71,7 +72,7 @@ Als Partner-Administrator können Sie Ihre Mandantenabonnements von *ABONNEMENTS
 
 
 
-=== Erstellen Sie ein Mandantenabonnement
+=== Erstellen und bearbeiten Sie ein Mandantenabonnement
 
 Sie können neue Abonnements für Ihre Mandanten erstellen.
 
@@ -86,3 +87,22 @@ NOTE: Sie können sich überschneidende Abonnements nicht erstellen. Das Startda
 
 
 Sie können keine Abonnements löschen. Sie können nur bestehende Mandantenabonnements bearbeiten und neue Service-Level hinzufügen, die verplante Kapazität für ein Service-Level erhöhen und Abonnements von Tags hinzufügen.
+
+Als Partner-Administrator können Sie Mandantenabonnements bearbeiten. Sie können einem Abonnement neue Service-Level hinzufügen und die Kapazitäten der bereits hinzugefügten Service-Level bearbeiten. Um ein neues Service-Level hinzuzufügen, gehen Sie folgendermaßen vor:
+
+.Schritte
+. Wählen Sie das Abonnement aus, das Sie bearbeiten möchten, indem Sie auf das Symbol `+` klicken.
+. Wählen Sie auf der Seite *Add a New Service Level to subscription* das neue Service Level aus und fügen Sie die erforderliche Kapazität hinzu. Wenn der Service-Level bereits hinzugefügt wurde, können Sie ihn nicht hinzufügen oder löschen.
+. Klicken Sie Auf *Aktualisieren*.
+
+
+Sie können auch Tags hinzufügen, indem Sie auf das Tags-Symbol für das Abonnement klicken.
+
+So bearbeiten Sie die abonnierten Kapazitäten auf die Service-Level, die dem Abonnement bereits zugewiesen sind:
+
+.Schritte
+. Klicken Sie auf das Symbol `V`, und erweitern Sie das Abonnement, das Sie bearbeiten möchten. Die Service-Level in diesem Abonnement werden angezeigt.
+. Wählen Sie den Service-Level aus, den Sie bearbeiten möchten, indem Sie auf das entsprechende Symbol Stift bearbeiten klicken.
+. Ändern Sie den Tarifplan, indem Sie die Kapazität in TIBS erhöhen oder verringern.
+. Klicken Sie Auf *Aktualisieren*.
+

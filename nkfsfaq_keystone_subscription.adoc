@@ -18,15 +18,15 @@ Die folgenden Fragen geben Antworten auf Ihre häufigen Fragen zu NetApp Keyston
 
 *Was wird im Rahmen von NetApp Keystone Flex Subscription angeboten?* das flexible NetApp Keystone Abonnement (Flex Subscription) ist ein abonnementbasiertes Serviceangebot für Block-, Datei- und Objektdatendienste, die lokal implementiert werden können und von NetApp, einem Partner oder Kunden bedient werden können.
 
-*Welche Speicherserviceangebote werden im Rahmen von Flex Subscription angeboten?* Informationen hierzu finden Sie unter link:nkfsosm_performance.html["Performance Service Level"]
+*Welche Speicherserviceangebote werden im Rahmen von Flex Subscription angeboten?* Informationen hierzu finden Sie unter link:nkfsosm_performance.html["Service-Leveln"]
 
 *Welche Add-on Services werden unterstützt?* Erweiterte Datensicherung (Backup und Disaster Recovery) und Hybrid Cloud Tiering mit FabricPool sind Add-on-Services, die gegen Aufpreis ausgewählt werden können.
 
 *Welche Service Level garantiert NetApp mit dem Service?* in einem von NetApp betriebenen Szenario garantiert NetApp Keystone IOPS/tib für den bereitgestellten Storage und die Latenz für jedes Service Level.
 
-*Was bedeutet Flex Subscription?* Flex Subscription ordnet einer einzelnen Site oder einem einzelnen Rechenzentrum zu und kann aus verschiedenen Performance-Service-Levels bestehen.
+*Was bedeutet Flex Subscription?* Flex Subscription ordnet einer einzelnen Site oder einem einzelnen Rechenzentrum zu und kann aus verschiedenen Service Levels bestehen.
 
-*Was sind die Vorteile von Extreme Tiering und Premium-Tiering Performance Levels?* Tiering ist in der extrem hohen Tiering- und Premium-Tiering-Performance-Level aktiviert, wodurch Sie Ihren Platzbedarf für Storage und die damit verbundenen Kosten reduzieren können. NetApp geht davon aus, dass 25 % Ihrer Daten „heiß“ sind, die restlichen 75 % weniger häufig genutzt oder selten genutzt werden, und verschieben sie in „Cold Storage“. Darüber hinaus können Sie anhand von Nutzungsberichten überprüfen, um die Häufigkeit des Zugriffs auf Daten zu ermitteln und basierend auf den Informationen Tiering-Services zu ermöglichen.
+*Was sind die Vorteile von extrem-Tiering und Premium-Tiering Service Levels?* Tiering ist in den Service Levels mit extrem hohem Tiering und Premium-Tiering aktiviert, wodurch Sie Ihren Platzbedarf für Storage und die damit verbundenen Kosten reduzieren können. NetApp geht davon aus, dass 25 % Ihrer Daten „heiß“ sind, die restlichen 75 % weniger häufig genutzt oder selten genutzt werden, und verschieben sie in „Cold Storage“. Darüber hinaus können Sie anhand von Nutzungsberichten überprüfen, um die Häufigkeit des Zugriffs auf Daten zu ermitteln und basierend auf den Informationen Tiering-Services zu ermöglichen.
 
 *Können Partner mehr Kapazität verkaufen, als sie von NetApp an Kunden gekauft haben?* Mandantenabonnements sind nicht von der Kapazität beschränkt, die der Partner erworben hat. Partner können mehr Kapazität verkaufen, als sie NetApp ihren Kunden gekauft haben. Die Kapazität, die über der erworbenen Kapazität liegt, wird als Überzeichnung bezeichnet.
 

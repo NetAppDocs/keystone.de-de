@@ -28,9 +28,9 @@ Diese Daten werden von einem Kunden in die Flex Subscription Infrastruktur abgel
 
 Die minimale logische Kapazität, die jeden Monat für die Dauer der Laufzeit in Rechnung gestellt wird:
 
-* Die Kapazität ist jedem Performance-Level zugeordnet.
+* Jedem Service Level ist die Kapazität zugeordnet.
 * Die zugewiesene Kapazität kann während der Laufzeit nicht verringert werden.
-* Auch engagierte Kapazität und zusätzliche Performance können während der Laufzeit hinzugefügt werden.
+* Verplante Kapazität und zusätzliche Service Level können während der Laufzeit hinzugefügt werden.
 
 
 
@@ -60,7 +60,7 @@ Dies ist die logische Kapazität, die die verplante Kapazität überschritten ha
 
 == Verbrauchte/bereitgestellte Kapazität
 
-Die verbrauchte Kapazität bezieht sich auf die Kapazität in tib Speicherplatz, die derzeit auf dem Service genutzt wird. Flex Subscription Service berücksichtigt die Summe der bereitgestellten Größen (nicht der verwendeten logischen oder physischen Kapazität) aller Volumes auf einem bestimmten Performance Service Level, die als genutzte Kapazität für dieses Performance Service Level betrachtet werden sollen. Hierzu zählen folgende Optionen:
+Die verbrauchte Kapazität bezieht sich auf die Kapazität in tib Speicherplatz, die derzeit auf dem Service genutzt wird. Flex Subscription Service berücksichtigt die Summe der bereitgestellten Größen (nicht der logischen oder physischen Kapazität, die verwendet wird) aller Volumes auf einem bestimmten Service Level, die als genutzte Kapazität für dieses Service-Level betrachtet werden sollen. Hierzu zählen folgende Optionen:
 
 * Die Kapazität, die Bereitstellung über die Erstellung, Änderung, Löschung oder ein potenzielles automatische Wachstum von Volumes erfolgt.
 * Die Snapshot Kopien und Klone.

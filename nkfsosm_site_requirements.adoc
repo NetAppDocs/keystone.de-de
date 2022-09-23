@@ -50,6 +50,6 @@ NetApp stellt basierend auf der endgültigen Konfiguration und den Anforderungen
 
 == Netzwerkbetrieb
 
-Je nach Kundenanforderungen und den verwendeten Storage Controllern bietet NetApp am Standort des Kunden Konnektivität mit 10 GB, 40 GB und 100 GB.
+Je nach Kundenanforderungen und den verwendeten Storage Controllern bietet NetApp am Standort des Kunden Konnektivität mit 10 Gib, 40 Gib und 100 Gib.
 
 NetApp stellt nur die erforderlichen Transceiver für von NetApp zur Verfügung gestellte Flex Subscription Infrastructure-Geräte zur Verfügung. Sie sollten Transceiver für Kundengeräte und Kabel zu den von NetApp bereitgestellten Flex Subscription Infrastructure-Geräten bereitstellen.

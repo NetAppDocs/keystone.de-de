@@ -35,10 +35,10 @@ In der folgenden Tabelle sind die Beschreibungen für den rollenbasierten Zugrif
 | Rolle | Datenzugriff 
 
 
-| Partner Admin/Account-Inhaber | Sämtliche Aufgaben des Managements von Mandanten und deren Abonnements können ausgeführt werden. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["Dieser Link"]. 
+| Partner Admin/Account-Inhaber | Sämtliche Aufgaben des Managements von Mandanten und deren Abonnements können ausgeführt werden. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html#activities-that-you-can-perform-as-a-service-provider-administrator["Dieser Link"]. 
 
 
-| Kunden-/Mandantenadministrator | Der Kunde oder Mandantenadministrator kann alle Aktionen durchführen, die mit dem Management von Untermandanten zusammenhängen. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["Dieser Link"]. 
+| Kunden-/Mandantenadministrator | Der Kunde oder Mandantenadministrator kann alle Aktionen durchführen, die mit dem Management von Untermandanten zusammenhängen. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html#activities-that-you-can-perform-as-a-customertenant-administrator["Dieser Link"]. 
 
 
 | NetApp Admin (gelesen) | Schreibgeschützter Zugriff über alle Komponenten hinweg. 
@@ -60,7 +60,7 @@ Um sich mit einem Benutzernamen und einem Kennwort anzumelden, benötigen Sie Fo
 .Schritte
 . Rufen Sie in Ihrem Webbrowser die URL Ihres NetApp Service Engine Portals auf. Die Anmeldeseite wird angezeigt.
 . Wählen Sie * Lokale Benutzeranmelde* aus.
-. Geben Sie auf der Seite Anmelden bei NetApp Keystone Ihren Benutzernamen und Ihr Kennwort ein und klicken Sie auf *Anmelden*.
+. Geben Sie auf der Seite Login to NetApp Service Engine Ihren Benutzernamen und Ihr Passwort ein und klicken Sie auf *Anmelden*.
 . Nach der erfolgreichen Anmeldung wird die Webschnittstelle der NetApp Service Engine geladen und kann im Dashboard geöffnet werden. Eine Übersicht über die GUI finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#netapp-service-engine-web-interface-overview["Übersicht über die Webschnittstelle der NetApp Service Engine"].
 
 
@@ -73,7 +73,7 @@ NOTE: Wenn Ihre Anmeldung erfolgreich ist, das Dashboard jedoch nicht angezeigt 
 
 Zur Anmeldung mit NetApp SSO benötigen Sie:
 
-* Ein NetApp SSO-Konto Sie können auf der NetApp Support-Website ein Konto anfordern. Wählen Sie dazu auf dem Anmeldebildschirm die Option *NetApp SSO-Konto erstellen* aus und folgen Sie den nächsten Schritten.
+* Ein NetApp SSO-Konto Sie können auf der NetApp Support Site ein Konto anfordern. Wählen Sie dazu auf dem Anmeldebildschirm die Option *NetApp SSO-Konto erstellen* aus und folgen Sie den nächsten Schritten.
 * Die URL zum NetApp Service Engine Portal
 * Einen Webbrowser.
 

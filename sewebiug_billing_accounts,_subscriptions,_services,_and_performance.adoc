@@ -26,13 +26,25 @@ Ein Abonnement bezieht sich auf eine Gruppe von Speicherservices, die als ein Pa
 
 NOTE: Wenn Storage in mehreren Datacentern benötigt wird, ist für jedes Datacenter ein separates Abonnement erforderlich, das separate Verpflichtungen enthält.
 
-Ein Storage-Service ist eine abonnierte Storage-Kapazität mit einem damit verbundenen Performance-Niveau. Die NetApp Service Engine bietet Storage auf Datei- und Block-Ebene mit extrem hohem Tiering, Premium-Tiering und Standard-Performance-Leveln sowie Objekt-Storage auf einem Objekt-Performance-Service-Level.
+Ein Storage Service ist eine abonnierte Storage-Kapazität mit einem damit verbundenen Service-Level. Die NetApp Service Engine bietet Storage auf Datei- und Block-Ebene mit extrem hohem Tiering, Premium, Premium-Tiering und Standard-Service-Leveln sowie Objekt-Storage auf Objekt-Service-Level.
 
-Dank der hohen Tiering- und Premium-Tiering-Performance können Sie Ihren Storage-Bedarf und die damit verbundenen Kosten reduzieren, indem Sie Ihre kalten oder inaktiven Daten auf kostengünstige Objekt-Storage-Tiers überwachen und per Tiering verschieben. Die Tiering-Richtlinie ist auf automatisch festgelegt. Dabei werden Daten, die 31 Tage lang inaktiv geblieben sind, standardmäßig verschoben. Sie können diesen Zeitraum für eine beliebige Anzahl von Tagen von 3 bis 61 Tagen ändern.
+Dank des extrem hohen Tiering- und Premium-Tiering-Service können Sie Ihren Storage-Bedarf und die damit verbundenen Kosten reduzieren, indem Sie Ihre kalten oder inaktiven Daten auf kostengünstige Objekt-Storage-Tiers überwachen und per Tiering verschieben. Die Tiering-Richtlinie ist auf automatisch festgelegt. Dabei werden Daten, die 31 Tage lang inaktiv geblieben sind, standardmäßig verschoben.
 
-Bei ihrer Erstellung sind Datei- und Block-Storage-Elemente mit einem Performance-Level verknüpft. Bei sich ändernden Anforderungen ist das Verschieben von Workloads zwischen Performance-Service-Leveln möglich. Das extreme extreme Tiering, Premium, Premium-Tiering und Standard-Performance Level bieten unterschiedliche Stufen der I/O-Performance (IOPS) und des Durchsatzes (MB/s), sodass der Storage individuell auf die Anforderungen zugeschnitten werden kann.
+Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["Service-Leveln"].
 
-Die Burst-Nutzung ist für Dienste bis zu einem bestimmten Zeitpunkt zulässig; sie wird zu separaten Tarifen überwacht und abgerechnet (wie im Abonnement definiert). Weitere Informationen über Kapazität und Auslastung finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#committed,-consumed,-and-burst-capacity,-and-excess-usage["Engagierte, verbrauchte und Burst-Kapazitäten und übermäßige Nutzung"]. DP-Services, die Backups und Disaster Recovery unterstützen, werden ebenfalls angeboten.
+Wenn diese erstellt werden, werden Datei- und Block-Storage-Elemente einem Service Level zugeordnet. Das Verschieben von Workloads zwischen Service-Leveln ist bei sich ändernden Anforderungen möglich. Das extreme, extreme Tiering, Premium, Premium-Tiering und Standard-Service Level bieten verschiedene I/O-Performance (IOPS) und Durchsatz (MB/s), sodass Storage an die Anforderungen angepasst werden kann.
+
+Informationen zu Tiering-Services finden Sie unter link:https://docs.netapp.com/us-en/keystone/nkfsosm_tiering.html["Tiering"].
+
+Die Burst-Nutzung ist für Dienste bis zu einem bestimmten Zeitpunkt zulässig; sie wird zu separaten Tarifen überwacht und abgerechnet (wie im Abonnement definiert). Weitere Informationen über Kapazität und Auslastung finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#committed-consumed-and-burst-capacity-and-excess-usage["Engagierte, verbrauchte und Burst-Kapazitäten und übermäßige Nutzung"]. Außerdem werden Datensicherungsservices angeboten, die Backups und Disaster Recovery unterstützen.
+
+Weitere Informationen finden Sie unter:
+
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_block_storage_overview.html["Block-Storage"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_file_services_overview.html["Fileservices"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_object_storage_overview.html["Objekt-Storage"]
+* https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster-Dokumentation"]
+
 
 
 
@@ -82,19 +94,19 @@ In der folgenden Tabelle werden die Benachrichtigungen für derartige Burst-Meld
 
 | Erstellen oder Ändern von Freigaben/Festplatten auf einem Dateiserver/Block-Storage mit aktiviertem Disaster Recovery  a| 
 * Übertrifft die Verpflichtung auf dem Service-Level in der Zone
-* Übertrifft das Bekenntnis zu DP in der Zone
+* Übertrifft die Verpflichtung für den Datensicherungsservice in der Zone
 
 | Übertrifft die Verpflichtung auf dem Service-Level in der Zielzone durch die automatisch erstellte Zielfreigabe/Festplatte. 
 
 
 | Verschieben Sie Freigaben/Festplatten auf ein neues Service-Level auf einem Dateiserver/Block-Speicher, wobei Disaster Recovery aktiviert ist.  a| 
 * Übertrifft die Verpflichtung auf dem Service-Level in der Zone.
-* Übertrifft das Bekenntnis zu DP in der Zone.
+* Übertrifft die Verpflichtung für den Datensicherungsservice in der Zone
 
 | Übertrifft das Engagement auf dem Service-Level in der Zielzone durch die verschobenen Zielfreigabe/Festplatte. 
 
 
-| Ermöglichen Sie Backups auf Freigabe/Festplatte. | Übertrifft die Verpflichtung von DP | Übertrifft die Verpflichtung auf dem Service-Level in der Zielzone durch die automatisch erstellte Zielfreigabe/Festplatte. 
+| Ermöglichen Sie Backups auf Freigabe/Festplatte. | Übertrifft die Verpflichtung für Datensicherungsservice | Übertrifft die Verpflichtung auf dem Service-Level in der Zielzone durch die automatisch erstellte Zielfreigabe/Festplatte. 
 
 
 | Erstellen Sie eine neue Mandantenfähigkeit für Objektspeicher. | Die Verpflichtung zur Objektkapazität konnte überschritten werden. | k. A. 
@@ -114,13 +126,13 @@ image:sewebiug_image3.png["Fehler: Fehlendes Grafikbild"]
 
 == Datensicherung
 
-DP bezieht sich auf Methoden, die Daten-Backups unterstützen und bei Bedarf die Möglichkeit zur Wiederherstellung bieten.
+Der Datensicherungsservice bezieht sich auf Methoden, die Daten-Backups unterstützen, und bei Bedarf die Möglichkeit zur Wiederherstellung.
 
-NetApp Service Engine DP Funktionen umfassen:
+Die NetApp Service Engine zur Datensicherung umfasst folgende Funktionen:
 
 * Snapshots von Festplatten und Shares
-* Backups von Festplatten und Shares (erfordert DP-Service im Rahmen des Abonnements)
-* Disaster Recovery für Festplatten und Freigaben (als Teil des Abonnements ist DP oder DP Advanced Service erforderlich)
+* Backups von Festplatten und Shares (erfordert den Datensicherungsservice im Rahmen des Abonnements)
+* Disaster Recovery für Festplatten und Freigaben (als Teil des Abonnements ist Datensicherung oder erweiterter Service für Datensicherung erforderlich)
 
 
 
@@ -138,7 +150,7 @@ NOTE: Snapshots tragen zur verbrauchten Kapazität eines Service bei.
 
 === Backups
 
-Beim Backup wird die Kopie eines Objekts erstellt, repliziert und in einer anderen Zone als der Originalzone gespeichert, wobei das jeweilige Protokoll aktiviert ist (nur bei Block-Storage) und nicht von MetroCluster aktiviert ist. NetApp Service Engine bietet Backups auf Datei- und Block-Storage (für ein DP-Service auf dem Abonnement erforderlich). Backups von Shares/Festplatten werden in der Backup-Zone auf der Tier mit der niedrigsten Performance (Standard) im Abonnement gespeichert.
+Beim Backup wird die Kopie eines Objekts erstellt, repliziert und in einer anderen Zone als der Originalzone gespeichert, wobei das jeweilige Protokoll aktiviert ist (nur bei Block-Storage) und nicht von MetroCluster aktiviert ist. Die NetApp Service Engine bietet Backups auf Datei- und Block-Storage (für das Abonnement ist ein Datensicherungsservice erforderlich). Backups von Shares/Festplatten werden in der Backup-Zone auf der Tier mit der niedrigsten Performance (Standard) im Abonnement gespeichert.
 
 Backups können zum Zeitpunkt der Erstellung einer neuen Freigabe/Festplatte konfiguriert oder zu einer vorhandenen Freigabe/Festplatte hinzugefügt werden.
 
@@ -158,7 +170,7 @@ Geplante Backups werden regelmäßig erstellt und können nicht gelöscht werden
 * Backup-Replizierung erfolgt täglich.
 * Backups von Festplatten oder Freigaben können nicht in einer NetApp Service Engine-Instanz konfiguriert werden, die nur eine Zone enthält.
 * Wenn Sie eine primäre Freigabe oder ein primäres Laufwerk löschen, werden alle zugehörigen Backups gelöscht.
-* Backups tragen zur verbrauchten Gesamtkapazität bei. Darüber hinaus fallen bei Backups Kosten für den DP-Abonnementpreis an. Siehe auch link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges["Datensicherung, verbrauchte Kapazität und Kosten"].
+* Backups tragen zur verbrauchten Gesamtkapazität bei. Darüber hinaus entstehen Backups mit Kosten zum Data Protection-Abonnementpreis. Siehe auch link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges["Datensicherung, verbrauchte Kapazität und Kosten"].
 * Restore from Backup: Eine Service-Anfrage stellen, um eine Freigabe oder Festplatte aus dem Backup wiederherzustellen.
 
 
@@ -183,7 +195,7 @@ Die NetApp Service Engine unterstützt asynchrone Disaster Recovery mit folgende
 * Failover/Failback (nur auf Anfrage nach Service verfügbar)
 
 
-Asynchrone Disaster Recovery ist auf Datei- und Block-Storage verfügbar und erfordert einen DP-Service auf dem Abonnement.
+Asynchrone Disaster Recovery ist auf Datei- und Block-Storage verfügbar und erfordert einen Datensicherungsservice auf dem Abonnement.
 
 Die Disaster Recovery-Zone muss sich in einer Zone innerhalb der NetApp Service Engine befinden, die sich von der Zone unterscheidet, in der das primäre Volume erstellt wurde, und darf kein MetroCluster Partner sein, wenn die Quellzone MetroCluster aktiviert ist. Disaster Recovery-Replikate von Freigaben/Festplatten werden in der Disaster Recovery-Zone auf derselben Performance-Tier wie die ursprüngliche Freigabe/Festplatte gespeichert.
 
@@ -201,14 +213,14 @@ Eine Dateifreigabe oder Festplatte kann nur für eine asynchrone Disaster-Recove
 
 * Wenn Sie einen primären Dateiserver oder einen Blockspeicher löschen, werden alle Disaster Recovery-replizierten Kopien gelöscht.
 * Es kann nur eine Disaster-Recovery-Zone pro Dateiserver oder Blockspeicher konfiguriert werden.
-* Disaster-Recovery-Kopien tragen zur insgesamt genutzten Kapazität bei. Außerdem fallen die Kosten für Disaster Recovery beim Disaster Recovery-Abonnement an. Siehe auch link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges["Datensicherung, verbrauchte Kapazität und Kosten"].
+* Disaster-Recovery-Kopien tragen zur insgesamt genutzten Kapazität bei. Außerdem fallen die Kosten für Disaster Recovery beim Disaster Recovery-Abonnement an. Siehe auch link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges["Datensicherung, verbrauchte Kapazität und Kosten"].
 
 
 
 
 === Disaster Recovery – synchron
 
-MetroCluster ist eine DP-Funktion, die Daten und Konfigurationen synchron zwischen zwei verschiedenen Zonen repliziert und sich an separaten Standorten oder Ausfall-Domains befindet. Bei einem Ausfall an einem Standort kann ein Administrator die Daten vom verbleibenden Standort aus bedienen.
+MetroCluster ist eine Funktion zur Datensicherung, die Daten und Konfigurationen synchron zwischen zwei verschiedenen Zonen repliziert und sich an separaten Standorten oder Ausfall-Domains befindet. Bei einem Ausfall an einem Standort kann ein Administrator die Daten vom verbleibenden Standort aus bedienen.
 
 Die mit MetroCluster konfigurierten NetApp Service Engine unterstützen eine synchrone Disaster Recovery für File- und Block-Storage auf folgende Weise.
 
@@ -218,14 +230,14 @@ Die mit MetroCluster konfigurierten NetApp Service Engine unterstützen eine syn
 
 *Hinweise:*
 
-* Die Kosten für synchrones Disaster Recovery sind bei der synchronen Disaster Recovery-Subskription zu hoch. Siehe auch link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection,-consumed-capacity,-and-charges["Datensicherung, verbrauchte Kapazität und Kosten"].
+* Die Kosten für synchrones Disaster Recovery sind bei der synchronen Disaster Recovery-Subskription zu hoch. Siehe auch link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#data-protection-consumed-capacity-and-charges["Datensicherung, verbrauchte Kapazität und Kosten"].
 
 
 
 
 == Datensicherung, verbrauchte Kapazität und Kosten
 
-In den Abbildungen in diesem Abschnitt wird beschrieben, wie DP-Gebühren berechnet werden.
+Die Abbildungen in diesem Abschnitt beschreiben die Berechnung von Datenschutzgebühren.
 
 
 
@@ -235,7 +247,7 @@ Bei asynchronem Disaster Recovery werden Verbrauch und Kosten folgendermaßen be
 
 * Die ursprüngliche Volume-Kapazität, die in der Performance-Tier abgerechnet wird, auf der sie sich befindet.
 * Disaster-Recovery-Kopie wird auf derselben Performance-Tier am Ziel oder der Disaster-Recovery-Zone (Disaster-Recovery-Kopien werden auf derselben Tier gespeichert) geladen.
-* DP-Servicegebühr (für die Kapazität des ursprünglichen Volumens).
+* Gebühr für den Datensicherungs-Service (für die Kapazität des ursprünglichen Volumes)
 
 
 image:sewebiug_image4.png["Fehler: Fehlendes Grafikbild"]
@@ -244,7 +256,12 @@ image:sewebiug_image4.png["Fehler: Fehlendes Grafikbild"]
 
 === Synchrone Disaster Recovery
 
-Bei synchroner Disaster Recovery werden Verbrauch und Kosten berechnet:
+Bei synchronem Disaster Recovery setzen sich neben Auslastung und Kosten folgende zusammen:
+
+* Die ursprüngliche Volume-Kapazität, die in der Performance-Tier abgerechnet wird, auf der sie sich befindet.
+* Replizierte Kopie wird auf derselben Performance-Tier am Ziel geladen (wie die Quelle).
+* Servicegebühr für Data Protection Advanced
+
 
 image:sewebiug_image5.png["Fehler: Fehlendes Grafikbild"]
 
@@ -256,7 +273,7 @@ Beim Backup sind die Nutzung und die Kosten aus den folgenden Gebühren verbunde
 
 * Die ursprüngliche Volume-Kapazität, die in der Performance-Tier abgerechnet wird, auf der sie sich befindet.
 * Backup-Volumes, die auf der Tier mit der niedrigsten verfügbaren Performance abgerechnet werden (Backup-Kopien werden auf der Tier mit den geringsten Kosten gespeichert).
-* DP-Servicegebühr (für die Kapazität des ursprünglichen Volumens).
+* Gebühr für den Datensicherungs-Service (für die Kapazität des ursprünglichen Volumes)
 
 
 image:sewebiug_image6.png["Fehler: Fehlendes Grafikbild"]

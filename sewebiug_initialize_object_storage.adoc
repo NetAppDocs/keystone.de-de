@@ -29,5 +29,5 @@ image:sewebiug_image31.png["Fehler: Fehlendes Grafikbild"]
 +
 image:sewebiug_image32.png["Fehler: Fehlendes Grafikbild"]
 
-. Überprüfen Sie die Jobliste, um sicherzustellen, dass der Objektspeicher erfolgreich initialisiert wurde.
+. Überprüfen Sie die Jobliste, um sicherzustellen, dass der Objektspeicher erfolgreich initialisiert wurde. Weitere Informationen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Anzeige von Jobs und Job-Status"].
 

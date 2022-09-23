@@ -17,17 +17,12 @@ summary: Keystone ändert einen Objekt-Storage-Benutzer
 Verwenden Sie diese Methode, um Details eines Objektspeicherbenutzers, z. B. des Benutzernamens und der Gruppe, der sie zugewiesen sind, zu ändern.
 
 .Schritte
-. Sehen Sie sich die an link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["Benutzerliste"].
-. Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und auf der Anzeige Benutzer (nicht Gruppen) angezeigt werden.
-. Suchen Sie den Benutzer in der Liste, und klicken Sie auf das Symbol Bearbeiten für die Gruppe.
+. Zeigen Sie den Objekt-Storage-Benutzer an link:sewebiug_view_the_object_storage_group_and_users.html["Zeigen Sie Objekt-Storage-Gruppen und Benutzer an"].
+. Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und Sie auf die Registerkarte *Benutzer* geklickt haben.
+. Suchen Sie den Benutzer in der Liste, und klicken Sie auf das Bearbeiten-Symbol für diesen Benutzer.
 +
-Weitere Informationen zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Aktionen zur Listenansicht"].
+Weitere Informationen zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["Aktionen zur Listenansicht"].
 
-. Im Dialogfeld Benutzer bearbeiten:
-+
-.. Geben Sie den Benutzernamen ein.
-.. Wählen Sie die Objekt-Speichergruppe aus, der der Benutzer angehört.
-
-
-. Klicken Sie Auf *Aktualisieren*. Dadurch wird ein Job zum Erstellen des Benutzers mit den angegebenen Einstellungen erstellt.
+. Ändern Sie im Dialogfeld *Benutzer bearbeiten* die Objekt-Speichergruppe für den Benutzer.
+. Klicken Sie Auf *Aktualisieren*. Dadurch wird ein Job zum Aktualisieren der Gruppe für den Benutzer erstellt. Informationen zur Verfolgung von Jobs finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
 

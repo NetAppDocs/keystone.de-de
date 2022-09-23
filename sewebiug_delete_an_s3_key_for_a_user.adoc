@@ -17,14 +17,14 @@ summary: Keystone löscht einen S3-Schlüssel für einen Benutzer
 Verwenden Sie diese Methode, um einen S3-Schlüssel für einen Benutzer zu löschen.
 
 .Schritte
-. Sehen Sie sich die an link:sewebiug_view_a_list_of_users.html#view-a-list-of-users["Benutzerliste"].
-. Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und auf der Anzeige Benutzer (nicht Gruppen) angezeigt werden.
+. Zeigen Sie den Objekt-Storage-Benutzer an link:sewebiug_view_the_object_storage_group_and_users.html["Zeigen Sie Objekt-Storage-Gruppen und Benutzer an"].
+. Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und Sie auf die Registerkarte *Benutzer* geklickt haben.
 . Suchen Sie den Benutzer in der Liste, und klicken Sie auf das Schlüsselsymbol für diese Gruppe.
 +
-Weitere Informationen zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Aktionen zur Listenansicht"].
+Weitere Informationen zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["Aktionen zur Listenansicht"].
 
-. Das Dialogfeld S3-Schlüssel verwalten wird angezeigt, in dem die Liste der Schlüssel für den Benutzer angezeigt wird.
-. Suchen Sie in der Liste der Schlüssel den zu löschenden Schlüssel und klicken Sie auf das Symbol Löschen.
+. Das Dialogfeld *S3-Schlüssel verwalten* zeigt die Liste der Tasten für den Benutzer an.
+. Suchen Sie in der Liste der Schlüssel den zu löschenden Schlüssel und klicken Sie auf das Symbol *Löschen*.
 . Klicken Sie auf *Bestätigen*, um die Löschaktion zu bestätigen. Der Schlüssel wird aus der Liste der Benutzerschlüssel entfernt.
 . Klicken Sie auf *Schließen*, um das Dialogfeld S3-Schlüssel verwalten zu schließen.
 

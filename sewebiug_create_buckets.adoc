@@ -19,11 +19,12 @@ Buckets werden unter einem Untermandanten erstellt.
 .Schritte
 . Sehen Sie sich die an link:sewebiug_view_buckets.html#view-buckets["Buckets-Liste"] Wählen Sie anschließend den Untermandanten aus, unter dem der Bucket erstellt werden soll.
 . Klicken Sie Auf *Bucket Erstellen*.
-. Geben Sie im Dialogfeld Create Bucket den Namen des neuen Buckets ein und klicken Sie auf *Create*. Dadurch wird ein Job zum Erstellen des Buckets erstellt.
+. Geben Sie im Dialogfeld „Bucket erstellen“ den Namen des neuen Buckets und der Region ein.
+. Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Erstellen des Buckets erstellt.
 
 
 Das Erstellen von Bucket wird als asynchroner Job ausgeführt. Ihre Vorteile:
 
 * Überprüfen Sie den Status des Jobs in der Jobliste.
-* Prüfen Sie nach Abschluss des Jobs den Status des Servers in der Liste Buckets.
+* Prüfen Sie nach Abschluss des Jobs den Status des Servers in der Liste Buckets. Weitere Informationen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Anzeige von Jobs und Job-Status"].
 

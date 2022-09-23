@@ -14,7 +14,7 @@ summary: Keystone zeigt Host-Gruppen an
 
 
 [role="lead"]
-Hostgruppen sind definiert, um den Zugriff auf Festplatten zu bestimmen. Auf der Grundlage der Initiator-Nodes, die einer Host-Gruppe zugewiesen sind, wird der Zugriff dieser Host-Gruppe festgelegt.
+Hostgruppen sind definiert, um den Zugriff auf Festplatten zu bestimmen. Auf der Grundlage der Initiator-Nodes, die einer Host-Gruppe zugewiesen sind, wird der Zugriff dieser Host-Gruppe festgelegt. Sie können Initiatoren beim Erstellen der Host-Gruppe hinzufügen.
 
 
 
@@ -77,13 +77,15 @@ Nach der Erstellung der Host-Gruppe ist sie für die Zuordnung zu Festplatten ve
 
 Sie können eine Host-Gruppe zum Hinzufügen, Entfernen oder Ändern von Initiatoren ändern.
 
-Durch das Ändern einer Host-Gruppe wird der Zugriff auf jede Festplatte geändert, die der Host-Gruppe zugeordnet ist.
+.Beachten Sie folgende Punkte:
+* Sie können die Host-Gruppe nicht bearbeiten, wenn die Host-Gruppe nicht funktionsfähig ist und das Symbol Stift bearbeiten für diese Gruppen deaktiviert ist.
+* Durch das Ändern einer Host-Gruppe wird der Zugriff auf die einzelnen Festplatten, die der Host-Gruppe zugeordnet sind, geändert.
+* Sie können den Alias eines Initiators nicht ändern. Um den Alias zu ändern, löschen Sie den Initiator aus der Gruppe, und erstellen Sie ihn dann erneut.
 
-Sie können den Alias eines Initiators nicht ändern. Um den Alias zu ändern, löschen Sie den Initiator aus der Gruppe, und erstellen Sie ihn dann erneut.
 
 .Schritte
 . Sehen Sie sich die an link:sewebiug_view_host_groups.html#view-host-groups["Host-Gruppen"] Liste.
-. Suchen Sie die Host-Gruppe in der Liste, und klicken Sie auf das Bearbeiten-Symbol für diese Host-Gruppe.
+. Suchen Sie die Host-Gruppe in der Liste, scrollen Sie zum Ende der Zeile und klicken Sie auf das Bearbeiten-Symbol (Stift-Symbol) für diese Host-Gruppe.
 +
 Um einen bestehenden Initiator zu ändern, suchen Sie den Initiator in der Liste, bearbeiten Sie den Initiatorwert und klicken Sie auf *Update*.
 
@@ -99,7 +101,7 @@ Um einen Initiator aus der Host-Gruppe zu entfernen, suchen Sie den Initiator in
 
 
 
-. Klicken Sie Auf *Fertig*.
+. Klicken Sie Auf *Schließen*.
 
 
 

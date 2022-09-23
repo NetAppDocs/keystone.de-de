@@ -14,7 +14,7 @@ summary: Keystone erstellt eine neue Dateifreigabe
 
 
 [role="lead"]
-In diesem Abschnitt wird beschrieben, wie Sie eine neue Freigabe erstellen, indem Sie die Teilendetails direkt angeben. Informationen zum Erstellen einer neuen Freigabe auf Grundlage eines Snapshots einer vorhandenen Freigabe finden Sie unter link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share["Erstellen Sie Share from Snapshot"].
+In diesem Abschnitt wird beschrieben, wie Sie eine neue Freigabe erstellen, indem Sie die Teilendetails direkt angeben. Informationen zum Erstellen einer neuen Freigabe, die auf einem Snapshot einer vorhandenen Freigabe basiert, finden Sie unter link:sewebiug_create_adhoc_snapshot_of_a_file_share.html#create-adhoc-snapshot-of-a-file-share["Freigabe aus Snapshot erstellen"].
 
 .Bevor Sie beginnen
 * Auf einem Dateiserver wird eine Freigabe erstellt. Der Dateiserver muss sich im Betriebszustand befinden, bevor Sie eine neue Dateifreigabe erstellen können.
@@ -59,10 +59,10 @@ Die Seite Freigabe erstellen wird angezeigt.
 
 | Sicherheitsstil | Wählen Sie den für die Dateifreigabe zutreffenden Sicherheitsstil aus. Diese Liste wird basierend auf dem ausgewählten Freigabetyp automatisch ausgefüllt. 
 |===
-. Wählen Sie ein Leistungsniveau aus. Die IOPS- und Durchsatzbegrenzungen werden basierend auf dem ausgewählten Service-Level angezeigt.
+. Wählen Sie ein Service-Level aus. Die IOPS- und Durchsatzbegrenzungen werden basierend auf dem ausgewählten Service-Level angezeigt.
 +
 
-NOTE: Wählen Sie eine Option aus, um die Performance-Details für dieses Level anzuzeigen (wie zu Spitzenzeiten/erwartete IOPS/Durchsatz). Wählen Sie den Service Level aus, der Ihren Anforderungen am besten entspricht.
+NOTE: Wählen Sie eine Option aus, um die Performance-Details für dieses Service-Level anzuzeigen (wie zu Spitzenzeiten/erwartete IOPS/Durchsatz). Wählen Sie den Service Level aus, der Ihren Anforderungen am besten entspricht.
 
 . Geben Sie die Kapazität der Dateifreigabe an.
 +
@@ -71,15 +71,15 @@ NOTE: Die NetApp Service Engine zeigt eine Warnung an und der Kapazitätsbalken 
 
 . Wenn auf dem zugrunde liegenden Dateiserver ein asynchrones Disaster Recovery aktiviert ist, wird die asynchrone Disaster-Recovery-Replizierung automatisch für die neue Freigabe aktiviert. Wenn Sie die Freigabe von der asynchronen Disaster-Recovery-Replikation ausschließen möchten, aktivieren Sie die Schaltfläche Asynchronous Disaster Recovery, damit sie deaktiviert ist.
 . Wenn die Freigabe in einer Zone erstellt wird, die MetroCluster-aktiviert ist, wird die Schaltfläche Synchronous Disaster Recovery automatisch aktiviert und kann nicht deaktiviert werden. Die Freigabe wird in die Zone repliziert, die im Bedienfeld unter dem Synchronous Disaster Recovery-Schalter angezeigt wird.
-. Wenn Snapshots für diese Dateifreigabe erforderlich sind:
+. Wenn für diese Dateifreigabe Snapshots erforderlich sind:
 +
 .. Schalten Sie ein, um die Snapshot-Richtlinie zu aktivieren und die Felder für Snapshot-Richtlinien anzuzeigen.
-.. Geben Sie an, wann die Snapshots erstellt werden sollen:
+.. Legen Sie fest, wann die Snapshots erstellt werden sollen:
 +
-*** *hourly.* Geben Sie an, welche Minute (der Stunde) der Snapshot erstellt werden soll und wie viele stündliche Snapshots gespeichert werden sollen.
-*** *Daily.* Geben Sie an, wann (Stunde und Minute) der Snapshot die Anzahl der täglichen Snapshots zu behalten. Wenn Sie mehrere Stunden angeben möchten, während der Snapshot täglich erstellt werden muss, können Sie die Werte der Stunden in einer durch Kommas getrennten Liste hinzufügen, z. B. 5, 10, 15 Und so weiter.
-*** *wöchentlich.* Geben Sie an, wann (Wochentag, Stunde und Minute) Snapshot erstellt werden soll und wie viele wöchentliche Snapshots gespeichert werden sollen.
-*** *monatlich.* Geben Sie an, wann (Tag des Monats, Stunde und Minute) Snapshot und die Anzahl der monatlichen Snapshots zu behalten.
+*** *Hourly.* Geben Sie an, welche Minute (der Stunde) der Snapshot zu machen und die Anzahl der stündlichen Schnappschüsse zu behalten.
+*** *Daily.* Geben Sie an, wann (Stunde und Minute) der Snapshot die Anzahl der täglichen Schnappschüsse zu nehmen, die gespeichert werden sollen. Wenn Sie mehrere Stunden angeben möchten, wenn der Snapshot täglich erstellt werden soll, können Sie die Werte der Stunden in einer kommagetrennten Liste hinzufügen, z. B. 5, 10, 15, Und so weiter.
+*** *Wöchentlich.* Geben Sie an, wann (Wochentag, Stunde und Minute) Snapshot erstellt werden soll und wie viele wöchentliche Schnappschüsse gespeichert werden sollen.
+*** *Monatlich.* Geben Sie an, wann (Tag des Monats, Stunde und Minute) Snapshot und die Anzahl der monatlichen Schnappschüsse zu speichern.
 
 
 
@@ -88,7 +88,7 @@ NOTE: Die NetApp Service Engine zeigt eine Warnung an und der Kapazitätsbalken 
 +
 .. Aktivieren Sie die Backup-Richtlinie und die Felder Backup-Richtlinie.
 .. Geben Sie den Backup-Bereich an.
-.. Geben Sie an, wie viele der einzelnen Backup-Typen gehalten werden sollen: Täglich, wöchentlich und/oder monatlich.
+.. Geben Sie an, wie viele der einzelnen Backup-Typen gehalten werden sollen: Täglich, wöchentlich und/oder monatlich. Weitere Informationen finden Sie unter link:sewebiug_back_up_file_shares_and_disks.html["Sichern Sie File Shares und Festplatten"].
 
 
 . Geben Sie bei NFS- oder Multi-Protokoll-Freigaben die Exportrichtlinie an. Sie können mehrere Exportrichtlinien auf einer Freigabe anwenden. Dieser Abschnitt ist nur für NFS- und Multiprotokoll-Freigaben verfügbar.
@@ -120,7 +120,7 @@ NOTE: Der Benutzer- oder Gruppenname sollte dem Standard-AD-Format entsprechen. 
 
 * Freigabe erstellen wird als asynchroner Job ausgeführt. Ihre Vorteile:
 +
-** Überprüfen Sie den Status des Jobs in der Jobliste.
+** Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
 ** Überprüfen Sie nach Abschluss des Jobs den Status der Freigabe in der Liste „Shares“.
 
 

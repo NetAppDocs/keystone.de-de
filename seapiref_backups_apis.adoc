@@ -14,7 +14,7 @@ summary: Keystone Backup-APIs
 
 
 [role="lead"]
-Mit Backup-APIs können Snapshots (Backups oder Recovery-Punkte) der Volumes (Dateifreigaben und Festplatten) in der Systemumgebung angezeigt und gemanagt werden.
+Mit der Backup-API können die Backups oder Recovery-Punkte der Volumes (Dateifreigaben und Festplatten) in der Umgebung angezeigt und gemanagt werden.
 
 [cols="1,1,3,2"]
 |===

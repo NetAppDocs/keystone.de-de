@@ -27,7 +27,8 @@ Als Service-Provider-Administrator in einer mandantenfähigen Umgebung können S
 
 NOTE: Als Service bieten Sie Ihren Kunden mehr Kapazität als durch den Kauf von NetApp (Überzeichnung). Die Mandantenabonnements können sich über den aktuellen Zeitraum von Flex Subscription hinaus erstrecken. Allerdings wird zum Zeitpunkt der Erstellung eines Abonnements und in Dashboards/Berichten eine Warnung angezeigt.
 
-* Zonen, Regionen, Bereiche, ändern und löschen, Mandanten, Untermandanten und Benutzer:
+* Mandanten, Untermandanten, Änderungen und Löschung erstellen, anzeigen, ändern und löschen Und Benutzer.
+* Anzeigen von Zonen und Regionen für Ihre Abonnements
 * Verwalten und Hosten mehrerer Mandanten innerhalb des Flex Subscription Service: Erstellen und managen Sie Mandantenabonnements und zeigen Sie Ihre eigenen Flex Subscription-Details an.
 +
 
@@ -48,11 +49,12 @@ NOTE: Die Mandanten-Abonnements können auf Grundlage der entsprechenden Zonen u
 Als Mandantenadministrator können Sie die Abonnementdetails Ihrer eigenen Mandantenfähigkeit anzeigen und administrative Aufgaben für Ihre Untermandanten ausführen. Sie können folgende Aktionen ausführen:
 
 * Sehen Sie sich den Speicher an, der als Teil Ihres Mandanten-Abonnementservice abonniert und bereitgestellt wurde.
-* Managen und Hosten mehrerer Untermandanten und Benutzer innerhalb des Mandanten-Abonnementservice.
-* Sie können Ihre Zonen, Regionen, Mandanten und Subnetze anzeigen.
-* Anzeigen von Dateiservern und Erstellen von Dateifreigaben, Festplatten und Buckets
-* Erstellen von Berichten für Mandanten und Untermandanten, um die Nutzungsdaten nur für den Storage anzuzeigen, der für ihre Mandanten und Untermandanten abonniert oder bereitgestellt wurde.
-* Service-Anfragen innerhalb des Service-Request-Tools des Service-Providers aufbringen und aktualisieren.
+* Managen und bearbeiten Sie Untermandanten für Ihre Mandantenfähigkeit und optimieren Sie sie.
+* Anzeigen Ihrer Zonen, Regionen, Untermandanten und Subnetze
+* Zeigen Sie die von Service-Providern erstellten Dateiserver an.
+* Erstellung von Dateifreigaben, Festplatten und Buckets und Zuweisen von Service Levels
+* Zeigen Sie Berichte für Mandanten und Untermandanten von *Berichten > Kapazitätsauslastung* an, um die Verbrauchsdaten nur für den Storage anzuzeigen, der für Ihre Mandanten und Untermandanten abonniert oder bereitgestellt wurde.
+* Zeigen Sie Berichte für Mandanten und Untermandanten von *Reports > Performance* an, um sich die Performance und die Einhaltung der Service-Compliance für die einzelnen abonnierten Services und Add-on-Services (Datensicherung und erweiterter Schutz) anzusehen.
 +
 
 NOTE: Für weitere Abonnements können Sie Ihr Service Request Tool verwenden.

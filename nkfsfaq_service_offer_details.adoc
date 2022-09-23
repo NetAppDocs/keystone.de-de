@@ -40,6 +40,14 @@ Sie können eine Anfrage für eine Kapazitätserweiterung über das NetApp Servi
 
 Alle Ergänzungen gelten für die bestehende Laufzeit, außer wenn der Antrag in den letzten 90 Tagen nach dem Abonnement erfolgt, wobei die Laufzeit für mindestens 12 Monate verlängert werden muss.
 
+*Können Abonnements miteinander in Verbindung stehen?*
+
+Nein, die Abonnementzeiträume sind unabhängig voneinander.
+
+*Kann ich Backup-Speicher zu einem bestehenden Abonnement hinzufügen?*
+
+Für einen Backup-Anwendungsfall können Sie einem vorhandenen oder neuen Service-Level, einschließlich Standard- oder Value-Service, Kapazität zu einem vorhandenen Abonnement hinzufügen. Die Laufzeit des bestehenden Abonnements wird dadurch nicht geändert. Es gibt jedoch eine Einschränkung: Wenn Sie die Kapazität innerhalb der letzten 90 Tage nach dem Abonnementzeitraum (d. h. die letzten 90 Tage vor Ablauf Ihres Abonnements) erweitern möchten, müssen Sie das Abonnement um mindestens ein Jahr verlängern.
+
 *Hat ein neues Abonnement Flexibilität, mit einer neuen Jahreslaufzeit zu kommen?*
 
 Ja, neue Abonnements können unabhängig von vorhandenen Abonnements neue Bedingungen haben.

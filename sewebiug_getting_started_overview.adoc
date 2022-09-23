@@ -14,15 +14,20 @@ summary: Keystone – erste Schritte – Übersicht
 
 
 [role="lead"]
-In diesem Abschnitt werden die ersten Schritte mit dem NetApp Service Engine Portal beschrieben. Die Lösung umfasst:
+In diesem Abschnitt werden die ersten Schritte mit dem NetApp Service Engine Portal beschrieben.
 
-* Melden Sie sich bei der Webschnittstelle der NetApp Service Engine an:
+
+NOTE: Wenn Sie das NetApp Service Engine-Portal navigieren, sehen Sie, dass einige Informationen, z. B. Ihre Region und Ihre Zone, basierend auf Ihrem vom Support-Team konfigurierten Abonnementsetup automatisch ausgefüllt werden.
+
+So starten Sie Ihre Aktivitäten in diesem Portal:
+
+* Melden Sie sich auf der Webschnittstelle der NetApp Service Engine an.
 +
 ** Melden Sie sich mit einem Benutzernamen und einem Kennwort an
-** Melden Sie sich mit NetApp SSO an
-** Loggen Sie sich über die Webschnittstelle der NetApp Service Engine aus
+** Melden Sie sich mit NetApp SSO an, um Informationen zu erhalten, siehe link:sewebiug_log_in_to_the_netapp_service_engine_web_interface.html["Melden Sie sich auf der Webschnittstelle der NetApp Service Engine an"]
 
 
-* Wählen Sie einen Mandanten aus
-* Übersicht über die Webschnittstelle der NetApp Service Engine
+* Wählen Sie einen Mandanten aus. Das Dashboard wird angezeigt. Weitere Informationen finden Sie unter link:sewebiug_dashboard.html["Zeigen Sie Das Flex Subscription Dashboard An"]
 
+
+Eine Übersicht über die Webschnittstelle der NetApp Service Engine finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html["Übersicht über die Webschnittstelle der NetApp Service Engine"]

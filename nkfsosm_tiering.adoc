@@ -30,3 +30,5 @@ Die folgenden Funktionen sind aktiviert:
 * Aktivieren und Deaktivieren von Backups für ein Volume auf einem Tiering-Service-Level
 * Aktivierung und Deaktivierung der Disaster Recovery für ein Volume auf einem Tiering Service Level
 
+
+Informationen zur Abrechnung finden Sie unter link:nkfsosm_kfs_billing.html#billing-for-fabricpool-usage["Abrechnung für FabricPool-Nutzung"].

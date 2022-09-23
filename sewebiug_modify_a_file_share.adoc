@@ -14,12 +14,12 @@ summary: Keystone Ändern einer Dateifreigabe
 
 
 [role="lead"]
-Sie können den Freigabennamen, den Freigabetyp (CIFS, NFS, Multi-Protocol), Service Level, Kapazität, snapshot-Richtlinie, Exportrichtlinie, Zugriffssteuerungsliste (ACL) und Tags.
+Sie können Freigabennamen, Service-Level, Kapazität, Snapshot-Richtlinie, Exportrichtlinie, Access Control List (ACL) und Tags in einer Dateifreigabe
 
 
-NOTE: Mit dieser Methode können Sie Ihre Shares in unterschiedliche Leistungsstufen verschieben, wenn diese verfügbar sind. Sie können den Freigabetyp nur ändern, wenn der Server die entsprechenden Dienste unterstützt.
+NOTE: Mit dieser Methode können Sie Ihre Freigaben auf unterschiedliche Service-Level verschieben, sofern verfügbar. Sie können den Freigabetyp nur ändern, wenn der Server die entsprechenden Dienste unterstützt.
 
-Die Dateifreigabe muss sich im Betriebszustand befinden. Informationen zum Verständnis der Volume-Status und der Schritte, die für deren Betrieb erforderlich sind, finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_view_shares.html["Zeigen Sie Festplatten an"] Und link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["Objektstatus"]
+Die Dateifreigabe muss sich im Betriebszustand befinden. Informationen zum Verständnis der Volume-Status und der Schritte, die für deren Betrieb erforderlich sind, finden Sie unter link:sewebiug_view_disks.html["Zeigen Sie Festplatten an"] Und link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["Objektstatus"]
 
 .Schritte
 . Sehen Sie sich die an link:sewebiug_view_shares.html#view-shares["Shares-Liste"].
@@ -30,6 +30,6 @@ Die Dateifreigabe muss sich im Betriebszustand befinden. Informationen zum Verst
 
 Änderungsfreigabe wird als asynchroner Job ausgeführt. Ihre Vorteile:
 
-* Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
+* Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
 * Überprüfen Sie nach Abschluss des Jobs den Status der Freigabe in der Liste „Shares“.
 

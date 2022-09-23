@@ -14,9 +14,18 @@ summary: Backups oder Restores aus Backups erstellen, ändern und löschen
 
 
 [role="lead"]
-Sie können die Snapshots (Backups oder Recovery-Punkte) der in Ihrer Umgebung erstellten Volumes (File Shares und Festplatten) anzeigen und managen, um mehrere Kopien von primären File Shares und Festplatten Remote zu verwalten.
+Es können Backup-Richtlinien definiert werden, um Backups der Volumes (File Shares und Festplatten) in der Systemumgebung zu erstellen und mehrere Kopien der primären Volumes per Remote-Zugriff zu verwalten.
 
-Die replizierten Dateifreigaben und -Festplatten aus verschiedenen Zonen werden auf einer dedizierten Backup-Storage-VM (Storage Virtual Machine, auch als SVM bezeichnet) in den einzelnen Clustern gespeichert. Backups können zwischen zwei separaten ONTAP Clustern in verschiedenen Zonen durchgeführt werden. Die von der NetApp Service Engine unterstützten Standard-Backup-Richtlinien sind:
+
+NOTE: Backups werden automatisch auf Ihrem System erstellt, wenn Sie eine Backup-Richtlinie für ein Volume erstellen oder bearbeiten. Sie können keine Sicherung über die Schnittstelle der NetApp Service Engine erstellen. Mithilfe der Backup-API werden Backups für Ihre Volumes erstellt und gemanagt.
+
+Weitere Informationen finden Sie unter link:seapiref_backups_apis.html["Backup-API"]
+
+Backup von Quell-Volumes wird über die NetApp SnapMirror Technologie aktiviert, die mit Ihrem Flex Subscription aktiviert wird. Weitere Informationen finden Sie unter link:index.html#flex-subscription["Hier"].
+
+Wenn Sie ein Volume erstellen oder bearbeiten, definieren Sie dessen Backup-Zeitplan. Die Sicherung erfolgt in den vorgesehenen Intervallen und wird auf einem Zielsystem gespeichert. Damit Backups funktionieren, sollte die SnapMirror Beziehung mit der Zielumgebung aufgebaut werden. Die replizierten Dateifreigaben und -Festplatten aus verschiedenen Zonen werden auf einer dedizierten Backup-Storage-VM (Storage Virtual Machine, auch als SVM bezeichnet) in den einzelnen Clustern gespeichert. Backups können zwischen zwei separaten ONTAP Clustern in verschiedenen Zonen durchgeführt werden.
+
+Die von der NetApp Service Engine unterstützten Standard-Backup-Richtlinien sind:
 
 * Ad-Hoc
 * Täglich
@@ -24,18 +33,17 @@ Die replizierten Dateifreigaben und -Festplatten aus verschiedenen Zonen werden 
 * Monatlich
 
 
-Wenn Ihr Volume nicht den von der NetApp Service Engine unterstützten Standard-Backup-Richtlinien entspricht, können Sie dies gerne tun link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["Eine Serviceanfrage stellen"] Der Kategorie *nicht-Standard-Volume*, um das Problem zu beheben.
+Wenn im Backend erstellte Backups erstellt werden, sollten sich die Volumes im `Operational` Status befinden. Weitere Informationen über Objektstatus finden Sie unter operativ (für das Quellobjekt eines Backups). link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["Hier"].
+
+Wenn Ihr Volume nicht den von der NetApp Service Engine unterstützten Standard-Backup-Richtlinien entspricht, können Sie dies gerne tun link:sewebiug_raise_a_service_request.html["Eine Serviceanfrage stellen"] Der Kategorie *nicht-Standard-Volume*, um das Problem zu beheben.
+
+Auf der Seite *Backups* können Sie die Liste der für Ihre Dateifreigaben und Datenträger erstellten Backups anzeigen. Backups werden basierend auf dem ausgewählten Mandanten angezeigt.
 
 
-NOTE: Ein Ad-hoc-Backup (nicht geplant) kann jederzeit manuell über die GUI oder über APIs durchgeführt werden.
 
-Auf der Seite *Backups* können Sie die Liste der für Ihre Dateifreigaben und Datenträger erstellten Snapshots anzeigen. Backups werden basierend auf dem ausgewählten Mandanten angezeigt.
+== Bearbeiten einer Backup-Richtlinie oder eines Zeitplans
 
-
-
-== Erstellen eines Backup-Objekts
-
-Sie können Snapshots für Ihre Volumes erstellen, indem Sie die Backup-Richtlinie bei Ihnen definieren link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_file_share.html["Erstellen Sie eine Dateifreigabe"] Oder link:https://docs.netapp.com/us-en/keystone/sewebiug_create_a_new_disk.html["Erstellen Sie eine Festplatte"].
+Wenn Sie File Shares und Festplatten erstellen oder bearbeiten, können Sie deren Backup-Richtlinien festlegen. Backups werden im Backend basierend auf den von Ihnen festgelegten Richtlinien erstellt. Weitere Informationen finden Sie unter: link:sewebiug_create_a_new_file_share.html["Erstellen Sie eine Dateifreigabe"] Oder link:sewebiug_create_a_new_disk.html["Erstellen Sie eine Festplatte"].
 
 .Schritte
 . Aktivieren Sie * Backup Policy*.
@@ -44,43 +52,29 @@ Sie können Snapshots für Ihre Volumes erstellen, indem Sie die Backup-Richtlin
 
 
 
-NOTE: Sie können auch Backups erstellen oder planen, indem Sie die Backup-Richtlinie für eine vorhandene Dateifreigabe oder Festplatte bearbeiten.
+NOTE: Sie können Backups auch planen, indem Sie die Backup-Richtlinie für eine vorhandene Dateifreigabe oder Festplatte bearbeiten.
 
 
 
-== Ändern eines Backup-Objekts
+== Ändern oder Trennen der Quelle eines Backups
 
 Für ein ausgewähltes Backup-Objekt einer Dateifreigabe oder Festplatte können Sie das Backup deaktivieren oder das Backup-Objekt von seiner Quelle trennen und es zu einem verwaisten Backup machen. Dieser Vorgang unterbricht die SnapMirror Beziehung zur Quelle. Sie können auch die Anzahl der Backups ändern, die auf Ad-hoc-, Tages-, Wochen- und/oder Monatsbasis erstellt werden sollen.
 
 .Schritte
-. Suchen Sie das Backup in der Liste, und klicken Sie auf das Bearbeiten-Symbol am Ende der Zeile für das Objekt.
-. Nehmen Sie bei Bedarf Änderungen an der Backup-Quelle und an der Anzahl der einzelnen Backup-Typen vor. Sie können die SnapMirror Beziehung zum Quell-Volume durchbrechen, indem Sie die Sicherungsquelle auf *Keine (verwaist)* ändern. Die Backups werden als verwaiste Backups zur Wiederherstellung aufbewahrt, selbst wenn die Quell-Volumes gelöscht werden. Der Status des Backupobjekts ändert sich, und der Status des Quell-Volumes (verwaiste oder gelöschte Objekte) wird dem Namen des Quell-Volumes in derselben Liste angehängt. Informationen zu Objektstatus finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["Hier"]
+. Klicken Sie im linken Navigationsbereich auf *BACKUPS*. Sie können die Liste der für alle Objekte in Ihrer Umgebung erstellten Backups sehen.
+. Suchen Sie das Backup in der Liste (suchen Sie nach dem Namen des Volumes) und klicken Sie auf das Bearbeiten-Symbol am Ende der Zeile.
+. Nehmen Sie bei Bedarf Änderungen an der Backup-Quelle und an der Anzahl der einzelnen Backup-Typen vor. Sie können die SnapMirror Beziehung zum Quell-Volume durchbrechen, indem Sie die Sicherungsquelle auf *Keine (verwaist)* ändern. Die Backups werden als verwaiste Backups zur Wiederherstellung aufbewahrt, selbst wenn die Quell-Volumes gelöscht werden. Der Status des Backupobjekts ändert sich, und der Status des Quell-Volumes (verwaiste oder gelöschte Objekte) wird dem Namen des Quell-Volumes in derselben Liste angehängt. Informationen zu Objektstatus finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#Object-states["Hier"]
 . Klicken Sie Auf *Fertig*. Der Snapshot wird geändert. Wenn Sie die SnapMirror Beziehung zur Quelle unterbrochen haben, d. h. das Backup-Objekt verwaist, wird der Name der Quelle auf der Registerkarte *Backups* als `deleted` angezeigt.
 
 
 
-NOTE: Sie können auch die SnapMirror Beziehung mit dem Quell-Volume durchbrechen, indem Sie *Backup-Policy* für den Datenträger deaktivieren.
+NOTE: Sie können auch die SnapMirror Beziehung zum Quell-Volume durchbrechen, indem Sie *Backup Policy* für das Volume aus den Bildschirmen „Create Share/Edit Share“ und „Create Disk/Edit Disk“ deaktivieren.
 
 
 
-== Löschen eines Backup-Objekts
+== Support für Backup und Restore anfordern
 
-Löschen Sie ein nicht verwendetes Backup-Volume, um Ihren Speicherplatz zu erhöhen.
-
-.Schritte
-. Suchen Sie das Backup in der Liste, und klicken Sie auf das Löschsymbol am Ende der Zeile für das Objekt.
-. Geben Sie im Dialogfeld *Löschen bestätigen* den Backup-Namen (Name des Quell-Volumes) ein, um zu bestätigen, dass Sie das Backup-Objekt löschen möchten.
-. Klicken Sie Auf *Bestätigen*.
-
-
-
-NOTE: Wird ein Backup gelöscht, werden alle Recovery-Punkte für das Backup gelöscht. Darüber hinaus wird das Backup auch bei dem Löschen eines primären File Shares oder einer primären Festplatte als verwaistes Backup mit allen Recovery-Punkten für die Wiederherstellung aufbewahrt. Um das Backup-Volume und die Recovery-Punkte der gelöschten Quelle zu löschen, sollten Sie das Backup-Objekt explizit aus der Registerkarte *Backups* löschen.
-
-
-
-== Backup Restore
-
-Das können Sie link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["Eine Serviceanfrage stellen"] Um eine Dateifreigabe oder -Festplatte von einem bestimmten Recovery-Punkt aus wiederherzustellen.
+Das können Sie link:sewebiug_raise_a_service_request.html["Eine Serviceanfrage stellen"] Um eine Dateifreigabe oder -Festplatte von einem bestimmten Recovery-Punkt aus wiederherzustellen.
 
 .Schritte
 . Wählen Sie im linken Navigationsbereich *SUPPORT* aus und wählen Sie *Service Requests* aus.
@@ -88,3 +82,12 @@ Das können Sie link:https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_ser
 . Wählen Sie *Backup Restore* als Kategorie für die Serviceanfrage aus.
 . Geben Sie weitere Details an, und fahren Sie fort.
 
+
+
+
+== Entfernen eines Backup-Objekts
+
+Wenn Sie ein nicht verwendetes Backup-Volume löschen, erhöhen Sie Ihren Speicherplatz. Um ein Backup-Volume und Recovery-Punkte der gelöschten Quelle zu löschen, sollten Sie die Backup-API verwenden.
+
+
+NOTE: Wird ein Backup gelöscht, werden alle Recovery-Punkte für das Backup gelöscht. Darüber hinaus wird das Backup auch bei dem Löschen eines primären File Shares oder einer primären Festplatte als verwaistes Backup mit allen Recovery-Punkten für die Wiederherstellung aufbewahrt.

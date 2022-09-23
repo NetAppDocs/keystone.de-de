@@ -16,17 +16,10 @@ summary: Keystone erstellt einen Dateiserver
 [role="lead"]
 Dateiserver gehören einem Untermandanten an und werden innerhalb einer Zone erstellt. Beim Erstellen eines Servers können Sie optional Folgendes ausführen:
 
-* Aktivieren Sie Disaster Recovery DP für den Server. Weitere Informationen zur Funktionsweise von Disaster Recovery in NetApp Service Engine finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Disaster Recovery"].
-* Aktivieren Sie es CIFS-aktiviert. Für CIFS-fähige Server:
-+
-** Sie müssen den Active Directory-Benutzernamen, das Active Directory-Kennwort, die Domäne, die DNS-Server, den Servernamen und Optional kann die Organisationseinheit (OU) des Active Directory verwendet werden.
-** Die Active Directory-Anmeldeinformationen (Active Directory-Benutzername und Active Directory-Kennwort) müssen für einen Benutzer verwendet werden, der über die Berechtigung verfügt, einem Computer der Active Directory-Domäne beizutreten.
-** Wenn die OU-Struktur des Active Directory hierarchisch ist, wie in der Abbildung unten gezeigt, geben Sie die OUs von der untersten bis zum oberen Bereich an. In diesem Beispiel, um die OU von Melbourne anzugeben, stellen Sie `cifs_ou` als `„cifs_ou“ auf „ou=melbourne, ou=cifs“.`
+* Ermöglichen Sie die asynchrone Disaster Recovery-Datensicherung für den Server. Weitere Informationen zur Funktionsweise von Disaster Recovery in NetApp Service Engine finden Sie unter link:sewebiug_billing_accounts,_subscriptions,_services,_and_performance.html#disaster-recovery["Disaster Recovery"].
+* Wenn Sie über ein Abonnement für synchrone Disaster Recovery-Datensicherung verfügen, ist die Funktion standardmäßig aktiviert.
+* Aktivieren Sie es CIFS-aktiviert. NFS-Dienste sind standardmäßig aktiviert.
 
-
-
-
-image:sewebiug_image20.png["Fehler: Fehlendes Grafikbild"]
 
 Stellen Sie sicher, dass Sie folgende Funktionen zum Erstellen des Servers haben:
 
@@ -34,9 +27,13 @@ Stellen Sie sicher, dass Sie folgende Funktionen zum Erstellen des Servers haben
 * Die Region und die Zone, in der der Server gehört.
 * Netzwerkdetails wie Subnetz und IP-Adresse (optional). Wenn Sie mit Ihrem Netzwerk nicht vertraut sind, fragen Sie bei Ihrer IT-Abteilung nach den entsprechenden Werten.
 * Um asynchrone Disaster Recovery auf dem Dateiserver zu ermöglichen, ist die Disaster-Recovery-Zone (die Zone, auf die der Dateiserver repliziert wird).
+* Für CIFS-Server sollten Sie die Active Directory-Anmeldeinformationen, DNS-Server, Servernamen und optional die Active Directory-Organisationseinheit (OU) kennen. Die Active Directory-Anmeldeinformationen müssen für einen Benutzer mit der Berechtigung zum Beitritt zu einem Computer zur Active Directory-Domäne verwendet werden.
 
 
-.Schritte
+Wenn die OU-Struktur des Active Directory hierarchisch ist, wie in der Abbildung unten gezeigt, geben Sie die OUs von der untersten bis zum oberen Bereich an. In diesem Beispiel, um die OU von Melbourne anzugeben, stellen Sie `cifs_ou` als `„cifs_ou“ auf „ou=melbourne, ou=cifs“.`
+
+image:sewebiug_image20.png["Fehler: Fehlendes Grafikbild"].Steps
+
 . Sehen Sie sich die an link:sewebiug_view_servers.html#view-servers["Liste der File-Server"].
 . Klicken Sie Auf *Server Erstellen*.
 . Füllen Sie auf der Seite Server erstellen die folgenden Felder aus:
@@ -71,7 +68,7 @@ Wenn Sie einen CIFS-fähigen Dateiserver erstellen:
 
 +
 .. Durch Umschalten der Schaltfläche CIFS aktiviert werden die Felder für CIFS angezeigt.
-.. Geben Sie den Active Directory-Benutzernamen, das Active Directory-Kennwort, die Domäne, die DNS-Server, den Servernamen und Optional kann die Active Directory-Organisationseinheit verwendet werden. Die Active Directory-Anmeldeinformationen müssen für einen Benutzer mit der Berechtigung zum Beitritt zu einem Computer zur Active Directory-Domäne verwendet werden.
+.. Fügen Sie Domänennamen, DNS-Server-IP, Servernamen und optional den Namen für die Active Directory-Organisationseinheit hinzu.
 
 
 . So aktivieren Sie asynchrone Disaster Recovery-DP auf diesem Dateiserver:
@@ -79,14 +76,21 @@ Wenn Sie einen CIFS-fähigen Dateiserver erstellen:
 .. Aktivieren Sie die Schaltfläche „Asynchronous Disaster Recovery“.
 .. Wählen Sie die Disaster Recovery-Region und -Zone aus.
 .. Wählen Sie den Replikationszeitplan für die Disaster Recovery aus.
++
+
+NOTE: Wenn Sie ein Abonnement von synchronem Disaster Recovery-Datenschutz genommen haben, wird die Funktion automatisch für Ihre Zone aktiviert, und die Synchronous Disaster Recovery-Kipptaste ist standardmäßig aktiviert. Sie können die Schaltfläche nicht deaktivieren.
 
 
-. Wenn die synchrone Disaster Recovery-DP aktiviert ist, ist der Synchronous Disaster Recovery-Schalter aktiviert und kann nicht deaktiviert werden.
+
+. Optional können Sie Tags und Wert hinzufügen.
 . Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Erstellen des Servers erstellt.
 
 
-Server erstellen wird als asynchroner Job ausgeführt. Ihre Vorteile:
 
-* Überprüfen Sie den Status des Jobs in der Jobliste.
-* Überprüfen Sie nach Abschluss des Jobs den Status des Servers in der Liste Server.
+NOTE: Wenn Sie einen CIFS-fähigen Server erstellen, müssen Sie für den eingegebenen Domänennamen (FQDN) den Active Directory-Benutzernamen und das Active Directory-Kennwort eingeben und auf *Bestätigen* klicken.
+
+Die Servererstellung wird als asynchroner Job ausgeführt. Ihre Vorteile:
+
+* Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
+* Überprüfen Sie nach Abschluss des Jobs den Status des Servers in der Liste Server auf der
 

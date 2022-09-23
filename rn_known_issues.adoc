@@ -61,7 +61,7 @@ Wenn ein Mandantenabonnement erstellt wird und die Berichtdiagramme sofort gepr�
 
 
  a| 
-Bei Änderungen an Performance-Service-Leveln werden Volumes nicht verschoben
+Bei Änderung der Service-Level werden keine Volumes verschoben
  a| 
 Wenn zwei verschiedene Aggregate im selben Cluster für zwei Service-Level verwendet werden, verschiebt das Service-Level auf einem Volume zu einem anderen nicht das Volume in ein anderes Aggregat. Es wird nur die adaptive QoS Policy angewendet.
  a| 

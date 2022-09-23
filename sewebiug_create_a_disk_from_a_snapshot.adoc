@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: sewebiug_create_a_disk_from_a_snapshot.html 
-keywords: netapp, keystone, create, disk, Snapshot 
+keywords: netapp, keystone, create, disk, snapshot 
 summary: Erstellen Sie eine Festplatte aus einem Snapshot 
 ---
 = Erstellen Sie eine Festplatte aus einem Snapshot
@@ -14,25 +14,25 @@ summary: Erstellen Sie eine Festplatte aus einem Snapshot
 
 
 [role="lead"]
-Sie können eine neue Festplatte aus einem vorhandenen Snapshot erstellen. Die neue aus dem Snapshot geklonte Festplatte verfügt über die gleichen Eigenschaften wie die Festplatte, auf der der Snapshot erstellt wird.
+Sie können eine neue Festplatte aus einem vorhandenen Snapshot erstellen. Das neue aus dem Snapshot geklonte Laufwerk verfügt über die gleichen Eigenschaften wie das Laufwerk, von dem der Snapshot erstellt wird.
 
 .Schritte
-. Wählen Sie im linken Navigationsbereich * BLOCK STORAGE* aus und wählen Sie *Disks*.
-. Klicken Sie auf *Create Disk* und wählen Sie *Clone from Snapshot*. Der Bildschirm *Select Disk* wird mit allen Datenträgern für den Mandanten angezeigt. Sie können Festplatten nach Region, Zone und Untermandant filtern. Sie können jede Festplatte auswählen, die sich im Betriebszustand befindet.
-. Aktivieren Sie das Kontrollkästchen neben dem gewünschten Datenträger und klicken Sie auf *Weiter*. Der Bildschirm *Select Snapshot* wird mit allen Snapshots für die Festplatte angezeigt.
+. Wählen Sie im linken Navigationsbereich * BLOCK STORAGE* aus und wählen Sie *Disks*. Die Liste der vorhandenen Festplatten für Ihre Mandantenfähigkeit wird angezeigt.
+. Klicken Sie auf *Create Disk* und wählen Sie *Clone from Snapshot*. Wenn Sie alternativ den Datenträger kennen, dessen Snapshot Sie zum Klonen verwenden möchten, können Sie den Datenträger suchen und neben ihn auf die Schaltfläche Kopieren klicken. Die Festplatte sollte sich im Betriebszustand befinden. Der Bildschirm *Create Disk from Snapshot* wird mit allen Datenträgern für den Mandanten angezeigt. Sie können Festplatten nach Region, Zone und Untermandant filtern. Sie können jede Festplatte auswählen, die sich im Betriebszustand befindet. Informationen zu Objektstatus finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#object-states["Objektstatus"]
+. Aktivieren Sie das Kontrollkästchen neben dem gewünschten Datenträger und klicken Sie auf *Weiter*. Die Snapshots für die Festplatte werden angezeigt.
 +
 
-NOTE: Wenn für die ausgewählte Festplatte einige Snapshots erstellt wurden, die in der SnapCenter-Umgebung außerhalb der NetApp Service Engine erstellt wurden, können Sie die Snapshots, die importiert und für Ihre Auswahl aufgelistet wurden, finden. Sie können diese importierten Snapshots auswählen und die neuen Festplatten daraus klonen.
+NOTE: Wenn für die ausgewählte Festplatte einige Snapshots erstellt wurden, die in der SnapCenter-Umgebung außerhalb der NetApp Service Engine erstellt wurden, können Sie diese Snapshots für Ihre Auswahl importieren und aufgelistet finden. Sie können diese importierten Snapshots auswählen und die neuen Festplatten daraus klonen.
 
 +
 Sie können nach einem bestimmten Snapshot suchen oder den Zeitplantyp auswählen, um die Snapshots zu filtern.
 
 . Aktivieren Sie das Kontrollkästchen neben dem Snapshot, von dem Sie klonen möchten, und klicken Sie auf *Weiter*. Die neue Festplatte übernimmt die Eigenschaften des ausgewählten Snapshots.
-. Fügen Sie *Name* und *Disk Path* hinzu. Aktualisieren Sie die anderen Einstellungen, wie z. B. die Zuweisung einer *Service Level*, und klicken Sie auf *Erstellen*.
+. Fügen Sie *Name* und *Disk Path* hinzu. Aktualisieren Sie die anderen Einstellungen, wie z. B. die Zuweisung einer *Service Level*, und klicken Sie auf *Erstellen*. Wählen Sie den Service Level aus, der Ihren Anforderungen am besten entspricht. .Nachdem Sie fertig sind
 
 
 *Create Disk* wird als asynchroner Job ausgeführt. Ihre Vorteile:
 
-* Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
+* Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
 * Überprüfen Sie nach Abschluss des Jobs den Status der Festplatte in der Liste *Disks*.
 

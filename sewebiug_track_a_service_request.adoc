@@ -41,11 +41,7 @@ Die folgende Tabelle enthält eine Liste der Status von Service-Anfragen.
 |===
 Verfolgen Sie den Status einer Service-Anfrage, indem Sie den Status in der NetApp Service Engine überprüfen. Wie unten beschrieben, können Sie den Status in den im Rahmen des Prozesses gesendeten automatisierten E-Mails verfolgen.
 
-. Wählen Sie im Menü Support > Service Requests. Die Liste Service Requests wird angezeigt.
-+
-image:sewebiug_image44.png["Fehler: Fehlendes Grafikbild"]
+. Wählen Sie im Menü die Option *Support > Service Requests*. Die Liste wird anhand der Standardpriorität `dringenden` gefiltert.
+. Wählen Sie die erforderliche Priorität und den gewünschten Status aus, um die Liste der Service-Anfragen anzuzeigen.
+. Suchen Sie in der Liste nach der Service-Anfrage, und zeigen Sie den Status in der Spalte `Status` an.
 
-. Suchen Sie in der Liste nach der Service-Anforderung, und zeigen Sie den Status in der Spalte Status an.
-
-
-image:sewebiug_image42.png["Fehler: Fehlendes Grafikbild"]

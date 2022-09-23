@@ -16,18 +16,18 @@ summary: Keystone Ansicht Buckets
 [role="lead"]
 In der Liste Buckets werden die vorhandenen Buckets für einen ausgewählten Untermandanten angezeigt.
 
-. Um die Liste anzuzeigen, wählen Sie im Menü Objekt-Storage > Buckets aus.
+. Um die Liste anzuzeigen, wählen Sie im Menü *Objektspeicherung > Buckets* aus.
 . Verwenden Sie das Dropdown-Menü Untereinheit, um bei Bedarf einen anderen Untermandanten auszuwählen.
 +
 Es werden einfache Informationen zu den einzelnen Buckets angezeigt, z. B.:
 
 +
 ** Name
+** Region
+** Größe
 ** Erstellungsdatum
-** Zu Verwenden
-+
-Weitere Informationen zur Verwendung der Funktionen einer Liste finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Listenansicht"].
-
+** Objekte
+** Aktion (z. B. Bucket-Löschung)
 
 
 

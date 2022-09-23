@@ -17,13 +17,13 @@ summary: Keystone ändert eine Objekt-Storage-Gruppe
 Verwenden Sie diese Methode, um Details einer Objekt-Storage-Gruppe, z. B. des Gruppennamens und der S3-Richtlinie, zu ändern.
 
 .Schritte
-. Sehen Sie sich die an link:sewebiug_view_host_groups.html#view-host-groups["Gruppenliste"].
-. Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und dass im Display Gruppen angezeigt werden (nicht Benutzer).
-. Suchen Sie die Gruppe in der Liste, und klicken Sie auf das Symbol Bearbeiten für die Gruppe.
+. Zeigen Sie die Objekt-Storage-Gruppe an link:sewebiug_view_the_object_storage_group_and_users.html["Zeigen Sie Objekt-Storage-Gruppen und Benutzer an"].
+. Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und Sie auf die Registerkarte *Gruppen* geklickt haben.
+. Suchen Sie die Gruppe in der Liste, und klicken Sie auf das Bearbeiten-Symbol für diese Gruppe.
 +
-Weitere Informationen zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view["Aktionen zur Listenansicht"].
+Weitere Informationen zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["Aktionen zur Listenansicht"].
 
-. Geben Sie im Dialogfeld Gruppe bearbeiten den Benutzernamen ein.
-. Wählen Sie die S3-Richtlinie aus, die für die geänderte Gruppe gilt.
-. Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Ändern der Gruppe mit den angegebenen Einstellungen erstellt.
+. Ändern Sie im Dialogfeld *Gruppe bearbeiten* die für die Gruppe geltende S3-Richtlinie. Informationen zu S3-Richtlinien finden Sie unter https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["Legen Sie Berechtigungen in einer Richtlinie fest"].
+. Sie können je nach Bedarf weitere Richtlinienerklärungen hinzufügen.
+. Klicken Sie Auf *Aktualisieren*. Dadurch wird ein Job zum Ändern der Gruppe mit den angegebenen Einstellungen erstellt. Informationen zur Verfolgung von Jobs finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
 

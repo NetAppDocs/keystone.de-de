@@ -17,7 +17,7 @@ summary: Keystone delete Dateiserver
 *Achtung:* beim Löschen eines Dateiservers wird auch Folgendes gelöscht:
 
 * Alle mit dem Dateiserver verbundenen Backups
-* Alle mit dem DateiserverSie verknüpften Kopien für die Disaster Recovery Sie können das Löschen eines Servers nicht rückgängig machen.
+* Alle dem Dateiserver zugeordneten Disaster Recovery-Kopien. Sie können das Löschen eines Servers nicht rückgängig machen.
 
 
 Zum Löschen eines Dateiservers müssen Sie zuerst alle auf dem Server vorhandenen Freigaben löschen.
@@ -36,7 +36,7 @@ image:sewebiug_image21.png["Fehler: Fehlendes Grafikbild"]
 * Beim Löschen von CIFS-fähigen Dateiservern bleibt das Objekt des Active Directory-Computers erhalten. Bitten Sie Ihren Active Directory-Administrator, das Computerobjekt für den gelöschten Dateiserver manuell aus Active Directory zu entfernen.
 * Löschserver wird als asynchroner Job ausgeführt. Ihre Vorteile:
 +
-** Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
+** Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
 ** Überprüfen Sie nach Abschluss des Jobs, ob der Server aus der Liste Server entfernt wurde.
 
 
