@@ -13,7 +13,10 @@ summary: Keystone Serviceinterms und Beschreibungs-Überblick
 :imagesdir: ./media/
 
 
-* NetApp Keystone Flex-Abonnement (Flex-Abonnement) ist für mindestens ein Jahr und bis zu drei Jahre verfügbar. Nach der Anfangslaufzeit wird der Service jährlich nachgebessbar. Die Kapazität kann in Schritten von nur 1 tib erhöht werden.
+[role="lead"]
+NetApp Keystone Flex Subscription (Flex Subscription) wird durch die folgenden Service-Bedingungen und -Beschreibungen geleitet.
+
+* Das Flex-Abonnement ist für mindestens ein Jahr und bis zu drei Jahre verfügbar. Nach der Anfangslaufzeit wird der Service jährlich nachgebessbar. Die Kapazität kann in Schritten von nur 1 tib erhöht werden.
 * Die Mindestkapazität ist 100 tib pro Standort. Jeder Standort kann über ein oder mehrere Cluster verfügen, um die Mindestkapazitätsanforderungen zu erfüllen. Bei einem vom Partner betriebenen Modell werden für den Kunden, pro Standort und über alle Service-Level Abonnements mit flexiblen Mindeststandards erstellt.
 * Die Kapazität von 100 tib kann ein einzelnes Service-Level oder eine Kombination aus Ebenen sein.
 * Mandanten-Abonnements sind auf Service-Level beschränkt, die Partner abonniert haben.

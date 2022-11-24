@@ -29,7 +29,7 @@ Dafür müssen Sie Folgendes gewährleisten:
 
 * Der Untermieter ist für den Google Cloud-Service abonniert.
 * Sie haben die JSON-Datei für das Servicekonto des Abonnenten und kennen die GCP-Projektnummer, die mit der Google Cloud Instanz verknüpft ist.
-* Damit Cloud Volumes Service für GCP bereits vom Support-Team des jeweiligen Support-Teams konfiguriert ist. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["Einrichtung von Cloud Volumes Service für Google Cloud"].
+* Damit Cloud Volumes Service für GCP bereits von Ihrem Support-Team unter BlueXP konfiguriert ist. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["Einrichtung von Cloud Volumes Service für Google Cloud"].
 
 
 .Schritte

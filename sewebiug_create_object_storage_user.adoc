@@ -13,6 +13,9 @@ summary: Keystone erstellt Benutzer von Objekt-Storage
 :imagesdir: ./media/
 
 
+[role="lead"]
+Sie können Benutzer erstellen und zu bestimmten Gruppen hinzufügen, um ihnen Objekt-Storage-Zugriff zuzuweisen.
+
 Da ein Objektspeicherbenutzer einer Objektspeichergruppe angehört, muss die Objektspeichergruppe vorhanden sein, bevor Sie den Benutzer erstellen können.
 
 .Schritte

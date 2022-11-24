@@ -79,7 +79,7 @@ In der folgenden Tabelle werden die Attribute der Cloud Volumes Service Instanz 
 | `Name` | Zeichenfolge | Name der Cloud Volumes Service-Instanz. 
 
 
-| `cc_Working_env` | Zeichenfolge | Name der Arbeitsumgebung in Cloud Manager 
+| `cc_Working_env` | Zeichenfolge | Name der Arbeitsumgebung in BlueXP. 
 
 
 | `cc_Client_id` | Zeichenfolge | Auth0-Dienst-ID. 
@@ -97,7 +97,7 @@ In der folgenden Tabelle werden die Attribute der Cloud Volumes Service Instanz 
 | `cc_redentials_id` | Zeichenfolge | ID der Arbeitsumgebung Cloud Centra 
 
 
-| `Azure_Client_id` | Zeichenfolge | Applikations-(Client-)ID. Die ID eines Active Directory-Service-Principal, den Cloud Manager für die Authentifizierung mit Azure Active Directory verwenden kann. 
+| `Azure_Client_id` | Zeichenfolge | Applikations-(Client-)ID. Die ID eines Active Directory-Dienstprinzipals, den BlueXP zur Authentifizierung mit Azure Active Directory verwenden kann. 
 
 
 | `Azure_Client_Secret` | Zeichenfolge | Der Wert des Client Secret für die Service-Hauptanwendung. 

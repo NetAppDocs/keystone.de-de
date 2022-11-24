@@ -194,7 +194,6 @@
   <block id="fc4c528ae40d23f09280dab99194a955" category="cell">`Name`</block>
   <block id="8bc48e5f4724775e4f4601a4e4ed2687" category="cell">Name der Cloud Volumes Service-Instanz.</block>
   <block id="5df5e1234496b4f4567b25a4b7b26ba3" category="cell">`cc_Working_env`</block>
-  <block id="2fa447a56e54e8572e7ecaf28e975e80" category="cell">Name der Arbeitsumgebung in Cloud Manager</block>
   <block id="c67906f7bee9799974a4de606d2420e2" category="cell">`cc_Client_id`</block>
   <block id="2e83a5722e857f87078cabdc3cda5f38" category="cell">Auth0-Dienst-ID.</block>
   <block id="f00a35e02aec20c8d9cf536f9dd3bf33" category="cell">`cc_refresh_Token`</block>
@@ -206,7 +205,6 @@
   <block id="fdfeff0c0589d5ab72dc570db74d59a7" category="cell">`cc_redentials_id`</block>
   <block id="05daf3080cc6bf51d9a7488838b0650f" category="cell">ID der Arbeitsumgebung Cloud Centra</block>
   <block id="bca25748ae9ad08875b859cc2005f825" category="cell">`Azure_Client_id`</block>
-  <block id="8c39fc45872124f630a477f8a9db2747" category="cell">Applikations-(Client-)ID. Die ID eines Active Directory-Service-Principal, den Cloud Manager für die Authentifizierung mit Azure Active Directory verwenden kann.</block>
   <block id="4e293b85fede02c268e93ef73f188710" category="cell">`Azure_Client_Secret`</block>
   <block id="222fdbc61ee44a202596354abd406a32" category="cell">Der Wert des Client Secret für die Service-Hauptanwendung.</block>
   <block id="476995152e4de0614e55d1be3004b494" category="cell">`Azure_Tenant_id`</block>
@@ -2000,7 +1998,6 @@
   <block id="0bb5849ddc549d6d9a0166d3663f0d1e" category="admonition">Bei CIFS-Freigaben wird das Hinzufügen eines` `-`-Charakters zum Ende des Share-Pfads zu einer verborgenen Aktie, beispielsweise` pathtomyhiddenshare.</block>
   <block id="ff138ca03bebc3f223aa7473c49093cc" category="summary">REST-APIs der NetApp Service Engine</block>
   <block id="f85fe16835da940dc0eded602be1d88a" category="doc">Rest-APIs der NetApp Service Engine</block>
-  <block id="4bb8f28d1ae5f4c793395a1ce16ebd50" category="paragraph">Viele API-Aufrufe liefern eine große Anzahl von Datensätzen. Die Anzahl der Datensätze kann durch Angabe der Werte `Offset` und `Limit` begrenzt werden:</block>
   <block id="2c9821eb0bfa9053dd0b371fa82738f0" category="list-text">*Limit.* Anzahl der zurückzukehrenden Datensätze.</block>
   <block id="75100d42069de12445ab076dab1a5044" category="list-text">*Offset.* die Anzahl der zu übersprinenden Datensätze, bevor der erste Datensatz zurückgegeben wird. Ein Offset von einem überspringt z. B. den ersten Datensatz und gibt die Datensätze ab zwei zurück.</block>
   <block id="6e38eaf3c64cc8f5260081b7bb3a1eb2" category="paragraph">Sie können die Antworten auch sortieren und bestellen:</block>
@@ -2049,7 +2046,6 @@
   <block id="6be9adc0bb5eb38197744a6ba6770654" category="list-text">Der Untermieter ist für den Google Cloud-Service abonniert.</block>
   <block id="b22f259a7845cf612bcf5a7d485a6137" category="list-text">Sie haben die JSON-Datei für das Servicekonto des Abonnenten und kennen die GCP-Projektnummer, die mit der Google Cloud Instanz verknüpft ist.</block>
   <block id="b3ae8c33b08587c2b6be6031629d0de3" category="inline-link">Einrichtung von Cloud Volumes Service für Google Cloud</block>
-  <block id="084cafb5240ee412a1336b10f1e95d54" category="list-text">Damit Cloud Volumes Service für GCP bereits vom Support-Team des jeweiligen Support-Teams konfiguriert ist. Weitere Informationen finden Sie unter<block ref="1956ecad31d7ae695fe28eacaf067e5e" category="inline-link-rx"></block>.</block>
   <block id="d900b34f4ec7d4c5aedb24b1b84b6642" category="list-text">Wählen Sie im Menü * CLOUD SERVICES* aus.</block>
   <block id="300a306a4df8277005591f8c37dca4ad" category="list-text">Klicken Sie auf *Erstellen* und dann auf *Google Cloud*.</block>
   <block id="b9ff3c79bce6a74407aef38bc921b4d6" category="list-text">Wählen Sie auf der Seite Cloud-Service für Google Cloud erstellen den Untermandanten aus, für den Sie den Service erstellen möchten, und fügen Sie einen Namen und die GCP-Projektnummer hinzu.</block>
@@ -2408,7 +2404,6 @@
   <block id="2ac1902f80e6b8be72c8f424ff8e1895" category="cell">Löschen Sie den Benutzer, der anhand der ID identifiziert wurde.</block>
   <block id="08adb405703760d625a89d2f8489e280" category="summary">Keystone Serviceinterms und Beschreibungs-Überblick</block>
   <block id="4c81f84de3c6cf1b71adecb694feb770" category="doc">Bedingungen und Beschreibungen des Flex Subscription Service</block>
-  <block id="1cbddcf2fa8e22cb8595706c00cc4371" category="list-text">NetApp Keystone Flex-Abonnement (Flex-Abonnement) ist für mindestens ein Jahr und bis zu drei Jahre verfügbar. Nach der Anfangslaufzeit wird der Service jährlich nachgebessbar. Die Kapazität kann in Schritten von nur 1 tib erhöht werden.</block>
   <block id="9597eb938e2fba159aa254b3a95e6efb" category="list-text">Die Mindestkapazität ist 100 tib pro Standort. Jeder Standort kann über ein oder mehrere Cluster verfügen, um die Mindestkapazitätsanforderungen zu erfüllen. Bei einem vom Partner betriebenen Modell werden für den Kunden, pro Standort und über alle Service-Level Abonnements mit flexiblen Mindeststandards erstellt.</block>
   <block id="be9709b8de891bed2cb58977708e499e" category="list-text">Mandanten-Abonnements sind auf Service-Level beschränkt, die Partner abonniert haben.</block>
   <block id="87f73c8129d1f6a0026c085c19c37ee7" category="list-text">20 % der Burst-Kapazität ist an jedem Standort verfügbar. Die Burst-Nutzung wird nur für diesen Abrechnungszeitraum berechnet. Falls Sie zusätzliche Burst-Anforderungen benötigen, die mehr als 20 % betragen, wenden Sie sich an den Support.</block>
@@ -2830,14 +2825,6 @@
   <block id="b387af4e718e4b5565ce87f74234f50f" category="paragraph">*Gibt es die Möglichkeit, nach Abschluss der ursprünglichen Laufzeit in einen Kauf umzuwandeln?* Nein Das Angebot enthält keine Option zum Umwandeln in einen Kauf. Zudem liegen bereits erworbene NetApp Produkte nicht im Umfang dieses Programms vor.</block>
   <block id="a16dc1f5755db55741d2ae801d6aa73d" category="paragraph">*Kann ich eine bestimmte Software-Version anfordern?*</block>
   <block id="ee62bd671134498c82c2878422e9f59a" category="paragraph">*Werde ich über Software-Upgrades informiert?*</block>
-  <block id="4b27d8b1b37284b9da0b4213e4e6675d" category="paragraph">Parameter der HTTP-Methode</block>
-  <block id="9104a21e58f1a69b57c6b2ae89602908" category="paragraph">`POST`/v2.1/Tenant/{Tenant_id}/serviceresquests/categories`` Erstellen Sie eine Service-Anfrage. `Tenant_id`: Die Mandanten-ID.</block>
-  <block id="58e00570185a83ad51f69b7079961f6b" category="paragraph">Kategorie Erforderlich</block>
-  <block id="4ef290f7b3c58a4e717e6cc36148b17f" category="paragraph">Abonnement `sSubskription` und `Commitment` Disaster Recovery `storage_object_type`, `subtenter_id` und `storage_object_id` Technical `subtente_id` und `service_type` ist `service_type` Dateidienste oder Blockspeicher, ist die Zone erforderlich. Andere Zone</block>
-  <block id="0725399a92712a8b8a9b398144b43a68" category="cell">*Körperbeispiel anfordern:* .... { "Betreff": "String", "Kommentar": "String", "Kategorie": "Abonnement", "Priorität": "Normal", "Abonnement": "A-S00003969", „Engagement“: { „Service_Level“: „Standard“, „New_Commitment“: 10 }, „Zone“: „au-ost1-A“, „subTenant_id“: „5d2fb0fb4f47df00015274e3“, „Storage_object_type“: „Dateiserver“, „Storage_object_id“: „5d2fb0fb4f47df00015274e3“, „Service_type“: „File Services“ } .... *Beispiel des Antwortkörpers:* .... { "Status": { "User_message": "String", "verbose_message": "String", "Code": "String" }, "Ergebnis": { "Reted_Records": 1, "Records": [ { "id": "String", "Subject": "String", "description": "String", "Status": "Neu", "Priority": "Normal", "normal" "CreatedDate": "2020-05-12T03:18:25+0000", "UpdatedDate": "2020-05-12T03:18:25+0000" } ] } .... == Service-Request-Kategorien abrufen die folgende Tabelle enthält die Kategorien der Service-Request-Anforderung für einen bestimmten Mandanten.</block>
-  <block id="b235a9ee30b02d07ff714bb1542b9b1d" category="paragraph">HTTP-Methode Pfad Beschreibung Parameter</block>
-  <block id="3cfc9b45a25da8c56ea24ecc26ed6f54" category="paragraph">`GET``/v2.1/Tenant/{Tenant_id}/serviceresquests/categories` Retrieve Service Requests categories. `Tenant_id:` (optional) gibt die Serviceanforderungen für einen bestimmten Mandanten zurück.</block>
-  <block id="c31fc18f14b317fa271c222c8662ff0b" category="cell">Anforderung Körperattribute: `none` *Körperbeispiel anfordern:* .... Keine .... *Beispiel des Antwortkörpers:* .... { „Status“: { „User_message“: „OK. 5 Datensätze zurückgegeben.", "verbose_message": "", "Code": 200 }, "Ergebnis": { "Reted_Records": 5, "Records": [ { "Schlüssel": "dr", "Wert": "Disaster Recovery Failover" }, { "Schlüssel": "Technischer Wert": "Technischer Wert": "Anderer Schlüssel", "anderer Wert": "Abonnement", "anderer Schlüssel": } { } { } { "Backup Restore" } ] } } ....</block>
   <block id="8615a49d222eeb50c22f60e749d36d5e" category="paragraph">*Was ist NetApp Service Engine?*</block>
   <block id="a5e1a7f3557344aca20fdd047ee9cace" category="paragraph">*NetApp Service Engine erforderlich im kundenbetriebenen Modell?*</block>
   <block id="46eed4ec681c7ae2f6418744e02e8ba8" category="paragraph">*Wo ist die NetApp Service Engine installiert?*</block>
@@ -3130,4 +3117,25 @@
   <block id="3367785c4c24c46720a1f71a3ba620db" category="sidebar">Managen Sie Azure Volumes</block>
   <block id="12c44922182533b1b7bb4417b61b95ec" category="sidebar">Managen Sie Cloud Volumes Service für die Google Cloud Platform</block>
   <block id="8f827fcb6054a7882181161868caf231" category="sidebar">Sichern Sie Ihre Volumes</block>
+  <block id="a57f88e039b309218996266b80792e58" category="cell"><block ref="3854361464b9a2c3832c47bd39cddf54" prefix="" category="inline-code"></block>: Die Mieter-ID.</block>
+  <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="cell">Kategorie</block>
+  <block id="b651efdb98a5d6bd2b3935d0c3f4a5e2" category="cell">Erforderlich</block>
+  <block id="787ad0b7a17de4ad6b1711bbf8d79fcb" category="cell">Abonnement</block>
+  <block id="102da3147e28a4669677fece4454c61f" category="cell"><block ref="b48b13e73a6ac2a86dc54425dd24d9ff" prefix="" category="inline-code"></block> Und<block ref="e4586172850ecb0954a632168fa0151a" prefix=" " category="inline-code"></block></block>
+  <block id="f92d949ea1f5479f6dd45574e5f59f28" category="cell"><block ref="2aae5dbec169c641bc991a21bba7ded3" prefix="" category="inline-code"></block>,<block ref="f5d285f3c30970bcfcb9cf6292e5948c" prefix=" " category="inline-code"></block>, und<block ref="d8ebad67e49e38d52183df8396039c53" prefix=" " category="inline-code"></block></block>
+  <block id="ad1ec60c9e1f10f6a9f5d9f2c5254bc6" category="cell">Technik</block>
+  <block id="1efcb45ce32fab1dd54282a048a8f6e3" category="cell"><block ref="f5d285f3c30970bcfcb9cf6292e5948c" prefix="" category="inline-code"></block> Und<block ref="f43697a993f56955e3f9e353b3b1f210" prefix=" " category="inline-code"></block>Wenn<block ref="f43697a993f56955e3f9e353b3b1f210" prefix=" " category="inline-code"></block> Ist File Services oder Block-Storage, Zone ist erforderlich.</block>
+  <block id="6311ae17c1ee52b36e68aaf4ad066387" category="cell">Andere</block>
+  <block id="ac10508ad70f95b289ff520585169501" category="section-title">Service-Request-Kategorien abrufen</block>
+  <block id="a6a3bee28fe66348826c742871e5920e" category="paragraph">In der folgenden Tabelle sind die Kategorien für Service-Anfragen für einen bestimmten Mandanten aufgeführt.</block>
+  <block id="ef64390758ed006361a142422376a39e" category="cell">Abrufen der Kategorien von Service-Anfragen.</block>
+  <block id="ea56ca71a57b3800165f4d81ba320151" category="cell"><block ref="e1e0f0ad1318adbdd4cfa12016e5d06c" prefix="" category="inline-code"></block> (Optional) gibt die Serviceanforderungen für einen bestimmten Mandanten zurück.</block>
+  <block id="fecdea178a71ffb2ee93ddcad3d9e020" category="paragraph">Viele API-Aufrufe liefern eine große Anzahl von Datensätzen. Die Anzahl der Datensätze kann durch Angabe des begrenzt werden<block ref="7a86c157ee9713c34fbd7a1ee40f0c5a" prefix=" " category="inline-code"></block> Und<block ref="aa9f73eea60a006820d0f8768bc8a3fc" prefix=" " category="inline-code"></block> Werte.</block>
+  <block id="e50d94eefbc2c17580b0e1711fe9e9e7" category="paragraph">Begrenzen Sie diese Werte:</block>
+  <block id="d2860166293af0668ceaf6fdcb9f2694" category="paragraph">Sie können Benutzer erstellen und zu bestimmten Gruppen hinzufügen, um ihnen Objekt-Storage-Zugriff zuzuweisen.</block>
+  <block id="496e90ab3704e4ca4304b45b9f12bbd6" category="list-text">Damit Cloud Volumes Service für GCP bereits von Ihrem Support-Team unter BlueXP konfiguriert ist. Weitere Informationen finden Sie unter<block ref="1956ecad31d7ae695fe28eacaf067e5e" category="inline-link-rx"></block>.</block>
+  <block id="2755dc789d3f5fb4106ccd91690ecf5a" category="cell">Name der Arbeitsumgebung in BlueXP.</block>
+  <block id="d717179901a081426cfa25f7009d2d04" category="cell">Applikations-(Client-)ID. Die ID eines Active Directory-Dienstprinzipals, den BlueXP zur Authentifizierung mit Azure Active Directory verwenden kann.</block>
+  <block id="a7aef034348bc38d9b7f16020d181733" category="paragraph">NetApp Keystone Flex Subscription (Flex Subscription) wird durch die folgenden Service-Bedingungen und -Beschreibungen geleitet.</block>
+  <block id="0493ca6a55a3d28e65cc473a5710b470" category="list-text">Das Flex-Abonnement ist für mindestens ein Jahr und bis zu drei Jahre verfügbar. Nach der Anfangslaufzeit wird der Service jährlich nachgebessbar. Die Kapazität kann in Schritten von nur 1 tib erhöht werden.</block>
 </blocks>
