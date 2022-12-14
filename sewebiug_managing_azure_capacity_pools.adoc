@@ -41,6 +41,7 @@ In der Liste werden einfache Informationen zu den einzelnen Azure-Kapazitätspoo
 
 In diesem Abschnitt wird das Hinzufügen eines Azure Capacity Pools beschrieben.
 
+.Bevor Sie beginnen
 Sie benötigen:
 
 * Der Untermandant, zu dem die Kapazität gehört

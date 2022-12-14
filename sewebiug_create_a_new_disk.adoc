@@ -115,6 +115,7 @@ NOTE: Wählen Sie eine Option aus, um die Performance-Details für dieses Servic
 . Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Erstellen der Festplatte erstellt.
 
 
+.Nachdem Sie fertig sind
 Datenträger erstellen wird als asynchroner Job ausgeführt. Ihre Vorteile:
 
 * Überprüfen Sie den Status des Jobs in der Jobliste.

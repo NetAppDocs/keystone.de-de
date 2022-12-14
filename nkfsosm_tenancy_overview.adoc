@@ -19,10 +19,12 @@ NetApp Keystone Flex Subscription (Flex Subscription) verwendet die Konzepte von
 
 NOTE: Im Rahmen von Flex Subscription handelt es sich bei der einzelnen Mandanten um ein von NetApp betriebenes Modell, bei der Mandantenfähigkeit um ein vom Partner betriebenes Modell.
 
+.Mandanten
 Ein Mandant ist die primäre Rechnungseinheit, die in Flex Subscription definiert ist. Jeder Kunde, der in das Flex Subscription aufgenommen wird und ein Abonnement der Services beinhaltet, existiert als Flex-Abonnementmandant. Der Kunde stellt NetApp einen Kundennamen und/oder eine Kennung zur Verfügung, die zum Zweck des Onboarding von Mandanten und der Nachverfolgung von Abonnementdaten und Vertragsbedingungen erforderlich sind.
 
 In einer mandantenfähigen Umgebung ist ein Partner ein Mandant/Kunde von NetApp in einer Flex Subscription-Umgebung. Der Partner wiederum kann mehrere Mandanten oder Kunden übernehmen, die mit Endkunden/Untermietern verbunden sind. In diesem Modell sind Mandanten/Untermandanten Kunden der Service Provider und haben keine Abrechnungsbeziehung zu NetApp.
 
+.Untermieter
 Untermandanten von Flex Subscription befinden sich vollständig innerhalb eines übergeordneten Mandanten mit einer Many-to-One-Beziehung. Untermandanten ermöglichen die Trennung logischer Ressourcen innerhalb einer Mandanten und werden als Basis für die Showback-Berichterstattung verwendet. Alle Storage-Ressourcen (File-Services, Block-Storage und Objekt-Storage) gehören zu einer Untermandant.
 
 image:nkfsosm_image10.png[""]

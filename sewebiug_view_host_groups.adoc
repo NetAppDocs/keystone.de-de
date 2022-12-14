@@ -39,6 +39,7 @@ Es ist möglich, eine leere Host-Gruppe zu erstellen und als Platzhalter einer F
 
 
 
+.Bevor Sie beginnen
 Zum Erstellen der Host-Gruppe benötigen Sie Folgendes:
 
 * Der Untermandant, die Region und die Zone, in der die Host-Gruppe erstellt werden soll.
@@ -69,6 +70,7 @@ NOTE: Wenn der Blockspeicher für eine Submandant/Zone-Kombination noch nicht in
 . Klicken Sie Auf *Erstellen*. Dadurch wird die Host-Gruppe erstellt.
 
 
+.Nachdem Sie fertig sind
 Nach der Erstellung der Host-Gruppe ist sie für die Zuordnung zu Festplatten verfügbar.
 
 

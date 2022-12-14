@@ -38,6 +38,7 @@ Informationen zum Anzeigen von Rechnungsdetails finden Sie unter link:sewebiug_b
 
 Engagierte Kapazität bezieht sich auf die Kapazitäten verschiedener Services in einem einzigen Abonnement, das von den involvierten Parteien (NetApp/Partner und Kunde) vereinbart wurde. Diese Kapazität wird in jeder Flex Subscription -Bestellung angegeben und wird unabhängig vom tatsächlichen Verbrauch in Rechnung gestellt.
 
+.Messung der verbrauchten Kapazität
 Im Rahmen der Flex Subscription Service-Implementierung überwacht NetApp fortlaufend die Nutzung des Service und misst diesen. Alle fünf Minuten wird vom System ein Verbrauchsdatensatz generiert, in dem die aktuelle verbrauchte Kapazität für das Abonnement detailliert beschrieben wird. Diese Daten werden über den Abrechnungszeitraum hinweg aggregiert, um Rechnungen und Nutzungsberichte zu erstellen.
 
 
@@ -52,10 +53,13 @@ Wenn die verbrauchte Kapazität größer ist als die für ein bestimmtes Service
 
 Flex Subscription Services werden monatlich und jährlich abgerechnet.
 
+.Monatliche Abrechnung
 Rechnungen werden monatlich versendet. Für den Monat, in dem die Dienstleistungen verfügbar sind, wird im nächsten Monat eine Rechnung verschickt. So wird beispielsweise die Rechnung für die im Januar verwendeten Dienste Anfang Februar zugestellt. Diese Rechnung beinhaltet die Gebühren für die verplante Kapazität und, falls zutreffend, eventuelle Burst-Nutzung.
 
+.Jährliche Abrechnung
 Eine Rechnung wird zu Beginn jedes Abonnementjahres für die Mindestzahlung der verplanten Kapazität erstellt. Sie wird am Startdatum des Abonnements generiert. Am Ende eines Abonnementquartals wird eine andere Rechnung gesendet, in der die anwendbaren Gebühren für jegliche Burst-Nutzung in diesem Quartal zusammengefasst werden. Wenn die zugesandte Kapazität während eines Abonnements geändert wird, wird eine Rechnung am selben Tag versendet, an dem die Änderung der zugesandten Kapazität wirksam ist, für die anteiligen Mindestzahlungen für den Rest des Abonnementjahres.
 
+.Kulanzzeit bei Burst-Rechnungen
 Während der ersten 60 Tage nach der Aktivierung eines Abonnements wird jeder Burst-Verbrauch, den Sie erhalten, aufgezeichnet, jedoch nicht auf Ihrer Flex Subscription Rechnung berechnet. Diese Kulanzzeit gibt Ihnen die Zeit, Ihren Speicher mit den entsprechenden AQoS-Einstellungen (Adaptive Quality of Service) zu konfigurieren, damit er ordnungsgemäß überwacht und abgerechnet werden kann. Bei der richtigen Konfiguration des Storage können Sie unerwartete Burst-Gebühren vermeiden. Jegliche Burst-Nutzung, die nach der anfänglichen Kulanzzeit von 60 Tagen angesammelt wurde, wird auf Ihrer nächsten Rechnung in Rechnung gestellt. Diese Kulanzzeit hat keine Auswirkungen auf Änderungen oder Verlängerungen Ihrer bestehenden Abonnements.
 
 

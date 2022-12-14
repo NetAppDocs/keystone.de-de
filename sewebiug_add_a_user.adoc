@@ -16,6 +16,7 @@ summary: Keystone Hinzufügen eines Benutzers
 [role="lead"]
 In diesem Abschnitt wird beschrieben, wie ein Benutzer hinzugefügt wird.
 
+.Bevor Sie beginnen
 Sie benötigen:
 
 * Die Mandanten, denen der Benutzer Zugriff erhalten soll.

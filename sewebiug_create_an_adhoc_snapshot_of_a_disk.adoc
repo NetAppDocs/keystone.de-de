@@ -22,4 +22,5 @@ In diesem Abschnitt wird beschrieben, wie ein Ad-hoc-Snapshot einer Festplatte e
 . Geben Sie im Dialogfeld Snapshot erstellen einen Namen für Ihren Snapshot ein und klicken Sie auf *Erstellen*.
 
 
+.Nachdem Sie fertig sind
 Der Snapshot kann ein paar Minuten dauern, bis er verfügbar ist. Wenn verfügbar, können Sie eine weitere Festplatte durch Klonen dieses Snapshots erstellen. Weitere Informationen finden Sie unter link:sewebiug_create_a_disk_from_a_snapshot.html["Erstellen Sie eine Festplatte aus einem Snapshot"].

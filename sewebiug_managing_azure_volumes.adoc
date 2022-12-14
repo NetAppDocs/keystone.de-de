@@ -41,6 +41,7 @@ In der Liste werden einfache Informationen zu jedem Azure-Volume angezeigt. Übe
 
 In diesem Abschnitt wird das Hinzufügen eines Azure-Volume beschrieben.
 
+.Bevor Sie beginnen
 Sie benötigen:
 
 * Der Submandant, zu dem das Azure Volume gehört

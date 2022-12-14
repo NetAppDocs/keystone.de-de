@@ -205,8 +205,10 @@ Asynchrone Disaster Recovery-Replizierung für ein primäres Volume erfordert Fo
 * Aktivieren oder Deaktivieren der Disaster Recovery-Replizierung der Dateifreigabe oder Festplatte Standardmäßig sind Freigaben und Festplatten für die Disaster-Recovery-Replizierung aktiviert, wenn Disaster Recovery konfiguriert ist.
 
 
+.Dateiserver oder Block-Speicher zur Unterstützung der asynchronen Disaster Recovery konfigurieren
 Ermöglichen Sie asynchrone Disaster Recovery auf einem File-Server oder Block-Storage bei der Erstellung oder zu einem späteren Zeitpunkt. Nach Aktivierung kann die Disaster Recovery nicht deaktiviert werden, und die Disaster-Recovery-Zone kann nicht mehr geändert werden. Der Disaster Recovery-Zeitplan gibt an, wie oft die Daten an den Disaster-Recovery-Standort repliziert werden (stündlich, vier Stunden oder täglich).
 
+.Ermöglichen Sie asynchrones Disaster Recovery auf File Shares oder Festplatte
 Eine Dateifreigabe oder Festplatte kann nur für eine asynchrone Disaster-Recovery-Replizierung konfiguriert werden, wenn der übergeordnete Dateiserver oder Block-Speicher zum asynchronen Disaster Recovery konfiguriert wurde. Wenn die Replikation im übergeordneten Objekt aktiviert ist, wird die Replikation in den Dateifreigaben oder Festplatten aktiviert, die von den übergeordneten Hosts genutzt werden. Sie können die Replikation einer bestimmten Freigabe oder Festplatte ausschließen, indem Sie die Disaster Recovery auf dieser Freigabe/Festplatte deaktivieren. Es ist möglich, zwischen Aktivierung und Deaktivierung der Replikation auf diesen Freigaben/Festplatten umzuschalten.
 
 *Hinweise:*

@@ -23,6 +23,7 @@ Buckets werden unter einem Untermandanten erstellt.
 . Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Erstellen des Buckets erstellt.
 
 
+.Nachdem Sie fertig sind
 Das Erstellen von Bucket wird als asynchroner Job ausgeführt. Ihre Vorteile:
 
 * Überprüfen Sie den Status des Jobs in der Jobliste.

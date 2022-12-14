@@ -21,6 +21,7 @@ Dateiserver gehören einem Untermandanten an und werden innerhalb einer Zone ers
 * Aktivieren Sie es CIFS-aktiviert. NFS-Dienste sind standardmäßig aktiviert.
 
 
+.Bevor Sie beginnen
 Stellen Sie sicher, dass Sie folgende Funktionen zum Erstellen des Servers haben:
 
 * Der Submandant, der den Server hostet.
@@ -89,6 +90,7 @@ NOTE: Wenn Sie ein Abonnement von synchronem Disaster Recovery-Datenschutz genom
 
 NOTE: Wenn Sie einen CIFS-fähigen Server erstellen, müssen Sie für den eingegebenen Domänennamen (FQDN) den Active Directory-Benutzernamen und das Active Directory-Kennwort eingeben und auf *Bestätigen* klicken.
 
+.Nachdem Sie fertig sind
 Die Servererstellung wird als asynchroner Job ausgeführt. Ihre Vorteile:
 
 * Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].

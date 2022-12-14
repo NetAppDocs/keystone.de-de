@@ -31,6 +31,7 @@ NOTE: Wenn die asynchrone Disaster Recovery bereits aktiviert ist, kann sie nich
 . Klicken Sie Auf *Fertig*. Dadurch wird ein Job zum Ändern des Servers erstellt.
 
 
+.Nachdem Sie fertig sind
 Änderungsserver wird als asynchroner Job ausgeführt. Ihre Vorteile:
 
 * Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].

@@ -32,6 +32,7 @@ image:sewebiug_image25.png["Fehler: Fehlendes Grafikbild"]
 . Klicken Sie Auf *Bestätigen*. Dadurch wird ein Job zum Löschen der Freigabe erstellt.
 
 
+.Nachdem Sie fertig sind
 Freigabe löschen wird als asynchroner Job ausgeführt. Ihre Vorteile:
 
 * Überprüfen Sie den Status des Jobs in der Jobliste. Informationen zur Verfolgung von Jobs finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].

@@ -25,4 +25,5 @@ Verwenden Sie diese Methode, um eine Objekt-Speichergruppe zu erstellen.
 . Klicken Sie Auf *Erstellen*. Dadurch wird ein Job erstellt, um die Gruppe mit den angegebenen Einstellungen zu erstellen.
 
 
+.Nachdem Sie fertig sind
 Objekt-Storage-Gruppe erstellen wird als asynchroner Job ausgeführt. Sie können den Status des Jobs in der Liste Jobs überprüfen. Informationen zur Verfolgung von Jobs finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].

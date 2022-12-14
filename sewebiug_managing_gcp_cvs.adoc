@@ -25,6 +25,7 @@ NOTE: Die Cloud Volumes Service-Konten für die Mandanten und Untermandanten sol
 
 Sie können Ihre Cloud-Services auf Google Cloud verwalten, indem Sie im linken Navigationsbereich im Menü *CLOUD SERVICES* klicken. Auf der Seite Cloud Services werden alle Cloud-Services für alle Untermandanten eines ausgewählten Mandanten angezeigt. Sie können die Cloud-Services auf dieser Seite anzeigen, ändern und löschen. Sie können auch einen neuen Service hinzufügen, indem Sie diese Schritte ausführen.
 
+.Bevor Sie beginnen
 Dafür müssen Sie Folgendes gewährleisten:
 
 * Der Untermieter ist für den Google Cloud-Service abonniert.

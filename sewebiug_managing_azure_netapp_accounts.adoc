@@ -41,6 +41,7 @@ In der Liste werden einfache Informationen zu jedem Azure NetApp Konto angezeigt
 
 In diesem Abschnitt wird das Hinzufügen eines Azure NetApp Accounts beschrieben.
 
+.Bevor Sie beginnen
 Sie benötigen:
 
 * Der Untermandant, zu dem der Azure NetApp Account gehört

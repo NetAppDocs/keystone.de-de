@@ -16,6 +16,7 @@ summary: Keystone erstellt Benutzer von Objekt-Storage
 [role="lead"]
 Sie können Benutzer erstellen und zu bestimmten Gruppen hinzufügen, um ihnen Objekt-Storage-Zugriff zuzuweisen.
 
+.Bevor Sie beginnen
 Da ein Objektspeicherbenutzer einer Objektspeichergruppe angehört, muss die Objektspeichergruppe vorhanden sein, bevor Sie den Benutzer erstellen können.
 
 .Schritte
@@ -31,6 +32,7 @@ Da ein Objektspeicherbenutzer einer Objektspeichergruppe angehört, muss die Obj
 . Klicken Sie Auf *Erstellen*. Dadurch wird ein Job zum Erstellen des Benutzers mit den angegebenen Einstellungen erstellt.
 
 
+.Nachdem Sie fertig sind
 Benutzer erstellen wird als asynchroner Job ausgeführt. Ihre Vorteile:
 
 * Überprüfen Sie den Status des Jobs in der Jobliste. Weitere Informationen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Anzeige von Jobs und Job-Status"].
