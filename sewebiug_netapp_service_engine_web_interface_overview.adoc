@@ -91,7 +91,7 @@ Tritt auf, wenn eine Änderung an der Speicherressource (File Server, Files Hare
 * *importierte* Objekte, die außerhalb der NetApp Service Engine bereitgestellt werden, werden mit diesem Status importiert, wenn sie die Kriterien von NetApp Keystone Flex Subscription (Flex Subscription) nicht erfüllen.
 +
 
-NOTE: Dieser Status bedeutet in der Regel, dass auf dem Objekt keine QoS-Richtlinie angewendet wird. Daher kann dieses Objekt nicht durch die NetApp Service Engine als Teil des Flex Subscription gemanagt werden. Sie können das Objekt (über den Stift bearbeiten) ändern und einen entsprechenden Service Level zuweisen. Dadurch wird der Status dieses Objekts in „operativ“ geändert.
+NOTE: Dieser Status bedeutet in der Regel, dass auf dem Objekt keine QoS-Richtlinie angewendet wird. Daher kann dieses Objekt nicht durch die NetApp Service Engine als Teil des Flex Subscription gemanagt werden. Sie können das Objekt (über den Bearbeitungsstift) ändern und ein entsprechendes Service-Level zuweisen. Dadurch wird der Status dieses Objekts in „operativ“ geändert.
 
 * *nicht standardmäßige* Objekte, die außerhalb der NetApp Service Engine bereitgestellt werden, werden mit diesem Status importiert, wenn sie die Kriterien von NetApp Keystone Flex Subscription (Flex Subscription) nicht erfüllen.
 +

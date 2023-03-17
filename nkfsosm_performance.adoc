@@ -14,9 +14,9 @@ summary: Keystone Flex Abonnement-Performance
 
 
 [role="lead"]
-NetApp Keystone Flex Subscription (Flex Subscription) bietet Kapazität nach vordefinierten Service-Leveln oder Performance-Service-Leveln.
+NetApp Keystone Flex Subscription (Flex Subscription) bietet Kapazität zu vordefinierten Performance-Service-Levels (Service-Levels).
 
-Jedes Service-Level (Service-Level) wird durch seine I/O-Dichte definiert. Dies ist das Verhältnis von Performance (Input/Output Operations per Second [IOPS]) und verwendeter Storage (tib an gespeicherten Daten), d. h. IOPS/tib.
+Jedes Service-Level wird durch seine I/O-Dichte definiert. Dies ist das Verhältnis von Performance (Input/Output Operations per Second [IOPS]) und verwendeter Storage (tib an gespeicherten Daten), d. h. IOPS/tib.
 
 Jedes von den Flex Subscription Services gemanagte Volume ist einem Service Level zugeordnet. Alle I/O-Vorgänge und der gesamte auf dem jeweiligen Volume verwendete Storage werden in die E/A-Dichteberechnung des Volumes berücksichtigt.
 
@@ -129,6 +129,4 @@ NOTE: ^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib fü
 
 NOTE: ^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib für eine Kombination aus beliebigen Dateifreigabe- und Block-Service-Leveln für NetApp Lösungen. ^2^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Servicestufe für Channel-geführte Opportunitys ausgewählt. ^3^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Service-Tier ausgewählt für jeden Opportunity-Typ.
 
-Sie können Ihren Abonnements über mehrere Bildschirme der NetApp Service Engine Benutzeroberfläche Service Levels zuweisen. Weitere Informationen finden Sie unter:
-
-* * link:nkfsosm_tenancy_overview.html["Mandantenfähigkeit und Mandantenfähigkeit in Flex Subscription"]
+Sie können Ihren Abonnements über mehrere Bildschirme der NetApp Service Engine Benutzeroberfläche Service Levels zuweisen. Weitere Informationen finden Sie unter link:nkfsosm_tenancy_overview.html["Mandantenfähigkeit und Mandantenfähigkeit in Flex Subscription"].

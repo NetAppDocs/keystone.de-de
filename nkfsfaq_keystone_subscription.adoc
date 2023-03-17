@@ -58,4 +58,4 @@ Die folgenden Fragen geben Antworten auf Ihre häufigen Fragen zu NetApp Keyston
 
 *können Workloads zwischen den Tiers verschoben werden?* Ja, Workloads können zwischen den Tiers verschoben werden, vorausgesetzt der Benutzer hat die Ebene abonniert, in die der Workload verschoben wird. Wir empfehlen jedoch nicht den Wechsel von einer höheren Ebene zu einer niedrigeren Ebene, da dies zu einer Verschlechterung der Performance führen kann. Um diesen Prozess zu erreichen, müssen Sie lediglich die Dateifreigabe bearbeiten und die Service-Level-Einstellung ändern.
 
-*welche Software-Version (z.B. ONTAP) ist standardmäßig installiert?* abhängig vom Servicestufe abonniert (z. B. ONTAP mit Datei- und Blockdiensten, SANtricity für Block und StorageGRID für Objekt) das Support-Team installiert die neueste stabile Version ohne Sicherheits- oder Funktionsprobleme.
+*Welche Software-Version (z.B. ONTAP) ist standardmäßig installiert?* je nach abonnierter Service-Tier (z.B. ONTAP mit Datei- und Blockdiensten, SANtricity für Block und StorageGRID für Objekt) installiert das Support-Team die neueste stabile Version ohne Sicherheits- oder Funktionsprobleme.

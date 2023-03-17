@@ -56,7 +56,7 @@ Im linken Navigationsbereich können Sie Volumes für einen Untermandanten auf G
 . Wählen Sie den Untermandanten aus, für den Sie das Volume erstellen möchten.
 . Wählen Sie die Region und das Netzwerk aus. Die Liste wird basierend auf dem Cloud Volumes Service-Konto für den Untermandanten in GCP gefiltert.
 . Fügen Sie einen Namen für das Volume hinzu.
-. Wählen Sie den entsprechenden Service Level aus.
+. Wählen Sie das entsprechende Service-Level aus.
 . Geben Sie den Dateipfad des Volumes als Erstellungstoken ein.
 . Weisen Sie die Volume-Quote in Bytes zu.
 . Fügen Sie bei Bedarf Tags für das Volume hinzu.

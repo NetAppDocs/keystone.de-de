@@ -4,7 +4,7 @@ permalink: nkfsosm_service_level_metrics_and_definitions.html
 keywords: netapp, keystone, service, level, metrics, definitions, 
 summary: Keystone Service Level-Kennzahlen und Definitionen 
 ---
-= Service Level-Kennzahlen und -Definitionen
+= Service-Level-Metriken und -Definitionen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
