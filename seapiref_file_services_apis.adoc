@@ -22,7 +22,7 @@ Bevor Sie Dateifreigaben erstellen, müssen Sie Dateiserver erstellen, um sie zu
 
 == File Server-APIs
 
-Dateiserver-APIs können Sie verwenden, um Ihre Dateiserver anzuzeigen und zu verwalten. Weitere Informationen zu Dateiservern finden Sie unter link:hsewebiug_create_a_file_server.html["Erstellen Sie einen Dateiserver"].
+Dateiserver-APIs können Sie verwenden, um Ihre Dateiserver anzuzeigen und zu verwalten. Weitere Informationen zu Dateiservern finden Sie unter link:sewebiug_create_a_file_server.html["Erstellen Sie einen Dateiserver"].
 
 [cols="1,1,3,2"]
 |===

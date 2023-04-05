@@ -93,7 +93,10 @@ Die folgenden Farben in den Balkendiagrammen geben die verbrauchte Kapazität an
 ** Gelb: 80 % - 100 %.
 ** Rot: Burst-Nutzung (100 % der festzugesagte Kapazität bis zur vereinbarten Burst-Grenze)
 ** Violett: Über der Burst-Grenze oder `Above Limit`.
-** Grau: _Provisorische Nutzung_ - Nutzung aufgezeichnet, wenn die genauen Daten für den Zeitraum nicht verfügbar sind und durch die am vorherigen Datenerfassungspunkt verfügbaren Daten ersetzt werden.
++
+
+NOTE: Wenn Sie den Mauszeiger über ein Balkendiagramm bewegen, können Sie die _Provisional usage_-Daten anzeigen. Dies ist die Verwendung, die aufgezeichnet wird, wenn die genauen Daten für den Zeitraum nicht verfügbar sind und durch die Daten ersetzt werden, die am vorherigen Datenerfassungspunkt verfügbar sind.
+
 
 
 * *Current verbrauchte*: Indikator für die verbrauchte Kapazität (in tib), die für das Service-Level definiert ist. Dieses Feld verwendet bestimmte Farben für die Verwendung:
