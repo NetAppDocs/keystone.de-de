@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: nkfsosm_overview.html 
 keywords: netapp, keystone, kfs, overview, 
-summary: NetApp Flex Abonnement – Übersicht 
+summary: Übersicht über NetApp Keystone 
 ---
 = Betriebsmodell, Rollen und Verantwortlichkeiten
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: NetApp Flex Abonnement – Übersicht
 
 
 [role="lead"]
-Das flexible NetApp Keystone Abonnement (Flex Subscription) basiert auf dem Mandantenmodell.
+NetApp Keystone basiert auf dem Modell der Mandantenfähigkeit.
 
-Flex Subscription bietet drei Betriebsmodelle für die Servicebereitstellung.
+Keystone bietet drei Betriebsmodelle für die Service-Bereitstellung.
 
 * *vom NetApp betriebenen Modell* ermöglicht dem Kunden die Anmeldung zu den angebotenen Services (je nach Auswahl der Leistungsstufen und Storage-Servicetypen) und wählt die Option für den Betrieb mit NetApp gegen Aufpreis aus. NetApp definiert die Architektur und die Produkte, wird beim Kunden installiert und managt mithilfe von NetApp Storage- und IT-Ressourcen die täglichen Infrastrukturmanagement-Vorgänge. Verfügbare Storage-Servicetypen sind Datei, Block und Objekt. Storage-Abonnements auf Basis von Cloud Volumes Service für GCP und AWS können auch über Ihre NetApp Keystone Instanz gemanagt werden.
 * *vom Partner betriebene* *Modell* ist dem von NetApp betriebenen Modell ähnlich, aber der Partner betreibt den Service für seine Endkunden. In diesem Modell wird der Partner als Vertragspartei referenziert. Mandanten sind Kunden von Partnern oder Service-Providern und haben keine Abrechnungsbeziehung zu NetApp. Ein vom Partner betriebene Modell verfügt in der Regel über eine mandantenfähige Umgebung, in der Mandanten und Endkunden/Untermieter über eigene Abonnements verfügen, die vom Service-Provider/Partner in Rechnung gestellt werden. Der Partner-Administrator führt die administrativen Aufgaben für alle Mandanten aus. Die Funktionen, die ein Administrator in einem partnergesteuerten Modell wahrnehmen kann, unterscheiden sich von denen eines Administrators in einem von NetApp betriebenen Modell.

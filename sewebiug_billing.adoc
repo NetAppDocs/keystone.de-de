@@ -14,9 +14,9 @@ summary: Rechnungsdaten anzeigen und herunterladen
 
 
 [role="lead"]
-Die monatlichen Gebühren für alle abonnierten Services in Ihrem NetApp Keystone Flex Abonnement (Flex Abonnement) können Sie auf dem Dashboard und auf dem Bildschirm „Rechnungen“ der NetApp Service Engine einsehen.
+Die monatlichen Gebühren für alle abonnierten Services können Sie in Ihren NetApp Keystone Abonnementservices auf dem Dashboard der NetApp Service Engine und auf dem Bildschirm „Abrechnung“ einsehen.
 
-Sie können die Rechnungsdetails für alle abonnierten Services für Flex Subscription für die vorangegangenen Monate anzeigen. Die Abrechnung mit der Burst-Kapazität für jeden Monat wird hervorgehoben.
+Sie können die Abrechnungsdetails für alle Ihre abonnierten Services für Keystone Abonnementservices der letzten Monate anzeigen. Die Abrechnung mit der Burst-Kapazität für jeden Monat wird hervorgehoben.
 
 image:billing.png[""]
 
@@ -37,4 +37,4 @@ NOTE: Sie können auch auf den Pfeil oben rechts im Widget *Costs to Date* auf d
 . Wählen Sie einen beliebigen Monat aus, der in der Tabelle aufgeführt ist. In der Tabelle werden alle Abonnements für den Monat zusammen mit der zugehörigen Abrechnung angezeigt. Die Gebühren werden gemäß der verteilten Kapazität und der Burst-Nutzung aufgeteilt.
 
 
-Weitere Informationen zur Abrechnung finden Sie unter link:nkfsosm_kfs_billing.html["Flex Abonnement Abrechnung"]
+Weitere Informationen zur Abrechnung finden Sie unter link:nkfsosm_kfs_billing.html["Keystone Abrechnung"]

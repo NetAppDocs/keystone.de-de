@@ -4,7 +4,7 @@ permalink: rn_whats_new.html
 keywords: 'netapp, keystone, release notes, new features, what"s new,' 
 summary: Neue Funktionen der NetApp Service Engine 
 ---
-= Was ist neu in dieser Version von NetApp Keystone Flex Subscription Services
+= Was ist neu an dieser Version der NetApp Keystone Services
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Neue Funktionen der NetApp Service Engine
 
 
 [role="lead"]
-Die Versionshinweise informieren Sie über die neuen Funktionen und Verbesserungen, die in den NetApp Keystone Flex Subscription (Flex Subscription)-Services eingeführt wurden, sowie über die bekannten Einschränkungen und Fehlerbehebungen.
+In den Versionshinweisen werden Sie über die neuen Funktionen und Verbesserungen informiert, die in den NetApp Keystone Abonnementservices eingeführt wurden, sowie über die bekannten Einschränkungen und Fehlerbehebungen.
 
-Die folgenden Funktionen wurden in verschiedenen Versionen der NetApp Service Engine eingeführt, um erweiterte Funktionalitäten zu unterstützen, die im NetApp Keystone Flex Subscription (FlexSubscription) angeboten werden:
+Die folgenden Funktionen wurden in verschiedenen Versionen der NetApp Service Engine eingeführt, um die erweiterten Funktionen zu unterstützen, die über Keystone Abonnementservices angeboten werden:
 
 
 
@@ -33,7 +33,7 @@ Das Dashboard von NetApp Service Engine wurde neu gestaltet und umfasst folgende
 * *Kapazitätsauslastung* zur Anzeige der genutzten Kapazität für Ihre abonnierten Dienste.
 * *Monatliche Gebühren (Abrechnung)* für die Anzeige der aggregierten monatlichen Gebühren für alle Ihre Abonnements.
 * *Alerts* zur Anzeige der Zusammenfassung der neuesten Warnungen in Ihrer Umgebung.
-* *Service Requests* für die Anzeige der Liste der letzten Serviceanforderungen, die in Ihrer Umgebung erzeugt wurden. Weitere Informationen finden Sie unter link:sewebiug_dashboard.html["Zeigen Sie Das Flex Subscription Dashboard An"].
+* *Service Requests* für die Anzeige der Liste der letzten Serviceanforderungen, die in Ihrer Umgebung erzeugt wurden. Weitere Informationen finden Sie unter link:sewebiug_dashboard.html["Keystone Dashboard Ansehen"].
 
 
 
@@ -64,17 +64,17 @@ Die folgenden Verbesserungen wurden auf der Benutzeroberfläche der NetApp Servi
 
 == Funktionen der NetApp Service Engine 2.1
 
-Zu den neuen Funktionen in dieser Version gehören die Unterstützung von Mandantenfähigkeit in einer Flex Subscription Umgebung sowie die Tiering-Funktion, die das Verschieben inaktiver Daten auf eine kostengünstigere lokale oder Cloud-Tier erleichtert.
+Zu den neuen Funktionen in dieser Version gehören die Unterstützung von Mandantenfähigkeit in einer Keystone-Umgebung und Tiering-Funktionen, die das Verschieben inaktiver Daten auf eine kostengünstigere lokale oder Cloud-Tier vereinfachen.
 
 
 
-=== Einführung von Flex Subscription Services für Service Provider
+=== Wir stellen vor: Keystone Abonnementservices für Service-Provider
 
 Die NetApp Service Engine unterstützt jetzt das Management einer mandantenfähigen Umgebung durch einen Service-Provider. Sie können Funktionen für Provisionierung, Berichterstellung, Abrechnung und Management von Kunden mit eigenen Abonnements ausführen. Zur Unterstützung dieser Funktion wurden folgende Verbesserungen vorgenommen:
 
-* *Dashboard:* das Dashboard zeigt Informationen zu den Speicherabonnements an, z. B. Service-Tiers, Kapazitätsnutzung für jedes Servicelevel und zusätzliche Datenschutzdienste für eine bestimmte Abonnementnummer. Als Service-Provider können Sie sich die Details zu Ihren NetApp Keystone Flex Abonnement- und Mandantenabonnements ansehen. Als Mandantenadministrator können Sie die Details zu allen Mandantenabonnements für Ihre Mandantenfähigkeit anzeigen.
-* *Berichte:* Sie können Kapazitäts- und Performance-Berichte in Bezug auf Ihre NetApp Keystone Flex Subscription Nutzung und auch für Ihre Mandantennutzung erstellen. Als Partner-Administrator können Sie den Kapazitätsbericht für Ihre Flex Subscription-Nutzung über *Reports* > *Keystone Usage* anzeigen. Als Partner-Administrator können Sie die Berichte zur Kapazitätsnutzung für einen bestimmten Mandanten unter *Reports* > *Tenant-Nutzung*/*Kapazitätsnutzung* anzeigen. Als Mandantenadministrator können Sie die Mietberichte von *Reports* > *Tenant Usage* anzeigen.
-* *Abonnement:* als Partner-Administrator können Sie Ihre Flex Abonnement- und Mandantenabonnements von *ABONNEMENTS* > *Keystone Abonnements* und *ABONNEMENTS* > *Tenant-Abonnements* ansehen und aktualisieren. Als Mandantenadministrator können Sie Ihre Mandantenabonnements nur anzeigen.
+* *Dashboard:* das Dashboard zeigt Informationen zu den Speicherabonnements an, z. B. Service-Tiers, Kapazitätsnutzung für jedes Servicelevel und zusätzliche Datenschutzdienste für eine bestimmte Abonnementnummer. Als Service-Provider können Sie Details zu Ihrem NetApp Keystone-Abonnement und zu den Mandanten-Abonnements anzeigen. Als Mandantenadministrator können Sie die Details zu allen Mandantenabonnements für Ihre Mandantenfähigkeit anzeigen.
+* *Reporting:* Sie können Kapazitäts- und Leistungsberichte hinsichtlich Ihrer NetApp Keystone-Abonnementnutzung und auch für Ihre Mandantennutzung erstellen. Als Partneradministrator können Sie den Kapazitätsbericht für Ihre Abonnementnutzung unter *Berichte* > *Keystone Nutzung* einsehen. Als Partner-Administrator können Sie die Berichte zur Kapazitätsnutzung für einen bestimmten Mandanten unter *Reports* > *Tenant-Nutzung*/*Kapazitätsnutzung* anzeigen. Als Mandantenadministrator können Sie die Mietberichte von *Reports* > *Tenant Usage* anzeigen.
+* *Abonnement:* als Partneradministrator können Sie Ihre Abo- und Mietabonnements unter *ABONNEMENTS* > *Keystone Abonnements* und *ABONNEMENTS* > *Mietabonnements* anzeigen und aktualisieren. Als Mandantenadministrator können Sie Ihre Mandantenabonnements nur anzeigen.
 * *Benutzer:* je nach Ihrer Rolle können Sie einem neuen oder bestehenden Benutzer innerhalb einer Mietfähigkeit Berechtigungen zuweisen, die den Anforderungen entsprechend sind. Die Rolle kann ein NetApp Administrator, ein NetApp Administrator mit reinen Lesezugriff, ein Partner-Administrator oder ein Mandantenadministrator sein. Als Partner-Administrator können Sie neuen Benutzern nur Administrator- oder Mandantenadministratorrollen zuweisen. Ein Mandantenadministrator-Benutzer kann anderen Benutzern nur die Administratorrolle des Mandanten zuweisen.
 * *Netzwerke Menü:* als Partner Administrator können Sie die für Ihre Mandantenfähigkeit definierten Netzwerke anzeigen. Sie können Subnetze für Ihren Untermieter und die Zone auch aus *NETWORKS* > *Subnets* erstellen. Dies ist bei der Storage-Bereitstellung durch die Endkunden oder Untermandanten erforderlich.
 * API-Unterstützung: Die `/Tenant/{Tenant_id}/Zones/{Zone_Name}/Subnets` und `/Tenant/{Tenant_id}/Zones/{Zone_Name}/Subnets/{id}/Tags` APIs werden im Rahmen dieser Version angeboten, um Subnetze für Untermandanten zu erstellen und anzuzeigen.
@@ -83,8 +83,8 @@ Die NetApp Service Engine unterstützt jetzt das Management einer mandantenfähi
 Weitere Informationen zu dieser Funktion finden Sie unter den folgenden Links:
 
 * link:nkfsosm_overview.html["Betriebsmodell, Rollen und Verantwortlichkeiten"]
-* link:nkfsosm_tenancy_overview.html["Mandantenfähigkeit und Mandantenfähigkeit in Flex Subscription"]
-* link:sewebiug_dashboard.html["Zeigen Sie Das Flex Subscription Dashboard An"]
+* link:nkfsosm_tenancy_overview.html["Mandantenfähigkeit und Mandantenfähigkeit in Keystone"]
+* link:sewebiug_dashboard.html["Keystone Dashboard Ansehen"]
 * link:sewebiug_working_with_reports.html["Berichte anzeigen"]
 * link:sewebiug_managing_subscriptions.html["Verwalten von Abonnements"]
 * link:sewebiug_managing_tenants_and_subtenants.html["Management von Mandanten und Mandanten"]
@@ -95,7 +95,7 @@ Weitere Informationen zu dieser Funktion finden Sie unter den folgenden Links:
 
 === Tiering
 
-Der NetApp Keystone Flex Subscription Service umfasst jetzt eine Tiering-Funktion, die die NetApp FabricPool Technologie nutzt. Die Lösung identifiziert weniger häufig verwendete Daten und führt diese in einem Cold Storage durch, der sich im Besitz von NetApp befindet, bereitgestellt und lokal gemanagt wird. Sie können sich für Tiering entscheiden, indem Sie die Service Level für extreme Tiers oder Premium-Tiering abonnieren.
+Der NetApp Keystone Keystone Service umfasst jetzt eine Tiering-Funktion, die auf der NetApp FabricPool Technologie basiert. Die Lösung identifiziert weniger häufig verwendete Daten und führt diese in einem Cold Storage durch, der sich im Besitz von NetApp befindet, bereitgestellt und lokal gemanagt wird. Sie können sich für Tiering entscheiden, indem Sie die Service Level für extreme Tiers oder Premium-Tiering abonnieren.
 
 Die folgenden APIs wurden geändert und umfassen neue Attributwerte für die neuen Tiering Service-Level:
 
@@ -130,7 +130,7 @@ NOTE: Abonnements von Cloud Volumes Services werden außerhalb der NetApp Servic
 
 === Möglichkeit zum Managen von Objekten, die außerhalb der NetApp Service Engine bereitgestellt werden
 
-Die Volumes (Festplatten und Dateifreigaben), die bereits in der Kundenumgebung vorhanden sind und zu den in der NetApp Service Engine konfigurierten Storage VMs gehören, können jetzt als Teil des NetApp Keystone Flex Subscription (Flex Subscription) angezeigt und gemanagt werden. Die außerhalb der NetApp Service Engine bereitgestellten Volumes sind nun auf den Seiten *Shares* und *Festplatten* mit entsprechenden Statuscodes aufgelistet. Der Hintergrund-Prozess wird in regelmäßigen Abständen ausgeführt und importiert die ausländischen Workloads in Ihrer NetApp Service Engine Instanz.
+Die Volumes (Festplatten und Dateifreigaben), die bereits in der Kundenumgebung vorhanden sind und zu den in der NetApp Service Engine konfigurierten Storage VMs gehören, können jetzt im Rahmen Ihres NetApp Keystone Abonnements angezeigt und gemanagt werden. Die außerhalb der NetApp Service Engine bereitgestellten Volumes sind nun auf den Seiten *Shares* und *Festplatten* mit entsprechenden Statuscodes aufgelistet. Der Hintergrund-Prozess wird in regelmäßigen Abständen ausgeführt und importiert die ausländischen Workloads in Ihrer NetApp Service Engine Instanz.
 
 Die importierten Festplatten und File Shares dürfen sich nicht im gleichen Standard wie die vorhandenen Festplatten und File Shares auf der NetApp Service Engine befinden. Nach dem Import werden diese Festplatten und File Shares mit dem Status `Non-Standard` kategorisiert. Eine Serviceanfrage können Sie bei *Support > Serviceanfrage > Neue Serviceanfrage* richten, damit diese über das Portal der NetApp Service Engine standardisiert und gemanagt werden können.
 

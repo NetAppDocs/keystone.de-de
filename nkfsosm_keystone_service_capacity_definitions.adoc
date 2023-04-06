@@ -1,26 +1,21 @@
----
-sidebar: sidebar 
-permalink: nkfsosm_keystone_service_capacity_definitions.html 
-keywords: netapp, keystone, service, capacity, definitions, burst, committed capacity, consumed capacity, billed capacity 
-summary: Keystone Service-Kapazitätsdefinitionen 
----
-= Kapazitätsdefinitionen für Flex Subscription Service
-:hardbreaks:
+= Keystone Service-Kapazitätsdefinitionen
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
+
+---Definitionen sidebar: Sidebar permalink: nkfsosm_keystone_service_capacity_definitions.html Schlüsselwörter: netapp, Keystone, Service, Kapazität, Definitionen, Zusammenfassung der Burst-Kapazität, belegte Kapazität, abgerechnete Kapazität: Definitionen der Keystone Service-Kapazität –--
+
+
+
+= Keystone Service-Kapazitätsdefinitionen
 
 [role="lead"]
-Die Servicekapazitäten des NetApp Keystone Flex Subscription (Flex Subscription) umfassen:
+Die NetApp Keystone Service-Kapazitäten umfassen:
 
 
 
 == Logische Kapazität
 
-Diese Daten werden von einem Kunden in die Flex Subscription Infrastruktur abgelegt. Alle Flex Subscription-Kapazitäten beziehen sich auf eine logische Kapazität. Wenn beispielsweise eine 1 tib Datei auf der Flex Subscription Infrastruktur gespeichert ist, muss mindestens 1 tib Kapazität erworben werden.
+Das sind die Daten, die ein Kunde in die Keystone Infrastruktur setzt. Alle Keystone Kapazitäten beziehen sich auf eine logische Kapazität. Wenn beispielsweise eine 1 tib Datei auf der Keystone Infrastruktur gespeichert ist, muss mindestens 1 tib Kapazität erworben werden.
 
 
 
@@ -50,7 +45,7 @@ Während der Laufzeit eines Abonnements können Sie die zugesagt Kapazitäten ä
 
 Dies ist die logische Kapazität, die die verplante Kapazität überschritten hat. Beachten Sie folgende Punkte:
 
-* Der Flex Subscription Service bietet 20 % mehr Kapazität als die zustehende Kapazität.
+* Keystone bietet 20 % Kapazität über die engagierte Kapazität.
 * Burst-Kapazität kann flexibel genutzt werden und wird auf täglicher Basis des verbrauchten Durchschnitts abgerechnet.
 * Burst-Kapazität wird auf bis zu 20 % mit derselben Rate für die engagierte Kapazität berechnet.
 * Burst-Kapazität über 20 % der Verpflichtung wird mit einem Premiumsatz berechnet. Wenden Sie sich an den Support für alle zusätzlichen Burst-Anforderungen über 20 %.
@@ -60,7 +55,7 @@ Dies ist die logische Kapazität, die die verplante Kapazität überschritten ha
 
 == Verbrauchte/bereitgestellte Kapazität
 
-Die verbrauchte Kapazität bezieht sich auf die Kapazität in tib Speicherplatz, die derzeit auf dem Service genutzt wird. Flex Subscription Service berücksichtigt die Summe der bereitgestellten Größen (nicht der logischen oder physischen Kapazität, die verwendet wird) aller Volumes auf einem bestimmten Service Level, die als genutzte Kapazität für dieses Service-Level betrachtet werden sollen. Hierzu zählen folgende Optionen:
+Die verbrauchte Kapazität bezieht sich auf die Kapazität in tib Speicherplatz, die derzeit auf dem Service genutzt wird. Der Keystone Service berücksichtigt die Summe der bereitgestellten Größen (nicht die genutzte logische oder physische Kapazität) aller Volumes auf einem bestimmten Service Level, die als verbrauchte Kapazität für dieses Service Level betrachtet werden sollen. Hierzu zählen folgende Optionen:
 
 * Die Kapazität, die Bereitstellung über die Erstellung, Änderung, Löschung oder ein potenzielles automatische Wachstum von Volumes erfolgt.
 * Die Snapshot Kopien und Klone.
@@ -76,4 +71,4 @@ NOTE: Die Menge der im Rahmen der bereitgestellten Kapazität gespeicherten Date
 
 Monatliche Rechnung = (engagierte Kapazität [tib] * engagierte Rate [€/tib]) + (durchschnittliche tägliche bereitgestellte Burst-Kapazität [tib] * Burst-Rate [€/tib]). Die monatliche Abrechnung enthält eine Mindestgebühr, die sich auf die engagierte Kapazität basiert.
 
-Die monatliche Rechnung variiert über die Mindestgebühr basierend auf dem täglichen durchschnittlichen Burst-Kapazitätsverbrauch. Weitere Informationen zur Abrechnung finden Sie unter link:nkfsosm_kfs_billing.html["Flex Abonnement Abrechnung"].
+Die monatliche Rechnung variiert über die Mindestgebühr basierend auf dem täglichen durchschnittlichen Burst-Kapazitätsverbrauch. Weitere Informationen zur Abrechnung finden Sie unter link:nkfsosm_kfs_billing.html["Keystone Abrechnung"].

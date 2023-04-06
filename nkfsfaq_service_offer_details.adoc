@@ -4,7 +4,7 @@ permalink: nkfsfaq_service_offer_details.html
 keywords: netapp, keystone, service, offer, details, 
 summary: Details zum Serviceangebot 
 ---
-= Einzelheiten zum Angebot des Flex Subscription Service
+= Keystone Serviceangebote
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,15 +14,15 @@ summary: Details zum Serviceangebot
 
 
 [role="lead"]
-Die folgenden Fragen geben Antworten auf Ihre häufigen Fragen zum NetApp Keystone Flex Subscription Service-Angebot.
+Die folgenden Fragen beantworten Ihre häufig gestellten Fragen zum NetApp Keystone Keystone Serviceangebot.
 
 *Was ist die minimale engagierte Kapazität?*
 
-Die fest zugesagt minimale Kapazität für ein NetApp Keystone Flex Subscription (Flex Subscription) beträgt 100 tib, pro Standort in einem oder mehreren Service-Tiers.
+Die zugesicherte Mindestkapazität für einen NetApp Keystone Abonnement-Service beträgt 100 tib pro Standort über eine oder mehrere Service-Tiers.
 
-*Wie lange ist die typische Laufzeit eines Flex Subscription-Vertrags?*
+*Wie lange ist die typische Laufzeit eines Keystone Servicevertrags?*
 
-Das Flex Abonnement bietet 36, 24 und 12 Monate an.
+Keystone Services bieten Laufzeiten von 12, 24 und 36 Monaten.
 
 *Wie kann ich auf den Speicher zugreifen?*
 
@@ -54,7 +54,7 @@ Ja, neue Abonnements können unabhängig von vorhandenen Abonnements neue Beding
 
 *Können Mietabonnementbedingungen über die Abonnementdauer des Partners hinaus gehen?*
 
-Die Mandantenabonnements können über die aktuelle Flex Subscription-Laufzeit des Partners hinaus erweitert werden. Beim Erstellen von Abonnements und auch in Nutzungsberichten wird eine Warnung angezeigt.
+Mandanten-Abonnements können über die aktuelle Laufzeit des Partners für Keystone Services hinausgehen. Beim Erstellen von Abonnements und auch in Nutzungsberichten wird eine Warnung angezeigt.
 
 *Kann ich mehrere Abonnements auf demselben ONTAP Cluster mischen?*
 

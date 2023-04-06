@@ -4,7 +4,7 @@ permalink: nkfsfaq_keystone_subscription.html
 keywords: netapp, keystone, subscription, subscriptions, 
 summary: NetApp Keystone-Abonnement 
 ---
-= NetApp Keystone Flex Abonnement-FAQ
+= NetApp Keystone FAQ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,23 +14,23 @@ summary: NetApp Keystone-Abonnement
 
 
 [role="lead"]
-Die folgenden Fragen geben Antworten auf Ihre häufigen Fragen zu NetApp Keystone Flex Subscription Services.
+Die folgenden Fragen beantworten häufig Ihre Fragen zu NetApp Keystone Keystone Services.
 
-*Was wird im Rahmen von NetApp Keystone Flex Subscription angeboten?* das flexible NetApp Keystone Abonnement (Flex Subscription) ist ein abonnementbasiertes Serviceangebot für Block-, Datei- und Objektdatendienste, die lokal implementiert werden können und von NetApp, einem Partner oder Kunden bedient werden können.
+*Was wird im Rahmen von NetApp Keystone angeboten?* NetApp Keystone ist ein abonnementbasiertes Serviceangebot für Block-, Datei- und Objektdatenservices, das on-Premises implementiert und von NetApp, einem Partner oder einem Kunden betrieben werden kann.
 
-*Welche Speicherserviceangebote werden im Rahmen von Flex Subscription angeboten?* Informationen hierzu finden Sie unter link:nkfsosm_performance.html["Service-Leveln"]
+*Welche Angebote für Storage-Services werden bei Keystone angeboten?* Informationen finden Sie unter link:nkfsosm_performance.html["Service-Leveln"]
 
 *Welche Add-on Services werden unterstützt?* Erweiterte Datensicherung (Backup und Disaster Recovery) und Hybrid Cloud Tiering mit FabricPool sind Add-on-Services, die gegen Aufpreis ausgewählt werden können.
 
 *Welche Service Level garantiert NetApp mit dem Service?* in einem von NetApp betriebenen Szenario garantiert NetApp Keystone IOPS/tib für den bereitgestellten Storage und die Latenz für jedes Service Level.
 
-*Was bedeutet Flex Subscription?* Flex Subscription ordnet einer einzelnen Site oder einem einzelnen Rechenzentrum zu und kann aus verschiedenen Service Levels bestehen.
+*Was ordnet Keystone zu?* Keystone ist einem einzelnen Standort oder einem einzelnen Rechenzentrum zugeordnet und kann verschiedene Service-Level umfassen.
 
 *Was sind die Vorteile von extrem-Tiering und Premium-Tiering Service Levels?* Tiering ist in den Service Levels mit extrem hohem Tiering und Premium-Tiering aktiviert, wodurch Sie Ihren Platzbedarf für Storage und die damit verbundenen Kosten reduzieren können. NetApp geht davon aus, dass 25 % Ihrer Daten „heiß“ sind, die restlichen 75 % weniger häufig genutzt oder selten genutzt werden, und verschieben sie in „Cold Storage“. Darüber hinaus können Sie anhand von Nutzungsberichten überprüfen, um die Häufigkeit des Zugriffs auf Daten zu ermitteln und basierend auf den Informationen Tiering-Services zu ermöglichen.
 
 *Können Partner mehr Kapazität verkaufen, als sie von NetApp an Kunden gekauft haben?* Mandantenabonnements sind nicht von der Kapazität beschränkt, die der Partner erworben hat. Partner können mehr Kapazität verkaufen, als sie NetApp ihren Kunden gekauft haben. Die Kapazität, die über der erworbenen Kapazität liegt, wird als Überzeichnung bezeichnet.
 
-*Werden APIs zur Integration in Kundentools bereitgestellt?* Ja, RESTful APIs stehen zur Verfügung, um sich in Ihre eigenen Anwendungen integrieren zu können. Navigieren Sie zu *SUPPORT> API-Dokumentation*, um die API-Dokumentation für Flex Subscription-Dienste anzuzeigen. Weitere Informationen finden Sie im link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Keystone Flex Abonnement-API-Leitfaden"].
+*Werden APIs zur Integration in Kundentools bereitgestellt?* Ja, RESTful APIs stehen zur Verfügung, um sich in Ihre eigenen Anwendungen integrieren zu können. Unter *SUPPORT> API Documentation* finden Sie die API-Dokumentation für Keystone Services. Weitere Informationen finden Sie im link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Keystone API-Leitfaden"].
 
 *Was ist Burst-Kapazität?* Sie können die Nutzung bis zu 20% über der zugesagt Kapazität erhöhen und reduzieren. Die Burst-Kapazitätsnutzung wird täglich gemessen und nur bei Verwendung abgerechnet. Wenn beispielsweise die engagierte Kapazität 100 tib beträgt, können Sie einen Burst bis zu 120 tib festlegen.
 
@@ -44,7 +44,7 @@ Die folgenden Fragen geben Antworten auf Ihre häufigen Fragen zu NetApp Keyston
 
 *Gibt es Benachrichtigungen, wenn ich einen bestimmten Prozentsatz der zugesagt Kapazitätsnutzung erreiche?* Ja, die Management Tools erhalten über das NetApp Service Engine Dashboard Benachrichtigungen zur Kapazitätsauslastung.
 
-*wie sehe ich die Flex Subscription Nutzung an?* NetApp Service Engine stellt eine Dashboard-Ansicht zur Verfügung, die Informationen zu allen abonnierten Services und wie viel genutzt wird. Details zur NetApp Service Engine finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["Hier"].
+*Wie kann ich die Nutzung von Keystone anzeigen?* NetApp Service Engine bietet eine Dashboard-Ansicht mit Informationen zu allen abonnierten Services und zur verbrauchten Menge. Details zur NetApp Service Engine finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["Hier"].
 
 *wie melde ich Probleme mit dem Service?* NetApp Keystone Support kann über diese verschiedenen Kanäle erreicht werden:
 

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: nkfsosm_kfs_billing.html 
-keywords: netapp, keystone, billing, flex subscription billing logic, charges, charging, billing cycle, billing schedule, MetroCluster billing, TMP temporary volumes, Adaptive QoS policy billing, cloned volumes, burst billing 
-summary: Keystone Flex Abonnement-Abrechnung 
+keywords: netapp, keystone, billing, Keystone billing logic, charges, charging, billing cycle, billing schedule, MetroCluster billing, TMP temporary volumes, Adaptive QoS policy billing, cloned volumes, burst billing 
+summary: Keystone Abrechnung 
 ---
-= Flex Abonnement Abrechnung
+= Keystone Abrechnung
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,21 +14,21 @@ summary: Keystone Flex Abonnement-Abrechnung
 
 
 [role="lead"]
-NetApp Keystone Flex Subscription (Flex Subscription) ermöglicht planbare und vorab einplanbare Preise für Ihr Storage-Abonnement.
+NetApp Keystone ermöglicht planbare und Vorauspreise für Ihr Storage-Abonnement.
 
-Wenn Sie Betriebskosten (OPEX) Verbrauchsmodell für Investitionskosten (CAPEX) oder Leasing bevorzugen, können Sie sich für das flexible und skalierbare Nutzungsmodell „Flex Subscription Pay-as-you-grow“-Modell entscheiden.
+Wenn Sie Betriebskosten (OPEX) Verbrauchsmodell für Investitionskosten (CAPEX) oder Leasing vorziehen, können Sie sich für das Keystone Pay-as-you-grow-Modell für Ihr flexibles und skalierbares Nutzungsmodell entscheiden.
 
-Flex Subscription bietet Ihnen die folgenden Abrechnungsmöglichkeiten:
+Keystone bietet Ihnen folgende Abrechnungsmöglichkeiten:
 
-* Die Bezahlung basiert auf der Festlegung von IOPS und der Latenz-Kapazität, um verschiedene Workload-Anforderungen zu erfüllen. Mit den verschiedenen Performance-Service-Tiers – Extreme, Premium, Standard und Value – können Sie Ihren Storage basierend auf dem von Ihnen erworbenen Service Level für Ihr Flex Abonnement verwalten.
+* Die Bezahlung basiert auf der Festlegung von IOPS und der Latenz-Kapazität, um verschiedene Workload-Anforderungen zu erfüllen. Mit den verschiedenen Performance-Service-Tiers Extreme, Premium, Standard und Value können Sie Ihren Storage auf der Basis des von Ihnen erworbenen Service Levels für Keystone Services managen.
 * Sie bietet planbare Abrechnung für die verplante Kapazität und „Pay-per-use“-Funktion für die variable (Burst) Kapazitätsauslastung.
 * Sie können einen Paketpreis für Hardware, Betriebssystem und Support für ein US-Dollar/tib-Preis auswählen. Sie verfügen über eine einzelne Rechnung für jeden Storage-Typ, jeden File-, Block-, Objekt- oder Cloud-Storage-Service.
 * Wählen Sie einen flexiblen Begriff für die Services und die Zahlung aus: Sie können 12 Monate, 100 tib oder mehr pro Standort auswählen. Danach können Sie die automatische Verlängerung 12 Monate lang oder monatlich durchführen.
 
 
-Die Abrechnung für das Flex-Abonnement basiert auf der vorgegebenen Kapazität und dem variablen Burst-Verbrauch.
+Die Keystone-Abrechnung basiert auf engagierter Kapazität und variabler Burst-Nutzung.
 
-Informationen zur Verwendung der zugesagt- und Burst-Kapazität finden Sie unter link:nkfsosm_keystone_service_capacity_definitions.html["Kapazitätsdefinitionen für Flex Subscription Service"].
+Informationen zur Verwendung der zugesagt- und Burst-Kapazität finden Sie unter link:nkfsosm_keystone_service_capacity_definitions.html["Keystone Service-Kapazitätsdefinitionen"].
 
 Informationen zum Anzeigen von Rechnungsdetails finden Sie unter link:sewebiug_billing.html["Rechnung anzeigen"].
 
@@ -36,10 +36,10 @@ Informationen zum Anzeigen von Rechnungsdetails finden Sie unter link:sewebiug_b
 
 == Abrechnung basiert auf der verplante Kapazität
 
-Engagierte Kapazität bezieht sich auf die Kapazitäten verschiedener Services in einem einzigen Abonnement, das von den involvierten Parteien (NetApp/Partner und Kunde) vereinbart wurde. Diese Kapazität wird in jeder Flex Subscription -Bestellung angegeben und wird unabhängig vom tatsächlichen Verbrauch in Rechnung gestellt.
+Engagierte Kapazität bezieht sich auf die Kapazitäten verschiedener Services in einem einzigen Abonnement, das von den involvierten Parteien (NetApp/Partner und Kunde) vereinbart wurde. Diese Kapazität wird in jeder Keystone-Bestellung angegeben und wird unabhängig vom tatsächlichen Verbrauch abgerechnet.
 
 .Messung der verbrauchten Kapazität
-Im Rahmen der Flex Subscription Service-Implementierung überwacht NetApp fortlaufend die Nutzung des Service und misst diesen. Alle fünf Minuten wird vom System ein Verbrauchsdatensatz generiert, in dem die aktuelle verbrauchte Kapazität für das Abonnement detailliert beschrieben wird. Diese Daten werden über den Abrechnungszeitraum hinweg aggregiert, um Rechnungen und Nutzungsberichte zu erstellen.
+Im Rahmen der Keystone-Serviceimplementierung überwacht und misst NetApp fortlaufend die Nutzung des Service. Alle fünf Minuten wird vom System ein Verbrauchsdatensatz generiert, in dem die aktuelle verbrauchte Kapazität für das Abonnement detailliert beschrieben wird. Diese Daten werden über den Abrechnungszeitraum hinweg aggregiert, um Rechnungen und Nutzungsberichte zu erstellen.
 
 
 
@@ -51,7 +51,7 @@ Wenn die verbrauchte Kapazität größer ist als die für ein bestimmtes Service
 
 == Abrechnungszeitpläne
 
-Flex Subscription Services werden monatlich und jährlich abgerechnet.
+Keystone Services werden monatlich und jährlich in Rechnung gestellt.
 
 .Monatliche Abrechnung
 Rechnungen werden monatlich versendet. Für den Monat, in dem die Dienstleistungen verfügbar sind, wird im nächsten Monat eine Rechnung verschickt. So wird beispielsweise die Rechnung für die im Januar verwendeten Dienste Anfang Februar zugestellt. Diese Rechnung beinhaltet die Gebühren für die verplante Kapazität und, falls zutreffend, eventuelle Burst-Nutzung.
@@ -60,13 +60,13 @@ Rechnungen werden monatlich versendet. Für den Monat, in dem die Dienstleistung
 Eine Rechnung wird zu Beginn jedes Abonnementjahres für die Mindestzahlung der verplanten Kapazität erstellt. Sie wird am Startdatum des Abonnements generiert. Am Ende eines Abonnementquartals wird eine andere Rechnung gesendet, in der die anwendbaren Gebühren für jegliche Burst-Nutzung in diesem Quartal zusammengefasst werden. Wenn die zugesandte Kapazität während eines Abonnements geändert wird, wird eine Rechnung am selben Tag versendet, an dem die Änderung der zugesandten Kapazität wirksam ist, für die anteiligen Mindestzahlungen für den Rest des Abonnementjahres.
 
 .Kulanzzeit bei Burst-Rechnungen
-Während der ersten 60 Tage nach der Aktivierung eines Abonnements wird jeder Burst-Verbrauch, den Sie erhalten, aufgezeichnet, jedoch nicht auf Ihrer Flex Subscription Rechnung berechnet. Diese Kulanzzeit gibt Ihnen die Zeit, Ihren Speicher mit den entsprechenden AQoS-Einstellungen (Adaptive Quality of Service) zu konfigurieren, damit er ordnungsgemäß überwacht und abgerechnet werden kann. Bei der richtigen Konfiguration des Storage können Sie unerwartete Burst-Gebühren vermeiden. Jegliche Burst-Nutzung, die nach der anfänglichen Kulanzzeit von 60 Tagen angesammelt wurde, wird auf Ihrer nächsten Rechnung in Rechnung gestellt. Diese Kulanzzeit hat keine Auswirkungen auf Änderungen oder Verlängerungen Ihrer bestehenden Abonnements.
+Während der ersten 60 Tage nach der Aktivierung eines Abonnements wird jeder zusätzliche Burst-Verbrauch, der Ihnen angefallen ist, auf der Rechnung des Keystone Service aufgezeichnet. Diese Kulanzzeit gibt Ihnen die Zeit, Ihren Speicher mit den entsprechenden AQoS-Einstellungen (Adaptive Quality of Service) zu konfigurieren, damit er ordnungsgemäß überwacht und abgerechnet werden kann. Bei der richtigen Konfiguration des Storage können Sie unerwartete Burst-Gebühren vermeiden. Jegliche Burst-Nutzung, die nach der anfänglichen Kulanzzeit von 60 Tagen angesammelt wurde, wird auf Ihrer nächsten Rechnung in Rechnung gestellt. Diese Kulanzzeit hat keine Auswirkungen auf Änderungen oder Verlängerungen Ihrer bestehenden Abonnements.
 
 
 
-== Verschiedene Szenarien für die Flex Subscription-Abrechnung
+== Verschiedene Szenarien für Keystone Abrechnung
 
-Es gibt verschiedene Szenarien für die Flex Subscription-Abrechnung, und Sie sollten mit diesen Szenarien vertraut sein.
+Es gibt verschiedene Szenarien für die Keystone Abrechnung. Sie sollten mit diesen Szenarien vertraut sein.
 
 
 
@@ -84,9 +84,9 @@ Beachten Sie Folgendes:
 
 === Abrechnung für MetroCluster
 
-Die erweiterte Datensicherung verwendet NetApp MetroCluster für die Spiegelung von Daten zwischen zwei physisch getrennten Clustern. In MetroCluster gespiegelten Aggregaten werden die Daten zweimal pro Cluster geschrieben. Die Servicegebühren für Flex Subscription für den Verbrauch auf jeder Seite werden unabhängig voneinander berechnet, was zu zwei identischen Verbrauchsdatensätzen führt. Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, kann es zu Abweichungen zwischen dem Verbrauch über diese Tools und dem flexiblen Abonnement kommen. System Manager und Unified Manager melden keine Volumes im gespiegelten (Remote-) Cluster und melden dabei die Hälfte der Verbrauchsmetriken, die der Flex Subscription Service meldet.
+Die erweiterte Datensicherung verwendet NetApp MetroCluster für die Spiegelung von Daten zwischen zwei physisch getrennten Clustern. In MetroCluster gespiegelten Aggregaten werden die Daten zweimal pro Cluster geschrieben. Keystone Servicegebühren für unabhängige Nutzung auf beiden Seiten, was zwei identische Verbrauchsaufzeichnungen zur Folge hat. Wenn Sie Ihre Cluster über ONTAP System Manager (System Manager) oder Active IQ Unified Manager (Unified Manager) überwachen, wird möglicherweise zwischen dem in diesen Tools gemeldeten Verbrauch und den Keystone Services Diskrepanzen festgestellt. System Manager und Unified Manager melden keine Volumes auf dem gespiegelten (Remote-) Cluster und melden so die Hälfte der Verbrauchsmetriken, die der Keystone-Service meldet.
 
-Beispiel: Standort A und Standort B werden in einer MetroCluster-Konfiguration eingerichtet. Wenn ein Benutzer ein Volume von 10 TB in Standort A erstellt, wird in Standort B ein identisches Volume mit 10 TB erstellt Flex Subscription unterscheidet sowohl die Volumes als auch zeichnet eine zusätzliche Verbrauchsmenge von 10 TB an jedem Standort auf. Das ergibt eine Gesamtsteigerung von 20 TB. System Manager und Unified Manager berichten über ein 10-TB-Volume, das in Standort A erstellt wurde
+Beispiel: Standort A und Standort B werden in einer MetroCluster-Konfiguration eingerichtet. Wenn ein Benutzer ein Volume von 10 TB in Standort A erstellt, wird in Standort B ein identisches Volume mit 10 TB erstellt Keystone unterscheidet sowohl die Volumes als auch zeichnet an jedem Standort eine zusätzliche Verbrauchsmenge von 10 TB auf, sodass sich die Gesamtmenge um 20 TB erhöht. System Manager und Unified Manager berichten über ein 10-TB-Volume, das in Standort A erstellt wurde
 
 
 
@@ -98,7 +98,7 @@ Gelegentlich werden durch ONTAP temporäre Volumes (TMP) beim Verschieben von Vo
 
 === Abrechnung und anpassungsfähige QoS-Richtlinien
 
-Mit Flex Subscription wird die Nutzung auf Basis der Service-Level gemessen. Jedes Service-Level ist mit einer bestimmten QoS-Richtlinie (Quality of Service) verknüpft. Während der Bereitstellung werden Sie über die Details der einzelnen QoS-Richtlinien für Ihre abonnierten Flex Subscription Services informiert. Stellen Sie während des Storage-Managements sicher, dass Ihren Volumes über die entsprechenden QoS-Richtlinien verfügen, die Ihren abonnierten Service Leveln zugewiesen werden, um eine unerwartete Abrechnung zu vermeiden. Weitere Informationen zu QoS-Richtlinien in ONTAP finden Sie unter link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Durchsatz garantieren mit QoS-Übersicht"].
+Keystone misst den Verbrauch anhand von Service-Leveln. Jedes Service-Level ist mit einer bestimmten QoS-Richtlinie (Quality of Service) verknüpft. Während der Bereitstellung werden Sie über die Details der einzelnen QoS-Richtlinien für Ihre abonnierten Keystone Services informiert. Stellen Sie während des Storage-Managements sicher, dass Ihren Volumes über die entsprechenden QoS-Richtlinien verfügen, die Ihren abonnierten Service Leveln zugewiesen werden, um eine unerwartete Abrechnung zu vermeiden. Weitere Informationen zu QoS-Richtlinien in ONTAP finden Sie unter link:https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Durchsatz garantieren mit QoS-Übersicht"].
 
 
 
@@ -136,4 +136,4 @@ Informationen zur Verwendung der FabricPool Technologie für Ihre Keystone-Abonn
 
 === Abrechnung für System- und Root-Volumes
 
-System- und Root-Volumes werden als Teil der Gesamtüberwachung des Flex Subscription-Dienstes überwacht, werden aber nicht gezählt oder in Rechnung gestellt. Der Verbrauch auf diesen Mengen ist für die Abrechnung ausgenommen.
+System- und Root-Volumes werden als Teil der Gesamtüberwachung des Keystone Service überwacht, jedoch nicht gezählt oder abgerechnet. Der Verbrauch auf diesen Mengen ist für die Abrechnung ausgenommen.

@@ -14,7 +14,7 @@ summary: Keystone Tiering
 
 
 [role="lead"]
-NetApp Keystone Flex Subscription Service umfasst eine Tiering-Funktion, die weniger häufig genutzte Daten identifiziert und in einen Cold Storage Tiers aufsetzt, der Eigentum von NetApp ist, bereitgestellt und gemanagt wird.
+Der NetApp Keystone Service umfasst eine Tiering-Funktion zur Identifikation selten genutzter Daten und das Tiering auf einen Cold-Storage, der sich im Eigentum von NetApp befindet, implementiert und von NetApp gemanagt wird.
 
 Die Tiering-Funktion nutzt die NetApp FabricPool Technologie, mit der Daten-Tiering auf kostengünstige Objekt-Storage Tiers entweder lokal oder extern durchgeführt werden können. Bei dieser Funktion werden selten genutzte Daten auf Grundlage der vereinbarten Services automatisch in einen kostengünstigeren Storage verschoben – entweder vor Ort oder in der Cloud.
 

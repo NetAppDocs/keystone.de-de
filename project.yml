@@ -9,7 +9,7 @@ settings:
   langs: de-de,us-en,ja-jp,ko-kr,zh-cn,zh-tw,es-es,fr-fr
 sidebar:
   entries:
-  - title: NetApp Keystone Flex-Abonnement
+  - title: NetApp Keystone Services
     url: "/index.html"
     entries:
     - title: Service Bedingungen und Beschreibung
@@ -17,7 +17,7 @@ sidebar:
       entries:
       - title: Definition der Service-Kapazität
         url: "/nkfsosm_keystone_service_capacity_definitions.html"
-      - title: Service-Level in Flex Subscription
+      - title: Service-Level bei Keystone
         url: "/nkfsosm_performance.html"
       - title: Service-Level-Metriken und -Definitionen
         url: "/nkfsosm_service_level_metrics_and_definitions.html"
@@ -31,19 +31,19 @@ sidebar:
         url: "/nkfsosm_nrd.html"
       - title: US Citizen Support
         url: "/nkfsosm_uscs.html"
-      - title: Flex Abonnement und Equinix
+      - title: Keystone und Equinix
         url: "/nkfsosm_equinix.html"
     - title: Betriebsmodell und Verantwortlichkeiten
       url: "/nkfsosm_overview.html"
     - title: Und Mandantenfähigkeit
       url: "/nkfsosm_tenancy_overview.html"
-    - title: Flex Subscription-Infrastruktur
+    - title: Keystone Infrastruktur
       url: "/nkfsosm_keystone_service_delivery_architecture_overview.html"
     - title: Standortanforderungen
       url: "/nkfsosm_site_requirements.html"
     - title: Betrieb
       url: "/nkfsosm_netapp_global_services_and_support_center_@gssc@.html"
-    - title: Flex Subscription und Active IQ Digital Advisor
+    - title: Keystone und Active IQ Digital Advisor
       url: "/nkfsosm-keystone-and-aiq.html"
       entries:
       - title: Anzeigen und Generieren von Berichten über Active IQ Digital Advisor
@@ -56,10 +56,10 @@ sidebar:
       url: "/rn_fixed_issues.html"
     - title: Bekannte Probleme
       url: "/rn_known_issues.html"
-  - title: FAQ zu Flex Abonnement
+  - title: FAQ zu Keystone Abonnements
     url: "/nkfsfaq_overview.html"
     entries:
-    - title: Flex-Abonnement
+    - title: Keystone Abonnements
       url: "/nkfsfaq_keystone_subscription.html"
     - title: Details zum Serviceangebot
       url: "/nkfsfaq_service_offer_details.html"
@@ -84,7 +84,7 @@ sidebar:
         url: "/sewebiug_select_tenant.html"
       - title: Zeigen Sie die Webschnittstelle der NetApp Service Engine an
         url: "/sewebiug_netapp_service_engine_web_interface_overview.html"
-    - title: Zeigen Sie Das Flex Subscription Dashboard An
+    - title: Hier finden Sie das Keystone Abonnements-DSbrett
       url: "/sewebiug_dashboard.html"
     - title: Rechnung anzeigen
       url: "/sewebiug_billing.html"

@@ -4,7 +4,7 @@ permalink: nkfsosm_service_terms_and_description_overview.html
 keywords: netapp, keystone, service, terms, description, overview, 
 summary: Keystone Serviceinterms und Beschreibungs-Überblick 
 ---
-= Bedingungen und Beschreibungen des Flex Subscription Service
+= Keystone – Servicebedingungen und Beschreibungen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: Keystone Serviceinterms und Beschreibungs-Überblick
 
 
 [role="lead"]
-NetApp Keystone Flex Subscription (Flex Subscription) wird durch die folgenden Service-Bedingungen und -Beschreibungen geleitet.
+NetApp Keystone orientiert sich an den folgenden Servicebedingungen und Beschreibungen.
 
-* Das Flex-Abonnement ist für mindestens ein Jahr und bis zu drei Jahre verfügbar. Nach der Anfangslaufzeit wird der Service jährlich nachgebessbar. Die Kapazität kann in Schritten von nur 1 tib erhöht werden.
+* Keystone Services sind ab einem Jahr und bis zu drei Jahren erhältlich. Nach der Anfangslaufzeit wird der Service jährlich nachgebessbar. Die Kapazität kann in Schritten von nur 1 tib erhöht werden.
 * Die Mindestkapazität ist 100 tib pro Standort. Jeder Standort kann über ein oder mehrere Cluster verfügen, um die Mindestkapazitätsanforderungen zu erfüllen. Bei einem vom Partner betriebenen Modell werden für den Kunden, pro Standort und über alle Service-Level Abonnements mit flexiblen Mindeststandards erstellt.
 * Die Kapazität von 100 tib kann ein einzelnes Service-Level oder eine Kombination aus Ebenen sein.
 * Mandanten-Abonnements sind auf Service-Level beschränkt, die Partner abonniert haben.

@@ -21,7 +21,7 @@ NOTE: Backups werden automatisch auf Ihrem System erstellt, wenn Sie eine Backup
 
 Weitere Informationen finden Sie unter link:seapiref_backups_apis.html["Backup-API"]
 
-Backup von Quell-Volumes wird über die NetApp SnapMirror Technologie aktiviert, die mit Ihrem Flex Subscription aktiviert wird. Weitere Informationen finden Sie unter link:index.html#flex-subscription["Hier"].
+Das Backup von Quell-Volumes wird über die NetApp SnapMirror Technologie aktiviert, die mit Ihren Keystone Abonnementservices aktiviert ist. Weitere Informationen finden Sie unter link:index.html#flex-subscription["Hier"].
 
 Wenn Sie ein Volume erstellen oder bearbeiten, definieren Sie dessen Backup-Zeitplan. Die Sicherung erfolgt in den vorgesehenen Intervallen und wird auf einem Zielsystem gespeichert. Damit Backups funktionieren, sollte die SnapMirror Beziehung mit der Zielumgebung aufgebaut werden. Die replizierten Dateifreigaben und -Festplatten aus verschiedenen Zonen werden auf einer dedizierten Backup-Storage-VM (Storage Virtual Machine, auch als SVM bezeichnet) in den einzelnen Clustern gespeichert. Backups können zwischen zwei separaten ONTAP Clustern in verschiedenen Zonen durchgeführt werden.
 

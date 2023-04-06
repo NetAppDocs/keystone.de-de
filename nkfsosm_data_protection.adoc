@@ -14,7 +14,7 @@ summary: Datensicherung
 
 
 [role="lead"]
-Der NetApp Keystone Flex Subscription (Flex Subscription)-Datensicherungsservice kann Ihre Daten sichern und bei Bedarf wiederherstellen. Folgende Datensicherungsservices stehen zur Verfügung:
+Der NetApp Keystone Datensicherungsservice kann Daten sichern und bei Bedarf wiederherstellen. Folgende Datensicherungsservices stehen zur Verfügung:
 
 * Snapshots von Festplatten und Shares
 * Backups von Festplatten und Shares (erfordert im Rahmen des Abonnements den Datenschutz-Service)
@@ -42,4 +42,4 @@ NOTE: Backup- und Disaster Recovery-Services sind als Add-on-Services verfügbar
 ^1^zusätzliche Speicherkapazität, die abonniert werden muss
 
 
-NOTE: Ein Abonnement eines Basis-Flex-Abonnementservices führt nicht automatisch zu einer Sicherung Ihrer Daten. Sie sollten die zusätzlichen Datensicherungsservices abonnieren und Ihr System für Daten-Backup und Disaster Recovery Services konfigurieren. Wenn Ihr Storage-System nicht durch Flex Subscription Services gemanagt wird, kann NetApp dennoch die Daten auf Ihrem Storage-System schützen und bei der Anbindung an Ihre Flex Subscription Services helfen. NetApp ist jedoch nicht für Backup-Fehler verantwortlich.
+NOTE: Beim Abonnement eines einfachen Keystone Service werden keine Daten automatisch gesichert. Sie sollten die zusätzlichen Datensicherungsservices abonnieren und Ihr System für Daten-Backup und Disaster Recovery Services konfigurieren. Wenn Ihr Storage-System nicht durch Keystone Services gemanagt wird, kann NetApp trotzdem Unterstützung für die Sicherung der Daten auf Ihrem Storage-System bieten und Ihnen beim Verbinden mit Ihren Keystone Services helfen. NetApp ist jedoch nicht für Backup-Fehler verantwortlich.

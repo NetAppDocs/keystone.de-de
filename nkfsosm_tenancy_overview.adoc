@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: nkfsosm_tenancy_overview.html 
 keywords: netapp, keystone, tenants, subtenants, hierarchy, tenancy 
-summary: NetApp Keystone Flex Subscription Tenancy Overview 
+summary: Übersicht über die Mandantenfähigkeit bei NetApp Keystone Keystone Abonnements 
 ---
-= Mandantenfähigkeit und Mandantenfähigkeit in Flex Subscription
+= Mandantenfähigkeit und Mandantenfähigkeit in Keystone
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,18 +14,18 @@ summary: NetApp Keystone Flex Subscription Tenancy Overview
 
 
 [role="lead"]
-NetApp Keystone Flex Subscription (Flex Subscription) verwendet die Konzepte von *Tenant* und *subTenant* als hierarchische Einheiten mit logischen Speicherressourcen. Auch das Konzept der Mandantenfähigkeit wird unterstützt, wobei mehrere Mandanten an einen Partner oder Service Provider gebunden sind. Die Entitäten Partner und Service-Provider werden hier synonym verwendet.
+NetApp Keystone verwendet die Konzepte *Mandant* und *Untermandant* als hierarchische Einheiten, die logische Speicherressourcen besitzen. Auch das Konzept der Mandantenfähigkeit wird unterstützt, wobei mehrere Mandanten an einen Partner oder Service Provider gebunden sind. Die Entitäten Partner und Service-Provider werden hier synonym verwendet.
 
 
-NOTE: Im Rahmen von Flex Subscription handelt es sich bei der einzelnen Mandanten um ein von NetApp betriebenes Modell, bei der Mandantenfähigkeit um ein vom Partner betriebenes Modell.
+NOTE: Im Kontext von Keystone ist die einzelne Mandantenfähigkeit ein Modell mit Betrieb durch NetApp, während die Mandantenfähigkeit ein Modell mit Betrieb durch Partner ist.
 
 .Mandanten
-Ein Mandant ist die primäre Rechnungseinheit, die in Flex Subscription definiert ist. Jeder Kunde, der in das Flex Subscription aufgenommen wird und ein Abonnement der Services beinhaltet, existiert als Flex-Abonnementmandant. Der Kunde stellt NetApp einen Kundennamen und/oder eine Kennung zur Verfügung, die zum Zweck des Onboarding von Mandanten und der Nachverfolgung von Abonnementdaten und Vertragsbedingungen erforderlich sind.
+Ein Mandant ist die primäre Abrechnungseinheit, die in Keystone definiert ist. Jeder Kunde, der in Keystone eingestellt ist und ein Abonnement für die Services hält, existiert als Keystone Mandant. Der Kunde stellt NetApp einen Kundennamen und/oder eine Kennung zur Verfügung, die zum Zweck des Onboarding von Mandanten und der Nachverfolgung von Abonnementdaten und Vertragsbedingungen erforderlich sind.
 
-In einer mandantenfähigen Umgebung ist ein Partner ein Mandant/Kunde von NetApp in einer Flex Subscription-Umgebung. Der Partner wiederum kann mehrere Mandanten oder Kunden übernehmen, die mit Endkunden/Untermietern verbunden sind. In diesem Modell sind Mandanten/Untermandanten Kunden der Service Provider und haben keine Abrechnungsbeziehung zu NetApp.
+In einer Multi-Tenant-Umgebung ist ein Partner ein Mandant/Kunde von NetApp in einer Keystone-Umgebung. Der Partner wiederum kann mehrere Mandanten oder Kunden übernehmen, die mit Endkunden/Untermietern verbunden sind. In diesem Modell sind Mandanten/Untermandanten Kunden der Service Provider und haben keine Abrechnungsbeziehung zu NetApp.
 
 .Untermieter
-Untermandanten von Flex Subscription befinden sich vollständig innerhalb eines übergeordneten Mandanten mit einer Many-to-One-Beziehung. Untermandanten ermöglichen die Trennung logischer Ressourcen innerhalb einer Mandanten und werden als Basis für die Showback-Berichterstattung verwendet. Alle Storage-Ressourcen (File-Services, Block-Storage und Objekt-Storage) gehören zu einer Untermandant.
+Keystone Untermandanten sind vollständig innerhalb eines übergeordneten Mandanten mit einer n:1-Beziehung vorhanden. Untermandanten ermöglichen die Trennung logischer Ressourcen innerhalb einer Mandanten und werden als Basis für die Showback-Berichterstattung verwendet. Alle Storage-Ressourcen (File-Services, Block-Storage und Objekt-Storage) gehören zu einer Untermandant.
 
 image:nkfsosm_image10.png[""]
 
@@ -57,7 +57,7 @@ image:nkfsosm_image10.png[""]
 
 == Abonnementmodell in einer mandantenfähigen Umgebung
 
-* Service-Provider sind Flex Subscription-Kunden und haben Abonnements als Mandanten. Die Abonnements basieren auf folgenden Komponenten:
+* Serviceprovider sind Keystone Kunden und haben Abonnements als Mandanten. Die Abonnements basieren auf folgenden Komponenten:
 +
 ** Verpflichtungen pro Service-Level und Zone
 ** Wird auf der zugewiesenen Kapazität mit mindestens 100 tib geladen
@@ -65,13 +65,13 @@ image:nkfsosm_image10.png[""]
 
 
 * NetApp berechnet den Provider monatlich im Rahmen der üblichen Mietbedingungen.
-* Damit ein Service-Level für Mandanten verfügbar ist, muss der Service-Provider oder Partner zunächst über ein Flex-Abonnement für das Service-Level verfügen.
+* Damit ein Service-Level für Mandanten verfügbar sein kann, sollte der Service-Provider oder Partner zunächst einen Keystone für diesen Service-Level eingerichtet haben.
 * Der Service-Provider erstellt Mandantenabonnements pro Service-Level, Zone und flexiblen Mindestwerte.
 * Service-Provider können ihren Mandanten mehr Kapazität verkaufen, als sie es von NetApp gekauft haben (Überzeichnung). Daher ist die von Mandanten genutzte Kapazität nicht durch die Kapazität begrenzt, die der Service-Provider abonniert hat.
 * Mandanten können Storage-Kapazitäten für ihren abonnierten Betrag nutzen, der als „Burst“ für Nutzungsberichte aufgeführt ist.
 * Mandanten-Nutzungsberichte stehen Partnern zur Verfügung, die sie täglich oder monatlich anzeigen können.
-* Mandanten können Abonnements für längere Zeit im Vergleich zum entsprechenden Flex Subscription erstellen. Während dieser Aktivität wird dem Endkunden jedoch eine Warnmeldung angezeigt.
-* Das Flex Abonnement für einen Partner wird von NetApp Administratoren oder GSSC konfiguriert. Das Management von Flex Subscription- und Mandantenabonnements wird von einem Benutzer mit der Rolle „Partner Admin“ durchgeführt.
-* Benutzer mit den Administratorrollen für Mandanten können nur das Mandantenabonnement anzeigen (nicht das Flex Subscription des Partners). Sie können das Abonnement aktualisieren, um Kapazität und Service Level zu ändern. Sie können Service-Anfragen für zusätzliche Abonnements aufwerfen.
+* Mandanten können Abonnements für längere Zeiträume im Vergleich zum entsprechenden Keystone Abonnement erstellen, dem Endkunden wird jedoch während dieser Aktivität eine Warnmeldung angezeigt.
+* Das Keystone Abonnement für einen Partner wird von NetApp Administratoren oder dem GSSC Partner konfiguriert. Management des Keystone Abonnements und von Mandantenabonnements wird von einem Benutzer mit Partneradministratorrolle durchgeführt.
+* Benutzer mit den Mandanten-Administratorrollen können nur das Mandantenabonnement anzeigen (nicht das Keystone Abonnement des Partners). Sie können das Abonnement aktualisieren, um Kapazität und Service Level zu ändern. Sie können Service-Anfragen für zusätzliche Abonnements aufwerfen.
 * Der Partner-Administrator kann ein weiteres Abonnement erstellen, entweder wenn das vorhandene Abonnement abgelaufen ist, oder für ein zukünftiges Datum, an dem das vorhandene Abonnement nicht mehr gültig ist. Das Startdatum für ein neues Abonnement muss größer oder gleich dem aktuellen Enddatum sein.
 

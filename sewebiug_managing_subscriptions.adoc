@@ -14,15 +14,15 @@ summary: Keystone Verwalten von Abonnements
 
 
 [role="lead"]
-Zum Verwalten von Abonnements gehören die Zuweisung von Service-Leveln zu Ihren NetApp Keystone Flex Subscription (Flex Subscription)- und Mandantenabonnementservices. Sie können zudem über die NetApp Service Engine-Schnittstelle Kapazitäten den Service-Leveln zuweisen und ändern.
+Zum Management von Abonnements gehört die Zuweisung von Service-Leveln zu Ihren NetApp Keystone Abonnements und für Mandanten oder die Zuweisung und Änderung von Kapazitäten zu den Service-Levels über die Schnittstelle der NetApp Service Engine.
 
-Die Flex-Abonnements aus dem Verhältnis zwischen Service-Providern/Partnern und NetApp und den Mandanten-Abonnements repräsentieren die Beziehung zwischen dem Service-Provider und seinen Mandanten und Untermandanten (Endkunden). Wenn NetApp Administratoren oder GSSC flexible Abonnementservices für Partner und Mandanten erstellt, bedeutet dies, dass die Storage-Zuweisung erreicht wurde. Sofern jedoch nicht die Service Levels erstellt und die entsprechende Kapazitätszuweisung vollständig ist, kann Storage nicht von Submandanten oder Endkunden genutzt werden. Partneradministratoren können Storage für ihre Flex Subscription und Mandanten-Abonnements managen. Mandantenadministratoren können sich die Abonnementdetails und Services von Mandanten nur für ihre eigene Mandantenfähigkeit ansehen.
+Die durch die Beziehung zwischen den Service-Providern/Partnern und NetApp sowie den Mandanten-Abonnements bereitgestellten Abonnementservices sind die Beziehung zwischen dem Serviceprovider und seinen Mandanten und Untermandanten (Endkunden). Wenn NetApp Administratoren oder GSSC Partner und Mandanten Keystone Abonnementservices für ihre Keystone Services erstellt, setzt dies die Storage-Zuweisung voraus. Sofern jedoch nicht die Service Levels erstellt und die entsprechende Kapazitätszuweisung vollständig ist, kann Storage nicht von Submandanten oder Endkunden genutzt werden. Partner-Administratoren können den Storage für ihre Keystone Abonnementservices und Mandantenabonnements managen. Mandantenadministratoren können sich die Abonnementdetails und Services von Mandanten nur für ihre eigene Mandantenfähigkeit ansehen.
 
 
 
-== Flex-Abonnement Managen (Keystone-Abonnements)
+== Keystone Abonnements managen und
 
-Als Partner-Administrator können Sie Ihre Flex Subscription-Services über *ABONNEMENTS* > *Keystone-Abonnements* anzeigen und verwalten. *Keystone Abonnements* stehen für die Flex Subscription Services bereit, die von NetApp Administratoren für Partner entwickelt wurden. Partneradministratoren können ihre Flex Subscription Services anzeigen und Service-Anfragen erstellen, um:
+Als Partneradministrator können Sie über *SUBSCRIPTIONS* > *Keystone Subscriptions* Ihre Keystone Abonnementservices einsehen und managen. *Keystone Abonnements* gelten für die Keystone Abonnementservices, die von NetApp Administratoren für Partner erstellt werden. Partneradministratoren können ihre Keystone Abonnementservices einsehen und Serviceanfragen erstellen, um:
 
 * Erhöhen Sie die Kapazität eines Abonnements
 * Hinzufügen eines Service zu einem Abonnement (Zuweisung von Service Levels und Kapazität)

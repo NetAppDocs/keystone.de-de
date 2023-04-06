@@ -14,7 +14,7 @@ summary: Fehler wurden in der NetApp Service Engine behoben
 
 
 [role="lead"]
-Die folgenden Probleme, die in einer früheren Version der NetApp Service Engine zu finden waren, wurden behoben, damit Sie Ihre NetApp Keystone Flex-Abonnementservices erfolgreich nutzen können.
+Die folgenden Probleme in einer früheren Version der NetApp Service Engine wurden behoben, damit Sie Ihre NetApp Keystone Services erfolgreich nutzen können.
 
 [cols="3*"]
 |===

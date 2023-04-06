@@ -14,7 +14,7 @@ summary: Keystone Service Level-Kennzahlen und Definitionen
 
 
 [role="lead"]
-Die folgenden Begriffe und Definitionen werden im NetApp Keystone Flex Subscription Service verwendet:
+Folgende Begriffe und Definitionen werden in der NetApp Keystone verwendet:
 
 * *gib, tib und PiB.* Messungen der Datenspeicherkapazität mit Basis von 1024 (1 gib = 1024^3^ Byte, 1 tib = 1024^4^ Byte und 1 PiB = 1024^5^ Byte).
 * *IOPS/tib.* die Protokollvorgänge pro Sekunde, die von der Applikation angefordert werden, geteilt durch die zugewiesene logische Größe des Volumes.

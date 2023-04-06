@@ -14,7 +14,7 @@ summary: Bekannte Probleme in der NetApp Service Engine
 
 
 [role="lead"]
-Die folgenden bekannten Probleme wurden in der NetApp Service Engine gemeldet. Diese Probleme können auftreten, wenn Sie Ihren Storage als Teil Ihres Flex Subscription bereitstellen oder verwenden.
+Die folgenden bekannten Probleme wurden in der NetApp Service Engine gemeldet. Möglicherweise treten diese Probleme auf, wenn Sie Ihren Storage als Teil Ihrer Keystone Abonnements bereitstellen oder verwenden.
 
 [cols="3*"]
 |===

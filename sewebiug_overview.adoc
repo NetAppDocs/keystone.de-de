@@ -14,7 +14,7 @@ summary: Übersicht über das Web-Portal der NetApp Service Engine
 
 
 [role="lead"]
-Mit dem Webportal der NetApp Service Engine können Sie einen NetApp Keystone Flex Subscription Service (Flex Subscription) verwalten und überwachen. Das Portal besteht aus folgenden Komponenten:
+Mit dem Webportal der NetApp Service Engine können Sie NetApp Keystone Services managen und überwachen. Das Portal besteht aus folgenden Komponenten:
 
 * Eine grafische Benutzeroberfläche (NetApp Service Engine Web Interface) zur Überwachung und einfachen Storage-Bereitstellung. Die Menüoptionen auf der Benutzeroberfläche (UI) sind basierend auf den Diensten und Abonnements des Mandanten und Untermandanten verfügbar.
 * REST-APIs für erweiterte Einrichtung und Storage-Management-Aktionen In diesem Leitfaden wird die Verwendung der NetApp Service Engine Web-Schnittstelle beschrieben. Funktionen, die nur über DIE REST-APIs verfügbar sind, werden in diesem Dokument nicht behandelt.
@@ -32,7 +32,7 @@ image:sewebiug_image1.png["Fehler: Fehlendes Grafikbild"]
 
 Eine einzelne NetApp Service Engine-Instanz kann einen oder mehrere Mandanten unterstützen. Die NetApp Service Engine verwendet die Konzepte von Mandanten und Untermandanten als hierarchische Einheiten, die den Storage-Service besitzen bzw. managen.
 
-Ein Mandant kann ein Kunde, Partner oder eine Rechnungseinheit sein. Ein Mandant besitzt das Abonnement (oder mehrere Abonnements) für den Flex Subscription Service.
+Ein Mandant kann ein Kunde, Partner oder eine Rechnungseinheit sein. Ein Mandant ist im Besitz des Abonnements (oder mehrerer Abonnements) für den Keystone Abonnementservice.
 
 Ein Untermieter ist eine Einheit, die vollständig im Mieter ist. Er kann für die Rückzeige, für die Sicherheitstrennung usw. verwendet werden.
 

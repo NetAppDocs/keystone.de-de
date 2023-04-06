@@ -14,13 +14,13 @@ summary: Keystone arbeitet mit Berichten
 
 
 [role="lead"]
-In Bezug auf die Nutzung des NetApp Keystone Flex Subscription können Sie Kapazitäts- und Performance-Berichte erstellen und auch die Mandantennutzung berücksichtigen.
+Sie können Kapazitäts- und Performance-Berichte zu Ihrer NetApp Keystone Abonnementnutzung und auch zur Mandantennutzung erstellen.
 
 
 
 == Keystone Bericht zur Kapazitätsauslastung des Abonnements
 
-Auf der Seite Kapazitätsnutzung für Keystone-Abonnements werden die Kapazitätsauslastung für jeden Storage-Service-Level in einem Abonnement im Laufe der Zeit angezeigt. Als NetApp Administrator können Sie den Bericht zur Kapazitätsauslastung für alle Mandanten und Partner in einem Abonnement einsehen. Als Partner-Administrator können Sie sich den Kapazitätsbericht für Ihre Flex-Abonnement-Nutzung im Hinblick auf die einzelnen abonnierten Service-Level anzeigen lassen.
+Auf der Seite Kapazitätsnutzung für Keystone-Abonnements werden die Kapazitätsauslastung für jeden Storage-Service-Level in einem Abonnement im Laufe der Zeit angezeigt. Als NetApp Administrator können Sie den Bericht zur Kapazitätsauslastung für alle Mandanten und Partner in einem Abonnement einsehen. Als Partneradministrator haben Sie die Möglichkeit, den Kapazitätsbericht für Ihre Abonnementnutzung hinsichtlich der einzelnen abonnierten Service-Level anzuzeigen.
 
 Verwenden Sie die grafischen Berichte auf dieser Seite, um die Trendnutzung für alle Service-Level sowie zusätzliche Datensicherungsservices in separaten Registerkarten anzuzeigen. Wenn ein Service in Burst ist, zeigt ein Banner die Burst-Kapazität an, die im aktuellen Abrechnungszyklus verwendet wird.
 
@@ -40,7 +40,7 @@ So zeigen Sie die Kapazitätsauslastung für einen Service an:
 
 == Bericht zur Kapazitätsauslastung des Mandanten
 
-Auf der Seite Kapazitätsnutzung für Mandanten-Abonnements werden für jeden Mandanten die abonnierten Storage-Services in Flex Subscription für die Kapazitätsauslastung angezeigt. Diese Seite steht den Administratoren von NetApp, Partnern und Mandanten oder Kunden zur Verfügung, um die Berichte zur Kapazitätsauslastung für einen bestimmten Mandanten anzuzeigen.
+Auf der Seite „Kapazitätsnutzung für Mandantenabonnements“ wird für jeden Mandanten die Kapazitätsauslastung im Lauf der Zeit für die abonnierten Storage-Services im Keystone Abonnement angezeigt. Diese Seite steht den Administratoren von NetApp, Partnern und Mandanten oder Kunden zur Verfügung, um die Berichte zur Kapazitätsauslastung für einen bestimmten Mandanten anzuzeigen.
 
 
 NOTE: Für den Mandantenadministrator wird die Seite als „Kapazitätsnutzung“ angezeigt.

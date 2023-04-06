@@ -4,7 +4,7 @@ permalink: nkfsosm-keystone-and-aiq.html
 keywords: netapp, keystone, aiq keystone customers, Active IQ, Digital Advisor 
 summary: Was können Kunden in Active IQ für einen Grundpfeiler sehen 
 ---
-= Was können Kunden von Flex Subscription in Active IQ Digital Advisor sehen?
+= Was können Keystone Kunden in Active IQ Digital Advisor sehen?
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,19 +14,10 @@ summary: Was können Kunden in Active IQ für einen Grundpfeiler sehen
 
 
 [role="lead"]
-Wenn Sie NetApp Keystone Flex Subscription-Services (Flex Subscription) abonniert haben, können Sie Ihre Nutzungsberichte und Diagramme im Digital Advisor Dashboard von Active IQ anzeigen.
+Wenn Sie NetApp Keystone Services abonniert haben, können Sie Ihre Nutzungsberichte und Diagramme im Active IQ Digital Advisor Dashboard (Digital Advisor) anzeigen.
+
+Bei der Anmeldung bei Digital Advisor wird das Widget *Keystone Abonnements* angezeigt, in dem die Kapazitätsnutzung mit den von Ihnen erworbenen Keystone Services verglichen wird.
 
 Weitere Informationen zu Digital Advisor finden Sie unter link:https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor Dokumentation"].
 
-Wenn an Ihrem Standort NetApp Service Engine standardmäßig installiert ist, können Sie die Verbrauchsdiagramme neben Digital Advisor über die NetApp Service Engine-Schnittstelle anzeigen. In einer vom Kunden gemanagten Umgebung haben Sie jedoch keinen Zugriff auf die Benutzeroberfläche der NetApp Service Engine. Sie können die Kapazitätsdiagramme und Nutzungsberichte nur über das Digital Advisor Dashboard anzeigen. Informationen zu vom Kunden gemanagten Umgebungen finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_overview.html["Betriebsmodell, Rollen und Verantwortlichkeiten"]
-
-Das Intervall der Kennzahlenerfassung von Ihrem Standort beträgt 5 Minuten.
-
-Wenn Sie als Kunde die Flex Subscription Services abonniert haben, können Sie sich die folgenden Informationen auf Digital Advisor anzeigen lassen:
-
-* *Keystone Flex Subscription*-Widget: Wenn Sie sich bei Digital Advisor angemeldet haben, sehen Sie das Widget *Keystone Flex Subscription*, das die Kapazitätsnutzung mit Ihren erworbenen Flex Subscription-Services zusammenfasst.
-
-
-Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Anzeige der Kapazitätsauslastung mit dem NetApp Keystone Flex-Abonnement"].
-
-Informationen über die Registerkarte *Keystone Abonnements* finden Sie unter _Digital Advisor Dashboard und Reporting für Flex Subscription_.
+Informationen über die Registerkarte *Keystone Abonnements* finden Sie unter _Digital Advisor Dashboard und Reporting für Keystone_.

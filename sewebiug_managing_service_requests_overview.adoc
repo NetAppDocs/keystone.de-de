@@ -26,7 +26,7 @@ Geben Sie eine Serviceanfrage für:
 * Backup-Wiederherstellung
 * Disaster-Recovery-Failover
 * Ein technisches Problem mit der NetApp Service Engine
-* Nicht standardmäßige Volumes: Die Volumes, die in Ihr Flex Abonnement importiert werden, verwenden denselben Standard wie die vorhandenen Festplatten und Dateifreigaben auf der NetApp Service Engine. Nach dem Import werden diese Festplatten und File Shares mit dem Status `Non-Standard` kategorisiert. Sie stellen eine Service-Anfrage, um ihren Status auf einen Standard zu ändern.
+* Volumes anderer Standards: Die Volumes, die in Ihre Keystone Abonnementservices importiert werden, verwenden denselben Standard wie die vorhandenen Festplatten und Dateifreigaben in der NetApp Service Engine. Nach dem Import werden diese Festplatten und File Shares mit kategorisiert `Non-Standard` Status: Sie stellen eine Service-Anfrage, um ihren Status auf einen Standard zu ändern.
 * Alle anderen Probleme, die in dieser Liste nicht behandelt werden.
 
 

@@ -14,7 +14,7 @@ summary: Betriebsmodelle
 
 
 [role="lead"]
-Es gibt drei Betriebsmodelle in flexiblen Abonnements. Diese FAQs beziehen sich auf die Betriebsmodelle.
+Keystone Services bieten drei Betriebsmodelle. Diese FAQs beziehen sich auf die Betriebsmodelle.
 
 *Was sind die verschiedenen Betriebsmodelle und wer ist verantwortlich für die wichtigsten Aktivitäten?*
 
