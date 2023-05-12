@@ -72,16 +72,12 @@ image:icon-grey.png["Symbol"]: Keine Kapazitätsnutzung erfasst mit der Kapazit�
 
 == Anzeigen historischer Abonnementdaten
 
-Auf der Registerkarte *Subscription Time Series* werden Verlaufsdaten Ihrer Keystone Abonnements für einen bestimmten Zeitraum angezeigt. In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.
+a514224616890dbac3dede8f0d533add
 
 .Schritte
 . Klicken Sie auf die Registerkarte *Subscription Time Series*.
 . Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.
 . Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Der Standardzeitbereich ist vom Startdatum des Abrechnungszeitraums bis zum aktuellen Datum.
-+
-
-NOTE: Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf maximal drei Monate.
-
 . Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt. Sie können den Mauszeiger über die Diagramme halten, um eine Aufschlüsselung der Nutzung in Bezug auf die Daten für „belegt“, „verbraucht“, „Burst“ und darüber des Burst-Limits an diesem Datenerfassungspunkt anzuzeigen.
 
 
