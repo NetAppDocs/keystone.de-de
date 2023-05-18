@@ -21,7 +21,7 @@ Verwenden Sie diese Methode, um eine Objekt-Speichergruppe zu erstellen.
 . Stellen Sie sicher, dass der richtige Untermandant ausgewählt ist und Sie auf die Registerkarte *Gruppen* geklickt haben.
 . Klicken Sie Auf *Gruppe Erstellen*.
 . Geben Sie im Dialogfeld Gruppe erstellen den Gruppennamen ein.
-. Wählen Sie die S3-Richtlinie aus der Liste aus. Informationen zu S3-Richtlinien finden Sie unter https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["Legen Sie Berechtigungen in einer Richtlinie fest"].
+. Wählen Sie die S3-Richtlinie aus der Liste aus. Informationen zu S3-Richtlinien finden Sie unter https://["Legen Sie Berechtigungen in einer Richtlinie fest"].
 . Klicken Sie Auf *Erstellen*. Dadurch wird ein Job erstellt, um die Gruppe mit den angegebenen Einstellungen zu erstellen.
 
 

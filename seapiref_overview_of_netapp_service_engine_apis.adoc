@@ -52,7 +52,7 @@ In diesem Dokument werden die API-Beschreibungen in zwei Abschnitte unterteilt:
 
 NetApp Service Engine unterstützt die Konzepte von Regionen und Zonen, wie in der nachfolgenden Abbildung dargestellt. Eine Region repräsentiert ein Datacenter oder einen Standort, während eine Zone eine Storage-Untereinheit innerhalb der Region darstellt (technisch ein Cluster innerhalb eines Datacenters/Standorts). Mehrere Zonen unterstützen Data Availability- und Datensicherungsfunktionen (DP).
 
-image:seapiref_image1.png["Fehler: Fehlendes Grafikbild"]
+image:seapiref_image1.png["Zonen- und Regionalbeziehungen"]
 
 Eine einzelne NetApp Service Engine-Instanz kann einen oder mehrere Mandanten unterstützen. Die NetApp Service Engine verwendet die Konzepte von Mandanten und Untermandanten als hierarchische Einheiten, die den Storage-Service besitzen bzw. managen.
 

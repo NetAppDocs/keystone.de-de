@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: aqos-kfs.html 
+keywords: aqos, qos, adaptive quality of service, quality of service 
+summary: 'Anpassungsfähige Quality of Service (AQoS) bei Keystone' 
+---
+= Anpassungsfähige Quality of Service bei Keystone
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bei Storage Quality of Service (QoS) handelt es sich um eine entscheidende Technologie, mit der sichergestellt wird, dass Applikationen eine konsistente und vorhersehbare Performance erhalten. Ohne QoS verbrauchen bestimmte Workloads, beispielsweise beim Booten mehrerer Systeme, die meisten oder alle Ressourcen eines bestimmten Zeitraums und wirken sich auf andere Workloads aus. Informationen zur QoS finden Sie unter https://["Durchsatz garantieren mit QoS-Übersicht"^].
+
+
+
+== Anpassungsfähige QoS
+
+Adaptive QoS (AQoS) wird von Keystone Services verwendet, um das IOPS-/tib-Verhältnis basierend auf der Volume-Größe dynamisch beizubehalten. Informationen zu AQoS-Richtlinien finden Sie unter https://["Allgemeines zur anpassungsfähigen QoS"^].
+
+Keystone stellt Ihnen AQoS-Richtlinien zur Verfügung, die Sie einrichten können, sobald Ihr Cluster in Betrieb ist. Sie sollten sicherstellen, dass alle Ihre Volumes mit den richtigen AQoS-Richtlinien verknüpft sind, die bereits erstellt und in Ihrem System verfügbar sind.
+
+Ein ONTAP-Volume ist nicht konform, wenn keine AQoS-Richtlinie angewendet wird. Ein Volume ohne QoS-Richtlinie stellt als letztes in der Prioritätenliste jedes System verfügbare Input/Output-Operationen zur Verfügung. Wenn jedoch Input/Output-Vorgänge verfügbar sind, könnte das Volume alle verfügbaren I/O-Vorgänge verbrauchen.
+
+
+NOTE: Wenn Sie keine AQoS-Richtlinien auf Ihre Volumes angewendet haben, werden diese Volumes auf dem höchsten Service-Level gemäß Ihrem Abonnement gemessen und abgerechnet. Dies kann zu unbeabsichtigten Burst-Gebühren führen.
+
+
+
+=== Adaptive QoS-Einstellungen
+
+Die AQoS-Einstellungen (Adaptive QoS) variieren je nach Service-Level.
+
+|===
+
+
+| *Name der Richtlinie* | *Extreme* und *Extreme Tiering* | *Premium* und *Premium Tiering* | *Standard* | *Wert* 
+
+
+| *Erwartete IOPS* | 6,144 | 2,048 | 128 | 64 
+
+
+| *Erwartete IOPS-Zuweisung* 4+| Zugewiesener Speicherplatz 
+
+
+| *Spitzen-IOPS* | 12,288 | 4,096 | 512 | 128 
+
+
+| *Maximale IOPS-Zuweisung* 4+| Zugewiesener Speicherplatz 
+
+
+| *Blockgröße* 4+| 32K 
+|===

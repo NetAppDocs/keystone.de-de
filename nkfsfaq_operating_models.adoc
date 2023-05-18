@@ -37,7 +37,7 @@ Installation und zugehörige Aufgaben
 * Implementieren
 * Onboarding
 
-| image:check.png[""] | Keine 
+| image:check.png["Prüfen"] | Keine 
 
 
  a| 
@@ -48,7 +48,7 @@ Administration und Monitoring
 * Ausführung administrativer Aufgaben
 * Alarm
 
-| Keine | image:check.png[""] 
+| Keine | image:check.png["Prüfen"] 
 
 
  a| 
@@ -58,7 +58,7 @@ Betrieb und Optimierung
 * Performance-Management
 * SLA-Management
 
-| Keine | image:check.png[""] 
+| Keine | image:check.png["Prüfen"] 
 
 
  a| 
@@ -69,7 +69,7 @@ Unterstützung
 * Softwaresupport
 * Upgrades und Patches
 
-| image:check.png[""] | Keine 
+| image:check.png["Prüfen"] | Keine 
 |===
 *Was ist ein NetApp-betriebenes Modell?*
 

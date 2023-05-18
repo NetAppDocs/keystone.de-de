@@ -19,7 +19,7 @@ summary: Keystone-Abonnementberichte und -Diagramme
 
 NOTE: Die hier verfügbaren Informationen gelten sowohl für ONTAP als auch für StorageGRID. Ausnahmen wurden in den entsprechenden Abschnitten erwähnt.
 
-Weitere Informationen zum Keystone Digital Advisor Widget finden Sie unter https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Anzeige der Kapazitätsauslastung mit NetApp Keystone-Abonnement"^].
+Weitere Informationen zum Keystone Digital Advisor Widget finden Sie unter https://["Anzeige der Kapazitätsauslastung mit NetApp Keystone-Abonnement"^].
 
 So zeigen Sie die Details an:
 
@@ -31,7 +31,7 @@ So zeigen Sie die Details an:
 Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Level und Volume-Details werden auf den verschiedenen Registerkarten auf dem Bildschirm *Keystone Abonnements* angezeigt.
 
 
-NOTE: Die Kapazitätsnutzung in Keystone-Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt, bis zu zwei Dezimalstellen. Wenn die Nutzung weniger als 0.01 tib beträgt, wird als angezeigt `0` Oder `No Usage`. Weitere Nutzungsmetriken finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Service-Level-Metriken und -Definitionen"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone Service-Kapazitätsdefinitionen"].
+NOTE: Die Kapazitätsnutzung in Keystone-Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt, bis zu zwei Dezimalstellen. Wenn die Nutzung weniger als 0.01 tib beträgt, wird als angezeigt `0` Oder `No Usage`. Weitere Nutzungsmetriken finden Sie unter https://["Service-Level-Metriken und -Definitionen"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter https://["Keystone Service-Kapazitätsdefinitionen"].
 
 
 
@@ -39,7 +39,7 @@ NOTE: Die Kapazitätsnutzung in Keystone-Abonnements wird in TIBS auf den Dashbo
 
 Auf der Registerkarte *Abonnementdetails* können Sie alle Abonnements für einen Kontonamen anzeigen.
 
-image:aiq-ks-dtls.png[""]
+image:aiq-ks-dtls.png["Registerkarte „Abonnementdetails“"]
 
 Für jede Abonnementnummer sehen Sie die folgenden Informationen:
 
@@ -49,34 +49,43 @@ Für jede Abonnementnummer sehen Sie die folgenden Informationen:
 * *Startdatum*: Das Startdatum des Abonnements.
 * *Enddatum*: Das Enddatum des Abonnements. Basierend auf diesem Datum werden möglicherweise Informationsmeldungen für Abonnements angezeigt, die sich dem Ablauf nähern.
 * *Nutzungsstatus*: Gibt an, wie viel des Abonnements genutzt oder überverwendet wurde. Sie können die Liste nach dieser Spalte sortieren, wenn Sie die höchsten Verbrauchsdatensätze anzeigen möchten.
-* image:aiq-ks-time-icon.png[""]: Wenn Sie auf dieses Symbol klicken, wird die Registerkarte *Subscription Time Series* geöffnet, auf der Sie die historischen Nutzungsdaten für jeden Service-Level sehen können, der in diesem Abonnement enthalten ist.
+* image:aiq-ks-time-icon.png["Symbol"]: Wenn Sie auf dieses Symbol klicken, wird die Registerkarte *Subscription Time Series* geöffnet, auf der Sie die historischen Nutzungsdaten für jeden Service-Level sehen können, der in diesem Abonnement enthalten ist.
 
 
-Weitere Details finden Sie, indem Sie auf den Abwärtspfeil für einen Abonnementdatensatz klicken. Details wie der Name des Service-Levels, festgelegt, verbraucht, verfügbare Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung werden in tib angezeigt. Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Alle für Ihre Volumes erzeugten Warnungen und Warnungen werden ebenfalls angezeigt.
+Weitere Details finden Sie, indem Sie auf den Abwärtspfeil für einen Abonnementdatensatz klicken. Details wie der Name des Service-Levels, festgelegt, verbraucht, verfügbare Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung werden in tib angezeigt.
 
-Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Service-Leveln finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["Service-Leveln"].
+
+NOTE: Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.
+
+Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Service-Leveln finden Sie unter https://["Service-Leveln"].
 
 Sie können die folgenden Nutzungsanzeigen nutzen, um den Nutzungsstatus jedes Abonnements zu überprüfen:
 
-image:usage-indicator.png[""]
+image:usage-indicator.png["Symbole"]
 
 .Indizieren
-image:icon-grey.png[""]: Keine Kapazitätsnutzung erfasst mit der Kapazität des Service-Levelsimage:icon-green.png[""]: Der Verbrauch ist normal, innerhalb von 80% der Kapazität verpflichtetimage:icon-amber.png[""]: Maximaler Verbrauch, das heißt, die Nutzung wird 100% oder mehr der gebuchten Kapazität erreichen. Die Spalte *verbraucht* zeigt diesen Indikator für einen Verbrauch über 80 % der zugelegten Kapazität animage:icon-red.png[""]: Der Verbrauch liegt innerhalb der Burst-Grenze. Der Burst-Verbrauch liegt bei der Storage-Kapazität, die den zu 100 % festgelegten Kapazitätswert eines Service-Levels übersteigt, und liegt innerhalb der vereinbarten Burst-Nutzungsgrenze, z. B. 120 %image:icon-purple.png[""]: Zeigt den Verbrauch über der festgelegten Burst-Grenze an
+image:usage-indicator.png["Symbol"]
+image:usage-indicator.png["Symbol"]
+image:icon-grey.png["Symbol"]: Keine Kapazitätsnutzung erfasst mit der Kapazität des Service-Levelsimage:icon-green.png["Symbol"]: Der Verbrauch ist normal, innerhalb von 80% der Kapazität verpflichtetimage:icon-amber.png["Symbol"]: Maximaler Verbrauch, das heißt, die Nutzung wird 100% oder mehr der gebuchten Kapazität erreichen. Die Spalte *verbraucht* zeigt diesen Indikator für einen Verbrauch über 80 % der zugelegten Kapazität animage:icon-red.png["Symbol"]: Der Verbrauch liegt innerhalb der Burst-Grenze. Der Burst-Verbrauch liegt bei der Storage-Kapazität, die den zu 100 % festgelegten Kapazitätswert eines Service-Levels übersteigt, und liegt innerhalb der vereinbarten Burst-Nutzungsgrenze, z. B. 120 %image:icon-purple.png["Symbol"]: Zeigt den Verbrauch über der festgelegten Burst-Grenze an
 
 
 
 == Anzeigen historischer Abonnementdaten
 
-Auf der Registerkarte *Subscription Time Series* werden historische Daten Ihrer Abonnements für einen bestimmten Zeitraum angezeigt. In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.
+Auf der Registerkarte *Subscription Time Series* werden Verlaufsdaten Ihrer Keystone Abonnements für einen bestimmten Zeitraum angezeigt. In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.
 
 .Schritte
 . Klicken Sie auf die Registerkarte *Subscription Time Series*.
 . Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.
 . Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Der Standardzeitbereich ist vom Startdatum des Abrechnungszeitraums bis zum aktuellen Datum.
-. Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt. Wenn Sie den Mauszeiger über die Diagramme halten, wird eine Aufschlüsselung der Nutzung in Bezug auf „committed“, „verbrauchte“, „Burst“ und über den Daten des Burst-Limits an diesem Datenpunkt angezeigt.
++
+
+NOTE: Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf maximal drei Monate.
+
+. Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt. Sie können den Mauszeiger über die Diagramme halten, um eine Aufschlüsselung der Nutzung in Bezug auf die Daten für „belegt“, „verbraucht“, „Burst“ und darüber des Burst-Limits an diesem Datenerfassungspunkt anzuzeigen.
 
 
-image:aiq-ks-subtime-2.png[""]
+image:aiq-ks-subtime-2.png["Archivdaten"]
 
 Die folgenden Details werden angezeigt:
 
@@ -84,7 +93,7 @@ Die folgenden Details werden angezeigt:
 * *Nutzungsdiagramme*: Die Balkendiagramme zeigen den Namen des Service-Levels und die Kapazität an, die für diesen Service-Level für den Datumsbereich verbraucht wird. Das Datum und die Uhrzeit der Sammlung werden unten im Diagramm angezeigt.
 +
 
-NOTE: Basierend auf dem Datumsbereich Ihrer Abfrage werden die Nutzungsdiagramme in einem Bereich von 30 Datenpunkten angezeigt.
+NOTE: Basierend auf dem Datumsbereich Ihrer Abfrage werden die Nutzungsdiagramme in einem Bereich von 30 Datenerfassungspunkten angezeigt.
 
 +
 Die folgenden Farben in den Balkendiagrammen geben die verbrauchte Kapazität an, die innerhalb des Service-Levels definiert wurde:
@@ -121,6 +130,45 @@ NOTE: Die Indikatoren *Aktuelle verbrauchte*, *Aktuelle Burst* und *aufgelaufene
 
 
 
+.<strong>-DatenausDatenausDatenausDatenausDatenausDatenausDatenausDatenausDaten </strong>
+[%collapsible]
+====
+Wenn Sie den Datenschutzdienst (DP) abonniert haben, können Sie die Trennung der Verbrauchsdaten gemäß den primären und gespiegelten MetroCluster-Standorten auf der Registerkarte *Abonnementzeitreihen* anzeigen.
+
+Informationen zum Datenschutz finden Sie unter https://["Datensicherung"].
+
+Wenn die Cluster in Ihrer ONTAP Storage-Umgebung in einem MetroCluster-Setup konfiguriert sind, werden die Verbrauchsdaten Ihres Keystone Abonnements in dasselbe Zeitreihendiagramm aufgeteilt, um den Verbrauch an den primären und gespiegelten Standorten für die Basis-Service-Level anzuzeigen.
+
+
+NOTE: Die Verbrauchsbalkentabellen sind nur für grundlegende Servicelevel aufgeteilt. Für DP-Service-Level erscheint diese Abgrenzung nicht.
+
+.Service-Level für die Datensicherung
+Bei DP-Service-Leveln wird der Gesamtverbrauch aufgeteilt und die Nutzung an jedem Standort wird in einem separaten Abonnement abgerechnet, das ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort darstellt. Wenn Sie daher auf der Registerkarte *Subscription Time Series* die Abonnementnummer für den primären Standort auswählen, werden in den Verbrauchsdiagrammen für die DP-Service-Level die diskreten Verbrauchsdetails nur für den primären Standort angezeigt. Da jeder Standort in einer MetroCluster Konfiguration als Quelle und Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am jeweiligen Standort erstellt wurden.
+
+.Basis-Service-Level
+Für die Basis-Service-Level wird jedoch jedes Volume als bereitgestellt an den primären und gespiegelten Standorten abgerechnet. Daher wird dasselbe Balkendiagramm nach dem Verbrauch am primären und gespiegelten Standort aufgeteilt.
+
+.Was Sie für das primäre Abonnement sehen können
+Das folgende Bild zeigt die Diagramme für den Service-Level _Extreme_ und eine primäre Abonnementnummer. Die Zeitreihendiagramme markieren den Verbrauch der Spiegelseite in einem helleren Farbton des Farbcodes, der für den primären Standort verwendet wird. Über die Kurzinformation beim Mauszeiger wird die Verbrauchsaufschlüsselung (in tib) für die primären und gespiegelten Standorte mit 1.02 tib bzw. 1.05 tib angezeigt.
+
+image:mcc-chart.png["mcc primär"]
+
+Für den Service-Level _Data-Protect Extreme_ werden die Diagramme wie folgt angezeigt:
+
+image:dp-src.png["mcc-Primärbasis"]
+
+.Was Sie für das sekundäre Abonnement (Mirror Site) sehen können
+Wenn Sie das sekundäre Abonnement prüfen, wird ersichtlich, dass das Balkendiagramm für den _Extreme_ Service-Level am gleichen Datenerfassungspunkt umgekehrt wird und die Verbrauchsaufschlüsselung am primären und gespiegelten Standort 1.05 tib bzw. 1.02 tib beträgt.
+
+image:mcc-chart-mirror.png["mcc-Spiegel"]
+
+Für den Service-Level _Data-Protect Extreme_ erscheint das Diagramm am selben Erfassungspunkt wie folgt:
+
+image:dp-mir.png["mcc-Spiegelsockel"]
+
+Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https://["MetroCluster Datensicherung und Disaster Recovery verstehen"^].
+
+====
 
 
 == Zeigen Sie Systemdetails an
@@ -136,11 +184,15 @@ Für ONTAP werden auf der Registerkarte „Systemdetails“ Informationen wie Ka
 . Klicken Sie auf die Registerkarte *Systemdetails*.
 . Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste verfügbare Abonnementnummer ausgewählt.
 +
-Die Volume-Details werden angezeigt. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen. Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die Schaltfläche *Node Serials kopieren* klicken.
+Die Volume-Details werden angezeigt. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen.
+
++
+
+NOTE: Für Datensicherungsdienste wird eine zusätzliche Spalte angezeigt, die angibt, ob es sich bei dem Volume um ein primäres oder ein gespiegeltes Volume in der MetroCluster-Konfiguration handelt. Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die Schaltfläche *Node Serials kopieren* klicken.
 
 
 
-image:aiq-ks-sysdtls.png[""]
+image:aiq-ks-sysdtls.png["Registerkarte „Systemdetails“"]
 
 ====
 .<strong>-UmeNodes und </strong>
@@ -152,11 +204,11 @@ Bei StorageGRID zeigt diese Registerkarte die logische Nutzung der Nodes in der 
 . Klicken Sie auf die Registerkarte *Systemdetails*.
 . Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste verfügbare Abonnementnummer ausgewählt. Bei Auswahl der Abonnementnummer wird der Link für Details zum Objekt-Storage aktiviert.
 +
-image:sg-link.png[""]
+image:sg-link.png["Details zum SG-System"]
 
 . Klicken Sie auf den Link, um die Knotennamen und Details zur logischen Nutzung für jeden Node anzuzeigen.
 +
-image:sg-link-2.png[""]
+image:sg-link-2.png["SG-Popup"]
 
 
 
@@ -165,17 +217,17 @@ image:sg-link-2.png[""]
 
 == Berichte generieren
 
-Sie können Berichte für Ihre Abonnementdetails, Nutzungsdaten für einen bestimmten Zeitraum und Systemdetails von jedem der Registerkarten erstellen und anzeigen, indem Sie auf die Schaltfläche *CSV herunterladen* klicken: image:download-icon.png[""]
+Sie können Berichte für Ihre Abonnementdetails, Nutzungsdaten für einen bestimmten Zeitraum und Systemdetails von jedem der Registerkarten erstellen und anzeigen, indem Sie auf die Schaltfläche *CSV herunterladen* klicken: image:download-icon.png["Symbol zum Herunterladen von Berichten"]
 
 Die Details werden im CSV-Format erstellt, das Sie zur späteren Verwendung speichern können.
 
-Auf der Registerkarte *Subscription Time Series* haben Sie die Möglichkeit, den Bericht für die standardmäßigen 30 Datenpunkte des Datumsbereichs Ihrer Abfrage oder Tagesberichte herunterzuladen.
+Auf der Registerkarte *Subscription Time Series* haben Sie die Möglichkeit, den Bericht für die standardmäßigen 30 Datenerfassungspunkte des Datumsbereichs Ihrer Abfrage oder Tagesberichte herunterzuladen.
 
-image:aiq-report-dnld.png[""]
+image:aiq-report-dnld.png["Bericht Beispiel"]
 
 Beispielbericht für die Registerkarte *Subscription Time Series*, in der die grafischen Daten konvertiert werden:
 
-image:report.png[""]
+image:report.png["Bericht Beispiel"]
 
 
 
@@ -188,10 +240,10 @@ Es gibt zwei Arten von Warnmeldungen:
 * *Information*: Für Probleme, wie Ihre Abonnements, die sich einem Ende nähern, können Sie Informationswarnungen sehen. Bewegen Sie den Mauszeiger über das Informationssymbol, um mehr über das Problem zu erfahren.
 * *Warnung*: Probleme, wie z. B. Nichteinhaltung, werden als Warnungen angezeigt. Wenn beispielsweise Volumes in den gemanagten Clustern ohne über AQoS-Richtlinien (Adaptive QoS) verbunden sind, wird eine Warnmeldung angezeigt. Klicken Sie auf den Link in der Warnmeldung, um die Liste der nicht kompatiblen Volumes auf der Registerkarte *Systemdetails* anzuzeigen.
 +
-Informationen zu AQoS-Richtlinien finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_kfs_billing.html#billing-and-adaptive-qos-policies["Abrechnung und anpassungsfähige QoS-Richtlinien"].
+Informationen zu AQoS-Richtlinien finden Sie unter https://["Abrechnung und anpassungsfähige QoS-Richtlinien"].
 
 
 
-image:alert-aiq.png[""]
+image:alert-aiq.png["Meldungen"]
 
-Wenden Sie sich an den NetApp Support, um weitere Informationen zu diesen Warn- und Warnungsmeldungen zu erhalten. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["Eine Serviceanfrage stellen"].
+Wenden Sie sich an den NetApp Support, um weitere Informationen zu diesen Warn- und Warnungsmeldungen zu erhalten. Weitere Informationen finden Sie unter https://["Eine Serviceanfrage stellen"].

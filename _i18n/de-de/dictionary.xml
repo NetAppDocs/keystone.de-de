@@ -102,7 +102,6 @@
   <block id="03f4a47830f97377a35321051685071e" category="cell">Geschlossen</block>
   <block id="8c6ed17d43fdff1098f07504d08b6db2" category="cell">Die Anfrage ist geschlossen.</block>
   <block id="49160028ef392112eb613b320b874fc3" category="paragraph">Verfolgen Sie den Status einer Service-Anfrage, indem Sie den Status in der NetApp Service Engine überprüfen. Wie unten beschrieben, können Sie den Status in den im Rahmen des Prozesses gesendeten automatisierten E-Mails verfolgen.</block>
-  <block id="560c822dc17f9ac8ce69bf5b11416ace" category="paragraph"><block ref="560c822dc17f9ac8ce69bf5b11416ace" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f503801323daa68428cbc58b04af9c66" category="section-title">Abonnementmodell in einer von NetApp betriebenen (Single-Tenant-Umgebung)</block>
   <block id="f414f33dd36c7df5855c80c5efb4a954" category="list-text">Ein Abonnement wird von einem NetApp Administrator oder GSSC für einen Mandanten und eine Zone erstellt.</block>
   <block id="7e58a49da804872ab7943c863fa6aedd" category="list-text">Die Abonnementnamen werden von der Rechnungseinheit abgeleitet, für die der Mieter registriert ist.</block>
@@ -1283,7 +1282,6 @@
   <block id="ec1b7e7cfe1ccc10863feb992dae9df6" category="list-text">Administrator-APIs</block>
   <block id="648c58637f3ee6ceee5a88bedcdadcde" category="section-title">Wichtige Konzepte der NetApp Service Engine</block>
   <block id="13fd5896918659251fe2f5bf181b010f" category="paragraph">NetApp Service Engine unterstützt die Konzepte von Regionen und Zonen, wie in der nachfolgenden Abbildung dargestellt. Eine Region repräsentiert ein Datacenter oder einen Standort, während eine Zone eine Storage-Untereinheit innerhalb der Region darstellt (technisch ein Cluster innerhalb eines Datacenters/Standorts). Mehrere Zonen unterstützen Data Availability- und Datensicherungsfunktionen (DP).</block>
-  <block id="5a0b4973d48063535696aa9e17c4d1a7" category="paragraph"><block ref="5a0b4973d48063535696aa9e17c4d1a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f1aaa0834c53b85da9b4a081d34a946" category="paragraph">Eine einzelne NetApp Service Engine-Instanz kann einen oder mehrere Mandanten unterstützen. Die NetApp Service Engine verwendet die Konzepte von Mandanten und Untermandanten als hierarchische Einheiten, die den Storage-Service besitzen bzw. managen.</block>
   <block id="cfec8dcefc0bb72f0cd2b90d8ecaa9f0" category="paragraph">Ein Untermieter ist eine Einheit, die vollständig im Mieter ist. Er kann für Showback, Security Separation usw. verwendet werden.</block>
   <block id="e5e9dc3c16d4b85d14949811db406ceb" category="paragraph">Storage-Elemente werden pro Untermandant erstellt. Jeder Untermandant kann mehrere Storage-Elemente vom Typ und der Nummer enthalten, die für diesen Untermandant geeignet sind.</block>
@@ -1461,11 +1459,9 @@
   <block id="50b3ca2bf45db45c46e3f489f5322d29" category="list-text">Tools zum Managen und Betreiben des Service wie OpsRamp, Active IQ und Active IQ Unified Manager.</block>
   <block id="25ee4245ff35e15ec0a6dda5f6cd1765" category="inline-link-macro">Active IQ Digital Advisor Dokumentation</block>
   <block id="32577a69f048903f418e8743cf0bac99" category="paragraph">Weitere Informationen zur Integration von NetApp Keystone mit Active IQ finden Sie unter <block ref="38a54c9e880fa18a2a1c016836ec12db" category="inline-link-macro-rx"></block></block>
-  <block id="fc051047f55f16b2ba9881dd1f074063" category="paragraph"><block ref="fc051047f55f16b2ba9881dd1f074063" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60ee3c04aeb77fc87402f54ca6193f17" category="section-title">NetApp Service Engine</block>
   <block id="154899bfba4f244880d8d8dae2bd4625" category="list-text">Eine grafische Schnittstelle (NetApp Service Engine Web Interface) zur Überwachung und einfachen Storage-Bereitstellung.</block>
   <block id="484bbc8723fb454613a0af113567bc2a" category="list-text">Eine Reihe VON REST-APIs der NetApp Service Engine für erweiterte Setup- und Storage-Managementaktionen.</block>
-  <block id="4fe249fd11a4d63ff19500469f271f6c" category="paragraph"><block ref="4fe249fd11a4d63ff19500469f271f6c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b01d8c4c08d74db1b2ec0d2c3ee4e0ad" category="paragraph">Das NetApp Service Engine Portal stellt eine zentrale Oberfläche dar, über die Kunden folgende Aufgaben ausführen können:</block>
   <block id="d79d981e75d77c1fad1bb30f8c0f894e" category="list-text">Abonnement-Dashboard: Anzeige des Status der abonnierten Kapazität und der verbrauchten Kapazität</block>
   <block id="81ccfbf3dcf427cf92a64d3c55325446" category="list-text">Storage-Bereitstellung Workflows zur Erstellung von NFS-/CIFS-Dateifreigaben, FC-/iSCSI-Festplatten und S3-Bucket</block>
@@ -1481,13 +1477,9 @@
   <block id="8758e23e7960e73e6ab424225ab3813c" category="list-text">Wenn für den Benutzer keine Schlüssel vorhanden sind, klicken Sie auf *S3-Schlüssel erstellen*, um die Felder zum Erstellen eines Schlüssels anzuzeigen.</block>
   <block id="00a06b08857b60c805bcaf007a9ddc9c" category="list-text">Klicken Sie Auf *Schließen*.</block>
   <block id="edea9398bafcc918142f79d91b628f61" category="list-text">Klicken Sie erneut auf *Schließen*, um das Dialogfeld S3-Schlüssel verwalten zu schließen.</block>
-  <block id="e4355ea354829ede276c4aa44fe13eb2" category="summary">Willkommen beim Keystone Dokumentationsportal.</block>
-  <block id="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="paragraph"><block ref="fb2c4a4567f19f497aa52f4fa9fe5ad4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="173cfa01f909dadb1cc7bb7d43b24a2e" category="list-text">*der Basic* Service für Datensicherung bietet NetApp SnapMirror und NetApp SnapVault Funktionen mit Standardeinstellungen.</block>
   <block id="1ca92842b9f8718a33770baa49c236e6" category="list-text">*Data Protection Advanced* bietet einen Service mit SLAs von RPO=0 durch Nutzung der NetApp MetroCluster Funktionen.</block>
-  <block id="98fe652f43ec6cef9ce4e8038be74733" category="paragraph"><block ref="98fe652f43ec6cef9ce4e8038be74733" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1a8f20342523eaa8f9195dffa647161c" category="list-text">Ordnungsgemäße Kontrolle über Compliance, Performance und Sicherheit</block>
-  <block id="a0a35eef0076381c8b78bfe2cdbed28b" category="paragraph"><block ref="a0a35eef0076381c8b78bfe2cdbed28b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="64cb5f10c6949d975da63108f4244697" category="paragraph">Sie benötigen:</block>
   <block id="02154846d04868cd579969e490705c31" category="summary">Melden Sie sich beim Web-Interface der NetApp Service Engine an</block>
   <block id="6502fca6147310b6dade74cf980b775c" category="doc">Melden Sie sich auf der Webschnittstelle der NetApp Service Engine an</block>
@@ -1943,7 +1935,6 @@
   <block id="a7b56e7d77b5e12d417d0361594ad521" category="list-text">Geben Sie im Dialogfeld Löschen bestätigen den Namen des zu löschenden Azure-Kapazitätspools ein.</block>
   <block id="9a4f480d8a363d2e1a887848ac25f500" category="summary">Keystone Arbeiten mit Fileservices Übersicht</block>
   <block id="ae5865954998f77611c9b7eca56ea522" category="paragraph">In diesem Abschnitt wird das Management von File-Servern und NFS/CIFS-Dateifreigaben beschrieben. Sie können Informationen zu Ihren Dateiservern anzeigen und diese freigeben, erstellen, ändern und löschen.</block>
-  <block id="89c3a4001bb90f26ff84b68cb534b8ee" category="paragraph">Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte während der letzten Woche. Die Spitzen-Performance wird in einem stündlichen Zeitintervall festgelegt. Berichte zur I/O-Dichte nach Volumen werden monatlich erstellt, um die Einhaltung der jeweiligen Service-Level zu beurteilen.</block>
   <block id="e84417b811d892cfabeb4dbee529c832" category="summary">Managen von Cloud Volume-Abonnements auf der Google Cloud Platform</block>
   <block id="d2b2c18fa0ca629c1ca61a9d48a4cb2b" category="doc">Management von Cloud Volumes Service für GCP</block>
   <block id="e946962d2bea46b9a982a912efacd934" category="inline-link">Erfahren Sie mehr über Cloud Volumes Service für Google Cloud</block>
@@ -2453,9 +2444,7 @@
   <block id="463c3a95787ac56f36c227feeb7bd389" category="list-text">*vom Kunden betriebenes Modell*: Die folgende Tabelle fasst das gesamte Service Lifecycle Modell und die damit verbundenen Rollen und Verantwortlichkeiten in einer kundengesteuerten Umgebung zusammen.</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">Aufgabe</block>
   <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="cell">NetApp</block>
-  <block id="244f78a4e039400f39e0eb94595bdc02" category="cell"><block ref="244f78a4e039400f39e0eb94595bdc02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7feb8545e008b64a43a24668068761be" category="summary">Was können Kunden in Active IQ für einen Grundpfeiler sehen</block>
-  <block id="28307c52fb9de3f0b2b26086b89eb8f3" category="paragraph">Hier sind die Service Level für Datei-, Block- und Objekt-Storage aufgeführt.</block>
   <block id="079bbc110741f438dfb37f32218c4c21" category="cell">*Service Level*</block>
   <block id="cdf0cc519fabc4c14999e89090d33dc1" category="cell">*Extreme*</block>
   <block id="153a19d482de580ce84c77ac52c6f907" category="cell">*Premium*</block>
@@ -2477,31 +2466,21 @@
   <block id="49f593d642a7f3dccf1fe5bf08aaf55a" category="cell">*maximaler Durchsatz MB/s (32 KB/IOP)*</block>
   <block id="0584ce565c824b7b7f50282d9a19945b" category="cell">384</block>
   <block id="c74d97b01eae257e44aa9d5bade97baf" category="cell">16</block>
-  <block id="eea2274bcc20c5ab5c322a30dcee6258" category="cell">*Latenz*</block>
   <block id="99f8d77b50f8491531357b2d907d59d1" category="cell">&lt;1 ms</block>
   <block id="6fad0b609a57af2ae4dbbf92ff728673" category="cell">&lt;2 ms</block>
   <block id="342e06f2c04b016459176bdbbd984dfe" category="cell">&lt;17 ms</block>
-  <block id="6dc055784da42aa0a64927764707636c" category="cell">*Mindestkapazität*^1,2^</block>
-  <block id="5c3110c52843bef1e5effeb6f09a6ab9" category="cell">100 tib^1^</block>
-  <block id="6b2c7dcd56a1cb15a3943cec9cbc288a" category="cell">15 tib^2^</block>
-  <block id="2d46634ee64919ed31d1417b57f21934" category="cell">25 tib^2^</block>
-  <block id="7d7a1cbef5663cabe63cfb0d8ca01cb8" category="cell">50 tib^2^</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="section-title">Block-Storage</block>
   <block id="8e634bafd4732f9f05a35ceb5ed54902" category="paragraph">* Unterstützte Protokolle*: FC und iSCSI</block>
   <block id="2f569257101cf136a49d983584bfc44f" category="cell">HPC</block>
   <block id="887af0da9693198de27d195a46aa6675" category="cell">Videoüberwachung</block>
-  <block id="346042acde3f070972b08ae84fafa549" category="cell">5.500</block>
   <block id="a078c2a6f2d4313df0b942ebf9d6b940" category="cell">4,000</block>
   <block id="17e62166fc8586dfa4d1bc0e1742c08b" category="cell">43</block>
   <block id="c16a5320fa475530d9583c34fd356ef5" category="cell">31</block>
   <block id="f369b2981da1e28bb1901ae50eeb877a" category="cell">&lt;0.5 ms</block>
-  <block id="bf9224ad67754b6fee4e952851b35d3e" category="cell">100 tib^3^</block>
-  <block id="2378ad2afb80cd0122c6f07757ca1321" category="cell">300 tib^3^</block>
   <block id="670aaecb1a526fbed439dad3ec353a96" category="section-title">Objekt-Storage</block>
   <block id="58d801506333ab644845942779162cbc" category="paragraph">*unterstütztes Protokoll*: S3</block>
   <block id="497031794414a552435f90151ac3b54b" category="cell">Objekt</block>
   <block id="346ddf53d2d569d0bb73eb7826cf95d8" category="cell">Medien-Repository, Archivierung</block>
-  <block id="29de402441037919e9b47a4ad8a12baa" category="cell">500 tib^3^</block>
   <block id="f1dae87d14ba76423e263dc9a79acdd7" category="paragraph">Das folgende Diagramm zeigt die drei Betriebsmodelle auf, die ein Kunde auswählen kann: NetApp betrieben, Partner betrieben und vom Kunden betrieben.</block>
   <block id="10288ddd3c9dd46deaa222ee129df3fb" category="doc">US Citizen Support (USCS)</block>
   <block id="5233633b9faaa681d96ef5c43e30bea2" category="section-title">Logische Kapazität</block>
@@ -2560,7 +2539,6 @@
   <block id="550340cfbad3ac61a634336458de3119" category="list-text">Behebung von Hardware-Problemen</block>
   <block id="9f65492afee4fdfba75618fed6d0f9dd" category="list-text">Softwaresupport</block>
   <block id="e59aa159238c2e5f491468dabdfd0b62" category="list-text">Upgrades und Patches</block>
-  <block id="e674e65192e6527dabaf52c23f514da4" category="section-title">Fileservices</block>
   <block id="73cf2790a3f92d26764722174d70cf34" category="paragraph">* Unterstützte Protokolle*: NFS, CIFS, iSCSI und FC</block>
   <block id="bc9d99b4b5c353814419ac4f3a7bcbb9" category="inline-link-macro">NetApp Keystone</block>
   <block id="5866f5199f36da24870932aa9db6ab49" category="list-text">Sie bietet planbare Abrechnung für die verplante Kapazität und „Pay-per-use“-Funktion für die variable (Burst) Kapazitätsauslastung.</block>
@@ -2811,10 +2789,6 @@
   <block id="201a10b44105a7f46600bd19700a5b0b" category="admonition">Wenn für die ausgewählte Dateifreigabe einige Snapshots erstellt wurden, die in der SnapCenter-Umgebung außerhalb der NetApp Service Engine erstellt wurden, können Sie die Snapshots importieren und für Ihre Auswahl aufgelistet finden. Sie können diese importierten Snapshots auswählen und die neuen Dateifreigaben daraus klonen.</block>
   <block id="675fcd36774818dbea836dc02cf4d0d6" category="list-text">Aktivieren Sie das Kontrollkästchen neben dem Snapshot, von dem Sie klonen möchten, und klicken Sie auf *Weiter*. Der neue Dateifreigabe übernimmt die Eigenschaften des ausgewählten Snapshots.</block>
   <block id="278530798aa56115669d57d1e3fa9073" category="list-text">Fügen Sie *Name* und *Pfad teilen* hinzu. Aktualisieren Sie die anderen Einstellungen, wie z. B. die Zuweisung einer *Service Level*, und klicken Sie auf *Erstellen*. Wählen Sie den Service Level aus, der Ihren Anforderungen am besten entspricht.</block>
-  <block id="c369a24416627121068456b8b8aad586" category="paragraph">Folgende Tabelle zeigt die Service Levels.</block>
-  <block id="9298a8df81bc0591b45113097c6a4118" category="section-title">Service Levels für unterschiedliche Storage-Typen</block>
-  <block id="18cf673c6b162cc27313691486836fca" category="admonition">^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib für eine Kombination aus beliebigen Dateifreigabe- und Block-Service-Leveln für NetApp Lösungen. ^2^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Servicestufe, die für Channel-geführte Opportunitys ausgewählt wurde.</block>
-  <block id="c3010f4da438652aab9b42654d086f8d" category="admonition">^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib für eine Kombination aus beliebigen Dateifreigabe- und Block-Service-Leveln für NetApp Lösungen. ^2^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Servicestufe für Channel-geführte Opportunitys ausgewählt. ^3^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Service-Tier ausgewählt für jeden Opportunity-Typ.</block>
   <block id="39cd3f32af1f6142ceceefd9378ef437" category="list-text">Alle dem Dateiserver zugeordneten Disaster Recovery-Kopien. Sie können das Löschen eines Servers nicht rückgängig machen.</block>
   <block id="a189c66e23fd7e79d1bebf594d16fb15" category="paragraph">Wenn die verbrauchte Kapazität größer ist als die für ein bestimmtes Service-Level verplante Kapazität, wird der Burst-Verbrauch erfasst und dementsprechend werden Gebühren angewendet. Dieser Prozess erfolgt für jeden generierten Verbrauchsdatensatz. Der Burst-Verbrauch spiegelt daher sowohl die Höhe als auch die Dauer Ihrer zu verbrauchten Kapazitäten zusätzlich zu Ihren engagierten Kapazitäten wider.</block>
   <block id="17165dfb97a3399066f5846aed0c4af9" category="list-text">Geklonte Volumes mit den Service-Leveln „Standard“ und „Wert“ werden nicht für den Verbrauch berücksichtigt, wenn keine neuen Daten auf das Volume geschrieben werden. So werden beispielsweise in einem Anwendungsfall für Backup oder Wiederherstellung die Daten eines geklonten Volume gesichert oder wiederhergestellt. Die Daten werden im geklonten Volume selbst nicht verändert – und sie werden nicht als Verbrauch betrachtet.</block>
@@ -2823,7 +2797,6 @@
   <block id="eb71f31c80be60d1b83c15a9023c5aa0" category="paragraph">Informationen zum Tiering von Daten auf beliebigen Objekt-Storage von Drittanbietern erhalten Sie von Ihrem Keystone Success Manager.</block>
   <block id="742eeba5dde6c1c0f5b7c867d0ee4115" category="paragraph">Informationen zur Verwendung der FabricPool Technologie für Ihre Keystone-Abonnements finden Sie unter <block ref="4488ca7c1dbfbc3a4a5cb0de9a5f943b" category="inline-link-macro-rx"></block>.</block>
   <block id="49e55f1469134d874d5c920897870fab" category="section-title">Abrechnung für System- und Root-Volumes</block>
-  <block id="6a1836144168f39941f392b695d13d99" category="paragraph"><block ref="6a1836144168f39941f392b695d13d99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd5fb265e740e897efd97ec6db65e09f" category="paragraph">Als Partner-Administrator sehen Sie die monatlichen Rechnungsaufspaus für einen ausgewählten Untermieter.</block>
   <block id="7405166a7ce32802615fd74dd60f9ac4" category="admonition">Sie können auch auf den Pfeil oben rechts im Widget *Costs to Date* auf dem Dashboard oder auf einer beliebigen Leiste klicken, die einen Monat im Widget darstellt, um die Seite „Rechnungsstellung“ anzuzeigen. Alle Abonnements für den ausgewählten Monat werden angezeigt.</block>
   <block id="37c88707e5f04d4dd1d96b217e3b8f6b" category="list-text">Fahren Sie optional mit dem Mauszeiger auf das Balkendiagramm, das einen Monat darstellt, um weitere Details anzuzeigen.</block>
@@ -2962,7 +2935,6 @@
   <block id="3e7fbf68bb6fb2a1a061e9b1a50441d9" category="inline-link">Service-Level-Metriken und -Definitionen</block>
   <block id="b3c0ed0e576799a24c9e0fda06bee006" category="section-title">Abonnementdetails anzeigen</block>
   <block id="b5d0d2658bdd7db17a2251c2d1fa6edb" category="paragraph">Auf der Registerkarte *Abonnementdetails* können Sie alle Abonnements für einen Kontonamen anzeigen.</block>
-  <block id="3134c27d858b331bf91068bcd770722c" category="paragraph"><block ref="3134c27d858b331bf91068bcd770722c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60d8073bb007efeabf44bc4eea759210" category="paragraph">Für jede Abonnementnummer sehen Sie die folgenden Informationen:</block>
   <block id="8e43124ddee77b223f1e720973e147e7" category="list-text">*Abonnementnummer*: Die Abonnementnummer des von NetApp zugewiesenen Keystone Abonnements.</block>
   <block id="f06c1648cc175308e5d0425681e31f63" category="list-text">*Tracking-ID*: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Website, die zur Nachverfolgung des Abonnements verwendet wird.</block>
@@ -2970,24 +2942,16 @@
   <block id="58ddac2ef16530986372a556eb9e6b7a" category="list-text">*Startdatum*: Das Startdatum des Abonnements.</block>
   <block id="b8905d711198e80b0e2927dff32cfd11" category="list-text">*Enddatum*: Das Enddatum des Abonnements. Basierend auf diesem Datum werden möglicherweise Informationsmeldungen für Abonnements angezeigt, die sich dem Ablauf nähern.</block>
   <block id="83adb6d347afacf7d560a4bb6f74dfa1" category="list-text">*Nutzungsstatus*: Gibt an, wie viel des Abonnements genutzt oder überverwendet wurde. Sie können die Liste nach dieser Spalte sortieren, wenn Sie die höchsten Verbrauchsdatensätze anzeigen möchten.</block>
-  <block id="87620cf1d6b63757e4ea27dcc44a9358" category="list-text"><block ref="5d188bf7f39558255a337fa21a17a0b0" category="inline-image-macro-rx" type="image"></block>: Wenn Sie auf dieses Symbol klicken, wird die Registerkarte *Subscription Time Series* geöffnet, auf der Sie die historischen Nutzungsdaten für jeden Service-Level sehen können, der in diesem Abonnement enthalten ist.</block>
-  <block id="dc73bcb00aeb285be26cfd179924fe9e" category="paragraph">Weitere Details finden Sie, indem Sie auf den Abwärtspfeil für einen Abonnementdatensatz klicken. Details wie der Name des Service-Levels, festgelegt, verbraucht, verfügbare Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung werden in tib angezeigt. Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Alle für Ihre Volumes erzeugten Warnungen und Warnungen werden ebenfalls angezeigt.</block>
   <block id="706b251feaacce4536ad626d12e0cdb3" category="paragraph">Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Service-Leveln finden Sie unter<block ref="36a3b3cce1fbb3bc12a00ec01f92dfcb" category="inline-link-rx"></block>.</block>
   <block id="736d5b3313fce2ba2126ffff61a7ec29" category="paragraph">Sie können die folgenden Nutzungsanzeigen nutzen, um den Nutzungsstatus jedes Abonnements zu überprüfen:</block>
-  <block id="3aaeea3f20263addb794c645bdef9c16" category="paragraph"><block ref="3aaeea3f20263addb794c645bdef9c16" category="inline-image-macro-rx" type="image"></block></block>
   <block id="88fa71f0a6e0dfedbb46d91cc0b37a50" category="paragraph-title">Indizieren</block>
-  <block id="cf6ffa83aadbdcc3058434f093ea54ec" category="paragraph"><block ref="56a93b6a2a3614c3aeb1b9851c5e43f2" category="inline-image-macro-rx" type="image"></block>: Keine Kapazitätsnutzung erfasst mit der Kapazität des Service-Levels<block ref="bb7f7720d1162aeddd650a9a9446141b" category="inline-image-macro-rx" type="image"></block>: Der Verbrauch ist normal, innerhalb von 80% der Kapazität verpflichtet<block ref="7646cb232eca2204ee8b299f2fdebfb4" category="inline-image-macro-rx" type="image"></block>: Maximaler Verbrauch, das heißt, die Nutzung wird 100% oder mehr der gebuchten Kapazität erreichen. Die Spalte *verbraucht* zeigt diesen Indikator für einen Verbrauch über 80 % der zugelegten Kapazität an<block ref="2acc4efd0d7d55d52fc790f88116c2e0" category="inline-image-macro-rx" type="image"></block>: Der Verbrauch liegt innerhalb der Burst-Grenze. Der Burst-Verbrauch liegt bei der Storage-Kapazität, die den zu 100 % festgelegten Kapazitätswert eines Service-Levels übersteigt, und liegt innerhalb der vereinbarten Burst-Nutzungsgrenze, z. B. 120 %<block ref="9dd31109acddbedcca8dcf80e09eebda" category="inline-image-macro-rx" type="image"></block>: Zeigt den Verbrauch über der festgelegten Burst-Grenze an</block>
   <block id="6258cb1a842831f15b22f87325717f37" category="section-title">Anzeigen historischer Abonnementdaten</block>
-  <block id="a514224616890dbac3dede8f0d533add" category="paragraph">Auf der Registerkarte *Subscription Time Series* werden historische Daten Ihrer Abonnements für einen bestimmten Zeitraum angezeigt. In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.</block>
   <block id="c46ba64e2bab36ac2ede95ae5f0692dc" category="list-text">Klicken Sie auf die Registerkarte *Subscription Time Series*.</block>
   <block id="a49bb8de1f373a2c0821dd3715e2473c" category="list-text">Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.</block>
   <block id="9ff2c2d2ffe68a2a0862d38fe356318c" category="list-text">Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Der Standardzeitbereich ist vom Startdatum des Abrechnungszeitraums bis zum aktuellen Datum.</block>
-  <block id="22dcf7d0676ff8f536ed431a7b672de7" category="list-text">Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt. Wenn Sie den Mauszeiger über die Diagramme halten, wird eine Aufschlüsselung der Nutzung in Bezug auf „committed“, „verbrauchte“, „Burst“ und über den Daten des Burst-Limits an diesem Datenpunkt angezeigt.</block>
-  <block id="4ace5fc4007e7d1732831506700b3e06" category="paragraph"><block ref="4ace5fc4007e7d1732831506700b3e06" category="inline-image-macro-rx" type="image"></block></block>
   <block id="35070e1c588eb56d935a4877ffdfdb10" category="paragraph">Die folgenden Details werden angezeigt:</block>
   <block id="8cdd8d8e55dfdcaf50118c634169eaf7" category="list-text">*Abonnementdetails*: Das Start- und Enddatum des Abonnements und der Abrechnungszeitraum, z. B. vierteljährlich, jährlich usw.</block>
   <block id="12ed0205cd7410bc01e15e4b8a285019" category="list-text">*Nutzungsdiagramme*: Die Balkendiagramme zeigen den Namen des Service-Levels und die Kapazität an, die für diesen Service-Level für den Datumsbereich verbraucht wird. Das Datum und die Uhrzeit der Sammlung werden unten im Diagramm angezeigt.</block>
-  <block id="a0844c086d0417165bb56c154e3ddbcc" category="admonition">Basierend auf dem Datumsbereich Ihrer Abfrage werden die Nutzungsdiagramme in einem Bereich von 30 Datenpunkten angezeigt.</block>
   <block id="3a6ef8ff534dc5701b3936464bf23441" category="paragraph">Die folgenden Farben in den Balkendiagrammen geben die verbrauchte Kapazität an, die innerhalb des Service-Levels definiert wurde:</block>
   <block id="19e499aa450e552c41a06bb0742085d6" category="list-text">Grün: Innerhalb Von 80 %.</block>
   <block id="744f7cb6bd1aa9077ff244891a651e80" category="list-text">Gelb: 80 % - 100 %.</block>
@@ -3008,30 +2972,20 @@
   <block id="6f7e564e5f841331ad117d7eb3b3ae10" category="paragraph">Für ONTAP werden auf der Registerkarte „Systemdetails“ Informationen wie Kapazitätsnutzung, Volume-Typ, Cluster, Aggregat und Service-Level der Volumes in Ihrer Storage-Umgebung angezeigt, die durch das Keystone Abonnement gemanagt werden.</block>
   <block id="d2c1241be04ae4d70013755a80c6cbd2" category="list-text">Klicken Sie auf die Registerkarte *Systemdetails*.</block>
   <block id="ccdbd07a063ad5631511d37c5d2f5a36" category="list-text">Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste verfügbare Abonnementnummer ausgewählt.</block>
-  <block id="881fb88f30cf9ba2d57147ddfb898685" category="paragraph">Die Volume-Details werden angezeigt. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen. Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die Schaltfläche *Node Serials kopieren* klicken.</block>
-  <block id="2ebe85ca38ab100590dc16fd81d18da1" category="paragraph"><block ref="2ebe85ca38ab100590dc16fd81d18da1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8b315ff987c2e0cfd5650f23e5464623" category="example-title">&lt;strong&gt;-UmeNodes und &lt;/strong&gt;</block>
   <block id="b3e33e1c1964ee47822698a5c69ad576" category="paragraph">Bei StorageGRID zeigt diese Registerkarte die logische Nutzung der Nodes in der Objekt-Storage-Umgebung an.</block>
   <block id="4305e9b17980561df3c63a75f32b2075" category="list-text">Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste verfügbare Abonnementnummer ausgewählt. Bei Auswahl der Abonnementnummer wird der Link für Details zum Objekt-Storage aktiviert.</block>
-  <block id="1690678f16ffa10ab1e26e44aa686db5" category="paragraph"><block ref="1690678f16ffa10ab1e26e44aa686db5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4be9bcf02510758e3d80494ef37c15b0" category="list-text">Klicken Sie auf den Link, um die Knotennamen und Details zur logischen Nutzung für jeden Node anzuzeigen.</block>
-  <block id="47e40976658c073c0e6048f08d9a27c6" category="paragraph"><block ref="47e40976658c073c0e6048f08d9a27c6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7ecd0726b721e17d74d280fdd93e49f8" category="section-title">Berichte generieren</block>
-  <block id="4fdff89d4e1cb0e4a41e6c52ac0eca05" category="paragraph">Sie können Berichte für Ihre Abonnementdetails, Nutzungsdaten für einen bestimmten Zeitraum und Systemdetails von jedem der Registerkarten erstellen und anzeigen, indem Sie auf die Schaltfläche *CSV herunterladen* klicken: <block ref="f865f0dd5bea740b7e77dd6862c1f366" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03051fbd458dd7625e7969d74dd74735" category="paragraph">Die Details werden im CSV-Format erstellt, das Sie zur späteren Verwendung speichern können.</block>
-  <block id="e14d9b45f9f7753ca5842f57c89f2f92" category="paragraph">Auf der Registerkarte *Subscription Time Series* haben Sie die Möglichkeit, den Bericht für die standardmäßigen 30 Datenpunkte des Datumsbereichs Ihrer Abfrage oder Tagesberichte herunterzuladen.</block>
-  <block id="d5b4a5bc607e49724b373b44e10a1b6d" category="paragraph"><block ref="d5b4a5bc607e49724b373b44e10a1b6d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f564a49686a18ae09da9597e6538840" category="paragraph">Beispielbericht für die Registerkarte *Subscription Time Series*, in der die grafischen Daten konvertiert werden:</block>
-  <block id="0a5468723ee164f4220a0538b1ff32b4" category="paragraph"><block ref="0a5468723ee164f4220a0538b1ff32b4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">Anzeigen von Meldungen</block>
   <block id="c71fcee7f813aa85774b9114dfba4ef1" category="paragraph">Warnungen auf der Konsole senden Warnhinweise, mit denen Sie die in Ihrer Storage-Umgebung auftretenden Probleme verstehen.</block>
   <block id="903961eaa166cc0c38b735276961eb0c" category="paragraph">Es gibt zwei Arten von Warnmeldungen:</block>
   <block id="7a0a61d280e201148fcd091f8167d88f" category="list-text">*Information*: Für Probleme, wie Ihre Abonnements, die sich einem Ende nähern, können Sie Informationswarnungen sehen. Bewegen Sie den Mauszeiger über das Informationssymbol, um mehr über das Problem zu erfahren.</block>
   <block id="d08b54ee187c7327910bae3997812ee1" category="list-text">*Warnung*: Probleme, wie z. B. Nichteinhaltung, werden als Warnungen angezeigt. Wenn beispielsweise Volumes in den gemanagten Clustern ohne über AQoS-Richtlinien (Adaptive QoS) verbunden sind, wird eine Warnmeldung angezeigt. Klicken Sie auf den Link in der Warnmeldung, um die Liste der nicht kompatiblen Volumes auf der Registerkarte *Systemdetails* anzuzeigen.</block>
   <block id="77561a56c28ac9cccc7140baff66eefa" category="paragraph">Informationen zu AQoS-Richtlinien finden Sie unter<block ref="eb9e151d2a405494b16ec028c9292f15" category="inline-link-rx"></block>.</block>
-  <block id="2f79ebd4f32cabd1114c688445ebf53e" category="paragraph"><block ref="2f79ebd4f32cabd1114c688445ebf53e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8e64b58beb4844a89f1dc662bd47837" category="paragraph">Wenden Sie sich an den NetApp Support, um weitere Informationen zu diesen Warn- und Warnungsmeldungen zu erhalten. Weitere Informationen finden Sie unter<block ref="a434e165bb861f31d95108a8980bc76d" category="inline-link-rx"></block>.</block>
-  <block id="4c351868537e82b27bc0dc0ae18a7633" category="paragraph">Jedes Service-Level wird durch seine I/O-Dichte definiert. Dies ist das Verhältnis von Performance (Input/Output Operations per Second [IOPS]) und verwendeter Storage (tib an gespeicherten Daten), d. h. IOPS/tib.</block>
   <block id="ea7b2437ddd14dce6ba3f65494d634fd" category="inline-link-macro">Digital Advisor Dokumentation</block>
   <block id="199941fcffe1cc10f1d78276fb963281" category="paragraph">Weitere Informationen zu Digital Advisor finden Sie unter <block ref="6ddd16d015a7ae88cd6e808110d98222" category="inline-link-macro-rx"></block>.</block>
   <block id="d7b031f9c8084a9ac68f816f54b2be3b" category="paragraph">*Welche Software-Version (z.B. ONTAP) ist standardmäßig installiert?* je nach abonnierter Service-Tier (z.B. ONTAP mit Datei- und Blockdiensten, SANtricity für Block und StorageGRID für Objekt) installiert das Support-Team die neueste stabile Version ohne Sicherheits- oder Funktionsprobleme.</block>
@@ -3044,7 +2998,6 @@
   <block id="582e8b474c4c411c4bfbaa64ebf38461" category="paragraph">NetApp Keystone ist ein neues, flexibles On-Premises-Beschaffungsmodell mit Abonnement auf Basis von On-Premises-Systemen. Kunden profitieren von einer schnelleren Amortisierung, da Hürden beim Management der Ressourcen und einem längeren Beschaffungszyklus beseitigt werden. Mit Keystone Services können Kunden die Wirtschaftlichkeit auf ihre geschäftlichen Prioritäten abstimmen. Weitere Informationen finden Sie unter <block ref="e54def7567bc3788d2fec2fa9a5026d4" category="inline-link-macro-rx"></block>.</block>
   <block id="2c73325886a5bb00150c4f6251e0fe6d" category="paragraph">*Welche Vorteile bietet der Keystone Service?*</block>
   <block id="e8fae73e1864731d82c5af04538f4b0b" category="paragraph">Keystone Services bieten folgende Vorteile:</block>
-  <block id="14384a9ad0a54dc5a3ba41313d3f91fb" category="paragraph">---Definitionen sidebar: Sidebar permalink: nkfsosm_keystone_service_capacity_definitions.html Schlüsselwörter: netapp, Keystone, Service, Kapazität, Definitionen, Zusammenfassung der Burst-Kapazität, belegte Kapazität, abgerechnete Kapazität: Definitionen der Keystone Service-Kapazität –--</block>
   <block id="96d2b38eee6470bf2333246e23312820" category="paragraph">Die NetApp Keystone Service-Kapazitäten umfassen:</block>
   <block id="07a94a7bd2b381bae37a94cd365377c7" category="paragraph">Das sind die Daten, die ein Kunde in die Keystone Infrastruktur setzt. Alle Keystone Kapazitäten beziehen sich auf eine logische Kapazität. Wenn beispielsweise eine 1 tib Datei auf der Keystone Infrastruktur gespeichert ist, muss mindestens 1 tib Kapazität erworben werden.</block>
   <block id="dfe3a64edf2cc8e36f72d43579e07d11" category="list-text">Keystone bietet 20 % Kapazität über die engagierte Kapazität.</block>
@@ -3189,9 +3142,6 @@
   <block id="c04de822849a69b106080c4121f9936c" category="list-text">*Nicht standardmäßige.* Objekte, die außerhalb der NetApp Service Engine bereitgestellt werden, werden mit diesem Status importiert, wenn sie die Kriterien für ein NetApp Keystone Abonnement nicht erfüllen.</block>
   <block id="22dc3956acd0c1c011f37cec3f332d69" category="admonition">Dieser Status bedeutet in der Regel, dass das Objekt im Rahmen Ihres Keystone Abonnements eines oder mehrere Kriterien für das Management durch NetApp Service Engine verpasst. Das können Sie <block ref="e37ceb28c45a47909eddea846ff49620" category="inline-link-macro-rx"></block> Für sie über das NetApp Service Engine-Portal zu standardisieren und zu managen und vom Support-Team in den Betrieb zu nehmen.</block>
   <block id="64e53d0250b48253841708a269aa9ef3" category="summary">Keystone Performance-Service-Level</block>
-  <block id="7bb45ed1c44b24e3467af52573764a53" category="paragraph">NetApp Keystone bietet Kapazität zu vordefinierten Performance-Service-Levels (Service-Levels).</block>
-  <block id="ccc2d0f52940259874b8f9b759c2073a" category="paragraph">Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen. Alle I/O-Vorgänge und aller genutzten Storage auf dem jeweiligen Volume werden in die Berechnung der I/O-Dichte des Volume einbezogen.</block>
-  <block id="42511be44369fa72bd6e7314d949364e" category="paragraph">Sie können Ihren Abonnements über mehrere Bildschirme der NetApp Service Engine Benutzeroberfläche Service Levels zuweisen. Weitere Informationen finden Sie unter <block ref="678d7f07c3c6f8b6162f789c01992ea4" category="inline-link-macro-rx"></block>.</block>
   <block id="74692532fcc640962f96132119394098" category="paragraph">Keystone Services bieten drei Betriebsmodelle. Diese FAQs beziehen sich auf die Betriebsmodelle.</block>
   <block id="6076a11aebeaaa6dbe074a0a08b1b142" category="list-text">Wählen Sie einen Mandanten aus. Das Dashboard wird angezeigt. Weitere Informationen finden Sie unter <block ref="dd1715a7c78c6dc04fdff72810b50dc1" category="inline-link-macro-rx"></block></block>
   <block id="c556196a410876d85c1dc7aafc4fee9f" category="doc">Keystone Infrastruktur</block>
@@ -3206,4 +3156,131 @@
   <block id="c06919229cadbe5cd8d5d386238c994e" category="sidebar">FAQ zu Keystone Abonnements</block>
   <block id="6e0ffc28497d27ad3c6bea6ff91952d8" category="sidebar">Keystone Abonnements</block>
   <block id="01f997e2a423afa5cbbc884d9826beb8" category="sidebar">Hier finden Sie das Keystone Abonnements-DSbrett</block>
+  <block id="918d1cd98a55c119d7e4e81b3cfac0f8" category="summary">Anpassungsfähige Quality of Service (AQoS) bei Keystone</block>
+  <block id="2cc739ab414b782a0ba5a2dafc3c878f" category="doc">Anpassungsfähige Quality of Service bei Keystone</block>
+  <block id="5f558fad18c536fde918f6d8470c0f4c" category="paragraph">Bei Storage Quality of Service (QoS) handelt es sich um eine entscheidende Technologie, mit der sichergestellt wird, dass Applikationen eine konsistente und vorhersehbare Performance erhalten. Ohne QoS verbrauchen bestimmte Workloads, beispielsweise beim Booten mehrerer Systeme, die meisten oder alle Ressourcen eines bestimmten Zeitraums und wirken sich auf andere Workloads aus. Informationen zur QoS finden Sie unter<block ref="3c8d0a20452a1fdd8de7e683059a52bc" category="inline-link-rx"></block>.</block>
+  <block id="acdda1c20fb3985ce840929f7525c803" category="section-title">Anpassungsfähige QoS</block>
+  <block id="24fe24243f6cf0a0fada99032a85c028" category="inline-link">Allgemeines zur anpassungsfähigen QoS</block>
+  <block id="3e0c227cab019a94ad107467446bc4a1" category="paragraph">Adaptive QoS (AQoS) wird von Keystone Services verwendet, um das IOPS-/tib-Verhältnis basierend auf der Volume-Größe dynamisch beizubehalten. Informationen zu AQoS-Richtlinien finden Sie unter<block ref="837de1b03a328f464002642d845ea947" category="inline-link-rx"></block>.</block>
+  <block id="b41d880d5f9cddb842b19d183ce73f2e" category="paragraph">Keystone stellt Ihnen AQoS-Richtlinien zur Verfügung, die Sie einrichten können, sobald Ihr Cluster in Betrieb ist. Sie sollten sicherstellen, dass alle Ihre Volumes mit den richtigen AQoS-Richtlinien verknüpft sind, die bereits erstellt und in Ihrem System verfügbar sind.</block>
+  <block id="772f84cc1580c3b2eb870e7f4a05c668" category="paragraph">Ein ONTAP-Volume ist nicht konform, wenn keine AQoS-Richtlinie angewendet wird. Ein Volume ohne QoS-Richtlinie stellt als letztes in der Prioritätenliste jedes System verfügbare Input/Output-Operationen zur Verfügung. Wenn jedoch Input/Output-Vorgänge verfügbar sind, könnte das Volume alle verfügbaren I/O-Vorgänge verbrauchen.</block>
+  <block id="8076a815ea253b898f1e1205fc7aa039" category="admonition">Wenn Sie keine AQoS-Richtlinien auf Ihre Volumes angewendet haben, werden diese Volumes auf dem höchsten Service-Level gemäß Ihrem Abonnement gemessen und abgerechnet. Dies kann zu unbeabsichtigten Burst-Gebühren führen.</block>
+  <block id="bc26ba2885b2bd7d8c41202e1d58b847" category="section-title">Adaptive QoS-Einstellungen</block>
+  <block id="d2c88ef05da757a3aeaaf8bc9fe70038" category="paragraph">Die AQoS-Einstellungen (Adaptive QoS) variieren je nach Service-Level.</block>
+  <block id="3e1621011a15ff9b858d144dd8b32184" category="cell">*Name der Richtlinie*</block>
+  <block id="93c756223ca0ced7c8d807e176f861a3" category="cell">*Extreme* und *Extreme Tiering*</block>
+  <block id="ff68631a0d10b38d2b323da42e788055" category="cell">*Premium* und *Premium Tiering*</block>
+  <block id="e61bad254169eaf696462c655e0bb47a" category="cell">*Erwartete IOPS*</block>
+  <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
+  <block id="8dea0526cd966f1d2b8537ec99d156b6" category="cell">*Erwartete IOPS-Zuweisung*</block>
+  <block id="d948b8bd026bed9e90e7989a41fdbb46" category="cell">Zugewiesener Speicherplatz</block>
+  <block id="7954bc4f3c43f3e699c2169329a71b4b" category="cell">*Spitzen-IOPS*</block>
+  <block id="13533e52f2c161b3cad8ec91b2a8bc26" category="cell">*Maximale IOPS-Zuweisung*</block>
+  <block id="fd5c2880a704553c642b2e60a6ff5cf2" category="cell">*Blockgröße*</block>
+  <block id="de66b0668daa0803e4322ddd80158d6c" category="cell">32K</block>
+  <block id="24acc0fc2175fef09b1a2963dcd51bb1" category="inline-image-macro">Zonen- und Regionalbeziehungen</block>
+  <block id="3cc7e158f8699d90d955763d4ad3a6bb" category="paragraph"><block ref="3cc7e158f8699d90d955763d4ad3a6bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="978c8164dc991cb5252f85067c6fdbe4" category="inline-image-macro">Mietenbogen</block>
+  <block id="5cee2df0715294af225b93a062c0b3bf" category="paragraph"><block ref="5cee2df0715294af225b93a062c0b3bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ce0a3714c71298667d65ee297b12efd2" category="paragraph">Keystone bietet Storage-Kapazität auf Basis von vorab definierten Performance-Service-Leveln (Service-Levels) auf Abonnementbasis. Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen.</block>
+  <block id="f93af6ea2aaeafbfa26e3fe0954ccc1a" category="paragraph">Die einzelnen Service-Levels werden durch ihre I/O-Dichte definiert, die IOPS/tib/Volume entspricht. Das Verhältnis zwischen Performance (IOPS/Ausgabeoperationen pro Sekunde) und zugewiesener Storage-Kapazität (tib) ist IOPS/tib bei durchschnittlicher Latenz pro Volume.</block>
+  <block id="0d2770e6697ff41e6cac5eec9a3d728b" category="paragraph">Die I/O-Dichte für ein Volume wird in einem stündlichen Intervall berechnet, um die I/O-Spitzendichte zu erfassen. Berichte zur I/O-Dichte für Volumes werden monatlich generiert.</block>
+  <block id="26ee386c417635b5c1e5d8ffd5bbb0bd" category="paragraph">Die Service-Level für File-, Block- und Objekt-Storage-Typen sind hier aufgelistet.</block>
+  <block id="8edf08839950862fe56f04959fd3f87b" category="section-title">Service-Level für File-Storage</block>
+  <block id="10fde21ab3bcb7083e8e5bed1ca3af80" category="cell">*Maximale zugewiesene IOPS/logische tib pro Volume*</block>
+  <block id="0402a8a3b6eb168a997a74fb30635a37" category="cell">*Ziel-IOPS/zugewiesener logischer tib pro Volume*</block>
+  <block id="bed05c1f8f35eb6280e2bbc20794825c" category="cell">*Maximale MB/s/logische tib je Volume*</block>
+  <block id="61871926ab208323c9981229029b2c82" category="cell">* Durchschnittliche Latenz*</block>
+  <block id="d6b228a8ed209a51c109dc08e1f357ce" category="cell">*Blockgröße*</block>
+  <block id="bf79e80bcc6c0a1ed97c7270c5aa6360" category="section-title">Mehr auf Service-Leveln für File-Storage</block>
+  <block id="c4701e06633afc0b1161fbc6049cc803" category="paragraph">Die Service-Level-Kennzahlen hängen von den folgenden Bedingungen ab:</block>
+  <block id="210b39d4b6b8c3231fc8e5027adff975" category="list-text">Die Service-Level für File- und Block-Storage unterstützen ONTAP 9.7 und höher.</block>
+  <block id="02007b308c5bfea2eb09b0fa9b7f04d5" category="list-text">IOPS/tib/Volume, MB/s/tib/Volume und Latenzwerte für Service-Level basieren auf der Menge der im Volume gespeicherten logischen Daten, der Blockgröße von 32 KB sowie einer zufälligen Kombination von 70-%-Lese- und 30-%-Schreib-I/O-Vorgängen.</block>
+  <block id="1ce7cadb42fda63031710acdb1e36d13" category="list-text">Der tatsächliche IOPS-/tib-/Volume-Wert und MB/s-/tib-Volume können basierend auf der tatsächlichen oder angenommenen Blockgröße, der Parallelität des System-Workloads oder Input/Output-Operationen variieren.</block>
+  <block id="58ec0dfd62f9630c9b479a35a8b38962" category="list-text">Die Latenz umfasst nicht Folgendes:</block>
+  <block id="e777748ce6788629275890358373ad33" category="list-text">Applikations- oder Host-Latenz erzielt</block>
+  <block id="303d588a44f75e97197277df23fe31a6" category="list-text">Netzwerklatenz des Kunden zu bzw. von den Controller-Ports</block>
+  <block id="66da45e9c280e17b214fda19697e0c52" category="list-text">Gemeinkosten für die Datenübertragung an den Objektspeicher bei FabricPool</block>
+  <block id="0fd1f337932287ae81d08c74974e8e88" category="list-text">Automatische Anwendung der Latenz durch QoS, um den I/O-Wert innerhalb der maximalen Service-Level zu halten</block>
+  <block id="85bc0e8522deb39494936f2ff6c542e4" category="list-text">Latenzwerte gelten nicht für MetroCluster-Schreibvorgänge. Diese Schreibvorgänge sind von der Entfernung von Remote-Systemen abhängig.</block>
+  <block id="7f3016a798d65c7f0d25cbde5e2c95b6" category="list-text">Wenn einem oder mehreren Volumes auf einem Storage-System keine AQoS-Richtlinie zugewiesen ist, werden diese Volumes als nicht konforme Volumes betrachtet und für diese Systeme gelten keine Service-Ziellevel.</block>
+  <block id="d292740ed171285325a91f3bddbbc59d" category="list-text">_Expected IOPS_ wird nur für FabricPool angestrebt, wenn die Tiering-Richtlinie auf „keine“ gesetzt ist und sich keine Blöcke in der Cloud befinden. _Expected IOPS_ ist für Volumes bestimmt, die sich nicht in einer synchronen SnapMirror-Beziehung befinden.</block>
+  <block id="acad586f6e3c240e49bc22095d3d4c92" category="list-text">Workload-I/O-Vorgänge müssen gemäß der Keystone Reihenfolge über alle implementierten Controller hinweg ausgeglichen werden.</block>
+  <block id="1256942c94d399bcecc06318a23887e2" category="section-title">Service-Level für Block-Storage</block>
+  <block id="d3c97afc8b4986d186e623295f348fec" category="cell">5,500</block>
+  <block id="e5a4cf7b6c8ebfdefa41faab2b2fc12f" category="section-title">Service-Level für Objekt-Storage</block>
+  <block id="0ba4439ee9a46d9d9f14c60f88f45f87" category="inline-image-macro">Prüfen</block>
+  <block id="2c21fb28bfa079bac10074fb46528030" category="cell"><block ref="2c21fb28bfa079bac10074fb46528030" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="72cedb4011bb3b8175b8fe1013b23cee" category="inline-image-macro">ks-Infrastruktur verwenden</block>
+  <block id="589812ff47f2ace9d0321e7e0cc1349e" category="paragraph"><block ref="589812ff47f2ace9d0321e7e0cc1349e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="31d6b6f48c9c3b45e43d0a7f91fa68ae" category="inline-image-macro">ks-Architektur</block>
+  <block id="c1dcba1c197607307ac99eb420d848a8" category="paragraph"><block ref="c1dcba1c197607307ac99eb420d848a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ed6736a84f4c19935077bc72bc043890" category="summary">NetApp Keystone ist ein nutzungsbasiertes Storage-as-a-Service-Angebot. Datenservices für lokalen Storage und die Cloud sind dabei in einem Abonnement zusammengefasst, und die Storage-Ausgaben können Cloud-übergreifend neu zugeordnet werden.</block>
+  <block id="7851c7dc22287278c0102d8c2973f79b" category="inline-image-macro">keystone Arch</block>
+  <block id="d7f25eda72ffc7d44074ad3c4292c129" category="paragraph"><block ref="d7f25eda72ffc7d44074ad3c4292c129" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="51543cae6c0bf5ae4bf7c4e28be0eeaa" category="inline-image-macro">keystone Services</block>
+  <block id="af62e715e88586950d9cd9496f456488" category="paragraph"><block ref="af62e715e88586950d9cd9496f456488" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="79da17fa16c14866aa3306a4541afec5" category="inline-image-macro">Vorteile</block>
+  <block id="d5f09abcaaeae775c256fb4fff1f7f24" category="paragraph"><block ref="d5f09abcaaeae775c256fb4fff1f7f24" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41a7d4440132225535ddd040dd7eec64" category="cell"><block ref="41a7d4440132225535ddd040dd7eec64" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41220b85d8467c5822466b54e2f77fdf" category="inline-image-macro">Registerkarte „Abonnementdetails“</block>
+  <block id="3863c999fd2904d6bd45c5fac0637857" category="paragraph"><block ref="3863c999fd2904d6bd45c5fac0637857" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="baec6461b0d69dde1b861aefbe375d8a" category="inline-image-macro">Symbol</block>
+  <block id="465b53bf56fb8c088ea55a58377aec59" category="list-text"><block ref="435e416487181a998706b8fd7ece7b01" category="inline-image-macro-rx" type="image"></block>: Wenn Sie auf dieses Symbol klicken, wird die Registerkarte *Subscription Time Series* geöffnet, auf der Sie die historischen Nutzungsdaten für jeden Service-Level sehen können, der in diesem Abonnement enthalten ist.</block>
+  <block id="0e25c249c47d5b9cd3933dea0b0e9bfb" category="paragraph">Weitere Details finden Sie, indem Sie auf den Abwärtspfeil für einen Abonnementdatensatz klicken. Details wie der Name des Service-Levels, festgelegt, verbraucht, verfügbare Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung werden in tib angezeigt.</block>
+  <block id="3a6fffe4877ca42144b232cb74b25c92" category="admonition">Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.</block>
+  <block id="bd21190449b7e88db48fa0f580a8f666" category="inline-image-macro">Symbole</block>
+  <block id="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="paragraph"><block ref="03ebe6f2555a5bb4e85d3a2b9f36fe2b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="47ad2f3b9648e3f48662d8605e8e8bdb" category="paragraph"><block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
+<block ref="c86f468c0d26a49f12de126ed6868cbe" category="inline-image-macro-rx" type="image"></block>
+<block ref="21452eeae7e892826e6a3f9830c7e20b" category="inline-image-macro-rx" type="image"></block>: Keine Kapazitätsnutzung erfasst mit der Kapazität des Service-Levels<block ref="6e54d61599459e1ccb3438749a59c870" category="inline-image-macro-rx" type="image"></block>: Der Verbrauch ist normal, innerhalb von 80% der Kapazität verpflichtet<block ref="c64624b3993be4529190ae7782933292" category="inline-image-macro-rx" type="image"></block>: Maximaler Verbrauch, das heißt, die Nutzung wird 100% oder mehr der gebuchten Kapazität erreichen. Die Spalte *verbraucht* zeigt diesen Indikator für einen Verbrauch über 80 % der zugelegten Kapazität an<block ref="d028059f11eb3bdde55947b1358873ff" category="inline-image-macro-rx" type="image"></block>: Der Verbrauch liegt innerhalb der Burst-Grenze. Der Burst-Verbrauch liegt bei der Storage-Kapazität, die den zu 100 % festgelegten Kapazitätswert eines Service-Levels übersteigt, und liegt innerhalb der vereinbarten Burst-Nutzungsgrenze, z. B. 120 %<block ref="8428f2683e402ce0337d14cf475231ce" category="inline-image-macro-rx" type="image"></block>: Zeigt den Verbrauch über der festgelegten Burst-Grenze an</block>
+  <block id="779b97a34eb91d859eaec88fd66360be" category="paragraph">Auf der Registerkarte *Subscription Time Series* werden Verlaufsdaten Ihrer Keystone Abonnements für einen bestimmten Zeitraum angezeigt. In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.</block>
+  <block id="abc995760236584824b9e9fb494224ef" category="admonition">Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf maximal drei Monate.</block>
+  <block id="f4cba785ff76b826ab5119954c5eab69" category="list-text">Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt. Sie können den Mauszeiger über die Diagramme halten, um eine Aufschlüsselung der Nutzung in Bezug auf die Daten für „belegt“, „verbraucht“, „Burst“ und darüber des Burst-Limits an diesem Datenerfassungspunkt anzuzeigen.</block>
+  <block id="8d516947750194a36d55831e643c9530" category="inline-image-macro">Archivdaten</block>
+  <block id="75c2cedbc79380dcf4efe56be06dec27" category="paragraph"><block ref="75c2cedbc79380dcf4efe56be06dec27" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e8f49e2b6da7339d918b4030b299167c" category="admonition">Basierend auf dem Datumsbereich Ihrer Abfrage werden die Nutzungsdiagramme in einem Bereich von 30 Datenerfassungspunkten angezeigt.</block>
+  <block id="9c559d13aa46e64e5c1b49a0e0a1432e" category="example-title">&lt;strong&gt;-DatenausDatenausDatenausDatenausDatenausDatenausDatenausDatenausDaten &lt;/strong&gt;</block>
+  <block id="cdd4bd25f20c449a0963f56aa74dcbab" category="paragraph">Wenn Sie den Datenschutzdienst (DP) abonniert haben, können Sie die Trennung der Verbrauchsdaten gemäß den primären und gespiegelten MetroCluster-Standorten auf der Registerkarte *Abonnementzeitreihen* anzeigen.</block>
+  <block id="087f6b1f88be44a104173a6f203b90b1" category="paragraph">Informationen zum Datenschutz finden Sie unter<block ref="4f245631ed62c18d2a1d6d25320b34f1" category="inline-link-rx"></block>.</block>
+  <block id="04db5afbef84567f5c1ef044a2971b66" category="paragraph">Wenn die Cluster in Ihrer ONTAP Storage-Umgebung in einem MetroCluster-Setup konfiguriert sind, werden die Verbrauchsdaten Ihres Keystone Abonnements in dasselbe Zeitreihendiagramm aufgeteilt, um den Verbrauch an den primären und gespiegelten Standorten für die Basis-Service-Level anzuzeigen.</block>
+  <block id="281d16d13e34f7444117e4fa04008cd2" category="admonition">Die Verbrauchsbalkentabellen sind nur für grundlegende Servicelevel aufgeteilt. Für DP-Service-Level erscheint diese Abgrenzung nicht.</block>
+  <block id="e1d364a7f674f544c03d16d5e011a4cd" category="paragraph-title">Service-Level für die Datensicherung</block>
+  <block id="d1bb5be7c1d9696a6692a5707b28c8a6" category="paragraph">Bei DP-Service-Leveln wird der Gesamtverbrauch aufgeteilt und die Nutzung an jedem Standort wird in einem separaten Abonnement abgerechnet, das ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort darstellt. Wenn Sie daher auf der Registerkarte *Subscription Time Series* die Abonnementnummer für den primären Standort auswählen, werden in den Verbrauchsdiagrammen für die DP-Service-Level die diskreten Verbrauchsdetails nur für den primären Standort angezeigt. Da jeder Standort in einer MetroCluster Konfiguration als Quelle und Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am jeweiligen Standort erstellt wurden.</block>
+  <block id="c3c3060e985c56412fb0189a9c010a6d" category="paragraph-title">Basis-Service-Level</block>
+  <block id="2da97e4dcd0aded3c38f66cbf8f9886b" category="paragraph">Für die Basis-Service-Level wird jedoch jedes Volume als bereitgestellt an den primären und gespiegelten Standorten abgerechnet. Daher wird dasselbe Balkendiagramm nach dem Verbrauch am primären und gespiegelten Standort aufgeteilt.</block>
+  <block id="65626369a820db5271fac7f41d059e93" category="paragraph-title">Was Sie für das primäre Abonnement sehen können</block>
+  <block id="d8476da72783640883a9e5629643666c" category="paragraph">Das folgende Bild zeigt die Diagramme für den Service-Level _Extreme_ und eine primäre Abonnementnummer. Die Zeitreihendiagramme markieren den Verbrauch der Spiegelseite in einem helleren Farbton des Farbcodes, der für den primären Standort verwendet wird. Über die Kurzinformation beim Mauszeiger wird die Verbrauchsaufschlüsselung (in tib) für die primären und gespiegelten Standorte mit 1.02 tib bzw. 1.05 tib angezeigt.</block>
+  <block id="7cbd40b0470c3f0ea1063db9202530ff" category="inline-image-macro">mcc primär</block>
+  <block id="69ee7237e9b9f659b4b0f2cee316a662" category="paragraph"><block ref="69ee7237e9b9f659b4b0f2cee316a662" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="691f3f8af0331dffbbb99f55392f1b1d" category="paragraph">Für den Service-Level _Data-Protect Extreme_ werden die Diagramme wie folgt angezeigt:</block>
+  <block id="4bb0adac0644b7c8396196d410d47909" category="inline-image-macro">mcc-Primärbasis</block>
+  <block id="2788c6179b3412862ccb0aa51af8fb00" category="paragraph"><block ref="2788c6179b3412862ccb0aa51af8fb00" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cd9124dc0715967bbbd4e31ad8a6f35d" category="paragraph-title">Was Sie für das sekundäre Abonnement (Mirror Site) sehen können</block>
+  <block id="780f5e670e2c04a97e27a55ce4e5fe77" category="paragraph">Wenn Sie das sekundäre Abonnement prüfen, wird ersichtlich, dass das Balkendiagramm für den _Extreme_ Service-Level am gleichen Datenerfassungspunkt umgekehrt wird und die Verbrauchsaufschlüsselung am primären und gespiegelten Standort 1.05 tib bzw. 1.02 tib beträgt.</block>
+  <block id="ff58d4e2d2a69e5e91f9509907ba3bd1" category="inline-image-macro">mcc-Spiegel</block>
+  <block id="292d6b6f6df888f5de022ad6bebc7e52" category="paragraph"><block ref="292d6b6f6df888f5de022ad6bebc7e52" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="096ba4c1255ddf7f6a7f129dc338ad4d" category="paragraph">Für den Service-Level _Data-Protect Extreme_ erscheint das Diagramm am selben Erfassungspunkt wie folgt:</block>
+  <block id="ab682f0abbe8b97aaec76b435ca52575" category="inline-image-macro">mcc-Spiegelsockel</block>
+  <block id="32b6695c9f1befd719e0c7b2c28dfea1" category="paragraph"><block ref="32b6695c9f1befd719e0c7b2c28dfea1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="48d59ef93e565c1c62d4604f7ddf6561" category="inline-link">MetroCluster Datensicherung und Disaster Recovery verstehen</block>
+  <block id="11faa60292999fe44e704021ce9a5657" category="paragraph">Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter<block ref="f22c59fda71318ed939c4a5a7c90b447" category="inline-link-rx"></block>.</block>
+  <block id="793c1a98e090ba1b0f167e3a8b0c5b37" category="paragraph">Die Volume-Details werden angezeigt. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen.</block>
+  <block id="6857abe02d1e9615946756081a1a8169" category="admonition">Für Datensicherungsdienste wird eine zusätzliche Spalte angezeigt, die angibt, ob es sich bei dem Volume um ein primäres oder ein gespiegeltes Volume in der MetroCluster-Konfiguration handelt. Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die Schaltfläche *Node Serials kopieren* klicken.</block>
+  <block id="0bb9d5f8cc89f1784aecd52a98b80f07" category="inline-image-macro">Registerkarte „Systemdetails“</block>
+  <block id="8b672bec07d1efa43e526f4981ffb4e7" category="paragraph"><block ref="8b672bec07d1efa43e526f4981ffb4e7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4f42ad6a3c3832d3bf584971680c1ebb" category="inline-image-macro">Details zum SG-System</block>
+  <block id="99f0b49642035c5cfb207aac14d1a8a5" category="paragraph"><block ref="99f0b49642035c5cfb207aac14d1a8a5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="32213372d6e54774952c294947e823b3" category="inline-image-macro">SG-Popup</block>
+  <block id="95d8d7b4f026ffa4ad680a1e5997be51" category="paragraph"><block ref="95d8d7b4f026ffa4ad680a1e5997be51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="26b4aee602cdc66122bb6d728f867b41" category="inline-image-macro">Symbol zum Herunterladen von Berichten</block>
+  <block id="0f3423da50b7d7441392096dd6c78fac" category="paragraph">Sie können Berichte für Ihre Abonnementdetails, Nutzungsdaten für einen bestimmten Zeitraum und Systemdetails von jedem der Registerkarten erstellen und anzeigen, indem Sie auf die Schaltfläche *CSV herunterladen* klicken: <block ref="785382ed2a85b4539c4016da106c0215" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="71a1fbaca678e13a8273c81f0c6acf72" category="paragraph">Auf der Registerkarte *Subscription Time Series* haben Sie die Möglichkeit, den Bericht für die standardmäßigen 30 Datenerfassungspunkte des Datumsbereichs Ihrer Abfrage oder Tagesberichte herunterzuladen.</block>
+  <block id="69d93398ad0e22b2ac431db7ec005308" category="inline-image-macro">Bericht Beispiel</block>
+  <block id="ae36f6805d5f090b092ed6be03fa8820" category="paragraph"><block ref="ae36f6805d5f090b092ed6be03fa8820" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7df8a07436fa2a6fa44c6c89de1dc353" category="paragraph"><block ref="7df8a07436fa2a6fa44c6c89de1dc353" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="abca7cba75e5a9ff86b1490f32891f82" category="inline-image-macro">Meldungen</block>
+  <block id="2fdc90e57385ab614099e9145cde6b8e" category="paragraph"><block ref="2fdc90e57385ab614099e9145cde6b8e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="be10ab795d4b4daf77ddb3146f1aac29" category="inline-image-macro">Abrechnungsdiagramme</block>
+  <block id="72bd452fe460a2000d8537f422c4b81d" category="paragraph"><block ref="72bd452fe460a2000d8537f422c4b81d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

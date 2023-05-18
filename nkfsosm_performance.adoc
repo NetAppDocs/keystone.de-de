@@ -14,25 +14,17 @@ summary: Keystone Performance-Service-Level
 
 
 [role="lead"]
-NetApp Keystone bietet Kapazität zu vordefinierten Performance-Service-Levels (Service-Levels).
+Keystone bietet Storage-Kapazität auf Basis von vorab definierten Performance-Service-Leveln (Service-Levels) auf Abonnementbasis. Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen.
 
-Jedes Service-Level wird durch seine I/O-Dichte definiert. Dies ist das Verhältnis von Performance (Input/Output Operations per Second [IOPS]) und verwendeter Storage (tib an gespeicherten Daten), d. h. IOPS/tib.
+Die einzelnen Service-Levels werden durch ihre I/O-Dichte definiert, die IOPS/tib/Volume entspricht. Das Verhältnis zwischen Performance (IOPS/Ausgabeoperationen pro Sekunde) und zugewiesener Storage-Kapazität (tib) ist IOPS/tib bei durchschnittlicher Latenz pro Volume.
 
-Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen. Alle I/O-Vorgänge und aller genutzten Storage auf dem jeweiligen Volume werden in die Berechnung der I/O-Dichte des Volume einbezogen.
+Die I/O-Dichte für ein Volume wird in einem stündlichen Intervall berechnet, um die I/O-Spitzendichte zu erfassen. Berichte zur I/O-Dichte für Volumes werden monatlich generiert.
 
-Folgende Tabelle zeigt die Service Levels.
-
-
-
-== Service Levels für unterschiedliche Storage-Typen
-
-Hier sind die Service Level für Datei-, Block- und Objekt-Storage aufgeführt.
-
-Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte während der letzten Woche. Die Spitzen-Performance wird in einem stündlichen Zeitintervall festgelegt. Berichte zur I/O-Dichte nach Volumen werden monatlich erstellt, um die Einhaltung der jeweiligen Service-Level zu beurteilen.
+Die Service-Level für File-, Block- und Objekt-Storage-Typen sind hier aufgelistet.
 
 
 
-=== Fileservices
+== Service-Level für File-Storage
 
 * Unterstützte Protokolle*: NFS, CIFS, iSCSI und FC
 
@@ -45,29 +37,46 @@ Berechnungen zur I/O-Dichte auf Volume-Ebene zeigen die maximale I/O-Dichte wäh
 | * Workload-Typ* | Analysen, Datenbanken | VDI, Virtualisierungsapplikationen, Software-Entwicklung | Dateifreigaben, Webserver | Backup 
 
 
-| *Ziel-IOPS/tib* | 6,144 | 2,048 | 128 | K. A. 
+| *Maximale zugewiesene IOPS/logische tib pro Volume* | 12,288 | 4,096 | 512 | K. A. 
 
 
-| *max. IOPS/tib* | 12,288 | 4,096 | 512 | K. A. 
+| *Ziel-IOPS/zugewiesener logischer tib pro Volume* | 6,144 | 2,048 | 128 | K. A. 
 
 
-| *maximaler Durchsatz MB/s (32 KB/IOP)* | 384 | 128 | 16 | K. A. 
+| *Maximale MB/s/logische tib je Volume* | 384 | 128 | 16 | K. A. 
 
 
-| *Latenz* | <1 ms | <2 ms | <17 ms | K. A. 
+| * Durchschnittliche Latenz* | <1 ms | <2 ms | <17 ms | K. A. 
 
 
-.2+| *Mindestkapazität*^1,2^ 4+| 100 tib^1^ 
-
-
-| 15 tib^2^ | 25 tib^2^ | 50 tib^2^ | 50 tib^2^ 
+| *Blockgröße* 4+| 32K 
 |===
 
-NOTE: ^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib für eine Kombination aus beliebigen Dateifreigabe- und Block-Service-Leveln für NetApp Lösungen. ^2^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Servicestufe, die für Channel-geführte Opportunitys ausgewählt wurde.
+
+=== Mehr auf Service-Leveln für File-Storage
+
+Die Service-Level-Kennzahlen hängen von den folgenden Bedingungen ab:
+
+* Die Service-Level für File- und Block-Storage unterstützen ONTAP 9.7 und höher.
+* IOPS/tib/Volume, MB/s/tib/Volume und Latenzwerte für Service-Level basieren auf der Menge der im Volume gespeicherten logischen Daten, der Blockgröße von 32 KB sowie einer zufälligen Kombination von 70-%-Lese- und 30-%-Schreib-I/O-Vorgängen.
+* Der tatsächliche IOPS-/tib-/Volume-Wert und MB/s-/tib-Volume können basierend auf der tatsächlichen oder angenommenen Blockgröße, der Parallelität des System-Workloads oder Input/Output-Operationen variieren.
+* Die Latenz umfasst nicht Folgendes:
++
+** Applikations- oder Host-Latenz erzielt
+** Netzwerklatenz des Kunden zu bzw. von den Controller-Ports
+** Gemeinkosten für die Datenübertragung an den Objektspeicher bei FabricPool
+** Automatische Anwendung der Latenz durch QoS, um den I/O-Wert innerhalb der maximalen Service-Level zu halten
+
+
+* Latenzwerte gelten nicht für MetroCluster-Schreibvorgänge. Diese Schreibvorgänge sind von der Entfernung von Remote-Systemen abhängig.
+* Wenn einem oder mehreren Volumes auf einem Storage-System keine AQoS-Richtlinie zugewiesen ist, werden diese Volumes als nicht konforme Volumes betrachtet und für diese Systeme gelten keine Service-Ziellevel.
+* _Expected IOPS_ wird nur für FabricPool angestrebt, wenn die Tiering-Richtlinie auf „keine“ gesetzt ist und sich keine Blöcke in der Cloud befinden. _Expected IOPS_ ist für Volumes bestimmt, die sich nicht in einer synchronen SnapMirror-Beziehung befinden.
+* Workload-I/O-Vorgänge müssen gemäß der Keystone Reihenfolge über alle implementierten Controller hinweg ausgeglichen werden.
 
 
 
-=== Block-Storage
+
+== Service-Level für Block-Storage
 
 * Unterstützte Protokolle*: FC und iSCSI
 
@@ -83,23 +92,20 @@ NOTE: ^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib fü
 | *Ziel-IOPS/tib* 3+| K. A. 
 
 
-| *max. IOPS/tib* | 5.500 | 4,000 | K. A. 
+| *max. IOPS/tib* | 5,500 | 4,000 | K. A. 
 
 
 | *maximaler Durchsatz MB/s (32 KB/IOP)* | 43 | 31 | K. A. 
 
 
-| *Latenz* | <0.5 ms | <0.5 ms | K. A. 
+| * Durchschnittliche Latenz* | <0.5 ms | <0.5 ms | K. A. 
 
 
-| *Mindestkapazität*^1,2^ | 100 tib^3^ | 100 tib^3^ | 300 tib^3^ 
+| *Blockgröße* 3+| 32K 
 |===
 
-NOTE: ^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib für eine Kombination aus beliebigen Dateifreigabe- und Block-Service-Leveln für NetApp Lösungen. ^2^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Servicestufe für Channel-geführte Opportunitys ausgewählt. ^3^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Service-Tier ausgewählt für jeden Opportunity-Typ.
 
-
-
-=== Objekt-Storage
+== Service-Level für Objekt-Storage
 
 *unterstütztes Protokoll*: S3
 
@@ -121,12 +127,5 @@ NOTE: ^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib fü
 | *maximaler Durchsatz MB/s (32 KB/IOP)* | K. A. 
 
 
-| *Latenz* | K. A. 
-
-
-| *Mindestkapazität*^1,2^ | 500 tib^3^ 
+| * Durchschnittliche Latenz* | K. A. 
 |===
-
-NOTE: ^1^ Mindestlaufzeit von einem Jahr und minimale Kapazität von 100 tib für eine Kombination aus beliebigen Dateifreigabe- und Block-Service-Leveln für NetApp Lösungen. ^2^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Servicestufe für Channel-geführte Opportunitys ausgewählt. ^3^ Mindestlaufzeit von einem Jahr und angegebene Mindestkapazität pro Service-Tier ausgewählt für jeden Opportunity-Typ.
-
-Sie können Ihren Abonnements über mehrere Bildschirme der NetApp Service Engine Benutzeroberfläche Service Levels zuweisen. Weitere Informationen finden Sie unter link:nkfsosm_tenancy_overview.html["Mandantenfähigkeit und Mandantenfähigkeit in Keystone"].

@@ -27,9 +27,9 @@ Ein Ticket direkt über das NetApp Service Engine Portal (*Support > Service Req
 
 Mithilfe der folgenden Informationen können Sie sich auch an das Support-Team wenden.
 
-* Global Service-Kontakte:https://www.netapp.com/us/contact-us/support.aspx[]
+* Global Service-Kontakte:https://[]
 * Falls Sie über einen offenen Fall/ein Ticket verfügen, der eskaliert werden muss, senden Sie bitte eine E-Mail an eine der folgenden Adressen: Keystone.services@netapp.com Keystone.escalations@netapp.com
-* NetApp nutzt OpsRamp, eine Cloud-basierte Remote-Gateway-Lösung, um proaktiv die NetApp Keystone-Umgebung zu Fehlerbehebungszwecken zu überwachen und eine Verbindung herzustellen. Informationen zu OpsRamp finden Sie unter https://www.opsramp.com/#[].
+* NetApp nutzt OpsRamp, eine Cloud-basierte Remote-Gateway-Lösung, um proaktiv die NetApp Keystone-Umgebung zu Fehlerbehebungszwecken zu überwachen und eine Verbindung herzustellen. Informationen zu OpsRamp finden Sie unter https://[].
 
 
 
@@ -37,6 +37,6 @@ NOTE: In einem von Partnern betriebenen Modell werden die Service-Requests des M
 
 Sehen Sie sich die folgenden Dokumente und/oder Websites an, um mehr über die in diesem Dokument beschriebenen Informationen zu erfahren:
 
-* NetApp Keystonehttps://www.netapp.com/us/solutions/keystone/index.aspx["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
-* NetApp Produktdokumentationhttps://docs.netapp.com["https://docs.netapp.com"^]
+* NetApp Keystonehttps://["https://www.netapp.com/us/solutions/keystone/index.aspx"^]
+* NetApp Produktdokumentationhttps://["https://docs.netapp.com"^]
 

@@ -18,7 +18,7 @@ Die monatlichen Gebühren für alle abonnierten Services können Sie in Ihren Ne
 
 Sie können die Abrechnungsdetails für alle Ihre abonnierten Services für Keystone Abonnementservices der letzten Monate anzeigen. Die Abrechnung mit der Burst-Kapazität für jeden Monat wird hervorgehoben.
 
-image:billing.png[""]
+image:billing.png["Abrechnungsdiagramme"]
 
 Als Partner-Administrator sehen Sie die monatlichen Rechnungsaufspaus für einen ausgewählten Untermieter.
 

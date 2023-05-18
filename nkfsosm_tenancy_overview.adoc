@@ -27,7 +27,7 @@ In einer Multi-Tenant-Umgebung ist ein Partner ein Mandant/Kunde von NetApp in e
 .Untermieter
 Keystone Untermandanten sind vollständig innerhalb eines übergeordneten Mandanten mit einer n:1-Beziehung vorhanden. Untermandanten ermöglichen die Trennung logischer Ressourcen innerhalb einer Mandanten und werden als Basis für die Showback-Berichterstattung verwendet. Alle Storage-Ressourcen (File-Services, Block-Storage und Objekt-Storage) gehören zu einer Untermandant.
 
-image:nkfsosm_image10.png[""]
+image:nkfsosm_image10.png["Mietenbogen"]
 
 
 
