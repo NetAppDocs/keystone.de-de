@@ -19,7 +19,7 @@ summary: Keystone-Abonnementberichte und -Diagramme
 
 NOTE: Die hier verfügbaren Informationen gelten sowohl für ONTAP als auch für StorageGRID. Ausnahmen wurden in den entsprechenden Abschnitten erwähnt.
 
-Weitere Informationen zum Keystone Digital Advisor Widget finden Sie unter https://["Anzeige der Kapazitätsauslastung mit NetApp Keystone-Abonnement"^].
+Weitere Informationen zum Keystone Digital Advisor Widget finden Sie unter https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html["Anzeige der Kapazitätsauslastung mit NetApp Keystone-Abonnement"^].
 
 So zeigen Sie die Details an:
 
@@ -31,7 +31,7 @@ So zeigen Sie die Details an:
 Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Level und Volume-Details werden auf den verschiedenen Registerkarten auf dem Bildschirm *Keystone Abonnements* angezeigt.
 
 
-NOTE: Die Kapazitätsnutzung in Keystone-Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt, bis zu zwei Dezimalstellen. Wenn die Nutzung weniger als 0.01 tib beträgt, wird als angezeigt `0` Oder `No Usage`. Weitere Nutzungsmetriken finden Sie unter https://["Service-Level-Metriken und -Definitionen"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter https://["Keystone Service-Kapazitätsdefinitionen"].
+NOTE: Die Kapazitätsnutzung in Keystone-Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt, bis zu zwei Dezimalstellen. Wenn die Nutzung weniger als 0.01 tib beträgt, wird als angezeigt `0` Oder `No Usage`. Weitere Nutzungsmetriken finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Service-Level-Metriken und -Definitionen"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone Service-Kapazitätsdefinitionen"].
 
 
 
@@ -57,7 +57,7 @@ Weitere Details finden Sie, indem Sie auf den Abwärtspfeil für einen Abonnemen
 
 NOTE: Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.
 
-Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Service-Leveln finden Sie unter https://["Service-Leveln"].
+Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Service-Leveln finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["Service-Leveln"].
 
 Sie können die folgenden Nutzungsanzeigen nutzen, um den Nutzungsstatus jedes Abonnements zu überprüfen:
 
@@ -72,12 +72,16 @@ image:icon-grey.png["Symbol"]: Keine Kapazitätsnutzung erfasst mit der Kapazit�
 
 == Anzeigen historischer Abonnementdaten
 
-a514224616890dbac3dede8f0d533add
+Auf der Registerkarte *Subscription Time Series* werden Verlaufsdaten Ihrer Keystone Abonnements für einen bestimmten Zeitraum angezeigt. In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.
 
 .Schritte
 . Klicken Sie auf die Registerkarte *Subscription Time Series*.
 . Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.
 . Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Der Standardzeitbereich ist vom Startdatum des Abrechnungszeitraums bis zum aktuellen Datum.
++
+
+NOTE: Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf maximal drei Monate.
+
 . Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt. Sie können den Mauszeiger über die Diagramme halten, um eine Aufschlüsselung der Nutzung in Bezug auf die Daten für „belegt“, „verbraucht“, „Burst“ und darüber des Burst-Limits an diesem Datenerfassungspunkt anzuzeigen.
 
 
@@ -131,7 +135,7 @@ NOTE: Die Indikatoren *Aktuelle verbrauchte*, *Aktuelle Burst* und *aufgelaufene
 ====
 Wenn Sie den Datenschutzdienst (DP) abonniert haben, können Sie die Trennung der Verbrauchsdaten gemäß den primären und gespiegelten MetroCluster-Standorten auf der Registerkarte *Abonnementzeitreihen* anzeigen.
 
-Informationen zum Datenschutz finden Sie unter https://["Datensicherung"].
+Informationen zum Datenschutz finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_data_protection.html["Datensicherung"].
 
 Wenn die Cluster in Ihrer ONTAP Storage-Umgebung in einem MetroCluster-Setup konfiguriert sind, werden die Verbrauchsdaten Ihres Keystone Abonnements in dasselbe Zeitreihendiagramm aufgeteilt, um den Verbrauch an den primären und gespiegelten Standorten für die Basis-Service-Level anzuzeigen.
 
@@ -162,7 +166,7 @@ Für den Service-Level _Data-Protect Extreme_ erscheint das Diagramm am selben E
 
 image:dp-mir.png["mcc-Spiegelsockel"]
 
-Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https://["MetroCluster Datensicherung und Disaster Recovery verstehen"^].
+Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html["MetroCluster Datensicherung und Disaster Recovery verstehen"^].
 
 ====
 
@@ -236,10 +240,10 @@ Es gibt zwei Arten von Warnmeldungen:
 * *Information*: Für Probleme, wie Ihre Abonnements, die sich einem Ende nähern, können Sie Informationswarnungen sehen. Bewegen Sie den Mauszeiger über das Informationssymbol, um mehr über das Problem zu erfahren.
 * *Warnung*: Probleme, wie z. B. Nichteinhaltung, werden als Warnungen angezeigt. Wenn beispielsweise Volumes in den gemanagten Clustern ohne über AQoS-Richtlinien (Adaptive QoS) verbunden sind, wird eine Warnmeldung angezeigt. Klicken Sie auf den Link in der Warnmeldung, um die Liste der nicht kompatiblen Volumes auf der Registerkarte *Systemdetails* anzuzeigen.
 +
-Informationen zu AQoS-Richtlinien finden Sie unter https://["Abrechnung und anpassungsfähige QoS-Richtlinien"].
+Informationen zu AQoS-Richtlinien finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_kfs_billing.html#billing-and-adaptive-qos-policies["Abrechnung und anpassungsfähige QoS-Richtlinien"].
 
 
 
 image:alert-aiq.png["Meldungen"]
 
-Wenden Sie sich an den NetApp Support, um weitere Informationen zu diesen Warn- und Warnungsmeldungen zu erhalten. Weitere Informationen finden Sie unter https://["Eine Serviceanfrage stellen"].
+Wenden Sie sich an den NetApp Support, um weitere Informationen zu diesen Warn- und Warnungsmeldungen zu erhalten. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["Eine Serviceanfrage stellen"].

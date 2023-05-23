@@ -114,8 +114,8 @@ NOTE: Der Benutzer- oder Gruppenname sollte dem Standard-AD-Format entsprechen. 
 .Nachdem Sie fertig sind
 * Nur für CIFS-Freigaben: Um die Freigaben nach Hostnamen zur Verfügung zu stellen, muss der Domänenadministrator die DNS-Datensätze mit dem CIFS-Servernamen und der IP-Adresse aktualisieren. Andernfalls ist der Zugriff auf die Freigabe nur über die IP-Adresse möglich. Beispiel:
 +
-** Verwenden Sie bei aktualisierten DNS-Datensätzen entweder den Hostnamen oder die IP, um auf die Freigabe zuzugreifen, z. B. file://["\\hostname\Freigabe"^] Oder file://["\\IP\-Freigabe"^]
-** Wenn keine DNS-Einträge aktualisiert werden, müssen Sie die IP-Adresse verwenden, um auf die Freigabe zuzugreifen, d. h. file://["\\IP\-Freigabe"^]
+** Verwenden Sie bei aktualisierten DNS-Datensätzen entweder den Hostnamen oder die IP, um auf die Freigabe zuzugreifen, z. B. file://hostname/share["\\hostname\Freigabe"^] Oder file://IP/share["\\IP\-Freigabe"^]
+** Wenn keine DNS-Einträge aktualisiert werden, müssen Sie die IP-Adresse verwenden, um auf die Freigabe zuzugreifen, d. h. file://IP/share["\\IP\-Freigabe"^]
 
 
 * Freigabe erstellen wird als asynchroner Job ausgeführt. Ihre Vorteile:

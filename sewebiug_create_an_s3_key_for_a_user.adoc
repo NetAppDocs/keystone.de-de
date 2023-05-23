@@ -25,7 +25,7 @@ Stellen Sie sicher, dass Sie den Schlüssel sofort nach der Erstellung erfassen.
 +
 Weitere Informationen zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["Aktionen zur Listenansicht"].
 
-. Das Dialogfeld *S3-Schlüssel verwalten* zeigt die Liste der Tasten für den Benutzer an. Informationen zu Schlüsseln finden Sie unter https://["Legen Sie Berechtigungen in einer Richtlinie fest"].
+. Das Dialogfeld *S3-Schlüssel verwalten* zeigt die Liste der Tasten für den Benutzer an. Informationen zu Schlüsseln finden Sie unter https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["Legen Sie Berechtigungen in einer Richtlinie fest"].
 . Wenn für den Benutzer keine Schlüssel vorhanden sind, klicken Sie auf *S3-Schlüssel erstellen*, um die Felder zum Erstellen eines Schlüssels anzuzeigen.
 . Wenn der Schlüssel ablaufen soll, geben Sie das Ablaufdatum und die Ablaufzeit in UTC an. Lassen Sie andernfalls die Standardwerte in diese Felder.
 . Klicken Sie zum Erstellen der Taste auf das Häkchen. Das Dialogfeld *S3 Key Details* zeigt den Zugriffstaste und den geheimen Schlüssel an.

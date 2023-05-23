@@ -18,7 +18,7 @@ Die folgenden Fragen geben Antworten auf Ihre häufigen Fragen zu NetApp Keyston
 
 *Was ist NetApp Keystone?*
 
-NetApp Keystone ist ein Portfolio mit Investitionskostenalternativen für On-Premises-Umgebungen. Weitere Informationen finden Sie unter https://["NetApp Keystone"].
+NetApp Keystone ist ein Portfolio mit Investitionskostenalternativen für On-Premises-Umgebungen. Weitere Informationen finden Sie unter https://www.netapp.com/services/keystone/["NetApp Keystone"].
 
 *Wie profitiert NetApp Keystone meinen Kunden?*
 

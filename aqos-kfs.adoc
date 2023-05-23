@@ -14,13 +14,13 @@ summary: 'Anpassungsfähige Quality of Service (AQoS) bei Keystone'
 
 
 [role="lead"]
-Bei Storage Quality of Service (QoS) handelt es sich um eine entscheidende Technologie, mit der sichergestellt wird, dass Applikationen eine konsistente und vorhersehbare Performance erhalten. Ohne QoS verbrauchen bestimmte Workloads, beispielsweise beim Booten mehrerer Systeme, die meisten oder alle Ressourcen eines bestimmten Zeitraums und wirken sich auf andere Workloads aus. Informationen zur QoS finden Sie unter https://["Durchsatz garantieren mit QoS-Übersicht"^].
+Bei Storage Quality of Service (QoS) handelt es sich um eine entscheidende Technologie, mit der sichergestellt wird, dass Applikationen eine konsistente und vorhersehbare Performance erhalten. Ohne QoS verbrauchen bestimmte Workloads, beispielsweise beim Booten mehrerer Systeme, die meisten oder alle Ressourcen eines bestimmten Zeitraums und wirken sich auf andere Workloads aus. Informationen zur QoS finden Sie unter https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html["Durchsatz garantieren mit QoS-Übersicht"^].
 
 
 
 == Anpassungsfähige QoS
 
-Adaptive QoS (AQoS) wird von Keystone Services verwendet, um das IOPS-/tib-Verhältnis basierend auf der Volume-Größe dynamisch beizubehalten. Informationen zu AQoS-Richtlinien finden Sie unter https://["Allgemeines zur anpassungsfähigen QoS"^].
+Adaptive QoS (AQoS) wird von Keystone Services verwendet, um das IOPS-/tib-Verhältnis basierend auf der Volume-Größe dynamisch beizubehalten. Informationen zu AQoS-Richtlinien finden Sie unter https://docs.netapp.com/us-en/ontap/performance-admin/guarantee-throughput-qos-task.html#about-adaptive-qos["Allgemeines zur anpassungsfähigen QoS"^].
 
 Keystone stellt Ihnen AQoS-Richtlinien zur Verfügung, die Sie einrichten können, sobald Ihr Cluster in Betrieb ist. Sie sollten sicherstellen, dass alle Ihre Volumes mit den richtigen AQoS-Richtlinien verknüpft sind, die bereits erstellt und in Ihrem System verfügbar sind.
 

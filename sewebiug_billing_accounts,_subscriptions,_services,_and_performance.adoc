@@ -40,10 +40,10 @@ Die Burst-Nutzung ist für Dienste bis zu einem bestimmten Zeitpunkt zulässig; 
 
 Weitere Informationen finden Sie unter:
 
-* https://["Block-Storage"]
-* https://["Fileservices"]
-* https://["Objekt-Storage"]
-* https://["MetroCluster-Dokumentation"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_block_storage_overview.html["Block-Storage"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_file_services_overview.html["Fileservices"]
+* https://docs.netapp.com/us-en/keystone/sewebiug_working_with_object_storage_overview.html["Objekt-Storage"]
+* https://docs.netapp.com/us-en/ontap-metrocluster/index.html["MetroCluster-Dokumentation"]
 
 
 

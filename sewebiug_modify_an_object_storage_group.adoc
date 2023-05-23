@@ -23,7 +23,7 @@ Verwenden Sie diese Methode, um Details einer Objekt-Storage-Gruppe, z. B. des G
 +
 Weitere Informationen zum Arbeiten mit Elementen in Listen finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#list-view-actions["Aktionen zur Listenansicht"].
 
-. Ändern Sie im Dialogfeld *Gruppe bearbeiten* die für die Gruppe geltende S3-Richtlinie. Informationen zu S3-Richtlinien finden Sie unter https://["Legen Sie Berechtigungen in einer Richtlinie fest"].
+. Ändern Sie im Dialogfeld *Gruppe bearbeiten* die für die Gruppe geltende S3-Richtlinie. Informationen zu S3-Richtlinien finden Sie unter https://docs.netapp.com/us-en/storagegrid-116/s3/bucket-and-group-access-policies.html#specify-permissions-in-a-policy["Legen Sie Berechtigungen in einer Richtlinie fest"].
 . Sie können je nach Bedarf weitere Richtlinienerklärungen hinzufügen.
 . Klicken Sie Auf *Aktualisieren*. Dadurch wird ein Job zum Ändern der Gruppe mit den angegebenen Einstellungen erstellt. Informationen zur Verfolgung von Jobs finden Sie unter link:sewebiug_netapp_service_engine_web_interface_overview.html#jobs-and-job-status-indicator["Hier"].
 

@@ -14,7 +14,7 @@ summary: Managen von Cloud Volume-Abonnements auf der Google Cloud Platform
 
 
 [role="lead"]
-Abonnements von Cloud Volumes Service für die Google Cloud Platform (GCP) sind mit bestimmten Untermandanten in Verbindung, die über einen Mandanten verfügen. Ein Untermandant ist für einen einzelnen Google Cloud-Service abonniert. Es ist möglich, Cloud-Services (Google Cloud Instanzen) für Ihre Mandanten und Untermandanten zu erstellen und zu managen sowie Storage auf Google Cloud basierend auf den Mandanten bereitzustellen. Die Cloud Volumes Service-Konten der Mandanten und Untermandanten sollten eingerichtet werden, bevor Sie Google Cloud-Instanzen über die NetApp Service Engine managen können. Weitere Informationen zu Cloud Volumes Service auf GCP finden Sie unter https://["Erfahren Sie mehr über Cloud Volumes Service für Google Cloud"].
+Abonnements von Cloud Volumes Service für die Google Cloud Platform (GCP) sind mit bestimmten Untermandanten in Verbindung, die über einen Mandanten verfügen. Ein Untermandant ist für einen einzelnen Google Cloud-Service abonniert. Es ist möglich, Cloud-Services (Google Cloud Instanzen) für Ihre Mandanten und Untermandanten zu erstellen und zu managen sowie Storage auf Google Cloud basierend auf den Mandanten bereitzustellen. Die Cloud Volumes Service-Konten der Mandanten und Untermandanten sollten eingerichtet werden, bevor Sie Google Cloud-Instanzen über die NetApp Service Engine managen können. Weitere Informationen zu Cloud Volumes Service auf GCP finden Sie unter https://docs.netapp.com/us-en/occm/concept_cvs_gcp.html["Erfahren Sie mehr über Cloud Volumes Service für Google Cloud"].
 
 
 NOTE: Die Cloud Volumes Service-Konten für die Mandanten und Untermandanten sollten bereits für GCP konfiguriert sein. Wenden Sie sich an den Support, um die Service-Account-Details zu erhalten. Zum Management von Google Cloud Volumes benötigen Sie Administratorzugriff.
@@ -30,7 +30,7 @@ Dafür müssen Sie Folgendes gewährleisten:
 
 * Der Untermieter ist für den Google Cloud-Service abonniert.
 * Sie haben die JSON-Datei für das Servicekonto des Abonnenten und kennen die GCP-Projektnummer, die mit der Google Cloud Instanz verknüpft ist.
-* Damit Cloud Volumes Service für GCP bereits von Ihrem Support-Team unter BlueXP konfiguriert ist. Weitere Informationen finden Sie unter https://["Einrichtung von Cloud Volumes Service für Google Cloud"].
+* Damit Cloud Volumes Service für GCP bereits von Ihrem Support-Team unter BlueXP konfiguriert ist. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/occm/task_setup_cvs_gcp.html["Einrichtung von Cloud Volumes Service für Google Cloud"].
 
 
 .Schritte
