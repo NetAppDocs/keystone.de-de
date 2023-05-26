@@ -47,7 +47,7 @@ Für jede Abonnementnummer sehen Sie die folgenden Informationen:
 * *Tracking-ID*: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Website, die zur Nachverfolgung des Abonnements verwendet wird.
 * *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements, z. B. monatlich, vierteljährlich oder jährlich.
 * *Startdatum*: Das Startdatum des Abonnements.
-* *Enddatum*: Das Enddatum des Abonnements. Basierend auf diesem Datum werden möglicherweise Informationsmeldungen für Abonnements angezeigt, die sich dem Ablauf nähern.
+* *Enddatum*: Das Enddatum des Abonnements. Ein leeres Datum zeigt an, dass das Abonnement kein Enddatum hat und automatisch erneuert wird. Basierend auf diesem Datum werden möglicherweise Informationsmeldungen für Abonnements angezeigt, deren Ablauf kurz bevorsteht oder denen Richtlinien zur automatischen Verlängerung beigefügt sind.
 * *Nutzungsstatus*: Gibt an, wie viel des Abonnements genutzt oder überverwendet wurde. Sie können die Liste nach dieser Spalte sortieren, wenn Sie die höchsten Verbrauchsdatensätze anzeigen möchten.
 * image:aiq-ks-time-icon.png["Symbol"]: Wenn Sie auf dieses Symbol klicken, wird die Registerkarte *Subscription Time Series* geöffnet, auf der Sie die historischen Nutzungsdaten für jeden Service-Level sehen können, der in diesem Abonnement enthalten ist.
 
@@ -105,7 +105,7 @@ Die folgenden Farben in den Balkendiagrammen geben die verbrauchte Kapazität an
 ** Violett: Über der Burst-Grenze oder `Above Limit`.
 +
 
-NOTE: Wenn Sie den Mauszeiger über ein Balkendiagramm bewegen, können Sie die _Provisional usage_-Daten anzeigen. Dies ist die Verwendung, die aufgezeichnet wird, wenn die genauen Daten für den Zeitraum nicht verfügbar sind und durch die Daten ersetzt werden, die am vorherigen Datenerfassungspunkt verfügbar sind.
+NOTE: Ein leeres Diagramm zeigt an, dass an diesem Datenerfassungspunkt in Ihrer Umgebung keine Daten verfügbar waren.
 
 
 
