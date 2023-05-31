@@ -64,9 +64,11 @@ Sie können die folgenden Nutzungsanzeigen nutzen, um den Nutzungsstatus jedes A
 image:usage-indicator.png["Symbole"]
 
 .Indizieren
-image:usage-indicator.png["Symbol"]
-image:usage-indicator.png["Symbol"]
-image:icon-grey.png["Symbol"]: Keine Kapazitätsnutzung erfasst mit der Kapazität des Service-Levelsimage:icon-green.png["Symbol"]: Der Verbrauch ist normal, innerhalb von 80% der Kapazität verpflichtetimage:icon-amber.png["Symbol"]: Maximaler Verbrauch, das heißt, die Nutzung wird 100% oder mehr der gebuchten Kapazität erreichen. Die Spalte *verbraucht* zeigt diesen Indikator für einen Verbrauch über 80 % der zugelegten Kapazität animage:icon-red.png["Symbol"]: Der Verbrauch liegt innerhalb der Burst-Grenze. Der Burst-Verbrauch liegt bei der Storage-Kapazität, die den zu 100 % festgelegten Kapazitätswert eines Service-Levels übersteigt, und liegt innerhalb der vereinbarten Burst-Nutzungsgrenze, z. B. 120 %image:icon-purple.png["Symbol"]: Zeigt den Verbrauch über der festgelegten Burst-Grenze an
+image:icon-grey.png["Symbol"]: Keine Kapazitätsnutzung erfasst mit der Kapazität des Service-Levels
+image:icon-green.png["Symbol"]: Der Verbrauch ist normal, innerhalb von 80% der Kapazität verpflichtet
+image:icon-amber.png["Symbol"]: Maximaler Verbrauch, das heißt, die Nutzung wird 100% oder mehr der gebuchten Kapazität erreichen. Die Spalte *verbraucht* zeigt diesen Indikator für einen Verbrauch über 80 % der zugelegten Kapazität an
+image:icon-red.png["Symbol"]: Der Verbrauch liegt innerhalb der Burst-Grenze. Der Burst-Verbrauch liegt bei der Storage-Kapazität, die den zu 100 % festgelegten Kapazitätswert eines Service-Levels übersteigt, und liegt innerhalb der vereinbarten Burst-Nutzungsgrenze, z. B. 120 %
+image:icon-purple.png["Symbol"]: Zeigt den Verbrauch über der festgelegten Burst-Grenze an
 
 
 
