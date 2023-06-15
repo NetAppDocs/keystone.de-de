@@ -14,7 +14,7 @@ summary: Keystone Performance-Service-Level
 
 
 [role="lead"]
-Keystone bietet Storage-Kapazität auf Basis von vorab definierten Performance-Service-Leveln (Service-Levels) auf Abonnementbasis. Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen.
+Keystone bietet Storage-Kapazität zu vordefinierten Performance-Service-Levels (Service-Leveln) oder Abonnementplänen. Jedem von Keystone Services gemanagten Volume ist ein Service Level zugewiesen.
 
 Die einzelnen Service-Levels werden durch ihre I/O-Dichte definiert, die IOPS/tib/Volume entspricht. Das Verhältnis zwischen Performance (IOPS/Ausgabeoperationen pro Sekunde) und zugewiesener Storage-Kapazität (tib) ist IOPS/tib bei durchschnittlicher Latenz pro Volume.
 

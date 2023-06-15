@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: aiq-keystone-details.html 
-keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports 
+keywords: keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, MetroCluster, StorageGRID, consumption details 
 summary: Keystone-Abonnementberichte und -Diagramme 
 ---
 = Digital Advisor Dashboard und Reporting für Keystone
@@ -45,6 +45,11 @@ Für jede Abonnementnummer sehen Sie die folgenden Informationen:
 
 * *Abonnementnummer*: Die Abonnementnummer des von NetApp zugewiesenen Keystone Abonnements.
 * *Tracking-ID*: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Website, die zur Nachverfolgung des Abonnements verwendet wird.
++
+
+TIP: Wenn Ihrem Abonnement ein Datensicherungs-Service Level oder ein Preisplan zugewiesen wurde, hilft Ihnen eine Kurzinformation, die Tracking ID des Partnerabonnements in einem MetroCluster Setup zu identifizieren. Informationen zum Anzeigen der detaillierten Nutzung nach Partnerabonnements in einer MetroCluster Konfiguration finden Sie unter https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection["Zusätzliche Details zur Datensicherung"].
+
+* *Nutzungstyp*: Sie haben möglicherweise mehrere Keystone (Version 1) oder Keystone STaaS (Version 2) Abonnements abonniert. Die Tarifbestimmungen für die Service-Levels können für die beiden Abonnementtypen variieren. Wenn Sie sich den Wert in dieser Spalte ansehen, wissen Sie, ob der Nutzungstyp nach der bereitgestellten oder der logischen Nutzung für eine der beiden abrechnet `v1` Oder `v2`. Weitere Informationen zu Keystone STaaS finden Sie unter https://docs.netapp.com/us-en/keystone-staas/index.html["Dokumentation zu Keystone STaaS"].
 * *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements, z. B. monatlich, vierteljährlich oder jährlich.
 * *Startdatum*: Das Startdatum des Abonnements.
 * *Enddatum*: Das Enddatum des Abonnements. Ein leeres Datum zeigt an, dass das Abonnement kein Enddatum hat und automatisch erneuert wird. Basierend auf diesem Datum werden möglicherweise Informationsmeldungen für Abonnements angezeigt, deren Ablauf kurz bevorsteht oder denen Richtlinien zur automatischen Verlängerung beigefügt sind.
@@ -55,7 +60,7 @@ Für jede Abonnementnummer sehen Sie die folgenden Informationen:
 Weitere Details finden Sie, indem Sie auf den Abwärtspfeil für einen Abonnementdatensatz klicken. Details wie der Name des Service-Levels, festgelegt, verbraucht, verfügbare Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung werden in tib angezeigt.
 
 
-NOTE: Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.
+TIP: Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.
 
 Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Service-Leveln finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["Service-Leveln"].
 
@@ -82,7 +87,7 @@ Auf der Registerkarte *Subscription Time Series* werden Verlaufsdaten Ihrer Keys
 . Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Der Standardzeitbereich ist vom Startdatum des Abrechnungszeitraums bis zum aktuellen Datum.
 +
 
-NOTE: Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf maximal drei Monate.
+TIP: Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf maximal drei Monate.
 
 . Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt. Sie können den Mauszeiger über die Diagramme halten, um eine Aufschlüsselung der Nutzung in Bezug auf die Daten für „belegt“, „verbraucht“, „Burst“ und darüber des Burst-Limits an diesem Datenerfassungspunkt anzuzeigen.
 
@@ -132,10 +137,14 @@ NOTE: Die Indikatoren *Aktuelle verbrauchte*, *Aktuelle Burst* und *aufgelaufene
 
 
 
-.<strong>-DatenausDatenausDatenausDatenausDatenausDatenausDatenausDatenausDaten </strong>
+
+
+=== Zusätzliche Details zur Datensicherung
+
+.Klicken Sie hier
 [%collapsible]
 ====
-Wenn Sie den Datenschutzdienst (DP) abonniert haben, können Sie die Trennung der Verbrauchsdaten gemäß den primären und gespiegelten MetroCluster-Standorten auf der Registerkarte *Abonnementzeitreihen* anzeigen.
+Wenn Sie den Datenschutzdienst (DP) abonniert haben, können Sie die Aufschlüsselung der Verbrauchsdaten gemäß den MetroCluster-Partnerseiten auf der Registerkarte *Abonnementzeitreihen* einsehen.
 
 Informationen zum Datenschutz finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_data_protection.html["Datensicherung"].
 
@@ -145,7 +154,7 @@ Wenn die Cluster in Ihrer ONTAP Storage-Umgebung in einem MetroCluster-Setup kon
 NOTE: Die Verbrauchsbalkentabellen sind nur für grundlegende Servicelevel aufgeteilt. Für DP-Service-Level erscheint diese Abgrenzung nicht.
 
 .Service-Level für die Datensicherung
-Bei DP-Service-Leveln wird der Gesamtverbrauch aufgeteilt und die Nutzung an jedem Standort wird in einem separaten Abonnement abgerechnet, das ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort darstellt. Wenn Sie daher auf der Registerkarte *Subscription Time Series* die Abonnementnummer für den primären Standort auswählen, werden in den Verbrauchsdiagrammen für die DP-Service-Level die diskreten Verbrauchsdetails nur für den primären Standort angezeigt. Da jeder Standort in einer MetroCluster Konfiguration als Quelle und Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am jeweiligen Standort erstellt wurden.
+Bei DP-Service-Leveln wird der Gesamtverbrauch aufgeteilt und die Nutzung an den einzelnen Partner-Standorten wird in einem separaten Abonnement abgerechnet, das ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort darstellt. Wenn Sie daher auf der Registerkarte *Subscription Time Series* die Abonnementnummer für den primären Standort auswählen, werden in den Verbrauchsdiagrammen für die DP-Service-Level die diskreten Verbrauchsdetails nur für den primären Standort angezeigt. Da jeder Partnerstandort in einer MetroCluster Konfiguration als Quelle und Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am Standort erstellt wurden.
 
 .Basis-Service-Level
 Für die Basis-Service-Level wird jedoch jedes Volume als bereitgestellt an den primären und gespiegelten Standorten abgerechnet. Daher wird dasselbe Balkendiagramm nach dem Verbrauch am primären und gespiegelten Standort aufgeteilt.
@@ -177,7 +186,11 @@ Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https:/
 
 Auf der Registerkarte *Systemdetails* können Sie den Verbrauch und andere Details für Ihre Volumes in ONTAP anzeigen. Bei StorageGRID werden auf dieser Registerkarte die Nodes und ihre individuelle Nutzung in Ihrer Objekt-Storage-Umgebung angezeigt.
 
-.<strong>-</strong>
+
+
+=== Details zum ONTAP Volume
+
+.Klicken Sie hier
 [%collapsible]
 ====
 Für ONTAP werden auf der Registerkarte „Systemdetails“ Informationen wie Kapazitätsnutzung, Volume-Typ, Cluster, Aggregat und Service-Level der Volumes in Ihrer Storage-Umgebung angezeigt, die durch das Keystone Abonnement gemanagt werden.
@@ -197,7 +210,11 @@ NOTE: Für Datensicherungsdienste wird eine zusätzliche Spalte angezeigt, die a
 image:aiq-ks-sysdtls.png["Registerkarte „Systemdetails“"]
 
 ====
-.<strong>-UmeNodes und </strong>
+
+
+=== StorageGRID Nodes und Verbrauchsdetails
+
+.Klicken Sie hier
 [%collapsible]
 ====
 Bei StorageGRID zeigt diese Registerkarte die logische Nutzung der Nodes in der Objekt-Storage-Umgebung an.
@@ -241,6 +258,10 @@ Es gibt zwei Arten von Warnmeldungen:
 
 * *Information*: Für Probleme, wie Ihre Abonnements, die sich einem Ende nähern, können Sie Informationswarnungen sehen. Bewegen Sie den Mauszeiger über das Informationssymbol, um mehr über das Problem zu erfahren.
 * *Warnung*: Probleme, wie z. B. Nichteinhaltung, werden als Warnungen angezeigt. Wenn beispielsweise Volumes in den gemanagten Clustern ohne über AQoS-Richtlinien (Adaptive QoS) verbunden sind, wird eine Warnmeldung angezeigt. Klicken Sie auf den Link in der Warnmeldung, um die Liste der nicht kompatiblen Volumes auf der Registerkarte *Systemdetails* anzuzeigen.
++
+
+NOTE: Wenn Sie einen einzelnen Service-Level- oder Tarifplan abonniert haben, können Sie die Warnmeldung für nicht konforme Volumes nicht sehen.
+
 +
 Informationen zu AQoS-Richtlinien finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_kfs_billing.html#billing-and-adaptive-qos-policies["Abrechnung und anpassungsfähige QoS-Richtlinien"].
 
