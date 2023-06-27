@@ -24,6 +24,8 @@ Der NetApp Keystone Datensicherungsservice kann Daten sichern und bei Bedarf wie
 
 NOTE: Backup- und Disaster Recovery-Services sind als Add-on-Services verfügbar, während Snapshot als Teil des Basis-Storage-Service verfügbar ist.
 
+Wenn Sie Datenschutzdienste abonniert haben, werden Ihren Abonnements bestimmte Service-Level zugewiesen, zum Beispiel _Data-Protect Extreme_, _Data-Protect Premium_ usw. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#additional-details-for-data-protection["Zusätzliche Details zur Datensicherung"]
+
 |===
 |  | Single Region Snapshots (als Teil des Basis-Storage-Service verfügbar) | Backup in mehreren Regionen (Add-on für Datensicherung) | Disaster Recovery für mehrere Regionen (Add-on für Datensicherung) 
 

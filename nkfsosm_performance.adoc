@@ -20,7 +20,9 @@ Die einzelnen Service-Levels werden durch ihre I/O-Dichte definiert, die IOPS/ti
 
 Die I/O-Dichte für ein Volume wird in einem stündlichen Intervall berechnet, um die I/O-Spitzendichte zu erfassen. Berichte zur I/O-Dichte für Volumes werden monatlich generiert.
 
-Die Service-Level für File-, Block- und Objekt-Storage-Typen sind hier aufgelistet.
+Sie wählen Service-Level basierend auf Ihrer Storage-Umgebung sowie Ihren Storage- und Verbrauchsanforderungen aus. Die Basis-Service-Level stehen Ihnen standardmäßig zur Verfügung. Weitere Service-Levels sind zusätzlich verfügbar, wenn Sie sich für bestimmte Services entschieden haben. Für den Datenschutzdienst wird Ihnen beispielsweise das Servicelevel _Data-Protect <base-service-level>_ zugewiesen.
+
+Sie finden hier die Basis-Service-Level für File-, Block- und Objekt-Storage.
 
 
 
@@ -55,7 +57,7 @@ Die Service-Level für File-, Block- und Objekt-Storage-Typen sind hier aufgelis
 
 === Mehr auf Service-Leveln für File-Storage
 
-Die Service-Level-Kennzahlen hängen von den folgenden Bedingungen ab:
+Die Basis-Service-Level-Kennzahlen hängen von den folgenden Bedingungen ab:
 
 * Die Service-Level für File- und Block-Storage unterstützen ONTAP 9.7 und höher.
 * IOPS/tib/Volume, MB/s/tib/Volume und Latenzwerte für Service-Level basieren auf der Menge der im Volume gespeicherten logischen Daten, der Blockgröße von 32 KB sowie einer zufälligen Kombination von 70-%-Lese- und 30-%-Schreib-I/O-Vorgängen.
