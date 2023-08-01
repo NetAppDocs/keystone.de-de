@@ -86,7 +86,7 @@ sidebar:
         url: "/sewebiug_select_tenant.html"
       - title: Zeigen Sie die Webschnittstelle der NetApp Service Engine an
         url: "/sewebiug_netapp_service_engine_web_interface_overview.html"
-    - title: Hier finden Sie das Keystone Abonnements-DSbrett
+    - title: Sehen Sie sich das Dashboard für Keystone Abonnements an
       url: "/sewebiug_dashboard.html"
     - title: Rechnung anzeigen
       url: "/sewebiug_billing.html"
