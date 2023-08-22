@@ -14,9 +14,38 @@ summary: Was können Kunden in Active IQ für einen Grundpfeiler sehen
 
 
 [role="lead"]
-Wenn Sie NetApp Keystone Services abonniert haben, können Sie Ihre Nutzungsberichte und Diagramme im Active IQ Digital Advisor Dashboard (Digital Advisor) anzeigen.
+Wenn Sie NetApp Keystone Services abonniert haben, erhalten Sie im Dashboard von Active IQ Digital Advisor (Digital Advisor) über das Widget *Keystone Abonnements* einen Überblick über Ihre Abonnements.
 
-Bei der Anmeldung bei Digital Advisor wird das Widget *Keystone Abonnements* angezeigt, in dem die Kapazitätsnutzung mit den von Ihnen erworbenen Keystone Services verglichen wird.
+Digital Advisor bietet ein einheitliches Dashboard, das Ihnen über die Schaltfläche *Wechseln zu altem/neuem Dashboard* einen Einblick in verschiedene Ebenen Ihrer Abonnementdaten und Nutzungsinformationen gibt.
+
+.Standard-Dashboard (alt)
+Sie können Ihre Abonnementnummer, Ihren Kontonamen, Start- und Enddaten des Abonnements sowie die Kapazitätsnutzungsdiagramme gemäß Ihren abonnierten Serviceleveln anzeigen.
+
+image:old-db.png["Altes Dashboard"]
+
+.Alternatives (neues) Dashboard
+Sie sehen die Aufspreitung der Kapazitätsnutzung gemäß Ihren Abonnements sowie Warnungen und Warnungen, die sofortige Aufmerksamkeit oder Maßnahmen erfordern. Die Informationen werden abhängig von Ihren Abonnements und dem Status Ihrer Nutzung selektiv angezeigt. Sie können diese Informationen anzeigen:
+
+* Kapazitätsnutzung, z. B.:
++
+** Keine Nutzung.
+** Verbrauch von mehr als 80 % der gebuchten Kapazität.
+** Burst-Nutzung.
+** Verbrauch über der Burst-Kapazität hinaus.
+
+
+* Verschiedene Warnungen werden angezeigt, wenn sie für Sie relevant sind.
++
+** *Läuft bald ab*: Falls Ihre Abonnements innerhalb von 90 Tagen ablaufen.
+** *Kritische Hardware-Upgrades*: Wenn kritische Hardware-Upgrades ausstehen.
+** *AQoS Warnungen*: Sie haben Volumes ohne AQoS Richtlinien zugewiesen.
++
+
+TIP: Klicken Sie auf den Link *Abonnements*, um die Liste der gefilterten Abonnements auf der Registerkarte *Abonnements* anzuzeigen.
+
+
+
+
 
 Weitere Informationen zu Digital Advisor finden Sie unter link:https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor Dokumentation"].
 
