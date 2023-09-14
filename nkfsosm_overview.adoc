@@ -23,7 +23,7 @@ Keystone bietet drei Betriebsmodelle für die Service-Bereitstellung.
 * *Customer-Operated* *Modell* ermöglicht dem Kunden, einen angebotenen Service gemäß den ausgewählten Leistungsstufen und Speicherservicetypen zu abonnieren. NetApp definiert die Architektur und die Produkte und wird beim Kunden vor Ort installiert und ermöglicht Kunden das Management der Infrastruktur mithilfe ihrer Storage- und IT-Ressourcen. Ein Kunde kann an NetApp oder einen Partner/Service Provider gebunden sein. Basierend darauf können die Service-Anfragen an NetApp oder den Service Provider gerichtet und bearbeitet werden. Ein Kundenadministrator kann die Verwaltungsaufgaben in einer vom Kunden betriebenen Umgebung ausführen. Diese Aufgaben sind an die Mandanten und Untermandanten für den jeweiligen Kunden gebunden.
 
 
-Die Funktionen und Optionen des Angebots variieren je nach Modell. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_partner_service_provider.html["Rollen und Betriebsabläufe von Service-Providern und Kunden"]
+Die Funktionen und Optionen des Angebots variieren je nach Modell.
 
 
 
@@ -86,7 +86,7 @@ Unterstützung
 
 In der folgenden Liste sind die Rollen und Verantwortungsbereiche von NetApp zusammengefasst:
 
-* NetApp liefert, installiert, konfiguriert und ermöglicht den entsprechenden Service (einschließlich einer anwendbaren Version der NetApp Service Engine in einem vom Kunden bestimmten Datacenter oder mit Colo). NetApp ist am Ende der Vertragslaufzeit für die Deinstallation verantwortlich oder wenn der Kunde sich entscheidet, den Vertrag früher zu kündigen.
+* NetApp liefert, installiert, konfiguriert und aktiviert den jeweiligen Service. NetApp ist am Ende der Vertragslaufzeit für die Deinstallation verantwortlich oder wenn der Kunde sich entscheidet, den Vertrag früher zu kündigen.
 * NetApp arbeitet unter anderem mit IT-Service-Providern zusammen und arbeitet dabei mit DEN IT-Service-Providern des Kunden oder mit dem technischen Team zusammen.
 * Die Performance der von NetApp betriebenen Services ist inbegriffen, wobei die Annahme besteht, dass für die unterstützte Umgebung gemeinsame Verantwortlichkeiten gelten.
 

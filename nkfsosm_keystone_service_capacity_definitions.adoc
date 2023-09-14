@@ -41,7 +41,7 @@ Während der Laufzeit eines Abonnements können Sie die zugesagt Kapazitäten ä
 
 * Die zugewiesene Kapazität kann nicht verringert werden
 * Die verplante Kapazität kann nicht 90 Tage vor Ablauf Ihres Abonnements verlängert werden, es sei denn, das Abonnement muss für eine zusätzliche Laufzeit von 12 Monaten verlängert werden.
-* Änderungen der zugesagt Kapazität können Sie über die NetApp Service Engine Schnittstelle oder über Keystone Success Manager anfordern. Informationen zum anfordern von Änderungen finden Sie unter link:sewebiug_raise_a_service_request.html["Eine Serviceanfrage stellen"].
+* Sie können über den Keystone Success Manager Änderungen an der gebuchten Kapazität anfordern.
 
 
 

@@ -47,6 +47,8 @@ TIP: Klicken Sie auf den Link *Abonnements*, um die Liste der gefilterten Abonne
 
 
 
+image:db-card.png["Ohne sla"]
+
 Weitere Informationen zu Digital Advisor finden Sie unter link:https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor Dokumentation"].
 
 Informationen über die Registerkarte *Keystone Abonnements* finden Sie unter _Digital Advisor Dashboard und Reporting für Keystone_.

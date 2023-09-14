@@ -30,8 +30,6 @@ Die folgenden Fragen beantworten häufig Ihre Fragen zu NetApp Keystone Keystone
 
 *Können Partner mehr Kapazität verkaufen, als sie von NetApp an Kunden gekauft haben?* Mandantenabonnements sind nicht von der Kapazität beschränkt, die der Partner erworben hat. Partner können mehr Kapazität verkaufen, als sie NetApp ihren Kunden gekauft haben. Die Kapazität, die über der erworbenen Kapazität liegt, wird als Überzeichnung bezeichnet.
 
-*Werden APIs zur Integration in Kundentools bereitgestellt?* Ja, RESTful APIs stehen zur Verfügung, um sich in Ihre eigenen Anwendungen integrieren zu können. Unter *SUPPORT> API Documentation* finden Sie die API-Dokumentation für Keystone Services. Weitere Informationen finden Sie im link:https://docs.netapp.com/us-en/keystone/seapiref_overview_of_netapp_service_engine_apis.html["Keystone API-Leitfaden"].
-
 *Was ist Burst-Kapazität?* Sie können die Nutzung bis zu 20% über der zugesagt Kapazität erhöhen und reduzieren. Die Burst-Kapazitätsnutzung wird täglich gemessen und nur bei Verwendung abgerechnet. Wenn beispielsweise die engagierte Kapazität 100 tib beträgt, können Sie einen Burst bis zu 120 tib festlegen.
 
 *Gibt es eine Prämie für die Verwendung von Burst?* der Burst-Kapazitätsverbrauch bis zu 20% der zustehenden Kapazität wird mit dem gleichen Satz wie die zustehende Kapazität in Rechnung gestellt, wobei jede Nutzung über 20% der zugesagt Kapazität mit 50% Prämie in Rechnung gestellt wird.
@@ -40,11 +38,14 @@ Die folgenden Fragen beantworten häufig Ihre Fragen zu NetApp Keystone Keystone
 
 *Wie werden dem Mandanten Burst-Kapazitäten zugewiesen?* die Burst-Kapazität wird Partnern zugewiesen, die sie weiterhin ihren Kunden basierend auf Anforderungen zuweisen.
 
-*Wo kann ich die beplante und Burst-Kapazitätsauslastung erkennen?* NetApp Service Engine verfügt über integrierte Dashboards zur Meldung der verbrauchten Kapazität gegen die zugebende Kapazität.
+*Wo kann ich die Auslastung der gebuchten Kapazität und Burst-Kapazität sehen?*
+Im Active IQ Digital Advisor Dashboard.
 
-*Gibt es Benachrichtigungen, wenn ich einen bestimmten Prozentsatz der zugesagt Kapazitätsnutzung erreiche?* Ja, die Management Tools erhalten über das NetApp Service Engine Dashboard Benachrichtigungen zur Kapazitätsauslastung.
+*Wird es Benachrichtigungen geben, wenn ich einen bestimmten Prozentsatz der Auslastung der zugesicherten Kapazität erreiche?*
+Ja, die Managementtools liefern über das Active IQ Digital Advisor Dashboard Benachrichtigungen zur Kapazitätsauslastung.
 
-*Wie kann ich die Nutzung von Keystone anzeigen?* NetApp Service Engine bietet eine Dashboard-Ansicht mit Informationen zu allen abonnierten Services und zur verbrauchten Menge. Details zur NetApp Service Engine finden Sie unter link:https://docs.netapp.com/us-en/keystone/sewebiug_overview.html["Hier"].
+*Wie kann ich die Nutzung von Keystone anzeigen?*
+Der digitale Berater von Active IQ bietet eine Dashboard-Ansicht mit Informationen zu allen abonnierten Services und zur Nutzungsmenge.
 
 *wie melde ich Probleme mit dem Service?* NetApp Keystone Support kann über diese verschiedenen Kanäle erreicht werden:
 
@@ -52,7 +53,8 @@ Die folgenden Fragen beantworten häufig Ihre Fragen zu NetApp Keystone Keystone
 * Eskalations-E-Mail: Mailto:keystone.escalations@netapp.com[keystone.escalations@netapp.com^]
 
 
-*kann ich neuen Storage-Service bestellen?* Ja, neuer Storage-Service oder Erweiterungen des Storage-Service können über das NetApp Service Engine Portal angefordert werden. Die Anfrage wird vom NetApp Keystone Operations Team bearbeitet, bevor sie zur Verwendung zur Verfügung gestellt wird.
+*Kann ich einen neuen Lagerservice bestellen?*
+Ja, neue Storage-Services oder Erweiterungen zu Storage-Services können über unsere KSMs angefordert werden. Die Anfrage wird vom NetApp Keystone Operations Team bearbeitet, bevor sie zur Verwendung zur Verfügung gestellt wird.
 
 *sind die Erhöhung der Lagerverpflichtungen sofort verfügbar?* in Abhängigkeit von der angeforderten Kapazität wird bestimmt, ob die Kapazität bereits bereitgestellt ist oder ob zusätzliche Geräte ausgeliefert und installiert werden müssen.
 

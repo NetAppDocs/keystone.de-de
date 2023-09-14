@@ -51,7 +51,7 @@ TIP: Wenn Ihrem Abonnement ein Datensicherungs-Service Level oder ein Preisplan 
 * *Nutzungstyp*: Sie haben möglicherweise mehrere Keystone (Version 1) oder Keystone STaaS (Version 2) Abonnements abonniert. Die Tarifbestimmungen für die Service-Levels können für die beiden Abonnementtypen variieren. Wenn Sie sich den Wert in dieser Spalte ansehen, wissen Sie, ob der Nutzungstyp nach der bereitgestellten oder der logischen Nutzung für eine der beiden abrechnet `v1` Oder `v2`. Weitere Informationen zu Keystone STaaS finden Sie unter https://docs.netapp.com/us-en/keystone-staas/index.html["Dokumentation zu Keystone STaaS"^].
 * *Abrechnungszeitraum*: Der Abrechnungszeitraum des Abonnements, z. B. monatlich, vierteljährlich oder jährlich.
 * *Startdatum*: Das Startdatum des Abonnements.
-* *Enddatum*: Das Enddatum des Abonnements. Ein leeres Datum zeigt an, dass das Abonnement kein Enddatum hat und automatisch erneuert wird. Basierend auf diesem Datum werden möglicherweise Informationsmeldungen für Abonnements angezeigt, deren Ablauf kurz bevorsteht oder denen Richtlinien zur automatischen Verlängerung beigefügt sind.
+* *Enddatum*: Das Enddatum des Abonnements. Wenn Sie ein monatlich abrechenbares Abonnement haben, das sich automatisch jeden Monat verlängert, sehen Sie `Month-on-month` Anstelle des Enddatums. Basierend auf diesem Datum werden möglicherweise Informationsmeldungen für Abonnements angezeigt, deren Ablauf kurz bevorsteht oder denen Richtlinien zur automatischen Verlängerung beigefügt sind.
 * *Nutzungsstatus*: Gibt an, wie viel des Abonnements genutzt oder überverwendet wurde. Sie können die Liste nach dieser Spalte sortieren, wenn Sie die höchsten Verbrauchsdatensätze anzeigen möchten.
 * image:subs-dtls-icon.png["Symbol"]: Durch Klicken auf dieses Symbol für ein Abonnement wird der Reiter *Aktuelle Nutzung* mit zusätzlichen Details zu diesem Abonnement geöffnet.
 * image:aiq-ks-time-icon.png["Symbol"]: Wenn Sie auf dieses Symbol klicken, wird die Registerkarte *Capacity Trend* geöffnet, auf der Sie die historischen Nutzungsdaten für jeden Service-Level sehen können, der in diesem Abonnement enthalten ist.
@@ -91,10 +91,10 @@ Auf der Registerkarte *Capacity Trend* werden Verlaufsdaten Ihrer Keystone Abonn
 .Schritte
 . Klicken Sie auf die Registerkarte *Capacity Trend*.
 . Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.
-. Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Der Standardzeitbereich ist vom Startdatum des Abrechnungszeitraums bis zum aktuellen Datum.
+. Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Bei Abonnements, die abgelaufen sind, ist der standardmäßige Datumsbereich das Start- und Enddatum des Abonnements. Bei vorhandenen Abonnements ist der Standardzeitraum vom Startdatum des Abrechnungszeitraums bis zum aktuellen Datum. Sie können kein zukünftiges Datum auswählen.
 +
 
-TIP: Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf maximal drei Monate.
+TIP: Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf drei Monate.
 
 . Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt. Sie können den Mauszeiger über die Diagramme halten, um eine Aufschlüsselung der Nutzung in Bezug auf die Daten für „belegt“, „verbraucht“, „Burst“ und darüber des Burst-Limits an diesem Datenerfassungspunkt anzuzeigen.
 
@@ -123,17 +123,18 @@ NOTE: Ein leeres Diagramm zeigt an, dass an diesem Datenerfassungspunkt in Ihrer
 
 
 
-* *Current verbrauchte*: Indikator für die verbrauchte Kapazität (in tib), die für das Service-Level definiert ist. Dieses Feld verwendet bestimmte Farben für die Verwendung:
+* *Current verbrauchte*: Indikator für die verbrauchte Kapazität (in tib), die für das Service-Level definiert ist. Dieses Feld verwendet bestimmte Farben:
 +
-** Grau: Keine.
+** Keine Farbe: Burst oder mehr Burst-Nutzung.
+** Grau: Keine Verwendung.
 ** Grün: Innerhalb von 80% der gebuchten Kapazität.
-** Gelb: Jeder Verbrauch über 80 % der gebuchten Kapazität.
+** Amber: 80 % der auf die Burst-Kapazität zugesuchten Kapazität.
 
 
-* *Aktueller Burst*: Indikator für die verbrauchte Kapazität innerhalb oder oberhalb des definierten Burst-Limits. Jede Nutzung innerhalb der vereinbarten Burst-Grenze, beispielsweise 20 % über der gebuchten Kapazität, erfolgt innerhalb des Burst-Limits. Eine weitere Nutzung wird als Nutzung über dem Burst-Limit betrachtet. Dieses Feld verwendet bestimmte Farben für die Verwendung:
+* *Aktueller Burst*: Indikator für die verbrauchte Kapazität innerhalb oder oberhalb des definierten Burst-Limits. Jede Nutzung innerhalb der vereinbarten Burst-Grenze, beispielsweise 20 % über der gebuchten Kapazität, erfolgt innerhalb des Burst-Limits. Eine weitere Nutzung wird als Nutzung über dem Burst-Limit betrachtet. Dieses Feld zeigt bestimmte Farben an:
 +
-** Grau: Keine.
-** Rot: Platzen.
+** Keine Farbe: Keine Burst-Nutzung.
+** Rot: Burst-Nutzung.
 ** Lila: Über der Burst-Grenze.
 
 
@@ -282,4 +283,4 @@ Informationen zu AQoS-Richtlinien finden Sie unter https://docs.netapp.com/us-en
 
 image:alert-aiq.png["Meldungen"]
 
-Wenden Sie sich an den NetApp Support, um weitere Informationen zu diesen Warn- und Warnungsmeldungen zu erhalten. Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/keystone/sewebiug_raise_a_service_request.html["Eine Serviceanfrage stellen"].
+Wenden Sie sich an den NetApp Support, um weitere Informationen zu diesen Warn- und Warnungsmeldungen zu erhalten.

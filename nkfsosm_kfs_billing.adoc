@@ -30,8 +30,6 @@ Die Keystone-Abrechnung basiert auf engagierter Kapazität und variabler Burst-N
 
 Informationen zur Verwendung der zugesagt- und Burst-Kapazität finden Sie unter link:nkfsosm_keystone_service_capacity_definitions.html["Keystone Service-Kapazitätsdefinitionen"].
 
-Informationen zum Anzeigen von Rechnungsdetails finden Sie unter link:sewebiug_billing.html["Rechnung anzeigen"].
-
 
 
 == Abrechnung basiert auf der verplante Kapazität

@@ -26,36 +26,10 @@ Die Infrastrukturarchitektur, das Design, die Technologieauswahl und die Kompone
 
 Die Keystone Infrastruktur besteht aus mehreren Komponenten:
 
-* Benutzeroberfläche (Webportal) der NetApp Service Engine.
-* NetApp Service Engine APIs zur Integration
 * Die Keystone Infrastruktur mit Storage Controllern
-* Tools zum Managen und Betreiben des Service wie OpsRamp, Active IQ und Active IQ Unified Manager.
+* Tools zum Managen und Betreiben des Services wie OpsRamp, Active IQ Digital Advisor und Active IQ Unified Manager.
 
 
 Weitere Informationen zur Integration von NetApp Keystone mit Active IQ finden Sie unter link:https://docs.netapp.com/us-en/active-iq/["Active IQ Digital Advisor Dokumentation"]
 
 image:nkfsosm_image8.png["ks-Infrastruktur verwenden"]
-
-
-
-== NetApp Service Engine
-
-Über das Web-Portal der NetApp Service Engine lassen sich Keystone Services in einem Modell mit Betrieb durch NetApp, Partner oder Kunden managen und überwachen. Das Portal umfasst folgende Funktionen:
-
-* Eine grafische Schnittstelle (NetApp Service Engine Web Interface) zur Überwachung und einfachen Storage-Bereitstellung.
-* Eine Reihe VON REST-APIs der NetApp Service Engine für erweiterte Setup- und Storage-Managementaktionen.
-
-
-image:nkfsosm_image9.png["ks-Architektur"]
-
-Das NetApp Service Engine Portal stellt eine zentrale Oberfläche dar, über die Kunden folgende Aufgaben ausführen können:
-
-* Abonnement-Dashboard: Anzeige des Status der abonnierten Kapazität und der verbrauchten Kapazität
-* Storage-Bereitstellung Workflows zur Erstellung von NFS-/CIFS-Dateifreigaben, FC-/iSCSI-Festplatten und S3-Bucket
-* Datensicherung Erstellen Sie Snapshots und legen Sie Backup-Richtlinien oder Datenreplikation für die bereitgestellten Dateifreigabe oder -Festplatte fest.
-* Berichte An. Anzeigen von Dateifreigaben und Festplattenbeständen sowie von Trends zur Kapazitätsauslastung gegenüber verschiedenen Service-Leveln
-* Abonnement verwalten: Bestellen Sie zusätzliche Kapazität für ein vorhandenes Abonnement oder einen neuen Service über das Portal.
-* Übermitteln von Serviceanfragen oder Support-Problemen und zeigen ihren Status an
-
-
-Die komplette Funktionalität der NetApp Service Engine ist nur beim von NetApp betriebenen Modell verfügbar. Bei einem Kunden- oder Partnermodell sind die NetApp Service Engine Funktionalitäten auf Berichts- und Abonnementmanagement beschränkt.
