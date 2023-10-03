@@ -37,7 +37,7 @@ Informationen zur Verwendung der zugesagt- und Burst-Kapazität finden Sie unter
 Engagierte Kapazität bezieht sich auf die Kapazitäten verschiedener Services in einem einzigen Abonnement, das von den involvierten Parteien (NetApp/Partner und Kunde) vereinbart wurde. Diese Kapazität wird in jeder Keystone-Bestellung angegeben und wird unabhängig vom tatsächlichen Verbrauch abgerechnet.
 
 .Messung der verbrauchten Kapazität
-Im Rahmen der Keystone-Serviceimplementierung überwacht und misst NetApp fortlaufend die Nutzung des Service. Alle fünf Minuten wird vom System ein Verbrauchsdatensatz generiert, in dem die aktuelle verbrauchte Kapazität für das Abonnement detailliert beschrieben wird. Diese Daten werden über den Abrechnungszeitraum hinweg aggregiert, um Rechnungen und Nutzungsberichte zu erstellen.
+Im Rahmen der Keystone-Serviceimplementierung überwacht und misst NetApp fortlaufend die Nutzung des Service. Mindestens einmal in fünf Minuten wird vom System ein Verbrauchsdatensatz erstellt, in dem die aktuell verbrauchte Kapazität für das Abonnement detailliert aufgeführt wird. Diese Daten werden über den Abrechnungszeitraum hinweg aggregiert, um Rechnungen und Nutzungsberichte zu erstellen.
 
 
 
@@ -74,8 +74,9 @@ Wenn Volumes in ONTAP geklont werden und Sie sie zum Backup und zur Wiederherste
 
 Beachten Sie Folgendes:
 
-* Der Verbrauch der geklonten Volumes wird während der ersten 24 Stunden nach der Klonerstellung nicht berücksichtigt. Während dieser Zeit fallen für diese Zeit keine Gebühren an.
-* Geklonte Volumes mit den Service-Leveln „Standard“ und „Wert“ werden nicht für den Verbrauch berücksichtigt, wenn keine neuen Daten auf das Volume geschrieben werden. So werden beispielsweise in einem Anwendungsfall für Backup oder Wiederherstellung die Daten eines geklonten Volume gesichert oder wiederhergestellt. Die Daten werden im geklonten Volume selbst nicht verändert – und sie werden nicht als Verbrauch betrachtet.
+* Klon-Volumes berechnen keine Kosten, solange ihre Größe weniger als 10 % des übergeordneten Volume beträgt (die physische Kapazität, die im Klon-Volume im Vergleich mit der im übergeordneten Volume genutzten physischen Kapazität verwendet wird).
+* Für geklonte Volumes gibt es keine 24-Stunden-Frist, es wird nur die Größe des Klons berücksichtigt.
+* Sobald das Klon-Volume 10 % der physischen Größe des übergeordneten Volume überschreitet, wird der Klon als Standard-Volume abgerechnet (genutzte logische Kapazität).
 
 
 

@@ -248,6 +248,71 @@ image:sg-link-2.png["SG-Popup"]
 ====
 
 
+== Zeigen Sie die ONTAP Volume Performance an
+
+Sie können auf die Registerkarte *Performance* klicken, um die Performance-Details für die von Ihren Keystone Abonnements gemanagten ONTAP Volumes anzuzeigen.
+
+Diese Registerkarte steht Ihnen möglicherweise nicht zum Anzeigen der Performance-Metriken für Ihre ONTAP Volumes zur Verfügung. Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen.
+
+.Schritte
+. Klicken Sie auf die Registerkarte *Performance*.
+. Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste Abonnementnummer ausgewählt.
+. Wählen Sie den gewünschten Volume-Namen aus der Liste aus.
++
+Alternativ können Sie auf klicken image:aiq-ks-time-icon.png["Diagrammsymbol"] Symbol gegen ein ONTAP-Volume in der Registerkarte *Volumes*, um zu dieser Registerkarte zu navigieren.
+
+. Wählen Sie den Datumsbereich für die Abfrage aus. Der Datumsbereich kann der Beginn des Monats oder das Startdatum des Abonnements auf das aktuelle Datum oder das Enddatum des Abonnements sein.
+
+
+Die abgerufenen Details basieren auf dem Service-Level-Ziel für jeden Service-Level. So werden beispielsweise die IOPS-Spitzenwerte, der maximale Durchsatz, die Ziellatenz und andere Metriken durch die einzelnen Einstellungen für das Service-Level bestimmt. Weitere Informationen zu den Einstellungen finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["Service-Leveln"].
+
+
+NOTE: Wenn Sie das Kontrollkästchen *SLO Reference Line* aktivieren, werden die Diagramme IOPS, Durchsatz und Latenz auf Basis des Service-Level-Ziels für den Service-Level dargestellt. Andernfalls werden sie in tatsächlichen Zahlen angezeigt.
+
+Die im horizontalen Diagramm angezeigten Leistungsdaten sind ein Durchschnitt in jedem fünfminütigen Intervall und entsprechend dem Datumsbereich der Abfrage angeordnet. Sie können durch die Diagramme blättern und mit der Maus über bestimmte Datenpunkte fahren, um weiter unten in die erfassten Daten zu gelangen.
+
+Sie können die Leistungsmetriken in den folgenden Abschnitten basierend auf der Kombination aus Abonnementnummer, Volumenname und ausgewähltem Datumsbereich anzeigen und vergleichen. Die Details werden nach dem dem dem Volume zugewiesenen Service-Level angezeigt. Sie können den Cluster-Namen und den Volume-Typ sehen, d. h. die dem Volume zugewiesenen Lese- und Schreibberechtigungen. Jede mit dem Volume verknüpfte Warnmeldung wird ebenfalls angezeigt.
+
+
+
+=== IOPS/tib
+
+In diesem Abschnitt werden die Input-Output-Diagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Die Spitzenwerte-IOPS für das Service-Level und die aktuellen IOPS (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit den minimalen, maximalen und durchschnittlichen IOPS für den Zeitraum in IOPS/tib angezeigt.
+
+image:perf-iops.png["IOPS-Abschnitt des Diagramms"]
+
+
+
+=== Durchsatz (MB/s/tib)
+
+In diesem Abschnitt werden die Durchsatzdiagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Der maximale Durchsatz für das Service-Level (SLO Max) und den aktuellen Durchsatz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit dem minimalen, maximalen und durchschnittlichen Durchsatz für den Zeitbereich in MBit/s/tib angezeigt.
+
+image:perf-thr.png["Durchsatzdiagramme"]
+
+
+
+=== Latenz (ms)
+
+In diesem Abschnitt werden die Latenzdiagramme für die Workloads im Volume angezeigt, basierend auf dem Datumsbereich der Abfrage. Die maximale Latenz für das Service-Level (SLO-Ziel) und die aktuelle Latenz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit der minimalen, maximalen und durchschnittlichen Latenz für den Zeitraum in Millisekunden angezeigt.
+
+Dieses Diagramm hat die folgenden Farben:
+
+* Hellblau: _Latency_. Bei dieser Latenz handelt es sich um die tatsächliche Latenz, die neben dem Keystone-Service auch Latenzen einschließt. Dazu kann auch eine zusätzliche Latenz gehören, beispielsweise die Latenz zwischen Netzwerk und Client.
+* Dunkelblau: _Effektive Latenz_. Die effektive Latenz ist die Latenz, die sich ausschließlich auf Ihren Keystone Service in Bezug auf Ihr SLA richtet.
+
+
+image:perf-lat.png["Performance-Diagramme"]
+
+
+
+=== Genutzte logische Nutzung (tib)
+
+In diesem Abschnitt werden die bereitgestellten und die logischen genutzten Kapazitäten des Volumes angezeigt. Die aktuell genutzte logische Kapazität (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) sowie die minimale, maximale und durchschnittliche Nutzung des Zeitbereichs werden in TIBS angezeigt. In diesem Diagramm steht der graue Bereich für die gebuchte Kapazität und das gelbe Diagramm für die logische Nutzung.
+
+image:perf-log-usd.png["Diagramm „genutzte logische Kapazität“"]
+
+
+
 == Berichte generieren
 
 Sie können Berichte für Ihre Abonnementdetails, Nutzungsdaten für einen bestimmten Zeitraum und Volume-Details von jedem der Registerkarten erstellen und anzeigen, indem Sie auf die Schaltfläche *CSV herunterladen* klicken: image:download-icon.png["Symbol zum Herunterladen von Berichten"]
