@@ -30,7 +30,9 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
 
 
 
-NOTE: Der Kapazitätsverbrauch in Keystone Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt und auf zwei Dezimalstellen abgerundet. Wenn die Nutzung weniger als 0.01 tib beträgt, wird als angezeigt `0` Oder `No Usage`. Weitere Nutzungsmetriken finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Service-Level-Metriken und -Definitionen"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone Service-Kapazitätsdefinitionen"].
+NOTE: Der Kapazitätsverbrauch in Keystone Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt und auf zwei Dezimalstellen abgerundet. Wenn die Nutzung weniger als 0.01 tib beträgt, wird als angezeigt `0` Oder `No Usage`. Die in diesen Registerkarten eingegebene lokale Zeit für die Abfrage wird in UTC-Zeit umgewandelt. Daher können aufgrund der abgefragten Zeit kleinere Unterschiede bei den zurückgegebenen Daten angezeigt werden.
+
+Informationen zu Nutzungsmetriken finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Service-Level-Metriken und -Definitionen"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone Service-Kapazitätsdefinitionen"].
 
 
 
@@ -91,37 +93,43 @@ Auf der Registerkarte *Capacity Trend* werden Verlaufsdaten Ihrer Keystone Abonn
 .Schritte
 . Klicken Sie auf die Registerkarte *Capacity Trend*.
 . Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.
-. Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Bei Abonnements, die abgelaufen sind, ist der standardmäßige Datumsbereich das Start- und Enddatum des Abonnements. Bei vorhandenen Abonnements ist der Standardzeitraum vom Startdatum des Abrechnungszeitraums bis zum aktuellen Datum. Sie können kein zukünftiges Datum auswählen.
+. Wählen Sie *Kapazitätstrends* aus, wenn Sie die historischen Daten anzeigen und den Trend zur Kapazitätsnutzung analysieren möchten. Wählen Sie *aufgelaufene Burst* aus, wenn Sie die historischen Burst-Nutzungsdaten anzeigen und die berechnete Nutzung gemäß Ihrer Rechnung analysieren möchten.
+
+
+
+
+=== Kapazitätstrends anzeigen
+
+.Weitere Informationen .
+[%collapsible]
+====
+Wenn Sie die Option *Kapazitätstrend* ausgewählt haben, gehen Sie wie folgt vor:
+
+.Schritte
+. Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern *von Datum* und *bis Datum* aus. Wählen Sie den Datumsbereich für die Abfrage aus. Der Datumsbereich kann der Beginn des Monats oder das Startdatum des Abonnements auf das aktuelle Datum oder das Enddatum des Abonnements sein. Sie können kein zukünftiges Datum auswählen.
 +
 
 TIP: Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf drei Monate.
 
-. Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt. Sie können den Mauszeiger über die Diagramme halten, um eine Aufschlüsselung der Nutzung in Bezug auf die Daten für „belegt“, „verbraucht“, „Burst“ und darüber des Burst-Limits an diesem Datenerfassungspunkt anzuzeigen.
+. Klicken Sie Auf *Details Anzeigen*. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt.
 
+
+In den Balkendiagrammen werden der Name des Service-Levels und die für diesen Service-Level verbrauchte Kapazität für den Datumsbereich angezeigt. Das Datum und die Uhrzeit der Sammlung werden unten im Diagramm angezeigt. Basierend auf dem Datumsbereich Ihrer Abfrage werden die Nutzungsdiagramme in einem Bereich von 30 Datenerfassungspunkten angezeigt. Sie können den Mauszeiger über die Diagramme halten, um eine Aufschlüsselung der Nutzung in Bezug auf die Daten für „belegt“, „verbraucht“, „Burst“ und darüber des Burst-Limits an diesem Datenerfassungspunkt anzuzeigen.
 
 image:aiq-ks-subtime-2.png["Archivdaten"]
 
-Die folgenden Details werden angezeigt:
+Die folgenden Farben in den Balkendiagrammen geben die verbrauchte Kapazität an, die innerhalb des Service-Levels definiert ist. Monatliche Daten in den Diagrammen werden durch eine vertikale Linie getrennt.
 
-* *Aktuelle Nutzung*: Das Start- und Enddatum des Abonnements und der Abrechnungszeitraum, z. B. vierteljährlich, jährlich usw.
-* *Nutzungsdiagramme*: Die Balkendiagramme zeigen den Namen des Service-Levels und die Kapazität an, die für diesen Service-Level für den Datumsbereich verbraucht wird. Das Datum und die Uhrzeit der Sammlung werden unten im Diagramm angezeigt.
-+
+* Grün: Innerhalb Von 80 %.
+* Gelb: 80 % - 100 %.
+* Rot: Burst-Nutzung (100 % der festzugesagte Kapazität bis zur vereinbarten Burst-Grenze)
+* Violett: Über der Burst-Grenze oder `Above Limit`.
 
-NOTE: Basierend auf dem Datumsbereich Ihrer Abfrage werden die Nutzungsdiagramme in einem Bereich von 30 Datenerfassungspunkten angezeigt.
 
-+
-Die folgenden Farben in den Balkendiagrammen geben die verbrauchte Kapazität an, die innerhalb des Service-Levels definiert wurde:
-
-+
-** Grün: Innerhalb Von 80 %.
-** Gelb: 80 % - 100 %.
-** Rot: Burst-Nutzung (100 % der festzugesagte Kapazität bis zur vereinbarten Burst-Grenze)
-** Violett: Über der Burst-Grenze oder `Above Limit`.
-+
 
 NOTE: Ein leeres Diagramm zeigt an, dass an diesem Datenerfassungspunkt in Ihrer Umgebung keine Daten verfügbar waren.
 
-
+Sie können auf die Umschalttaste *Aktuelle Nutzung anzeigen* klicken, um den aktuellen Verbrauch und die Burst-Nutzung in Bezug auf den Abrechnungszeitraum des Abonnements anzuzeigen. Diese basieren nicht auf dem Datumsbereich der Abfrage.
 
 * *Current verbrauchte*: Indikator für die verbrauchte Kapazität (in tib), die für das Service-Level definiert ist. Dieses Feld verwendet bestimmte Farben:
 +
@@ -138,13 +146,26 @@ NOTE: Ein leeres Diagramm zeigt an, dass an diesem Datenerfassungspunkt in Ihrer
 ** Lila: Über der Burst-Grenze.
 
 
-* *Aufgelaufene Burst*: Indikator für die aufgelaufene Burst-Nutzung oder verbrauchte Kapazität, die pro Monat für den aktuellen Abrechnungszeitraum berechnet wird. Die aufgelaufene Burst-Nutzung wird auf Basis der zurecheneten und verbrauchten Kapazität für ein Service-Level berechnet: `(consumed - committed)/365.25/12`.
-+
-
-NOTE: Die Indikatoren *Aktuelle verbrauchte*, *Aktuelle Burst* und *aufgelaufene Burst* bestimmen den Verbrauch in Bezug auf den Abrechnungszeitraum des Abonnements und basieren nicht auf dem Datumsbereich der Abfrage.
 
 
+====
 
+
+=== Anzeigen historischer Burst-Daten
+
+.Weitere Informationen .
+[%collapsible]
+====
+Wenn Sie die Option *angesammelte Burst* ausgewählt haben, können Sie standardmäßig die monatlichen angesammelten Burst-Nutzungsdaten für die letzten 12 Monate sehen. Sie können die Abfrage nach dem Datumsbereich der letzten 30 Monate durchführen.
+
+
+TIP: Die aufgelaufene Burst-Nutzung oder verbrauchte Kapazität wird pro Monat für den aktuellen Abrechnungszeitraum berechnet. Die anfallende Burst-Nutzung wird nach der folgenden Formel auf der Grundlage der gebuchten und verbrauchten Kapazität für ein Service-Level berechnet: `(consumed - committed)/365.25/12`.
+
+image:accr-burst.png["Diagramme zur angesammelten Burst-Nutzung"]
+
+Diese Funktion ist nur im Vorschaumodus verfügbar. Wenden Sie sich an Ihren KSM, um mehr über diese Funktion zu erfahren.
+
+====
 
 
 === Referenzdiagramme für den Datenschutz
@@ -261,7 +282,7 @@ Diese Registerkarte steht Ihnen möglicherweise nicht zum Anzeigen der Performan
 +
 Alternativ können Sie auf klicken image:aiq-ks-time-icon.png["Diagrammsymbol"] Symbol gegen ein ONTAP-Volume in der Registerkarte *Volumes*, um zu dieser Registerkarte zu navigieren.
 
-. Wählen Sie den Datumsbereich für die Abfrage aus. Der Datumsbereich kann der Beginn des Monats oder das Startdatum des Abonnements auf das aktuelle Datum oder das Enddatum des Abonnements sein.
+. Wählen Sie den Datumsbereich für die Abfrage aus. Der Datumsbereich kann der Beginn des Monats oder das Startdatum des Abonnements auf das aktuelle Datum oder das Enddatum des Abonnements sein. Sie können kein zukünftiges Datum auswählen.
 
 
 Die abgerufenen Details basieren auf dem Service-Level-Ziel für jeden Service-Level. So werden beispielsweise die IOPS-Spitzenwerte, der maximale Durchsatz, die Ziellatenz und andere Metriken durch die einzelnen Einstellungen für das Service-Level bestimmt. Weitere Informationen zu den Einstellungen finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html["Service-Leveln"].

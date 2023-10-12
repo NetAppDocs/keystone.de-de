@@ -54,7 +54,7 @@ Der digitale Berater von Active IQ bietet eine Dashboard-Ansicht mit Information
 
 
 *Kann ich einen neuen Lagerservice bestellen?*
-Ja, neue Storage-Services oder Erweiterungen zu Storage-Services können über unsere KSMs angefordert werden. Die Anfrage wird vom NetApp Keystone Operations Team bearbeitet, bevor sie zur Verwendung zur Verfügung gestellt wird.
+Ja, ein neuer Storage-Service oder eine Erweiterung des Storage-Service kann über KSMs angefordert werden. Die Anfrage wird vom NetApp Keystone Operations Team bearbeitet, bevor sie zur Verwendung zur Verfügung gestellt wird.
 
 *sind die Erhöhung der Lagerverpflichtungen sofort verfügbar?* in Abhängigkeit von der angeforderten Kapazität wird bestimmt, ob die Kapazität bereits bereitgestellt ist oder ob zusätzliche Geräte ausgeliefert und installiert werden müssen.
 
