@@ -129,7 +129,7 @@ Die folgenden Farben in den Balkendiagrammen geben die verbrauchte Kapazität an
 
 NOTE: Ein leeres Diagramm zeigt an, dass an diesem Datenerfassungspunkt in Ihrer Umgebung keine Daten verfügbar waren.
 
-Sie können auf die Umschalttaste *Aktuelle Nutzung anzeigen* klicken, um den aktuellen Verbrauch und die Burst-Nutzung in Bezug auf den Abrechnungszeitraum des Abonnements anzuzeigen. Diese basieren nicht auf dem Datumsbereich der Abfrage.
+Sie können auf die Umschalttaste *Aktuelle Nutzung anzeigen* klicken, um den Verbrauch, die Burst-Nutzung und die anrechnungsmäßigen Burst-Daten für den aktuellen Abrechnungszeitraum anzuzeigen. Diese Angaben basieren nicht auf dem Datumsbereich der Abfrage.
 
 * *Current verbrauchte*: Indikator für die verbrauchte Kapazität (in tib), die für das Service-Level definiert ist. Dieses Feld verwendet bestimmte Farben:
 +
@@ -146,6 +146,7 @@ Sie können auf die Umschalttaste *Aktuelle Nutzung anzeigen* klicken, um den ak
 ** Lila: Über der Burst-Grenze.
 
 
+* *Aufgelaufener Burst*: Indikator für die aufgelaufene Burst-Nutzung oder verbrauchte Kapazität, die pro Monat für den aktuellen Abrechnungszeitraum berechnet wird. Die aufgelaufene Burst-Nutzung wird auf Basis der zurecheneten und verbrauchten Kapazität für ein Service-Level berechnet: `(consumed - committed)/365.25/12`.
 
 
 ====
