@@ -30,13 +30,13 @@ Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Le
 
 
 
-NOTE: Der Kapazitätsverbrauch in Keystone Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt und auf zwei Dezimalstellen abgerundet. Wenn die Nutzung weniger als 0.01 tib beträgt, wird als angezeigt `0` Oder `No Usage`. Die in diesen Registerkarten eingegebene lokale Zeit für die Abfrage wird in UTC-Zeit umgewandelt. Daher können aufgrund der abgefragten Zeit kleinere Unterschiede bei den zurückgegebenen Daten angezeigt werden.
+NOTE: Der Kapazitätsverbrauch in Keystone Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt und auf zwei Dezimalstellen abgerundet. Wenn die Nutzung weniger als 0.01 tib beträgt, wird als angezeigt `0` Oder `No Usage`. Die Daten auf diesen Bildschirmen werden in UTC-Zeit (Serverzeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet.
 
 Informationen zu Nutzungsmetriken finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html["Service-Level-Metriken und -Definitionen"]. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html["Keystone Service-Kapazitätsdefinitionen"].
 
 
 
-== Abonnements anzeigen
+== Abonnements
 
 Eine Liste Ihrer Abonnements können Sie im Register *Abonnements* einsehen.
 
@@ -71,7 +71,7 @@ image:icon-purple.png["Symbol"]: Zeigt den Verbrauch über der festgelegten Burs
 
 
 
-== Nutzungsdetails für Ihre Abonnements anzeigen
+== Aktuelle Nutzung
 
 Um die Details Ihrer Abonnements zu erfahren, klicken Sie auf die Registerkarte *Aktuelle Nutzung* und wählen Sie die gewünschte Abonnementnummer aus.
 
@@ -86,7 +86,7 @@ Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Serv
 
 
 
-== Anzeigen historischer Nutzungsdaten
+== Kapazitätstrend
 
 Auf der Registerkarte *Capacity Trend* werden Verlaufsdaten Ihrer Keystone Abonnements für einen bestimmten Zeitraum angezeigt. In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.
 
@@ -215,7 +215,7 @@ Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter https:/
 ====
 
 
-== Zeigen Sie Volumes und Objektdetails an
+== Volumes Und Objekte
 
 Auf der Registerkarte *Volumes & Objekte* können Sie den Verbrauch und andere Details für Ihre Volumes in ONTAP anzeigen. Bei StorageGRID werden auf dieser Registerkarte die Nodes und ihre individuelle Nutzung in Ihrer Objekt-Storage-Umgebung angezeigt.
 
@@ -224,7 +224,7 @@ NOTE: Der Name dieser Registerkarte hängt von der Art der Bereitstellung an Ihr
 
 
 
-=== Details zum ONTAP Volume
+=== Zeigen Sie Details zum ONTAP Volume an
 
 .Weitere Informationen .
 [%collapsible]
@@ -248,12 +248,12 @@ image:aiq-ks-sysdtls.png["Registerkarte Volumes  Objekte"]
 ====
 
 
-=== StorageGRID Nodes und Verbrauchsdetails
+=== StorageGRID Nodes und Verbrauch anzeigen
 
 .Weitere Informationen .
 [%collapsible]
 ====
-Bei StorageGRID zeigt diese Registerkarte die logische Nutzung der Nodes in der Objekt-Storage-Umgebung an.
+Bei StorageGRID zeigt diese Registerkarte die logische Nutzung der Nodes für den Objektspeicher an.
 
 .Schritte
 . Klicken Sie auf die Registerkarte *Objects*.
@@ -270,11 +270,12 @@ image:sg-link-2.png["SG-Popup"]
 ====
 
 
-== Zeigen Sie die ONTAP Volume Performance an
+== Leistung
 
-Sie können auf die Registerkarte *Performance* klicken, um die Performance-Details für die von Ihren Keystone Abonnements gemanagten ONTAP Volumes anzuzeigen.
+Auf der Registerkarte *Performance* können Sie die Performance-Kennzahlen der ONTAP Volumes anzeigen, die von Ihren Keystone Abonnements gemanagt werden.
 
-Diese Registerkarte steht Ihnen möglicherweise nicht zum Anzeigen der Performance-Metriken für Ihre ONTAP Volumes zur Verfügung. Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen.
+
+TIP: Diese Registerkarte ist optional für Sie verfügbar. Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen.
 
 .Schritte
 . Klicken Sie auf die Registerkarte *Performance*.

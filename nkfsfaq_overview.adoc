@@ -18,15 +18,22 @@ Die folgenden Fragen geben Antworten auf Ihre häufigen Fragen zu NetApp Keyston
 
 *Was ist NetApp Keystone?*
 
-NetApp Keystone ist ein Portfolio mit Investitionskostenalternativen für On-Premises-Umgebungen. Weitere Informationen finden Sie unter https://www.netapp.com/services/keystone/["NetApp Keystone"].
+NetApp Keystone ist ein Portfolio mit alternativen Lösungen für On-Premises-Investitionskosten (CapEx).
+Weitere Informationen finden Sie unter https://www.netapp.com/services/keystone/["NetApp Keystone"^].
 
 *Wie profitiert NetApp Keystone meinen Kunden?*
 
-NetApp Keystone verbindet die Säulen unserer Investitions- und Hybrid-Cloud-Strategie – mit Agilität, finanzieller Flexibilität und einem reduzierten finanziellen Risiko, das Kunden bei der Erfüllung ihres Cash Flows und ihrer Geschäftsanforderungen unterstützt.
+NetApp Keystone ist die Brücke, die die Säulen unserer CapEx- und Hybrid Cloud-Strategie miteinander verbindet und Agilität, finanzielle Flexibilität und ein geringeres finanzielles Risiko bietet, damit Kunden ihre Anforderungen an Cashflow und Geschäft erfüllen können.
 
 Die NetApp Keystone Marke bietet ein Portfolio flexibler Zahlungslösungen, das neben Keystone Services auch klassische Finanzierung, Leasing und feste/variable Optionen für finanzbewusste Kunden umfasst.
 
-*Keystone Services (Betriebskosten, Cloud-ähnliche Erfahrung):* * bevorzugen 100 % Betriebskosten, damit Assets nicht in die Bilanz Ihres Kunden landen. * Interne/externe Service-Provider, die Kosten mit Nutzung/Umsatz in Einklang bringen möchten * Workloads mit unvorhersehbarem Kapazitätswachstum * Neuzuweisung VON IT-Ressourcen von typischen Storage-Aufgaben (Migrationen, Technologieaktualisierungen, Upgrades, Und so weiter) * kurzfristige Lösung vor der Migration von Workloads in die Cloud * Zurückführung von Workloads aus der Cloud in eine lokale Umgebung
+*Keystone Services (Betriebskosten, Cloud-ähnliche Nutzung):*
+* Vorziehen 100% Betriebskosten, so dass Vermögenswerte nicht in der Bilanz Ihres Kunden enden
+* Interne/externe Dienstleister, die Kosten mit Nutzung/Umsatz in Einklang bringen wollen
+* Workloads mit unvorhersehbarem Kapazitätswachstum
+* Neuzuweisung von IT-Ressourcen aus typischen Storage-Aufgaben (Migrationen, Tech Refresh, Upgrades usw.)
+* Kurzfristige Lösung vor der Migration von Workloads in die Cloud
+* Zurückführung von Workloads aus der Cloud in lokale Umgebungen
 
 *Was ist NetApp Keystone?*
 
