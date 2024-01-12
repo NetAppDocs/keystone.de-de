@@ -93,7 +93,7 @@ Auf der Registerkarte *Capacity Trend* werden Verlaufsdaten Ihrer Keystone Abonn
 .Schritte
 . Klicken Sie auf die Registerkarte *Capacity Trend*.
 . Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.
-. Wählen Sie *Kapazitätstrends* aus, wenn Sie die historischen Daten anzeigen und den Trend zur Kapazitätsnutzung analysieren möchten. Wählen Sie *aufgelaufene Burst* aus, wenn Sie die historischen Burst-Nutzungsdaten anzeigen und die berechnete Nutzung gemäß Ihrer Rechnung analysieren möchten.
+. Wählen Sie *Kapazitätstrends* aus, wenn Sie die historischen Daten anzeigen und den Trend zur Kapazitätsnutzung analysieren möchten. Wählen Sie *fakturierte aufgelaufene Burst* aus, wenn Sie die historischen Burst-Nutzungsdaten anzeigen möchten, für die Rechnungen erstellt wurden. Mit diesen Daten können Sie die berechnete Nutzung gemäß Ihrer Rechnung analysieren.
 
 
 
@@ -152,15 +152,15 @@ Sie können auf die Umschalttaste *Aktuelle Nutzung anzeigen* klicken, um den Ve
 ====
 
 
-=== Anzeigen historischer Burst-Daten
+=== Anzeigen der angefallenen Burst-Rechnung
 
 .Weitere Informationen .
 [%collapsible]
 ====
-Wenn Sie die Option *angesammelte Burst* ausgewählt haben, können Sie standardmäßig die monatlichen angesammelten Burst-Nutzungsdaten für die letzten 12 Monate sehen. Sie können die Abfrage nach dem Datumsbereich der letzten 30 Monate durchführen.
+Wenn Sie die Option *fakturierte aufgelaufene Burst* ausgewählt haben, sehen Sie standardmäßig die monatlich aufgelaufenen Burst-Nutzungsdaten der letzten 12 Monate, die in Rechnung gestellt wurden. Sie können die Abfrage nach dem Datumsbereich der letzten 30 Monate durchführen. Balkendiagramme werden für die Rechnungsdaten angezeigt. Wenn die Nutzung noch nicht in Rechnung gestellt wurde, wird für diesen Monat „_Pending_“ angezeigt.
 
 
-TIP: Die aufgelaufene Burst-Nutzung oder verbrauchte Kapazität wird pro Monat für den aktuellen Abrechnungszeitraum berechnet. Die anfallende Burst-Nutzung wird nach der folgenden Formel auf der Grundlage der gebuchten und verbrauchten Kapazität für ein Service-Level berechnet: `(consumed - committed)/365.25/12`.
+TIP: Die in Rechnung gestellte Burst-Nutzung wird pro Abrechnungszeitraum berechnet, basierend auf der gebuchten und verbrauchten Kapazität für ein Service-Level.
 
 image:accr-burst.png["Diagramme zur angesammelten Burst-Nutzung"]
 
