@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head class="at-element-marker">
+  <title>Digital Advisor Dashboard und Reporting für Keystone</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Digital Advisor Dashboard und Reporting für Keystone" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/de-de/keystone/aiq-keystone-details.html" />
+	<meta property="og:description" content="Keystone-Abonnementberichte und -Diagramme" />
+  <meta property="og:image" content="https://docs.netapp.com/de-de/keystone/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Keystone-Abonnementberichte und -Diagramme">
+  <meta name="keywords" content=" keystone-aiq, digital advisor keystone, keystone reports, alerts, keystone dashboard, keystone usage graphs charts, generate reports, MetroCluster, StorageGRID, consumption details, AIQ DA"><!-- Icons -->
+  <link rel="icon" href="/de-de/keystone/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/de-de/keystone/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/de-de/keystone/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/de-de/keystone/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/de-de/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/keystone/aiq-keystone-details.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/keystone/aiq-keystone-details.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/de-de/keystone/js/na-search.js'></script><script src='/de-de/keystone/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/de-de/keystone/js/custom-dropdown.js'></script>
+  <script src='/de-de/keystone/js/FileSaver.min.js'></script>
+  <script src='/de-de/keystone/js/jszip-utils.min.js'></script>
+  <script src='/de-de/keystone/js/jszip.min.js'></script><script src='/de-de/keystone/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/de-de/keystone/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/de/index.aspx">
+                <image id="ie-header-logo" src="/de-de/keystone/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/de/support-and-training/documentation/">Dokumente</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/de-de/keystone/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">Deutsch</span>
+                    <img src="/de-de/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/de-de/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/de-de/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/keystone/aiq-keystone-details.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/de-de/keystone/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">NetApp Komplettlösung</span>
+                    <img src="/de-de/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/de-de/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/de/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Support</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Knowledge Base</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/de/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Training</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/de-de/keystone/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/de-de/keystone/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">Gesamte Dokumentation</a>
+    </li>
+    
+    
+
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/de-de/keystone/">-->
+      Keystone
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/de-de/keystone/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/de-de/keystone/search.html" 
+        data-type="widget"
+        data-placeholder="Dokumentation durchsuchen"
+        data-no-results-found="Keine Ergebnisse gefunden für {query}"
+        data-did-you-mean="Suchen Sie nach {suggestion}."
+        data-no-results-found-did-you-mean="Es wurden keine Ergebnisse für {query} gefunden. Meinten Sie {suggestion}?"
+        data-results-found="{hitCount} Ergebnisse gefunden"
+        data-error-message="Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+        data-error-reset="Suche zurücksetzen"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp Keystone Services"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/de-de/keystone/index.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/de-de/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/de-de/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> NetApp Keystone Services</div>-->
+         NetApp Keystone Services
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Service Bedingungen und Beschreibung"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_service_terms_and_description_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/nkfsosm_service_terms_and_description_overview.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/de-de/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/de-de/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Service Bedingungen und Beschreibung</div>-->
+         Service Bedingungen und Beschreibung
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Definition der Service-Kapazität"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_keystone_service_capacity_definitions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/de-de/keystone/nkfsosm_keystone_service_capacity_definitions.html">
+        Definition der Service-Kapazität
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Service-Level bei Keystone"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_performance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/de-de/keystone/nkfsosm_performance.html">
+        Service-Level bei Keystone
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Service-Level-Metriken und -Definitionen"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_service_level_metrics_and_definitions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/de-de/keystone/nkfsosm_service_level_metrics_and_definitions.html">
+        Service-Level-Metriken und -Definitionen
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Anpassungsfähige Quality of Service bei Keystone"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/aqos-kfs.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/de-de/keystone/aqos-kfs.html">
+        Anpassungsfähige Quality of Service bei Keystone
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Abrechnung"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_kfs_billing.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/de-de/keystone/nkfsosm_kfs_billing.html">
+        Abrechnung
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Datensicherung"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_data_protection.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/de-de/keystone/nkfsosm_data_protection.html">
+        Datensicherung
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Tiering"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_tiering.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/de-de/keystone/nkfsosm_tiering.html">
+        Tiering
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Non-Returnable Disk"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_nrd.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/de-de/keystone/nkfsosm_nrd.html">
+        Non-Returnable Disk
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="US Citizen Support"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_uscs.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/de-de/keystone/nkfsosm_uscs.html">
+        US Citizen Support
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone und Equinix"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_equinix.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/de-de/keystone/nkfsosm_equinix.html">
+        Keystone und Equinix
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Betriebsmodell und Verantwortlichkeiten"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/nkfsosm_overview.html">
+        Betriebsmodell und Verantwortlichkeiten
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Und Mandantenfähigkeit"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_tenancy_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/nkfsosm_tenancy_overview.html">
+        Und Mandantenfähigkeit
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone Infrastruktur"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_keystone_service_delivery_architecture_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/nkfsosm_keystone_service_delivery_architecture_overview.html">
+        Keystone Infrastruktur
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Standortanforderungen"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_site_requirements.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/nkfsosm_site_requirements.html">
+        Standortanforderungen
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Betrieb"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm_netapp_global_services_and_support_center_@gssc@.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/nkfsosm_netapp_global_services_and_support_center_@gssc@.html">
+        Betrieb
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone und Active IQ Digital Advisor"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsosm-keystone-and-aiq.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/nkfsosm-keystone-and-aiq.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/de-de/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/de-de/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Keystone und Active IQ Digital Advisor</div>-->
+         Keystone und Active IQ Digital Advisor
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Anzeigen und Generieren von Berichten über Active IQ Digital Advisor"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/aiq-keystone-details.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/de-de/keystone/aiq-keystone-details.html">
+        Anzeigen und Generieren von Berichten über Active IQ Digital Advisor
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Versionshinweise"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/de-de/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/de-de/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Versionshinweise</div>-->
+         Versionshinweise
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Was ist neu"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/rn_whats_new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/rn_whats_new.html">
+        Was ist neu
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Probleme wurden behoben"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/rn_fixed_issues.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/rn_fixed_issues.html">
+        Probleme wurden behoben
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Bekannte Probleme"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/rn_known_issues.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/rn_known_issues.html">
+        Bekannte Probleme
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="FAQ zu Keystone Abonnements"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsfaq_overview.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/de-de/keystone/nkfsfaq_overview.html">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/de-de/keystone/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/de-de/keystone/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> FAQ zu Keystone Abonnements</div>-->
+         FAQ zu Keystone Abonnements
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Keystone Abonnements"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsfaq_keystone_subscription.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/nkfsfaq_keystone_subscription.html">
+        Keystone Abonnements
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Details zum Serviceangebot"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsfaq_service_offer_details.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/nkfsfaq_service_offer_details.html">
+        Details zum Serviceangebot
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Betriebsmodell"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/nkfsfaq_operating_models.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/de-de/keystone/nkfsfaq_operating_models.html">
+        Betriebsmodell
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Rechtliche Hinweise"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/aiq-keystone-details.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/de-de/keystone/legal-notices.html">
+        Rechtliche Hinweise
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/de-de/keystone"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/de-de/keystone"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/de-de/keystone/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> Die deutsche Sprachversion wurde als Serviceleistung für Sie durch maschinelle Übersetzung erstellt. Bei eventuellen Unstimmigkeiten hat die englische Sprachversion Vorrang. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Digital Advisor Dashboard und Reporting für Keystone</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-01-12 07:19:38 +0000">01/12/2024</time>
+        
+    
+    
+        <span>Beitragende
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/de-de/keystone/images/discuss-sm.svg" alt="" class="github-icon" />Änderungen vorschlagen</span>
+        <img src="/de-de/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/de-de/keystone/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/keystone.de-de/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/de-de/keystone/aiq-keystone-details.html&page-title=Digital Advisor Dashboard und Reporting für Keystone" class="page-nav-contribute-link" role="button">Dokumentationsänderungen anfordern</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/keystone/blob/main/aiq-keystone-details.adoc" class="page-nav-contribute-link" role="button">Diese Seite bearbeiten</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >So können Sie beitragen</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/de-de/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>PDFs<img src="/de-de/keystone/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/de-de/keystone/pdfs/fullsite-sidebar/Dokumentation_für_NetApp_Keystone.pdf" >
+                    <img src="/de-de/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>PDF dieser Dokumentationssite</a>
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/de-de/keystone/pdfs/sidebar/NetApp_Keystone_Services.pdf" 
+            
+          >
+            <img src="/de-de/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            NetApp Keystone Services
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/de-de/keystone/pdfs/sidebar/Service_Bedingungen_und_Beschreibung.pdf" 
+            
+          >
+            <img src="/de-de/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Service Bedingungen und Beschreibung
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/de-de/keystone/pdfs/sidebar/Keystone_und_Active_IQ_Digital_Advisor.pdf" 
+            
+          >
+            <img src="/de-de/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Keystone und Active IQ Digital Advisor
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/de-de/keystone/pdfs/sidebar/Versionshinweise.pdf" 
+            
+          >
+            <img src="/de-de/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Versionshinweise
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/de-de/keystone/pdfs/sidebar/FAQ_zu_Keystone_Abonnements.pdf" 
+            
+          >
+            <img src="/de-de/keystone/images/pdf-icon.png" alt="" width="16" height="16"/>
+            FAQ zu Keystone Abonnements
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/de-de/keystone/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Sammlung separater PDF-Dokumente<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Über das Digital Advisor Dashboard von Active IQ können Sie die Nutzung Ihrer NetApp Keystone-Abonnements überwachen und Berichte erstellen. Wenn Sie Keystone Services abonnieren, können Sie sich die Details zu Ihrem Abonnement und Ihrer Nutzung im Widget <strong>Keystone Abonnements</strong> auf dem Digital Advisor Dashboard ansehen.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="Hinweis">
+</td>
+<td class="content">
+Die hier verfügbaren Informationen gelten sowohl für ONTAP als auch für StorageGRID. Ausnahmen wurden in den entsprechenden Abschnitten erwähnt.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Weitere Informationen zum Keystone Digital Advisor Widget finden Sie unter <a href="https://docs.netapp.com/us-en/active-iq/view_keystone_capacity_utilization.html" target="_blank" rel="noopener">"Anzeige der Kapazitätsauslastung mit NetApp Keystone-Abonnement"</a>.</p>
+</div>
+<div class="paragraph">
+<p>So zeigen Sie Ihr Keystone Abonnement sowie die Nutzungsdetails an:</p>
+</div>
+<div class="olist arabic">
+<div class="title">Schritte</div>
+<ol class="arabic">
+<li>
+<p>Melden Sie sich bei Digital Advisor an. Sie können das Widget <strong>Keystone Abonnements</strong> sehen, in dem die Kapazitätsnutzung mit den von Ihnen erworbenen Keystone Services verglichen wird.</p>
+</li>
+<li>
+<p>Klicken Sie im Widget <strong>Keystone Subscriptions</strong> auf <strong>Weitere Details anzeigen</strong>, um die Nutzungsdetails und Benachrichtigungen zu Ihren Volumes auf der Seite <strong>Keystone Subscriptions</strong> anzuzeigen. Alternativ dazu können Sie im linken Navigationsfenster auf <strong>ALLGEMEIN &gt; Keystone Abonnements</strong> klicken.<br>
+Die Details zu den Abonnements, Nutzungsdiagrammen für die einzelnen Service-Level und Volume-Details werden auf den verschiedenen Registerkarten auf dem Bildschirm <strong>Keystone Abonnements</strong> angezeigt.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="Hinweis">
+</td>
+<td class="content">
+Der Kapazitätsverbrauch in Keystone Abonnements wird in TIBS auf den Dashboards und Berichten angezeigt und auf zwei Dezimalstellen abgerundet. Wenn die Nutzung weniger als 0.01 tib beträgt, wird als angezeigt <code>0</code> Oder <code>No Usage</code>. Die Daten auf diesen Bildschirmen werden in UTC-Zeit (Serverzeitzone) angezeigt. Wenn Sie ein Datum für die Abfrage eingeben, wird es automatisch als UTC-Zeit betrachtet.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Informationen zu Nutzungsmetriken finden Sie unter <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_service_level_metrics_and_definitions.html">"Service-Level-Metriken und -Definitionen"</a>. Informationen über die verschiedenen in Keystone verwendeten Kapazitäten finden Sie unter <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_keystone_service_capacity_definitions.html">"Keystone Service-Kapazitätsdefinitionen"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="abonnements">Abonnements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Eine Liste Ihrer Abonnements können Sie im Register <strong>Abonnements</strong> einsehen.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/all-subs.png" alt="Ein Bild der Registerkarte Alle Abonnements"></span></p>
+</div>
+<div class="paragraph">
+<p>Sie können die folgenden Informationen sehen. Für bestimmte Felder und Spalten können Sie Informationen oder Warnsymbole und Tooltips sehen, die Ihnen zusätzliche Informationen zu den Daten bieten.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Abonnementnummer</strong>: Die Abonnementnummer des von NetApp zugewiesenen Keystone Abonnements.</p>
+</li>
+<li>
+<p><strong>Tracking-ID</strong>: Die zum Zeitpunkt der Abonnementaktivierung zugewiesene Tracking-ID. Dies ist eine eindeutige ID für jedes Abonnement und jede Website, die zur Nachverfolgung des Abonnements verwendet wird.</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="Tipp">
+</td>
+<td class="content">
+Wenn Ihrem Abonnement ein Datensicherungs-Service Level oder ein Preisplan zugewiesen wurde, hilft Ihnen eine Kurzinformation, die Tracking ID des Partnerabonnements in einem MetroCluster Setup zu identifizieren. Informationen zum Anzeigen der detaillierten Nutzung nach Partnerabonnements in einer MetroCluster Konfiguration finden Sie unter <a href="https://docs.netapp.com/us-en/keystone/aiq-keystone-details.html#reference-charts-for-data-protection">"Referenzdiagramme für den Datenschutz"</a>.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p><strong>Nutzungstyp</strong>: Sie haben möglicherweise mehrere Keystone (Version 1) oder Keystone STaaS (Version 2) Abonnements abonniert. Die Tarifbestimmungen für die Service-Levels können für die beiden Abonnementtypen variieren. Wenn Sie sich den Wert in dieser Spalte ansehen, wissen Sie, ob der Nutzungstyp nach der bereitgestellten oder der logischen Nutzung für eine der beiden abrechnet <code>v1</code> Oder <code>v2</code>. Weitere Informationen zu Keystone STaaS finden Sie unter <a href="https://docs.netapp.com/us-en/keystone-staas/index.html" target="_blank" rel="noopener">"Dokumentation zu Keystone STaaS"</a>.</p>
+</li>
+<li>
+<p><strong>Abrechnungszeitraum</strong>: Der Abrechnungszeitraum des Abonnements, z. B. monatlich, vierteljährlich oder jährlich.</p>
+</li>
+<li>
+<p><strong>Startdatum</strong>: Das Startdatum des Abonnements.</p>
+</li>
+<li>
+<p><strong>Enddatum</strong>: Das Enddatum des Abonnements. Wenn Sie ein monatlich abrechenbares Abonnement haben, das sich automatisch jeden Monat verlängert, sehen Sie <code>Month-on-month</code> Anstelle des Enddatums. Basierend auf diesem Datum werden möglicherweise Informationsmeldungen für Abonnements angezeigt, deren Ablauf kurz bevorsteht oder denen Richtlinien zur automatischen Verlängerung beigefügt sind.</p>
+</li>
+<li>
+<p><strong>Nutzungsstatus</strong>: Gibt an, wie viel des Abonnements genutzt oder überverwendet wurde. Sie können die Liste nach dieser Spalte sortieren, wenn Sie die höchsten Verbrauchsdatensätze anzeigen möchten.</p>
+</li>
+<li>
+<p><span class="image"><img src="./media/subs-dtls-icon.png" alt="Symbol"></span>: Durch Klicken auf dieses Symbol für ein Abonnement wird der Reiter <strong>Aktuelle Nutzung</strong> mit zusätzlichen Details zu diesem Abonnement geöffnet.</p>
+</li>
+<li>
+<p><span class="image"><img src="./media/aiq-ks-time-icon.png" alt="Symbol"></span>: Wenn Sie auf dieses Symbol klicken, wird die Registerkarte <strong>Capacity Trend</strong> geöffnet, auf der Sie die historischen Nutzungsdaten für jeden Service-Level sehen können, der in diesem Abonnement enthalten ist.<br>
+Sie können die folgenden Nutzungsanzeigen nutzen, um den Nutzungsstatus jedes Abonnements zu überprüfen:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/usage-indicator.png" alt="Symbole"></span></p>
+</div>
+<div class="paragraph">
+<div class="title">Indizieren</div>
+<p><span class="image"><img src="./media/icon-grey.png" alt="Symbol"></span>: Keine Kapazitätsnutzung erfasst mit der Kapazität des Service-Levels<br>
+<span class="image"><img src="./media/icon-green.png" alt="Symbol"></span>: Der Verbrauch ist normal, innerhalb von 80% der Kapazität verpflichtet<br>
+<span class="image"><img src="./media/icon-amber.png" alt="Symbol"></span>: Maximaler Verbrauch, das heißt, die Nutzung wird 100% oder mehr der gebuchten Kapazität erreichen. Die Spalte <strong>verbraucht</strong> zeigt diesen Indikator für einen Verbrauch über 80 % der zugelegten Kapazität an<br>
+<span class="image"><img src="./media/icon-red.png" alt="Symbol"></span>: Der Verbrauch liegt innerhalb der Burst-Grenze. Der Burst-Verbrauch liegt bei der Storage-Kapazität, die den zu 100 % festgelegten Kapazitätswert eines Service-Levels übersteigt, und liegt innerhalb der vereinbarten Burst-Nutzungsgrenze, z. B. 120 %<br>
+<span class="image"><img src="./media/icon-purple.png" alt="Symbol"></span>: Zeigt den Verbrauch über der festgelegten Burst-Grenze an</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="aktuelle-nutzung">Aktuelle Nutzung</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Um die Details Ihrer Abonnements zu erfahren, klicken Sie auf die Registerkarte <strong>Aktuelle Nutzung</strong> und wählen Sie die gewünschte Abonnementnummer aus.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/aiq-ks-dtls.png" alt="Registerkarte „Aktuelle Nutzung“"></span></p>
+</div>
+<div class="paragraph">
+<p>Details wie der Name des Service-Levels, festgelegt, verbraucht, verfügbare Kapazitäten sowie die aktuelle und aufgelaufene Burst-Nutzung werden in tib angezeigt.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="Tipp">
+</td>
+<td class="content">
+Der <span class="image"><img src="./media/icon-info.png" alt="Informationssymbol"></span> Neben den einzelnen Spalten finden Sie umfassende Informationen zu dieser Spalte. Es werden spezifische Service-Level hervorgehoben, die einen höheren Verbrauch aufweisen. Sie können auch Warnungen und Warnmeldungen anzeigen, die für Ihre Volumes generiert wurden.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Weitere Informationen zu Ihren Keystone Storage-Services und den relevanten Service-Leveln finden Sie unter <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html">"Service-Leveln"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="kapazitätstrend">Kapazitätstrend</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Auf der Registerkarte <strong>Capacity Trend</strong> werden Verlaufsdaten Ihrer Keystone Abonnements für einen bestimmten Zeitraum angezeigt. In den vertikalen Diagrammen werden die Nutzungsdetails für den ausgewählten Zeitbereich mit den entsprechenden Indikatoren angezeigt, mit denen Sie Berichte vergleichen und generieren können.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Schritte</div>
+<ol class="arabic">
+<li>
+<p>Klicken Sie auf die Registerkarte <strong>Capacity Trend</strong>.</p>
+</li>
+<li>
+<p>Wählen Sie das erforderliche Abonnement aus, für das Sie die Details anzeigen möchten. Das erste Abonnement Ihres Kontonamens ist standardmäßig ausgewählt.</p>
+</li>
+<li>
+<p>Wählen Sie <strong>Kapazitätstrends</strong> aus, wenn Sie die historischen Daten anzeigen und den Trend zur Kapazitätsnutzung analysieren möchten. Wählen Sie <strong>fakturierte aufgelaufene Burst</strong> aus, wenn Sie die historischen Burst-Nutzungsdaten anzeigen möchten, für die Rechnungen erstellt wurden. Mit diesen Daten können Sie die berechnete Nutzung gemäß Ihrer Rechnung analysieren.</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="kapazitätstrends-anzeigen">Kapazitätstrends anzeigen</h3>
+<details>
+<summary class="title">Weitere Informationen .</summary>
+<div class="content">
+<div class="paragraph">
+<p>Wenn Sie die Option <strong>Kapazitätstrend</strong> ausgewählt haben, gehen Sie wie folgt vor:</p>
+</div>
+<div class="olist arabic">
+<div class="title">Schritte</div>
+<ol class="arabic">
+<li>
+<p>Wählen Sie den Zeitbereich aus den Kalendersymbolen in den Feldern <strong>von Datum</strong> und <strong>bis Datum</strong> aus. Wählen Sie den Datumsbereich für die Abfrage aus. Der Datumsbereich kann der Beginn des Monats oder das Startdatum des Abonnements auf das aktuelle Datum oder das Enddatum des Abonnements sein. Sie können kein zukünftiges Datum auswählen.</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="Tipp">
+</td>
+<td class="content">
+Um eine optimale Performance und Benutzerfreundlichkeit zu erzielen, begrenzen Sie den Datumsbereich Ihrer Anfrage auf drei Monate.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Klicken Sie Auf <strong>Details Anzeigen</strong>. Die historischen Verbrauchsdaten des Abonnements für jedes Servicelevel werden basierend auf dem ausgewählten Zeitbereich angezeigt.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>In den Balkendiagrammen werden der Name des Service-Levels und die für diesen Service-Level verbrauchte Kapazität für den Datumsbereich angezeigt. Das Datum und die Uhrzeit der Sammlung werden unten im Diagramm angezeigt. Basierend auf dem Datumsbereich Ihrer Abfrage werden die Nutzungsdiagramme in einem Bereich von 30 Datenerfassungspunkten angezeigt. Sie können den Mauszeiger über die Diagramme halten, um eine Aufschlüsselung der Nutzung in Bezug auf die Daten für „belegt“, „verbraucht“, „Burst“ und darüber des Burst-Limits an diesem Datenerfassungspunkt anzuzeigen.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/aiq-ks-subtime-2.png" alt="Archivdaten"></span></p>
+</div>
+<div class="paragraph">
+<p>Die folgenden Farben in den Balkendiagrammen geben die verbrauchte Kapazität an, die innerhalb des Service-Levels definiert ist. Monatliche Daten in den Diagrammen werden durch eine vertikale Linie getrennt.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Grün: Innerhalb Von 80 %.</p>
+</li>
+<li>
+<p>Gelb: 80 % - 100 %.</p>
+</li>
+<li>
+<p>Rot: Burst-Nutzung (100 % der festzugesagte Kapazität bis zur vereinbarten Burst-Grenze)</p>
+</li>
+<li>
+<p>Violett: Über der Burst-Grenze oder <code>Above Limit</code>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="Hinweis">
+</td>
+<td class="content">
+Ein leeres Diagramm zeigt an, dass an diesem Datenerfassungspunkt in Ihrer Umgebung keine Daten verfügbar waren.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Sie können auf die Umschalttaste <strong>Aktuelle Nutzung anzeigen</strong> klicken, um den Verbrauch, die Burst-Nutzung und die anrechnungsmäßigen Burst-Daten für den aktuellen Abrechnungszeitraum anzuzeigen. Diese Angaben basieren nicht auf dem Datumsbereich der Abfrage.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Current verbrauchte</strong>: Indikator für die verbrauchte Kapazität (in tib), die für das Service-Level definiert ist. Dieses Feld verwendet bestimmte Farben:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Keine Farbe: Burst oder mehr Burst-Nutzung.</p>
+</li>
+<li>
+<p>Grau: Keine Verwendung.</p>
+</li>
+<li>
+<p>Grün: Innerhalb von 80% der gebuchten Kapazität.</p>
+</li>
+<li>
+<p>Amber: 80 % der auf die Burst-Kapazität zugesuchten Kapazität.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Aktueller Burst</strong>: Indikator für die verbrauchte Kapazität innerhalb oder oberhalb des definierten Burst-Limits. Jede Nutzung innerhalb der vereinbarten Burst-Grenze, beispielsweise 20 % über der gebuchten Kapazität, erfolgt innerhalb des Burst-Limits. Eine weitere Nutzung wird als Nutzung über dem Burst-Limit betrachtet. Dieses Feld zeigt bestimmte Farben an:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Keine Farbe: Keine Burst-Nutzung.</p>
+</li>
+<li>
+<p>Rot: Burst-Nutzung.</p>
+</li>
+<li>
+<p>Lila: Über der Burst-Grenze.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Aufgelaufener Burst</strong>: Indikator für die aufgelaufene Burst-Nutzung oder verbrauchte Kapazität, die pro Monat für den aktuellen Abrechnungszeitraum berechnet wird. Die aufgelaufene Burst-Nutzung wird auf Basis der zurecheneten und verbrauchten Kapazität für ein Service-Level berechnet: <code>(consumed - committed)/365.25/12</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="anzeigen-der-angefallenen-burst-rechnung">Anzeigen der angefallenen Burst-Rechnung</h3>
+<details>
+<summary class="title">Weitere Informationen .</summary>
+<div class="content">
+<div class="paragraph">
+<p>Wenn Sie die Option <strong>fakturierte aufgelaufene Burst</strong> ausgewählt haben, sehen Sie standardmäßig die monatlich aufgelaufenen Burst-Nutzungsdaten der letzten 12 Monate, die in Rechnung gestellt wurden. Sie können die Abfrage nach dem Datumsbereich der letzten 30 Monate durchführen. Balkendiagramme werden für die Rechnungsdaten angezeigt. Wenn die Nutzung noch nicht in Rechnung gestellt wurde, wird für diesen Monat „<em>Pending</em>“ angezeigt.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="Tipp">
+</td>
+<td class="content">
+Die in Rechnung gestellte Burst-Nutzung wird pro Abrechnungszeitraum berechnet, basierend auf der gebuchten und verbrauchten Kapazität für ein Service-Level.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/accr-burst.png" alt="Diagramme zur angesammelten Burst-Nutzung"></span></p>
+</div>
+<div class="paragraph">
+<p>Diese Funktion ist nur im Vorschaumodus verfügbar. Wenden Sie sich an Ihren KSM, um mehr über diese Funktion zu erfahren.</p>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="referenzdiagramme-für-den-datenschutz">Referenzdiagramme für den Datenschutz</h3>
+<details>
+<summary class="title">Weitere Informationen .</summary>
+<div class="content">
+<div class="paragraph">
+<p>Wenn Sie den Datenschutzdienst abonniert haben, können Sie die Aufschlüsselungsdaten für die MetroCluster-Partnerseiten auf der Registerkarte <strong>Kapazitätstrend</strong> einsehen.</p>
+</div>
+<div class="paragraph">
+<p>Informationen zum Datenschutz finden Sie unter <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_data_protection.html">"Datensicherung"</a>.</p>
+</div>
+<div class="paragraph">
+<p>Wenn die Cluster in Ihrer ONTAP Storage-Umgebung in einem MetroCluster-Setup konfiguriert sind, werden die Nutzungsdaten Ihres Keystone Abonnements in dasselbe historische Datendiagramm aufgeteilt, um den Verbrauch an den primären und gespiegelten Standorten für die Basis-Service-Level anzuzeigen.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="Hinweis">
+</td>
+<td class="content">
+Die Verbrauchsbalkentabellen sind nur für grundlegende Servicelevel aufgeteilt. Für Service-Level im Bereich Datensicherheit erscheint diese Abgrenzung nicht.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<div class="title">Service-Level für die Datensicherung</div>
+<p>Bei Service-Levels für die Datensicherung wird der Gesamtverbrauch zwischen den Partnerstandorten aufgeteilt. Die Nutzung an jedem Partner-Standort wird in einem separaten Abonnement abgerechnet, das ein Abonnement für den primären Standort und ein weiteres für den gespiegelten Standort darstellt. Wenn Sie daher die Abonnementnummer für den primären Standort auf der Registerkarte <strong>Kapazitätstrend</strong> auswählen, werden in den Verbrauchsdiagrammen für die DP-Service-Level die Details zum diskreten Verbrauch nur für den primären Standort angezeigt. Da jeder Partnerstandort in einer MetroCluster Konfiguration als Quelle und Spiegel fungiert, umfasst der Gesamtverbrauch an jedem Standort die Quell- und Spiegelvolumes, die am Standort erstellt wurden.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="Tipp">
+</td>
+<td class="content">
+Die QuickInfo neben der Tacking-ID Ihres Abonnements auf der Registerkarte <strong>Aktuelle Nutzung</strong> hilft Ihnen, das Partnerabonnement im MetroCluster-Setup zu identifizieren.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<div class="title">Basis-Service-Level</div>
+<p>Für die Basis-Service-Level werden alle Volumes gemäß der Bereitstellung am primären Standort und an den gespiegelten Standorten abgerechnet. Daher wird dasselbe Balkendiagramm nach dem Verbrauch am primären Standort und an den gespiegelten Standorten aufgeteilt.</p>
+</div>
+<div class="paragraph">
+<div class="title">Was Sie für das primäre Abonnement sehen können</div>
+<p>Das folgende Bild zeigt die Diagramme für den Service-Level <em>Extreme</em> (Basis-Service-Level) und eine primäre Abonnementnummer. Das gleiche historische Datendiagramm markiert den Verbrauch der Spiegelseite in einem helleren Farbton des Farbcodes, der für den primären Standort verwendet wird. Über die Kurzinformation beim Mauszeiger wird die Verbrauchsaufschlüsselung (in tib) für die primären und gespiegelten Standorte mit 1.02 tib bzw. 1.05 tib angezeigt.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/mcc-chart.png" alt="mcc primär"></span></p>
+</div>
+<div class="paragraph">
+<p>Für den <em>Data-Protect Extreme</em> Service Level (Data Protection Service Level) erscheinen die Diagramme wie folgt:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/dp-src.png" alt="mcc-Primärbasis"></span></p>
+</div>
+<div class="paragraph">
+<div class="title">Was Sie für das sekundäre Abonnement (Mirror Site) sehen können</div>
+<p>Wenn Sie das sekundäre Abonnement prüfen, wird das Balkendiagramm für den Service-Level <em>Extreme</em> (Basis-Service-Level) am gleichen Datenerfassungspunkt wie der Partner-Standort umgekehrt und die Verbrauchsaufschlüsselung am primären und gespiegelten Standort beträgt 1.05 tib bzw. 1.02 tib.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/mcc-chart-mirror.png" alt="mcc-Spiegel"></span></p>
+</div>
+<div class="paragraph">
+<p>Für den Service-Level <em>Data-Protect Extreme</em> (Service-Level Datenschutz) erscheint das Diagramm am selben Erfassungspunkt wie die Partnerseite:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/dp-mir.png" alt="mcc-Spiegelsockel"></span></p>
+</div>
+<div class="paragraph">
+<p>Informationen zum Schutz Ihrer Daten durch MetroCluster finden Sie unter <a href="https://docs.netapp.com/us-en/ontap-metrocluster/manage/concept_understanding_mcc_data_protection_and_disaster_recovery.html" target="_blank" rel="noopener">"MetroCluster Datensicherung und Disaster Recovery verstehen"</a>.</p>
+</div>
+</div>
+</details>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="volumes-und-objekte">Volumes Und Objekte</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Auf der Registerkarte <strong>Volumes &amp; Objekte</strong> können Sie den Verbrauch und andere Details für Ihre Volumes in ONTAP anzeigen. Bei StorageGRID werden auf dieser Registerkarte die Nodes und ihre individuelle Nutzung in Ihrer Objekt-Storage-Umgebung angezeigt.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="Hinweis">
+</td>
+<td class="content">
+Der Name dieser Registerkarte hängt von der Art der Bereitstellung an Ihrem Standort ab. Wenn Sie sowohl Volumes als auch Objektspeicher haben, können Sie die Registerkarte <strong>Volumes &amp; Objekte</strong> sehen. Wenn Sie nur Volumes in Ihrer Speicherumgebung haben, ändert sich der Name in <strong>Volumes</strong>. Nur für Objektspeicher können Sie die Registerkarte <strong>Objects</strong> sehen.
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="zeigen-sie-details-zum-ontap-volume-an">Zeigen Sie Details zum ONTAP Volume an</h3>
+<details>
+<summary class="title">Weitere Informationen .</summary>
+<div class="content">
+<div class="paragraph">
+<p>Für ONTAP werden auf der Registerkarte <strong>Volumes</strong> Informationen angezeigt, beispielsweise die Kapazitätsauslastung, der Volume-Typ, das Cluster, das Aggregat und das Service-Level der Volumes in Ihrer durch das Keystone Abonnement verwalteten Storage-Umgebung.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Schritte</div>
+<ol class="arabic">
+<li>
+<p>Klicken Sie auf die Registerkarte <strong>Volumes</strong>.</p>
+</li>
+<li>
+<p>Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste verfügbare Abonnementnummer ausgewählt.</p>
+<div class="paragraph">
+<p>Die Volume-Details werden angezeigt. Sie können durch die Spalten blättern und mehr darüber erfahren, indem Sie den Mauszeiger auf die Informationssymbole neben den Spaltenüberschriften bewegen. Sie können nach den Spalten sortieren und die Listen filtern, um bestimmte Informationen anzuzeigen.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="Hinweis">
+</td>
+<td class="content">
+Bei Datensicherungsdiensten wird eine zusätzliche Spalte angezeigt, die angibt, ob es sich um ein primäres oder ein gespiegeltes Volume in der MetroCluster-Konfiguration handelt. Sie können einzelne Seriennummern der Knoten kopieren, indem Sie auf die Schaltfläche <strong>Node Serials kopieren</strong> klicken.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/aiq-ks-sysdtls.png" alt="Registerkarte Volumes  Objekte"></span></p>
+</div>
+</div>
+</details>
+</div>
+<div class="sect2">
+<h3 id="storagegrid-nodes-und-verbrauch-anzeigen">StorageGRID Nodes und Verbrauch anzeigen</h3>
+<details>
+<summary class="title">Weitere Informationen .</summary>
+<div class="content">
+<div class="paragraph">
+<p>Bei StorageGRID zeigt diese Registerkarte die logische Nutzung der Nodes für den Objektspeicher an.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Schritte</div>
+<ol class="arabic">
+<li>
+<p>Klicken Sie auf die Registerkarte <strong>Objects</strong>.</p>
+</li>
+<li>
+<p>Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste verfügbare Abonnementnummer ausgewählt. Bei Auswahl der Abonnementnummer wird der Link für Details zum Objekt-Storage aktiviert.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sg-link.png" alt="SG-Objekte"></span></p>
+</div>
+</li>
+<li>
+<p>Klicken Sie auf den Link, um die Knotennamen und Details zur logischen Nutzung für jeden Node anzuzeigen.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/sg-link-2.png" alt="SG-Popup"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</details>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="leistung">Leistung</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Auf der Registerkarte <strong>Performance</strong> können Sie die Performance-Kennzahlen der ONTAP Volumes anzeigen, die von Ihren Keystone Abonnements gemanagt werden.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/tip.svg" alt="Tipp">
+</td>
+<td class="content">
+Diese Registerkarte ist optional für Sie verfügbar. Wenden Sie sich an den Support, um diese Registerkarte anzuzeigen.
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">Schritte</div>
+<ol class="arabic">
+<li>
+<p>Klicken Sie auf die Registerkarte <strong>Performance</strong>.</p>
+</li>
+<li>
+<p>Wählen Sie die Abonnementnummer aus. Standardmäßig ist die erste Abonnementnummer ausgewählt.</p>
+</li>
+<li>
+<p>Wählen Sie den gewünschten Volume-Namen aus der Liste aus.</p>
+<div class="paragraph">
+<p>Alternativ können Sie auf klicken <span class="image"><img src="./media/aiq-ks-time-icon.png" alt="Diagrammsymbol"></span> Symbol gegen ein ONTAP-Volume in der Registerkarte <strong>Volumes</strong>, um zu dieser Registerkarte zu navigieren.</p>
+</div>
+</li>
+<li>
+<p>Wählen Sie den Datumsbereich für die Abfrage aus. Der Datumsbereich kann der Beginn des Monats oder das Startdatum des Abonnements auf das aktuelle Datum oder das Enddatum des Abonnements sein. Sie können kein zukünftiges Datum auswählen.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Die abgerufenen Details basieren auf dem Service-Level-Ziel für jeden Service-Level. So werden beispielsweise die IOPS-Spitzenwerte, der maximale Durchsatz, die Ziellatenz und andere Metriken durch die einzelnen Einstellungen für das Service-Level bestimmt. Weitere Informationen zu den Einstellungen finden Sie unter <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_performance.html">"Service-Leveln"</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="Hinweis">
+</td>
+<td class="content">
+Wenn Sie das Kontrollkästchen <strong>SLO Reference Line</strong> aktivieren, werden die Diagramme IOPS, Durchsatz und Latenz auf Basis des Service-Level-Ziels für den Service-Level dargestellt. Andernfalls werden sie in tatsächlichen Zahlen angezeigt.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Die im horizontalen Diagramm angezeigten Leistungsdaten sind ein Durchschnitt in jedem fünfminütigen Intervall und entsprechend dem Datumsbereich der Abfrage angeordnet. Sie können durch die Diagramme blättern und mit der Maus über bestimmte Datenpunkte fahren, um weiter unten in die erfassten Daten zu gelangen.</p>
+</div>
+<div class="paragraph">
+<p>Sie können die Leistungsmetriken in den folgenden Abschnitten basierend auf der Kombination aus Abonnementnummer, Volumenname und ausgewähltem Datumsbereich anzeigen und vergleichen. Die Details werden nach dem dem dem Volume zugewiesenen Service-Level angezeigt. Sie können den Cluster-Namen und den Volume-Typ sehen, d. h. die dem Volume zugewiesenen Lese- und Schreibberechtigungen. Jede mit dem Volume verknüpfte Warnmeldung wird ebenfalls angezeigt.</p>
+</div>
+<div class="sect2">
+<h3 id="iopstib">IOPS/tib</h3>
+<div class="paragraph">
+<p>In diesem Abschnitt werden die Input-Output-Diagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Die Spitzenwerte-IOPS für das Service-Level und die aktuellen IOPS (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit den minimalen, maximalen und durchschnittlichen IOPS für den Zeitraum in IOPS/tib angezeigt.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/perf-iops.png" alt="IOPS-Abschnitt des Diagramms"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="durchsatz-mbstib">Durchsatz (MB/s/tib)</h3>
+<div class="paragraph">
+<p>In diesem Abschnitt werden die Durchsatzdiagramme für die Workloads im Volume basierend auf dem Datumsbereich der Abfrage angezeigt. Der maximale Durchsatz für das Service-Level (SLO Max) und den aktuellen Durchsatz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit dem minimalen, maximalen und durchschnittlichen Durchsatz für den Zeitbereich in MBit/s/tib angezeigt.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/perf-thr.png" alt="Durchsatzdiagramme"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="latenz-ms">Latenz (ms)</h3>
+<div class="paragraph">
+<p>In diesem Abschnitt werden die Latenzdiagramme für die Workloads im Volume angezeigt, basierend auf dem Datumsbereich der Abfrage. Die maximale Latenz für das Service-Level (SLO-Ziel) und die aktuelle Latenz (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) werden zusammen mit der minimalen, maximalen und durchschnittlichen Latenz für den Zeitraum in Millisekunden angezeigt.</p>
+</div>
+<div class="paragraph">
+<p>Dieses Diagramm hat die folgenden Farben:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hellblau: <em>Latency</em>. Bei dieser Latenz handelt es sich um die tatsächliche Latenz, die neben dem Keystone-Service auch Latenzen einschließt. Dazu kann auch eine zusätzliche Latenz gehören, beispielsweise die Latenz zwischen Netzwerk und Client.</p>
+</li>
+<li>
+<p>Dunkelblau: <em>Effektive Latenz</em>. Die effektive Latenz ist die Latenz, die sich ausschließlich auf Ihren Keystone Service in Bezug auf Ihr SLA richtet.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/perf-lat.png" alt="Performance-Diagramme"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="genutzte-logische-nutzung-tib">Genutzte logische Nutzung (tib)</h3>
+<div class="paragraph">
+<p>In diesem Abschnitt werden die bereitgestellten und die logischen genutzten Kapazitäten des Volumes angezeigt. Die aktuell genutzte logische Kapazität (in den letzten fünf Minuten, nicht basierend auf dem Datumsbereich der Abfrage) sowie die minimale, maximale und durchschnittliche Nutzung des Zeitbereichs werden in TIBS angezeigt. In diesem Diagramm steht der graue Bereich für die gebuchte Kapazität und das gelbe Diagramm für die logische Nutzung.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/perf-log-usd.png" alt="Diagramm „genutzte logische Kapazität“"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="berichte-generieren">Berichte generieren</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Sie können Berichte für Ihre Abonnementdetails, Nutzungsdaten für einen bestimmten Zeitraum und Volume-Details von jedem der Registerkarten erstellen und anzeigen, indem Sie auf die Schaltfläche <strong>CSV herunterladen</strong> klicken: <span class="image"><img src="./media/download-icon.png" alt="Symbol zum Herunterladen von Berichten"></span></p>
+</div>
+<div class="paragraph">
+<p>Die Details werden im CSV-Format erstellt, das Sie zur späteren Verwendung speichern können.</p>
+</div>
+<div class="paragraph">
+<p>Auf der Registerkarte <strong>Capacity Trend</strong> haben Sie die Möglichkeit, den Bericht für die standardmäßigen 30 Datenerfassungspunkte des Datumsbereichs Ihrer Abfrage oder Tagesberichte herunterzuladen.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/aiq-report-dnld.png" alt="Bericht Beispiel"></span></p>
+</div>
+<div class="paragraph">
+<p>Ein Beispielbericht für die Registerkarte <strong>Capacity Trend</strong>, in der die grafischen Daten konvertiert werden:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/report.png" alt="Bericht Beispiel"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="anzeigen-von-meldungen">Anzeigen von Meldungen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Warnungen auf der Konsole senden Warnhinweise, mit denen Sie die in Ihrer Storage-Umgebung auftretenden Probleme verstehen.</p>
+</div>
+<div class="paragraph">
+<p>Es gibt zwei Arten von Warnmeldungen:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Information</strong>: Für Probleme, wie Ihre Abonnements, die sich einem Ende nähern, können Sie Informationswarnungen sehen. Bewegen Sie den Mauszeiger über das Informationssymbol, um mehr über das Problem zu erfahren.</p>
+</li>
+<li>
+<p><strong>Warnung</strong>: Probleme, wie z. B. Nichteinhaltung, werden als Warnungen angezeigt. Wenn beispielsweise Volumes in den gemanagten Clustern ohne über AQoS-Richtlinien (Adaptive QoS) verbunden sind, wird eine Warnmeldung angezeigt. Sie können auf den Link in der Warnmeldung klicken, um die Liste der nicht kompatiblen Volumes auf der Registerkarte <strong>Volumes</strong> anzuzeigen.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/keystone/images/note.svg" alt="Hinweis">
+</td>
+<td class="content">
+Wenn Sie einen einzelnen Service-Level- oder Tarifplan abonniert haben, können Sie die Warnmeldung für nicht konforme Volumes nicht sehen.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Informationen zu AQoS-Richtlinien finden Sie unter <a href="https://docs.netapp.com/us-en/keystone/nkfsosm_kfs_billing.html#billing-and-adaptive-qos-policies">"Abrechnung und anpassungsfähige QoS-Richtlinien"</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/alert-aiq.png" alt="Meldungen"></span></p>
+</div>
+<div class="paragraph">
+<p>Wenden Sie sich an den NetApp Support, um weitere Informationen zu diesen Warn- und Warnungsmeldungen zu erhalten.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/de-de/keystone/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/de-de/keystone/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">Auf dieser seite</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Nutzungsbedingungen</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Datenschutzrichtlinie</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Richtlinie zu Cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie-Einstellungen</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Feedback zu dieser Seite senden</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/de-de/keystone/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/de-de/keystone/js/prism.js'></script>
+      <script type="text/javascript" src='/de-de/keystone/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/de-de/keystone/js/ie-tabbed-blocks.js'></script>
+    <script src='/de-de/keystone/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
